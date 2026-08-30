@@ -1,51 +1,62 @@
 ---
-title: "Zjawisko nad Norymbergą"
-subtitle: "Drzeworyt Hansa Glasera i problem źródeł sprzed epoki instrumentów"
+title: "The Nuremberg Phenomenon"
+subtitle: "Hans Glaser's broadsheet and the problem of sources from before instruments"
 date: 1561-04-14
-dateDisplay: "14 kwietnia 1561"
+dateDisplay: "14 April 1561"
 country: "DE"
-countryName: "Niemcy"
-location: "Norymberga, Frankonia"
+countryName: "Germany"
+location: "Nuremberg, Franconia"
 lat: 49.45
 lon: 11.08
 domain: "civil"
 tier: 3
 status: "disputed"
-duration: "ok. godziny (wg relacji)"
-witnesses: "Nieustalona liczba mieszkańców miasta"
-evidence: ["multi-witness"]
-scores: { S: 1, R: 0, O: 1, P: 0, M: 1, T: 2, X: 1, D: 1 }
-summary: "Ulotka z drzeworytem opisująca „walkę powietrzną\" kul i krzyży nad miastem. Współcześnie regularnie prezentowana jako dowód historycznej obecności UFO — w rzeczywistości jest to źródło o zupełnie innym charakterze niż nowoczesny raport lotniczy."
-official: "Brak. Zjawisko wyprzedza jakikolwiek system raportowania."
+duration: "about an hour, per the account"
+witnesses: "An unrecorded number of townspeople"
+evidence:
+- "multi-witness"
+scores:
+  S: 1
+  R: 0
+  O: 1
+  P: 0
+  M: 1
+  T: 2
+  X: 1
+  D: 1
+summary: "A broadsheet woodcut describing an “aerial battle” of spheres and crosses above the city. Routinely presented today as evidence of a historical UFO presence — in reality it is a source of an entirely different character from a modern aviation report."
+official: "None. The event predates any reporting system."
 alternatives:
-  - "Halo słoneczne / parhelia (słońca poboczne) i inne zjawiska refrakcyjne — najczęściej wskazywane wyjaśnienie."
-  - "Konwencja ikonograficzna XVI-wiecznej publicystyki religijnej: „znaki na niebie\" jako komentarz polityczno-teologiczny."
-claims: ["nuremberg-ufo-battle"]
+- "Solar halo, parhelia and other refraction phenomena — the explanation most often advanced."
+- "The iconographic convention of sixteenth-century religious pamphleteering: “signs in the sky” as political and theological commentary."
+claims:
+- "nuremberg-ufo-battle"
 sources:
-  - tier: "T1"
-    label: "Ulotka Hansa Glasera, Norymberga 1561 (zbiory Zentralbibliothek Zürich)"
-    note: "Źródło istnieje i jest dobrze opisane. Spór dotyczy interpretacji, nie autentyczności."
-  - tier: "T5"
-    label: "Współczesne przedstawienia w mediach popularnych jako „bitwa UFO\""
-    note: "Nadinterpretacja: pomija kontekst gatunkowy ulotki."
+- "tier": "T1"
+  label: "Hans Glaser broadsheet, Nuremberg 1561 (Zentralbibliothek Zürich)"
+  note: "The source exists and is well described. The dispute concerns interpretation, not authenticity."
+- "tier": "T5"
+  label: "Contemporary popular-media presentations as a “UFO battle”"
+  note: "Over-interpretation: it disregards the generic context of the broadsheet."
 ---
 
-## Dlaczego ten przypadek jest w bazie
+## Why this case is in the database
 
-Nie dlatego, że jest dowodem. Dlatego, że jest **testem metodologicznym**.
+Not because it is evidence. Because it is a **methodological test**.
 
-Norymberga 1561 to najczęściej cytowany „przedhistoryczny UFO case". Pokazuje dokładnie, gdzie
-przebiega granica użyteczności źródła. Mamy autentyczny dokument z epoki. Nie mamy natomiast
-niczego, co pozwoliłoby oddzielić opis zjawiska od konwencji gatunkowej, w której go zapisano.
+Nuremberg 1561 is the most frequently cited pre-modern UFO case. It shows exactly where the
+usefulness of a source runs out. We have an authentic document from the period. We have nothing
+that would let us separate the description of a phenomenon from the genre in which it was written.
 
-## Czego nie wiemy
+## What we do not know
 
-Ulotki tego typu były XVI-wiecznym odpowiednikiem prasy sensacyjnej połączonej z komentarzem
-religijnym. „Znaki na niebie" były w nich elementem oczekiwanym — a nie neutralnym raportem
-obserwacyjnym. Nie potrafimy dziś ustalić, ile w drzeworycie jest obserwacji, a ile ikonografii.
+Broadsheets of this kind were the sixteenth-century equivalent of the sensational press fused with
+religious commentary. "Signs in the sky" were an expected element of the form — not neutral
+observational reporting. We cannot now establish how much of the woodcut is observation and how
+much is iconography.
 
-## Wniosek
+## Conclusion
 
-Każde źródło sprzed epoki instrumentów pomiarowych ma ten sam sufit dowodowy: możemy stwierdzić,
-że **ktoś coś zapisał**, ale nie możemy zrekonstruować, co fizycznie znajdowało się nad miastem.
-Przypadki tego rodzaju należą do historii kultury, nie do korpusu dowodowego UAP.
+Every source predating measuring instruments carries the same evidential ceiling: we can establish
+that **somebody wrote something down**, but we cannot reconstruct what was physically above the
+city. Cases of this kind belong to cultural history, not to the UAP evidence corpus.

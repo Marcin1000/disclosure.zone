@@ -1,45 +1,58 @@
 ---
 title: "Chiles–Whitted"
-subtitle: "Bliskie minięcie obiektu przez załogę DC-3 nad Alabamą"
+subtitle: "A DC-3 crew's near-miss over Alabama"
 date: 1948-07-24
-dateDisplay: "24 lipca 1948"
+dateDisplay: "24 July 1948"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "W pobliżu Montgomery, Alabama"
+countryName: "United States"
+location: "Near Montgomery, Alabama"
 lat: 32.37
-lon: -86.30
+lon: -86.3
 domain: "civil"
 tier: 2
 status: "explained"
-duration: "kilka sekund"
-witnesses: "2 pilotów liniowych, 1 pasażer"
-evidence: ["visual", "multi-witness"]
-scores: { S: 5, R: 0, O: 0, P: 0, M: 2, T: 4, X: 2, D: 3 }
-summary: "Dwaj piloci Eastern Air Lines zgłosili minięcie dużego, cygaropodobnego obiektu z rzędem jasnych okien i płomieniem z tyłu. Sprawa była jednym z filarów wewnętrznego dokumentu Project SIGN sugerującego hipotezę międzyplanetarną."
-official: "Blue Book ostatecznie zaklasyfikował zdarzenie jako bolid (meteor)."
+duration: "a few seconds"
+witnesses: "2 airline pilots, 1 passenger"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 5
+  R: 0
+  O: 0
+  P: 0
+  M: 2
+  T: 4
+  X: 2
+  D: 3
+summary: "Two Eastern Air Lines pilots reported passing a large cigar-shaped object with a row of bright windows and a flame at the rear. The case was one of the pillars of the internal Project SIGN document said to have argued an interplanetary hypothesis."
+official: "Blue Book ultimately classified the event as a bolide (meteor)."
 alternatives:
-  - "Jasny bolid rozpadający się w atmosferze — „okna\" jako fragmenty w rozpadzie, obserwowane w ułamku sekundy."
-  - "Rzeczywisty obiekt o konstrukcji cygara — brak jakiegokolwiek potwierdzenia instrumentalnego."
-claims: ["sign-estimate-of-situation"]
+- "A bright bolide breaking up in the atmosphere — the “windows” being fragments seen for a fraction of a second."
+- "A genuine cigar-shaped craft — with no instrumental corroboration of any kind."
+claims:
+- "sign-estimate-of-situation"
 sources:
-  - tier: "T1"
-    label: "Akta Project SIGN / Blue Book, sprawa Chiles–Whitted"
-  - tier: "T4"
-    label: "Relacje o dokumencie „Estimate of the Situation\""
-    note: "Sam dokument nie zachował się w archiwach i jego istnienie nie zostało niezależnie potwierdzone."
+- "tier": "T1"
+  label: "Project SIGN / Blue Book files, Chiles–Whitted case"
+  ref: "nara-bluebook"
+- "tier": "T4"
+  label: "Accounts of the “Estimate of the Situation” document"
+  note: "The document itself does not survive in the archives and its existence is unconfirmed."
 ---
 
-## Sprawa, która zbudowała mit „Estimate of the Situation"
+## The case that built the "Estimate of the Situation" myth
 
-To Chiles–Whitted była jednym z głównych przypadków, na których zespół Project SIGN miał oprzeć
-wewnętrzny dokument sugerujący pozaziemskie pochodzenie części obserwacji.
+Chiles–Whitted was one of the principal cases on which the Project SIGN team is said to have based
+an internal document arguing an extraterrestrial origin for some sightings.
 
-Kluczowe: **dokument nie zachował się w archiwach**. Cała nasza wiedza o nim pochodzi z relacji
-zebranych później. To czyni go interesującym tropem historycznym, ale nie dowodem — ani na
-istnienie ukrywanej wiedzy, ani na jej brak.
+The crucial point: **the document does not survive in the archives.** Everything we know about it
+comes from accounts gathered later. That makes it an interesting historical thread but not
+evidence — neither of concealed knowledge nor of its absence.
 
-## Dlaczego bolid jest mocnym wyjaśnieniem
+## Why the bolide explanation is strong
 
-Obserwacja trwała kilka sekund w nocy, przy bardzo szybkim ruchu kątowym. W takich warunkach mózg
-domyka „okna" i strukturę tam, gdzie ich nie ma. Jasny, rozpadający się bolid obserwowany z boku
-daje dokładnie taki obraz, jaki opisali piloci — łącznie z wrażeniem cygara ciągnącego płomień.
+The sighting lasted seconds, at night, with very rapid angular motion. Under those conditions the
+brain closes "windows" and structure where none exist. A bright, fragmenting bolide seen from the
+side produces exactly the image the pilots described — including the impression of a cigar trailing
+flame.

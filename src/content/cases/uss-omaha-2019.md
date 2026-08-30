@@ -1,47 +1,63 @@
 ---
 title: "USS Omaha"
-subtitle: "Wielokrotne obiekty wokół okrętów Marynarki Wojennej u wybrzeży Kalifornii"
+subtitle: "Multiple objects around US Navy warships off California"
 date: 2019-07-15
-dateDisplay: "lipiec 2019"
+dateDisplay: "July 2019"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Wody u wybrzeży Kalifornii, rejon ćwiczeń"
-lat: 32.90
-lon: -119.50
+countryName: "United States"
+location: "Waters off California, exercise area"
+lat: 32.9
+lon: -119.5
 domain: "military"
 tier: 2
 status: "unresolved"
-duration: "seria zdarzeń przez kilka nocy"
-witnesses: "Załogi kilku okrętów Marynarki Wojennej USA"
-evidence: ["radar", "ir", "film", "multi-witness"]
-scores: { S: 5, R: 4, O: 3, P: 0, M: 4, T: 4, X: 3, D: 3 }
-summary: "Przez kilka nocy załogi okrętów raportowały wiele obiektów powietrznych operujących wokół grupy. Powstały nagrania w podczerwieni oraz zapisy w dziennikach okrętowych. Marynarka Wojenna potwierdziła autentyczność materiałów."
-official: "Marynarka Wojenna potwierdziła autentyczność nagrań i wpisów w dziennikach; sprawa pozostaje bez identyfikacji."
+duration: "a series of events over several nights"
+witnesses: "Crews of several US Navy warships"
+evidence:
+- "radar"
+- "ir"
+- "film"
+- "multi-witness"
+scores:
+  S: 5
+  R: 4
+  O: 3
+  P: 0
+  M: 4
+  T: 4
+  X: 3
+  D: 3
+summary: "Over several nights ship crews reported multiple aerial objects operating around the group. Infrared recordings and ship's log entries were produced. The Navy confirmed the material is authentic."
+official: "The Navy confirmed the authenticity of the footage and the log entries; the case remains unidentified."
 alternatives:
-  - "Bezzałogowe systemy powietrzne operowane z jednostki nawodnej — hipoteza wskazywana jako najbardziej prawdopodobna, zgodna z liczbą obiektów, czasem trwania i schematem lotu."
-  - "Obiekty prozaiczne w warunkach nocnych o niskiej rozdzielczości sensora."
-claims: ["omaha-transmedium-entry", "omaha-drone-swarm"]
+- "Unmanned aerial systems operated from a surface vessel — the hypothesis indicated as most probable, consistent with the number of objects, the duration and the flight pattern."
+- "Prosaic objects in night conditions at low sensor resolution."
+claims:
+- "omaha-transmedium-entry"
+- "omaha-drone-swarm"
 sources:
-  - tier: "T1"
-    label: "Nagrania IR i wyciągi z dzienników okrętowych, ujawnione w trybie FOIA"
-  - tier: "T2"
-    label: "Potwierdzenie autentyczności przez Marynarkę Wojenną USA"
+- "tier": "T1"
+  label: "IR recordings and ship's log extracts released under FOIA"
+  ref: "navy-uap-foia"
+- "tier": "T2"
+  label: "US Navy confirmation of authenticity"
+  ref: "aaro"
 ---
 
-## Konieczne rozdzielenie
+## A necessary separation
 
-**Co jest potwierdzone:** wiele obiektów operowało wokół okrętów przez kilka nocy, zostało to
-zarejestrowane przez sensory i wpisane do dzienników okrętowych, a materiały są autentyczne.
+**What is confirmed:** multiple objects operated around the ships over several nights, this was
+captured by sensors and entered in the ships' logs, and the material is authentic.
 
-**Co nie jest potwierdzone:** że obiekty wchodziły do wody. Popularna wersja tej sprawy zawiera
-element „obiekt zniknął pod powierzchnią", którego publicznie dostępny materiał nie pokazuje w
-sposób rozstrzygający — utrata śladu na sensorze nie jest dowodem zanurzenia.
+**What is not confirmed:** that the objects entered the water. The popular version of this case
+contains a "the object vanished beneath the surface" element that the publicly available material
+does not show conclusively — loss of a sensor track is not evidence of submergence.
 
-## Najbardziej prawdopodobne wyjaśnienie i dlaczego to nie jest uspokajające
+## The most probable explanation, and why it is not reassuring
 
-Wielogodzinna, wielonocna aktywność wielu obiektów w formacji wokół grupy okrętów pasuje bardzo
-dobrze do **roju dronów wypuszczonych z jednostki nawodnej**.
+Hours-long, multi-night activity by multiple objects in formation around a group of warships fits
+**a drone swarm launched from a surface vessel** very well.
 
-To wyjaśnienie jest prozaiczne i jednocześnie poważniejsze niż hipoteza pozaziemska: oznaczałoby
-skuteczne, niewykryte rozpoznanie prowadzone wobec okrętów US Navy na ich własnych wodach
-ćwiczebnych.
+That explanation is prosaic and simultaneously more serious than the extraterrestrial hypothesis: it
+would mean effective, undetected reconnaissance conducted against US Navy warships in their own
+exercise waters.

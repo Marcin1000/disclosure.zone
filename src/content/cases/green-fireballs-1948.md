@@ -1,51 +1,65 @@
 ---
-title: "Zielone kule ognia"
-subtitle: "Fala nad instalacjami nuklearnymi Nowego Meksyku i Project Twinkle"
+title: "Green Fireballs"
+subtitle: "A wave over New Mexico's nuclear installations, and Project Twinkle"
 date: 1948-12-05
-dateDisplay: "1948–1951 (fala)"
+dateDisplay: "1948–1951 (wave)"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Nowy Meksyk: Los Alamos, Sandia, Kirtland AFB"
+countryName: "United States"
+location: "New Mexico: Los Alamos, Sandia, Kirtland AFB"
 lat: 35.68
 lon: -106.31
 domain: "military"
 tier: 2
 status: "insufficient"
-duration: "pojedyncze zdarzenia: 1–3 sekundy"
-witnesses: "Personel ochrony instalacji nuklearnych, naukowcy, piloci"
-evidence: ["visual", "multi-witness", "instrument"]
-scores: { S: 4, R: 1, O: 1, P: 0, M: 3, T: 4, X: 3, D: 3 }
-summary: "Seria jaskrawozielonych kul ognia obserwowanych nad najbardziej wrażliwymi instalacjami nuklearnymi USA. Zjawisko było na tyle poważnie traktowane, że powołano dedykowany program obserwacyjny Project Twinkle z kamerami i teodolitami."
-official: "Project Twinkle zakończył się bez rozstrzygnięcia. Dominująca hipoteza: nietypowa aktywność bolidowa."
+duration: "individual events: 1–3 seconds"
+witnesses: "Security personnel at nuclear installations, scientists, pilots"
+evidence:
+- "visual"
+- "multi-witness"
+- "instrument"
+scores:
+  S: 4
+  R: 1
+  O: 1
+  P: 0
+  M: 3
+  T: 4
+  X: 3
+  D: 3
+summary: "A series of vivid green fireballs observed over the most sensitive nuclear installations in the United States. The phenomenon was taken seriously enough that a dedicated observation programme, Project Twinkle, was established with cameras and theodolites."
+official: "Project Twinkle ended without resolution. The prevailing hypothesis was unusual bolide activity."
 alternatives:
-  - "Bolidy o wysokiej zawartości miedzi (charakterystyczna zielona barwa) — hipoteza dr. Lincolna LaPaza była odrzucana przez niego samego ze względu na tor lotu."
-  - "Zjawiska elektryczne w górnej atmosferze."
-  - "Efekt skupienia obserwatorów: instalacje nuklearne miały całodobową ochronę patrzącą w niebo, więc rejestrowały to, czego gdzie indziej nikt nie widział."
-claims: ["uap-nuclear-affinity"]
+- "Bolides with high copper content, producing the characteristic green — a hypothesis its own proponent rejected on trajectory grounds."
+- "Electrical phenomena in the upper atmosphere."
+- "An observer-concentration effect: nuclear installations had round-the-clock guards looking at the sky, so they recorded what nobody elsewhere was watching for."
+claims:
+- "uap-nuclear-affinity"
 sources:
-  - tier: "T1"
-    label: "Dokumentacja Project Twinkle (1949–1951)"
-  - tier: "T1"
-    label: "Raporty ochrony Los Alamos i Sandia z okresu fali"
+- "tier": "T1"
+  label: "Project Twinkle documentation (1949–1951)"
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "Los Alamos and Sandia security reports from the wave period"
+  ref: "aaro-historical-v1"
 ---
 
-## Pierwszy „związek z bronią jądrową"
+## The first "nuclear connection"
 
-To tutaj rodzi się jeden z najtrwalszych motywów całej dziedziny: **UAP grupują się wokół
-instalacji nuklearnych**. Motyw wróci przy Malmstrom 1967, przy australijskim Maralinga i w
-raportach AARO z lat 2020.
+This is where one of the most durable motifs in the field is born: **UAP cluster around nuclear
+installations.** The motif returns at Malmstrom in 1967, at Australia's Maralinga, and in AARO
+reporting in the 2020s.
 
-Rozstrzygnięcie wymaga uczciwego postawienia alternatywy. Instalacje nuklearne to jednocześnie
-miejsca o **najgęstszej obsadzie obserwatorów, najlepszych sensorach i najniższym progu
-zgłaszania anomalii**. Zjawisko może więc grupować się wokół nich albo dlatego, że coś się nimi
-interesuje, albo dlatego, że tylko tam ktokolwiek systematycznie patrzy i raportuje.
+Settling it requires stating the alternative honestly. Nuclear installations are simultaneously the
+sites with **the densest observer coverage, the best sensors and the lowest threshold for reporting
+an anomaly.** The phenomenon may therefore cluster around them because something is interested in
+them, or because they are the only places where anyone is systematically watching and reporting.
 
-Na dostępnych danych nie da się tych dwóch wyjaśnień rozdzielić. To nie jest wykręt — to realna
-granica tego korpusu.
+The available data cannot separate those two explanations. That is not an evasion — it is a real
+limit of this corpus.
 
 ## Project Twinkle
 
-Ważny precedens: rząd USA rozstawił **dedykowaną aparaturę pomiarową**, żeby zmierzyć zjawisko
-UAP. Program zebrał niewiele użytecznych danych, głównie z powodu niedofinansowania i złego
-rozmieszczenia stanowisk. Ten sam problem — sprzęt jest, ale nie tam i nie wtedy, gdzie trzeba —
-wróci przy ekspedycji Hessdalen w 1984 r.
+An important precedent: the US government deployed **dedicated measuring equipment** to measure a
+UAP phenomenon. The programme gathered little usable data, largely through underfunding and poor
+station placement. The same problem — the equipment exists, but not where and when it is needed —
+returns at the Hessdalen expedition of 1984.

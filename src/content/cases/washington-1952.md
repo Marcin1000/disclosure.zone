@@ -1,70 +1,86 @@
 ---
-title: "Fala nad Waszyngtonem"
-subtitle: "Dwa weekendy kontaktów radarowych nad stolicą USA i największa konferencja prasowa Pentagonu od II wojny"
+title: "The Washington Wave"
+subtitle: "Two weekends of radar contacts over the US capital, and the largest Pentagon press conference since the war"
 date: 1952-07-19
-dateDisplay: "19/20 i 26/27 lipca 1952"
+dateDisplay: "19/20 and 26/27 July 1952"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Washington National Airport, Andrews AFB, przestrzeń nad Dystryktem Kolumbii"
+countryName: "United States"
+location: "Washington National Airport, Andrews AFB, airspace over the District of Columbia"
 lat: 38.85
 lon: -77.04
 domain: "military"
 tier: 1
 status: "unresolved"
-duration: "kilka godzin w każdą z nocy"
-witnesses: "Kontrolerzy ruchu lotniczego, operatorzy radarów wojskowych, piloci liniowi i myśliwscy"
-evidence: ["radar", "visual", "multi-witness", "intercept"]
-scores: { S: 5, R: 5, O: 3, P: 0, M: 5, T: 5, X: 3, D: 2 }
-summary: "W dwa kolejne weekendy lipca 1952 r. radary cywilne i wojskowe wokół Waszyngtonu rejestrowały niezidentyfikowane cele nad przestrzenią zakazaną, skorelowane z obserwacjami wzrokowymi pilotów. Poderwano myśliwce przechwytujące. Sprawa wymusiła najliczniejszą konferencję prasową Pentagonu od zakończenia II wojny światowej."
-official: "USAF wskazała inwersję temperaturową i związaną z nią anomalną propagację radarową jako główne wyjaśnienie. Blue Book pozostawił część zdarzeń bez rozstrzygnięcia."
+duration: "several hours on each night"
+witnesses: "Air traffic controllers, military radar operators, airline and fighter pilots"
+evidence:
+- "radar"
+- "visual"
+- "multi-witness"
+- "intercept"
+scores:
+  S: 5
+  R: 5
+  O: 3
+  P: 0
+  M: 5
+  T: 5
+  X: 3
+  D: 2
+summary: "On two consecutive July weekends, civilian and military radars around Washington tracked unidentified targets over restricted airspace, correlated with visual sightings by pilots. Interceptors were scrambled. The case forced the largest Pentagon press conference since the end of the Second World War."
+official: "The USAF identified temperature inversion and the associated anomalous radar propagation as the principal explanation. Blue Book left part of the events unresolved."
 alternatives:
-  - "Anomalna propagacja radarowa przy silnej inwersji temperaturowej — potwierdzona meteorologicznie w te noce, tłumaczy część śladów."
-  - "Błędna korelacja: niezależne obserwacje wzrokowe gwiazd i samolotów łączone przez operatorów z niezwiązanymi śladami radarowymi."
-  - "Rzeczywiste obiekty fizyczne w przestrzeni zakazanej — brak zapisu pozwalającego to potwierdzić lub wykluczyć."
-claims: ["washington-7000mph", "washington-radar-visual-lock"]
+- "Anomalous radar propagation under a strong temperature inversion — meteorologically confirmed on those nights, and sufficient to explain part of the returns."
+- "Faulty correlation: independent visual sightings of stars and aircraft joined by operators to unrelated radar returns."
+- "Genuine physical objects in restricted airspace — with no record capable of confirming or excluding it."
+claims:
+- "washington-7000mph"
+- "washington-radar-visual-lock"
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book dotyczące lipca 1952 (National Archives)"
-    url: "https://www.archives.gov/research/military/air-force/ufos"
-  - tier: "T1"
-    label: "Zapisy kontroli ruchu lotniczego Washington National Airport"
-  - tier: "T2"
-    label: "Briefing prasowy gen. mjr. Johna Samforda, 29 lipca 1952"
-  - tier: "T4"
-    label: "Późniejsze rekonstrukcje historyczne i analizy meteorologiczne"
+- "tier": "T1"
+  label: "Project Blue Book files covering July 1952 (National Archives)"
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "Washington National Airport air traffic control records"
+  ref: "nara-washington-1952"
+- "tier": "T2"
+  label: "Press briefing by Maj. Gen. John Samford, 29 July 1952"
+- "tier": "T4"
+  label: "Later historical reconstructions and meteorological analyses"
 ---
 
-## Dlaczego to nadal jest przypadek pierwszej klasy
+## Why this remains a first-class case
 
-Waszyngton 1952 ma cechę, której nie ma 90% korpusu UFO: **wiele niezależnych systemów
-pomiarowych obsługiwanych przez zawodowców, jednocześnie, nad jednym z najlepiej monitorowanych
-obszarów świata**.
+Washington 1952 has a property that 90% of the UFO corpus lacks: **multiple independent measuring
+systems operated by professionals, simultaneously, over one of the most closely monitored areas on
+Earth.**
 
-Mamy radar cywilny Washington National, radar wojskowy Andrews AFB, kontrolerów ruchu lotniczego,
-załogi liniowe raportujące światła w miejscach, gdzie radar wskazywał cele, oraz poderwane
-myśliwce. To nie jest struktura zdarzenia, którą tworzy pojedyncza pomyłka.
+There is the civilian radar at Washington National, the military radar at Andrews AFB, air traffic
+controllers, airline crews reporting lights where radar showed targets, and scrambled interceptors.
+That is not the structure a single mistake produces.
 
-## Gdzie jest słabość
+## Where the weakness lies
 
-Inwersja temperaturowa nad Waszyngtonem tamtych nocy **rzeczywiście występowała** i rzeczywiście
-generuje fałszywe echa. To wyjaśnienie nie jest wymówką — jest fizycznie poprawnym mechanizmem,
-który potrafi wyprodukować dokładnie takie ślady.
+A temperature inversion over Washington on those nights **genuinely existed** and genuinely
+generates false returns. That explanation is not an excuse — it is a physically correct mechanism
+capable of producing exactly those traces.
 
-Problemem jest to, że nie da się dziś ustalić, **które** ślady były propagacją, a które nie.
-Radar z 1952 r. nie zostawiał ciągłego zapisu cyfrowego. Nie mamy track files. Nie mamy
-timestampów pozwalających skorelować konkretne echo z konkretną obserwacją wzrokową co do sekundy.
+The problem is that it is no longer possible to establish **which** returns were propagation and
+which were not. Radar in 1952 left no continuous digital record. There are no track files. There
+are no timestamps allowing a specific echo to be matched to a specific visual sighting to the
+second.
 
-## Liczba, której nie należy używać
+## A number that should not be used
 
-W obiegu funkcjonuje wartość rzędu 7000 mph przypisywana celom z tych nocy. To **oszacowanie
-operatorskie z epoki**, wyliczone z odległości między kolejnymi odczytami przy założeniu, że
-odczyty dotyczą tego samego obiektu. Przy anomalnej propagacji to założenie jest dokładnie tym,
-co zawodzi w pierwszej kolejności. Traktujemy tę liczbę jako twierdzenie, nie jako pomiar.
+A figure on the order of 7,000 mph circulates in connection with those nights. It is an **operator
+estimate from the period**, derived from the distance between successive returns on the assumption
+that the returns are the same object. Under anomalous propagation, that assumption is precisely the
+one that fails first. We treat the number as a claim, not a measurement.
 
-## Historyczne znaczenie
+## Historical significance
 
-Ta fala zmieniła instytucjonalny stosunek państwa do UAP. Bezpośrednio po niej CIA powołała
-panel naukowy (Robertson Panel, styczeń 1953), którego zalecenia przesunęły ciężar z badania
-zjawiska na **zarządzanie reakcją opinii publicznej**. To jeden z niewielu udokumentowanych
-przypadków, w których rząd USA rzeczywiście zajmował się sterowaniem narracją o UFO — choć
-z powodów zimnowojennych, a nie dlatego, że cokolwiek wiedział o kosmitach.
+This wave changed the institutional posture of the state toward UAP. Immediately afterwards the CIA
+convened a scientific panel — the Robertson Panel, January 1953 — whose recommendations shifted the
+emphasis from studying the phenomenon to **managing the public reaction.** It is one of the few
+documented instances in which the US government genuinely concerned itself with steering the UFO
+narrative — though for Cold War reasons, not because it knew anything about extraterrestrials.

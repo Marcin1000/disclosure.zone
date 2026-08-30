@@ -1,48 +1,58 @@
 ---
-title: "Obserwacja Kennetha Arnolda"
-subtitle: "Dziewięć obiektów nad Mount Rainier i narodziny terminu „latający spodek\""
+title: "The Kenneth Arnold Sighting"
+subtitle: "Nine objects near Mount Rainier and the birth of the term “flying saucer”"
 date: 1947-06-24
-dateDisplay: "24 czerwca 1947"
+dateDisplay: "24 June 1947"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Kaskady, w pobliżu Mount Rainier, Waszyngton"
+countryName: "United States"
+location: "Cascade Range, near Mount Rainier, Washington"
 lat: 46.85
 lon: -121.76
 domain: "civil"
 tier: 2
 status: "insufficient"
-duration: "ok. 2–3 minut"
-witnesses: "1 (pilot prywatny)"
-evidence: ["visual"]
-scores: { S: 4, R: 0, O: 0, P: 0, M: 1, T: 4, X: 2, D: 2 }
-summary: "Pilot prywatny Kenneth Arnold zgłosił dziewięć obiektów przemieszczających się w formacji w pobliżu Mount Rainier. Jego opis ruchu — „jak spodek rzucony po wodzie\" — został przez prasę przekształcony w kształt obiektu i dał początek terminowi flying saucer."
-official: "Wczesne dochodzenie USAF nie ustaliło źródła; rozważano miraż i błędną ocenę odległości."
+duration: "about 2–3 minutes"
+witnesses: "1 (private pilot)"
+evidence:
+- "visual"
+scores:
+  S: 4
+  R: 0
+  O: 0
+  P: 0
+  M: 1
+  T: 4
+  X: 2
+  D: 2
+summary: "Private pilot Kenneth Arnold reported nine objects moving in formation near Mount Rainier. His description of their motion — “like a saucer skipped across water” — was converted by the press into the shape of the objects, giving rise to the term flying saucer."
+official: "The early USAF investigation did not establish a source; mirage and misjudged distance were considered."
 alternatives:
-  - "Formacja pelikanów lub innych dużych ptaków w silnym oświetleniu."
-  - "Miraż górski / inwersja temperaturowa zniekształcająca obraz odległych samolotów."
-  - "Poprawna obserwacja formacji samolotów przy błędnej ocenie odległości, a więc i prędkości."
-claims: ["arnold-saucer-shape"]
+- "A formation of pelicans or other large birds in strong light."
+- "A mountain mirage or temperature inversion distorting distant aircraft."
+- "A correct observation of an aircraft formation with badly misjudged distance, and therefore speed."
+claims:
+- "arnold-saucer-shape"
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book / wczesne dochodzenie USAF, sprawa Arnolda"
-    url: "https://www.archives.gov/research/military/air-force/ufos"
-  - tier: "T3"
-    label: "Pisemna relacja Kennetha Arnolda złożona władzom lotniczym (1947)"
+- "tier": "T1"
+  label: "Project Blue Book files / early USAF investigation, Arnold case"
+  ref: "nara-bluebook"
+- "tier": "T3"
+  label: "Kenneth Arnold's written statement to the aviation authorities (1947)"
 ---
 
-## Najważniejsze nieporozumienie w historii dziedziny
+## The most consequential misunderstanding in the field
 
-Arnold **nie opisał obiektów w kształcie spodka**. Opisał sposób poruszania się: obiekty miały
-podskakiwać jak spodek puszczony kaczkami po wodzie. Prasa przeniosła metaforę z ruchu na kształt
-i w ciągu tygodni „latający spodek" stał się gotowym szablonem percepcyjnym dla setek kolejnych
-świadków.
+Arnold **did not describe saucer-shaped objects.** He described a manner of motion: the objects
+skipped like a saucer thrown across water. The press moved the metaphor from the motion to the
+shape, and within weeks "flying saucer" had become a ready-made perceptual template for hundreds
+of subsequent witnesses.
 
-To jest jedno z najlepiej udokumentowanych zjawisk w całej historii UAP — i nie dotyczy ono
-obiektów, tylko ludzi. **Język, którym opisujemy zjawisko, zmienia to, co ludzie następnie
-raportują.** Każdą falę obserwacji po 1947 r. trzeba czytać z tą poprawką.
+This is one of the best-documented phenomena in the whole of UAP history — and it concerns people,
+not objects. **The language we use to describe a phenomenon changes what people subsequently
+report.** Every wave after 1947 has to be read with that correction applied.
 
-## Wartość dowodowa
+## Evidential value
 
-Niska. Jeden obserwator, brak zapisu, brak radaru, brak możliwości rekonstrukcji geometrii.
-Znaczenie sprawy jest historyczne i socjologiczne, nie dowodowe — to ona uruchomiła łańcuch,
-który doprowadził do powstania Project SIGN w grudniu 1947 r.
+Low. One observer, no record, no radar, no way to reconstruct the geometry. The significance is
+historical and sociological rather than evidential — this is the sighting that started the chain
+leading to Project SIGN in December 1947.

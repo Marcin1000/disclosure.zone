@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import { claims, STATUS_META, CLAIM_ORDER } from '../../data/claims';
+import { TIER_LABEL, bi } from '../../lib/scoring';
+import { getCases } from '../../lib/cases';
+import { langParams, path, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+
+const all = await getCases(lang);
+const titleOf = (id: string) => all.find(c => c.id === id)?.data.title ?? id;
+const sorted = [...claims].sort((a, b) => CLAIM_ORDER.indexOf(a.status) - CLAIM_ORDER.indexOf(b.status));
+const count = (s: string) => claims.filter(c => c.status === s).length;
+---
+<Base title={t('claims.title')} description={t('claims.lead')} lang={lang} rest="/claims">
+  <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{t('claims.kicker', { n: claims.length })}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('claims.title')}</h1>
+    <p class="lead dim" style="max-width:66ch">{t('claims.lead')}</p>
+    <p class="dim" style="max-width:66ch;font-size:.95rem">{t('claims.lead2')}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:2rem">
+    <div class="filters" data-cf>
+      <button class="f" data-s="" aria-pressed="true">{t('cases.all')} <b>{claims.length}</b></button>
+      {CLAIM_ORDER.map(s => <button class="f" data-s={s} aria-pressed="false">{bi(STATUS_META[s].label, lang)} <b>{count(s)}</b></button>)}
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <div class="stack" style="--s:1px;background:var(--line);border:1px solid var(--line)">
+      {sorted.map(c => (
+        <article id={c.id} data-claim data-s={c.status} style="background:var(--void-2);padding:clamp(1.4rem,3.5vw,2.1rem)">
+          <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem">
+            <span class:list={['chip', STATUS_META[c.status].cls]}>{bi(STATUS_META[c.status].label, lang)}</span>
+            <span class:list={['tier', `tier-${c.originTier}`]} title={bi(TIER_LABEL[c.originTier], lang)}>{c.originTier}</span>
+            <span class="label" style="color:var(--fg-faint)">{c.origin[lang]}</span>
+          </div>
+          <p style="font-family:var(--mono);font-size:clamp(1rem,2vw,1.15rem);color:var(--fg);margin:0 0 1.1rem;line-height:1.5">{c.claim[lang]}</p>
+          <p style="margin:0 0 1.2rem;max-width:84ch;color:var(--fg-dim);font-size:.97rem">{c.verdict[lang]}</p>
+          <div class="grid grid--2" style="gap:1.4rem;background:none;border:0">
+            <div>
+              <p class="label label--amber" style="margin-bottom:.4rem">{t('claims.resolver')}</p>
+              <p class="dim" style="margin:0;font-size:.9rem">{c.resolver[lang]}</p>
+            </div>
+            {c.cases.length > 0 && (
+              <div>
+                <p class="label" style="margin-bottom:.4rem">{t('claims.cases')}</p>
+                <p style="margin:0;font-size:.9rem">
+                  {c.cases.map((id, i) => (<>
+                    {i > 0 && <span class="faint"> · </span>}
+                    <a href={path(lang, `/cases/${id}`)}>{titleOf(id)}</a>
+                  </>))}
+                </p>
+              </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <script is:inline>
+    (() => {
+      const items = [...document.querySelectorAll('[data-claim]')];
+      document.querySelectorAll('[data-cf] .f').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const v = btn.dataset.s || '';
+          document.querySelectorAll('[data-cf] .f').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+          items.forEach(i => { i.style.display = !v || i.dataset.s === v ? '' : 'none'; });
+        });
+      });
+    })();
+  </script>
+</Base>

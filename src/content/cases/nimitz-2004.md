@@ -1,86 +1,108 @@
 ---
 title: "USS Nimitz / Tic Tac"
-subtitle: "Najważniejszy współczesny przypadek UAP — i najlepszy przykład granicy między zeznaniem a pomiarem"
+subtitle: "The most important modern UAP case — and the clearest illustration of the line between testimony and measurement"
 date: 2004-11-14
-dateDisplay: "14 listopada 2004"
+dateDisplay: "14 November 2004"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Pacyfik, rejon ćwiczeń Carrier Strike Group 11, na zachód od Kalifornii"
-lat: 32.60
-lon: -117.90
+countryName: "United States"
+location: "Pacific, Carrier Strike Group 11 exercise area, west of California"
+lat: 32.6
+lon: -117.9
 domain: "military"
 tier: 1
 status: "unresolved"
-duration: "kilka minut kontaktu wzrokowego; ślady radarowe przez kilka dni"
-witnesses: "4 lotników w dwóch F/A-18F, operatorzy SPY-1 na USS Princeton, załoga E-2C"
-evidence: ["radar", "visual", "ir", "multi-witness", "intercept"]
-scores: { S: 5, R: 5, O: 4, P: 0, M: 5, T: 5, X: 4, D: 2 }
-summary: "Podczas ćwiczeń grupy lotniskowcowej operatorzy radaru SPY-1 na USS Princeton śledzili przez kilka dni nietypowe kontakty. 14 listopada skierowano do jednego z nich dwa F/A-18F. Czterech lotników zaobserwowało biały obiekt bez widocznych powierzchni nośnych nad obszarem zaburzonej wody. Kolejny lot zarejestrował materiał w podczerwieni znany jako FLIR1."
-official: "Departament Obrony USA potwierdził w 2020 r. autentyczność nagrania jako materiału Marynarki Wojennej i zaklasyfikował zdarzenie jako niezidentyfikowane. Potwierdzenie autentyczności nagrania nie jest identyfikacją obiektu."
+duration: "minutes of visual contact; radar traces across several days"
+witnesses: "4 aviators in two F/A-18Fs, SPY-1 operators aboard USS Princeton, an E-2C crew"
+evidence:
+- "radar"
+- "visual"
+- "ir"
+- "multi-witness"
+- "intercept"
+scores:
+  S: 5
+  R: 5
+  O: 4
+  P: 0
+  M: 5
+  T: 5
+  X: 4
+  D: 2
+summary: "During carrier strike group exercises, SPY-1 radar operators aboard USS Princeton tracked unusual contacts over several days. On 14 November two F/A-18Fs were vectored to one of them. Four aviators observed a white object with no visible lifting surfaces above an area of disturbed water. A subsequent sortie recorded the infrared footage known as FLIR1."
+official: "The US Department of Defense confirmed in 2020 that the footage is authentic Navy material and classified the event as unidentified. Confirming a video's authenticity is not identifying the object."
 alternatives:
-  - "Kombinacja niezależnych zdarzeń: nietypowe ślady radarowe (możliwe problemy z aktualizacją oprogramowania SPY-1 w tamtym okresie), niezależne zjawisko na powierzchni oceanu, obserwacja obiektu o błędnie ocenionej odległości."
-  - "Balon lub obiekt dryfujący przy błędnej ocenie odległości i rozmiaru — trudno godzi się z relacją o reakcji obiektu na manewr."
-  - "Statek powietrzny własny w programie niejawnym."
-  - "Nieznana technologia."
-claims: ["nimitz-60-miles", "nimitz-flir-is-fravor", "nimitz-transmedium", "nimitz-radar-jamming", "nimitz-80000ft-drop"]
+- "A combination of independent events: unusual radar traces (possibly related to SPY-1 software issues in that period), an independent surface phenomenon, and an object observed at badly misjudged range."
+- "A balloon or drifting object with misjudged range and size — hard to reconcile with the account of the object reacting to a manoeuvre."
+- "A domestic aircraft in a classified programme."
+- "Unknown technology."
+claims:
+- "nimitz-60-miles"
+- "nimitz-flir-is-fravor"
+- "nimitz-transmedium"
+- "nimitz-radar-jamming"
+- "nimitz-80000ft-drop"
 sources:
-  - tier: "T2"
-    label: "Oświadczenie Departamentu Obrony USA z 27 kwietnia 2020 o autentyczności trzech nagrań Marynarki Wojennej"
-  - tier: "T3"
-    label: "Zeznanie kmdr. Davida Fravora przed Kongresem USA (2023), pod przysięgą"
-  - tier: "T1"
-    label: "Nagranie FLIR1 (materiał Marynarki Wojennej USA)"
-  - tier: "T4"
-    label: "Relacje operatora SPY-1 Kevina Daya i oparte na nich analizy"
-    note: "Źródło twierdzeń o zejściu z 80 000 ft. Nie istnieje publicznie dostępny surowy zapis SPY-1."
+- "tier": "T2"
+  label: "US Department of Defense statement of 27 April 2020 on the authenticity of three Navy recordings"
+  ref: "dod-navy-videos-2020"
+- "tier": "T3"
+  label: "Sworn testimony of Cdr. David Fravor before the US Congress (2023)"
+  ref: "oversight-2023"
+- "tier": "T1"
+  label: "The FLIR1 recording (US Navy material)"
+  ref: "navy-uap-foia"
+- "tier": "T4"
+  label: "Accounts of SPY-1 operator Kevin Day and the analyses built on them"
+  note: "The source of the claims about a descent from 80,000 ft. No raw SPY-1 record exists publicly."
 ---
 
-## Struktura sprawy: pięć warstw, które trzeba rozdzielić
+## The structure of the case: five layers that must be kept apart
 
-Największy błąd w literaturze o Nimitz polega na traktowaniu tego jako jednej ciągłej ścieżki
-sensorycznej. To są **pięć osobnych warstw**, o różnej wartości dowodowej:
+The largest error in the Nimitz literature is treating this as one continuous sensor chain. These
+are **five separate layers**, of differing evidential value:
 
-1. **Ślady radarowe SPY-1 w dniach poprzedzających** — źródło: relacje operatora, nie surowy zapis.
-2. **Obserwacja wzrokowa Fravora i Dietrich** — czterech świadków, zeznania pod przysięgą.
-3. **Ponowne wykrycie radarowe po utracie kontaktu** — źródło: relacja przekazana pilotowi przez
-   kontrolera.
-4. **Nagranie FLIR1** — autentyczne, potwierdzone przez DoD, wykonane podczas **kolejnego lotu**.
-5. **Późniejsze rekonstrukcje i analizy** — warstwa wtórna.
+1. **SPY-1 radar traces in the preceding days** — source: operator accounts, not a raw recording.
+2. **The visual observation by Fravor and Dietrich** — four witnesses, sworn testimony.
+3. **Radar reacquisition after loss of contact** — source: an account relayed to the pilot by a
+   controller.
+4. **The FLIR1 recording** — authentic, confirmed by the DoD, made on **a subsequent sortie**.
+5. **Later reconstructions and analyses** — a secondary layer.
 
-Warstwy 2 i 4 dotyczą różnych lotów. Nie istnieje publicznie dostępny materiał, który dowodziłby,
-że obiekt widziany przez Fravora i obiekt na FLIR1 to ten sam obiekt.
+Layers 2 and 4 concern different flights. No publicly available material establishes that the object
+Fravor saw and the object on FLIR1 are the same object.
 
-## Co jest tu naprawdę mocne
+## What is genuinely strong here
 
-Czterech wyszkolonych lotników marynarki wojennej, w dwóch maszynach, w warunkach doskonałej
-widoczności, opisało zgodnie ten sam obiekt. Fravor zeznawał o tym pod przysięgą przed Kongresem.
-Do tego dochodzą niezależne zgłoszenia radarowe z okrętu i autentyczne nagranie w podczerwieni.
+Four trained naval aviators, in two aircraft, in excellent visibility, described the same object
+consistently. Fravor testified to it under oath before Congress. Add independent radar reporting from
+the ship and an authentic infrared recording.
 
-Żadne pojedyncze, banalne wyjaśnienie nie pokrywa całości tej struktury.
+No single banal explanation covers that whole structure.
 
-## Czego nie wolno przedstawiać jako pomiaru
+## What must not be presented as measurement
 
-**„60 mil w mniej niż minutę."** To wynik podzielenia odległości podanej pilotowi przez radio
-przez czas oszacowany z pamięci. Aby uznać to za pomiar prędkości, trzeba założyć, że oba
-wskazania radarowe dotyczyły tego samego obiektu, że nie było utraty i ponownego przechwycenia
-śladu oraz że oszacowanie czasu jest dokładne. Żadnego z tych założeń nie da się dziś sprawdzić.
+**"60 miles in under a minute."** This is a distance relayed to the pilot by radio, divided by a
+duration estimated from memory. To treat it as a speed measurement you must assume both radar
+indications referred to the same object, that there was no loss and reacquisition of track, and that
+the time estimate is accurate. None of those assumptions can be checked today.
 
-**„Zejście z 80 000 ft w niecałą sekundę."** Pochodzi z relacji operatora radaru, nie z zapisu.
+**"A descent from 80,000 ft in under a second."** This comes from a radar operator's account, not
+from a recording.
 
-**„Obiekt wszedł do oceanu."** Fravor sam zeznał, że **nie widzieli obiektu pod wodą** — widzieli
-zaburzenie powierzchni. Popularna wersja „transmedium" jest rozbudowaniem tego, czego świadek nie
-powiedział.
+**"The object entered the ocean."** Fravor himself testified that they **did not see the object
+underwater** — they saw a surface disturbance. The popular "transmedium" version elaborates on what
+the witness did not say.
 
-## Stanowisko AARO
+## AARO's position
 
-Kierownictwo AARO stwierdziło publicznie, że urząd **nie dysponuje dodatkowymi danymi**
-pozwalającymi przeprowadzić pełną analizę tego zdarzenia. To nie jest obalenie sprawy ani jej
-potwierdzenie — to stwierdzenie, że materiał źródłowy nie wystarcza do rozstrzygnięcia.
+AARO leadership stated publicly that the office **does not hold additional data** enabling a full
+analysis of this event. That is neither a debunking nor a confirmation — it is a statement that the
+source material is insufficient to resolve the case.
 
-## Co by to rozstrzygnęło
+## What would settle it
 
-Surowy track file SPY-1 z USS Princeton. Dane APG-73 z obu maszyn. Metadane ATFLIR z
-odległością. Pozycje INS/GPS samolotów. Zsynchronizowane timestampy. Pełny zapis łączności.
+The raw SPY-1 track file from USS Princeton. APG-73 data from both aircraft. ATFLIR metadata with
+range. INS/GPS aircraft positions. Synchronised timestamps. The full communications recording.
 
-Mając to, sprawa zamyka się w jedną albo w drugą stronę w ciągu tygodni. Nie mając tego, Nimitz
-pozostaje najlepiej poświadczonym i najgorzej zmierzonym zdarzeniem w nowoczesnej historii UAP.
+With those, the case closes one way or the other within weeks. Without them, Nimitz remains the
+best-attested and worst-measured event in modern UAP history.

@@ -1,0 +1,350 @@
+---
+import Base from '../../layouts/Base.astro';
+import { langParams, path, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+const en = lang === 'en';
+
+const L = en ? {
+  kicker: 'Sensor sanity toolkit',
+  h1: 'A camera does not measure speed',
+  lead: 'The single most common error in UAP discussion is reading a velocity off a video. A camera records the projection of a trajectory onto an observation plane, from a moving platform, at an unknown range. Change one assumption about range and the answer changes by an order of magnitude. Here you can do it yourself.',
+  caseTitle: 'Worked example: GOFAST, January 2015',
+  caseLead: 'One of the three US Navy recordings whose authenticity the Pentagon confirmed. It appears to show a small object racing just above the ocean. The values below are taken from the aircraft’s own head-up display, visible on the footage.',
+  assumeH: 'Assumed target altitude',
+  assumeHelp: 'This is the one number the video does not give you. Everything else is on the HUD. Drag it.',
+  obsAlt: 'Observer altitude',
+  angle: 'Sensor depression angle',
+  obsSpeed: 'Observer ground speed',
+  rate: 'Tracked angular rate',
+  outRange: 'Range to target',
+  outApparent: 'Apparent transverse speed',
+  outParallax: 'Own-motion (parallax) component',
+  outTarget: 'Implied target speed',
+  verdictTitle: 'What that means',
+  presetSurface: 'Assume: at the surface',
+  presetReal: 'Assume: at altitude (the resolved case)',
+  reset: 'Reset',
+  diagramLabel: 'Observation geometry',
+  seaLevel: 'Sea level',
+  observer: 'Observer',
+  target: 'Target',
+  assumptionsTitle: 'Assumptions of this model — read them',
+  bokehTitle: 'Aperture shape, not object shape',
+  bokehLead: 'A defocused point of light takes the shape of the lens aperture. A night-vision device with a triangular aperture turns every distant light into a triangle. This is why the USS Russell “pyramids” are pyramids.',
+  bokehPick: 'Aperture',
+  angularTitle: 'Angular size proves nothing about size',
+  angularLead: 'The same frame is consistent with a small object nearby and a large object far away. Photometry narrows the interval; it never closes it. Drag the distance.',
+  angDistance: 'Assumed distance',
+  angSize: 'Implied object diameter',
+  footer: 'This toolkit is deliberately simple and states its assumptions. It is a teaching model, not a forensic tool — it demonstrates the sensitivity of the result to one unknown, which is the entire point.',
+} : {
+  kicker: 'Kalkulator zdrowego rozsądku',
+  h1: 'Kamera nie mierzy prędkości',
+  lead: 'Najczęstszy błąd w dyskusji o UAP to odczytywanie prędkości z nagrania. Kamera rejestruje rzut trajektorii na płaszczyznę obserwacji, z ruchomej platformy, przy nieznanej odległości. Zmień jedno założenie o odległości, a wynik zmieni się o rząd wielkości. Tutaj możesz to zrobić sam.',
+  caseTitle: 'Przykład: GOFAST, styczeń 2015',
+  caseLead: 'Jedno z trzech nagrań Marynarki Wojennej USA, których autentyczność potwierdził Pentagon. Wygląda na małym obiekcie pędzącym tuż nad oceanem. Wartości poniżej pochodzą z wyświetlacza samolotu, widocznego na nagraniu.',
+  assumeH: 'Zakładana wysokość obiektu',
+  assumeHelp: 'To jedyna liczba, której nagranie nie podaje. Cała reszta jest na wyświetlaczu. Przeciągnij suwak.',
+  obsAlt: 'Wysokość obserwatora',
+  angle: 'Kąt zejścia linii obserwacji',
+  obsSpeed: 'Prędkość obserwatora nad ziemią',
+  rate: 'Zmierzona prędkość kątowa',
+  outRange: 'Odległość do obiektu',
+  outApparent: 'Pozorna prędkość poprzeczna',
+  outParallax: 'Składowa ruchu własnego (paralaksa)',
+  outTarget: 'Wynikowa prędkość obiektu',
+  verdictTitle: 'Co to znaczy',
+  presetSurface: 'Załóż: przy powierzchni',
+  presetReal: 'Załóż: na wysokości (sprawa rozwiązana)',
+  reset: 'Reset',
+  diagramLabel: 'Geometria obserwacji',
+  seaLevel: 'Poziom morza',
+  observer: 'Obserwator',
+  target: 'Obiekt',
+  assumptionsTitle: 'Założenia tego modelu — przeczytaj je',
+  bokehTitle: 'Kształt przysłony, nie kształt obiektu',
+  bokehLead: 'Rozogniskowany punkt świetlny przyjmuje kształt przysłony obiektywu. Noktowizor z trójkątną przysłoną zamienia każde odległe światło w trójkąt. Dlatego „piramidy” z USS Russell są piramidami.',
+  bokehPick: 'Przysłona',
+  angularTitle: 'Rozmiar kątowy nic nie mówi o rozmiarze',
+  angularLead: 'Ten sam kadr jest zgodny z małym obiektem blisko i dużym daleko. Fotometria zawęża przedział, nigdy go nie zamyka. Przeciągnij odległość.',
+  angDistance: 'Zakładana odległość',
+  angSize: 'Wynikowa średnica obiektu',
+  footer: 'Ten kalkulator jest celowo prosty i podaje swoje założenia. To model dydaktyczny, nie narzędzie śledcze — pokazuje czułość wyniku na jedną niewiadomą, i o to właśnie chodzi.',
+};
+
+const ASSUMPTIONS = en ? [
+  'The line of sight lies in a vertical plane; the observer’s velocity is treated as perpendicular to it. Real geometry has a crossing angle that reduces the parallax term.',
+  'A flat Earth over these distances and no atmospheric refraction — both negligible at this scale.',
+  'The angular rate is the rate of rotation of the line of sight, taken from tracking the object across the frame.',
+  'The result is the transverse component of the target’s velocity. Motion directly toward or away from the observer is invisible to this method.',
+] : [
+  'Linia obserwacji leży w płaszczyźnie pionowej, a prędkość obserwatora traktujemy jako do niej prostopadłą. Rzeczywista geometria ma kąt skrzyżowania, który zmniejsza człon paralaksy.',
+  'Płaska Ziemia na tych dystansach i brak refrakcji atmosferycznej — oba pomijalne w tej skali.',
+  'Prędkość kątowa to tempo obrotu linii obserwacji, zmierzone ze śledzenia obiektu w kadrze.',
+  'Wynik to poprzeczna składowa prędkości obiektu. Ruch wprost do obserwatora lub od niego jest dla tej metody niewidoczny.',
+];
+---
+<Base title={en ? 'Sensor sanity toolkit' : 'Kalkulator zdrowego rozsądku'}
+      description={L.lead} lang={lang} rest="/toolkit">
+
+  <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 1.5rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{L.kicker}</p>
+    <h1 style="font-size:clamp(2rem,5.4vw,3.6rem);max-width:16ch">{L.h1}</h1>
+    <p class="lead dim" style="max-width:66ch">{L.lead}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:1.5rem">
+    <div class="panel corners" style="padding:clamp(1.3rem,3vw,2rem)">
+      <p class="label label--phos" style="margin:0 0 .5rem">{L.caseTitle}</p>
+      <p class="dim" style="max-width:70ch;margin:0 0 1.8rem;font-size:.95rem">{L.caseLead}</p>
+
+      <div class="tk">
+        <div class="tk__controls">
+          <div class="tk__f tk__f--hero">
+            <label for="ht"><span>{L.assumeH}</span><output id="ht-out">13 000 ft</output></label>
+            <input id="ht" type="range" min="0" max="24000" step="250" value="13000" />
+            <p class="tk__help">{L.assumeHelp}</p>
+          </div>
+          <div class="tk__f">
+            <label for="ho"><span>{L.obsAlt}</span><output id="ho-out">25 000 ft</output></label>
+            <input id="ho" type="range" min="10000" max="35000" step="500" value="25000" />
+          </div>
+          <div class="tk__f">
+            <label for="th"><span>{L.angle}</span><output id="th-out">22°</output></label>
+            <input id="th" type="range" min="5" max="60" step="0.5" value="22" />
+          </div>
+          <div class="tk__f">
+            <label for="vo"><span>{L.obsSpeed}</span><output id="vo-out">369 kt</output></label>
+            <input id="vo" type="range" min="0" max="600" step="1" value="369" />
+          </div>
+          <div class="tk__f">
+            <label for="om"><span>{L.rate}</span><output id="om-out">1.14 °/s</output></label>
+            <input id="om" type="range" min="0.05" max="4" step="0.01" value="1.14" />
+          </div>
+          <div class="filters" style="margin-top:.4rem">
+            <button class="f" data-preset="surface">{L.presetSurface}</button>
+            <button class="f" data-preset="real">{L.presetReal}</button>
+            <button class="f" data-preset="reset">{L.reset}</button>
+          </div>
+        </div>
+
+        <div class="tk__vis">
+          <svg viewBox="0 0 440 260" class="tk__svg" role="img" aria-label={L.diagramLabel}>
+            <defs>
+              <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0E2A2E"/><stop offset="1" stop-color="#08181B"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="212" width="440" height="48" fill="url(#sea)"/>
+            <line x1="0" y1="212" x2="440" y2="212" stroke="var(--phos-dim)" stroke-width="1"/>
+            <text x="8" y="228" class="tk__lbl">{L.seaLevel}</text>
+            <g id="grid" stroke="rgba(77,227,160,.09)" stroke-width="1">
+              <line x1="0" y1="172" x2="440" y2="172"/><line x1="0" y1="132" x2="440" y2="132"/>
+              <line x1="0" y1="92" x2="440" y2="92"/><line x1="0" y1="52" x2="440" y2="52"/>
+            </g>
+            <line id="los" x1="60" y1="52" x2="360" y2="150" stroke="var(--amber)" stroke-width="1.4" stroke-dasharray="4 3"/>
+            <g id="obs" transform="translate(60,52)">
+              <path d="M-9 0 L9 0 M0 -4 L0 4 M6 -3 L11 0 L6 3 Z" stroke="var(--phos)" stroke-width="1.6" fill="var(--phos)"/>
+              <text x="-10" y="-10" class="tk__lbl">{L.observer}</text>
+            </g>
+            <g id="tgt" transform="translate(360,150)">
+              <circle r="5" fill="none" stroke="var(--phos-2)" stroke-width="1.4"/>
+              <circle r="1.8" fill="var(--phos-2)"/>
+              <text x="10" y="4" class="tk__lbl">{L.target}</text>
+            </g>
+            <line id="drop" x1="360" y1="150" x2="360" y2="212" stroke="var(--line-2)" stroke-width="1" stroke-dasharray="2 3"/>
+          </svg>
+
+          <div class="tk__out">
+            <div class="tk__row"><span>{L.outRange}</span><b id="o-range">—</b></div>
+            <div class="tk__row"><span>{L.outApparent}</span><b id="o-app">—</b></div>
+            <div class="tk__row"><span>{L.outParallax}</span><b id="o-par">—</b></div>
+            <div class="tk__row tk__row--big"><span>{L.outTarget}</span><b id="o-tgt">—</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tk__verdict">
+        <p class="label" style="margin:0 0 .5rem">{L.verdictTitle}</p>
+        <p id="verdict" style="margin:0;font-size:1.02rem;color:var(--fg)"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:3rem">
+    <details class="tk__ass">
+      <summary class="label">{L.assumptionsTitle}</summary>
+      <ul>{ASSUMPTIONS.map(a => <li>{a}</li>)}</ul>
+    </details>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="wrap section">
+    <div class="grid grid--2" style="gap:2.5rem;background:none;border:0">
+      <div>
+        <p class="label label--phos" style="margin-bottom:.7rem">02</p>
+        <h2 style="font-size:clamp(1.3rem,2.6vw,1.8rem);margin:0 0 .8rem">{L.bokehTitle}</h2>
+        <p class="dim" style="font-size:.95rem;max-width:52ch">{L.bokehLead}</p>
+        <div class="filters" style="margin-top:1.2rem">
+          <span class="label" style="margin-right:.4rem">{L.bokehPick}</span>
+          <button class="f" data-ap="3" aria-pressed="true">▲ 3</button>
+          <button class="f" data-ap="4" aria-pressed="false">◆ 4</button>
+          <button class="f" data-ap="6" aria-pressed="false">⬢ 6</button>
+          <button class="f" data-ap="0" aria-pressed="false">● ∞</button>
+        </div>
+      </div>
+      <div class="panel corners" style="padding:1.5rem;display:grid;place-items:center;min-height:230px">
+        <svg viewBox="0 0 260 180" style="width:100%">
+          <rect width="260" height="180" fill="#05090A"/>
+          <g id="bokeh"></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="wrap section" style="padding-bottom:5rem">
+    <div class="grid grid--2" style="gap:2.5rem;background:none;border:0">
+      <div>
+        <p class="label label--phos" style="margin-bottom:.7rem">03</p>
+        <h2 style="font-size:clamp(1.3rem,2.6vw,1.8rem);margin:0 0 .8rem">{L.angularTitle}</h2>
+        <p class="dim" style="font-size:.95rem;max-width:52ch">{L.angularLead}</p>
+        <div class="tk__f" style="margin-top:1.4rem;max-width:360px">
+          <label for="ad"><span>{L.angDistance}</span><output id="ad-out">1 000 m</output></label>
+          <input id="ad" type="range" min="3" max="2000" step="1" value="1000" />
+        </div>
+        <p class="bigscore" style="margin-top:1rem"><b id="ad-size">17.5</b><span>m</span></p>
+        <p class="label" style="margin:0">{L.angSize}</p>
+      </div>
+      <div class="panel corners" style="padding:1.5rem;display:grid;place-items:center;min-height:230px">
+        <svg viewBox="0 0 260 180" style="width:100%">
+          <rect width="260" height="180" fill="#05090A"/>
+          <ellipse cx="130" cy="90" rx="52" ry="15" fill="none" stroke="var(--phos)" stroke-width="1.6"/>
+          <ellipse cx="130" cy="90" rx="52" ry="15" fill="var(--phos)" opacity=".12"/>
+          <text x="130" y="140" text-anchor="middle" class="tk__lbl" style="font-size:9px">1.0° × 0.29°</text>
+        </svg>
+      </div>
+    </div>
+    <p class="dim" style="margin-top:2.5rem;max-width:70ch;font-size:.92rem">{L.footer}</p>
+    <a class="btn btn--ghost" href={path(lang, '/cases/gofast-2015')} style="margin-top:1.5rem">
+      {en ? 'Read the GOFAST case file' : 'Zobacz akta sprawy GOFAST'}
+    </a>
+  </section>
+
+  <script is:inline define:vars={{ lang, en }}>
+  (() => {
+    const $ = id => document.getElementById(id);
+    const FT = 0.3048, KT = 0.514444, NM = 1852;
+    const nf = new Intl.NumberFormat(lang === 'pl' ? 'pl-PL' : 'en-US');
+    const fx = (v, d) => new Intl.NumberFormat(lang === 'pl' ? 'pl-PL' : 'en-US',
+      { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+
+    const S = { ht: $('ht'), ho: $('ho'), th: $('th'), vo: $('vo'), om: $('om') };
+    const DEFAULTS = { ht: 13000, ho: 25000, th: 22, vo: 369, om: 1.14 };
+
+    function speedWords(ms) {
+      const kmh = ms * 3.6;
+      if (en) {
+        if (kmh < 40) return ['at walking-to-cycling pace', 'This is what a drifting balloon does.'];
+        if (kmh < 90) return ['at roughly wind speed', 'This is the published resolution of GOFAST: a slow object carried by the wind.'];
+        if (kmh < 300) return ['at light-aircraft speed', 'Unremarkable for anything with an engine.'];
+        if (kmh < 900) return ['at airliner speed', 'Fast, but entirely conventional.'];
+        if (kmh < 2000) return ['at fighter-jet speed', 'Achievable by existing military aircraft.'];
+        return ['at hypersonic speed', 'This is the figure quoted when the object is assumed to sit at the surface — and that assumption is exactly what the video cannot establish.'];
+      }
+      if (kmh < 40) return ['w tempie spaceru lub roweru', 'Tak zachowuje się dryfujący balon.'];
+      if (kmh < 90) return ['mniej więcej z prędkością wiatru', 'To jest opublikowane rozwiązanie GOFAST: powolny obiekt niesiony wiatrem.'];
+      if (kmh < 300) return ['z prędkością małego samolotu', 'Nic nadzwyczajnego dla czegokolwiek z silnikiem.'];
+      if (kmh < 900) return ['z prędkością samolotu pasażerskiego', 'Szybko, ale całkowicie konwencjonalnie.'];
+      if (kmh < 2000) return ['z prędkością myśliwca', 'Osiągalne dla istniejących maszyn wojskowych.'];
+      return ['z prędkością hipersoniczną', 'To jest liczba podawana, gdy założymy, że obiekt jest przy powierzchni — a tego właśnie nagranie nie potrafi ustalić.'];
+    }
+
+    function calc() {
+      const ht = +S.ht.value, ho = +S.ho.value, th = +S.th.value, vo = +S.vo.value, om = +S.om.value;
+      $('ht-out').textContent = nf.format(ht) + ' ft';
+      $('ho-out').textContent = nf.format(ho) + ' ft';
+      $('th-out').textContent = fx(th, 1) + '°';
+      $('vo-out').textContent = nf.format(vo) + ' kt';
+      $('om-out').textContent = fx(om, 2) + ' °/s';
+
+      const dh = Math.max(ho - ht, 0) * FT;
+      const rad = th * Math.PI / 180;
+      const R = dh > 0 ? dh / Math.sin(rad) : 0;
+      const vApp = (om * Math.PI / 180) * R;
+      const vPar = vo * KT * Math.cos(rad);
+      const vTgt = Math.abs(vApp - vPar);
+
+      $('o-range').textContent = R > 0 ? fx(R / NM, 2) + ' NM' : '—';
+      $('o-app').textContent = fx(vApp * 3.6, 0) + ' km/h';
+      $('o-par').textContent = fx(vPar * 3.6, 0) + ' km/h';
+      $('o-tgt').textContent = fx(vTgt * 3.6, 0) + ' km/h';
+
+      const [w, note] = speedWords(vTgt);
+      $('verdict').innerHTML = (en
+        ? `At an assumed altitude of <b>${nf.format(ht)} ft</b> the same footage implies an object moving <b>${w}</b>. ${note}`
+        : `Przy zakładanej wysokości <b>${nf.format(ht)} ft</b> to samo nagranie oznacza obiekt poruszający się <b>${w}</b>. ${note}`);
+
+      // diagram
+      const oy = 52, sea = 212, span = sea - oy;
+      const ty = oy + span * Math.min(Math.max((ho - ht) / ho, 0), 1);
+      const horiz = (ty - oy) / Math.tan(rad);
+      const tx = Math.min(60 + horiz * 0.55, 424);
+      $('los').setAttribute('x2', tx); $('los').setAttribute('y2', ty);
+      $('tgt').setAttribute('transform', `translate(${tx},${ty})`);
+      $('drop').setAttribute('x1', tx); $('drop').setAttribute('x2', tx); $('drop').setAttribute('y1', ty);
+    }
+
+    Object.values(S).forEach(el => el.addEventListener('input', calc));
+    document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => {
+      const p = b.dataset.preset;
+      if (p === 'surface') S.ht.value = 0;
+      else if (p === 'real') S.ht.value = 13000;
+      else Object.entries(DEFAULTS).forEach(([k, v]) => { S[k].value = v; });
+      calc();
+    }));
+    calc();
+
+    // ——— bokeh
+    const bk = $('bokeh');
+    const lights = [[70,60,1],[150,45,.7],[196,96,1],[104,120,.55],[46,132,.85],[172,140,.6]];
+    function poly(n, cx, cy, r) {
+      if (n === 0) return null;
+      const pts = [];
+      for (let i = 0; i < n; i++) {
+        const a = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+        pts.push(`${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`);
+      }
+      return pts.join(' ');
+    }
+    function drawBokeh(n) {
+      bk.innerHTML = lights.map(([x, y, s]) => {
+        const r = 13 * s;
+        const inner = n === 0
+          ? `<circle cx="${x}" cy="${y}" r="${r}" fill="var(--phos)" opacity=".22"/><circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="var(--phos-2)" stroke-width="1" opacity=".8"/>`
+          : `<polygon points="${poly(n, x, y, r)}" fill="var(--phos)" opacity=".22"/><polygon points="${poly(n, x, y, r)}" fill="none" stroke="var(--phos-2)" stroke-width="1" opacity=".85"/>`;
+        return `<g>${inner}<circle cx="${x}" cy="${y}" r="1.1" fill="#fff" opacity=".9"/></g>`;
+      }).join('');
+    }
+    drawBokeh(3);
+    document.querySelectorAll('[data-ap]').forEach(b => b.addEventListener('click', () => {
+      document.querySelectorAll('[data-ap]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      drawBokeh(+b.dataset.ap);
+    }));
+
+    // ——— angular size
+    const ad = $('ad');
+    function ang() {
+      const d = +ad.value;
+      $('ad-out').textContent = nf.format(d) + ' m';
+      $('ad-size').textContent = fx(2 * d * Math.tan(0.5 * Math.PI / 180), d < 30 ? 2 : 1);
+    }
+    ad.addEventListener('input', ang); ang();
+  })();
+  </script>
+</Base>

@@ -1,45 +1,60 @@
 ---
-title: "Aktywna sprawa u wybrzeży Wirginii"
-subtitle: "Około stu obiektów powietrznych i dwa systemy nawodne — sprawa nadal otwarta"
+title: "The Active Virginia Coast Case"
+subtitle: "Around a hundred aerial objects and two surface systems — still open"
 date: 2024-12-01
 dateDisplay: "2024–2025"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Wody i przestrzeń powietrzna u wybrzeży Wirginii"
+countryName: "United States"
+location: "Waters and airspace off the Virginia coast"
 lat: 36.85
-lon: -75.60
+lon: -75.6
 domain: "military"
 tier: 2
 status: "unresolved"
-duration: "seria zdarzeń"
-witnesses: "Personel Marynarki Wojennej USA"
-evidence: ["radar", "visual", "ir", "multi-witness"]
-scores: { S: 5, R: 4, O: 3, P: 0, M: 4, T: 4, X: 3, D: 4 }
-summary: "Marynarka Wojenna zgłosiła ok. 100 obiektów powietrznych oraz dwa prawdopodobnie bezzałogowe systemy nawodne w rejonie u wybrzeży Wirginii. Sprawa była wskazywana przez AARO jako pozostająca w aktywnej analizie."
-official: "AARO prowadziło analizę sprawy w momencie publikacji raportu; brak rozstrzygnięcia."
+duration: "a series of events"
+witnesses: "US Navy personnel"
+evidence:
+- "radar"
+- "visual"
+- "ir"
+- "multi-witness"
+scores:
+  S: 5
+  R: 4
+  O: 3
+  P: 0
+  M: 4
+  T: 4
+  X: 3
+  D: 4
+summary: "The US Navy reported approximately 100 aerial objects and two probably unmanned surface systems in an area off the Virginia coast. AARO listed the case as remaining under active analysis."
+official: "AARO was analysing the case at the time of the report; no resolution."
 alternatives:
-  - "Skoordynowana operacja rozpoznawcza z użyciem systemów bezzałogowych powietrznych i nawodnych."
-  - "Aktywność komercyjna lub badawcza błędnie zaklasyfikowana."
-claims: ["virginia-2024-uas"]
+- "A coordinated reconnaissance operation using unmanned aerial and surface systems."
+- "Commercial or research activity misclassified."
+claims:
+- "virginia-2024-uas"
 sources:
-  - tier: "T1"
-    label: "Raport roczny AARO wskazujący sprawę jako aktywną"
-  - tier: "T1"
-    label: "Zgłoszenia operacyjne Marynarki Wojennej USA"
+- "tier": "T1"
+  label: "AARO annual report listing the case as active"
+  ref: "aaro-fy24"
+- "tier": "T1"
+  label: "US Navy operational reports"
+  ref: "aaro"
 ---
 
-## Dlaczego to ciekawsze niż większość klasyki
+## Why this is more interesting than most of the classics
 
-Ta sprawa ma cechy, których nie ma żadna sprawa z lat 50.: **wiele obiektów jednocześnie,
-współczesne sensory, aktywne dochodzenie instytucjonalne i istniejące, cyfrowe dane**.
+This case has properties no 1950s case has: **multiple objects simultaneously, contemporary sensors,
+an active institutional investigation, and existing digital data.**
 
-Jest też ilustracją najważniejszej zmiany, jaka zaszła w dziedzinie po 2020 r.: granica między
-„UAP" a „nieznanym dronem" przestała być ostra. Znaczna część współczesnych zgłoszeń dotyczy
-systemów bezzałogowych o nieustalonym operatorze — co jest problemem bezpieczeństwa państwa
-niezależnie od tego, kto nimi steruje.
+It also illustrates the most important change in the field since 2020: the boundary between "UAP" and
+"unknown drone" has ceased to be sharp. A substantial share of contemporary reports concerns unmanned
+systems with an undetermined operator — which is a national security problem regardless of who is
+flying them.
 
-## Element, który zasługuje na uwagę osobno
+## An element deserving separate attention
 
-Systemy **nawodne**. Do 2024 r. praktycznie cała dyskusja o UAP dotyczyła obiektów powietrznych.
-Pojawienie się w oficjalnym raportowaniu prawdopodobnie bezzałogowych jednostek nawodnych otwiera
-kategorię, dla której nie ma jeszcze ani procedur, ani korpusu historycznego.
+**Surface systems.** Until 2024 practically the entire UAP discussion concerned aerial objects. The
+appearance of probably unmanned surface vessels in official reporting opens a category for which
+neither procedures nor a historical corpus yet exist.

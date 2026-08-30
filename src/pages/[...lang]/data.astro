@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCases } from '../../lib/cases';
+import { claims } from '../../data/claims';
+import { SOURCE_COUNT } from '../../data/sources';
+import { langParams, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+const en = lang === 'en';
+const all = await getCases(lang);
+
+const files = [
+  { p: '/api/cases.json', d: en
+      ? `${all.length} cases with the full structure: metadata, eight-axis scores, alternative hypotheses, tiered sources.`
+      : `${all.length} spraw z pełną strukturą: metadane, oceny na ośmiu osiach, hipotezy alternatywne, źródła z klasami.` },
+  { p: '/api/claims.json', d: en
+      ? `${claims.length} claims: origin, source tier, verification status, resolution condition — in both languages.`
+      : `${claims.length} twierdzeń: pochodzenie, klasa źródła, status weryfikacji, warunek rozstrzygnięcia — w obu językach.` },
+  { p: '/api/sources.json', d: en
+      ? `${SOURCE_COUNT} verified links to state archives and primary documents.`
+      : `${SOURCE_COUNT} zweryfikowanych odnośników do archiwów państwowych i dokumentów pierwotnych.` },
+  { p: '/api/cases.csv', d: en
+      ? 'The flattened corpus for spreadsheets and statistical analysis.'
+      : 'Spłaszczony korpus do arkusza kalkulacyjnego i analizy statystycznej.' },
+];
+---
+<Base title={en ? 'Open data' : 'Dane otwarte'}
+      description={en ? 'The UAP case database in machine-readable formats — JSON and CSV under CC BY 4.0.' : 'Baza przypadków UAP w formatach maszynowych — JSON i CSV na licencji CC BY 4.0.'}
+      lang={lang} rest="/data">
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">CC BY 4.0</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{en ? 'Open data' : 'Dane otwarte'}</h1>
+    <p class="lead dim">
+      {en
+        ? 'The entire corpus in machine-readable formats. No registration, no key, no rate limit. The only condition is attribution.'
+        : 'Cały korpus w formatach maszynowych. Bez rejestracji, bez klucza, bez limitu. Jedynym warunkiem jest wskazanie źródła.'}
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:3rem">
+    <div class="panel corners" style="padding:0">
+      {files.map((f, i) => (
+        <div style={`padding:1.4rem clamp(1.1rem,3vw,1.7rem);${i ? 'border-top:1px solid var(--line)' : ''}`}>
+          <p class="mono" style="margin:0 0 .3rem;color:var(--fg)">{f.p}</p>
+          <p class="dim" style="margin:0 0 .8rem;font-size:.9rem">{f.d}</p>
+          <a class="btn btn--ghost" href={f.p}>{en ? 'Download' : 'Pobierz'}</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:5rem">
+    <h2>{en ? 'How to cite' : 'Jak cytować'}</h2>
+    <p><code>disclosure.zone — UAP case database, CC BY 4.0, accessed: [date]</code></p>
+    <h2>{en ? 'Why the data is open' : 'Dlaczego dane są otwarte'}</h2>
+    <p>
+      {en
+        ? 'A database that cannot be checked by machine is just another opinion. Open data lets anyone recompute our scores, find an error in them and show it. That is the only way a project like this can earn credibility.'
+        : 'Baza, której nie da się sprawdzić maszynowo, jest tylko kolejną opinią. Otwarte dane pozwalają każdemu przeliczyć nasze oceny, znaleźć w nich błąd i go wykazać. To jedyny sposób, w jaki taki projekt może zdobyć wiarygodność.'}
+    </p>
+  </section>
+</Base>

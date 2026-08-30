@@ -1,40 +1,55 @@
 ---
 title: "Noite Oficial dos OVNIs"
-subtitle: "Brazylia podrywa myśliwce do wielu celów jednej nocy i przyznaje to publicznie"
+subtitle: "Brazil scrambles fighters against multiple targets in one night — and says so publicly"
 date: 1986-05-19
-dateDisplay: "19 maja 1986"
+dateDisplay: "19 May 1986"
 country: "BR"
-countryName: "Brazylia"
-location: "São Paulo, Rio de Janeiro, dolina Paraíba"
-lat: -23.20
-lon: -45.90
+countryName: "Brazil"
+location: "São Paulo, Rio de Janeiro, the Paraíba valley"
+lat: -23.2
+lon: -45.9
 domain: "military"
 tier: 2
 status: "unresolved"
-duration: "ok. 3 godzin"
-witnesses: "Kontrolerzy CINDACTA, załogi Mirage III i F-5E, personel lotnisk"
-evidence: ["radar", "visual", "intercept", "multi-witness"]
-scores: { S: 5, R: 5, O: 1, P: 0, M: 5, T: 4, X: 3, D: 3 }
-summary: "Radary brazylijskiej obrony powietrznej wykryły wiele niezidentyfikowanych celów jednocześnie. Poderwano myśliwce Mirage III i F-5E; część załóg raportowała kontakt radarowy i wzrokowy. Minister lotnictwa potwierdził zdarzenie na konferencji prasowej."
-official: "Brazylijskie siły powietrzne publicznie potwierdziły wykrycia i przechwycenia; nie ustalono charakteru celów."
+duration: "about 3 hours"
+witnesses: "CINDACTA controllers, Mirage III and F-5E crews, airport personnel"
+evidence:
+- "radar"
+- "visual"
+- "intercept"
+- "multi-witness"
+scores:
+  S: 5
+  R: 5
+  O: 1
+  P: 0
+  M: 5
+  T: 4
+  X: 3
+  D: 3
+summary: "Brazilian air defence radars detected multiple unidentified targets simultaneously. Mirage III and F-5E fighters were scrambled; some crews reported radar and visual contact. The Air Minister confirmed the event at a press conference."
+official: "The Brazilian Air Force publicly confirmed the detections and intercepts; the nature of the targets was never established."
 alternatives:
-  - "Balony meteorologiczne i eksperymentalne w rejonie."
-  - "Anomalna propagacja radarowa w nietypowych warunkach atmosferycznych."
-  - "Cele rzeczywiste o nieustalonej naturze."
-claims: ["brazil-1986-multiple-intercepts"]
+- "Weather and experimental balloons in the region."
+- "Anomalous radar propagation under unusual atmospheric conditions."
+- "Genuine targets of undetermined nature."
+claims:
+- "brazil-1986-multiple-intercepts"
 sources:
-  - tier: "T2"
-    label: "Konferencja prasowa ministra lotnictwa Brazylii, maj 1986"
-    note: "Rzadki przypadek publicznego potwierdzenia przez ministra w trybie natychmiastowym."
-  - tier: "T1"
-    label: "Dokumentacja CINDACTA i raporty załóg, odtajnione przez FAB"
+- "tier": "T2"
+  label: "Press conference by Brazil's Air Minister, May 1986"
+  note: "A rare instance of immediate public confirmation at ministerial level."
+  ref: "br-ufo-night"
+- "tier": "T1"
+  label: "CINDACTA documentation and crew reports, declassified by the FAB"
+  ref: "br-an-ovni"
 ---
 
-## Dlaczego to jedno z najmocniejszych zdarzeń radarowych na świecie
+## Why this is one of the strongest radar events in the world
 
-Trzy elementy jednocześnie: **wiele niezależnych stanowisk radarowych**, **wiele poderwanych
-maszyn różnych typów** i **publiczne potwierdzenie na szczeblu ministerialnym w ciągu dni**.
+Three things at once: **multiple independent radar stations**, **multiple scrambled aircraft of
+different types**, and **public confirmation at ministerial level within days.**
 
-To ostatnie jest w skali światowej niemal bezprecedensowe. W większości państw potwierdzenie
-przychodzi po dekadach albo wcale. Brazylia potwierdziła od razu — co paradoksalnie sprawiło, że
-sprawa jest znacznie mniej znana niż Rendlesham, o którym rząd milczał.
+That last point is close to unprecedented internationally. In most states confirmation arrives after
+decades, or never. Brazil confirmed immediately — which paradoxically left the case far less famous
+than Rendlesham, about which its government said nothing at all.

@@ -1,56 +1,70 @@
 ---
 title: "Socorro"
-subtitle: "Policjant, lądujący obiekt i ślady w gruncie — najlepiej udokumentowane bliskie spotkanie Blue Book"
+subtitle: "A police officer, a landed object and ground traces — the best-documented close encounter in Blue Book"
 date: 1964-04-24
-dateDisplay: "24 kwietnia 1964"
+dateDisplay: "24 April 1964"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Wąwóz na południe od Socorro, Nowy Meksyk"
+countryName: "United States"
+location: "An arroyo south of Socorro, New Mexico"
 lat: 34.05
-lon: -106.90
+lon: -106.9
 domain: "civil"
 tier: 1
 status: "unresolved"
-duration: "ok. 2 minut"
-witnesses: "1 funkcjonariusz policji (obserwacja bezpośrednia), świadkowie śladów w kilka godzin później"
-evidence: ["visual", "trace", "photo"]
-scores: { S: 5, R: 0, O: 2, P: 4, M: 2, T: 5, X: 4, D: 4 }
-summary: "Sierżant policji Lonnie Zamora, ścigając pojazd, zauważył biały owalny obiekt na ziemi oraz dwie niewielkie postacie obok niego. Obiekt wystartował z rykiem i płomieniem. W gruncie pozostały wgniecenia, wypalenia i śladowa roślinność w stanie zwęglenia."
-official: "Blue Book pozostawił sprawę jako niezidentyfikowaną — jest to najbardziej znany przypadek „unidentified\" w całym programie."
+duration: "about 2 minutes"
+witnesses: "1 police officer (direct observation); witnesses to the traces within hours"
+evidence:
+- "visual"
+- "trace"
+- "photo"
+scores:
+  S: 5
+  R: 0
+  O: 2
+  P: 4
+  M: 2
+  T: 5
+  X: 4
+  D: 4
+summary: "Police sergeant Lonnie Zamora, pursuing a speeding car, saw a white ovoid object on the ground and two small figures beside it. The object departed with a roar and a flame. The ground was left with indentations, burns and scorched vegetation."
+official: "Blue Book left the case unidentified — it is the best-known “unidentified” in the entire programme."
 alternatives:
-  - "Mistyfikacja studencka z użyciem balonu na gorące powietrze — hipoteza podnoszona później, bez potwierdzenia materialnego."
-  - "Test tajnego pojazdu (np. lądownik księżycowy w fazie prób) — rejon Nowego Meksyku był obszarem intensywnych testów; brak dokumentacji odpowiadającego lotu tego dnia."
-  - "Piorun kulisty — nie tłumaczy śladów w gruncie ani opisu konstrukcji."
-claims: ["socorro-landing-traces", "socorro-hoax"]
+- "A student hoax using a hot-air balloon — raised later, without material confirmation."
+- "A test of a classified vehicle, such as a lunar lander prototype — New Mexico was an intensive test region; no matching flight is documented for that day."
+- "Ball lightning — does not account for the ground traces or the described structure."
+claims:
+- "socorro-landing-traces"
+- "socorro-hoax"
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book, sprawa Socorro (dokumentacja śladów, szkice, fotografie)"
-    url: "https://www.archives.gov/research/military/air-force/ufos"
-  - tier: "T1"
-    label: "Raport policji stanowej Nowego Meksyku i FBI z 1964 r."
-  - tier: "T3"
-    label: "Zeznania Lonnie Zamory złożone w ciągu godzin od zdarzenia"
+- "tier": "T1"
+  label: "Project Blue Book files, Socorro case (trace documentation, sketches, photographs)"
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "New Mexico State Police and FBI reports, 1964"
+  ref: "condon"
+- "tier": "T3"
+  label: "Lonnie Zamora's statements given within hours of the event"
 ---
 
-## Dlaczego to najlepszy klasyczny przypadek bliskiego spotkania
+## Why this is the best classic close encounter
 
-Trzy rzeczy stawiają Socorro ponad setkami podobnych relacji:
+Three things put Socorro above hundreds of similar accounts:
 
-1. **Świadek zawodowy, relacja natychmiastowa.** Zamora był funkcjonariuszem na służbie i zgłosił
-   zdarzenie przez radio w trakcie jego trwania. Nie ma tu trzydziestoletniej luki pamięciowej.
-2. **Ślad fizyczny.** Wgniecenia w gruncie, wypalenia, uszkodzona roślinność. Miejsce zostało
-   zabezpieczone i sfotografowane w ciągu godzin.
-3. **Rzetelne dochodzenie.** Blue Book, policja stanowa i FBI pracowały nad sprawą równolegle,
-   a mimo to nie znaleziono wyjaśnienia.
+1. **A professional witness reporting immediately.** Zamora was an officer on duty and reported the
+   event by radio while it was in progress. There is no thirty-year memory gap here.
+2. **A physical trace.** Indentations in the ground, burns, damaged vegetation. The site was secured
+   and photographed within hours.
+3. **A serious investigation.** Blue Book, the state police and the FBI worked the case in parallel,
+   and no explanation was found.
 
-## Gdzie jest słabość
+## Where the weakness lies
 
-Jeden obserwator zdarzenia. Brak radaru. Brak nagrania. Ślady w gruncie dowodzą, że **coś
-fizycznego wywarło nacisk i ciepło na tym miejscu** — nie dowodzą, czym to było.
+One observer of the event itself. No radar. No footage. The ground traces prove that **something
+physical exerted pressure and heat at that spot** — they do not prove what it was.
 
-## Uczciwe postawienie hipotezy mistyfikacji
+## Stating the hoax hypothesis fairly
 
-Hipoteza o studenckim żarcie krąży od dekad i zasługuje na potraktowanie serio. Jej problem
-polega na tym, że nigdy nie przedstawiono materialnego potwierdzenia: ani sprzętu, ani
-wiarygodnego przyznania się, ani rekonstrukcji, która odtworzyłaby ślady i dźwięk. Pozostaje
-możliwa, ale nieudowodniona — dokładnie tak samo jak każda inna hipoteza w tej sprawie.
+The student-prank hypothesis has circulated for decades and deserves serious treatment. Its problem
+is that no material confirmation was ever produced: no apparatus, no credible admission, no
+reconstruction reproducing the traces and the sound. It remains possible but unproven — exactly like
+every other hypothesis in this case.

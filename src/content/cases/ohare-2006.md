@@ -1,42 +1,53 @@
 ---
 title: "O'Hare"
-subtitle: "Personel lotniska obserwuje dysk nad terminalem C — bez radaru i bez dochodzenia"
+subtitle: "Airport staff watch a disc over Terminal C — with no radar check and no investigation"
 date: 2006-11-07
-dateDisplay: "7 listopada 2006"
+dateDisplay: "7 November 2006"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Port lotniczy Chicago O'Hare, brama C17"
+countryName: "United States"
+location: "Chicago O'Hare International Airport, Gate C17"
 lat: 41.98
-lon: -87.90
+lon: -87.9
 domain: "civil"
 tier: 3
 status: "insufficient"
-duration: "ok. 5 minut"
-witnesses: "Kilkunastu pracowników United Airlines: mechanicy, personel naziemny, pilot"
-evidence: ["visual", "multi-witness"]
-scores: { S: 4, R: 0, O: 0, P: 0, M: 2, T: 3, X: 2, D: 3 }
-summary: "Kilkunastu pracowników lotniska zgłosiło szary, dyskoidalny obiekt zawieszony nad bramą C17, który następnie miał gwałtownie odlecieć w górę, pozostawiając otwór w warstwie chmur."
-official: "FAA nie przeprowadziła formalnego dochodzenia, uznając zdarzenie za zjawisko pogodowe (hole-punch cloud)."
+duration: "about 5 minutes"
+witnesses: "A dozen United Airlines employees: mechanics, ground staff, a pilot"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 4
+  R: 0
+  O: 0
+  P: 0
+  M: 2
+  T: 3
+  X: 2
+  D: 3
+summary: "A dozen airport employees reported a grey disc-shaped object hovering over Gate C17, which then departed vertically at speed, said to leave a hole in the cloud layer."
+official: "The FAA conducted no formal investigation, treating the event as a weather phenomenon (a hole-punch cloud)."
 alternatives:
-  - "Zjawisko dziury w chmurze (fallstreak hole) wywołane przez przelatujący samolot — tłumaczy otwór, gorzej tłumaczy obiekt."
-  - "Odbicie świateł lotniska w niskiej podstawie chmur."
-  - "Rzeczywisty obiekt."
-claims: ["ohare-cloud-hole"]
+- "A fallstreak hole produced by a passing aircraft — explains the hole, explains the object less well."
+- "Reflections of airport lighting in a low cloud base."
+- "A genuine object."
+claims:
+- "ohare-cloud-hole"
 sources:
-  - tier: "T1"
-    label: "Zgłoszenia pracowników United Airlines i korespondencja FAA ujawniona w trybie FOIA"
-  - tier: "T4"
-    label: "Relacje świadków zebrane przez prasę"
+- "tier": "T1"
+  label: "United Airlines employee reports and FAA correspondence released under FOIA"
+- "tier": "T4"
+  label: "Witness accounts collected by the press"
 ---
 
-## Dlaczego to przypadek o instytucjach, nie o obiekcie
+## Why this is a case about institutions, not about an object
 
-Nad jednym z najbardziej monitorowanych lotnisk świata kilkunastu zawodowych obserwatorów lotniczych
-zgłasza obiekt — i **nikt nie sprawdza zapisu radarowego**.
+Over one of the most closely monitored airports in the world, a dozen professional aviation observers
+report an object — and **nobody checks the radar record.**
 
-Sprawa jest w bazie jako dokumentacja luki proceduralnej. W 2006 r. w USA nie istniała żadna
-ścieżka, którą zgłoszenie personelu lotniczego mogłoby trafić do analizy. Dopiero po 2020 r.
-powstał mechanizm, który by to obsłużył.
+The case is in the database as documentation of a procedural gap. In 2006 the United States had no
+pathway by which a report from aviation personnel could reach analysis. The mechanism that would
+handle it was created only after 2020.
 
-Wartość dowodowa samego zdarzenia pozostaje niska: brak radaru, brak zdjęcia, brak dochodzenia.
-Nie dlatego, że nic się nie stało — tylko dlatego, że nikt niczego nie zabezpieczył.
+The evidential value of the event itself stays low: no radar, no photograph, no investigation. Not
+because nothing happened — but because nobody preserved anything.

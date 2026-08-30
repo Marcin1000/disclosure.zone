@@ -1,49 +1,61 @@
 ---
 title: "Levelland"
-subtitle: "Piętnaście niezależnych zgłoszeń zaniku zasilania pojazdów w ciągu jednej nocy"
+subtitle: "Fifteen independent reports of vehicle power failure in a single night"
 date: 1957-11-02
-dateDisplay: "2/3 listopada 1957"
+dateDisplay: "2/3 November 1957"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Levelland i okolice, Teksas"
+countryName: "United States"
+location: "Levelland and surrounding area, Texas"
 lat: 33.59
 lon: -102.36
 domain: "civil"
 tier: 2
 status: "unresolved"
-duration: "ok. 3 godzin, seria zdarzeń"
-witnesses: "Kilkunastu niezależnych kierowców, funkcjonariusz szeryfa"
-evidence: ["visual", "multi-witness"]
-scores: { S: 4, R: 0, O: 0, P: 1, M: 3, T: 4, X: 4, D: 2 }
-summary: "W ciągu jednej nocy kilkunastu niezależnych kierowców zgłosiło duży świecący obiekt na drodze, przy którym gaśnie silnik i światła pojazdu. Po oddaleniu się obiektu pojazdy uruchamiały się normalnie."
-official: "Blue Book zamknął sprawę jako burzę elektryczną / zjawisko typu „ball lightning\", opierając się na wywiadach z niewielką częścią świadków."
+duration: "about 3 hours, a series of events"
+witnesses: "More than a dozen independent drivers, a sheriff's deputy"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 4
+  R: 0
+  O: 0
+  P: 1
+  M: 3
+  T: 4
+  X: 4
+  D: 2
+summary: "Within a single night more than a dozen independent drivers reported a large glowing object on the road, in whose presence their engines and lights failed. Once the object moved away, the vehicles restarted normally."
+official: "Blue Book closed the case as an electrical storm or ball lightning, based on interviews with a small fraction of the witnesses."
 alternatives:
-  - "Piorun kulisty lub zjawisko koronowe przy nietypowych warunkach elektrycznych — nie tłumaczy dobrze rozmiarów opisywanego obiektu."
-  - "Efekt kaskadowy zgłoszeń po pierwszej relacji w lokalnym radiu."
-  - "Nieznane zjawisko elektromagnetyczne o zasięgu lokalnym."
-claims: ["uap-em-vehicle-interference"]
+- "Ball lightning or a corona phenomenon under unusual electrical conditions — a poor fit for the described size of the object."
+- "A cascade effect of reports following the first account on local radio."
+- "An unknown electromagnetic phenomenon of local extent."
+claims:
+- "uap-em-vehicle-interference"
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book, sprawa Levelland"
-    note: "Dochodzenie objęło tylko część zgłaszających — to zarzut podnoszony wobec Blue Book najczęściej."
-  - tier: "T1"
-    label: "Raporty biura szeryfa hrabstwa Hockley"
+- "tier": "T1"
+  label: "Project Blue Book files, Levelland case"
+  note: "The investigation covered only a fraction of the reporters — the most common criticism levelled at Blue Book."
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "Hockley County sheriff's office reports"
 ---
 
-## Najciekawszy element: powtarzalny efekt fizyczny
+## The interesting part: a repeatable physical effect
 
-Levelland jest w bazie, ponieważ jest jednym z **niewielu przypadków, gdzie raportowany jest
-mierzalny, powtarzalny efekt na materii** — a nie tylko obserwacja świetlna.
+Levelland is in the database because it is one of the **few cases reporting a measurable, repeatable
+effect on matter** rather than a luminous observation alone.
 
-Kilkunastu ludzi, którzy się nie znali, w różnych miejscach hrabstwa, w ciągu kilku godzin,
-niezależnie opisało tę samą sekwencję: obiekt → zanik zasilania → oddalenie się obiektu →
-powrót zasilania.
+More than a dozen people who did not know one another, in different parts of the county, within a
+few hours, independently described the same sequence: object → loss of power → object departs →
+power returns.
 
-## Dlaczego mimo to nie ma wyższej oceny
+## Why the score is nonetheless not higher
 
-Nie przebadano ani jednego pojazdu. Nie ma pomiarów. Nie ma zapisu. Blue Book przepytał ułamek
-zgłaszających i zamknął sprawę w kilka dni.
+Not one vehicle was ever examined. There are no measurements. There is no record. Blue Book
+interviewed a fraction of the reporters and closed the case within days.
 
-To jest przypadek, w którym **niedostatek dochodzenia, a nie niedostatek zjawiska**, jest
-powodem, dla którego dziś nie mamy nic. Gdyby ktokolwiek w 1957 r. zbadał układy elektryczne
-tych samochodów, wiedzielibyśmy dziś znacznie więcej — w jedną albo w drugą stronę.
+This is a case where **the shortage of investigation, not the shortage of phenomenon**, is why we
+have nothing today. Had anyone in 1957 examined the electrical systems of those cars, we would know
+far more — one way or the other.

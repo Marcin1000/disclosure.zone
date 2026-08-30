@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import CaseCard from '../../components/CaseCard.astro';
+import { getCases } from '../../lib/cases';
+import { STATUS, DOMAIN, bi } from '../../lib/scoring';
+import { langParams, path, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+
+const all = await getCases(lang);
+const n = (fn: (d: any) => boolean) => all.filter(c => fn(c.data)).length;
+const countries = [...new Set(all.map(c => c.data.country))]
+  .map(k => ({ k, name: all.find(c => c.data.country === k)!.data.countryName, c: n(d => d.country === k) }))
+  .sort((a, b) => b.c - a.c || a.name.localeCompare(b.name, lang));
+---
+<Base title={t('cases.title')} description={t('cases.lead')} lang={lang} rest="/cases">
+  <section class="wrap" style="padding-block:clamp(3rem,7vw,5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{t('cases.count', { n: all.length })}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('cases.title')}</h1>
+    <p class="lead dim" style="max-width:64ch">{t('cases.lead')}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:1.5rem">
+    <div class="stack" style="--s:.9rem">
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('cases.status')}</p>
+        <div class="filters" data-group="status">
+          <button class="f" data-v="" aria-pressed="true">{t('cases.all')} <b>{all.length}</b></button>
+          {Object.entries(STATUS).map(([k, v]) => (
+            <button class="f" data-v={k} aria-pressed="false">{bi(v.label, lang)} <b>{n(d => d.status === k)}</b></button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('cases.character')}</p>
+        <div class="filters" data-group="domain">
+          <button class="f" data-v="" aria-pressed="true">{t('cases.all')}</button>
+          {Object.entries(DOMAIN).map(([k, v]) => (
+            <button class="f" data-v={k} aria-pressed="false">{bi(v, lang)} <b>{n(d => d.domain === k)}</b></button>
+          ))}
+          <span style="width:1px;height:20px;background:var(--line-2);margin-inline:.4rem"></span>
+          <button class="f" data-group-alt="tier" data-v="1" aria-pressed="false">{t('cases.core')} <b>{n(d => d.tier === 1)}</b></button>
+        </div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('cases.country')}</p>
+        <div class="filters" data-group="country">
+          <button class="f" data-v="" aria-pressed="true">{t('cases.all')}</button>
+          {countries.map(c => <button class="f" data-v={c.k} aria-pressed="false">{c.name} <b>{c.c}</b></button>)}
+        </div>
+      </div>
+    </div>
+    <p class="label" style="margin-top:1.5rem" data-result>{t('cases.count', { n: all.length })}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <div class="grid grid--3" id="list" style="background:var(--line);border:1px solid var(--line)">
+      {all.map(c => (
+        <div data-item data-status={c.data.status} data-domain={c.data.domain}
+             data-country={c.data.country} data-tier={c.data.tier} style="display:contents">
+          <CaseCard lang={lang} href={path(lang, `/cases/${c.id}`)} title={c.data.title} summary={c.data.summary}
+            dateDisplay={c.data.dateDisplay} countryName={c.data.countryName}
+            status={c.data.status} tier={c.data.tier} scores={c.data.scores} />
+        </div>
+      ))}
+    </div>
+    <p class="dim" data-empty hidden style="padding:3rem 0;text-align:center">{t('cases.empty')}</p>
+  </section>
+
+  <script is:inline define:vars={{ tpl: t('cases.count', { n: '__N__' }) }}>
+    (() => {
+      const state = { status: '', domain: '', country: '', tier: '' };
+      const items = [...document.querySelectorAll('[data-item]')];
+      const out = document.querySelector('[data-result]');
+      const empty = document.querySelector('[data-empty]');
+      function apply() {
+        let n = 0;
+        for (const it of items) {
+          const ok = ['status', 'domain', 'country', 'tier'].every(k => !state[k] || it.dataset[k] === state[k]);
+          const card = it.firstElementChild;
+          if (card) card.style.display = ok ? '' : 'none';
+          if (ok) n++;
+        }
+        out.textContent = tpl.replace('__N__', n);
+        empty.hidden = n > 0;
+      }
+      document.querySelectorAll('.f').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const alt = btn.dataset.groupAlt;
+          const on = btn.getAttribute('aria-pressed') === 'true';
+          if (alt) {
+            state.tier = on ? '' : btn.dataset.v;
+            btn.setAttribute('aria-pressed', String(!on));
+          } else {
+            const scope = btn.closest('[data-group]');
+            state[scope.dataset.group] = btn.dataset.v;
+            scope.querySelectorAll('.f:not([data-group-alt])').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+          }
+          apply();
+        });
+      });
+      apply();
+    })();
+  </script>
+</Base>

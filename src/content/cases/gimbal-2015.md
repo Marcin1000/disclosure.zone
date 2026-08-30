@@ -1,51 +1,64 @@
 ---
 title: "GIMBAL"
-subtitle: "Obracający się obiekt, którego obrót jest prawdopodobnie obrotem kamery"
+subtitle: "A rotating object whose rotation is probably the camera's"
 date: 2015-01-21
-dateDisplay: "styczeń 2015"
+dateDisplay: "January 2015"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Strefa ćwiczeń nad Atlantykiem, wschodnie wybrzeże"
-lat: 36.00
-lon: -75.20
+countryName: "United States"
+location: "Atlantic warning area, US East Coast"
+lat: 36.0
+lon: -75.2
 domain: "military"
 tier: 2
 status: "disputed"
-duration: "ok. 34 sekund materiału"
-witnesses: "Załoga F/A-18, komentarz radiowy w czasie rzeczywistym na nagraniu"
-evidence: ["ir", "film", "radar"]
-scores: { S: 4, R: 2, O: 4, P: 0, M: 3, T: 4, X: 2, D: 4 }
-summary: "Nagranie ATFLIR pokazujące obiekt o kształcie soczewki, który w trakcie materiału wykonuje wyraźny obrót o ok. 90°. Na ścieżce dźwiękowej słychać zaskoczenie załogi. Departament Obrony potwierdził autentyczność materiału."
-official: "DoD potwierdził autentyczność nagrania; zdarzenie pozostaje niezidentyfikowane."
+duration: "about 34 seconds of footage"
+witnesses: "An F/A-18 crew; real-time radio commentary on the recording"
+evidence:
+- "ir"
+- "film"
+- "radar"
+scores:
+  S: 4
+  R: 2
+  O: 4
+  P: 0
+  M: 3
+  T: 4
+  X: 2
+  D: 4
+summary: "ATFLIR footage showing a lens-shaped object that performs a distinct rotation of about 90° during the clip. The soundtrack captures the crew's surprise. The Department of Defense confirmed the material's authenticity."
+official: "The DoD confirmed the footage is authentic; the event remains unidentified."
 alternatives:
-  - "Obrót obrazu wynikający z pracy gimbala ATFLIR przy przejściu przez określony kąt — kształt obiektu pozostaje stały, obraca się układ odniesienia sensora."
-  - "Sygnatura termiczna silnika odległego samolotu widziana od tyłu (glare przesłaniający rzeczywisty kształt)."
-  - "Rzeczywisty obiekt wykonujący obrót."
-claims: ["gimbal-rotation"]
+- "Image rotation produced by the ATFLIR gimbal passing through a particular angle — the object's shape stays constant while the sensor's reference frame rotates."
+- "The thermal signature of a distant aircraft's engine seen from behind, with glare masking the actual shape."
+- "A genuine object performing a rotation."
+claims:
+- "gimbal-rotation"
 sources:
-  - tier: "T1"
-    label: "Nagranie GIMBAL (materiał Marynarki Wojennej USA)"
-  - tier: "T2"
-    label: "Oświadczenie DoD z 27 kwietnia 2020 o autentyczności nagrania"
-  - tier: "T4"
-    label: "Analizy optyczne wskazujące na rolę mechaniki gimbala"
+- "tier": "T1"
+  label: "The GIMBAL recording (US Navy material)"
+  ref: "dod-navy-videos-2020"
+- "tier": "T2"
+  label: "DoD statement of 27 April 2020 confirming the recording's authenticity"
+  ref: "navy-uap-foia"
+- "tier": "T4"
+  label: "Optical analyses indicating the role of the gimbal mechanism"
 ---
 
-## Rdzeń sporu
+## The core of the dispute
 
-GIMBAL jest najczęściej przywoływany ze względu na obrót obiektu. Jest to element, który
-najtrudniej pogodzić ze znaną technologią — i jednocześnie element najbardziej podatny na
-wyjaśnienie instrumentalne.
+GIMBAL is cited above all for the object's rotation. It is the element hardest to reconcile with known
+technology — and simultaneously the element most susceptible to an instrumental explanation.
 
-System ATFLIR jest zamocowany na gimbalu, który przy określonych kątach obserwacji **przetacza
-układ odniesienia obrazu**. W takim przypadku obraca się nie obiekt, tylko rama, w której go
-widzimy — a obiekt o stałym kształcie sprawia wrażenie obracającego się.
+The ATFLIR system is gimbal-mounted, and at certain viewing angles the mount **rolls the image
+reference frame.** In that case what rotates is not the object but the frame in which we see it — and
+an object of constant shape gives the impression of turning.
 
-Rozstrzygnięcie wymaga **metadanych podu**: kąta gimbala w każdej klatce, trybu pracy, odległości
-do celu. Te dane istnieją. Nie są publiczne.
+Settling it requires **the pod's metadata**: gimbal angle per frame, operating mode, range to target.
+That data exists. It is not public.
 
-## Właściwy status
+## The correct status
 
-Autentyczność nagrania: potwierdzona przez DoD.
-Nietypowość obiektu: **nierozstrzygnięta i prawdopodobnie rozstrzygalna**, gdyby udostępniono
-metadane. To rzadki przypadek, w którym brakuje niewiele.
+Authenticity of the footage: confirmed by the DoD.
+Anomaly of the object: **unresolved and probably resolvable**, were the metadata released. This is a
+rare case where very little is missing.

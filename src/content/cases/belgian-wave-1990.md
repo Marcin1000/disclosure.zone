@@ -1,65 +1,79 @@
 ---
-title: "Fala belgijska"
-subtitle: "F-16 z zapisem radarowym przeciw trójkątom nad Belgią — i poprawka, która wszystko zmienia"
+title: "The Belgian Wave"
+subtitle: "F-16s with radar recordings against triangles over Belgium — and the correction that changes everything"
 date: 1990-03-30
-dateDisplay: "listopad 1989 – kwiecień 1990; kluczowa noc 30/31 marca 1990"
+dateDisplay: "November 1989 – April 1990; key night 30/31 March 1990"
 country: "BE"
-countryName: "Belgia"
-location: "Wallonia, rejon Eupen, Wavre; przestrzeń nad centralną Belgią"
+countryName: "Belgium"
+location: "Wallonia, the Eupen and Wavre areas; airspace over central Belgium"
 lat: 50.63
 lon: 5.57
 domain: "military"
 tier: 1
 status: "unresolved"
-duration: "fala pięciomiesięczna; kluczowa akcja ok. 1 godziny"
-witnesses: "Funkcjonariusze żandarmerii, tysiące świadków cywilnych, załogi dwóch F-16"
-evidence: ["radar", "visual", "intercept", "multi-witness"]
-scores: { S: 5, R: 5, O: 2, P: 0, M: 5, T: 5, X: 3, D: 3 }
-summary: "Przez pięć miesięcy tysiące osób w Belgii, w tym funkcjonariusze żandarmerii, zgłaszało duże, ciche obiekty trójkątne. W nocy 30/31 marca 1990 r. przy korelacji z radarami naziemnymi poderwano dwa F-16, których radary uzyskiwały krótkotrwałe kontakty."
-official: "Belgijskie siły powietrzne opublikowały dokumentację i uczestniczyły w analizie. Sprawa pozostała bez identyfikacji."
+duration: "a five-month wave; the key action about an hour"
+witnesses: "Gendarmerie officers, thousands of civilian witnesses, two F-16 crews"
+evidence:
+- "radar"
+- "visual"
+- "intercept"
+- "multi-witness"
+scores:
+  S: 5
+  R: 5
+  O: 2
+  P: 0
+  M: 5
+  T: 5
+  X: 3
+  D: 3
+summary: "Over five months thousands of people in Belgium, including gendarmerie officers, reported large, silent triangular objects. On the night of 30/31 March 1990, with correlating ground radar, two F-16s were scrambled and their radars obtained brief contacts."
+official: "The Belgian air force released documentation and participated in the analysis. The case remained unidentified."
 alternatives:
-  - "Artefakty filtru śledzenia radaru pokładowego F-16 — późniejsze analizy wskazały, że nagłe „przyspieszenia\" w zapisach odpowiadają zachowaniu filtru Kalmana przy przeskoku śledzenia, a nie ruchowi obiektu."
-  - "Helikoptery, samoloty w nietypowych konfiguracjach świetlnych i balony jako źródło części obserwacji naziemnych."
-  - "Tajne statki powietrzne (hipoteza stealth) — nigdy nie potwierdzona."
-claims: ["belgian-f16-acceleration", "belgian-triangle-photo"]
+- "Artefacts of the F-16 radar tracking filter — later analysis indicated that the abrupt “accelerations” in the recordings match Kalman filter behaviour during a track jump rather than target motion."
+- "Helicopters, aircraft in unusual lighting configurations and balloons as the source of some ground sightings."
+- "Classified aircraft (a stealth hypothesis) — never confirmed."
+claims:
+- "belgian-f16-acceleration"
+- "belgian-triangle-photo"
 sources:
-  - tier: "T1"
-    label: "Dokumentacja belgijskich sił powietrznych, w tym materiały gen. Wilfrieda de Brouwera"
-  - tier: "T1"
-    label: "Zapisy radarowe F-16 z nocy 30/31 marca 1990"
-  - tier: "T4"
-    label: "Późniejsze analizy techniczne zapisów radarowych"
-    note: "To tutaj pojawia się kluczowa poprawka dotycząca filtru śledzenia."
-  - tier: "T5"
-    label: "Słynna fotografia trójkąta z Petit-Rechain"
-    note: "Autor przyznał się do mistyfikacji. Zdjęcie nie ma żadnej wartości dowodowej."
+- "tier": "T1"
+  label: "Belgian air force documentation, including material from Gen. Wilfried de Brouwer"
+- "tier": "T1"
+  label: "F-16 radar recordings from the night of 30/31 March 1990"
+- "tier": "T4"
+  label: "Later technical analyses of the radar recordings"
+  note: "This is where the key correction about the tracking filter appears."
+- "tier": "T5"
+  label: "The famous Petit-Rechain triangle photograph"
+  note: "The author admitted the hoax. The image has no evidential value."
 ---
 
-## Dlaczego to najlepsza lekcja o radarze w całej bazie
+## Why this is the best radar lesson in the database
 
-Fala belgijska jest niezwykle mocna jako zdarzenie i niezwykle pouczająca jako przypadek
-analityczny — bo pokazuje, jak **prawdziwe dane mogą wygenerować nieprawdziwy wniosek**.
+The Belgian wave is remarkably strong as an event and remarkably instructive as an analytical case —
+because it shows how **real data can generate an unreal conclusion.**
 
-Zapisy radaru pokładowego F-16 rzeczywiście istnieją i rzeczywiście pokazują gwałtowne zmiany
-parametrów celu. Przez lata przedstawiano je jako pomiar przyspieszeń niemożliwych dla znanej
-technologii.
+The F-16 airborne radar recordings genuinely exist and genuinely show abrupt changes in target
+parameters. For years they were presented as measurements of accelerations impossible for known
+technology.
 
-Późniejsza analiza wskazała inne wyjaśnienie: radar F-16 nie pokazuje surowej pozycji celu.
-Pokazuje **wynik pracy filtru śledzącego**, który wygładza i przewiduje trajektorię. Gdy filtr
-gubi cel i chwyta inny, w zapisie pojawia się skok — który wygląda dokładnie jak ekstremalne
-przyspieszenie, a jest artefaktem algorytmu.
+Later analysis pointed elsewhere. An F-16 radar does not display the target's raw position. It
+displays **the output of a tracking filter** that smooths and predicts a trajectory. When the filter
+loses one target and acquires another, a jump appears in the record — and that jump looks exactly
+like extreme acceleration, while being an artefact of the algorithm.
 
-## Co to znaczy dla całej dziedziny
+## What this means for the field
 
-Nie to, że fala belgijska jest obalona. Tysiące obserwacji naziemnych, w tym relacje żandarmerii,
-pozostają nierozstrzygnięte, a fala jako całość nie ma wyjaśnienia.
+Not that the Belgian wave is debunked. Thousands of ground sightings, gendarmerie accounts among
+them, remain unresolved, and the wave as a whole has no explanation.
 
-To znaczy coś ważniejszego: **musimy wiedzieć, czy patrzymy na pomiar, czy na produkt
-oprogramowania.** Ta sama ostrożność dotyczy każdego współczesnego zapisu z ATFLIR i każdego
-track file, którego nie widzieliśmy w postaci surowej.
+It means something more important: **we have to know whether we are looking at a measurement or at a
+software product.** The same caution applies to every modern ATFLIR recording and to every track file
+we have not seen in raw form.
 
-## Fotografia z Petit-Rechain
+## The Petit-Rechain photograph
 
-Najsłynniejsze zdjęcie fali — trójkąt z czterema światłami — zostało przez autora przyznane jako
-mistyfikacja. Jest reprodukowane do dziś jako dowód. Traktujemy je jako źródło T5 o zerowej
-wartości i odnotowujemy, ponieważ jego obecność w obiegu zniekształca postrzeganie całej sprawy.
+The wave's most famous image — a triangle with four lights — was admitted by its author to be a
+hoax. It is reproduced as evidence to this day. We treat it as a T5 source of zero value and record
+it because its continued circulation distorts perception of the entire case.

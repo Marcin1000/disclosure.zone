@@ -1,43 +1,55 @@
 ---
 title: "Calvine"
-subtitle: "Sześć zdjęć, jeden Harrier i akta, które Ministerstwo Obrony zwróciło po trzydziestu latach"
+subtitle: "Six photographs, one Harrier, and a file the Ministry of Defence returned thirty years later"
 date: 1990-08-04
-dateDisplay: "4 sierpnia 1990"
+dateDisplay: "4 August 1990"
 country: "GB"
-countryName: "Wielka Brytania"
-location: "W pobliżu Calvine, Perthshire, Szkocja"
+countryName: "United Kingdom"
+location: "Near Calvine, Perthshire, Scotland"
 lat: 56.75
 lon: -3.83
 domain: "military"
 tier: 2
 status: "unresolved"
-duration: "ok. 10 minut"
-witnesses: "2 (pracownicy sezonowi)"
-evidence: ["photo", "visual"]
-scores: { S: 2, R: 0, O: 4, P: 0, M: 2, T: 3, X: 3, D: 3 }
-summary: "Dwóch młodych mężczyzn wykonało sześć fotografii dużego, statycznego obiektu w kształcie diamentu, w pobliżu którego przelatywał samolot wojskowy. Negatywy trafiły do Ministerstwa Obrony i zaginęły; jedna kopia ujawniona została dopiero w 2022 r."
-official: "MOD nie ujawniło rozstrzygnięcia. Oryginalne negatywy pozostają nieodnalezione."
+duration: "about 10 minutes"
+witnesses: "2 (seasonal workers)"
+evidence:
+- "photo"
+- "visual"
+scores:
+  S: 2
+  R: 0
+  O: 4
+  P: 0
+  M: 2
+  T: 3
+  X: 3
+  D: 3
+summary: "Two young men took six photographs of a large, static diamond-shaped object, near which a military aircraft passed. The negatives were passed to the Ministry of Defence and lost; a single copy surfaced only in 2022."
+official: "The MOD has not disclosed a determination. The original negatives remain unlocated."
 alternatives:
-  - "Mistyfikacja z modelem — analiza ujawnionej kopii nie rozstrzyga ze względu na jakość reprodukcji."
-  - "Tajny statek powietrzny w fazie prób — rejon Szkocji był wykorzystywany do lotów testowych."
-  - "Zjawisko optyczne / odbicie."
-claims: ["calvine-negatives-lost"]
+- "A hoax using a model — analysis of the surfaced copy cannot settle it, given reproduction quality."
+- "A classified aircraft under test — the Scottish region was used for test flying."
+- "An optical phenomenon or reflection."
+claims:
+- "calvine-negatives-lost"
 sources:
-  - tier: "T1"
-    label: "Kopia fotografii i korespondencja MOD, ujawnione publicznie w 2022 r."
-  - tier: "T4"
-    label: "Relacje dotyczące przekazania negatywów i ich zaginięcia"
+- "tier": "T1"
+  label: "A copy of the photograph and MOD correspondence, released publicly in 2022"
+  ref: "tna-ufo"
+- "tier": "T4"
+  label: "Accounts of how the negatives were handed over and lost"
 ---
 
-## Dlaczego to sprawa o proweniencji, a nie o obiekcie
+## Why this is a case about provenance, not about an object
 
-Calvine jest najlepszym w bazie przykładem tego, jak **utrata materiału źródłowego zamyka sprawę
-bez rozstrzygnięcia**.
+Calvine is the best example in the database of **how the loss of source material closes a case
+without resolving it.**
 
-Istniało sześć negatywów. Trafiły do instytucji państwowej. Nie ma ich. Wszystko, co dziś
-analizujemy, to reprodukcja reprodukcji — na której nie da się przeprowadzić analizy ziarna,
-ostrości ani głębi ostrości, czyli dokładnie tych badań, które rozstrzygnęłyby kwestię modelu na
-żyłce.
+Six negatives existed. They went to a state institution. They are gone. Everything we analyse today
+is a reproduction of a reproduction — on which grain analysis, sharpness and depth-of-field analysis
+cannot be performed, which is precisely the work that would settle the model-on-a-line question.
 
-Sprawa jest więc otwarta nie dlatego, że obiekt jest niewytłumaczalny, tylko dlatego, że
-**dowód zniknął w administracji**. To osobna, realna kategoria problemu w tej dziedzinie.
+The case is therefore open not because the object is inexplicable, but because **the evidence
+vanished inside an administration.** That is a separate and very real category of problem in this
+field.

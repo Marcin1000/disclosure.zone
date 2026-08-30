@@ -1,67 +1,79 @@
 ---
 title: "Trans-en-Provence"
-subtitle: "Najlepiej udokumentowany fizycznie przypadek na świecie — pełne dossier laboratoryjne GEPAN"
+subtitle: "The best physically documented case in the world — the complete GEPAN laboratory dossier"
 date: 1981-01-08
-dateDisplay: "8 stycznia 1981"
+dateDisplay: "8 January 1981"
 country: "FR"
-countryName: "Francja"
-location: "Posesja w Trans-en-Provence, Var, Prowansja"
-lat: 43.50
+countryName: "France"
+location: "A property at Trans-en-Provence, Var, Provence"
+lat: 43.5
 lon: 6.48
 domain: "civil"
 tier: 1
 status: "unresolved"
-duration: "30–40 sekund"
-witnesses: "1 (Renato Nicolaï), obserwacja z ok. 30 m"
-evidence: ["visual", "trace", "lab", "photo"]
-scores: { S: 4, R: 0, O: 2, P: 5, M: 2, T: 5, X: 5, D: 5 }
-summary: "Świadek zaobserwował z odległości ok. 30 metrów obiekt schodzący na taras jego posesji, spoczywający kilka sekund i odlatujący pionowo. Żandarmeria zabezpieczyła miejsce następnego dnia, a agencja GEPAN (dziś GEIPAN) przeprowadziła najbardziej rozbudowany program analiz laboratoryjnych w historii badań UAP."
-official: "GEIPAN klasyfikuje sprawę jako D — niewyjaśnioną po pełnym dochodzeniu."
+duration: "30–40 seconds"
+witnesses: "1 (Renato Nicolaï), observing from about 30 m"
+evidence:
+- "visual"
+- "trace"
+- "lab"
+- "photo"
+scores:
+  S: 4
+  R: 0
+  O: 2
+  P: 5
+  M: 2
+  T: 5
+  X: 5
+  D: 5
+summary: "A witness watched from about thirty metres as an object descended onto the terrace of his property, rested for several seconds and departed vertically. The gendarmerie secured the site the next day, and the GEPAN agency — now GEIPAN — ran the most extensive laboratory analysis programme in the history of UAP research."
+official: "GEIPAN classifies the case as D — unexplained after full investigation."
 alternatives:
-  - "Ślad po wcześniejszej działalności technicznej na posesji (np. pojazd, sprzęt budowlany) — badany i uznany za niezgodny z profilem zagęszczenia i chemii gruntu."
-  - "Mistyfikacja — trudna do pogodzenia z zakresem zmian biochemicznych w roślinach, wykrytych dopiero w analizach."
-  - "Nieznane zjawisko o charakterze termicznym i mechanicznym."
-claims: ["trans-en-provence-plant-changes"]
+- "A trace from earlier technical activity on the property, such as a vehicle or construction equipment — examined and found inconsistent with the compaction profile and soil chemistry."
+- "A hoax — hard to reconcile with the extent of the biochemical changes in plants, which were only detected in the analyses."
+- "An unknown phenomenon of thermal and mechanical character."
+claims:
+- "trans-en-provence-plant-changes"
 sources:
-  - tier: "T1"
-    label: "Pełne dossier GEIPAN: protokół żandarmerii, analizy gleby, analizy biochemiczne roślin (INRA), dane meteorologiczne, fotografie"
-    url: "https://www.geipan.fr/"
-    note: "Jeden z najbardziej kompletnych zestawów dokumentacyjnych, jakie kiedykolwiek zebrano dla pojedynczego przypadku UAP."
-  - tier: "T1"
-    label: "Raport techniczny GEPAN nr 5 (1983)"
+- "tier": "T1"
+  label: "The complete GEIPAN dossier: gendarmerie protocol, soil analyses, plant biochemistry (INRA), meteorological data, photographs"
+  note: "One of the most complete documentary sets ever assembled for a single UAP case."
+  ref: "geipan"
+- "tier": "T1"
+  label: "GEPAN technical note no. 5 (1983)"
+  ref: "geipan-mission"
 ---
 
-## Dlaczego to jest przypadek, do którego powinniśmy wrócić jako pierwszego
+## Why this is the first case we should reopen
 
-Trans-en-Provence ma coś, czego nie ma Nimitz, Teheran ani Waszyngton: **materię, którą można
-zbadać ponownie**.
+Trans-en-Provence has something Nimitz, Tehran and Washington do not: **matter that can be examined
+again.**
 
-Sekwencja postępowania była wzorowa. Zdarzenie 8 stycznia. Żandarmeria na miejscu następnego
-dnia, z zabezpieczeniem próbek. GEPAN — agencja przy francuskiej agencji kosmicznej — przejmuje
-sprawę i zleca analizy kilku niezależnym laboratoriom, w tym instytutowi badań rolniczych.
+The handling was exemplary. Event on 8 January. Gendarmerie on site the next day, taking samples.
+GEPAN — an agency attached to the French space agency — takes over the case and commissions analyses
+from several independent laboratories, including the national agricultural research institute.
 
-## Co wykazały analizy
+## What the analyses showed
 
-- Znaczące **zagęszczenie gruntu** w miejscu kontaktu, o profilu niezgodnym z naciskiem
-  standardowego pojazdu.
-- Ślady żelaza i tlenków, fosforanów i cynku.
-- Ślady **ogrzewania poniżej 600 °C** — istotne, bo wyklucza zarówno pożar, jak i większość
-  napędów odrzutowych.
-- W roślinach z miejsca zdarzenia i z otoczenia stwierdzono **zmiany biochemiczne** malejące
-  wraz z odległością od centrum śladu, w tym zmiany w zawartości chlorofilu.
+- Significant **soil compaction** at the contact point, with a profile inconsistent with the load of
+  a standard vehicle.
+- Traces of iron and oxides, phosphates and zinc.
+- Evidence of **heating below 600 °C** — important, because it excludes both fire and most jet
+  propulsion.
+- In plants from the site and its surroundings, **biochemical changes** diminishing with distance
+  from the centre of the trace, including changes in chlorophyll content.
 
-Ten ostatni punkt jest kluczowy. Zmiany były **gradientowe** — najsilniejsze w centrum, słabsze
-na obrzeżu. Taki rozkład bardzo trudno sfałszować i bardzo trudno wywołać przypadkiem.
+That last point is decisive. The changes were **graded** — strongest at the centre, weaker at the
+edge. Such a distribution is very hard to fake and very hard to produce by accident.
 
-## Czego to nie dowodzi
+## What it does not prove
 
-Nie dowodzi lądowania pojazdu. Dowodzi, że **na tym terenie zadziałał czynnik fizyczny o
-mierzalnym profilu termicznym i mechanicznym**, którego GEPAN nie potrafiło przypisać żadnej
-znanej przyczynie.
+It does not prove a craft landed. It proves that **a physical agent with a measurable thermal and
+mechanical profile acted on that ground**, and that GEPAN could not attribute it to any known cause.
 
-## Priorytet badawczy
+## Research priority
 
-Jeżeli miałbym wskazać jedną sprawę w całym światowym korpusie, którą warto otworzyć ponownie
-przy użyciu współczesnych metod analitycznych — spektrometrii mas, mikroskopii elektronowej,
-analizy izotopowej — to jest nią Trans-en-Provence. Próbki i dokumentacja istnieją. Nie potrzeba
-tu żadnego odtajnienia.
+If I had to name one case in the entire world corpus worth reopening with modern analytical methods
+— mass spectrometry, electron microscopy, isotopic analysis — it is Trans-en-Provence. The samples
+and documentation exist. No declassification is required.

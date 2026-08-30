@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+import WorldPlot, { type PlotPoint } from '../../components/WorldPlot.astro';
+import { getCases } from '../../lib/cases';
+import { STATUS, bi } from '../../lib/scoring';
+import { langParams, path, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+
+const all = await getCases(lang);
+const points: PlotPoint[] = all.map(c => ({
+  id: c.id, title: c.data.title, lon: c.data.lon, lat: c.data.lat,
+  country: c.data.country, countryName: c.data.countryName,
+  year: c.data.dateDisplay, tier: c.data.tier, status: c.data.status,
+  href: path(lang, `/cases/${c.id}`),
+}));
+const byCountry = [...new Set(all.map(c => c.data.country))]
+  .map(k => ({ k, name: all.find(c => c.data.country === k)!.data.countryName, n: all.filter(c => c.data.country === k).length }))
+  .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, lang));
+const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explained' ? 'var(--phos)'
+  : k === 'disputed' ? 'var(--stamp-2)' : 'var(--fg-faint)';
+---
+<Base title={t('map.title')} description={t('map.lead', { n: all.length, c: byCountry.length })} lang={lang} rest="/map">
+  <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4rem) 1.8rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{t('map.kicker')}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('map.title')}</h1>
+    <p class="lead dim" style="max-width:64ch">{t('map.lead', { n: all.length, c: byCountry.length })}</p>
+  </section>
+
+  <section class="wrap">
+    <WorldPlot points={points} lang={lang} />
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1rem">
+      {Object.entries(STATUS).map(([k, v]) => (
+        <span class="label" style="display:flex;align-items:center;gap:.5rem">
+          <i style={`width:8px;height:8px;border-radius:50%;background:${dot(k)}`}></i>{bi(v.label, lang)}
+        </span>
+      ))}
+      <span class="label" style="color:var(--phos-dim)">{t('map.core')}</span>
+    </div>
+  </section>
+
+  <section class="wrap section--tight">
+    <p class="label" style="margin-bottom:.7rem">{t('map.pick')}</p>
+    <div class="filters" data-rail>
+      <button class="f" data-c="" aria-pressed="true">{t('map.world')} <b>{all.length}</b></button>
+      {byCountry.map(c => <button class="f" data-c={c.k} aria-pressed="false">{c.name} <b>{c.n}</b></button>)}
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <div class="tbl-scroll panel corners">
+      <table class="tbl">
+        <thead><tr>
+          <th>{t('map.thDate')}</th><th>{t('map.thCase')}</th><th>{t('map.thCountry')}</th>
+          <th>{t('map.thStatus')}</th><th>{t('map.thPos')}</th>
+        </tr></thead>
+        <tbody>
+          {all.map(c => (
+            <tr data-row data-country={c.data.country}>
+              <td class="mono" style="white-space:nowrap;font-size:.85rem">{c.data.dateDisplay}</td>
+              <td><a href={path(lang, `/cases/${c.id}`)}><strong>{c.data.title}</strong></a>
+                {c.data.tier === 1 && <span class="label" style="color:var(--amber);margin-left:.5rem">◆</span>}</td>
+              <td>{c.data.countryName}</td>
+              <td>{bi(STATUS[c.data.status].label, lang)}</td>
+              <td class="mono" style="white-space:nowrap;font-size:.8rem;color:var(--fg-faint)">
+                {Math.abs(c.data.lat).toFixed(1)}° {c.data.lat >= 0 ? 'N' : 'S'} · {Math.abs(c.data.lon).toFixed(1)}° {c.data.lon >= 0 ? 'E' : 'W'}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script is:inline>
+    (() => {
+      const plot = document.querySelector('[data-plot]');
+      const tip = document.querySelector('[data-tip]');
+      const rows = [...document.querySelectorAll('[data-row]')];
+      const marks = [...document.querySelectorAll('[data-mk]')];
+      const lands = [...document.querySelectorAll('.plot__land--has')];
+      const rail = [...document.querySelectorAll('[data-rail] .f')];
+      let sel = '';
+      function select(c) {
+        sel = sel === c ? '' : c;
+        rail.forEach(b => b.setAttribute('aria-pressed', String((b.dataset.c || '') === sel)));
+        lands.forEach(l => l.classList.toggle('plot__land--sel', !!sel && l.dataset.country === sel));
+        marks.forEach(m => m.classList.toggle('mk--dim', !!sel && m.dataset.country !== sel));
+        rows.forEach(r => { r.style.display = !sel || r.dataset.country === sel ? '' : 'none'; });
+      }
+      rail.forEach(b => b.addEventListener('click', () => select(b.dataset.c || '')));
+      lands.forEach(l => {
+        l.addEventListener('click', () => select(l.dataset.country || ''));
+        l.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(l.dataset.country || ''); }
+        });
+      });
+      marks.forEach(m => {
+        const hit = m.querySelector('[data-hit]');
+        hit.style.cursor = 'pointer';
+        const show = e => {
+          const r = plot.getBoundingClientRect();
+          tip.style.left = (e.clientX - r.left) + 'px';
+          tip.style.top = (e.clientY - r.top) + 'px';
+          tip.querySelector('b').textContent = hit.dataset.title || '';
+          tip.querySelector('span').textContent = hit.dataset.year + ' · ' + hit.dataset.cn;
+          tip.dataset.on = '1';
+        };
+        hit.addEventListener('mouseenter', show);
+        hit.addEventListener('mousemove', show);
+        hit.addEventListener('mouseleave', () => delete tip.dataset.on);
+        hit.addEventListener('click', () => { location.href = hit.dataset.href; });
+      });
+    })();
+  </script>
+</Base>

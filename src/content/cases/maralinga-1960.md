@@ -1,38 +1,53 @@
 ---
 title: "Maralinga / Wewak"
-subtitle: "Obserwacja RAAF nad australijskim poligonem jądrowym"
+subtitle: "An RAAF sighting over Australia's nuclear test range"
 date: 1960-05-01
 dateDisplay: "1960"
 country: "AU"
 countryName: "Australia"
-location: "Rejon poligonu Maralinga, Australia Południowa"
+location: "Maralinga range area, South Australia"
 lat: -30.16
 lon: 131.62
 domain: "military"
 tier: 3
 status: "insufficient"
-duration: "kilka minut"
-witnesses: "Personel wojskowy poligonu"
-evidence: ["visual", "multi-witness"]
-scores: { S: 3, R: 0, O: 0, P: 0, M: 2, T: 4, X: 2, D: 3 }
-summary: "Formalny raport obserwacji sporządzony na standardowym formularzu RAAF, w którym analizowano kolejno meteor, efekty elektrostatyczne, satelitę i „flying saucer\" — bez rozstrzygnięcia."
-official: "Raport zamknięty bez identyfikacji."
+duration: "several minutes"
+witnesses: "Range military personnel"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 3
+  R: 0
+  O: 0
+  P: 0
+  M: 2
+  T: 4
+  X: 2
+  D: 3
+summary: "A formal sighting report filed on the standard RAAF form, working sequentially through meteor, static electricity effects, satellite and “flying saucer” — without resolution."
+official: "The report was closed without identification."
 alternatives:
-  - "Ponowne wejście fragmentu satelity lub bolid."
-  - "Zjawisko elektrostatyczne w suchym powietrzu pustynnym."
-claims: ["uap-nuclear-affinity"]
+- "Satellite fragment re-entry or a bolide."
+- "An electrostatic phenomenon in dry desert air."
+claims:
+- "uap-nuclear-affinity"
 sources:
-  - tier: "T1"
-    label: "Formularz raportu obserwacji RAAF, National Archives of Australia"
+- "tier": "T1"
+  label: "RAAF sighting report form, National Archives of Australia"
+  ref: "naa-ufo"
+- "tier": "T1"
+  label: "Woomera range records"
+  ref: "naa-woomera"
 ---
 
-## Dlaczego ten drobny przypadek jest w bazie
+## Why this minor case is in the database
 
-Nie ze względu na siłę obserwacji — ta jest przeciętna. Ze względu na **formularz**.
+Not for the strength of the sighting — that is unremarkable. For **the form**.
 
-Australijski raport pokazuje, jak wyglądało zdyscyplinowane państwowe podejście do UAP poza USA:
-lista hipotez do odhaczenia, kolejno rozpatrywanych, z „flying saucer" jako jedną z rubryk, a nie
-jako wnioskiem. Dokładnie ten sposób pracy stosuje dziś GEIPAN i AARO.
+The Australian report shows what disciplined state handling of UAP looked like outside the United
+States: a list of hypotheses to be worked through in order, with "flying saucer" as one of the
+boxes rather than as a conclusion. This is precisely how GEIPAN and AARO work today.
 
-Sprawa jest też dowodem, że **archiwa poza USA istnieją, są kompletne i są dostępne** — a
-większość anglojęzycznej literatury UFO nigdy do nich nie zajrzała.
+The case is also proof that **archives outside the US exist, are complete and are accessible** —
+and that most English-language UFO literature has never looked into them.

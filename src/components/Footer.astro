@@ -1,33 +1,45 @@
 ---
 import Logo from './Logo.astro';
+import { path, useT, LOCALES, LOCALE_NAME, type Lang } from '../i18n';
+interface Props { lang: Lang; rest?: string }
+const { lang, rest = '/' } = Astro.props;
+const t = useT(lang);
 const year = new Date().getFullYear();
 ---
 <footer class="foot">
   <div class="wrap foot__grid">
     <div>
-      <Logo size={26} />
-      <p class="dim" style="margin-top:1rem;max-width:38ch;font-size:.92rem">
-        Baza przypadków UAP z jawną metodologią oceny dowodów.
-        Każde twierdzenie ma przypisany poziom źródła. Nierozstrzygnięte nie znaczy pozaziemskie.
-      </p>
-      <p class="label" style="margin-top:1.2rem">Documents, not rumors</p>
+      <Logo size={26} href={path(lang)} />
+      <p class="dim" style="margin-top:1rem;max-width:40ch;font-size:.92rem">{t('site.desc')}</p>
+      <p class="label" style="margin-top:1.2rem">{t('site.tagline')}</p>
     </div>
     <div>
-      <p class="label" style="margin-bottom:.7rem">Nawigacja</p>
-      <a href="/akta">Akta sprawy</a>
-      <a href="/mapa">Mapa zdarzeń</a>
-      <a href="/twierdzenia">Rejestr twierdzeń</a>
-      <a href="/archiwa">Archiwa państwowe</a>
+      <p class="label" style="margin-bottom:.7rem">{t('foot.nav')}</p>
+      <a href={path(lang, '/cases')}>{t('nav.cases')}</a>
+      <a href={path(lang, '/map')}>{t('nav.map')}</a>
+      <a href={path(lang, '/claims')}>{t('nav.claims')}</a>
+      <a href={path(lang, '/archives')}>{t('nav.archives')}</a>
     </div>
     <div>
-      <p class="label" style="margin-bottom:.7rem">Projekt</p>
-      <a href="/metodologia">Metodologia</a>
-      <a href="/o-projekcie">O projekcie</a>
-      <a href="/dane">Dane otwarte</a>
+      <p class="label" style="margin-bottom:.7rem">{t('foot.project')}</p>
+      <a href={path(lang, '/methodology')}>{t('nav.method')}</a>
+      <a href={path(lang, '/toolkit')}>{t('nav.toolkit')}</a>
+      <a href={path(lang, '/about')}>{t('foot.about')}</a>
+      <a href={path(lang, '/data')}>{t('foot.data')}</a>
     </div>
   </div>
   <div class="wrap" style="margin-top:2.5rem">
     <hr class="rule--dash" />
-    <p class="label" style="margin-top:1rem">© {year} disclosure.zone · Treść na licencji CC BY 4.0 · Dokumenty źródłowe pozostają własnością wydających je instytucji</p>
+    <div class="foot__base">
+      <p class="label" style="margin:0">© {year} disclosure.zone · {t('foot.rights')}</p>
+      <p class="lang" aria-label={t('foot.lang')}>
+        {LOCALES.map((l, i) => (<>
+          {i > 0 && <span class="lang__sep">/</span>}
+          {l === lang
+            ? <span class="lang__on">{LOCALE_NAME[l]}</span>
+            : <a href={path(l, rest)} hreflang={l} rel="alternate">{LOCALE_NAME[l]}</a>}
+        </>))}
+      </p>
+    </div>
   </div>
 </footer>

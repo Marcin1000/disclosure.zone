@@ -1,37 +1,48 @@
 ---
-title: "Film z Tremonton"
-subtitle: "Nagranie podoficera marynarki poddane analizie klatka po klatce"
+title: "The Tremonton Film"
+subtitle: "A Navy chief petty officer's footage, analysed frame by frame"
 date: 1952-07-02
-dateDisplay: "2 lipca 1952"
+dateDisplay: "2 July 1952"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "W pobliżu Tremonton, Utah"
+countryName: "United States"
+location: "Near Tremonton, Utah"
 lat: 41.71
 lon: -112.17
 domain: "military"
 tier: 2
 status: "disputed"
-duration: "ok. 75 sekund materiału"
-witnesses: "Podoficer USN Delbert Newhouse i jego rodzina"
-evidence: ["film", "visual"]
-scores: { S: 4, R: 0, O: 3, P: 0, M: 1, T: 5, X: 2, D: 4 }
-summary: "Chorąży marynarki, zawodowy fotograf lotniczy, nakręcił kolorowy film przedstawiający grupę jasnych obiektów w ruchu. Materiał został poddany jednej z najbardziej szczegółowych analiz w historii Blue Book, w tym analizie densytometrycznej."
-official: "Analiza Battelle / Blue Book: prawdopodobnie ptaki (mewy) odbijające światło słoneczne."
+duration: "about 75 seconds of footage"
+witnesses: "Chief Warrant Officer Delbert Newhouse and his family"
+evidence:
+- "film"
+- "visual"
+scores:
+  S: 4
+  R: 0
+  O: 3
+  P: 0
+  M: 1
+  T: 5
+  X: 2
+  D: 4
+summary: "A Navy warrant officer and professional aerial photographer shot colour film showing a group of bright objects in motion. The material received one of the most detailed analyses in Blue Book history, including densitometric measurement."
+official: "The Battelle / Blue Book analysis concluded: probably birds — gulls — reflecting sunlight."
 alternatives:
-  - "Mewy w termice — zgodne z ruchem, jasnością i brakiem widocznej struktury."
-  - "Rzeczywiste obiekty — analiza densytometryczna wskazywała jasność wyższą niż oczekiwana dla ptaków, co pozostaje punktem sporu."
+- "Gulls in a thermal — consistent with the motion, the brightness and the absence of visible structure."
+- "Genuine objects — the densitometric analysis indicated brightness higher than expected for birds, which remains the point of dispute."
 claims: []
 sources:
-  - tier: "T1"
-    label: "Oryginalny film i analiza w aktach Project Blue Book"
-  - tier: "T1"
-    label: "Analiza Battelle Memorial Institute (Project Bear)"
+- "tier": "T1"
+  label: "The original film and the analysis in the Project Blue Book files"
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "Battelle Memorial Institute analysis (Project Bear)"
 ---
 
-## Znaczenie: pierwszy przypadek poważnej analizy technicznej
+## Significance: the first serious technical analysis
 
-Tremonton to moment, w którym rząd USA po raz pierwszy potraktował materiał UFO jak **dane, a nie
-anegdotę**: klatka po klatce, densytometrycznie, z porównaniem do referencyjnych nagrań ptaków.
+Tremonton is the moment the US government first treated UFO material as **data rather than
+anecdote**: frame by frame, densitometrically, against reference footage of birds.
 
-Wynik był niejednoznaczny i taki pozostał. Ale sam precedens jest ważny: metodologia, którą dziś
-stosuje AARO przy nagraniach z ATFLIR, zaczyna się właśnie tutaj.
+The result was ambiguous and has stayed that way. But the precedent matters: the methodology AARO
+applies today to ATFLIR footage begins here.

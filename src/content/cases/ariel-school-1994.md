@@ -1,43 +1,55 @@
 ---
 title: "Ariel School"
-subtitle: "Sześćdziesięcioro dzieci w Zimbabwe i najlepiej nagrany przypadek relacji zbiorowej"
+subtitle: "Sixty children in Zimbabwe and the best-recorded case of collective testimony"
 date: 1994-09-16
-dateDisplay: "16 września 1994"
+dateDisplay: "16 September 1994"
 country: "ZW"
 countryName: "Zimbabwe"
-location: "Ariel School, Ruwa, w pobliżu Harare"
+location: "Ariel School, Ruwa, near Harare"
 lat: -17.89
 lon: 31.24
 domain: "civil"
 tier: 3
 status: "unresolved"
-duration: "ok. 15 minut"
-witnesses: "Ok. 60 dzieci w wieku 6–12 lat"
-evidence: ["visual", "multi-witness"]
-scores: { S: 2, R: 0, O: 0, P: 0, M: 2, T: 4, X: 3, D: 4 }
-summary: "Podczas przerwy grupa dzieci zgłosiła lądowanie obiektu i obecność istot na skraju szkolnego terenu. Wywiady przeprowadzono w ciągu dni, a część z nich nagrano — w tym przez zespół psychiatry z Harvardu."
-official: "Brak dochodzenia państwowego."
+duration: "about 15 minutes"
+witnesses: "About 60 children aged 6–12"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 2
+  R: 0
+  O: 0
+  P: 0
+  M: 2
+  T: 4
+  X: 3
+  D: 4
+summary: "During a break, a group of children reported an object landing and the presence of beings at the edge of the school grounds. Interviews were conducted within days and partly recorded, including by a Harvard psychiatrist's team."
+official: "No state investigation."
 alternatives:
-  - "Zjawisko konwersji zbiorowej w grupie rówieśniczej — mechanizm dobrze udokumentowany w psychologii."
-  - "Wpływ pytań sugerujących zadawanych przez dorosłych w trakcie wywiadów."
-  - "Rzeczywiste zdarzenie o nieustalonej naturze."
-claims: ["ariel-school-mass-testimony"]
+- "Collective conversion within a peer group — a mechanism well documented in psychology."
+- "The influence of leading questions asked by adults during the interviews."
+- "A genuine event of undetermined nature."
+claims:
+- "ariel-school-mass-testimony"
 sources:
-  - tier: "T1"
-    label: "Nagrania wywiadów z dziećmi przeprowadzonych w ciągu dni od zdarzenia"
-    note: "Materiał jest cenny, ale część pytań ma charakter sugerujący, co obniża jego wartość dowodową."
-  - tier: "T4"
-    label: "Późniejsze wywiady z tymi samymi osobami jako dorosłymi"
+- "tier": "T1"
+  label: "Recordings of interviews with the children conducted within days of the event"
+  note: "Valuable material, but some questions are leading, which lowers its evidential weight."
+- "tier": "T4"
+  label: "Later interviews with the same people as adults"
 ---
 
-## Uczciwa ocena
+## An honest assessment
 
-To najlepiej udokumentowany przypadek relacji zbiorowej w całym korpusie — i jednocześnie
-przypadek, w którym metodologia zbierania relacji jest sama w sobie problemem.
+This is the best-documented case of collective testimony in the corpus — and simultaneously a case
+where the methodology of collecting that testimony is itself the problem.
 
-Dzieci są dobrymi obserwatorami i złymi świadkami w sensie proceduralnym: bardzo silnie reagują
-na sposób zadawania pytań. Część nagranych wywiadów zawiera pytania sugerujące odpowiedź.
+Children are good observers and poor witnesses in the procedural sense: they respond very strongly
+to how questions are framed. Some of the recorded interviews contain questions that supply their own
+answer.
 
-Nie oznacza to, że dzieci kłamały. Oznacza, że **nie da się dziś oddzielić tego, co zobaczyły, od
-tego, co zostało im podpowiedziane w trakcie wywiadu**. To sprawa dla psychologii świadka, nie
-dla fizyki.
+That does not mean the children lied. It means **it is no longer possible to separate what they saw
+from what was suggested to them during questioning.** This is a case for witness psychology, not for
+physics.

@@ -1,41 +1,52 @@
 ---
-title: "Pojedynek powietrzny Gormana"
-subtitle: "25 minut manewrów za świetlnym punktem nad Fargo"
+title: "The Gorman Dogfight"
+subtitle: "Twenty-five minutes of manoeuvring against a light over Fargo"
 date: 1948-10-01
-dateDisplay: "1 października 1948"
+dateDisplay: "1 October 1948"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Fargo, Dakota Północna"
+countryName: "United States"
+location: "Fargo, North Dakota"
 lat: 46.88
 lon: -96.79
 domain: "military"
 tier: 2
 status: "explained"
-duration: "ok. 27 minut"
-witnesses: "Pilot Gwardii Narodowej, kontrolerzy lotniska, obserwatorzy naziemni"
-evidence: ["visual", "multi-witness"]
-scores: { S: 4, R: 0, O: 0, P: 0, M: 3, T: 4, X: 2, D: 3 }
-summary: "Ppor. George Gorman prowadził w F-51 przedłużający się manewr za małym, jasnym światłem, które według jego relacji reagowało na jego ruchy i przewyższało go w zwrotach."
-official: "Blue Book przypisał zdarzenie oświetlonemu balonowi meteorologicznemu."
+duration: "about 27 minutes"
+witnesses: "A National Guard pilot, airfield controllers, ground observers"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 4
+  R: 0
+  O: 0
+  P: 0
+  M: 3
+  T: 4
+  X: 2
+  D: 3
+summary: "Second Lieutenant George Gorman flew an extended series of manoeuvres against a small bright light which, by his account, responded to his movements and out-turned him."
+official: "Blue Book attributed the event to a lighted weather balloon."
 alternatives:
-  - "Balon meteorologiczny z oświetleniem — dryfujący obiekt w połączeniu z manewrami własnego samolotu daje złudzenie „reakcji\" i „pościgu\"."
-  - "Planeta Jowisz przy błędnej ocenie odległości."
+- "A lighted weather balloon — a drifting object combined with the observer's own manoeuvres produces the illusion of “response” and “pursuit”."
+- "The planet Jupiter with misjudged distance."
 claims: []
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book, sprawa Gorman"
-  - tier: "T3"
-    label: "Pisemny raport pilota złożony bezpośrednio po locie"
+- "tier": "T1"
+  label: "Project Blue Book files, Gorman case"
+  ref: "nara-bluebook"
+- "tier": "T3"
+  label: "The pilot's written report filed immediately after the flight"
 ---
 
-## Klasyczna pułapka geometrii względnej
+## The classic relative-geometry trap
 
-To jest podręcznikowy przypadek pokazujący, dlaczego relacje pilotów o „obiekcie, który reagował
-na mój manewr" wymagają szczególnej ostrożności.
+This is the textbook case for why pilot accounts of "an object that reacted to my manoeuvre" demand
+particular care.
 
-Gdy pilot manewruje wokół odległego, stacjonarnego lub wolno dryfującego punktu świetlnego,
-**ruch własnego samolotu przenosi się na postrzegany ruch celu**. Obiekt wydaje się nurkować,
-wznosić i zawracać, ponieważ zmienia się linia obserwacji, a nie pozycja celu.
+When a pilot manoeuvres around a distant, stationary or slowly drifting point of light, **the
+aircraft's own motion transfers onto the target's apparent motion.** The object appears to dive,
+climb and turn, because the line of sight is changing, not the target's position.
 
-Bez pomiaru odległości nie da się tych dwóch scenariuszy rozróżnić z kabiny. Ten sam mechanizm
-wróci w tej bazie wielokrotnie — aż do nagrania GoFast z 2015 roku.
+Without a range measurement these two scenarios cannot be told apart from the cockpit. The same
+mechanism recurs throughout this database — right up to the GoFast video of 2015.

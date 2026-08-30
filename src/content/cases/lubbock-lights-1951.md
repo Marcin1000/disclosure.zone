@@ -1,36 +1,48 @@
 ---
-title: "Lubbock Lights"
-subtitle: "Formacje świateł nad Teksasem obserwowane przez profesorów uczelni"
+title: "The Lubbock Lights"
+subtitle: "Formations over Texas observed by university faculty"
 date: 1951-08-25
-dateDisplay: "sierpień–wrzesień 1951"
+dateDisplay: "August–September 1951"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Lubbock, Teksas"
+countryName: "United States"
+location: "Lubbock, Texas"
 lat: 33.58
 lon: -101.86
 domain: "civil"
 tier: 3
 status: "explained"
-duration: "kilkanaście sekund na przelot, wiele nocy"
-witnesses: "Trzej wykładowcy Texas Tech, kilkudziesięciu mieszkańców, autor fotografii"
-evidence: ["visual", "photo", "multi-witness"]
-scores: { S: 3, R: 1, O: 2, P: 0, M: 2, T: 4, X: 1, D: 3 }
-summary: "Formacje świateł w kształcie litery V przelatywały nad miastem przez kilka tygodni. Wśród świadków byli wykładowcy uczelni, co nadało sprawie nietypową wiarygodność, a student wykonał serię fotografii."
-official: "Blue Book zaklasyfikował zjawisko jako ptaki (prawdopodobnie siewki) odbijające światło nowo zainstalowanego oświetlenia ulicznego miasta."
+duration: "seconds per pass, over many nights"
+witnesses: "Three Texas Tech professors, several dozen residents, one photographer"
+evidence:
+- "visual"
+- "photo"
+- "multi-witness"
+scores:
+  S: 3
+  R: 1
+  O: 2
+  P: 0
+  M: 2
+  T: 4
+  X: 1
+  D: 3
+summary: "V-shaped formations of lights passed over the city for several weeks. The witnesses included university faculty, which gave the case unusual credibility, and a student produced a series of photographs."
+official: "Blue Book classified the phenomenon as birds — probably plovers — reflecting the light of the city's newly installed street lighting."
 alternatives:
-  - "Ptaki odbijające światła miejskie — wyjaśnienie zgodne z zachowaniem formacji i późniejszymi obserwacjami kontrolnymi."
-  - "Ćmy w wiązce świateł ulicznych."
+- "Birds reflecting city lights — consistent with the formation behaviour and with later controlled observations."
+- "Moths in the beam of street lighting."
 claims: []
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book, sprawa Lubbock Lights"
+- "tier": "T1"
+  label: "Project Blue Book files, Lubbock Lights case"
+  ref: "nara-bluebook"
 ---
 
-## Wartość: „wiarygodny świadek" nie równa się „wiarygodna identyfikacja"
+## The lesson: a credible witness is not a credible identification
 
-Sprawa zyskała status dzięki temu, że świadkami byli naukowcy. To jednak dotyczy **uczciwości
-relacji**, a nie zdolności rozpoznania obiektu.
+The case gained status because the witnesses were scientists. That, however, bears on **the honesty
+of the account**, not on the ability to identify an object.
 
-Profesor geologii patrzący w nocne niebo nie ma przewagi nad kimkolwiek innym w ocenie odległości
-do nieoświetlonego obiektu. Kompetencja jest domenowa. To rozróżnienie — wiarygodność świadka
-kontra jego zdolność identyfikacji — przewija się przez cały ten korpus.
+A professor of geology looking at the night sky has no advantage over anyone else in judging the
+distance to an unlit object. Competence is domain-specific. That distinction — a witness's
+credibility versus their identification ability — runs through this entire corpus.

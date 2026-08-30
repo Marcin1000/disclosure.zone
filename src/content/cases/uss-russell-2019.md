@@ -1,42 +1,54 @@
 ---
-title: "USS Russell — „piramidy\""
-subtitle: "Trójkątne obiekty, które są kształtem przysłony obiektywu"
+title: "USS Russell — the “pyramids”"
+subtitle: "Triangular objects that are the shape of a lens aperture"
 date: 2019-07-15
-dateDisplay: "lipiec 2019"
+dateDisplay: "July 2019"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Wody u wybrzeży Kalifornii"
-lat: 32.80
-lon: -119.30
+countryName: "United States"
+location: "Waters off California"
+lat: 32.8
+lon: -119.3
 domain: "military"
 tier: 3
 status: "explained"
-duration: "kilkadziesiąt sekund materiału"
-witnesses: "Załoga USS Russell"
-evidence: ["film", "ir"]
-scores: { S: 4, R: 1, O: 2, P: 0, M: 2, T: 4, X: 1, D: 5 }
-summary: "Nagranie noktowizyjne pokazujące trójkątne, migoczące obiekty nad okrętem. Materiał obiegł świat jako dowód na pojazdy o konstrukcji piramidalnej."
-official: "Marynarka Wojenna potwierdziła autentyczność nagrania. Analiza wskazuje, że trójkątny kształt jest artefaktem optycznym."
+duration: "several tens of seconds of footage"
+witnesses: "USS Russell crew"
+evidence:
+- "film"
+- "ir"
+scores:
+  S: 4
+  R: 1
+  O: 2
+  P: 0
+  M: 2
+  T: 4
+  X: 1
+  D: 5
+summary: "Night-vision footage showing triangular, flickering objects above the ship. The material circled the world as evidence of pyramid-shaped craft."
+official: "The Navy confirmed the footage is authentic. Analysis indicates the triangular shape is an optical artefact."
 alternatives:
-  - "Rozogniskowane punkty świetlne (samoloty, gwiazdy) rejestrowane przez noktowizor z trójkątną przysłoną — bokeh przyjmuje kształt przysłony obiektywu."
-claims: ["russell-pyramid-craft"]
+- "Defocused points of light — aircraft or stars — recorded through a night-vision device with a triangular aperture; bokeh takes the shape of the aperture."
+claims:
+- "russell-pyramid-craft"
 sources:
-  - tier: "T1"
-    label: "Nagranie noktowizyjne z USS Russell"
-  - tier: "T2"
-    label: "Potwierdzenie autentyczności przez Marynarkę Wojenną"
-  - tier: "T4"
-    label: "Analizy optyczne wskazujące na bokeh przysłony"
+- "tier": "T1"
+  label: "Night-vision footage from USS Russell"
+  ref: "navy-uap-foia"
+- "tier": "T2"
+  label: "US Navy confirmation of authenticity"
+- "tier": "T4"
+  label: "Optical analyses indicating aperture bokeh"
 ---
 
-## Najprostsza lekcja w całej bazie
+## The simplest lesson in the database
 
-Kształt rozogniskowanego punktu świetlnego na zdjęciu to **kształt przysłony obiektywu**, nie
-kształt obiektu.
+The shape of a defocused point of light in an image is **the shape of the lens aperture**, not the
+shape of the object.
 
-Obiektyw z trójkątną przysłoną zamienia każde odległe światło w trójkąt. Obiektyw z sześciokątną
-przysłoną zamienia je w sześciokąt. To jest podstawa fotografii, znana każdemu, kto kiedykolwiek
-oglądał nocne zdjęcia z rozmytymi światłami w tle.
+A lens with a triangular aperture turns every distant light into a triangle. A lens with a hexagonal
+aperture turns it into a hexagon. This is a fundamental of photography, familiar to anyone who has
+looked at a night photograph with blurred lights in the background.
 
-Nagranie jest autentyczne. Piramidy nie ma. Te dwa zdania są jednocześnie prawdziwe i to jest
-dokładnie ten rodzaj rozróżnienia, dla którego powstała ta baza.
+The footage is authentic. There is no pyramid. Both sentences are true at once, and this is exactly
+the kind of distinction this database exists to make.

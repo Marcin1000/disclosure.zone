@@ -1,66 +1,85 @@
 ---
 title: "Hessdalen"
-subtitle: "Jedyny fenomen UAP na świecie, który wraca — i który da się zmierzyć aparaturą"
+subtitle: "The only UAP phenomenon in the world that comes back — and can be measured with instruments"
 date: 1984-01-21
-dateDisplay: "1981–obecnie; ekspedycja pomiarowa 1984"
+dateDisplay: "1981–present; measurement expedition 1984"
 country: "NO"
-countryName: "Norwegia"
-location: "Dolina Hessdalen, Holtålen, Trøndelag"
+countryName: "Norway"
+location: "Hessdalen valley, Holtålen, Trøndelag"
 lat: 62.78
 lon: 11.19
 domain: "scientific"
 tier: 1
 status: "unresolved"
-duration: "zjawisko powracające od ponad czterech dekad"
-witnesses: "Mieszkańcy doliny, zespoły badawcze, automatyczna stacja pomiarowa"
-evidence: ["visual", "radar", "photo", "instrument", "multi-witness", "film"]
-scores: { S: 4, R: 4, O: 5, P: 0, M: 4, T: 5, X: 4, D: 5 }
-summary: "W dolinie Hessdalen od 1981 r. obserwowane są powtarzalne zjawiska świetlne — w szczytowym okresie nawet kilkanaście razy tygodniowo. W 1984 r. przeprowadzono ekspedycję z radarem, spektrografem, magnetometrem, sejsmografem, laserem i licznikiem Geigera. Od 1998 r. działa automatyczna stacja monitorująca."
-official: "Brak. To jedyny przypadek w bazie badany głównie przez naukę cywilną, nie przez wojsko."
+duration: "a recurring phenomenon over more than four decades"
+witnesses: "Valley residents, research teams, an automatic measuring station"
+evidence:
+- "visual"
+- "radar"
+- "photo"
+- "instrument"
+- "multi-witness"
+- "film"
+scores:
+  S: 4
+  R: 4
+  O: 5
+  P: 0
+  M: 4
+  T: 5
+  X: 4
+  D: 5
+summary: "Since 1981 the Hessdalen valley has produced recurring luminous phenomena — at peak, more than a dozen times a week. In 1984 an expedition deployed radar, a spectrograph, a magnetometer, a seismograph, a laser and a Geiger counter. An automatic monitoring station has operated since 1998."
+official: "None. This is the only case in the database investigated chiefly by civilian science rather than by the military."
 alternatives:
-  - "Plazma z jonizacji w specyficznych warunkach geologicznych doliny (bogate złoża metali, aktywność piezoelektryczna)."
-  - "Zjawiska związane ze spalaniem pyłu metalicznego w powietrzu."
-  - "Refleksy świateł pojazdów i odbicia atmosferyczne — tłumaczą część, ale nie wszystkie obserwacje."
-  - "Nieznane zjawisko naturalne."
-claims: ["hessdalen-repeatable", "hessdalen-plasma"]
+- "Plasma from ionisation under the valley's specific geological conditions — metal-rich deposits, possible piezoelectric activity."
+- "Phenomena associated with combustion of metallic dust in air."
+- "Vehicle-light reflections and atmospheric effects — accounting for some, but not all, observations."
+- "An unknown natural phenomenon."
+claims:
+- "hessdalen-repeatable"
+- "hessdalen-plasma"
 sources:
-  - tier: "T1"
-    label: "Raport techniczny Project Hessdalen 1984 — wyniki radaru, spektrografu, magnetometru i sejsmografu"
-    note: "Raport otwarcie wymienia własne ograniczenia: szumy, przerwy w monitoringu, awarie instrumentów, możliwy wpływ radaru na część zapisów widmowych."
-  - tier: "T1"
-    label: "Dane automatycznej stacji pomiarowej (od 1998)"
-  - tier: "T4"
-    label: "Publikacje naukowe i kolejne kampanie pomiarowe"
+- "tier": "T1"
+  label: "Project Hessdalen 1984 technical report — radar, spectrograph, magnetometer and seismograph results"
+  note: "The report openly lists its own limits: noise, monitoring gaps, instrument failures, insufficient staffing, and possible influence of the team's own radar on some spectral records."
+  ref: "hessdalen-1984"
+- "tier": "T1"
+  label: "Automatic measuring station data (from 1998)"
+  ref: "hessdalen"
+- "tier": "T4"
+  label: "Scientific publications and subsequent measurement campaigns"
+  ref: "hessdalen-reports"
 ---
 
-## Dlaczego Hessdalen jest dla nauki ważniejsze niż Nimitz
+## Why Hessdalen matters more to science than Nimitz
 
-Nimitz jest mocniejszy militarnie. Hessdalen jest mocniejsze **metodologicznie** — i to jest
-ważniejsze rozróżnienie, niż się wydaje.
+Nimitz is militarily stronger. Hessdalen is **methodologically** stronger — and that is a more
+important distinction than it appears.
 
-Cała reszta tego korpusu ma tę samą wadę: zdarzenie miało miejsce raz, w przeszłości, bez
-przygotowanej aparatury, i nie da się go powtórzyć. Hessdalen jest jedynym miejscem na świecie,
-gdzie badacz może **postawić instrument i poczekać**.
+The rest of this corpus shares one defect: the event happened once, in the past, without prepared
+instrumentation, and cannot be repeated. Hessdalen is the only place on Earth where a researcher can
+**set up an instrument and wait.**
 
-To zamienia UAP z problemu historycznego w problem eksperymentalny.
+That converts UAP from a historical problem into an experimental one.
 
-## Ekspedycja 1984
+## The 1984 expedition
 
-Zespół rozstawił jednocześnie: radar, kamery, spektrograf, magnetometr, sejsmograf, laser,
-analizator widma i licznik Geigera. W trakcie kampanii odnotowano dziesiątki obserwacji
-optycznych i kilkadziesiąt ech radarowych.
+The team simultaneously deployed radar, cameras, a spectrograph, a magnetometer, a seismograph, a
+laser, a spectrum analyser and a Geiger counter. Over the campaign it logged dozens of optical
+observations and several dozen radar returns.
 
-## Uczciwe ograniczenia — z samego raportu
+## Honest limits — from the report itself
 
-Raport ekspedycji jest w tej bazie wyjątkiem: **sam wymienia swoje słabości**. Szumy pomiarowe,
-brak ciągłego monitoringu, awarie instrumentów, zbyt mała obsada, możliwość, że własny radar
-zespołu wpływał na część zapisów spektralnych.
+The expedition report is an exception in this database: **it lists its own weaknesses.** Measurement
+noise, gaps in monitoring, instrument failures, insufficient staffing, and the possibility that the
+team's own radar influenced some of the spectral records.
 
-Ta uczciwość podnosi, a nie obniża wiarygodność materiału. Tak wygląda raport naukowy, w
-odróżnieniu od raportu, który ma coś udowodnić.
+That candour raises rather than lowers the credibility of the material. This is what a scientific
+report looks like, as opposed to a report with something to prove.
 
-## Co to znaczy dla całej dziedziny
+## What it means for the field
 
-Jeżeli część zjawisk nazywanych „UAP" to nieznane zjawisko naturalne — plazmowe, geofizyczne,
-elektromagnetyczne — to Hessdalen jest miejscem, gdzie zostanie ono zidentyfikowane jako
-pierwsze. I nie będzie do tego potrzebne żadne odtajnienie dokumentów.
+If some of what we call "UAP" is an unknown natural phenomenon — plasma, geophysical,
+electromagnetic — Hessdalen is where it will be identified first. And no declassification will be
+required to do it.

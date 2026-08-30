@@ -1,53 +1,66 @@
 ---
 title: "Aguadilla"
-subtitle: "Najsłynniejsze nagranie „transmedium\" i rekonstrukcja 3D, która je rozłożyła"
+subtitle: "The most famous “transmedium” footage, and the 3D reconstruction that dismantled it"
 date: 2013-04-25
-dateDisplay: "25 kwietnia 2013"
+dateDisplay: "25 April 2013"
 country: "PR"
-countryName: "Portoryko"
-location: "Okolice lotniska Rafael Hernández, Aguadilla"
+countryName: "Puerto Rico"
+location: "Near Rafael Hernández Airport, Aguadilla"
 lat: 18.49
 lon: -67.13
 domain: "military"
 tier: 2
 status: "explained"
-duration: "ok. 3 minut materiału"
-witnesses: "Załoga samolotu Customs and Border Protection"
-evidence: ["ir", "film"]
-scores: { S: 3, R: 0, O: 4, P: 0, M: 2, T: 5, X: 1, D: 5 }
-summary: "Nagranie w podczerwieni z samolotu straży granicznej pokazuje obiekt lecący nad terenem, wchodzący do oceanu, wychodzący z niego i rozdzielający się na dwa. Przez lata było przedstawiane jako najlepszy dowód na obiekty poruszające się między ośrodkami."
-official: "AARO przeprowadziło rekonstrukcję trajektorii 3D. Ustalono z wysoką pewnością, że obiekty nie wchodziły do wody i nie rozdzielały się, a poruszały się z prędkością zbliżoną do prędkości wiatru; z umiarkowaną pewnością zidentyfikowano je jako parę lampionów."
+duration: "about 3 minutes of footage"
+witnesses: "A Customs and Border Protection aircraft crew"
+evidence:
+- "ir"
+- "film"
+scores:
+  S: 3
+  R: 0
+  O: 4
+  P: 0
+  M: 2
+  T: 5
+  X: 1
+  D: 5
+summary: "Infrared footage from a border patrol aircraft shows an object flying over terrain, entering the ocean, emerging, and splitting in two. For years it was presented as the best evidence for objects moving between media."
+official: "AARO performed a 3D trajectory reconstruction. It established with high confidence that the objects did not enter the water and did not split, and that they moved at approximately wind speed; with moderate confidence they were identified as a pair of sky lanterns."
 alternatives:
-  - "Dwa lampiony (sky lanterns) niesione wiatrem — wyjaśnienie zgodne z prędkością, trajektorią i sygnaturą termiczną."
-claims: ["aguadilla-transmedium"]
+- "Two sky lanterns carried by the wind — consistent with the speed, the trajectory and the thermal signature."
+claims:
+- "aguadilla-transmedium"
 sources:
-  - tier: "T1"
-    label: "Nagranie IR z samolotu CBP"
-  - tier: "T2"
-    label: "Analiza AARO: rekonstrukcja trajektorii 3D i identyfikacja"
+- "tier": "T1"
+  label: "IR footage from the CBP aircraft"
+  ref: "aaro"
+- "tier": "T2"
+  label: "AARO analysis: 3D trajectory reconstruction and identification"
+  ref: "aaro-records"
 ---
 
-## Dlaczego to najważniejszy „rozwiązany" przypadek współczesny
+## The most important solved contemporary case
 
-Aguadilla jest w bazie jako **eksponat metodologiczny numer jeden**.
+Aguadilla is in the database as **methodological exhibit number one.**
 
-To, co widz widzi na nagraniu, jest jednoznaczne: obiekt leci, nurkuje w ocean, wynurza się,
-rozdziela na dwa. Trudno o bardziej przekonujący materiał wizualny.
+What a viewer sees on the footage is unambiguous: an object flies, dives into the ocean, surfaces,
+splits in two. It is hard to imagine more persuasive visual material.
 
-Wszystkie te cztery obserwacje okazały się artefaktami geometrii patrzenia:
+All four of those observations turned out to be artefacts of viewing geometry:
 
-- „wejście do wody" — obiekt przechodzący **za** linią brzegową widzianą z góry pod małym kątem,
-- „rozdzielenie" — dwa obiekty od początku, chwilowo nierozróżnialne przy niskiej rozdzielczości
-  sensora,
-- „ogromna prędkość" — złudzenie wynikające z ruchu samolotu obserwującego, nie z ruchu celu.
+- "water entry" — an object passing **behind** a shoreline viewed from above at a shallow angle,
+- "splitting" — two objects present from the start, momentarily unresolvable at the sensor's
+  resolution,
+- "enormous speed" — an illusion produced by the motion of the observing aircraft, not the target.
 
-Prędkość rzeczywista: rzędu prędkości wiatru.
+Actual speed: on the order of the wind.
 
-## Co z tego wynika dla całej reszty korpusu
+## What follows for the rest of the corpus
 
-Nagranie z kamery nie jest trajektorią. Nagranie z kamery jest **rzutem trajektorii na płaszczyznę
-obserwacji z ruchomej platformy o nieznanej odległości do celu**.
+A camera recording is not a trajectory. A camera recording is **the projection of a trajectory onto
+an observation plane, from a moving platform, at an unknown range to the target.**
 
-Zanim jakiekolwiek nagranie UAP zostanie nazwane niezwykłym, trzeba przeprowadzić dokładnie tę
-analizę, którą AARO przeprowadziło tutaj. Robi to bardzo niewiele osób — i to jest największa
-pojedyncza słabość publicznej dyskusji o UAP.
+Before any UAP footage is called extraordinary, exactly the analysis AARO performed here has to be
+carried out. Very few people do it — and that is the single largest weakness in public discussion of
+UAP.

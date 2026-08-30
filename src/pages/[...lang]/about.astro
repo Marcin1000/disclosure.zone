@@ -1,0 +1,91 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCases } from '../../lib/cases';
+import { claims } from '../../data/claims';
+import { langParams, path, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+const en = lang === 'en';
+const all = await getCases(lang);
+const totalSrc = all.reduce((n, c) => n + c.data.sources.length, 0);
+const withUrl = all.reduce((n, c) => n + c.data.sources.filter(s => s.url).length, 0);
+const countries = new Set(all.map(c => c.data.country)).size;
+---
+<Base title={en ? 'About' : 'O projekcie'}
+      description={en ? 'What disclosure.zone is, who it is for, and what its limits are.' : 'Czym jest disclosure.zone, dla kogo powstaje i jakie ma ograniczenia.'}
+      lang={lang} rest="/about">
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{t('site.tagline')}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{en ? 'About' : 'O projekcie'}</h1>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:5rem">
+    <p class="lead">
+      {en
+        ? 'disclosure.zone is a UAP case database in which every claim carries a source tier and every case carries an openly computed evidence score.'
+        : 'disclosure.zone jest bazą przypadków UAP, w której każde twierdzenie ma przypisany poziom źródła, a każda sprawa — jawnie policzoną ocenę dowodową.'}
+    </p>
+
+    <h2>{en ? 'Why this exists' : 'Dlaczego to istnieje'}</h2>
+    <p>
+      {en
+        ? 'There is an enormous amount of UFO material online and almost none of it distinguishes an operational document from a recollection thirty years after the fact. The result is that strong cases sink together with legends, and sceptics discard both in one gesture.'
+        : 'Materiału o UFO jest w internecie ogromna ilość i prawie żaden nie odróżnia dokumentu operacyjnego od wspomnienia sprzed trzydziestu lat. W efekcie mocne sprawy toną razem z legendami, a sceptycy odrzucają jedne i drugie hurtem.'}
+    </p>
+    <p>
+      {en ? 'This database does one thing almost nobody does: ' : 'Ta baza robi jedną rzecz, której nie robi prawie nikt: '}
+      <strong>{en ? 'it separates the layers' : 'rozdziela warstwy'}</strong>
+      {en
+        ? '. Tehran 1976 rests on an intelligence report from the period. Rendlesham rests mostly on accounts written decades later. Nimitz rests on sworn testimony but without raw data. Those differences matter more than the shape of the object.'
+        : '. Teheran 1976 stoi na raporcie wywiadowczym z epoki. Rendlesham w większości na relacjach spisanych dekady później. Nimitz na zeznaniu pod przysięgą, ale bez surowych danych. Te różnice są ważniejsze od kształtu obiektu.'}
+    </p>
+
+    <h2>{en ? 'State of the database' : 'Stan bazy'}</h2>
+    <ul>
+      <li>{all.length} {en ? `cases from ${countries} countries` : `spraw z ${countries} państw`}</li>
+      <li>{claims.length} {en ? 'claims on the ledger' : 'twierdzeń w rejestrze'}</li>
+      <li>{totalSrc} {en ? `sources, of which ${withUrl} carry a verified link` : `źródeł, z czego ${withUrl} ma zweryfikowany odnośnik`}</li>
+    </ul>
+    <p>
+      {en
+        ? 'That last number is deliberately visible. Completing links to archival material is ongoing work, not something we sweep under the carpet. Every link in the registry was checked against a live source rather than guessed.'
+        : 'Ostatnia liczba jest celowo widoczna. Uzupełnianie odnośników do materiałów archiwalnych jest zadaniem bieżącym, a nie czymś, co zamiatamy pod dywan. Każdy odnośnik w rejestrze został sprawdzony wobec żywego źródła, a nie zgadnięty.'}
+    </p>
+
+    <h2>{en ? 'Limits' : 'Ograniczenia'}</h2>
+    <p>
+      {en
+        ? 'No single global database contains every UAP case. Many national archives are incomplete, part of the British documentation from before 1967 was destroyed under routine records disposal, and many holdings were never digitised. This corpus is '
+        : 'Nie istnieje jedna globalna baza zawierająca każdy przypadek UAP. Archiwa wielu państw są niekompletne, część brytyjskiej dokumentacji sprzed 1967 r. została zniszczona w rutynowym brakowaniu akt, a wiele zbiorów nie było nigdy zdigitalizowanych. Ten korpus jest '}
+      <strong>{en ? 'a selection of the cases with the highest analytical value' : 'selekcją spraw o najwyższej wartości analitycznej'}</strong>
+      {en ? ', not a complete census.' : ', a nie kompletnym spisem.'}
+    </p>
+    <p>
+      {en
+        ? 'Scores on the eight axes are expert judgements computed by an open algorithm. The algorithm is public precisely so that it is possible to disagree with it at a specific point, rather than only in general.'
+        : 'Oceny na ośmiu osiach są sądami eksperckimi wyliczonymi według jawnego algorytmu. Algorytm jest publiczny właśnie po to, żeby dało się z nim nie zgodzić w konkretnym punkcie, a nie tylko ogólnie.'}
+    </p>
+
+    <h2>{en ? 'What will not appear here' : 'Czego tu nie będzie'}</h2>
+    <ul>
+      <li>{en ? 'Social media material without provenance.' : 'Materiałów z mediów społecznościowych bez proweniencji.'}</li>
+      <li>{en ? 'Amplification of informants whose claims cannot be set against a document.' : 'Wzmacniania informatorów, których twierdzeń nie da się zestawić z dokumentem.'}</li>
+      <li>{en ? 'Headlines in the “shocking disclosure” register.' : 'Nagłówków w stylu „szokujące ujawnienie”.'}</li>
+    </ul>
+    <p>
+      {en
+        ? 'Rigour is the product here, not the decoration. One post written for clicks destroys the only thing separating this database from a thousand other UFO sites.'
+        : 'Rygor jest tu produktem, nie ozdobnikiem. Jeden wpis napisany pod kliknięcia niszczy jedyną rzecz, która odróżnia tę bazę od tysiąca innych stron o UFO.'}
+    </p>
+
+    <h2>{en ? 'Licence' : 'Licencja'}</h2>
+    <p>
+      {en
+        ? 'Database content is available under CC BY 4.0. Source documents remain the property of the issuing institutions and are linked, not copied. Machine-readable data: '
+        : 'Treść bazy jest dostępna na licencji CC BY 4.0. Dokumenty źródłowe pozostają własnością wydających je instytucji i są linkowane, a nie kopiowane. Dane w formatach maszynowych: '}
+      <a href={path(lang, '/data')}>{en ? 'the open data page' : 'strona danych otwartych'}</a>.
+    </p>
+  </section>
+</Base>

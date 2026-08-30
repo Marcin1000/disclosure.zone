@@ -1,40 +1,55 @@
 ---
 title: "Westall High School"
-subtitle: "Około dwustu uczniów i nauczycieli obserwuje lądujący obiekt w środku dnia"
+subtitle: "Around two hundred pupils and teachers watch an object descend in broad daylight"
 date: 1966-04-06
-dateDisplay: "6 kwietnia 1966"
+dateDisplay: "6 April 1966"
 country: "AU"
 countryName: "Australia"
-location: "Westall High School, Clayton South, Melbourne, Wiktoria"
+location: "Westall High School, Clayton South, Melbourne, Victoria"
 lat: -37.94
 lon: 145.13
 domain: "civil"
 tier: 2
 status: "unresolved"
-duration: "ok. 20 minut"
-witnesses: "Ok. 200 uczniów i kilkunastu nauczycieli"
-evidence: ["visual", "multi-witness", "trace"]
-scores: { S: 3, R: 0, O: 0, P: 1, M: 3, T: 3, X: 3, D: 3 }
-summary: "W biały dzień setki uczniów i nauczycieli obserwowały szary, dyskoidalny obiekt, który miał zniżyć się nad pobliskim terenem, a następnie odlecieć. Relacje o zabezpieczeniu terenu przez wojsko i o nakazie milczenia wobec uczniów nie zostały niezależnie potwierdzone dokumentami."
-official: "Brak formalnego rozstrzygnięcia. Wskazywano balon eksperymentalny programu HIBAL jako możliwe źródło."
+duration: "about 20 minutes"
+witnesses: "About 200 pupils and a dozen teachers"
+evidence:
+- "visual"
+- "multi-witness"
+- "trace"
+scores:
+  S: 3
+  R: 0
+  O: 0
+  P: 1
+  M: 3
+  T: 3
+  X: 3
+  D: 3
+summary: "In daylight, hundreds of pupils and teachers watched a grey disc-shaped object said to descend over nearby ground and then depart. Accounts of the site being secured by the military and of pupils being told to stay silent are not corroborated by any document."
+official: "No formal resolution. A HIBAL experimental balloon was indicated as a possible source."
 alternatives:
-  - "Balon wysokościowy programu HIBAL z ładunkiem — trasy programu przebiegały w rejonie; wyjaśnienie częściowo zgodne."
-  - "Zjawisko konwersji zbiorowej: jedno źródło obserwacji, wspólnie skonstruowana interpretacja."
-claims: ["westall-military-cover"]
+- "A HIBAL high-altitude balloon with payload — programme flight paths crossed the region; partially consistent."
+- "Collective conversion: a single observed source, with an interpretation constructed jointly afterwards."
+claims:
+- "westall-military-cover"
 sources:
-  - tier: "T4"
-    label: "Relacje uczestników zbierane głównie od lat 2000 (projekt dokumentacyjny)"
-  - tier: "T1"
-    label: "Dokumentacja programu balonowego HIBAL, National Archives of Australia"
+- "tier": "T4"
+  label: "Participant accounts collected chiefly from the 2000s (documentation project)"
+  ref: "naa-ufo"
+- "tier": "T1"
+  label: "HIBAL balloon programme documentation, National Archives of Australia"
 ---
 
-## Dlaczego „dwustu świadków" to nie „dwieście razy mocniejszy dowód"
+## Why "two hundred witnesses" is not "two hundred times the evidence"
 
-Westall to najlepszy w tej bazie test intuicji, że liczba świadków przekłada się na siłę dowodu.
-Nie przekłada się — przynajmniej nie liniowo.
+Westall is the best test in this database of the intuition that witness count converts into
+evidential strength. It does not — at least not linearly.
 
-Dwustu ludzi patrzących na **to samo zjawisko z tego samego miejsca** dostarcza jednej obserwacji
-powielonej dwieście razy, a nie dwustu niezależnych pomiarów. Jeżeli źródłem był balon HIBAL, to
-wszyscy zobaczyli balon — a ich wspólna, uzgadniana przez lata interpretacja utworzyła dysk.
+Two hundred people watching **the same phenomenon from the same place** supply one observation
+replicated two hundred times, not two hundred independent measurements. If the source was a HIBAL
+balloon, then everyone saw a balloon — and their shared interpretation, negotiated over years,
+produced a disc.
 
-Masowość zwiększa pewność, że **coś tam było**. Nie zwiększa pewności, **czym to było**.
+Mass raises confidence that **something was there.** It does not raise confidence about **what it
+was.**

@@ -1,39 +1,51 @@
 ---
-title: "Incydent śmigłowca Coyne'a"
-subtitle: "Załoga UH-1 Gwardii Narodowej i niewyjaśniony przyrost wysokości"
+title: "The Coyne Helicopter Incident"
+subtitle: "An Army Reserve UH-1 crew and an unexplained climb"
 date: 1973-10-18
-dateDisplay: "18 października 1973"
+dateDisplay: "18 October 1973"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "W pobliżu Mansfield, Ohio"
+countryName: "United States"
+location: "Near Mansfield, Ohio"
 lat: 40.76
 lon: -82.52
 domain: "military"
 tier: 2
 status: "unresolved"
-duration: "ok. 5 minut"
-witnesses: "4-osobowa załoga śmigłowca, świadkowie naziemni w samochodzie"
-evidence: ["visual", "multi-witness", "instrument"]
-scores: { S: 5, R: 0, O: 0, P: 0, M: 3, T: 4, X: 4, D: 3 }
-summary: "Załoga wojskowego śmigłowca UH-1 zgłosiła zbliżający się obiekt, wobec którego kapitan wykonał gwałtowne zejście. Po zdarzeniu wysokościomierz wskazywał wznoszenie o kilkaset metrów, mimo że drążek pozostawał w pozycji zejścia."
-official: "Blue Book już wtedy nie działał; sprawa nie miała formalnego rozstrzygnięcia federalnego."
+duration: "about 5 minutes"
+witnesses: "Four-man helicopter crew; ground witnesses in a car"
+evidence:
+- "visual"
+- "multi-witness"
+- "instrument"
+scores:
+  S: 5
+  R: 0
+  O: 0
+  P: 0
+  M: 3
+  T: 4
+  X: 4
+  D: 3
+summary: "The crew of a military UH-1 reported an approaching object, against which the captain executed a sharp descent. Afterwards the altimeter indicated a climb of several hundred metres, although the collective remained set to descend."
+official: "Blue Book had already been terminated; the case had no federal resolution."
 alternatives:
-  - "Bolid z roju Orionidów przy jednoczesnym błędzie odczytu wysokościomierza."
-  - "Wznoszący prąd powietrza plus dezorientacja przestrzenna po gwałtownym manewrze."
-  - "Rzeczywisty obiekt oddziałujący na śmigłowiec."
-claims: ["coyne-altitude-gain"]
+- "An Orionid bolide combined with an altimeter misreading."
+- "An updraft plus spatial disorientation after a violent manoeuvre."
+- "A genuine object interacting with the helicopter."
+claims:
+- "coyne-altitude-gain"
 sources:
-  - tier: "T3"
-    label: "Raport lotniczy załogi i późniejsze zeznania czterech członków załogi"
-  - tier: "T4"
-    label: "Niezależne relacje świadków naziemnych zebrane po zdarzeniu"
+- "tier": "T3"
+  label: "Flight report and later testimony from all four crew members"
+- "tier": "T4"
+  label: "Independent ground witness accounts collected after the event"
 ---
 
-## Element, który wyróżnia tę sprawę
+## What sets this case apart
 
-Nie obserwacja, tylko **wskazanie przyrządu niezgodne z pozycją sterów**. To jedna z niewielu
-spraw w korpusie, w których raportowany jest konflikt między działaniem pilota a odczytem
-instrumentu.
+Not the sighting, but **an instrument reading inconsistent with control input.** It is one of very
+few cases in the corpus reporting a conflict between what the pilot did and what the instrument
+showed.
 
-Jednocześnie: nie zachował się zapis rejestratora. Mamy odczyt zapamiętany i zaraportowany przez
-załogę, a nie zapis maszynowy. Cztery niezależne relacje to dużo — ale to nadal relacje.
+At the same time: no recorder data survives. We have a reading remembered and reported by the crew,
+not a machine record. Four independent accounts is a great deal — but they remain accounts.

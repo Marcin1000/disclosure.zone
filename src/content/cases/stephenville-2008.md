@@ -1,43 +1,56 @@
 ---
 title: "Stephenville"
-subtitle: "Zgłoszenia z Teksasu skonfrontowane z danymi radarowymi FAA uzyskanymi w trybie FOIA"
+subtitle: "Texas reports set against FAA radar data obtained under freedom of information"
 date: 2008-01-08
-dateDisplay: "8 stycznia 2008"
+dateDisplay: "8 January 2008"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Stephenville, Erath County, Teksas"
+countryName: "United States"
+location: "Stephenville, Erath County, Texas"
 lat: 32.22
-lon: -98.20
+lon: -98.2
 domain: "mixed"
 tier: 2
 status: "disputed"
-duration: "kilkadziesiąt minut"
-witnesses: "Kilkudziesięciu mieszkańców, w tym pilot i funkcjonariusz"
-evidence: ["visual", "radar", "multi-witness"]
-scores: { S: 3, R: 3, O: 0, P: 0, M: 3, T: 4, X: 2, D: 4 }
-summary: "Po fali zgłoszeń o dużym, cichym obiekcie ze światłami niezależni badacze uzyskali w trybie FOIA dane radarowe FAA, które wykazały niezidentyfikowany ślad w rejonie oraz aktywność myśliwców F-16, wcześniej zaprzeczaną przez bazę."
-official: "Baza lotnicza początkowo zaprzeczyła obecności swoich maszyn, następnie skorygowała stanowisko, potwierdzając loty treningowe F-16 tego wieczoru."
+duration: "several tens of minutes"
+witnesses: "Several dozen residents, including a pilot and a law enforcement officer"
+evidence:
+- "visual"
+- "radar"
+- "multi-witness"
+scores:
+  S: 3
+  R: 3
+  O: 0
+  P: 0
+  M: 3
+  T: 4
+  X: 2
+  D: 4
+summary: "After a wave of reports of a large, silent object with lights, independent researchers obtained FAA radar data under FOIA, which showed an unidentified track in the area together with F-16 activity the air base had previously denied."
+official: "The air base initially denied its aircraft were present, then corrected its position, confirming F-16 training flights that evening."
 alternatives:
-  - "Flary i loty treningowe F-16 — potwierdzone; tłumaczą znaczną część obserwacji."
-  - "Niezidentyfikowany ślad radarowy jako artefakt lub obiekt niewspółpracujący (bez transpondera)."
-  - "Rzeczywisty duży obiekt."
-claims: ["stephenville-radar-foia", "stephenville-f16-denial"]
+- "Flares and F-16 training flights — confirmed; these account for a substantial share of the sightings."
+- "The unidentified radar track as an artefact or a non-cooperative object without a transponder."
+- "A genuine large object."
+claims:
+- "stephenville-radar-foia"
+- "stephenville-f16-denial"
 sources:
-  - tier: "T1"
-    label: "Dane radarowe FAA uzyskane w trybie FOIA (styczeń 2008)"
-  - tier: "T2"
-    label: "Skorygowane oświadczenie bazy lotniczej potwierdzające loty F-16"
+- "tier": "T1"
+  label: "FAA radar data obtained under FOIA (January 2008)"
+- "tier": "T2"
+  label: "The air base's corrected statement confirming the F-16 flights"
 ---
 
-## Najważniejszy element: dane pozyskane oddolnie
+## The key element: data obtained from below
 
-Stephenville jest precedensem, który powinien być znacznie bardziej znany. To jeden z pierwszych
-przypadków, w których **niezależni badacze pozyskali surowe dane radarowe państwa w trybie
-dostępu do informacji publicznej** i przeprowadzili własną analizę.
+Stephenville is a precedent that deserves to be far better known. It is one of the first cases in
+which **independent researchers obtained a state's raw radar data under freedom of information law**
+and ran their own analysis.
 
-Rezultat był mieszany i właśnie dlatego cenny. Dane potwierdziły, że pierwsze oficjalne
-stanowisko było błędne (F-16 jednak latały). Jednocześnie duża część obserwacji daje się
-wytłumaczyć właśnie tymi lotami i flarami.
+The result was mixed, and valuable precisely for that. The data confirmed that the first official
+position was wrong — the F-16s had been flying. At the same time, a large share of the sightings is
+explained by exactly those flights and their flares.
 
-To jest model pracy, do którego powinna dążyć cała dziedzina: nie „ujawnienie" od góry, tylko
-**systematyczne pozyskiwanie surowych danych i publiczna analiza**.
+This is the working model the whole field should aim at: not "disclosure" from above, but
+**systematic acquisition of raw data and public analysis.**

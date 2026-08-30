@@ -1,42 +1,56 @@
 ---
 title: "Varginha"
-subtitle: "Brazylijska legenda o schwytanej istocie i przypadek prawie w całości wtórny"
+subtitle: "A Brazilian legend of a captured being, and a case almost entirely second-hand"
 date: 1996-01-20
-dateDisplay: "styczeń 1996"
+dateDisplay: "January 1996"
 country: "BR"
-countryName: "Brazylia"
+countryName: "Brazil"
 location: "Varginha, Minas Gerais"
 lat: -21.55
 lon: -45.43
 domain: "civil"
 tier: 3
 status: "disputed"
-duration: "seria zdarzeń w ciągu kilku dni"
-witnesses: "Trzy młode kobiety (relacja pierwotna), liczni świadkowie relacji wtórnych"
-evidence: ["visual", "multi-witness"]
-scores: { S: 1, R: 0, O: 0, P: 0, M: 1, T: 2, X: 2, D: 3 }
-summary: "Trzy młode kobiety zgłosiły, że widziały nietypową istotę w mieście. Wokół relacji narosła rozbudowana narracja o wojskowej operacji przechwycenia, transporcie do szpitala i śmierci schwytanego stworzenia."
-official: "Brazylijskie siły zbrojne zaprzeczyły prowadzeniu takiej operacji. Brak dokumentacji potwierdzającej."
+duration: "a series of events over several days"
+witnesses: "Three young women (primary account); numerous witnesses to secondary accounts"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 1
+  R: 0
+  O: 0
+  P: 0
+  M: 1
+  T: 2
+  X: 2
+  D: 3
+summary: "Three young women reported seeing an unusual creature in the town. An elaborate narrative grew around the account, involving a military capture operation, transport to a hospital, and the death of the captured being."
+official: "The Brazilian armed forces denied conducting any such operation. No documentation supports it."
 alternatives:
-  - "Błędna identyfikacja osoby chorej lub bezdomnej w złych warunkach oświetleniowych."
-  - "Narracja zbudowana wtórnie na podstawie krótkiej relacji pierwotnej."
-claims: ["varginha-creature-captured"]
+- "Misidentification of an ill or homeless person in poor lighting."
+- "A narrative constructed secondarily on the basis of a brief primary account."
+claims:
+- "varginha-creature-captured"
 sources:
-  - tier: "T4"
-    label: "Relacja trzech pierwotnych świadków"
-  - tier: "T5"
-    label: "Rozbudowana narracja o operacji wojskowej i transporcie ciała"
-    note: "Praktycznie w całości oparta na źródłach drugiej i trzeciej ręki."
+- "tier": "T4"
+  label: "Accounts of the three primary witnesses"
+  ref: "br-varginha-file"
+- "tier": "T5"
+  label: "The elaborated narrative of a military operation and transport of a body"
+  note: "Based almost entirely on second- and third-hand sources."
+  ref: "br-an-ovni"
 ---
 
-## Dlaczego ocena jest niska mimo ogromnej popularności
+## Why the score is low despite enormous popularity
 
-Varginha jest w Brazylii tym, czym Roswell w USA — i ma dokładnie tę samą strukturę problemu.
+Varginha is to Brazil what Roswell is to the United States — and it has exactly the same structural
+problem.
 
-Relacja pierwotna jest krótka i skromna: trzy osoby widziały coś nietypowego. Cała reszta —
-wojsko, szpital, ciało, tajny transport — pochodzi z **warstw narracyjnych dobudowanych później**,
-przez osoby, które same niczego nie widziały.
+The primary account is short and modest: three people saw something unusual. Everything else — the
+military, the hospital, the body, the covert transport — comes from **narrative layers added later**,
+by people who saw nothing themselves.
 
-Sprawa jest w bazie jako przykład tego, jak wygląda przypadek zbudowany niemal wyłącznie ze
-źródeł T4 i T5. Jest to konieczny punkt odniesienia: bez niego nie widać, jak bardzo różni się
-od niego Trans-en-Provence albo Teheran.
+The case is in the database as an example of what a case built almost entirely from T4 and T5 sources
+looks like. It is a necessary reference point: without it, one cannot see how sharply it differs from
+Trans-en-Provence or Tehran.

@@ -1,40 +1,53 @@
 ---
-title: "Mosul Orb"
-subtitle: "Kilkusekundowe nagranie z platformy rozpoznawczej nad Irakiem, którego AARO nie zamknęło"
+title: "The Mosul Orb"
+subtitle: "A few seconds from a reconnaissance platform over Iraq that AARO did not close"
 date: 2016-04-01
-dateDisplay: "kwiecień 2016"
+dateDisplay: "April 2016"
 country: "IQ"
-countryName: "Irak"
-location: "Przestrzeń nad Mosulem"
+countryName: "Iraq"
+location: "Airspace over Mosul"
 lat: 36.34
 lon: 43.13
 domain: "military"
 tier: 2
 status: "unresolved"
-duration: "kilka sekund"
-witnesses: "Operatorzy platformy rozpoznawczej"
-evidence: ["ir", "film"]
-scores: { S: 3, R: 0, O: 3, P: 0, M: 2, T: 4, X: 3, D: 3 }
-summary: "Krótkie nagranie z amerykańskiej platformy rozpoznawczej pokazujące niewielki, kulisty obiekt przecinający pole widzenia nad Mosulem. AARO przedstawiło je publicznie jako przykład sprawy nierozstrzygniętej."
-official: "AARO: przypadek nierozstrzygnięty ze względu na niewystarczające dane; brak podstaw do przypisania nadzwyczajnych właściwości."
+duration: "a few seconds"
+witnesses: "Reconnaissance platform operators"
+evidence:
+- "ir"
+- "film"
+scores:
+  S: 3
+  R: 0
+  O: 3
+  P: 0
+  M: 2
+  T: 4
+  X: 3
+  D: 3
+summary: "A short clip from a US reconnaissance platform showing a small spherical object crossing the field of view over Mosul. AARO presented it publicly as an example of an unresolved case."
+official: "AARO: unresolved for insufficient data; no basis for attributing extraordinary properties."
 alternatives:
-  - "Balon, dron lub obiekt dryfujący w strefie działań."
-  - "Artefakt sensora."
-claims: ["mosul-orb-unresolved"]
+- "A balloon, drone or drifting object in a conflict zone."
+- "A sensor artefact."
+claims:
+- "mosul-orb-unresolved"
 sources:
-  - tier: "T1"
-    label: "Nagranie przedstawione publicznie przez AARO"
-  - tier: "T2"
-    label: "Komentarz AARO do przypadku"
+- "tier": "T1"
+  label: "Footage presented publicly by AARO"
+  ref: "aaro"
+- "tier": "T2"
+  label: "AARO commentary on the case"
+  ref: "aaro-records"
 ---
 
-## Dlaczego to ważne, mimo że nic nie widać
+## Why this matters even though nothing is visible
 
-Mosul Orb jest w bazie jako przykład **uczciwego „nie wiem" ze strony instytucji**.
+The Mosul orb is in the database as an example of **an institution saying “I don't know” honestly.**
 
-AARO mogło tego nagrania nie pokazywać albo dopasować do niego wyjaśnienie. Zamiast tego
-przedstawiło je publicznie z komentarzem, że danych jest za mało, by cokolwiek stwierdzić — i że
-brak rozstrzygnięcia nie oznacza nadzwyczajności.
+AARO could have withheld the footage, or fitted an explanation to it. Instead it presented the clip
+publicly with the comment that there is too little data to state anything — and that absence of
+resolution does not imply anomaly.
 
-Ta postawa jest wzorem dla całej dziedziny. Kategoria „nierozstrzygnięty z powodu braku danych"
-musi istnieć osobno — inaczej każdy nieostry piksel staje się dowodem.
+That posture is a model for the whole field. The category "unresolved for lack of data" has to exist
+separately; otherwise every blurry pixel becomes evidence.

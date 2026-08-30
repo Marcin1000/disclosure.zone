@@ -1,0 +1,46 @@
+---
+import Base from '../../layouts/Base.astro';
+import { archives } from '../../data/archives';
+import { resolveSource } from '../../data/sources';
+import { langParams, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+const ST: Record<string, { k: string; cls: string }> = {
+  active: { k: 'arch.active', cls: 'chip--on' },
+  closed: { k: 'arch.closed', cls: '' },
+  transformed: { k: 'arch.transformed', cls: 'chip--amber' },
+};
+const open = archives.filter(a => a.publicDb).length;
+---
+<Base title={t('arch.title')} description={t('arch.lead')} lang={lang} rest="/archives">
+  <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{t('arch.kicker', { n: archives.length, o: open })}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('arch.title')}</h1>
+    <p class="lead dim" style="max-width:66ch">{t('arch.lead')}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <div class="stack" style="--s:1px;background:var(--line);border:1px solid var(--line)">
+      {archives.map(a => {
+        const url = resolveSource(a.ref);
+        return (
+          <article style="background:var(--void-2);padding:clamp(1.5rem,3.5vw,2.2rem)">
+            <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.7rem">
+              <span class="label label--phos">{a.countryName[lang]}</span>
+              <span class="label">{a.years}</span>
+              <span class:list={['chip', ST[a.status].cls]}>{t(ST[a.status].k)}</span>
+              {a.publicDb && <span class="chip chip--on">{t('arch.publicDb')}</span>}
+            </div>
+            <h2 style="font-size:clamp(1.2rem,2.4vw,1.6rem);margin:0 0 .3rem">{a.program}</h2>
+            <p class="mono dim" style="font-size:.82rem;margin:0 0 1rem">{a.institution[lang]}</p>
+            <p style="margin:0 0 1rem;color:var(--fg-dim);font-size:.97rem;max-width:80ch">{a.note[lang]}</p>
+            <p class="label" style="margin:0">{t('arch.volume')}: <span style="color:var(--fg-dim);letter-spacing:0;text-transform:none;font-weight:400">{a.volume[lang]}</span></p>
+            {url && <p style="margin:.9rem 0 0"><a href={url} rel="noopener noreferrer" target="_blank" class="mono" style="font-size:.85rem">{t('arch.source')}</a></p>}
+          </article>
+        );
+      })}
+    </div>
+  </section>
+</Base>

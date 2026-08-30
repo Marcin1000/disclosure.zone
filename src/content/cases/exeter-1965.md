@@ -1,42 +1,53 @@
 ---
 title: "Exeter"
-subtitle: "Nastolatek, dwaj policjanci i duży obiekt nad linią wysokiego napięcia"
+subtitle: "A teenager, two police officers and a large object over a power line"
 date: 1965-09-03
-dateDisplay: "3 września 1965"
+dateDisplay: "3 September 1965"
 country: "US"
-countryName: "Stany Zjednoczone"
+countryName: "United States"
 location: "Exeter, New Hampshire"
 lat: 42.98
 lon: -70.95
 domain: "civil"
 tier: 2
 status: "unresolved"
-duration: "ok. 15 minut"
-witnesses: "Cywil oraz dwaj funkcjonariusze policji obserwujący niezależnie"
-evidence: ["visual", "multi-witness"]
-scores: { S: 5, R: 0, O: 0, P: 0, M: 2, T: 4, X: 3, D: 3 }
-summary: "Norman Muscarello i dwaj wezwani policjanci obserwowali z bliska duży, cichy obiekt z rzędem pulsujących czerwonych świateł, poruszający się wzdłuż linii przesyłowej."
-official: "Blue Book początkowo wskazał ćwiczenia lotnicze Operation Big Blast i gwiazdy; wyjaśnienie zostało zakwestionowane ze względu na godziny — ćwiczenia zakończyły się przed obserwacją."
+duration: "about 15 minutes"
+witnesses: "A civilian and two police officers observing independently"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 5
+  R: 0
+  O: 0
+  P: 0
+  M: 2
+  T: 4
+  X: 3
+  D: 3
+summary: "Norman Muscarello and two responding police officers observed at close range a large, silent object with a row of pulsing red lights moving along a transmission line."
+official: "Blue Book initially cited the Operation Big Blast exercise and stars; the explanation was challenged on timing — the exercise had ended before the sighting."
 alternatives:
-  - "Samoloty w ćwiczeniach nocnych — czasowo niespójne z relacjami."
-  - "Zjawisko koronowe / wyładowania na linii wysokiego napięcia."
-  - "Nieznany obiekt fizyczny."
+- "Aircraft on a night exercise — inconsistent in time with the accounts."
+- "A corona discharge on the high-voltage line."
+- "A genuine unknown physical object."
 claims: []
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book, sprawa Exeter, wraz z późniejszą korespondencją korygującą"
-  - tier: "T1"
-    label: "Raporty policji Exeter"
+- "tier": "T1"
+  label: "Project Blue Book files, Exeter case, with the later corrective correspondence"
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "Exeter police reports"
 ---
 
-## Wartość: policjanci jako świadkowie niezależni
+## Value: police as independent witnesses
 
-Exeter jest mocny, bo świadkowie przybyli **niezależnie i sceptycznie nastawieni**, a mimo to
-zaraportowali to samo zjawisko, co pierwszy zgłaszający.
+Exeter is strong because the officers arrived **independently and sceptically disposed**, and
+nonetheless reported the same phenomenon as the first witness.
 
-Jest też jednym z lepiej udokumentowanych przypadków, w których **oficjalne wyjaśnienie okazało
-się demonstrowalnie błędne** — wskazane ćwiczenia lotnicze zakończyły się przed obserwacją.
-Blue Book skorygował klasyfikację po interwencji.
+It is also one of the better-documented cases in which **the official explanation was demonstrably
+wrong** — the cited exercise had finished before the sighting. Blue Book revised the classification
+after being challenged.
 
-To ważny kontrapunkt do dwóch skrajności. Oficjalne wyjaśnienia bywały nierzetelne. I bywały
-korygowane, gdy ktoś je sprawdził.
+That is an important counterpoint to both extremes. Official explanations were sometimes shoddy.
+And they were corrected when somebody checked them.

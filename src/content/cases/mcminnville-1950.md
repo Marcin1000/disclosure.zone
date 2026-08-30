@@ -1,40 +1,51 @@
 ---
-title: "Fotografie z McMinnville"
-subtitle: "Dwa najsłynniejsze zdjęcia UFO w historii i granice analizy fotograficznej"
+title: "The McMinnville Photographs"
+subtitle: "The two most famous UFO photographs ever taken, and the limits of photographic analysis"
 date: 1950-05-11
-dateDisplay: "11 maja 1950"
+dateDisplay: "11 May 1950"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Farma Trentów, McMinnville, Oregon"
+countryName: "United States"
+location: "The Trent farm, McMinnville, Oregon"
 lat: 45.21
-lon: -123.20
+lon: -123.2
 domain: "civil"
 tier: 2
 status: "disputed"
-duration: "kilkadziesiąt sekund"
-witnesses: "2 (małżeństwo Trentów)"
-evidence: ["photo", "visual"]
-scores: { S: 2, R: 0, O: 3, P: 0, M: 1, T: 4, X: 2, D: 4 }
-summary: "Para rolników wykonała dwie fotografie metalicznego obiektu dyskoidalnego. Zdjęcia przeszły przez kilka niezależnych analiz — w tym w ramach Condon Committee — i do dziś nie mają rozstrzygnięcia zgodnego dla wszystkich badaczy."
-official: "Condon Committee uznał, że analiza fotometryczna jest zgodna z dużym, odległym obiektem, ale nie wykluczył mistyfikacji."
+duration: "several tens of seconds"
+witnesses: "2 (the Trents)"
+evidence:
+- "photo"
+- "visual"
+scores:
+  S: 2
+  R: 0
+  O: 3
+  P: 0
+  M: 1
+  T: 4
+  X: 2
+  D: 4
+summary: "A farming couple took two photographs of a metallic disc-shaped object. The images passed through several independent analyses, including within the Condon Committee, and to this day have no resolution that all researchers accept."
+official: "The Condon Committee judged the photometric analysis consistent with a large distant object, but did not rule out a hoax."
 alternatives:
-  - "Model zawieszony na żyłce pod przewodem energetycznym widocznym na kadrze — hipoteza wielokrotnie wskazywana w analizach sceptycznych."
-  - "Rzeczywisty duży obiekt w odległości ~1 km — zgodny z częścią analiz fotometrycznych."
-claims: ["mcminnville-authentic"]
+- "A model suspended on a line beneath the power cable visible in frame — the hypothesis repeatedly advanced in sceptical analyses."
+- "A genuine large object at roughly a kilometre — consistent with part of the photometric work."
+claims:
+- "mcminnville-authentic"
 sources:
-  - tier: "T1"
-    label: "Oryginalne negatywy i analiza w raporcie Condon Committee (1968)"
-  - tier: "T4"
-    label: "Późniejsze reanalizy fotogrametryczne, sprzeczne we wnioskach"
+- "tier": "T1"
+  label: "The original negatives and the analysis in the Condon Committee report (1968)"
+  ref: "condon"
+- "tier": "T4"
+  label: "Later photogrammetric re-analyses, contradictory in their conclusions"
 ---
 
-## Dlaczego fotografia sama w sobie nie wystarcza
+## Why a photograph alone is not enough
 
-McMinnville jest najlepszym argumentem za tezą, że **zdjęcie bez znanej odległości nie jest
-pomiarem**. Ten sam kadr jest zgodny z modelem o średnicy 30 cm w odległości 5 metrów i z
-obiektem o średnicy 20 metrów w odległości kilometra. Fotometria zawęża przedział, ale go nie
-zamyka.
+McMinnville is the strongest argument for the proposition that **a photograph without a known range
+is not a measurement.** The same frame is consistent with a 30-centimetre model at five metres and
+with a twenty-metre object at a kilometre. Photometry narrows the interval; it does not close it.
 
-Sprawa jest w bazie jako punkt odniesienia: to prawdopodobnie **najlepsze zdjęcie UFO, jakie
-istnieje**, i nawet ono po siedmiu dekadach analiz nie rozstrzyga niczego. To mówi więcej o
-wartości dowodowej fotografii niż jakikolwiek komentarz.
+The case sits in the database as a reference point: this is probably **the best UFO photograph that
+exists**, and even it settles nothing after seven decades of analysis. That says more about the
+evidential value of photography than any commentary could.

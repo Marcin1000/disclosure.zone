@@ -1,51 +1,65 @@
 ---
-title: "Phoenix Lights"
-subtitle: "Dwa różne zdarzenia jednej nocy, konsekwentnie mylone ze sobą od trzydziestu lat"
+title: "The Phoenix Lights"
+subtitle: "Two different events in one night, consistently conflated for thirty years"
 date: 1997-03-13
-dateDisplay: "13 marca 1997"
+dateDisplay: "13 March 1997"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Arizona: od Henderson przez Phoenix po Tucson"
+countryName: "United States"
+location: "Arizona: from Henderson through Phoenix to Tucson"
 lat: 33.45
 lon: -112.07
 domain: "civil"
 tier: 2
 status: "disputed"
-duration: "dwa epizody: ok. 21:00 i ok. 22:00"
-witnesses: "Tysiące mieszkańców, w tym ówczesny gubernator stanu"
-evidence: ["visual", "multi-witness", "film", "photo"]
-scores: { S: 3, R: 1, O: 3, P: 0, M: 3, T: 4, X: 2, D: 4 }
-summary: "Wieczorem 13 marca 1997 r. mieszkańcy Arizony obserwowali najpierw przelot formacji świateł w układzie litery V, a około godziny później stacjonarny łuk jasnych świateł nad miastem. Oba epizody funkcjonują dziś pod jedną nazwą."
-official: "Drugi epizod (ok. 22:00) zidentyfikowano jako flary oświetlające zrzucone podczas ćwiczeń Gwardii Narodowej na poligonie Barry M. Goldwater."
+duration: "two episodes: about 21:00 and about 22:00"
+witnesses: "Thousands of residents, including the state governor of the time"
+evidence:
+- "visual"
+- "multi-witness"
+- "film"
+- "photo"
+scores:
+  S: 3
+  R: 1
+  O: 3
+  P: 0
+  M: 3
+  T: 4
+  X: 2
+  D: 4
+summary: "On the evening of 13 March 1997 Arizona residents first watched a V-shaped formation of lights transit the state, and about an hour later a stationary arc of bright lights over the city. Both episodes now travel under a single name."
+official: "The second episode, around 22:00, was identified as illumination flares dropped during a National Guard exercise on the Barry M. Goldwater range."
 alternatives:
-  - "Epizod 22:00: flary LUU-2 na spadochronach — potwierdzone dokumentacją ćwiczeń, zgodne z pozycją, wysokością i sekwencją gaśnięcia."
-  - "Epizod 21:00: formacja samolotów A-10 przelatujących w szyku — zgodna z trasą i czasem; obserwatorzy widzieli jedynie światła i domykali między nimi ciemny kadłub."
-  - "Epizod 21:00 jako pojedynczy duży obiekt — brak potwierdzenia radarowego."
-claims: ["phoenix-single-craft", "phoenix-flares"]
+- "The 22:00 episode: LUU-2 flares on parachutes — confirmed by exercise documentation and consistent with position, altitude and the sequence of extinction."
+- "The 21:00 episode: a formation of A-10 aircraft in transit — consistent with route and timing; observers saw only lights and closed a dark hull between them."
+- "The 21:00 episode as a single large object — with no radar confirmation."
+claims:
+- "phoenix-single-craft"
+- "phoenix-flares"
 sources:
-  - tier: "T1"
-    label: "Dokumentacja ćwiczeń Gwardii Narodowej na poligonie Barry M. Goldwater, marzec 1997"
-  - tier: "T1"
-    label: "Materiały wideo z obu epizodów, nagrane przez wielu niezależnych świadków"
-  - tier: "T4"
-    label: "Relacje świadków epizodu godz. 21:00"
+- "tier": "T1"
+  label: "National Guard exercise documentation, Barry M. Goldwater range, March 1997"
+- "tier": "T1"
+  label: "Video material from both episodes, recorded by many independent witnesses"
+- "tier": "T4"
+  label: "Witness accounts of the ~21:00 episode"
 ---
 
-## Najważniejsza korekta
+## The correction that matters most
 
-„Phoenix Lights" to **dwa różne zdarzenia**, oddzielone godziną, o różnym charakterze i różnym
-statusie wyjaśnienia. Łączenie ich jest źródłem większości nieporozumień wokół sprawy.
+"The Phoenix Lights" are **two different events**, an hour apart, of different character and
+different resolution status. Conflating them is the source of most of the confusion around the case.
 
-**Epizod ok. 22:00** jest wyjaśniony. Flary oświetlające zrzucone podczas ćwiczeń — z
-dokumentacją, zgodną geometrią i charakterystyczną sekwencją gaśnięcia widoczną na nagraniach.
-Ten epizod dostarczył większości materiału filmowego i większości słynnych zdjęć.
+**The ~22:00 episode is explained.** Illumination flares dropped during an exercise — with
+documentation, consistent geometry and the characteristic extinction sequence visible on the
+footage. That episode supplied most of the film material and most of the famous photographs.
 
-**Epizod ok. 21:00** jest znacznie ciekawszy i znacznie słabiej udokumentowany. To on generuje
-relacje o ogromnym trójkącie przesłaniającym gwiazdy. Nagrań jest niewiele, a te, które istnieją,
-pokazują punkty świetlne, nie strukturę.
+**The ~21:00 episode is far more interesting and far less documented.** It is the source of accounts
+describing an enormous triangle occulting stars. Little footage exists, and what does exist shows
+points of light, not structure.
 
-## Kluczowe pytanie percepcyjne
+## The decisive perceptual question
 
-Czy świadkowie widzieli światła połączone jednym kadłubem, czy widzieli formację świateł i
-**domknęli między nimi ciemny kształt**? Mózg robi to automatycznie i niezawodnie. Bez radaru
-albo nagrania pokazującego zasłanianie gwiazd nie da się tego rozstrzygnąć.
+Did witnesses see lights joined by a single hull, or did they see a formation of lights and **close a
+dark shape between them**? The brain does this automatically and reliably. Without radar, or footage
+showing stars being occulted, it cannot be settled.

@@ -1,38 +1,49 @@
 ---
 title: "Cussac"
-subtitle: "Dwoje dzieci, żandarmeria i jedna z najlepiej udokumentowanych spraw francuskich"
+subtitle: "Two children, the gendarmerie, and one of the best-documented French cases"
 date: 1967-08-29
-dateDisplay: "29 sierpnia 1967"
+dateDisplay: "29 August 1967"
 country: "FR"
-countryName: "Francja"
-location: "Cussac, Cantal, Owernia"
+countryName: "France"
+location: "Cussac, Cantal, Auvergne"
 lat: 45.05
 lon: 3.05
 domain: "civil"
 tier: 2
 status: "unresolved"
-duration: "ok. 1 minuty"
-witnesses: "Dwoje dzieci pasących bydło; niezależni świadkowie zjawisk towarzyszących"
-evidence: ["visual", "trace", "multi-witness"]
-scores: { S: 3, R: 0, O: 0, P: 2, M: 2, T: 5, X: 3, D: 4 }
-summary: "Rodzeństwo zgłosiło jasną sferę i cztery niewielkie postacie na łące. Żandarmeria przeprowadziła dochodzenie tego samego dnia, sporządzając protokół, który stał się później częścią archiwum GEIPAN."
-official: "GEIPAN utrzymuje sprawę w kategorii niewyjaśnionych po dochodzeniu."
+duration: "about 1 minute"
+witnesses: "Two children herding cattle; independent witnesses to associated effects"
+evidence:
+- "visual"
+- "trace"
+- "multi-witness"
+scores:
+  S: 3
+  R: 0
+  O: 0
+  P: 2
+  M: 2
+  T: 5
+  X: 3
+  D: 4
+summary: "Two siblings reported a bright sphere and four small figures in a meadow. The gendarmerie investigated the same day, producing a protocol that later became part of the GEIPAN archive."
+official: "GEIPAN retains the case in the category of unexplained after investigation."
 alternatives:
-  - "Błędna interpretacja zjawiska atmosferycznego przez dzieci."
-  - "Konfabulacja — osłabiana przez natychmiastowość zgłoszenia i spójność niezależnych relacji."
+- "Misinterpretation of an atmospheric phenomenon by children."
+- "Confabulation — weakened by the immediacy of the report and the consistency of independent accounts."
 claims: []
 sources:
-  - tier: "T1"
-    label: "Protokół żandarmerii francuskiej z 29 sierpnia 1967, w aktach GEIPAN"
-    url: "https://www.geipan.fr/"
+- "tier": "T1"
+  label: "French gendarmerie protocol of 29 August 1967, in the GEIPAN files"
+  ref: "geipan"
 ---
 
-## Dlaczego francuski model dochodzeniowy ma znaczenie
+## Why the French investigative model matters
 
-Cussac to przykład czegoś, czego w korpusie amerykańskim praktycznie nie ma: **protokół
-żandarmerii sporządzony w dniu zdarzenia, przez funkcjonariuszy, którzy nie mieli w sprawie
-żadnego interesu**, przechowany w archiwum państwowym i udostępniony publicznie.
+Cussac is an example of something the American corpus essentially lacks: **a gendarmerie protocol
+written on the day of the event, by officers with no stake in it**, preserved in a state archive and
+made publicly available.
 
-Francja zbudowała to jako procedurę: zgłoszenie trafia do żandarmerii, żandarmeria sporządza
-protokół, protokół trafia do cywilnej agencji kosmicznej. Dzięki temu francuskie akta mają
-jakość, której nie da się już odtworzyć w przypadkach amerykańskich z tej samej epoki.
+France built this as a procedure: a report goes to the gendarmerie, the gendarmerie writes a
+protocol, the protocol goes to the civil space agency. As a result the French files have a quality
+that can no longer be recovered for American cases of the same era.

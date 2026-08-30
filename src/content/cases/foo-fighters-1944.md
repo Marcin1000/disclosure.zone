@@ -1,50 +1,61 @@
 ---
 title: "Foo Fighters"
-subtitle: "Świetliste obiekty towarzyszące samolotom bojowym II wojny światowej"
+subtitle: "Luminous objects accompanying combat aircraft in the Second World War"
 date: 1944-11-01
-dateDisplay: "1944–1945 (fala)"
+dateDisplay: "1944–1945 (wave)"
 country: "DE"
-countryName: "Niemcy"
-location: "Teatr europejski; analogiczne raporty z Pacyfiku"
+countryName: "Germany"
+location: "European theatre; analogous reports from the Pacific"
 lat: 49.0
 lon: 8.4
 domain: "military"
 tier: 2
 status: "insufficient"
-duration: "od kilkudziesięciu sekund do kilku minut na zdarzenie"
-witnesses: "Załogi lotnicze aliantów i państw Osi, dziesiątki niezależnych zgłoszeń"
-evidence: ["visual", "multi-witness"]
-scores: { S: 4, R: 1, O: 0, P: 0, M: 2, T: 2, X: 2, D: 1 }
-summary: "Załogi bombowców i myśliwców po obu stronach frontu raportowały świecące kule towarzyszące samolotom, czasem utrzymujące formację przez minuty. Zgłoszenia były na tyle liczne, że wywiad wojskowy traktował je jako możliwą nową broń przeciwnika."
-official: "Rozważano nową niemiecką broń psychologiczną lub przechwytującą; po wojnie nie znaleziono odpowiadającego programu."
+duration: "seconds to several minutes per encounter"
+witnesses: "Allied and Axis aircrews; dozens of independent reports"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 4
+  R: 1
+  O: 0
+  P: 0
+  M: 2
+  T: 2
+  X: 2
+  D: 1
+summary: "Bomber and fighter crews on both sides of the front reported glowing spheres pacing their aircraft, sometimes holding formation for minutes. The reports were numerous enough that military intelligence treated them as a possible new enemy weapon."
+official: "Considered as a possible German psychological or interceptor weapon; no corresponding programme was found after the war."
 alternatives:
-  - "Ogień świętego Elma i wyładowania elektrostatyczne na płatowcu."
-  - "Odbicia i refleksy w oszkleniu kabiny przy niskich temperaturach."
-  - "Błędna ocena odległości do gwiazd, planet i pocisków smugowych w warunkach skrajnego stresu bojowego."
-claims: ["foo-fighters-enemy-weapon"]
+- "St Elmo's fire and electrostatic discharge on the airframe."
+- "Reflections in cockpit glazing at low temperatures."
+- "Misjudged distance to stars, planets and tracer fire under extreme combat stress."
+claims:
+- "foo-fighters-enemy-weapon"
 sources:
-  - tier: "T1"
-    label: "Raporty operacyjne jednostek USAAF i RAF z lat 1944–1945"
-    note: "Rozproszone po archiwach jednostkowych; brak jednego skonsolidowanego zbioru."
-  - tier: "T4"
-    label: "Powojenne opracowania i wywiady z załogami"
+- "tier": "T1"
+  label: "USAAF and RAF unit operational reports, 1944–1945"
+  note: "Scattered across unit-level archives; no single consolidated holding exists."
+- "tier": "T4"
+  label: "Post-war studies and crew interviews"
 ---
 
-## Dlaczego to ważne
+## Why this matters
 
-To pierwszy w historii przypadek, w którym **wyszkoleni obserwatorzy wojskowi w warunkach
-operacyjnych** masowo raportowali zjawisko, którego nie potrafili przypisać do znanej kategorii.
-To odróżnia foo fighters od wcześniejszych relacji: obserwatorem jest tu człowiek, którego
-zawodem było rozpoznawanie obiektów w powietrzu.
+This is the first case in history where **trained military observers under operational conditions**
+reported, at scale, a phenomenon they could not assign to a known category. That separates foo
+fighters from earlier accounts: the observer here is a person whose profession was identifying
+objects in the air.
 
-## Dlaczego mimo to ocena jest niska
+## Why the score is nonetheless low
 
-Nie ma zapisu instrumentalnego. Nie ma fotografii. Nie ma radaru skorelowanego z obserwacją.
-Zgłoszenia są rozproszone po archiwach jednostkowych i nigdy nie zostały zebrane w jeden
-korpus o porównywalnej strukturze. Nie da się dziś odtworzyć geometrii ani jednego zdarzenia.
+There is no instrumental record. No photography. No radar correlated with a sighting. The reports
+are scattered across unit-level archives and were never consolidated into one corpus of comparable
+structure. Not a single event can be reconstructed geometrically today.
 
-## Znaczenie dla całej dziedziny
+## What it establishes for the field
 
-Foo fighters są dowodem na jedną rzecz, i ta rzecz jest istotna: **nowoczesny fenomen UAP nie
-zaczyna się w 1947 roku**. Roswell i Kenneth Arnold są początkiem amerykańskiej mitologii UFO,
-a nie początkiem raportowania samego zjawiska.
+Foo fighters prove one thing, and that thing is important: **the modern UAP phenomenon does not
+begin in 1947.** Roswell and Kenneth Arnold are the beginning of American UFO mythology, not the
+beginning of the reporting itself.

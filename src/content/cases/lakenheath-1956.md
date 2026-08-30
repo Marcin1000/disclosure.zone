@@ -1,56 +1,71 @@
 ---
 title: "Bentwaters–Lakenheath"
-subtitle: "Nocna sekwencja radarowo-wzrokowa nad bazami USAF w Anglii z przechwyceniem przez Venoma"
+subtitle: "A night-long radar-visual sequence over USAF bases in England, with a Venom intercept"
 date: 1956-08-13
-dateDisplay: "13/14 sierpnia 1956"
+dateDisplay: "13/14 August 1956"
 country: "GB"
-countryName: "Wielka Brytania"
-location: "RAF Bentwaters i RAF Lakenheath, Suffolk"
+countryName: "United Kingdom"
+location: "RAF Bentwaters and RAF Lakenheath, Suffolk"
 lat: 52.41
 lon: 0.56
 domain: "military"
 tier: 1
 status: "unresolved"
-duration: "ok. 5 godzin (sekwencja zdarzeń)"
-witnesses: "Operatorzy radarów GCA obu baz, załoga myśliwca RAF Venom, obserwatorzy naziemni"
-evidence: ["radar", "visual", "intercept", "multi-witness"]
-scores: { S: 5, R: 5, O: 3, P: 0, M: 5, T: 4, X: 3, D: 2 }
-summary: "W nocy z 13 na 14 sierpnia 1956 r. radary dwóch baz USAF w Anglii śledziły cele skorelowane z obserwacjami wzrokowymi z ziemi i z powietrza. Poderwany myśliwiec RAF uzyskał kontakt na radarze pokładowym, po czym — według relacji załogi — cel przeszedł za ogon przechwytującego samolotu."
-official: "Blue Book pozostawił sprawę jako niezidentyfikowaną. Condon Committee opisał ją jako jedną z najbardziej niepokojących w całym korpusie."
+duration: "about 5 hours (event sequence)"
+witnesses: "GCA radar operators at both bases, an RAF Venom crew, ground observers"
+evidence:
+- "radar"
+- "visual"
+- "intercept"
+- "multi-witness"
+scores:
+  S: 5
+  R: 5
+  O: 3
+  P: 0
+  M: 5
+  T: 4
+  X: 3
+  D: 2
+summary: "On the night of 13–14 August 1956 the radars of two USAF bases in England tracked targets correlated with visual sightings from the ground and from the air. A scrambled RAF fighter obtained a contact on its airborne radar, after which — by the crew's account — the target moved behind the intercepting aircraft."
+official: "Blue Book left the case unidentified. The Condon Committee described it as one of the most disturbing in the entire corpus."
 alternatives:
-  - "Anomalna propagacja radarowa przy inwersji — mechanizm realny, ale trudno godzi się z korelacją między niezależnymi radarami i obserwacją z kabiny."
-  - "Tajne loty programów rozpoznawczych — rejon Lakenheath był w 1956 r. intensywnie wykorzystywany operacyjnie, w tym w kontekście lotów wysokościowych."
-  - "Meteoryty i błędne skojarzenie niezależnych zdarzeń w jedną narrację."
-claims: ["lakenheath-tail-chase"]
+- "Anomalous radar propagation under inversion — a real mechanism, but hard to reconcile with correlation between independent radars and a cockpit sighting."
+- "Classified reconnaissance flights — the Lakenheath area was intensively used in 1956, including for high-altitude operations."
+- "Meteors, with independent events wrongly assembled into one narrative."
+claims:
+- "lakenheath-tail-chase"
 sources:
-  - tier: "T1"
-    label: "Akta Project Blue Book, sprawa Bentwaters/Lakenheath"
-  - tier: "T1"
-    label: "Raport Condon Committee (1968), rozdział poświęcony przypadkom radarowo-wzrokowym"
-  - tier: "T4"
-    label: "Późniejsze przesłuchania operatorów radarowych"
+- "tier": "T1"
+  label: "Project Blue Book files, Bentwaters/Lakenheath case"
+  ref: "nara-bluebook"
+- "tier": "T1"
+  label: "Condon Committee report (1968), chapter on radar-visual cases"
+  ref: "condon"
+- "tier": "T4"
+  label: "Later interviews with the radar operators"
 ---
 
-## Najmocniejszy element
+## The strongest element
 
-Nie „obiekt za ogonem myśliwca". Najmocniejszym elementem jest **korelacja między dwoma
-niezależnymi stanowiskami radarowymi a obserwacją wzrokową**, rozciągnięta na kilka godzin.
+Not "an object behind the fighter". The strongest element is **correlation between two independent
+radar stations and a visual sighting**, sustained over several hours.
 
-Pojedynczy radar może kłamać. Dwa radary o różnej charakterystyce, patrzące pod różnymi kątami,
-kłamią zgodnie znacznie rzadziej — choć przy silnej inwersji nie jest to niemożliwe.
+A single radar can lie. Two radars of different characteristics, looking from different angles, lie
+in agreement far more rarely — though under a strong inversion it is not impossible.
 
-## Kontekst, o którym literatura UFO milczy
+## The context the UFO literature omits
 
-Rok 1956, wschodnia Anglia. To okres najintensywniejszej aktywności lotnictwa rozpoznawczego
-zimnej wojny w tym rejonie, w tym operacji na dużych wysokościach objętych ścisłą tajemnicą.
-Operator radaru GCA nie miał żadnego powodu ani prawa wiedzieć, co lata nad jego głową.
+1956, eastern England. This is the period of the most intensive Cold War reconnaissance aviation in
+the region, including high-altitude operations under strict secrecy. A GCA radar operator had no
+reason and no clearance to know what was flying above him.
 
-**Hipoteza „tajna technologia własna" musi tu być rozpatrywana na równi z każdą inną.** To nie
-osłabia sprawy — to ją porządkuje. Ustala, co dokładnie trzeba by wykluczyć, żeby przejść do
-hipotez dalszych.
+**The "classified domestic technology" hypothesis has to be weighed here on equal terms with any
+other.** That does not weaken the case — it organises it, by establishing what exactly would have
+to be excluded before moving to more exotic hypotheses.
 
-## Czego brakuje
+## What is missing
 
-Wszystkiego, co pozwoliłoby to dziś przeliczyć: zapisów scope'ów, dzienników radarowych z
-timestampami, danych meteorologicznych o profilu pionowym atmosfery w rozdzielczości godzinowej.
-Sprawa jest mocna strukturalnie i słaba materiałowo — to definicja przypadku z lat 50.
+Everything that would allow a recalculation today: scope recordings, timestamped radar logs,
+hourly vertical atmospheric profile data. The case is structurally strong and materially weak —
+which is the definition of a 1950s case.

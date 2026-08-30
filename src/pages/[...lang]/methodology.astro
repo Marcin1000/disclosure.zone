@@ -1,0 +1,153 @@
+---
+import Base from '../../layouts/Base.astro';
+import { AXES, TIER_LABEL, TIER_DESC, bi } from '../../lib/scoring';
+import { langParams, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+const en = lang === 'en';
+---
+<Base
+  title={en ? 'Method' : 'Metodologia'}
+  description={en
+    ? 'How we score UAP cases: eight evidence axes, five source tiers, and the editorial rules that govern the whole database.'
+    : 'Jak oceniamy przypadki UAP: osiem osi dowodowych, pięć klas źródeł i zasady redakcyjne obowiązujące w całej bazie.'}
+  lang={lang} rest="/methodology">
+
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{en ? 'Explicit methodology' : 'Jawna metodologia'}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{en ? 'How we score' : 'Jak to oceniamy'}</h1>
+    <p class="lead dim">
+      {en
+        ? 'A score that cannot be checked is not a score. Below is the complete description of the scale, the weights and the editorial rules — enough for anyone to recompute our results and show us where we are wrong.'
+        : 'Ocena, której nie da się sprawdzić, nie jest oceną. Poniżej jest kompletny opis skali, wag i zasad redakcyjnych — wystarczający, żeby ktokolwiek mógł przeliczyć nasze wyniki i wykazać nam błąd.'}
+    </p>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:3rem">
+    <h2>{en ? 'The governing principle' : 'Zasada nadrzędna'}</h2>
+    <blockquote>
+      {en
+        ? 'Unresolved does not mean extraterrestrial. But it does not mean explained either.'
+        : 'Nierozstrzygnięty nie znaczy pozaziemski. Ale nie znaczy też wyjaśniony.'}
+    </blockquote>
+    <p>
+      {en
+        ? 'Two errors dominate this field and they are mirror images. First: “we do not know what it was, so it must be something extraordinary.” Second: “most cases have an ordinary explanation, so every case has one.” Both are unlicensed logical leaps, and both produce the same result — people stop looking at the data.'
+        : 'Dwa błędy dominują w tej dziedzinie i są lustrzane. Pierwszy: „nie wiemy, co to było, więc to musi być coś niezwykłego”. Drugi: „większość przypadków ma zwykłe wyjaśnienie, więc każdy przypadek je ma”. Oba są nieuprawnionymi skokami logicznymi i oba prowadzą do tego samego skutku — przestaje się patrzeć na dane.'}
+    </p>
+    <p>
+      {en
+        ? 'This entire database exists to keep a third category alive: '
+        : 'Cała ta baza istnieje po to, żeby utrzymać trzecią kategorię przy życiu: '}
+      <strong>{en ? 'I do not know, and I know exactly what is missing before I could.' : 'nie wiem, i wiem dokładnie, czego mi brakuje, żeby wiedzieć.'}</strong>
+    </p>
+
+    <h2>{en ? 'Eight evidence axes' : 'Osiem osi dowodowych'}</h2>
+    <p>
+      {en
+        ? 'Every case is scored 0–5 on eight independent axes. The axes measure how well documented a case is, not how anomalous it is. A solved case can score highly if it is exemplarily documented — as the Chilean Navy footage of 2014 does.'
+        : 'Każda sprawa dostaje ocenę 0–5 na ośmiu niezależnych osiach. Osie mierzą jakość udokumentowania, a nie stopień niezwykłości. Sprawa wyjaśniona może mieć wysoką ocenę, jeśli jest wzorowo udokumentowana — i tak jest z chilijskim nagraniem z 2014 r.'}
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:3rem">
+    <div class="panel corners" style="padding:0">
+      {AXES.map((a, i) => (
+        <div style={`padding:1.1rem clamp(1.1rem,3vw,1.7rem);${i ? 'border-top:1px solid var(--line)' : ''}`}>
+          <div style="display:flex;gap:.9rem;align-items:baseline">
+            <span class="mono" style="color:var(--phos);font-weight:700;font-size:1.05rem;width:1.2rem">{a.k}</span>
+            <div>
+              <p class="mono" style="margin:0 0 .25rem;color:var(--fg);font-size:.92rem">{bi(a.name, lang)}</p>
+              <p class="dim" style="margin:0;font-size:.9rem">{bi(a.desc, lang)}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:3rem">
+    <h3>{en ? 'Weights' : 'Wagi'}</h3>
+    <p>
+      {en
+        ? 'The axes are not equal. Instrumental evidence and present-day verifiability weigh more than a judged sense of strangeness:'
+        : 'Osie nie są równe. Dowód instrumentalny i możliwość dzisiejszej weryfikacji ważą więcej niż subiektywna ocena niezwykłości:'}
+    </p>
+    <p><code>R 1.35 · P 1.35 · M 1.25 · D 1.15 · O 1.10 · T 1.10 · S 1.00 · X 0.90</code></p>
+    <p>
+      {en
+        ? 'The X (anomaly) axis carries the lowest weight deliberately. It is the only axis requiring a subjective judgement from us, so it must not dominate the result. The D (data today) axis is weighted high, because a case that cannot be checked today is of less research value than a weaker but verifiable one.'
+        : 'Oś X (anomalność) ma najniższą wagę celowo. To jedyna oś, która wymaga od nas subiektywnego sądu, więc nie może dominować wyniku. Oś D (dane dzisiaj) ma wagę wysoką, bo sprawa, której nie da się dziś sprawdzić, jest z badawczego punktu widzenia mniej wartościowa niż sprawa słabsza, ale weryfikowalna.'}
+    </p>
+
+    <h3>{en ? 'Evidence classes' : 'Klasy dowodowe'}</h3>
+    <p>{en ? 'A class is derived from the scores, deliberately modelled on the French GEIPAN scale:' : 'Z ocen wyliczana jest klasa — świadomie wzorowana na skali francuskiej agencji GEIPAN:'}</p>
+    <ul>
+      <li><strong>A — {en ? 'evidential core.' : 'rdzeń dowodowy.'}</strong> {en ? 'High score, instrumental evidence, many independent channels.' : 'Wysoka ocena, dowód instrumentalny, wiele niezależnych kanałów.'}</li>
+      <li><strong>B — {en ? 'strong documentation.' : 'mocna dokumentacja.'}</strong> {en ? 'Good score and at least one instrumental record.' : 'Dobra ocena i przynajmniej jeden dowód instrumentalny.'}</li>
+      <li><strong>C — {en ? 'material gaps.' : 'istotne luki.'}</strong> {en ? 'A real case with incomplete material.' : 'Sprawa realna, materiał niepełny.'}</li>
+      <li><strong>D — {en ? 'testimony only.' : 'głównie relacja.'}</strong> {en ? 'No evidence beyond an account.' : 'Brak dowodu poza zeznaniem.'}</li>
+    </ul>
+
+    <h2>{en ? 'Five source tiers' : 'Pięć klas źródeł'}</h2>
+    <p>
+      {en
+        ? 'This is the most important element of the whole system. Every source on every case carries a tier. The colour beside a citation tells you what a given sentence rests on.'
+        : 'To jest najważniejszy element całego systemu. Każde źródło przy każdej sprawie ma przypisany tier. Kolor przy cytacie mówi, na czym stoi dane zdanie.'}
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:3rem">
+    <div class="panel corners" style="padding:0">
+      {(['T1','T2','T3','T4','T5'] as const).map((k, i) => (
+        <div style={`padding:1.1rem clamp(1.1rem,3vw,1.7rem);${i ? 'border-top:1px solid var(--line)' : ''};display:flex;gap:1rem;align-items:baseline`}>
+          <span class:list={['tier', `tier-${k}`]}>{k}</span>
+          <div>
+            <p class="mono" style="margin:0 0 .25rem;color:var(--fg);font-size:.92rem">{bi(TIER_LABEL[k], lang)}</p>
+            <p class="dim" style="margin:0;font-size:.9rem">{bi(TIER_DESC[k], lang)}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:5rem">
+    <h3>{en ? 'State does not mean investigative' : 'Państwowe nie znaczy dochodzeniowe'}</h3>
+    <p>
+      {en
+        ? 'A state news agency dispatch is still T5 if no investigation stands behind it. A source’s tier is set by how it was produced, not by the prestige of its publisher. That is why the 1989 TASS report ranks below a French gendarmerie protocol from a rural property.'
+        : 'Depesza agencji państwowej to nadal T5, jeśli nie stoi za nią dochodzenie. Klasę źródła wyznacza sposób jego powstania, nie prestiż nadawcy. Dlatego doniesienie TASS z 1989 r. ma niższą klasę niż protokół francuskiej żandarmerii z wiejskiej posesji.'}
+    </p>
+
+    <h2>{en ? 'Editorial rules' : 'Zasady redakcyjne'}</h2>
+    <ol>
+      <li><strong>{en ? 'An authentic recording is not an identified object.' : 'Autentyczność nagrania to nie identyfikacja obiektu.'}</strong> {en ? 'The Pentagon confirmed three Navy recordings are authentic. It did not confirm what is on them. Those two sentences are never merged.' : 'Pentagon potwierdził autentyczność trzech nagrań Marynarki Wojennej. Nie potwierdził, co na nich jest. Te dwa zdania nigdy nie są łączone.'}</li>
+      <li><strong>{en ? 'Without range there is no speed.' : 'Bez odległości nie ma prędkości.'}</strong> {en ? 'Any claim of extreme performance requires a known range to target. Where there was none, we mark it as a claim, not a measurement.' : 'Każde twierdzenie o ekstremalnych osiągach wymaga znanej odległości do celu. Jeśli jej nie było, oznaczamy to jako twierdzenie, nie jako pomiar.'}</li>
+      <li><strong>{en ? 'A measurement is not the same as a software product.' : 'Pomiar to nie to samo co produkt oprogramowania.'}</strong> {en ? 'An airborne radar shows the output of a tracking filter, not a raw position. An IR camera shows a projection onto an observation plane from a moving platform. Before calling anything extraordinary, we rule out sensor physics.' : 'Radar pokładowy pokazuje wynik filtru śledzącego, nie surową pozycję. Kamera IR pokazuje rzut na płaszczyznę obserwacji z ruchomej platformy. Zanim nazwiemy coś niezwykłym, wykluczamy fizykę sensora.'}</li>
+      <li><strong>{en ? 'Without a chain of custody there is no material evidence.' : 'Bez łańcucha opieki nie ma dowodu materialnego.'}</strong> {en ? 'Analysis of a sample of unknown origin has no evidential value, however precise the analysis.' : 'Analiza próbki o nieznanym pochodzeniu nie ma wartości dowodowej, niezależnie od precyzji analizy.'}</li>
+      <li><strong>{en ? 'A missing link is visible.' : 'Brak odnośnika jest widoczny.'}</strong> {en ? 'Every case states how many of its sources have a link to the material. We do not hide gaps in provenance — that would be exactly what we criticise in others.' : 'Przy każdej sprawie podajemy, ile źródeł ma odnośnik do materiału. Nie ukrywamy luk w proweniencji — to byłoby dokładnie tym, co zarzucamy innym.'}</li>
+      <li><strong>{en ? 'The sceptical hypothesis is stated as carefully as any other.' : 'Hipotezę sceptyczną stawiamy tak samo starannie jak każdą inną.'}</strong> {en ? 'If a prosaic explanation has a weak point, we describe it. Scepticism is not exempt from the burden of proof.' : 'Jeśli wyjaśnienie prozaiczne ma słaby punkt, opisujemy go. Sceptycyzm nie jest zwolniony z obowiązku dowodowego.'}</li>
+    </ol>
+
+    <h2>{en ? 'What this database does not do' : 'Czego ta baza nie robi'}</h2>
+    <p>
+      {en
+        ? 'It does not assign probabilities to the extraterrestrial hypothesis. We have no model that would license one, and a number produced without a model is worse than no number — because it looks like knowledge.'
+        : 'Nie przypisuje prawdopodobieństw hipotezie pozaziemskiej. Nie mamy modelu, który by na to pozwalał, a liczba wyprodukowana bez modelu jest gorsza niż jej brak — bo wygląda na wiedzę.'}
+    </p>
+    <p>
+      {en
+        ? 'It also does not aggregate social media material. A screenshot from a messaging app destroys the data an analysis needs. Chile’s SEFAA requires original material, and that is the right standard.'
+        : 'Nie agreguje też materiałów z mediów społecznościowych. Zrzut ekranu z komunikatora niszczy dane potrzebne do analizy. Chilijskie SEFAA wymaga materiałów oryginalnych i to jest właściwy standard.'}
+    </p>
+
+    <h2>{en ? 'Errors' : 'Błędy'}</h2>
+    <p>
+      {en
+        ? 'This database certainly contains errors. Its complete revision history is public — every score correction, every change of source tier and every factual fix is visible together with its reasoning. Provenance applies to us as well.'
+        : 'Ta baza na pewno zawiera błędy. Kompletna historia zmian jest publiczna — każda korekta oceny, każda zmiana klasy źródła i każda poprawka faktograficzna jest widoczna wraz z uzasadnieniem. Proweniencja dotyczy także nas.'}
+    </p>
+  </section>
+</Base>

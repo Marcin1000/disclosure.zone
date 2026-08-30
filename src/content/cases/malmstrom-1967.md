@@ -1,49 +1,61 @@
 ---
 title: "Malmstrom AFB"
-subtitle: "Rzekome wyłączenia pocisków Minuteman przy jednoczesnych obserwacjach UAP"
+subtitle: "Alleged Minuteman shutdowns during concurrent UAP sightings"
 date: 1967-03-16
-dateDisplay: "16 i 24 marca 1967"
+dateDisplay: "16 and 24 March 1967"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Malmstrom AFB, kompleksy startowe Echo i Oscar, Montana"
-lat: 47.50
+countryName: "United States"
+location: "Malmstrom AFB, Echo and Oscar launch complexes, Montana"
+lat: 47.5
 lon: -111.18
 domain: "military"
 tier: 2
 status: "disputed"
-duration: "kilkanaście minut"
-witnesses: "Oficerowie dyżurni stanowisk startowych, personel ochrony naziemnej"
-evidence: ["visual", "multi-witness"]
-scores: { S: 4, R: 0, O: 0, P: 1, M: 2, T: 2, X: 4, D: 2 }
-summary: "Według relacji oficerów, w marcu 1967 r. seria pocisków Minuteman przeszła w stan „no-go\" w krótkim odstępie czasu, przy jednoczesnych zgłoszeniach obserwacji UAP przez personel ochrony. To najczęściej przywoływany argument za tezą o zainteresowaniu UAP bronią jądrową."
-official: "USAF wskazywała przyczyny techniczne (m.in. impulsy w magistrali logicznej podczas prac serwisowych). Brak publicznego dokumentu wiążącego awarie z obserwacją."
+duration: "several tens of minutes"
+witnesses: "Launch control duty officers, ground security personnel"
+evidence:
+- "visual"
+- "multi-witness"
+scores:
+  S: 4
+  R: 0
+  O: 0
+  P: 1
+  M: 2
+  T: 2
+  X: 4
+  D: 2
+summary: "According to officer accounts, in March 1967 a series of Minuteman missiles went to a “no-go” state within a short interval, while security personnel simultaneously reported UAP sightings. This is the most frequently cited argument for UAP interest in nuclear weapons."
+official: "The USAF pointed to technical causes, including logic-bus transients during maintenance work. No public document links the faults to any sighting."
 alternatives:
-  - "Usterka układu logicznego / interferencja elektromagnetyczna z prac serwisowych — hipoteza techniczna wskazywana przez USAF."
-  - "Dwa niezależne zdarzenia (awaria techniczna i obserwacja) skojarzone ze sobą po fakcie."
-  - "Rzeczywisty wpływ zewnętrznego czynnika na systemy."
-claims: ["malmstrom-missile-shutdown"]
+- "A logic circuit fault or electromagnetic interference from maintenance work — the technical hypothesis advanced by the USAF."
+- "Two independent events, a technical fault and a sighting, associated after the fact."
+- "A genuine external factor affecting the systems."
+claims:
+- "malmstrom-missile-shutdown"
 sources:
-  - tier: "T4"
-    label: "Zeznania oficerów dyżurnych składane publicznie od lat 90."
-    note: "Główne źródło narracji. Warstwa wtórna, dekady po zdarzeniu."
-  - tier: "T1"
-    label: "Dokumentacja techniczna USAF dotycząca zdarzeń „no-go\" z marca 1967"
-    note: "Zakres publicznie dostępnej dokumentacji jest ograniczony i nie zawiera korelacji z obserwacjami."
+- "tier": "T4"
+  label: "Duty officer testimony given publicly from the 1990s onward"
+  note: "The main source of the narrative. A secondary layer, decades after the event."
+  ref: "aaro-historical-v1"
+- "tier": "T1"
+  label: "USAF technical documentation on the March 1967 “no-go” events"
+  note: "The publicly available documentation is limited and contains no correlation with sightings."
 ---
 
-## Dlaczego to najważniejszy przypadek o najsłabszej dokumentacji
+## The most important case with the weakest documentation
 
-Gdyby Malmstrom był udokumentowany tak, jak jest opowiadany, byłby najważniejszym przypadkiem w
-całej historii dziedziny: **zewnętrzny czynnik oddziałujący na strategiczne siły jądrowe**.
+Were Malmstrom documented the way it is narrated, it would be the single most important case in the
+field: **an external factor acting on strategic nuclear forces.**
 
-Realny stan materiału jest inny. Mamy mocne, spójne i wielokrotnie powtarzane zeznania oficerów.
-Nie mamy publicznie dostępnego dokumentu, który łączyłby zapis awarii z zapisem obserwacji w
-jednej osi czasu.
+The actual state of the material is different. We have strong, consistent, repeatedly given officer
+testimony. We do not have a publicly available document joining the fault record to the sighting
+record on one timeline.
 
-## Co dokładnie by to rozstrzygnęło
+## What exactly would settle it
 
-Dzienniki utrzymania ruchu i logi systemowe stanowisk startowych z 16 i 24 marca 1967 r., z
-dokładnymi timestampami, zestawione z dziennikami ochrony naziemnej. Bez tego mamy dwa zbiory
-faktów — awarie i obserwacje — połączone wyłącznie relacją ludzi, którzy je pamiętają razem.
+Maintenance logs and system records from the launch facilities for 16 and 24 March 1967, with
+precise timestamps, set against the ground security logs. Without those we have two sets of facts —
+faults and sightings — connected only by the accounts of people who remember them together.
 
-Korelacja pamięciowa nie jest korelacją czasową. To rozróżnienie decyduje o całej sprawie.
+Remembered correlation is not recorded correlation. That distinction decides the entire case.

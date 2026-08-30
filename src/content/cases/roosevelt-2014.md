@@ -1,49 +1,69 @@
 ---
 title: "Roosevelt / East Coast"
-subtitle: "Seria zdarzeń, po której Pentagon zbudował współczesny system raportowania"
+subtitle: "The series of events after which the Pentagon built the modern reporting system"
 date: 2014-06-01
-dateDisplay: "2014–2015 (seria)"
+dateDisplay: "2014–2015 (series)"
 country: "US"
-countryName: "Stany Zjednoczone"
-location: "Strefy ćwiczeń nad Atlantykiem, od Wirginii po Florydę"
-lat: 36.60
-lon: -74.50
+countryName: "United States"
+location: "Atlantic warning areas, from Virginia to Florida"
+lat: 36.6
+lon: -74.5
 domain: "military"
 tier: 1
 status: "unresolved"
-duration: "seria zdarzeń przez wiele miesięcy"
-witnesses: "Wielu pilotów Marynarki Wojennej z eskadr wschodniego wybrzeża"
-evidence: ["radar", "visual", "ir", "multi-witness"]
-scores: { S: 5, R: 4, O: 4, P: 0, M: 5, T: 4, X: 3, D: 3 }
-summary: "Po modernizacji radarów AESA piloci Marynarki Wojennej zaczęli regularnie rejestrować obiekty w strefach treningowych nad Atlantykiem — w niektórych relacjach niemal codziennie. Seria doprowadziła do zmiany procedur zgłaszania i, pośrednio, do powstania AARO."
-official: "Marynarka Wojenna wprowadziła formalne procedury raportowania UAP. Zdarzenia pozostają w większości niezidentyfikowane."
+duration: "a series of events over many months"
+witnesses: "Numerous US Navy pilots from East Coast squadrons"
+evidence:
+- "radar"
+- "visual"
+- "ir"
+- "multi-witness"
+scores:
+  S: 5
+  R: 4
+  O: 4
+  P: 0
+  M: 5
+  T: 4
+  X: 3
+  D: 3
+summary: "Following an upgrade to AESA radars, US Navy pilots began routinely recording objects in Atlantic training areas — in some accounts almost daily. The series led to changed reporting procedures and, indirectly, to the creation of AARO."
+official: "The Navy introduced formal UAP reporting procedures. The events remain largely unidentified."
 alternatives:
-  - "Systemy bezzałogowe (własne lub obce) operujące w strefach ćwiczeń."
-  - "Balony i obiekty dryfujące — część przypadków została później tak zidentyfikowana."
-  - "Artefakty nowego, znacznie czulszego radaru AESA, wcześniej niewidoczne dla starszego sprzętu."
-claims: ["east-coast-daily-sightings", "aesa-upgrade-correlation"]
+- "Unmanned systems, domestic or foreign, operating in the exercise areas."
+- "Balloons and drifting objects — a share of cases was later identified this way."
+- "Artefacts of a new and far more sensitive AESA radar, previously invisible to older equipment."
+claims:
+- "east-coast-daily-sightings"
+- "aesa-upgrade-correlation"
 sources:
-  - tier: "T3"
-    label: "Zeznania pilotów Marynarki Wojennej, w tym publiczne wystąpienia przed Kongresem"
-  - tier: "T2"
-    label: "Potwierdzenie przez Marynarkę Wojenną autentyczności materiałów i wprowadzenia procedur raportowania"
+- "tier": "T3"
+  label: "US Navy aircrew testimony, including public statements before Congress"
+  ref: "oversight-2023"
+- "tier": "T2"
+  label: "Navy confirmation of the material's authenticity and of the reporting procedures introduced"
+  ref: "odni-2021"
+- "tier": "T1"
+  label: "ODNI preliminary assessment (2021) covering this period"
+  ref: "odni-2021"
 ---
 
-## Najważniejsza obserwacja o tej serii
+## The most important observation about this series
 
-Wzrost liczby zgłoszeń zbiegł się w czasie z **modernizacją radarów do standardu AESA**.
+The rise in reports coincided with **the radar upgrade to AESA.**
 
-To jest korelacja, którą trzeba postawić uczciwie i w obie strony:
+That correlation has to be stated honestly and in both directions:
 
-**Interpretacja A:** lepszy sensor zaczął wykrywać coś, co było tam wcześniej, ale było niewidoczne.
+**Reading A:** a better sensor began detecting something that had been there all along but was
+invisible.
 
-**Interpretacja B:** lepszy sensor zaczął generować nowe rodzaje artefaktów i wykrywać obiekty
-prozaiczne, które wcześniej nie przekraczały progu detekcji.
+**Reading B:** a better sensor began generating new classes of artefact and detecting prosaic objects
+that had previously fallen below the detection threshold.
 
-Obie interpretacje przewidują dokładnie to samo: nagły wzrost liczby zgłoszeń po modernizacji.
-Danych publicznych nie wystarcza, by je rozdzielić.
+Both readings predict exactly the same thing: a sudden rise in reports after the upgrade. Public data
+is insufficient to separate them.
 
-## Znaczenie instytucjonalne
+## Institutional significance
 
-Ta seria, a nie Nimitz, jest właściwym początkiem współczesnej polityki USA wobec UAP. To z niej
-wynikły procedury raportowania, potem raport ODNI z 2021 r., a ostatecznie powołanie AARO.
+This series, not Nimitz, is the true beginning of modern US policy on UAP. It produced the reporting
+procedures, then the 2021 ODNI report, and ultimately the establishment of AARO.
