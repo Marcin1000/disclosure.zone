@@ -46,21 +46,28 @@ export interface OgInput {
   core?: boolean;
 }
 
-/** Znak D/Z — ten sam co w logotypie: kopuła radaru i wpisane Z. */
-const MARK_SVG =
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke-linecap="butt">` +
-  `<path d="M13 7A17 17 0 0 1 13 41" stroke="${C.phosDim}" stroke-width="3.2"/>` +
-  `<path d="M13 7V41" stroke="${C.phos}" stroke-width="3.6"/>` +
-  `<path d="M17 15H27.4M17 33H27.4" stroke="${C.phos}" stroke-width="2.8"/>` +
-  `<path d="M27.4 15L17 33" stroke="#7CF0BC" stroke-width="3"/>` +
-  `</svg>`;
-const MARK_URI = 'data:image/svg+xml;base64,' + Buffer.from(MARK_SVG).toString('base64');
-
+/** Znak radaru z przerwą — ten sam co w logotypie. */
 function mark(size: number) {
-  return {
-    type: 'img',
-    props: { src: MARK_URI, width: size, height: size, style: { display: 'flex' } },
-  } as never;
+  const ring = (r: number, w: number, o: number) =>
+    el('div', {
+      position: 'absolute', left: size / 2 - r, top: size / 2 - r,
+      width: r * 2, height: r * 2, borderRadius: r * 2,
+      border: `${w}px solid ${C.phosDim}`, opacity: o,
+    });
+  return el('div', { display: 'flex', position: 'relative', width: size, height: size }, [
+    ring(size * 0.46, 3, 1),
+    ring(size * 0.30, 2, 0.62),
+    // przerwa redakcyjna
+    el('div', {
+      position: 'absolute', left: -4, top: size * 0.57,
+      width: size + 8, height: size * 0.13, background: C.bg,
+    }),
+    el('div', {
+      position: 'absolute', left: size / 2, top: size * 0.20,
+      width: size * 0.30, height: 3, background: C.phos,
+      transform: 'rotate(-33deg)', transformOrigin: 'left center',
+    }),
+  ]);
 }
 
 export async function renderOg(i: OgInput): Promise<Buffer> {
