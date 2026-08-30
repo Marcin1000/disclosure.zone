@@ -1,0 +1,76 @@
+/**
+ * Kontrola spójności korpusu. Uruchamiana przed buildem.
+ *
+ * Sprawdza to, czego Zod sam nie złapie: zgodność rekordu kanonicznego
+ * z nakładką językową oraz wzajemne referencje spraw i twierdzeń.
+ */
+import { readdirSync, readFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { join } from 'node:path';
+
+const CANON = 'src/content/cases';
+const PL = 'src/content/pl';
+const errors = [];
+const warn = [];
+
+const slugs = (dir) => readdirSync(dir).filter(f => f.endsWith('.md')).map(f => f.slice(0, -3));
+
+/** Minimalny parser frontmatteru — wystarczy do liczenia i pól prostych. */
+function fm(path) {
+  const t = readFileSync(path, 'utf8');
+  const m = /^---\n([\s\S]*?)\n---\n/.exec(t);
+  if (!m) { errors.push(`${path}: brak frontmatteru`); return { raw: '', body: t }; }
+  return { raw: m[1], body: t.slice(m[0].length) };
+}
+
+const countSources = (raw) => (raw.match(/^- "?(?:tier|label)"?:/gm) || []).length;
+
+const canon = slugs(CANON);
+const pl = slugs(PL);
+
+for (const s of canon) if (!pl.includes(s)) errors.push(`brak nakładki PL: ${s}`);
+for (const s of pl) if (!canon.includes(s)) errors.push(`nakładka PL bez rekordu kanonicznego: ${s}`);
+
+for (const s of canon.filter(x => pl.includes(x))) {
+  const a = fm(join(CANON, `${s}.md`));
+  const b = fm(join(PL, `${s}.md`));
+  const ca = countSources(a.raw), cb = countSources(b.raw);
+  if (ca !== cb) errors.push(`${s}: liczba źródeł EN=${ca} PL=${cb}`);
+  if (/^"?(?:lat|lon|scores|date|country|tier|status|evidence)"?:/m.test(b.raw)) {
+    errors.push(`${s}: nakładka PL zawiera dane strukturalne — te żyją tylko w rekordzie kanonicznym`);
+  }
+  if (b.body.trim().length < 200) warn.push(`${s}: bardzo krótka treść PL`);
+}
+
+// twierdzenia i rejestr źródeł — przez esbuild, bo to TS
+const tmp = '/tmp/dz-check';
+execFileSync('npx', ['esbuild', 'src/data/claims.ts', '--bundle', '--format=esm',
+  '--external:../i18n', `--outfile=${tmp}-claims.mjs`, '--log-level=error']);
+const { claims } = await import(`${tmp}-claims.mjs`);
+
+const claimIds = new Set(claims.map(c => c.id));
+const canonSet = new Set(canon);
+
+for (const s of canon) {
+  const raw = fm(join(CANON, `${s}.md`)).raw;
+  const block = /\nclaims:\n((?:- .*\n)+)/.exec(raw);
+  const refs = block ? [...block[1].matchAll(/- "?([\w-]+)"?/g)].map(m => m[1]) : [];
+  for (const r of refs) if (!claimIds.has(r)) errors.push(`${s}: wskazuje na nieistniejące twierdzenie "${r}"`);
+}
+for (const c of claims) {
+  for (const s of c.cases) if (!canonSet.has(s)) errors.push(`twierdzenie ${c.id}: wskazuje na nieistniejącą sprawę "${s}"`);
+  for (const k of ['claim', 'origin', 'verdict', 'resolver']) {
+    if (!c[k]?.en || !c[k]?.pl) errors.push(`twierdzenie ${c.id}: brak wersji ${!c[k]?.en ? 'EN' : 'PL'} w polu ${k}`);
+  }
+}
+
+const linked = canon.reduce((n, s) => n + (fm(join(CANON, `${s}.md`)).raw.match(/^\s+"?ref"?:/gm) || []).length, 0);
+const total = canon.reduce((n, s) => n + countSources(fm(join(CANON, `${s}.md`)).raw), 0);
+
+console.log(`sprawy: ${canon.length} · twierdzenia: ${claims.length} · źródła z odnośnikiem: ${linked}/${total}`);
+if (warn.length) console.log('ostrzeżenia:\n  ' + warn.join('\n  '));
+if (errors.length) {
+  console.error(`\nBŁĘDY SPÓJNOŚCI (${errors.length}):\n  ` + errors.join('\n  '));
+  process.exit(1);
+}
+console.log('spójność korpusu: OK');
