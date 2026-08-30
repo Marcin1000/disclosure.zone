@@ -31,6 +31,9 @@ const L = en ? {
   seaLevel: 'Sea level',
   observer: 'Observer',
   target: 'Target',
+  legLos: 'line of sight',
+  legGhost: 'the same line, moments earlier — this rotation is what looks like target motion',
+  legAng: 'depression angle',
   assumptionsTitle: 'Assumptions of this model — read them',
   bokehTitle: 'Aperture shape, not object shape',
   bokehLead: 'A defocused point of light takes the shape of the lens aperture. A night-vision device with a triangular aperture turns every distant light into a triangle. This is why the USS Russell “pyramids” are pyramids.',
@@ -64,6 +67,9 @@ const L = en ? {
   seaLevel: 'Poziom morza',
   observer: 'Obserwator',
   target: 'Obiekt',
+  legLos: 'linia obserwacji',
+  legGhost: 'ta sama linia chwilę wcześniej — to jej obrót wygląda jak ruch obiektu',
+  legAng: 'kąt zejścia',
   assumptionsTitle: 'Założenia tego modelu — przeczytaj je',
   bokehTitle: 'Kształt przysłony, nie kształt obiektu',
   bokehLead: 'Rozogniskowany punkt świetlny przyjmuje kształt przysłony obiektywu. Noktowizor z trójkątną przysłoną zamienia każde odległe światło w trójkąt. Dlatego „piramidy” z USS Russell są piramidami.',
@@ -132,31 +138,116 @@ const ASSUMPTIONS = en ? [
         </div>
 
         <div class="tk__vis">
-          <svg viewBox="0 0 440 260" class="tk__svg" role="img" aria-label={L.diagramLabel}>
+          <svg viewBox="0 0 520 300" class="tk__svg" role="img" aria-label={L.diagramLabel}>
             <defs>
-              <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#0E2A2E"/><stop offset="1" stop-color="#08181B"/>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#080F11"/>
+                <stop offset=".62" stop-color="#0B1B1E"/>
+                <stop offset="1" stop-color="#123036"/>
               </linearGradient>
+              <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2E7A82"/>
+                <stop offset=".28" stop-color="#17505A"/>
+                <stop offset="1" stop-color="#08252A"/>
+              </linearGradient>
+              <linearGradient id="horizonGlow" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="var(--phos)" stop-opacity="0"/>
+                <stop offset="1" stop-color="var(--phos)" stop-opacity=".26"/>
+              </linearGradient>
+              <linearGradient id="spec" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="var(--phos-2)" stop-opacity="0"/>
+                <stop offset=".5" stop-color="var(--phos-2)" stop-opacity=".22"/>
+                <stop offset="1" stop-color="var(--phos-2)" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="losg" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="var(--phos-2)"/>
+                <stop offset="1" stop-color="var(--phos-dim)"/>
+              </linearGradient>
+              <radialGradient id="glow">
+                <stop offset="0" stop-color="var(--phos)" stop-opacity=".38"/>
+                <stop offset="1" stop-color="var(--phos)" stop-opacity="0"/>
+              </radialGradient>
+              <clipPath id="plot"><rect x="52" y="8" width="460" height="292"/></clipPath>
             </defs>
-            <rect x="0" y="212" width="440" height="48" fill="url(#sea)"/>
-            <line x1="0" y1="212" x2="440" y2="212" stroke="var(--phos-dim)" stroke-width="1"/>
-            <text x="8" y="228" class="tk__lbl">{L.seaLevel}</text>
-            <g id="grid" stroke="rgba(77,227,160,.09)" stroke-width="1">
-              <line x1="0" y1="172" x2="440" y2="172"/><line x1="0" y1="132" x2="440" y2="132"/>
-              <line x1="0" y1="92" x2="440" y2="92"/><line x1="0" y1="52" x2="440" y2="52"/>
+
+            <rect x="0" y="0" width="520" height="300" fill="url(#sky)"/>
+
+            {/* drabinka wysokości */}
+            <g class="tk__ladder" data-ladder>
+              <line x1="52" y1="12" x2="52" y2="242" stroke="var(--line-2)" stroke-width="1"/>
             </g>
-            <line id="los" x1="60" y1="52" x2="360" y2="150" stroke="var(--amber)" stroke-width="1.4" stroke-dasharray="4 3"/>
-            <g id="obs" transform="translate(60,52)">
-              <path d="M-9 0 L9 0 M0 -4 L0 4 M6 -3 L11 0 L6 3 Z" stroke="var(--phos)" stroke-width="1.6" fill="var(--phos)"/>
-              <text x="-10" y="-10" class="tk__lbl">{L.observer}</text>
+
+            {/* morze */}
+            <g clip-path="url(#plot)">
+              <rect x="52" y="218" width="460" height="20" fill="url(#horizonGlow)"/>
+              <rect x="52" y="238" width="460" height="62" fill="url(#sea)"/>
+              <rect x="140" y="242" width="290" height="3" fill="url(#spec)"/>
+              <g stroke="var(--phos-2)" stroke-width=".8" opacity=".28">
+                <line x1="52" y1="247" x2="512" y2="247"/>
+                <line x1="52" y1="257" x2="512" y2="257"/>
+                <line x1="52" y1="270" x2="512" y2="270"/>
+                <line x1="52" y1="286" x2="512" y2="286"/>
+              </g>
+              <line x1="52" y1="238" x2="512" y2="238" stroke="var(--phos-2)" stroke-width="1.4" opacity=".9"/>
             </g>
-            <g id="tgt" transform="translate(360,150)">
-              <circle r="5" fill="none" stroke="var(--phos-2)" stroke-width="1.4"/>
-              <circle r="1.8" fill="var(--phos-2)"/>
-              <text x="10" y="4" class="tk__lbl">{L.target}</text>
+            <text x="58" y="254" class="tk__lbl tk__lbl--bright">{L.seaLevel}</text>
+
+            {/* linia obserwacji sprzed sekundy — mechanizm paralaksy */}
+            <g clip-path="url(#plot)">
+              <line id="ghost" x1="0" y1="0" x2="0" y2="0"
+                    stroke="var(--fg-faint)" stroke-width="1" stroke-dasharray="2 4" opacity=".55"/>
+              <g id="ghostObs" opacity=".4">
+                <path d="M-7 0h13M0 -3v6M4 -2.5l6 2.5-6 2.5z" stroke="var(--fg-faint)" stroke-width="1.2" fill="var(--fg-faint)"/>
+              </g>
             </g>
-            <line id="drop" x1="360" y1="150" x2="360" y2="212" stroke="var(--line-2)" stroke-width="1" stroke-dasharray="2 3"/>
+
+            {/* kąt zejścia */}
+            <path id="angArc" d="" fill="none" stroke="var(--amber)" stroke-width="1.1" opacity=".8"/>
+            <line id="horizRef" x1="0" y1="0" x2="0" y2="0" stroke="var(--amber-dim)" stroke-width="1" stroke-dasharray="3 3"/>
+            <text id="angLbl" class="tk__lbl tk__lbl--amber" x="0" y="0"></text>
+
+            {/* linia obserwacji + wymiar zasięgu */}
+            <g clip-path="url(#plot)">
+              <line id="los" x1="0" y1="0" x2="0" y2="0" stroke="url(#losg)" stroke-width="1.6"/>
+              <g id="rangeDim" opacity=".9">
+                <line id="rangeLine" x1="0" y1="0" x2="0" y2="0" stroke="var(--phos-dim)" stroke-width=".9"/>
+                <line id="rangeT1" x1="0" y1="0" x2="0" y2="0" stroke="var(--phos-dim)" stroke-width="1.2"/>
+                <line id="rangeT2" x1="0" y1="0" x2="0" y2="0" stroke="var(--phos-dim)" stroke-width="1.2"/>
+              </g>
+              <text id="rangeLbl" class="tk__lbl tk__lbl--bright" x="0" y="0" text-anchor="middle"></text>
+            </g>
+
+            {/* obserwator */}
+            <g id="obs">
+              <circle r="19" fill="url(#glow)"/>
+              <path d="M-9 0h16M0 -4v8M5 -3.5l8 3.5-8 3.5z" stroke="var(--phos-2)" stroke-width="1.5"
+                    fill="var(--phos-2)" stroke-linejoin="round"/>
+              <line x1="-2" y1="-13" x2="24" y2="-13" stroke="var(--phos-dim)" stroke-width="1.1"/>
+              <path d="M24 -13l-5.5 -2.4v4.8z" fill="var(--phos-dim)"/>
+              <text x="-2" y="-20" class="tk__lbl">{L.observer}</text>
+            </g>
+
+            {/* obiekt */}
+            <g id="tgt">
+              <circle class="tk__ping" r="9" fill="none" stroke="var(--phos-2)" stroke-width="1"/>
+              <circle r="4.6" fill="none" stroke="var(--phos-2)" stroke-width="1.5"/>
+              <circle r="1.7" fill="var(--phos-2)"/>
+              <text id="tgtLbl" x="12" y="4" class="tk__lbl tk__lbl--bright">{L.target}</text>
+            </g>
+            <line id="drop" x1="0" y1="0" x2="0" y2="250" stroke="var(--line-2)" stroke-width="1" stroke-dasharray="2 3"/>
+            <text id="dropLbl" class="tk__lbl" x="0" y="0" text-anchor="middle"></text>
+
+            {/* rogi celownicze — spójne z resztą serwisu */}
+            <g stroke="var(--phos-dim)" stroke-width="1" opacity=".5" fill="none">
+              <path d="M4 16V4h12M508 16V4h-12M4 288v8h12M512 288v8h-12"/>
+            </g>
           </svg>
+
+          <div class="tk__legend">
+            <span><i class="tk__k tk__k--los"></i>{L.legLos}</span>
+            <span><i class="tk__k tk__k--ghost"></i>{L.legGhost}</span>
+            <span><i class="tk__k tk__k--ang"></i>{L.legAng}</span>
+          </div>
 
           <div class="tk__out">
             <div class="tk__row"><span>{L.outRange}</span><b id="o-range">—</b></div>
@@ -290,15 +381,87 @@ const ASSUMPTIONS = en ? [
         ? `At an assumed altitude of <b>${nf.format(ht)} ft</b> the same footage implies an object moving <b>${w}</b>. ${note}`
         : `Przy zakładanej wysokości <b>${nf.format(ht)} ft</b> to samo nagranie oznacza obiekt poruszający się <b>${w}</b>. ${note}`);
 
-      // diagram
-      const oy = 52, sea = 212, span = sea - oy;
-      const ty = oy + span * Math.min(Math.max((ho - ht) / ho, 0), 1);
-      const horiz = (ty - oy) / Math.tan(rad);
-      const tx = Math.min(60 + horiz * 0.55, 424);
-      $('los').setAttribute('x2', tx); $('los').setAttribute('y2', ty);
-      $('tgt').setAttribute('transform', `translate(${tx},${ty})`);
-      $('drop').setAttribute('x1', tx); $('drop').setAttribute('x2', tx); $('drop').setAttribute('y1', ty);
+      // ——— schemat geometrii
+      const OX = 118, SEA = 238, TOPY = 26, MAXFT = 40000, XMAX = 498;
+      const yFor = ft => SEA - (ft / MAXFT) * (SEA - TOPY);
+      const set = (id, a) => { const e = $(id); for (const k in a) e.setAttribute(k, a[k]); };
+
+      const oy = yFor(ho);
+      let ty = yFor(ht);
+      let tx = OX + (ty - oy) / Math.tan(rad);
+      let offscale = false;
+      if (!isFinite(tx) || tx > XMAX) { tx = XMAX; ty = oy + (XMAX - OX) * Math.tan(rad); offscale = true; }
+
+      const dx = tx - OX, dy = ty - oy;
+      const len = Math.hypot(dx, dy) || 1;
+      const ux = dx / len, uy = dy / len;
+      const deg = Math.atan2(dy, dx) * 180 / Math.PI;
+
+      set('obs', { transform: `translate(${OX},${oy})` });
+      set('tgt', { transform: `translate(${tx},${ty})` });
+      const flip = tx > 424;
+      set('tgtLbl', { x: flip ? -12 : 12, y: ty > SEA - 20 ? -12 : 4, 'text-anchor': flip ? 'end' : 'start' });
+      $('tgt').style.opacity = offscale ? '.45' : '1';
+      set('los', { x1: OX, y1: oy, x2: tx, y2: ty });
+      set('drop', { x1: tx, x2: tx, y1: ty + 10, y2: SEA });
+
+      // wysokość obiektu przy linii opadania
+      set('dropLbl', { x: tx + (flip ? -10 : 10), y: (ty + SEA) / 2, 'text-anchor': flip ? 'end' : 'start' });
+      $('dropLbl').textContent = ht > 0 ? nf.format(ht) + ' ft' : '';
+
+      // kąt zejścia przy obserwatorze
+      const AR = 38;
+      set('horizRef', { x1: OX, y1: oy, x2: OX + 80, y2: oy });
+      set('angArc', { d: `M${OX + AR} ${oy} A${AR} ${AR} 0 0 1 ${OX + AR * Math.cos(rad)} ${oy + AR * Math.sin(rad)}` });
+      set('angLbl', { x: OX + 68 * Math.cos(rad / 2) + 6, y: oy + 68 * Math.sin(rad / 2) + 4 });
+      $('angLbl').textContent = fx(th, 1) + '\u00B0';
+
+      // linia wymiarowa zasięgu, równolegle do linii obserwacji
+      const px = uy * 14, py = -ux * 14;
+      const ax = OX + ux * 30 + px, ay = oy + uy * 30 + py;
+      const bx = tx - ux * 14 + px, by = ty - uy * 14 + py;
+      set('rangeLine', { x1: ax, y1: ay, x2: bx, y2: by });
+      set('rangeT1', { x1: ax - px * .42, y1: ay - py * .42, x2: ax + px * .42, y2: ay + py * .42 });
+      set('rangeT2', { x1: bx - px * .42, y1: by - py * .42, x2: bx + px * .42, y2: by + py * .42 });
+      // etykieta zasięgu odsuwa się od łuku kąta, gdy linia jest krótka
+      const dimLen = Math.hypot(bx - ax, by - ay) || 1;
+      const f = Math.min(.8, Math.max(.5, 100 / dimLen));
+      const mx = ax + (bx - ax) * f + uy * 11, my = ay + (by - ay) * f - ux * 11;
+      set('rangeLbl', { x: mx, y: my, transform: `rotate(${deg} ${mx} ${my})` });
+      $('rangeLbl').textContent = R > 0 ? fx(R / NM, 2) + ' NM' : '';
+      $('rangeDim').style.opacity = len > 60 ? '.95' : '0';
+      $('rangeLbl').style.opacity = len > 90 ? '1' : '0';
+
+      // wcześniejsza linia obserwacji — to ona wytwarza pozorny ruch
+      const GX = OX - 48;
+      set('ghost', { x1: GX, y1: oy, x2: tx, y2: ty });
+      set('ghostObs', { transform: `translate(${GX},${oy})` });
+      const moving = vo > 0;
+      $('ghost').style.opacity = moving ? '.55' : '0';
+      $('ghostObs').style.opacity = moving ? '.4' : '0';
     }
+
+    // drabinka wysokości — rysowana raz
+    (() => {
+      const NS = 'http://www.w3.org/2000/svg';
+      const g = document.querySelector('[data-ladder]');
+      for (const ft of [0, 10000, 20000, 30000, 40000]) {
+        const y = 238 - (ft / 40000) * 212;
+        const l = document.createElementNS(NS, 'line');
+        l.setAttribute('x1', 52); l.setAttribute('y1', y);
+        l.setAttribute('x2', ft === 0 ? 52 : 512); l.setAttribute('y2', y);
+        l.setAttribute('stroke', 'var(--phos)');
+        l.setAttribute('stroke-width', '.6');
+        l.setAttribute('opacity', '.09');
+        g.appendChild(l);
+        const t = document.createElementNS(NS, 'text');
+        t.setAttribute('x', 48); t.setAttribute('y', y + 3);
+        t.setAttribute('text-anchor', 'end');
+        t.setAttribute('class', 'tk__lbl');
+        t.textContent = ft ? (ft / 1000) + 'k' : '0';
+        g.appendChild(t);
+      }
+    })();
 
     Object.values(S).forEach(el => el.addEventListener('input', calc));
     document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => {
