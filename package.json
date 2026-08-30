@@ -18,5 +18,8 @@
     "satori": "^0.33.4",
     "topojson-client": "^3.1.0",
     "world-atlas": "^2.0.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.127.1"
   }
 }

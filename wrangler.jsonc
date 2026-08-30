@@ -1,0 +1,13 @@
+{
+  // Serwis statyczny: brak `main`, więc Worker podaje wyłącznie pliki z dist/.
+  // Obecność tego pliku wyłącza autokonfigurację wranglera, która próbowała
+  // dokleić adapter SSR i wywracała build na natywnej binarce resvg.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "disclosure-zone",
+  "compatibility_date": "2026-08-30",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

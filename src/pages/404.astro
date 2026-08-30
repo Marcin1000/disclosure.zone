@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { path } from '../i18n';
+/* Jedna strona dla obu języków — Cloudflare podaje ją spoza drzewa /pl/, więc
+   nie ma tu kontekstu językowego. Angielski jako główny, odnośnik do obu wersji. */
+---
+<Base title="404" description="This page does not exist in the archive." lang="en" rest="/404">
+  <section class="wrap wrap--read" style="padding-block:clamp(4rem,12vw,8rem);text-align:center">
+    <p class="label label--phos" style="margin-bottom:1rem">404 · no such record</p>
+    <h1 style="font-size:clamp(2rem,6vw,3.6rem)">This file is not in the archive.</h1>
+    <p class="lead" style="margin-top:1.5rem">
+      The address may be mistyped, or the case may never have carried this identifier.
+      Nothing was removed — the corpus only grows.
+    </p>
+    <p style="margin-top:2.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a class="btn" href={path('en', '/cases')}>Open the case files</a>
+      <a class="btn btn--ghost" href={path('en', '/')}>Back to the front page</a>
+    </p>
+    <p class="label" style="margin-top:3rem;opacity:.7">
+      <a href={path('pl', '/')}>Wersja polska</a>
+    </p>
+  </section>
+</Base>
