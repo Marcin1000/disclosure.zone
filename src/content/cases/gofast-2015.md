@@ -38,7 +38,7 @@ sources:
   ref: "dod-navy-videos-2020"
 - "tier": "T2"
   label: "NASA independent UAP study team analysis (2023)"
-  ref: "nasa-uap-report"
+  ref: "aaro-case-gofast"
 ---
 
 ## The best proof that the eye is wrong about speed

@@ -6,8 +6,8 @@ dateDisplay: "21 October 1978"
 country: "AU"
 countryName: "Australia"
 location: "Bass Strait, off the Victorian coast"
-lat: -38.70
-lon: 144.60
+lat: -38.7
+lon: 144.6
 domain: "civil"
 tier: 2
 status: "unresolved"
@@ -33,12 +33,13 @@ alternatives:
 claims:
 - "valentich-disappearance"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "Australian Department of Transport aircraft accident investigation file, 1978"
   ref: "naa-ufo"
-- tier: "T1"
+- "tier": "T1"
   label: "Verbatim transcript of the radio exchange with Melbourne Flight Service"
   note: "The primary document. Everything else in this case is inference from it."
+  archive: "naa-recordsearch"
 draft: false
 ---
 

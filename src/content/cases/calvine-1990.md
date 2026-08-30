@@ -39,6 +39,7 @@ sources:
   ref: "tna-ufo"
 - "tier": "T4"
   label: "Accounts of how the negatives were handed over and lost"
+  archive: "tna-discovery"
 ---
 
 ## Why this is a case about provenance, not about an object

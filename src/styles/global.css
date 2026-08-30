@@ -521,3 +521,11 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .tk__ass summary:hover { color: var(--amber); }
 .tk__ass ul { margin: 1rem 0 0; padding-left: 1.2rem; color: var(--fg-dim); font-size: .9rem; line-height: 1.6; }
 .tk__ass li { margin-bottom: .5rem; }
+
+/* Wskazanie archiwum: nie jest linkiem do materiału, więc wygląda inaczej niż źródło */
+.src__aid {
+  display: inline-block; margin-top: .3rem;
+  font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--fg-faint); border-bottom: 1px dotted var(--line-2);
+}
+.src__aid:hover { color: var(--phos-dim); border-color: var(--phos-dim); }

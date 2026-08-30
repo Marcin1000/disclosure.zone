@@ -35,11 +35,12 @@ alternatives:
 claims:
 - "trindade-photos"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "Brazilian Navy examination of the original negatives, 1958"
-- tier: "T2"
+  archive: "br-an-ovni"
+- "tier": "T2"
   label: "Public release endorsed by the President of Brazil"
-- tier: "T4"
+- "tier": "T4"
   label: "Later analyses disputing the photographs' authenticity"
   ref: "br-an-ovni"
 draft: false

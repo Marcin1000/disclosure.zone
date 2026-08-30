@@ -44,6 +44,7 @@ sources:
   ref: "condon"
 - "tier": "T3"
   label: "Lonnie Zamora's statements given within hours of the event"
+  archive: "nara-bluebook-catalog"
 ---
 
 ## Why this is the best classic close encounter

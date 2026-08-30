@@ -6,8 +6,8 @@ dateDisplay: "26/27 June 1959"
 country: "PG"
 countryName: "Papua New Guinea"
 location: "Anglican mission at Boianai, Milne Bay"
-lat: -9.60
-lon: 149.50
+lat: -9.6
+lon: 149.5
 domain: "civil"
 tier: 2
 status: "unresolved"
@@ -34,11 +34,13 @@ alternatives:
 claims:
 - "boianai-signed-testimony"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "Rev. William Gill's contemporaneous account with 38 signatures, June 1959"
   note: "Written within hours and signed by all witnesses — procedurally exceptional for its time and place."
-- tier: "T4"
+  archive: "naa-recordsearch"
+- "tier": "T4"
   label: "Later RAAF correspondence and researcher interviews"
+  archive: "naa-recordsearch"
 draft: false
 ---
 

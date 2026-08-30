@@ -39,6 +39,7 @@ sources:
   ref: "lac-ufo-timeline"
 - "tier": "T1"
   label: "Coast Guard search operation logs"
+  archive: "lac-collection"
 ---
 
 ## What the documents actually establish

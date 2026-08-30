@@ -37,6 +37,7 @@ sources:
 - "tier": "T1"
   label: "USAAF and RAF unit operational reports, 1944–1945"
   note: "Scattered across unit-level archives; no single consolidated holding exists."
+  archive: "nara-catalog"
 - "tier": "T4"
   label: "Post-war studies and crew interviews"
 ---

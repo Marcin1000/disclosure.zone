@@ -38,6 +38,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T3"
   label: "Kenneth Arnold's written statement to the aviation authorities (1947)"
+  archive: "nara-bluebook-catalog"
 ---
 
 ## The most consequential misunderstanding in the field

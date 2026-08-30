@@ -37,6 +37,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T3"
   label: "The pilot's written report filed immediately after the flight"
+  archive: "nara-bluebook-catalog"
 ---
 
 ## The classic relative-geometry trap

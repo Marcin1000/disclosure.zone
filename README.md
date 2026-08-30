@@ -68,9 +68,15 @@ w build time — brak zależności runtime po stronie klienta.
 
 Korpus jest selekcją spraw o najwyższej wartości analitycznej, nie kompletnym spisem.
 
-Odnośniki: **80 ze 170 źródeł** ma zweryfikowany adres. Każdy z nich został sprawdzony
-wobec żywego źródła, nie zgadnięty. Uzupełnianie reszty jest zadaniem bieżącym —
-wskaźnik proweniencji jest widoczny przy każdej sprawie i na `/about`.
+Odnośniki dzielą się na trzy kategorie i **nie są ze sobą mieszane**:
+
+- **74 ze 170** źródeł ma adres do samego materiału — to jedyne, co liczy się do proweniencji
+- **40** ma wskazanie archiwum, które dokument przechowuje (NARA, TNA Discovery, NAA RecordSearch,
+  LAC, GEIPAN, Arquivo Nacional) — użyteczne, ale to nie jest dokument
+- **56** nie ma na razie żadnego z tych dwóch
+
+Każdy adres w rejestrze został sprawdzony wobec żywego źródła, nie zgadnięty. Wskaźnik
+proweniencji jest widoczny przy każdej sprawie i na `/about`.
 
 `npm run check:data` waliduje spójność rekordów kanonicznych z nakładkami i wzajemne
 referencje spraw oraz twierdzeń. Build nie przejdzie, jeśli coś się rozjedzie.

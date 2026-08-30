@@ -11,6 +11,8 @@ const en = lang === 'en';
 const all = await getCases(lang);
 const totalSrc = all.reduce((n, c) => n + c.data.sources.length, 0);
 const withUrl = all.reduce((n, c) => n + c.data.sources.filter(s => s.url).length, 0);
+const withAid = all.reduce((n, c) => n + c.data.sources.filter(s => !s.url && s.archiveUrl).length, 0);
+const withNone = totalSrc - withUrl - withAid;
 const countries = new Set(all.map(c => c.data.country)).size;
 ---
 <Base title={en ? 'About' : 'O projekcie'}
@@ -46,12 +48,12 @@ const countries = new Set(all.map(c => c.data.country)).size;
     <ul>
       <li>{all.length} {en ? `cases from ${countries} countries` : `spraw z ${countries} państw`}</li>
       <li>{claims.length} {en ? 'claims on the ledger' : 'twierdzeń w rejestrze'}</li>
-      <li>{totalSrc} {en ? `sources, of which ${withUrl} carry a verified link` : `źródeł, z czego ${withUrl} ma zweryfikowany odnośnik`}</li>
+      <li>{totalSrc} {en ? 'sources' : 'źródeł'}: {withUrl} {en ? 'with a verified link to the material' : 'z odnośnikiem do materiału'}, {withAid} {en ? 'pointing at the holding archive' : 'ze wskazaniem archiwum'}, {withNone} {en ? 'with neither' : 'bez żadnego'}</li>
     </ul>
     <p>
       {en
-        ? 'That last number is deliberately visible. Completing links to archival material is ongoing work, not something we sweep under the carpet. Every link in the registry was checked against a live source rather than guessed.'
-        : 'Ostatnia liczba jest celowo widoczna. Uzupełnianie odnośników do materiałów archiwalnych jest zadaniem bieżącym, a nie czymś, co zamiatamy pod dywan. Każdy odnośnik w rejestrze został sprawdzony wobec żywego źródła, a nie zgadnięty.'}
+        ? 'That breakdown is deliberately visible, and the middle column is deliberately separate. Knowing which archive holds a record is useful, but it is not the record — counting the two together is the easiest way to inflate an apparent evidence base. Every link in the registry was checked against a live source rather than guessed, and completing the rest is ongoing work.'
+        : 'Ten podział jest celowo widoczny, a środkowa kolumna celowo osobna. Wiedza o tym, które archiwum przechowuje dokument, jest użyteczna, ale nie jest dokumentem — liczenie obu razem to najprostszy sposób na zawyżenie pozornej bazy dowodowej. Każdy odnośnik w rejestrze został sprawdzony wobec żywego źródła, a nie zgadnięty, a uzupełnianie reszty jest zadaniem bieżącym.'}
     </p>
 
     <h2>{en ? 'Limits' : 'Ograniczenia'}</h2>

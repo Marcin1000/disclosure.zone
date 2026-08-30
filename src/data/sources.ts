@@ -15,7 +15,7 @@ export const SOURCE_URL: Record<string, string> = {
 
   'aaro':                 'https://www.aaro.mil/',
   'aaro-records':         'https://www.aaro.mil/UAP-Records/',
-  'aaro-historical-v1':   'https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-2024-0263-AARO-HISTORICAL-RECORD-REPORT-VOLUME-1-2024.PDF',
+  'aaro-historical-v1':   'https://www.aaro.mil/Portals/136/PDFs/AARO_Historical_Record_Report_Vol_1_2024.pdf',
   'aaro-fy24':            'https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF',
 
   'dod-navy-videos-2020': 'https://www.defense.gov/News/Releases/Release/Article/2165713/',
@@ -82,12 +82,89 @@ export const SOURCE_URL: Record<string, string> = {
   'hessdalen':            'https://www.hessdalen.org/',
   'hessdalen-1984':       'https://old.hessdalen.org/reports/hpreport84.shtml',
   'hessdalen-reports':    'https://old.hessdalen.org/reports/',
+
+  // ——— Dodane w drugiej rundzie weryfikacji
+  'nara-bluebook-catalog': 'https://catalog.archives.gov/id/595466',
+  'nara-uap-bulk':        'https://www.archives.gov/research/catalog/catalog-bulk-downloads/uap-bulk-download',
+  'nara-citizen-archivist': 'https://www.archives.gov/citizen-archivist/missions',
+  'nara-unwritten-record':  'https://unwritten-record.blogs.archives.gov/tag/project-blue-book/',
+  'dtic-special-report-14': 'https://apps.dtic.mil/sti/tr/pdf/AD0069211.pdf',
+  'ia-special-report-14':   'https://archive.org/details/ProjectBlueBookSpecialReport14',
+
+  // ——— Biblioteka Kongresu: prasa z epoki
+  'loc-airship-subject':  'https://id.loc.gov/authorities/sh2008006799',
+  'loc-chronicling':      'https://www.loc.gov/collections/chronicling-america/',
+  'loc-airship-1897':     'https://chroniclingamerica.loc.gov/lccn/sn85054468/1897-04-20/ed-1/seq-3/',
+
+  // ——— Zentralbibliothek Zürich: oryginalna ulotka z 1561 r.
+  'zb-nuremberg-1561':    'https://www.e-manuscripta.ch/zuzneb/doi/10.7891/e-manuscripta-91897',
+  'zb-wickiana':          'https://www.zb.uzh.ch/en/news/wickiana',
+
+  // ——— 2023: balon i strącenia
+  'norad-vanherck-2023':  'https://www.norad.mil/Newsroom/Press-Releases/Article/3288728/statement-from-gen-glen-vanherck-commander-north-american-aerospace-defense-com/',
+  'northcom-vanherck-2023': 'https://www.northcom.mil/Newsroom/News/Article/Article/3288730/statement-from-gen-glen-vanherck-commander-north-american-aerospace-defense-com/',
+  'dod-briefing-2023':    'https://www.defense.gov/News/Transcripts/Transcript/Article/3296177/melissa-dalton-assistant-secretary-of-defense-for-homeland-defense-and-hemisphe/',
+
+  // ——— Drony nad Kolorado 2019/2020
+  'co-drone-taskforce':   'https://publicsafety.colorado.gov/press-release/updates-on-investigations-into-suspicious-drone-activity-in-ne-colorado',
+  'faa-uas-sightings':    'https://www.faa.gov/uas/resources/public_records/uas_sightings_report',
+
+  // ——— Pomoce archiwalne (wskazują, gdzie dokument leży — nie sam dokument)
+  'naa-recordsearch':     'https://recordsearch.naa.gov.au/',
+  'lac-collection':       'https://library-archives.canada.ca/eng/collection/',
+  'tna-discovery':        'https://discovery.nationalarchives.gov.uk/',
+
+  // ——— AARO: raporty rozstrzygnięcia poszczególnych spraw
+  'aaro-case-reports':    'https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/',
+  'aaro-case-aguadilla':  'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Puerto_Rico_UAP_Case_Resolution.pdf',
+  'aaro-case-gofast':     'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_GoFast_Case_Resolution_Card_Methodology_Final.pdf',
+  'aaro-case-taqaddam':   'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Al_Taqaddam_Case_Resolution_Final.pdf',
+  'aaro-case-wakes':      'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/Case_Resolution_of_Atmospheric_Wakes_508-02262024.pdf',
+  'aaro-imagery':         'https://www.aaro.mil/UAP-Cases/Official-UAP-Imagery/',
+  'aaro-trends':          'https://www.aaro.mil/UAP-Cases/UAP-Reporting-Trends/',
+  'aaro-fy25':            'https://www.aaro.mil/Portals/136/PDFs/FY25%20UAP%20Annual%20Report/AARO_FY2025_Consolidated_Annual_Report_on_UAP.pdf',
+  'aaro-mission-brief':   'https://www.aaro.mil/Portals/136/PDFs/AARO_Mission_Brief_2025.pdf',
+  'geipan-search':        'https://geipan.fr/en/recherche/cas/tab',
+
+  // ——— Condon Report: konkretne sprawy, nie tylko tom
+  'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',
+  'condon-case02':        'https://files.ncas.org/condon/text/case02.htm',
+  'condon-case49':        'https://files.ncas.org/condon/text/case49.htm',
+  'condon-photo':         'https://files.ncas.org/condon/text/s3chap02.htm',
+  'condon-radar':         'https://files.ncas.org/condon/text/s6chap05.htm',
+  'condon-pre-project':   'https://files.ncas.org/condon/text/s4chap01.htm',
+
+  // ——— Roswell: oficjalne raporty USAF i GAO
+  'roswell-case-closed':  'https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo92195/pdf/GOVPUB-D301-PURL-gpo92195.pdf',
+  'roswell-fact-fiction': 'https://apps.dtic.mil/sti/pdfs/ADA326148.pdf',
+  'roswell-af':           'https://www.af.mil/The-Roswell-Report/',
+  'gao-roswell-1995':     'https://www.govinfo.gov/content/pkg/GAOREPORTS-NSIAD-95-187/pdf/GAOREPORTS-NSIAD-95-187.pdf',
+  'nara-roswell-vol1':    'https://archive.org/details/gov.archives.341-roswell-1',
 };
 
 export function resolveSource(ref?: string, url?: string): string | undefined {
   if (url) return url;
   if (ref && SOURCE_URL[ref]) return SOURCE_URL[ref];
   return undefined;
+}
+
+/**
+ * Pomoce archiwalne. Wskazują instytucję przechowującą dokument, a nie sam dokument,
+ * więc NIE liczą się do wskaźnika proweniencji. Rozróżnienie jest celowe:
+ * „wiemy, gdzie to leży" to nie to samo co „oto materiał".
+ */
+export const FINDING_AIDS = new Set([
+  'naa-recordsearch', 'lac-collection', 'tna-discovery', 'nara-catalog',
+  'nara-uap', 'nara-uap-microfilm', 'cia-readingroom', 'dia-foia-iran',
+  'geipan', 'br-an-ovni', 'es-ovni', 'aaro-records', 'loc-chronicling',
+  'nara-citizen-archivist', 'nara-unwritten-record', 'zb-wickiana',
+  'hessdalen-reports', 'faa-uas-sightings', 'lac-ufo-timeline',
+  'aaro-case-reports', 'aaro-imagery', 'aaro-trends', 'geipan-search',
+  'condon-contents', 'roswell-af',
+]);
+
+export function isFindingAid(ref?: string): boolean {
+  return !!ref && FINDING_AIDS.has(ref);
 }
 
 export const SOURCE_COUNT = Object.keys(SOURCE_URL).length;

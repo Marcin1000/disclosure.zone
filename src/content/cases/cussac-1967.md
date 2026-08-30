@@ -35,7 +35,7 @@ claims: []
 sources:
 - "tier": "T1"
   label: "French gendarmerie protocol of 29 August 1967, in the GEIPAN files"
-  ref: "geipan"
+  archive: "geipan-search"
 ---
 
 ## Why the French investigative model matters

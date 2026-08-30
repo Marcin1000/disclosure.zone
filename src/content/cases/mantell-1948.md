@@ -37,6 +37,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T1"
   label: "USAF aircraft accident report, January 1948"
+  archive: "nara-bluebook-catalog"
 ---
 
 ## Why an "explained" case still matters

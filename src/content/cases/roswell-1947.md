@@ -36,13 +36,14 @@ claims:
 sources:
 - "tier": "T1"
   label: "RAAF Roswell press release of 8 July 1947 and its retraction"
-  ref: "nara-uap"
+  ref: "roswell-fact-fiction"
 - "tier": "T1"
   label: "USAF reports of 1994–1997 on Project Mogul and the so-called “bodies”"
-  ref: "aaro-historical-v1"
+  ref: "roswell-case-closed"
 - "tier": "T4"
   label: "Witness accounts collected from the late 1970s, three decades after the event"
   note: "The core of the modern Roswell narrative comes from this layer, not from 1947 documents."
+  archive: "nara-roswell-vol1"
 ---
 
 ## Two things, kept apart

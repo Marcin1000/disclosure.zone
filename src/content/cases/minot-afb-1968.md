@@ -36,13 +36,14 @@ claims:
 - "minot-b52-radar"
 - "uap-nuclear-affinity"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "Project Blue Book file, Minot AFB case, October 1968 (extensive)"
   ref: "nara-bluebook"
   note: "One of the largest single case files in the programme, including crew statements and radar data."
-- tier: "T1"
+- "tier": "T1"
   label: "B-52 crew statements and maintenance records"
-- tier: "T4"
+  archive: "nara-bluebook-catalog"
+- "tier": "T4"
   label: "Later reconstructions from the case file"
 draft: false
 ---

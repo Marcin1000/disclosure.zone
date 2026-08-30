@@ -34,9 +34,10 @@ claims: []
 sources:
 - "tier": "T1"
   label: "The original film and the analysis in the Project Blue Book files"
-  ref: "nara-bluebook"
+  ref: "condon-case49"
 - "tier": "T1"
   label: "Battelle Memorial Institute analysis (Project Bear)"
+  ref: "dtic-special-report-14"
 ---
 
 ## Significance: the first serious technical analysis

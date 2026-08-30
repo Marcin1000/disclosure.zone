@@ -64,10 +64,29 @@ for (const c of claims) {
   }
 }
 
-const linked = canon.reduce((n, s) => n + (fm(join(CANON, `${s}.md`)).raw.match(/^\s+"?ref"?:/gm) || []).length, 0);
-const total = canon.reduce((n, s) => n + countSources(fm(join(CANON, `${s}.md`)).raw), 0);
+execFileSync('npx', ['esbuild', 'src/data/sources.ts', '--format=esm',
+  `--outfile=${tmp}-sources.mjs`, '--log-level=error']);
+const { FINDING_AIDS, SOURCE_URL } = await import(`${tmp}-sources.mjs`);
 
-console.log(`sprawy: ${canon.length} · twierdzenia: ${claims.length} · źródła z odnośnikiem: ${linked}/${total}`);
+let linked = 0, aided = 0, total = 0;
+const unknownRefs = new Set();
+for (const s of canon) {
+  const raw = fm(join(CANON, `${s}.md`)).raw;
+  total += countSources(raw);
+  for (const [, key] of raw.matchAll(/^\s+"?ref"?:\s*"?([\w-]+)"?/gm)) {
+    if (!SOURCE_URL[key]) unknownRefs.add(`${s} -> ${key}`);
+    else if (FINDING_AIDS.has(key)) aided++;
+    else linked++;
+  }
+  for (const [, key] of raw.matchAll(/^\s+"?archive"?:\s*"?([\w-]+)"?/gm)) {
+    if (!SOURCE_URL[key]) unknownRefs.add(`${s} -> ${key}`);
+    else aided++;
+  }
+}
+for (const u of unknownRefs) errors.push(`odnośnik spoza rejestru: ${u}`);
+
+console.log(`sprawy: ${canon.length} · twierdzenia: ${claims.length}`);
+console.log(`źródła: ${total} · z adresem materiału: ${linked} · ze wskazaniem archiwum: ${aided} · bez niczego: ${total - linked - aided}`);
 if (warn.length) console.log('ostrzeżenia:\n  ' + warn.join('\n  '));
 if (errors.length) {
   console.error(`\nBŁĘDY SPÓJNOŚCI (${errors.length}):\n  ` + errors.join('\n  '));

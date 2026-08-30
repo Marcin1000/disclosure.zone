@@ -35,9 +35,11 @@ sources:
 - "tier": "T1"
   label: "Hans Glaser broadsheet, Nuremberg 1561 (Zentralbibliothek Zürich)"
   note: "The source exists and is well described. The dispute concerns interpretation, not authenticity."
+  ref: "zb-nuremberg-1561"
 - "tier": "T5"
   label: "Contemporary popular-media presentations as a “UFO battle”"
   note: "Over-interpretation: it disregards the generic context of the broadsheet."
+  archive: "zb-wickiana"
 ---
 
 ## Why this case is in the database

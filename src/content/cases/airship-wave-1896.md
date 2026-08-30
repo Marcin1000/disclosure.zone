@@ -34,11 +34,13 @@ alternatives:
 claims:
 - "airship-wave-templating"
 sources:
-- tier: "T4"
+- "tier": "T4"
   label: "Contemporary newspaper reporting, 1896–1897"
   note: "The only surviving source layer. Several papers later admitted fabrication."
-- tier: "T4"
+  ref: "loc-airship-1897"
+- "tier": "T4"
   label: "Later historical studies of the wave"
+  archive: "loc-chronicling"
 draft: false
 ---
 

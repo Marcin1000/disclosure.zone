@@ -41,6 +41,7 @@ sources:
 - "tier": "T1"
   label: "USAF technical documentation on the March 1967 “no-go” events"
   note: "The publicly available documentation is limited and contains no correlation with sightings."
+  archive: "nara-catalog"
 ---
 
 ## The most important case with the weakest documentation

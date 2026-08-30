@@ -52,7 +52,10 @@ npm run preview
 - `src/lib/cases.ts` — scala rekord z nakładką (`getCases(lang)`)
 - `src/data/sources.ts` — **rejestr zweryfikowanych odnośników**. Sprawa odwołuje się
   kluczem (`ref`), więc poprawka adresu działa od razu w obu językach.
-  Wpisujemy wyłącznie adresy sprawdzone wobec żywego źródła
+  Wpisujemy wyłącznie adresy sprawdzone wobec żywego źródła.
+  `FINDING_AIDS` oznacza wpisy będące pomocą archiwalną, nie dokumentem —
+  źródło może mieć `ref` (adres materiału) albo `archive` (gdzie materiał leży);
+  tylko `ref` spoza `FINDING_AIDS` liczy się do proweniencji
 - `src/data/claims.ts` — Claim Ledger, dwujęzyczny
 - `src/data/archives.ts` — rejestr archiwów państwowych, dwujęzyczny
 - `src/lib/scoring.ts` — skala S/R/O/P/M/T/X/D, wagi, klasy dowodowe

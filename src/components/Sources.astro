@@ -1,7 +1,7 @@
 ---
 import { TIER_LABEL, bi } from '../lib/scoring';
 import { useT, type Lang } from '../i18n';
-interface Src { tier: string; label: string; url?: string; note?: string }
+interface Src { tier: string; label: string; url?: string; archiveUrl?: string; note?: string }
 interface Props { sources: Src[]; lang: Lang }
 const { sources, lang } = Astro.props;
 const t = useT(lang);
@@ -10,7 +10,9 @@ const linked = sources.filter(s => s.url).length;
 <div>
   <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:.4rem">
     <p class="label" style="margin:0">{t('src.title')}</p>
-    <p class="label" style="margin:0;color:var(--amber-dim)">{t('src.provenance', { a: linked, b: sources.length })}</p>
+    <p class="label" style={`margin:0;color:${linked === sources.length ? 'var(--phos-dim)' : 'var(--amber-dim)'}`}>
+      {t('src.provenance', { a: linked, b: sources.length })}
+    </p>
   </div>
   {sources.map(s => (
     <div class="src">
@@ -18,7 +20,11 @@ const linked = sources.filter(s => s.url).length;
       <span class="src__body">
         {s.url ? <a href={s.url} rel="noopener noreferrer" target="_blank">{s.label}</a> : <span>{s.label}</span>}
         <span class="src__note">{bi(TIER_LABEL[s.tier], lang)}{s.note ? ` — ${s.note}` : ''}</span>
-        {!s.url && <span class="src__nolink">{t('src.nolink')}</span>}
+        {!s.url && (
+          s.archiveUrl
+            ? <a class="src__aid" href={s.archiveUrl} rel="noopener noreferrer" target="_blank">{t('src.heldAt')}</a>
+            : <span class="src__nolink">{t('src.nolink')}</span>
+        )}
       </span>
     </div>
   ))}

@@ -39,6 +39,7 @@ sources:
 - "tier": "T4"
   label: "Accounts of the “Estimate of the Situation” document"
   note: "The document itself does not survive in the archives and its existence is unconfirmed."
+  archive: "nara-bluebook-catalog"
 ---
 
 ## The case that built the "Estimate of the Situation" myth

@@ -37,7 +37,7 @@ sources:
   ref: "aaro"
 - "tier": "T2"
   label: "AARO analysis: 3D trajectory reconstruction and identification"
-  ref: "aaro-records"
+  ref: "aaro-case-aguadilla"
 ---
 
 ## The most important solved contemporary case

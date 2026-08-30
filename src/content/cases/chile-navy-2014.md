@@ -41,6 +41,7 @@ sources:
   ref: "cl-cefaa-model"
 - "tier": "T1"
   label: "Flight plans and air traffic data for the day"
+  archive: "cl-sefaa"
 ---
 
 ## An exemplary investigation — and an exemplary result

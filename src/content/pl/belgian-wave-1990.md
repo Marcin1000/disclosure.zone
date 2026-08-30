@@ -46,6 +46,11 @@ track file, którego nie widzieliśmy w postaci surowej.
 
 ## Fotografia z Petit-Rechain
 
-Najsłynniejsze zdjęcie fali — trójkąt z czterema światłami — zostało przez autora przyznane jako
-mistyfikacja. Jest reprodukowane do dziś jako dowód. Traktujemy je jako źródło T5 o zerowej
-wartości i odnotowujemy, ponieważ jego obecność w obiegu zniekształca postrzeganie całej sprawy.
+W 2011 r. najsłynniejsze zdjęcie fali — trójkąt z czterema światłami — zostało przez autora przyznane
+w belgijskiej telewizji jako mistyfikacja: pomalowany styropian ze światłami w rogach, zawieszony na
+żyłkach. W 2022 r. doniesiono, że twierdzi on, iż zapłacono mu za takie oświadczenie.
+
+Wycofanie nie ma poparcia dokumentowego i tak czy inaczej nie ratuje zdjęcia. **Fotografia, której
+własny autor przedstawił dwie sprzeczne wersje jej powstania, nie może nieść ciężaru dowodowego.**
+Traktujemy je jako źródło T5 o zerowej wartości i odnotowujemy całą sekwencję, bo zdjęcie wciąż jest
+reprodukowane jako dowód.

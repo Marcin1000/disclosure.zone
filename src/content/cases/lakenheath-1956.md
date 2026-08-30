@@ -41,7 +41,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T1"
   label: "Condon Committee report (1968), chapter on radar-visual cases"
-  ref: "condon"
+  ref: "condon-case02"
 - "tier": "T4"
   label: "Later interviews with the radar operators"
 ---

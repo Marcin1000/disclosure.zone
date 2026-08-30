@@ -6,8 +6,8 @@ dateDisplay: "December 2019 – January 2020"
 country: "US"
 countryName: "United States"
 location: "Eastern Colorado and western Nebraska"
-lat: 40.10
-lon: -102.60
+lat: 40.1
+lon: -102.6
 domain: "civil"
 tier: 2
 status: "unresolved"
@@ -34,10 +34,12 @@ alternatives:
 claims:
 - "colorado-drones-unattributed"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "Colorado multi-agency task force report, January 2020"
-- tier: "T1"
+  ref: "co-drone-taskforce"
+- "tier": "T1"
   label: "County sheriff incident logs from the reporting period"
+  archive: "faa-uas-sightings"
 draft: false
 ---
 

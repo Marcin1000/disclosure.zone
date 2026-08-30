@@ -35,9 +35,10 @@ claims:
 sources:
 - "tier": "T1"
   label: "The original negatives and the analysis in the Condon Committee report (1968)"
-  ref: "condon"
+  ref: "condon-photo"
 - "tier": "T4"
   label: "Later photogrammetric re-analyses, contradictory in their conclusions"
+  archive: "condon-contents"
 ---
 
 ## Why a photograph alone is not enough

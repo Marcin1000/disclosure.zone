@@ -37,7 +37,7 @@ claims:
 sources:
 - "tier": "T1"
   label: "AARO annual report listing the case as active"
-  ref: "aaro-fy24"
+  ref: "aaro-fy25"
 - "tier": "T1"
   label: "US Navy operational reports"
   ref: "aaro"

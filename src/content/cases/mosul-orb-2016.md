@@ -35,7 +35,7 @@ claims:
 sources:
 - "tier": "T1"
   label: "Footage presented publicly by AARO"
-  ref: "aaro"
+  ref: "aaro-imagery"
 - "tier": "T2"
   label: "AARO commentary on the case"
   ref: "aaro-records"

@@ -6,8 +6,8 @@ dateDisplay: "February 2023"
 country: "US"
 countryName: "United States"
 location: "Continental United States, Alaska, Yukon and Lake Huron"
-lat: 44.00
-lon: -82.50
+lat: 44.0
+lon: -82.5
 domain: "military"
 tier: 2
 status: "explained"
@@ -34,13 +34,15 @@ alternatives:
 claims:
 - "shootdowns-2023-filters"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "US and Canadian government statements on the shootdowns, February 2023"
-- tier: "T1"
+  ref: "norad-vanherck-2023"
+- "tier": "T1"
   label: "AARO annual reporting covering the period"
   ref: "aaro-fy24"
-- tier: "T2"
+- "tier": "T2"
   label: "NORAD statements on radar filter adjustment"
+  ref: "dod-briefing-2023"
 draft: false
 ---
 

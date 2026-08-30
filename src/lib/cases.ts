@@ -1,6 +1,6 @@
 import { getCollection, getEntry, render } from 'astro:content';
 import type { Lang } from '../i18n';
-import { resolveSource } from '../data/sources';
+import { resolveSource, isFindingAid } from '../data/sources';
 
 export type CaseData = Awaited<ReturnType<typeof getCases>>[number];
 
@@ -28,12 +28,19 @@ export async function getCases(lang: Lang) {
                 alternatives: t.alternatives,
               }
             : {}),
-          sources: c.data.sources.map((s, i) => ({
-            tier: s.tier,
-            label: t?.sources?.[i]?.label ?? s.label,
-            note: t?.sources?.[i]?.note ?? s.note,
-            url: resolveSource(s.ref, s.url),
-          })),
+          sources: c.data.sources.map((s, i) => {
+            const direct = isFindingAid(s.ref) ? undefined : resolveSource(s.ref, s.url);
+            const aid = direct ? undefined : resolveSource(s.archive ?? s.ref);
+            return {
+              tier: s.tier,
+              label: t?.sources?.[i]?.label ?? s.label,
+              note: t?.sources?.[i]?.note ?? s.note,
+              /** Bezpośredni adres materiału. Tylko to liczy się do proweniencji. */
+              url: direct,
+              /** Instytucja przechowująca — pokazywana, gdy nie ma adresu materiału. */
+              archiveUrl: aid,
+            };
+          }),
         },
       };
     })

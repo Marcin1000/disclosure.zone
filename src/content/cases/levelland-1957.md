@@ -40,6 +40,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T1"
   label: "Hockley County sheriff's office reports"
+  archive: "nara-bluebook-catalog"
 ---
 
 ## The interesting part: a repeatable physical effect

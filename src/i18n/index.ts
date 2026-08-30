@@ -106,6 +106,7 @@ const en: Dict = {
   'src.title': 'Sources',
   'src.provenance': 'Provenance {a}/{b} linked',
   'src.nolink': 'no link yet — to be completed',
+  'src.heldAt': 'find it in the archive ↗',
 
   'map.kicker': 'Situation board',
   'map.title': 'Event map',
@@ -216,6 +217,7 @@ const pl: Dict = {
   'src.title': 'Źródła',
   'src.provenance': 'Proweniencja {a}/{b} z odnośnikiem',
   'src.nolink': 'brak odnośnika — do uzupełnienia',
+  'src.heldAt': 'szukaj w archiwum ↗',
 
   'map.kicker': 'Plansza sytuacyjna',
   'map.title': 'Mapa zdarzeń',

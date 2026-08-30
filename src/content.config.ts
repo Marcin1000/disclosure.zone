@@ -52,6 +52,11 @@ const cases = defineCollection({
       ref: z.string().optional(),
       /** Adres wpisany bezpośrednio, gdy nie ma sensu trzymać go w rejestrze. */
       url: z.string().url().optional(),
+      /**
+       * Instytucja przechowująca dokument, gdy nie ma bezpośredniego adresu.
+       * Nie liczy się do wskaźnika proweniencji — mówi „gdzie szukać", nie „oto materiał".
+       */
+      archive: z.string().optional(),
     })).default([]),
     draft: z.boolean().default(false),
   }),

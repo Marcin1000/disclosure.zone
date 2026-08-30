@@ -36,18 +36,19 @@ claims:
 - "falcon-lake-burns"
 - "falcon-lake-radiation"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "Government of Canada case file, Stefan Michalak, Falcon Beach, Manitoba"
   ref: "lac-falcon-lake"
   note: "Digitised and publicly available from Library and Archives Canada."
-- tier: "T1"
+- "tier": "T1"
   label: "Follow-up government correspondence, August 1967"
   ref: "lac-falcon-lake-2"
-- tier: "T1"
+- "tier": "T1"
   label: "Library and Archives Canada case history"
   ref: "lac-falcon-podcast"
-- tier: "T1"
+- "tier": "T1"
   label: "Medical records documenting the burn pattern and subsequent illness"
+  archive: "lac-collection"
 draft: false
 ---
 

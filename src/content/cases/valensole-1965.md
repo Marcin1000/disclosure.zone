@@ -34,12 +34,13 @@ alternatives:
 claims:
 - "valensole-soil-effect"
 sources:
-- tier: "T1"
+- "tier": "T1"
   label: "French gendarmerie protocol of 1 July 1965, held in the GEIPAN archive"
   ref: "geipan"
-- tier: "T4"
+- "tier": "T4"
   label: "Later agronomic observations of the affected patch"
   note: "Reported over subsequent years; no controlled study was conducted at the time."
+  archive: "geipan-search"
 draft: false
 ---
 

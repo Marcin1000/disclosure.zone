@@ -74,6 +74,11 @@ we have not seen in raw form.
 
 ## The Petit-Rechain photograph
 
-The wave's most famous image — a triangle with four lights — was admitted by its author to be a
-hoax. It is reproduced as evidence to this day. We treat it as a T5 source of zero value and record
-it because its continued circulation distorts perception of the entire case.
+In 2011 the wave's most famous image — a triangle with four lights — was admitted by its author, on
+Belgian television, to be a hoax: painted styrofoam with lights at the corners, hung on threads. In
+2022 he was reported as claiming he had been paid to say that.
+
+The retraction has no documentary support, and it does not rescue the photograph either way. **An
+image whose own author has given two contradictory accounts of making it cannot carry evidential
+weight.** We treat it as a T5 source of zero value and record the whole sequence because the image is
+still reproduced as evidence.
