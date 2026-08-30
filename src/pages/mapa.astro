@@ -1,0 +1,125 @@
+---
+import Base from '../layouts/Base.astro';
+import WorldPlot, { type PlotPoint } from '../components/WorldPlot.astro';
+import { getCollection } from 'astro:content';
+import { STATUS } from '../lib/scoring';
+
+const all = (await getCollection('cases')).filter(c => !c.data.draft)
+  .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+
+const points: PlotPoint[] = all.map(c => ({
+  id: c.id, title: c.data.title, lon: c.data.lon, lat: c.data.lat,
+  country: c.data.country, countryName: c.data.countryName,
+  year: c.data.dateDisplay, tier: c.data.tier, status: c.data.status,
+  href: `/akta/${c.id}`,
+}));
+
+const byCountry = [...new Set(all.map(c => c.data.country))]
+  .map(k => ({
+    k, name: all.find(c => c.data.country === k)!.data.countryName,
+    n: all.filter(c => c.data.country === k).length,
+  }))
+  .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'pl'));
+---
+<Base title="Mapa zdarzeń" description="Wszystkie udokumentowane przypadki UAP naniesione na mapę świata. Fenomen jest globalny — to widać dopiero na mapie.">
+  <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4rem) 1.8rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">Plansza sytuacyjna</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Mapa zdarzeń</h1>
+    <p class="lead dim" style="max-width:60ch">
+      {all.length} spraw z {byCountry.length} państw. Największe nieporozumienie w tej dziedzinie
+      polega na tym, że UAP wygląda na zjawisko amerykańskie. Nie jest — po prostu tylko USA
+      opowiadały o tym głośno.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <WorldPlot points={points} />
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1rem">
+      {Object.entries(STATUS).map(([k, v]) => (
+        <span class="label" style="display:flex;align-items:center;gap:.5rem">
+          <i style={`width:8px;height:8px;border-radius:50%;background:${
+            k === 'unresolved' ? 'var(--amber)' : k === 'explained' ? 'var(--phos)' :
+            k === 'disputed' ? 'var(--stamp-2)' : 'var(--fg-faint)'}`}></i>{v.pl}
+        </span>
+      ))}
+      <span class="label" style="display:flex;align-items:center;gap:.5rem;color:var(--phos-dim)">◆ pulsujące = rdzeń dowodowy</span>
+    </div>
+  </section>
+
+  <section class="wrap section--tight">
+    <p class="label" style="margin-bottom:.7rem">Wybierz państwo</p>
+    <div class="filters" data-rail>
+      <button class="f" data-c="" aria-pressed="true">Świat <b>{all.length}</b></button>
+      {byCountry.map(c => <button class="f" data-c={c.k} aria-pressed="false">{c.name} <b>{c.n}</b></button>)}
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <div class="tbl-scroll panel corners">
+      <table class="tbl">
+        <thead>
+          <tr><th>Data</th><th>Sprawa</th><th>Państwo</th><th>Status</th><th>Pozycja</th></tr>
+        </thead>
+        <tbody data-rows>
+          {all.map(c => (
+            <tr data-row data-country={c.data.country} data-id={c.id}>
+              <td class="mono" style="white-space:nowrap;font-size:.85rem">{c.data.dateDisplay}</td>
+              <td><a href={`/akta/${c.id}`}><strong>{c.data.title}</strong></a>
+                {c.data.tier === 1 && <span class="label" style="color:var(--amber);margin-left:.5rem">◆</span>}</td>
+              <td>{c.data.countryName}</td>
+              <td>{STATUS[c.data.status].pl}</td>
+              <td class="mono" style="white-space:nowrap;font-size:.8rem;color:var(--fg-faint)">
+                {c.data.lat.toFixed(1)}° {c.data.lat >= 0 ? 'N' : 'S'} · {Math.abs(c.data.lon).toFixed(1)}° {c.data.lon >= 0 ? 'E' : 'W'}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    const plot = document.querySelector<HTMLElement>('[data-plot]')!;
+    const tip = document.querySelector<HTMLElement>('[data-tip]')!;
+    const rows = [...document.querySelectorAll<HTMLElement>('[data-row]')];
+    const marks = [...document.querySelectorAll<HTMLElement>('[data-mk]')];
+    const lands = [...document.querySelectorAll<SVGPathElement>('.plot__land--has')];
+    const rail = [...document.querySelectorAll<HTMLButtonElement>('[data-rail] .f')];
+    let sel = '';
+
+    function select(c: string) {
+      sel = sel === c ? '' : c;
+      rail.forEach(b => b.setAttribute('aria-pressed', String((b.dataset.c || '') === sel)));
+      lands.forEach(l => l.classList.toggle('plot__land--sel', !!sel && l.dataset.country === sel));
+      marks.forEach(m => m.classList.toggle('mk--dim', !!sel && m.dataset.country !== sel));
+      rows.forEach(r => { r.style.display = !sel || r.dataset.country === sel ? '' : 'none'; });
+    }
+
+    rail.forEach(b => b.addEventListener('click', () => select(b.dataset.c || '')));
+    lands.forEach(l => {
+      l.addEventListener('click', () => select(l.dataset.country || ''));
+      l.addEventListener('keydown', e => {
+        if ((e as KeyboardEvent).key === 'Enter' || (e as KeyboardEvent).key === ' ') {
+          e.preventDefault(); select(l.dataset.country || '');
+        }
+      });
+    });
+
+    marks.forEach(m => {
+      const hit = m.querySelector<SVGElement>('[data-hit]')!;
+      const show = (e: MouseEvent) => {
+        const r = plot.getBoundingClientRect();
+        tip.style.left = `${e.clientX - r.left}px`;
+        tip.style.top = `${e.clientY - r.top}px`;
+        tip.querySelector('b')!.textContent = hit.dataset.title || '';
+        tip.querySelector('span')!.textContent = `${hit.dataset.year} · ${hit.dataset.cn}`;
+        tip.dataset.on = '1';
+      };
+      hit.addEventListener('mouseenter', show as EventListener);
+      hit.addEventListener('mousemove', show as EventListener);
+      hit.addEventListener('mouseleave', () => delete tip.dataset.on);
+      hit.addEventListener('click', () => { location.href = hit.dataset.href!; });
+      (hit as unknown as HTMLElement).style.cursor = 'pointer';
+    });
+  </script>
+</Base>

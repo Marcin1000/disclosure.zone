@@ -1,0 +1,38 @@
+---
+import { AXES, overall, evidenceClass, type Scores } from '../lib/scoring';
+interface Props { scores: Scores; compact?: boolean }
+const { scores, compact = false } = Astro.props;
+const o = overall(scores);
+const ec = evidenceClass(scores);
+---
+<div class="panel panel--pad corners">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.5rem">
+    <div>
+      <p class="label" style="margin:0 0 .5rem">Ocena dowodowa</p>
+      <p class="bigscore" style="margin:0"><b>{o.toFixed(1)}</b><span>/ 5,0</span></p>
+    </div>
+    <div style="text-align:right">
+      <p class="label" style="margin:0 0 .5rem">Klasa</p>
+      <p class="mono" style="margin:0;font-size:1.6rem;color:var(--phos);line-height:1">{ec.c}</p>
+      <p class="label" style="margin:.3rem 0 0;letter-spacing:.1em">{ec.label}</p>
+    </div>
+  </div>
+  <div class="score">
+    {AXES.map(a => {
+      const v = scores[a.k];
+      return (
+        <div class="score__row" title={`${a.name} — ${a.desc}`}>
+          <span class="score__k">{a.k}</span>
+          <span class="score__bar"><span class:list={['score__fill', v === 0 && 'score__fill--zero']} style={`--w:${(v / 5) * 100}%`}></span></span>
+          <span class="score__v">{v}</span>
+        </div>
+      );
+    })}
+  </div>
+  {!compact && (
+    <p class="score__legend" style="margin:1.4rem 0 0">
+      S świadkowie · R radar/sensor · O optyka/IR · P ślad fizyczny · M wielokanałowość ·
+      T dokumentacja · X anomalność · D dane dzisiaj. <a href="/metodologia">Pełna metodologia</a>
+    </p>
+  )}
+</div>

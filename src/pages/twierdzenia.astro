@@ -1,0 +1,81 @@
+---
+import Base from '../layouts/Base.astro';
+import { claims, STATUS_META, type ClaimStatus } from '../data/claims';
+import { TIER_LABEL } from '../lib/scoring';
+import { getCollection } from 'astro:content';
+
+const cases = await getCollection('cases');
+const titleOf = (id: string) => cases.find(c => c.id === id)?.data.title ?? id;
+
+const order: ClaimStatus[] = ['refuted', 'misstated', 'unverified', 'open', 'confirmed'];
+const sorted = [...claims].sort((a, b) => order.indexOf(a.status) - order.indexOf(b.status));
+const count = (s: ClaimStatus) => claims.filter(c => c.status === s).length;
+---
+<Base title="Rejestr twierdzeń" description="Pojedyncze twierdzenia o UAP z przypisanym pochodzeniem, statusem weryfikacji i wskazaniem, co dokładnie by je rozstrzygnęło.">
+  <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">Mit kontra dokument · {claims.length} pozycji</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Rejestr twierdzeń</h1>
+    <p class="lead dim" style="max-width:62ch">
+      Nie sprawy — pojedyncze zdania. Każde ze wskazanym pochodzeniem, klasą źródła, statusem
+      i informacją, co dokładnie musiałoby się pojawić, żeby je rozstrzygnąć.
+    </p>
+    <p class="dim" style="max-width:62ch;font-size:.95rem">
+      Ta strona działa w obie strony. Obala legendy, które narosły wokół mocnych spraw —
+      i broni spraw, które zostały odrzucone razem z legendami.
+    </p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:2rem">
+    <div class="filters" data-cf>
+      <button class="f" data-s="" aria-pressed="true">Wszystkie <b>{claims.length}</b></button>
+      {order.map(s => <button class="f" data-s={s} aria-pressed="false">{STATUS_META[s].pl} <b>{count(s)}</b></button>)}
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <div class="stack" style="--s:1px;background:var(--line);border:1px solid var(--line)">
+      {sorted.map(c => (
+        <article id={c.id} data-claim data-s={c.status} style="background:var(--void-2);padding:clamp(1.4rem,3.5vw,2.1rem)">
+          <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem">
+            <span class:list={['chip', STATUS_META[c.status].cls]}>{STATUS_META[c.status].pl}</span>
+            <span class:list={['tier', `tier-${c.originTier}`]} title={TIER_LABEL[c.originTier]}>{c.originTier}</span>
+            <span class="label" style="color:var(--fg-faint)">{c.origin}</span>
+          </div>
+
+          <p style="font-family:var(--mono);font-size:clamp(1rem,2vw,1.15rem);color:var(--fg);margin:0 0 1.1rem;line-height:1.5">{c.claim}</p>
+
+          <p style="margin:0 0 1.2rem;max-width:82ch;color:var(--fg-dim);font-size:.97rem">{c.verdict}</p>
+
+          <div class="grid grid--2" style="gap:1.4rem;background:none;border:0">
+            <div>
+              <p class="label label--amber" style="margin-bottom:.4rem">Co by to rozstrzygnęło</p>
+              <p class="dim" style="margin:0;font-size:.9rem">{c.resolver}</p>
+            </div>
+            {c.cases.length > 0 && (
+              <div>
+                <p class="label" style="margin-bottom:.4rem">Sprawy</p>
+                <p style="margin:0;font-size:.9rem">
+                  {c.cases.map((id, i) => (<>
+                    {i > 0 && <span class="faint"> · </span>}
+                    <a href={`/akta/${id}`}>{titleOf(id)}</a>
+                  </>))}
+                </p>
+              </div>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <script>
+    const items = [...document.querySelectorAll<HTMLElement>('[data-claim]')];
+    document.querySelectorAll<HTMLButtonElement>('[data-cf] .f').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const v = btn.dataset.s || '';
+        document.querySelectorAll('[data-cf] .f').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+        items.forEach(i => { i.style.display = !v || i.dataset.s === v ? '' : 'none'; });
+      });
+    });
+  </script>
+</Base>

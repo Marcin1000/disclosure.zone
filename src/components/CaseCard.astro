@@ -1,0 +1,22 @@
+---
+import { STATUS, overall, type Scores } from '../lib/scoring';
+interface Props {
+  href: string; title: string; subtitle?: string; summary: string;
+  dateDisplay: string; countryName: string; status: string; tier: number; scores: Scores;
+}
+const { href, title, summary, dateDisplay, countryName, status, tier, scores } = Astro.props;
+const st = STATUS[status];
+---
+<a class:list={['case', st.cls]} href={href}>
+  <div class="case__meta">
+    <span class="label mono">{dateDisplay}</span>
+    <span class="label mono" style="color:var(--phos-dim)">{countryName}</span>
+    {tier === 1 && <span class="label mono" style="color:var(--amber)">◆ rdzeń</span>}
+  </div>
+  <h3 class="case__t">{title}</h3>
+  <p class="case__sum">{summary.length > 190 ? summary.slice(0, 188).trimEnd() + '…' : summary}</p>
+  <div class="case__foot">
+    <span class="chip">{st.pl}</span>
+    <span class="chip chip--on">{overall(scores).toFixed(1)}/5</span>
+  </div>
+</a>

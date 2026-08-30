@@ -1,0 +1,21 @@
+---
+import Logo from './Logo.astro';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const links = [
+  { href: '/akta',        label: 'Akta' },
+  { href: '/mapa',        label: 'Mapa' },
+  { href: '/twierdzenia', label: 'Twierdzenia' },
+  { href: '/archiwa',     label: 'Archiwa' },
+  { href: '/metodologia', label: 'Metodologia' },
+];
+---
+<header class="nav">
+  <div class="wrap nav__in">
+    <Logo />
+    <nav class="nav__links" aria-label="Główna">
+      {links.map(l => (
+        <a href={l.href} aria-current={path === l.href || path.startsWith(l.href + '/') ? 'page' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

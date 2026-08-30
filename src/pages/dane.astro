@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { claims } from '../data/claims';
+const all = (await getCollection('cases')).filter(c => !c.data.draft);
+---
+<Base title="Dane otwarte" description="Baza przypadków UAP w formatach maszynowych — JSON i CSV na licencji CC BY 4.0.">
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">CC BY 4.0</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Dane otwarte</h1>
+    <p class="lead dim">
+      Cały korpus w formatach maszynowych. Bez rejestracji, bez klucza, bez limitu.
+      Jedynym warunkiem jest wskazanie źródła.
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:3rem">
+    <div class="panel corners" style="padding:0">
+      <div style="padding:1.4rem clamp(1.1rem,3vw,1.7rem)">
+        <p class="mono" style="margin:0 0 .3rem;color:var(--fg)">/api/cases.json</p>
+        <p class="dim" style="margin:0 0 .8rem;font-size:.9rem">{all.length} spraw z pełną strukturą: metadane, oceny na ośmiu osiach, hipotezy alternatywne, źródła z klasami.</p>
+        <a class="btn btn--ghost" href="/api/cases.json">Pobierz JSON</a>
+      </div>
+      <div style="padding:1.4rem clamp(1.1rem,3vw,1.7rem);border-top:1px solid var(--line)">
+        <p class="mono" style="margin:0 0 .3rem;color:var(--fg)">/api/claims.json</p>
+        <p class="dim" style="margin:0 0 .8rem;font-size:.9rem">{claims.length} twierdzeń: pochodzenie, klasa źródła, status weryfikacji, warunek rozstrzygnięcia.</p>
+        <a class="btn btn--ghost" href="/api/claims.json">Pobierz JSON</a>
+      </div>
+      <div style="padding:1.4rem clamp(1.1rem,3vw,1.7rem);border-top:1px solid var(--line)">
+        <p class="mono" style="margin:0 0 .3rem;color:var(--fg)">/api/cases.csv</p>
+        <p class="dim" style="margin:0 0 .8rem;font-size:.9rem">Spłaszczony korpus do arkusza kalkulacyjnego i analizy statystycznej.</p>
+        <a class="btn btn--ghost" href="/api/cases.csv">Pobierz CSV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:5rem">
+    <h2>Jak cytować</h2>
+    <p><code>disclosure.zone — baza przypadków UAP, CC BY 4.0, dostęp: [data]</code></p>
+    <h2>Dlaczego dane są otwarte</h2>
+    <p>
+      Baza, której nie da się sprawdzić maszynowo, jest tylko kolejną opinią. Otwarte dane
+      pozwalają każdemu przeliczyć nasze oceny, znaleźć w nich błąd i go wykazać. To jedyny
+      sposób, w jaki taki projekt może zdobyć wiarygodność.
+    </p>
+  </section>
+</Base>

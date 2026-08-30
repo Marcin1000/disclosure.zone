@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import Atmos from '../components/Atmos.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props { title: string; description: string; wide?: boolean }
+const { title, description } = Astro.props;
+const full = title === 'disclosure.zone' ? title : `${title} — disclosure.zone`;
+---
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{full}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={full} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#06090A" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,200..600;1,6..72,300..400&family=Special+Elite&display=swap" />
+</head>
+<body>
+  <Atmos />
+  <a href="#main" class="sr">Przejdź do treści</a>
+  <Nav />
+  <main id="main"><slot /></main>
+  <Footer />
+  <script>
+    const io = new IntersectionObserver((es) => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.rise').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

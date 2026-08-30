@@ -1,0 +1,167 @@
+---
+import Base from '../layouts/Base.astro';
+import { AXES, TIER_LABEL } from '../lib/scoring';
+---
+<Base title="Metodologia" description="Jak oceniamy przypadki UAP: osiem osi dowodowych, pięć klas źródeł i zasady redakcyjne, które obowiązują w całej bazie.">
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">Jawna metodologia</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Jak to oceniamy</h1>
+    <p class="lead dim">
+      Ocena, której nie da się sprawdzić, nie jest oceną. Poniżej jest kompletny opis skali,
+      wag i zasad redakcyjnych — wystarczający, żeby ktokolwiek mógł przeliczyć nasze wyniki
+      i wykazać nam błąd.
+    </p>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:3rem">
+    <h2>Zasada nadrzędna</h2>
+    <blockquote>
+      Nierozstrzygnięty nie znaczy pozaziemski. Ale nie znaczy też wyjaśniony.
+    </blockquote>
+    <p>
+      Dwa błędy dominują w tej dziedzinie i są lustrzane. Pierwszy: „nie wiemy, co to było,
+      więc to musi być coś niezwykłego". Drugi: „większość przypadków ma zwykłe wyjaśnienie,
+      więc każdy przypadek je ma". Oba są nieuprawnionymi skokami logicznymi i oba prowadzą
+      do tego samego skutku — przestaje się patrzeć na dane.
+    </p>
+    <p>
+      Cała ta baza istnieje po to, żeby utrzymać trzecią kategorię przy życiu: <strong>nie wiem,
+      i wiem dokładnie, czego mi brakuje, żeby wiedzieć.</strong>
+    </p>
+
+    <h2>Osiem osi dowodowych</h2>
+    <p>
+      Każda sprawa dostaje ocenę 0–5 na ośmiu niezależnych osiach. Osie mierzą
+      <em>jakość udokumentowania</em>, a nie <em>stopień niezwykłości</em>. Sprawa wyjaśniona
+      może mieć wysoką ocenę, jeśli jest wzorowo udokumentowana — i tak jest np. z chilijskim
+      nagraniem z 2014 r.
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:3rem">
+    <div class="panel corners" style="padding:0">
+      {AXES.map((a, i) => (
+        <div style={`padding:1.1rem clamp(1.1rem,3vw,1.7rem);${i ? 'border-top:1px solid var(--line)' : ''}`}>
+          <div style="display:flex;gap:.9rem;align-items:baseline">
+            <span class="mono" style="color:var(--phos);font-weight:700;font-size:1.05rem;width:1.2rem">{a.k}</span>
+            <div>
+              <p class="mono" style="margin:0 0 .25rem;color:var(--fg);font-size:.92rem">{a.name}</p>
+              <p class="dim" style="margin:0;font-size:.9rem">{a.desc}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:3rem">
+    <h3>Wagi</h3>
+    <p>
+      Osie nie są równe. Dowód instrumentalny i możliwość dzisiejszej weryfikacji ważą więcej
+      niż subiektywna ocena niezwykłości:
+    </p>
+    <p><code>R 1,35 · P 1,35 · M 1,25 · D 1,15 · O 1,10 · T 1,10 · S 1,00 · X 0,90</code></p>
+    <p>
+      Oś <strong>X (anomalność)</strong> ma najniższą wagę celowo. To jedyna oś, która wymaga
+      od nas subiektywnego sądu, więc nie może dominować wyniku. Oś <strong>D (dane dzisiaj)</strong>
+      ma wagę wysoką, bo sprawa, której nie da się dziś sprawdzić, jest z badawczego punktu
+      widzenia mniej wartościowa niż sprawa słabsza, ale weryfikowalna.
+    </p>
+
+    <h3>Klasy dowodowe</h3>
+    <p>Z ocen wyliczana jest klasa — świadomie wzorowana na skali francuskiej agencji GEIPAN:</p>
+    <ul>
+      <li><strong>A — rdzeń dowodowy.</strong> Wysoka ocena, dowód instrumentalny, wiele niezależnych kanałów.</li>
+      <li><strong>B — mocna dokumentacja.</strong> Dobra ocena i przynajmniej jeden dowód instrumentalny.</li>
+      <li><strong>C — istotne luki.</strong> Sprawa realna, materiał niepełny.</li>
+      <li><strong>D — głównie relacja.</strong> Brak dowodu poza zeznaniem.</li>
+    </ul>
+
+    <h2>Pięć klas źródeł</h2>
+    <p>
+      To jest najważniejszy element całego systemu. Każde źródło przy każdej sprawie ma
+      przypisany tier. Kolor przy cytacie mówi, na czym stoi dane zdanie.
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:3rem">
+    <div class="panel corners" style="padding:0">
+      {(['T1', 'T2', 'T3', 'T4', 'T5'] as const).map((t, i) => (
+        <div style={`padding:1.1rem clamp(1.1rem,3vw,1.7rem);${i ? 'border-top:1px solid var(--line)' : ''};display:flex;gap:1rem;align-items:baseline`}>
+          <span class:list={['tier', `tier-${t}`]}>{t}</span>
+          <div>
+            <p class="mono" style="margin:0 0 .25rem;color:var(--fg);font-size:.92rem">{TIER_LABEL[t]}</p>
+            <p class="dim" style="margin:0;font-size:.9rem">
+              {t === 'T1' && 'Raport operacyjny, akta sprawy, protokół żandarmerii, wynik laboratoryjny — dokument powstały blisko zdarzenia.'}
+              {t === 'T2' && 'Potwierdzenie instytucji: komunikat resortu, oświadczenie o autentyczności materiału, rozstrzygnięcie agencji.'}
+              {t === 'T3' && 'Relacja świadka złożona z rygorem prawnym — zeznanie przed komisją, oświadczenie pod przysięgą.'}
+              {t === 'T4' && 'Wywiad, wspomnienie lub rekonstrukcja powstała lata po zdarzeniu. Warstwa najbardziej podatna na narastanie.'}
+              {t === 'T5' && 'Twierdzenie funkcjonujące w obiegu bez zaplecza dokumentowego. Odnotowywane, bo wpływa na postrzeganie sprawy.'}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:5rem">
+    <h3>Państwowe nie znaczy dochodzeniowe</h3>
+    <p>
+      Depesza agencji państwowej to nadal T5, jeśli nie stoi za nią dochodzenie. Klasę źródła
+      wyznacza sposób jego powstania, nie prestiż nadawcy. Dlatego doniesienie TASS z 1989 r.
+      ma niższą klasę niż protokół francuskiej żandarmerii z wiejskiej posesji.
+    </p>
+
+    <h2>Zasady redakcyjne</h2>
+    <ol>
+      <li>
+        <strong>Autentyczność nagrania to nie identyfikacja obiektu.</strong> Pentagon potwierdził
+        autentyczność trzech nagrań Marynarki Wojennej. Nie potwierdził, co na nich jest.
+        Te dwa zdania nigdy nie są łączone.
+      </li>
+      <li>
+        <strong>Bez odległości nie ma prędkości.</strong> Każde twierdzenie o ekstremalnych osiągach
+        wymaga znanej odległości do celu. Jeśli jej nie było, oznaczamy to jako twierdzenie,
+        nie jako pomiar.
+      </li>
+      <li>
+        <strong>Pomiar to nie to samo co produkt oprogramowania.</strong> Radar pokładowy pokazuje
+        wynik filtru śledzącego, nie surową pozycję. Kamera IR pokazuje rzut na płaszczyznę
+        obserwacji z ruchomej platformy. Zanim nazwiemy coś niezwykłym, wykluczamy fizykę sensora.
+      </li>
+      <li>
+        <strong>Bez łańcucha opieki nie ma dowodu materialnego.</strong> Analiza próbki o nieznanym
+        pochodzeniu nie ma wartości dowodowej, niezależnie od precyzji analizy.
+      </li>
+      <li>
+        <strong>Brak odnośnika jest widoczny.</strong> Przy każdej sprawie podajemy, ile źródeł ma
+        odnośnik do materiału. Nie ukrywamy luk w proweniencji — to byłoby dokładnie tym,
+        co zarzucamy innym.
+      </li>
+      <li>
+        <strong>Hipotezę sceptyczną stawiamy tak samo starannie jak każdą inną.</strong> Jeśli
+        wyjaśnienie prozaiczne ma słaby punkt, opisujemy go. Sceptycyzm nie jest zwolniony
+        z obowiązku dowodowego.
+      </li>
+    </ol>
+
+    <h2>Czego ta baza nie robi</h2>
+    <p>
+      Nie przypisuje prawdopodobieństw hipotezie pozaziemskiej. Nie mamy modelu, który by na to
+      pozwalał, a liczba wyprodukowana bez modelu jest gorsza niż jej brak — bo wygląda
+      na wiedzę.
+    </p>
+    <p>
+      Nie agreguje też materiałów z mediów społecznościowych. Zrzut ekranu z komunikatora niszczy
+      dane potrzebne do analizy. Chilijskie SEFAA wymaga materiałów oryginalnych i to jest
+      właściwy standard.
+    </p>
+
+    <h2>Błędy</h2>
+    <p>
+      Ta baza na pewno zawiera błędy. Kompletna historia zmian jest publiczna — każda korekta
+      oceny, każda zmiana klasy źródła i każda poprawka faktograficzna jest widoczna wraz
+      z uzasadnieniem. Proweniencja dotyczy także nas.
+    </p>
+  </section>
+</Base>

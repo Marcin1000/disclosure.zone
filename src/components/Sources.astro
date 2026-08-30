@@ -1,0 +1,23 @@
+---
+import { TIER_LABEL } from '../lib/scoring';
+interface Src { tier: string; label: string; url?: string; note?: string }
+interface Props { sources: Src[] }
+const { sources } = Astro.props;
+const linked = sources.filter(s => s.url).length;
+---
+<div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:.4rem">
+    <p class="label" style="margin:0">Źródła</p>
+    <p class="label" style="margin:0;color:var(--amber-dim)">Proweniencja {linked}/{sources.length} z odnośnikiem</p>
+  </div>
+  {sources.map(s => (
+    <div class="src">
+      <span class:list={['tier', `tier-${s.tier}`]} title={TIER_LABEL[s.tier]}>{s.tier}</span>
+      <span class="src__body">
+        {s.url ? <a href={s.url} rel="noopener noreferrer" target="_blank">{s.label}</a> : <span>{s.label}</span>}
+        <span class="src__note">{TIER_LABEL[s.tier]}{s.note ? ` — ${s.note}` : ''}</span>
+        {!s.url && <span class="src__nolink">brak odnośnika — do uzupełnienia</span>}
+      </span>
+    </div>
+  ))}
+</div>

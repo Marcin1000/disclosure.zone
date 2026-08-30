@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { claims } from '../data/claims';
+const all = (await getCollection('cases')).filter(c => !c.data.draft);
+const withUrl = all.reduce((n, c) => n + c.data.sources.filter(s => s.url).length, 0);
+const totalSrc = all.reduce((n, c) => n + c.data.sources.length, 0);
+---
+<Base title="O projekcie" description="Czym jest disclosure.zone, dla kogo powstaje i jakie ma ograniczenia.">
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">Documents, not rumors</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">O projekcie</h1>
+  </section>
+
+  <section class="wrap wrap--read prose" style="padding-bottom:5rem">
+    <p class="lead">
+      disclosure.zone jest bazą przypadków UAP, w której każde twierdzenie ma przypisany poziom
+      źródła, a każda sprawa — jawnie policzoną ocenę dowodową.
+    </p>
+
+    <h2>Dlaczego to istnieje</h2>
+    <p>
+      Materiału o UFO jest w internecie ogromna ilość i prawie żaden nie odróżnia dokumentu
+      operacyjnego od wspomnienia sprzed trzydziestu lat. W efekcie mocne sprawy toną razem
+      z legendami, a sceptycy odrzucają jedne i drugie hurtem.
+    </p>
+    <p>
+      Ta baza robi jedną rzecz, której nie robi prawie nikt: <strong>rozdziela warstwy</strong>.
+      Teheran 1976 stoi na raporcie wywiadowczym z epoki. Rendlesham w większości na relacjach
+      spisanych dekady później. Nimitz na zeznaniu pod przysięgą, ale bez surowych danych.
+      Te różnice są ważniejsze od kształtu obiektu.
+    </p>
+
+    <h2>Stan bazy</h2>
+    <ul>
+      <li>{all.length} spraw z {new Set(all.map(c => c.data.country)).size} państw</li>
+      <li>{claims.length} twierdzeń w rejestrze</li>
+      <li>{totalSrc} źródeł, z czego {withUrl} z bezpośrednim odnośnikiem</li>
+    </ul>
+    <p>
+      Ostatnia liczba jest celowo widoczna. Uzupełnianie odnośników do materiałów archiwalnych
+      jest bieżącym zadaniem projektu, a nie czymś, co zamiatamy pod dywan.
+    </p>
+
+    <h2>Ograniczenia</h2>
+    <p>
+      Nie istnieje jedna globalna baza zawierająca każdy przypadek UAP. Archiwa wielu państw są
+      niekompletne, część brytyjskiej dokumentacji sprzed 1967 r. została zniszczona w rutynowym
+      brakowaniu akt, a wiele zbiorów nie było nigdy zdigitalizowanych. Ten korpus jest
+      <strong>selekcją spraw o najwyższej wartości analitycznej</strong>, a nie kompletnym spisem.
+    </p>
+    <p>
+      Oceny na ośmiu osiach są sądami eksperckimi wyliczonymi według jawnego algorytmu.
+      Algorytm jest publiczny właśnie po to, żeby dało się z nim nie zgodzić w konkretnym punkcie,
+      a nie tylko ogólnie.
+    </p>
+
+    <h2>Czego tu nie będzie</h2>
+    <ul>
+      <li>Materiałów z mediów społecznościowych bez proweniencji.</li>
+      <li>Wzmacniania informatorów, których twierdzeń nie da się zestawić z dokumentem.</li>
+      <li>Nagłówków w stylu „szokujące ujawnienie".</li>
+    </ul>
+    <p>
+      Rygor jest tu produktem, nie ozdobnikiem. Jeden wpis napisany pod kliknięcia niszczy jedyną
+      rzecz, która odróżnia tę bazę od tysiąca innych stron o UFO.
+    </p>
+
+    <h2>Licencja</h2>
+    <p>
+      Treść bazy jest dostępna na licencji CC BY 4.0. Dokumenty źródłowe pozostają własnością
+      wydających je instytucji i są linkowane, a nie kopiowane.
+      Dane w formatach maszynowych: <a href="/dane">strona danych otwartych</a>.
+    </p>
+  </section>
+</Base>

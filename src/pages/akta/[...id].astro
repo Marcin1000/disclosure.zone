@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import Scorecard from '../../components/Scorecard.astro';
+import Sources from '../../components/Sources.astro';
+import { getCollection, render } from 'astro:content';
+import { STATUS, DOMAIN, EVIDENCE } from '../../lib/scoring';
+import { claimsById, STATUS_META } from '../../data/claims';
+
+export async function getStaticPaths() {
+  const cases = (await getCollection('cases')).filter(c => !c.data.draft);
+  return cases.map(entry => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const st = STATUS[d.status];
+const linked = d.claims.map(id => claimsById.get(id)).filter(Boolean);
+---
+<Base title={d.title} description={d.summary}>
+  <article>
+    <header class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 0">
+      <div class="dossier corners">
+        <div class="dossier__holes"><i></i><i></i><i></i><i></i></div>
+        <div style="padding-left:2.2rem">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1.5rem;flex-wrap:wrap">
+            <p class="dossier__id" style="margin:0">Akta / {entry.id}</p>
+            {d.tier === 1 && <span class="stamp stamp--phos">Rdzeń dowodowy</span>}
+          </div>
+          <h1 style="font-size:clamp(1.9rem,4.6vw,3.1rem);margin:1rem 0 .4rem">{d.title}</h1>
+          {d.subtitle && <p class="lead dim" style="max-width:62ch;margin:0">{d.subtitle}</p>}
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.6rem">
+            <span class:list={['chip', st.cls === 'st-unresolved' ? 'chip--amber' : st.cls === 'st-disputed' ? 'chip--stamp' : st.cls === 'st-explained' ? 'chip--on' : '']}>{st.pl}</span>
+            <span class="chip">{DOMAIN[d.domain]}</span>
+            {d.evidence.map(e => <span class="chip chip--on">{EVIDENCE[e]}</span>)}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="wrap" style="padding-block:2.5rem">
+      <div class="grid" data-cols>
+        <div>
+          <div class="panel panel--pad corners" style="margin-bottom:2.5rem">
+            <div class="meta">
+              <div class="meta__row"><span class="meta__k">Data</span><span class="meta__v">{d.dateDisplay}</span></div>
+              <div class="meta__row"><span class="meta__k">Miejsce</span><span class="meta__v">{d.location}</span></div>
+              <div class="meta__row"><span class="meta__k">Państwo</span><span class="meta__v">{d.countryName}</span></div>
+              <div class="meta__row"><span class="meta__k">Świadkowie</span><span class="meta__v">{d.witnesses}</span></div>
+              {d.duration && <div class="meta__row"><span class="meta__k">Czas trwania</span><span class="meta__v">{d.duration}</span></div>}
+              <div class="meta__row"><span class="meta__k">Współrzędne</span><span class="meta__v mono" style="font-size:.85rem">{d.lat.toFixed(2)}° {d.lat >= 0 ? 'N' : 'S'} · {Math.abs(d.lon).toFixed(2)}° {d.lon >= 0 ? 'E' : 'W'}</span></div>
+            </div>
+          </div>
+
+          <p class="lead" style="max-width:none;margin-bottom:2.5rem">{d.summary}</p>
+
+          {d.official && (
+            <div style="border-left:2px solid var(--line-2);padding-left:1.4rem;margin-bottom:2.5rem">
+              <p class="label" style="margin-bottom:.6rem">Oficjalne stanowisko</p>
+              <p class="dim" style="margin:0">{d.official}</p>
+            </div>
+          )}
+
+          {d.alternatives.length > 0 && (
+            <div style="margin-bottom:2.5rem">
+              <p class="label label--amber" style="margin-bottom:.9rem">Hipotezy alternatywne</p>
+              <ul style="list-style:none;padding:0;margin:0">
+                {d.alternatives.map(a => (
+                  <li style="padding:.75rem 0;border-top:1px dotted var(--line-2);color:var(--fg-dim);font-size:.95rem">{a}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div class="prose"><Content /></div>
+        </div>
+
+        <aside class="stack" style="--s:2.5rem">
+          <Scorecard scores={d.scores} />
+          <Sources sources={d.sources} />
+          {linked.length > 0 && (
+            <div>
+              <p class="label" style="margin-bottom:.8rem">Twierdzenia z tej sprawy</p>
+              {linked.map(c => (
+                <a href={`/twierdzenia#${c!.id}`} style="display:block;border:0;padding:.85rem 0;border-top:1px solid var(--line)">
+                  <span class:list={['chip', STATUS_META[c!.status].cls]} style="margin-bottom:.45rem">{STATUS_META[c!.status].pl}</span>
+                  <span style="display:block;font-size:.92rem;color:var(--fg-dim);line-height:1.5">{c!.claim}</span>
+                </a>
+              ))}
+            </div>
+          )}
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap" style="padding-bottom:5rem">
+      <hr class="rule--dash" />
+      <a class="btn btn--ghost" href="/akta" style="margin-top:2rem">← Wszystkie akta</a>
+    </section>
+  </article>
+
+  <style>
+    [data-cols] { grid-template-columns: 1fr; gap: 2.5rem; }
+    @media (min-width: 1060px) {
+      [data-cols] { grid-template-columns: minmax(0, 1fr) 350px; gap: 3.5rem; }
+      [data-cols] > aside { position: sticky; top: 86px; align-self: start; }
+    }
+  </style>
+</Base>

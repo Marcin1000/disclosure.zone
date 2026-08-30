@@ -1,0 +1,33 @@
+---
+import Logo from './Logo.astro';
+const year = new Date().getFullYear();
+---
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <Logo size={26} />
+      <p class="dim" style="margin-top:1rem;max-width:38ch;font-size:.92rem">
+        Baza przypadków UAP z jawną metodologią oceny dowodów.
+        Każde twierdzenie ma przypisany poziom źródła. Nierozstrzygnięte nie znaczy pozaziemskie.
+      </p>
+      <p class="label" style="margin-top:1.2rem">Documents, not rumors</p>
+    </div>
+    <div>
+      <p class="label" style="margin-bottom:.7rem">Nawigacja</p>
+      <a href="/akta">Akta sprawy</a>
+      <a href="/mapa">Mapa zdarzeń</a>
+      <a href="/twierdzenia">Rejestr twierdzeń</a>
+      <a href="/archiwa">Archiwa państwowe</a>
+    </div>
+    <div>
+      <p class="label" style="margin-bottom:.7rem">Projekt</p>
+      <a href="/metodologia">Metodologia</a>
+      <a href="/o-projekcie">O projekcie</a>
+      <a href="/dane">Dane otwarte</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:2.5rem">
+    <hr class="rule--dash" />
+    <p class="label" style="margin-top:1rem">© {year} disclosure.zone · Treść na licencji CC BY 4.0 · Dokumenty źródłowe pozostają własnością wydających je instytucji</p>
+  </div>
+</footer>

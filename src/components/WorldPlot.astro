@@ -1,0 +1,76 @@
+---
+import { geoEquirectangular, geoPath, geoGraticule10 } from 'd3-geo';
+import { feature } from 'topojson-client';
+import world from 'world-atlas/countries-110m.json';
+import { N_ISO } from '../data/geo';
+
+export interface PlotPoint {
+  id: string; title: string; lon: number; lat: number;
+  country: string; countryName: string; year: string;
+  tier: number; status: string; href: string;
+}
+interface Props { points: PlotPoint[] }
+const { points } = Astro.props;
+
+const W = 1640;
+const ANTARCTICA = '010';
+
+const fc: any = feature(world as any, (world as any).objects.countries);
+const shown = fc.features.filter((f: any) => f.id !== ANTARCTICA);
+
+const H = Math.round(W * 0.505);
+const projection = geoEquirectangular().fitSize([W, H], { type: 'FeatureCollection', features: shown } as any);
+const path = geoPath(projection);
+
+const withCases = new Set(points.map(p => p.country));
+
+const lands = shown.map((f: any) => {
+  const a2 = N_ISO[String(f.id).padStart(3, '0')] ?? '';
+  return { d: path(f) ?? '', a2, name: f.properties?.name ?? '', has: a2 !== '' && withCases.has(a2) };
+}).filter((l: { d: string }) => l.d);
+
+const graticule = path(geoGraticule10() as any) ?? '';
+
+const STATUS_COLOR: Record<string, string> = {
+  unresolved: 'var(--amber)', insufficient: 'var(--fg-faint)',
+  explained: 'var(--phos)', disputed: 'var(--stamp-2)',
+};
+
+const marks = points.map(p => {
+  const xy = projection([p.lon, p.lat]);
+  return xy ? { ...p, x: xy[0], y: xy[1], color: STATUS_COLOR[p.status] ?? 'var(--fg-faint)' } : null;
+}).filter(Boolean) as (PlotPoint & { x: number; y: number; color: string })[];
+---
+<div class="plot corners" id="plot" data-plot>
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Mapa udokumentowanych przypadków UAP na świecie">
+    <rect x="0" y="0" width={W} height={H} fill="#070C0D" />
+    <path class="plot__grat" d={graticule} />
+    {lands.map(l => (
+      <path
+        class:list={['plot__land', l.has && 'plot__land--has']}
+        d={l.d}
+        data-country={l.has ? l.a2 : undefined}
+        role={l.has ? 'button' : undefined}
+        tabindex={l.has ? 0 : undefined}
+      ><title>{l.name}</title></path>
+    ))}
+    <rect class="plot__frame" x="1" y="1" width={W - 2} height={H - 2} />
+    <g data-marks>
+      {marks.map(m => (
+        <g class:list={['mk', m.tier === 1 && 'mk--t1']} data-mk={m.id} data-country={m.country}
+           style={`--mkc:${m.color}`} transform={`translate(${m.x},${m.y})`}>
+          <circle class="mk__halo" r={m.tier === 1 ? 9 : 6} />
+          <circle class="mk__dot" r={m.tier === 1 ? 3.4 : 2.4} />
+          <circle r="14" fill="transparent" data-hit
+                  data-title={m.title} data-year={m.year} data-cn={m.countryName} data-href={m.href} />
+        </g>
+      ))}
+    </g>
+  </svg>
+  <div class="plot__scan"></div>
+  <div class="tip" data-tip><b></b><span></span></div>
+  <div class="plot__hud">
+    <span data-hud-l>{points.length} zdarzeń · {withCases.size} państw</span>
+    <span data-hud-r>Rzut walcowy równoodległościowy · pozycje przybliżone</span>
+  </div>
+</div>
