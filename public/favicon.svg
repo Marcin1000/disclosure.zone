@@ -1,18 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke-linecap="butt">
   <rect width="48" height="48" fill="#06090A"/>
-  <defs>
-    <linearGradient id="g" x1="24" y1="24" x2="46" y2="10" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4DE3A0" stop-opacity=".5"/><stop offset="1" stop-color="#4DE3A0" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="c"><circle cx="24" cy="24" r="21"/></clipPath>
-    <mask id="m"><rect width="48" height="48" fill="#fff"/>
-      <g transform="rotate(-4 24 30)"><rect x="-4" y="27.2" width="56" height="6" fill="#000"/></g></mask>
-  </defs>
-  <g mask="url(#m)">
-    <g clip-path="url(#c)"><path d="M24 24 L48 8 A28 28 0 0 1 48 24 Z" fill="url(#g)"/></g>
-    <circle cx="24" cy="24" r="21" stroke="#2C7F5E" stroke-width="2.2"/>
-    <circle cx="24" cy="24" r="14" stroke="#2C7F5E" stroke-width="1.6" opacity=".62"/>
-    <g stroke="#4DE3A0" stroke-width="2.2" opacity=".9"><path d="M24 1v6M24 41v6M1 24h6M41 24h6"/></g>
-    <path d="M24 24 L45 10" stroke="#4DE3A0" stroke-width="1.9"/>
-  </g>
+  <path d="M13 7A17 17 0 0 1 13 41" stroke="#2C7F5E" stroke-width="3.6"/>
+  <path d="M13 7V41" stroke="#4DE3A0" stroke-width="4"/>
+  <path d="M17 15H27.4M17 33H27.4" stroke="#4DE3A0" stroke-width="3.2"/>
+  <path d="M27.4 15L17 33" stroke="#7CF0BC" stroke-width="3.4"/>
 </svg>
