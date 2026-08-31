@@ -203,8 +203,10 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 @media (max-width: 860px) {
   .nav__links { gap: .5rem; overflow-x: auto; scrollbar-width: none; }
   .nav__links::-webkit-scrollbar { display: none; }
-  /* krótkie hasła jak „Map" mają poniżej 24 px szerokości bez tego marginesu */
-  .nav__links a { white-space: nowrap; font-size: .64rem; padding: .5rem .45rem; min-width: 24px; text-align: center; }
+  /* flex:none, nie min-width: pozycja flex ma domyślnie min-width:auto i to ono
+     powstrzymuje kurczenie. Nadpisanie go liczbą pozwalało tekstowi wyjść poza
+     pudełko i nałożyć się na sąsiada. Odstęp daje pole dotyku, nie szerokość. */
+  .nav__links a { white-space: nowrap; font-size: .64rem; padding: .5rem .45rem; flex: none; }
 }
 
 /* ============================================================ LOGO */
@@ -429,7 +431,7 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 }
 @keyframes scanmove { 0% { top: -90px } 100% { top: 100% } }
 
-.legend { display: flex; gap: .6rem 1.5rem; flex-wrap: wrap; margin-top: 1rem; }
+.legend { display: flex; gap: .6rem 1.5rem; flex-wrap: wrap; margin: 1rem 0 2.4rem; }
 .legend .label { display: flex; align-items: center; gap: .5rem; }
 .legend i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
 .legend__core { color: var(--phos-dim); }
