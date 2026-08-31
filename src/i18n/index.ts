@@ -164,7 +164,7 @@ const pl: Dict = {
   'home.h1a': 'Nierozstrzygnięte',
   'home.h1b': 'nie znaczy',
   'home.h1c': 'pozaziemskie.',
-  'home.lead': 'Problemem UAP nie jest brak przypadków. Problemem jest brak danych. Ta baza rozdziela to, co zapisano w dokumencie, od tego, co dopisano później, sprawa po sprawie, twierdzenie po twierdzeniu.',
+  'home.lead': 'Przypadków UAP nie brakuje. Brakuje danych. Ta baza oddziela to, co zapisał dokument, od tego, co dopisano później: sprawa po sprawie, twierdzenie po twierdzeniu.',
   'home.cta1': 'Otwórz akta',
   'home.cta2': 'Jak to oceniamy',
   'home.stat.cases': 'udokumentowanych<br />spraw',
