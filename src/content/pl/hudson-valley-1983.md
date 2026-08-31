@@ -1,6 +1,6 @@
 ---
 title: "Fala z Hudson Valley"
-subtitle: "Tysiące zgłoszeń cichego bumerangu — i grupa pilotów, która przyznała się do ich wywołania"
+subtitle: "Tysiące zgłoszeń cichego bumerangu i grupa pilotów, która przyznała się do ich wywołania"
 dateDisplay: "1982–1986 (fala)"
 countryName: "Stany Zjednoczone"
 location: "Hudson Valley, stan Nowy Jork i zachodnie Connecticut"
@@ -9,8 +9,8 @@ duration: "fala trwająca kilka lat"
 summary: "Przez kilka lat tysiące osób w Hudson Valley zgłaszało ogromny, cichy, wolno przemieszczający się bumerang świateł. Grupa prywatnych pilotów z lokalnego lotniska przyznała się później, że w te noce celowo latała w formacji lekkimi samolotami z przerobionym oświetleniem."
 official: "Brak dochodzenia federalnego. Lokalne władze lotnicze i sami piloci wyjaśnili formacje."
 alternatives:
-- "Loty w formacji lekkich samolotów z przerobionymi światłami — przyznane przez uczestników i zgodne ze zgłoszeniami."
-- "Resztkowa część obserwacji z nocy, gdy żadna formacja nie latała — nigdy osobno nierozstrzygnięta."
+- "Loty w formacji lekkich samolotów z przerobionymi światłami, przyznane przez uczestników i zgodne ze zgłoszeniami."
+- "Resztkowa część obserwacji z nocy, gdy żadna formacja nie latała, nigdy osobno nierozstrzygnięta."
 sources:
 - label: "Przyznania i wywiady z pilotami, którzy latali w formacjach"
 - label: "Ówczesne doniesienia prasowe i zbiory badaczy"
@@ -32,11 +32,11 @@ poruszających się razem na nocnym niebie, **znaczna ich część dostrzeże i 
 lity obiekt je łączący.** Nie z niedbalstwa, tylko dlatego, że tak ludzki wzrok postępuje ze spójnie
 poruszającymi się punktami.
 
-To najbliższa rzecz, jaką dziedzina ma do pomiaru kalibracyjnego dla obserwacji masowych — i mówi ona,
+To najbliższa rzecz, jaką dziedzina ma do pomiaru kalibracyjnego dla obserwacji masowych i mówi ona,
 że intuicja „tylu ludzi nie mogło się mylić co do litego pojazdu” jest po prostu fałszywa.
 
 ## Uczciwa reszta
 
 Nie w każdą noc fali latała formacja. Resztkowego zbioru zgłoszeń nigdy osobno nie wyjaśniono. Ta
-reszta jest niewielka, słabo udokumentowana i nie niesie fali — ale udawanie, że nie istnieje, byłoby
+reszta jest niewielka, słabo udokumentowana i nie niesie fali, ale udawanie, że nie istnieje, byłoby
 tym samym błędem w drugą stronę.

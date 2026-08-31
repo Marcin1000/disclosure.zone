@@ -9,7 +9,7 @@ witnesses: "Załoga samolotu Customs and Border Protection"
 summary: "Nagranie w podczerwieni z samolotu straży granicznej pokazuje obiekt lecący nad terenem, wchodzący do oceanu, wychodzący z niego i rozdzielający się na dwa. Przez lata było przedstawiane jako najlepszy dowód na obiekty poruszające się między ośrodkami."
 official: "AARO przeprowadziło rekonstrukcję trajektorii 3D. Ustalono z wysoką pewnością, że obiekty nie wchodziły do wody i nie rozdzielały się, a poruszały się z prędkością zbliżoną do prędkości wiatru; z umiarkowaną pewnością zidentyfikowano je jako parę lampionów."
 alternatives:
-- "Dwa lampiony (sky lanterns) niesione wiatrem — wyjaśnienie zgodne z prędkością, trajektorią i sygnaturą termiczną."
+- "Dwa lampiony (sky lanterns) niesione wiatrem, wyjaśnienie zgodne z prędkością, trajektorią i sygnaturą termiczną."
 sources:
 - "label": "Nagranie IR z samolotu CBP"
 - "label": "Analiza AARO: rekonstrukcja trajektorii 3D i identyfikacja"
@@ -24,10 +24,10 @@ rozdziela na dwa. Trudno o bardziej przekonujący materiał wizualny.
 
 Wszystkie te cztery obserwacje okazały się artefaktami geometrii patrzenia:
 
-- „wejście do wody" — obiekt przechodzący **za** linią brzegową widzianą z góry pod małym kątem,
-- „rozdzielenie" — dwa obiekty od początku, chwilowo nierozróżnialne przy niskiej rozdzielczości
+- „wejście do wody", obiekt przechodzący **za** linią brzegową widzianą z góry pod małym kątem,
+- „rozdzielenie", dwa obiekty od początku, chwilowo nierozróżnialne przy niskiej rozdzielczości
   sensora,
-- „ogromna prędkość" — złudzenie wynikające z ruchu samolotu obserwującego, nie z ruchu celu.
+- „ogromna prędkość", złudzenie wynikające z ruchu samolotu obserwującego, nie z ruchu celu.
 
 Prędkość rzeczywista: rzędu prędkości wiatru.
 
@@ -37,5 +37,5 @@ Nagranie z kamery nie jest trajektorią. Nagranie z kamery jest **rzutem trajekt
 obserwacji z ruchomej platformy o nieznanej odległości do celu**.
 
 Zanim jakiekolwiek nagranie UAP zostanie nazwane niezwykłym, trzeba przeprowadzić dokładnie tę
-analizę, którą AARO przeprowadziło tutaj. Robi to bardzo niewiele osób — i to jest największa
+analizę, którą AARO przeprowadziło tutaj. Robi to bardzo niewiele osób i to jest największa
 pojedyncza słabość publicznej dyskusji o UAP.

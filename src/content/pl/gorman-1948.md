@@ -9,7 +9,7 @@ witnesses: "Pilot Gwardii Narodowej, kontrolerzy lotniska, obserwatorzy naziemni
 summary: "Ppor. George Gorman prowadził w F-51 przedłużający się manewr za małym, jasnym światłem, które według jego relacji reagowało na jego ruchy i przewyższało go w zwrotach."
 official: "Blue Book przypisał zdarzenie oświetlonemu balonowi meteorologicznemu."
 alternatives:
-- "Balon meteorologiczny z oświetleniem — dryfujący obiekt w połączeniu z manewrami własnego samolotu daje złudzenie „reakcji\" i „pościgu\"."
+- "Balon meteorologiczny z oświetleniem, dryfujący obiekt w połączeniu z manewrami własnego samolotu daje złudzenie „reakcji\" i „pościgu\"."
 - "Planeta Jowisz przy błędnej ocenie odległości."
 sources:
 - "label": "Akta Project Blue Book, sprawa Gorman"
@@ -26,4 +26,4 @@ Gdy pilot manewruje wokół odległego, stacjonarnego lub wolno dryfującego pun
 wznosić i zawracać, ponieważ zmienia się linia obserwacji, a nie pozycja celu.
 
 Bez pomiaru odległości nie da się tych dwóch scenariuszy rozróżnić z kabiny. Ten sam mechanizm
-wróci w tej bazie wielokrotnie — aż do nagrania GoFast z 2015 roku.
+wróci w tej bazie wielokrotnie, aż do nagrania GoFast z 2015 roku.

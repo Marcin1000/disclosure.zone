@@ -21,5 +21,5 @@ Nie chodzi o same obserwacje z 1978 r. Chodzi o **precedens instytucjonalny**.
 
 Włochy są jednym z niewielu państw, które nie tylko zbierały zgłoszenia, ale **przypisały zadanie
 konkretnej instytucji i nigdy tego nie odwołały**. Dzięki temu istnieje nieprzerwany, jednolicie
-prowadzony rejestr obejmujący prawie pół wieku — zasób porównywalny jakością z francuskim GEIPAN
+prowadzony rejestr obejmujący prawie pół wieku, zasób porównywalny jakością z francuskim GEIPAN
 i całkowicie ignorowany przez anglojęzyczną literaturę przedmiotu.

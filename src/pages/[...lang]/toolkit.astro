@@ -42,6 +42,8 @@ const L = en ? {
   angularLead: 'The same frame is consistent with a small object nearby and a large object far away. Photometry narrows the interval; it never closes it. Drag the distance.',
   angDistance: 'Assumed distance',
   angSize: 'Implied object diameter',
+  angRef: 'Airbus A320 · 36 m span',
+  angCompareAlt: 'The implied object next to an airliner drawn to the same scale',
   footer: 'This toolkit is deliberately simple and states its assumptions. It is a teaching model, not a forensic tool — it demonstrates the sensitivity of the result to one unknown, which is the entire point.',
 } : {
   kicker: 'Kalkulator zdrowego rozsądku',
@@ -68,17 +70,19 @@ const L = en ? {
   observer: 'Obserwator',
   target: 'Obiekt',
   legLos: 'linia obserwacji',
-  legGhost: 'ta sama linia chwilę wcześniej — to jej obrót wygląda jak ruch obiektu',
+  legGhost: 'ta sama linia chwilę wcześniej: to jej obrót wygląda jak ruch obiektu',
   legAng: 'kąt zejścia',
-  assumptionsTitle: 'Założenia tego modelu — przeczytaj je',
+  assumptionsTitle: 'Założenia tego modelu, przeczytaj je',
   bokehTitle: 'Kształt przysłony, nie kształt obiektu',
   bokehLead: 'Rozogniskowany punkt świetlny przyjmuje kształt przysłony obiektywu. Noktowizor z trójkątną przysłoną zamienia każde odległe światło w trójkąt. Dlatego „piramidy” z USS Russell są piramidami.',
   bokehPick: 'Przysłona',
   angularTitle: 'Rozmiar kątowy nic nie mówi o rozmiarze',
   angularLead: 'Ten sam kadr jest zgodny z małym obiektem blisko i dużym daleko. Fotometria zawęża przedział, nigdy go nie zamyka. Przeciągnij odległość.',
+  angRef: 'Airbus A320, rozpiętość 36 m',
+  angCompareAlt: 'Wyliczony obiekt obok samolotu narysowanego w tej samej skali',
   angDistance: 'Zakładana odległość',
   angSize: 'Wynikowa średnica obiektu',
-  footer: 'Ten kalkulator jest celowo prosty i podaje swoje założenia. To model dydaktyczny, nie narzędzie śledcze — pokazuje czułość wyniku na jedną niewiadomą, i o to właśnie chodzi.',
+  footer: 'Ten kalkulator jest celowo prosty i podaje swoje założenia. To model dydaktyczny, nie narzędzie śledcze, pokazuje czułość wyniku na jedną niewiadomą, i o to właśnie chodzi.',
 };
 
 const ASSUMPTIONS = en ? [
@@ -88,7 +92,7 @@ const ASSUMPTIONS = en ? [
   'The result is the transverse component of the target’s velocity. Motion directly toward or away from the observer is invisible to this method.',
 ] : [
   'Linia obserwacji leży w płaszczyźnie pionowej, a prędkość obserwatora traktujemy jako do niej prostopadłą. Rzeczywista geometria ma kąt skrzyżowania, który zmniejsza człon paralaksy.',
-  'Płaska Ziemia na tych dystansach i brak refrakcji atmosferycznej — oba pomijalne w tej skali.',
+  'Płaska Ziemia na tych dystansach i brak refrakcji atmosferycznej, oba pomijalne w tej skali.',
   'Prędkość kątowa to tempo obrotu linii obserwacji, zmierzone ze śledzenia obiektu w kadrze.',
   'Wynik to poprzeczna składowa prędkości obiektu. Ruch wprost do obserwatora lub od niego jest dla tej metody niewidoczny.',
 ];
@@ -130,7 +134,7 @@ const ASSUMPTIONS = en ? [
             <label for="om"><span>{L.rate}</span><output id="om-out">1.14 °/s</output></label>
             <input id="om" type="range" min="0.05" max="4" step="0.01" value="1.14" />
           </div>
-          <div class="filters" style="margin-top:.4rem">
+          <div class="filters filters--stack" style="margin-top:.4rem">
             <button class="f" data-preset="surface">{L.presetSurface}</button>
             <button class="f" data-preset="real">{L.presetReal}</button>
             <button class="f" data-preset="reset">{L.reset}</button>
@@ -313,11 +317,25 @@ const ASSUMPTIONS = en ? [
         <p class="label" style="margin:0">{L.angSize}</p>
       </div>
       <div class="panel corners" style="padding:1.5rem;display:grid;place-items:center;min-height:230px">
-        <svg viewBox="0 0 260 180" style="width:100%">
-          <rect width="260" height="180" fill="#05090A"/>
-          <ellipse cx="130" cy="90" rx="52" ry="15" fill="none" stroke="var(--phos)" stroke-width="1.6"/>
-          <ellipse cx="130" cy="90" rx="52" ry="15" fill="var(--phos)" opacity=".12"/>
-          <text x="130" y="140" text-anchor="middle" class="tk__lbl" style="font-size:9px">1.0° × 0.29°</text>
+        <svg viewBox="0 0 260 200" style="width:100%" role="img" aria-label={L.angCompareAlt}>
+          <rect width="260" height="200" fill="#05090A"/>
+          <line x1="20" y1="110" x2="240" y2="110" stroke="var(--line-2)" stroke-width=".8" stroke-dasharray="3 4"/>
+
+          <ellipse id="ac-obj" cx="130" cy="66" rx="40" ry="11" fill="var(--phos)" fill-opacity=".14"
+                   stroke="var(--phos)" stroke-width="1.6"/>
+          <text x="130" y="24" text-anchor="middle" class="tk__lbl tk__lbl--bright" id="ac-obj-lbl">17.5 m</text>
+
+          {/* Odnośnik o znanej rozpiętości, z przodu — sylwetka niska, więc nie wchodzi na obiekt */}
+          <g id="ac-ref" transform="translate(130,152) scale(1)">
+            <g fill="var(--fg-faint)" opacity=".6">
+              <path d="M-48 5 L-9 -1 L9 -1 L48 5 L48 9 L9 4 L-9 4 L-48 9 Z"/>
+              <ellipse cx="0" cy="0" rx="7" ry="9"/>
+              <path d="M-2.5 -9 L-1 -25 L1.5 -25 L3 -9 Z"/>
+              <ellipse cx="-21" cy="8" rx="5" ry="4"/>
+              <ellipse cx="21" cy="8" rx="5" ry="4"/>
+            </g>
+          </g>
+          <text x="130" y="190" text-anchor="middle" class="tk__lbl">{L.angRef}</text>
         </svg>
       </div>
     </div>
@@ -353,7 +371,7 @@ const ASSUMPTIONS = en ? [
       if (kmh < 300) return ['z prędkością małego samolotu', 'Nic nadzwyczajnego dla czegokolwiek z silnikiem.'];
       if (kmh < 900) return ['z prędkością samolotu pasażerskiego', 'Szybko, ale całkowicie konwencjonalnie.'];
       if (kmh < 2000) return ['z prędkością myśliwca', 'Osiągalne dla istniejących maszyn wojskowych.'];
-      return ['z prędkością hipersoniczną', 'To jest liczba podawana, gdy założymy, że obiekt jest przy powierzchni — a tego właśnie nagranie nie potrafi ustalić.'];
+      return ['z prędkością hipersoniczną', 'To jest liczba podawana, gdy założymy, że obiekt jest przy powierzchni, a tego właśnie nagranie nie potrafi ustalić.'];
     }
 
     function calc() {
@@ -502,10 +520,21 @@ const ASSUMPTIONS = en ? [
 
     // ——— angular size
     const ad = $('ad');
+    const REF_M = 36, REF_PX = 96;          // rozpiętość odnośnika w metrach i w jednostkach rysunku
     function ang() {
       const d = +ad.value;
+      const size = 2 * d * Math.tan(0.5 * Math.PI / 180);
       $('ad-out').textContent = nf.format(d) + ' m';
-      $('ad-size').textContent = fx(2 * d * Math.tan(0.5 * Math.PI / 180), d < 30 ? 2 : 1);
+      $('ad-size').textContent = fx(size, d < 30 ? 2 : 1);
+
+      // wspólna skala: większa z dwóch figur zajmuje 200 jednostek szerokości
+      const mPerU = Math.max(size, REF_M) / 190;
+      const refU = (REF_M / mPerU) / REF_PX;
+      $('ac-ref').setAttribute('transform', `translate(130,150) scale(${refU.toFixed(4)})`);
+      const rx = Math.max(0.6, size / mPerU / 2);
+      $('ac-obj').setAttribute('rx', rx.toFixed(2));
+      $('ac-obj').setAttribute('ry', Math.max(0.6, rx * 0.28).toFixed(2));
+      $('ac-obj-lbl').textContent = fx(size, size < 10 ? 2 : 1) + ' m';
     }
     ad.addEventListener('input', ang); ang();
   })();

@@ -20,7 +20,7 @@ sources:
 ## Dlaczego to ważne poza Hiszpanią
 
 Manises to jeden z bardzo nielicznych przypadków, w których **kapitan samolotu pasażerskiego
-podjął realną decyzję operacyjną** — awaryjne lądowanie z pasażerami na pokładzie — w oparciu o
+podjął realną decyzję operacyjną**, awaryjne lądowanie z pasażerami na pokładzie, w oparciu o
 obserwację UAP. To zmienia kategorię zdarzenia z ciekawostki na incydent bezpieczeństwa lotniczego.
 
 Hiszpania jest też przykładem państwa, które **odtajniło swoje akta UFO w sposób uporządkowany**

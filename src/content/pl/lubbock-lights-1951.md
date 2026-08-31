@@ -9,7 +9,7 @@ witnesses: "Trzej wykładowcy Texas Tech, kilkudziesięciu mieszkańców, autor 
 summary: "Formacje świateł w kształcie litery V przelatywały nad miastem przez kilka tygodni. Wśród świadków byli wykładowcy uczelni, co nadało sprawie nietypową wiarygodność, a student wykonał serię fotografii."
 official: "Blue Book zaklasyfikował zjawisko jako ptaki (prawdopodobnie siewki) odbijające światło nowo zainstalowanego oświetlenia ulicznego miasta."
 alternatives:
-- "Ptaki odbijające światła miejskie — wyjaśnienie zgodne z zachowaniem formacji i późniejszymi obserwacjami kontrolnymi."
+- "Ptaki odbijające światła miejskie, wyjaśnienie zgodne z zachowaniem formacji i późniejszymi obserwacjami kontrolnymi."
 - "Ćmy w wiązce świateł ulicznych."
 sources:
 - "label": "Akta Project Blue Book, sprawa Lubbock Lights"
@@ -21,5 +21,5 @@ Sprawa zyskała status dzięki temu, że świadkami byli naukowcy. To jednak dot
 relacji**, a nie zdolności rozpoznania obiektu.
 
 Profesor geologii patrzący w nocne niebo nie ma przewagi nad kimkolwiek innym w ocenie odległości
-do nieoświetlonego obiektu. Kompetencja jest domenowa. To rozróżnienie — wiarygodność świadka
-kontra jego zdolność identyfikacji — przewija się przez cały ten korpus.
+do nieoświetlonego obiektu. Kompetencja jest domenowa. To rozróżnienie, wiarygodność świadka
+kontra jego zdolność identyfikacji, przewija się przez cały ten korpus.

@@ -85,11 +85,11 @@ for (const s of canon) {
 }
 for (const u of unknownRefs) errors.push(`odnośnik spoza rejestru: ${u}`);
 
-console.log(`sprawy: ${canon.length} · twierdzenia: ${claims.length}`);
-console.log(`źródła: ${total} · z adresem materiału: ${linked} · ze wskazaniem archiwum: ${aided} · bez niczego: ${total - linked - aided}`);
-if (warn.length) console.log('ostrzeżenia:\n  ' + warn.join('\n  '));
+console.log(`cases: ${canon.length} · claims: ${claims.length}`);
+console.log(`sources: ${total} · linked to material: ${linked} · archive pointer only: ${aided} · neither: ${total - linked - aided}`);
+if (warn.length) console.log('warnings:\n  ' + warn.join('\n  '));
 if (errors.length) {
-  console.error(`\nBŁĘDY SPÓJNOŚCI (${errors.length}):\n  ` + errors.join('\n  '));
+  console.error(`\nCONSISTENCY ERRORS (${errors.length}):\n  ` + errors.join('\n  '));
   process.exit(1);
 }
-console.log('spójność korpusu: OK');
+console.log('corpus consistency: OK');

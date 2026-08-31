@@ -9,9 +9,9 @@ witnesses: "Kontrolerzy ruchu lotniczego, operatorzy radarów wojskowych, piloci
 summary: "W dwa kolejne weekendy lipca 1952 r. radary cywilne i wojskowe wokół Waszyngtonu rejestrowały niezidentyfikowane cele nad przestrzenią zakazaną, skorelowane z obserwacjami wzrokowymi pilotów. Poderwano myśliwce przechwytujące. Sprawa wymusiła najliczniejszą konferencję prasową Pentagonu od zakończenia II wojny światowej."
 official: "USAF wskazała inwersję temperaturową i związaną z nią anomalną propagację radarową jako główne wyjaśnienie. Blue Book pozostawił część zdarzeń bez rozstrzygnięcia."
 alternatives:
-- "Anomalna propagacja radarowa przy silnej inwersji temperaturowej — potwierdzona meteorologicznie w te noce, tłumaczy część śladów."
+- "Anomalna propagacja radarowa przy silnej inwersji temperaturowej, potwierdzona meteorologicznie w te noce, tłumaczy część śladów."
 - "Błędna korelacja: niezależne obserwacje wzrokowe gwiazd i samolotów łączone przez operatorów z niezwiązanymi śladami radarowymi."
-- "Rzeczywiste obiekty fizyczne w przestrzeni zakazanej — brak zapisu pozwalającego to potwierdzić lub wykluczyć."
+- "Rzeczywiste obiekty fizyczne w przestrzeni zakazanej, brak zapisu pozwalającego to potwierdzić lub wykluczyć."
 sources:
 - "label": "Akta Project Blue Book dotyczące lipca 1952 (National Archives)"
 - "label": "Zapisy kontroli ruchu lotniczego Washington National Airport"
@@ -32,7 +32,7 @@ myśliwce. To nie jest struktura zdarzenia, którą tworzy pojedyncza pomyłka.
 ## Gdzie jest słabość
 
 Inwersja temperaturowa nad Waszyngtonem tamtych nocy **rzeczywiście występowała** i rzeczywiście
-generuje fałszywe echa. To wyjaśnienie nie jest wymówką — jest fizycznie poprawnym mechanizmem,
+generuje fałszywe echa. To wyjaśnienie nie jest wymówką, jest fizycznie poprawnym mechanizmem,
 który potrafi wyprodukować dokładnie takie ślady.
 
 Problemem jest to, że nie da się dziś ustalić, **które** ślady były propagacją, a które nie.
@@ -51,5 +51,5 @@ co zawodzi w pierwszej kolejności. Traktujemy tę liczbę jako twierdzenie, nie
 Ta fala zmieniła instytucjonalny stosunek państwa do UAP. Bezpośrednio po niej CIA powołała
 panel naukowy (Robertson Panel, styczeń 1953), którego zalecenia przesunęły ciężar z badania
 zjawiska na **zarządzanie reakcją opinii publicznej**. To jeden z niewielu udokumentowanych
-przypadków, w których rząd USA rzeczywiście zajmował się sterowaniem narracją o UFO — choć
+przypadków, w których rząd USA rzeczywiście zajmował się sterowaniem narracją o UFO, choć
 z powodów zimnowojennych, a nie dlatego, że cokolwiek wiedział o kosmitach.

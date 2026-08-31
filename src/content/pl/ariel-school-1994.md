@@ -6,10 +6,10 @@ countryName: "Zimbabwe"
 location: "Ariel School, Ruwa, w pobliżu Harare"
 duration: "ok. 15 minut"
 witnesses: "Ok. 60 dzieci w wieku 6–12 lat"
-summary: "Podczas przerwy grupa dzieci zgłosiła lądowanie obiektu i obecność istot na skraju szkolnego terenu. Wywiady przeprowadzono w ciągu dni, a część z nich nagrano — w tym przez zespół psychiatry z Harvardu."
+summary: "Podczas przerwy grupa dzieci zgłosiła lądowanie obiektu i obecność istot na skraju szkolnego terenu. Wywiady przeprowadzono w ciągu dni, a część z nich nagrano, w tym przez zespół psychiatry z Harvardu."
 official: "Brak dochodzenia państwowego."
 alternatives:
-- "Zjawisko konwersji zbiorowej w grupie rówieśniczej — mechanizm dobrze udokumentowany w psychologii."
+- "Zjawisko konwersji zbiorowej w grupie rówieśniczej, mechanizm dobrze udokumentowany w psychologii."
 - "Wpływ pytań sugerujących zadawanych przez dorosłych w trakcie wywiadów."
 - "Rzeczywiste zdarzenie o nieustalonej naturze."
 sources:
@@ -20,7 +20,7 @@ sources:
 
 ## Uczciwa ocena
 
-To najlepiej udokumentowany przypadek relacji zbiorowej w całym korpusie — i jednocześnie
+To najlepiej udokumentowany przypadek relacji zbiorowej w całym korpusie i jednocześnie
 przypadek, w którym metodologia zbierania relacji jest sama w sobie problemem.
 
 Dzieci są dobrymi obserwatorami i złymi świadkami w sensie proceduralnym: bardzo silnie reagują

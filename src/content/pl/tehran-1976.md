@@ -9,13 +9,13 @@ witnesses: "Zgłaszający cywilni, dowódca operacyjny irańskiego lotnictwa, dw
 summary: "Po serii zgłoszeń cywilnych irańskie lotnictwo poderwało dwa F-4. Według raportu Defense Intelligence Agency pierwszy samolot utracił przyrządy i łączność przy zbliżeniu, drugi uzyskał kontakt radarowy na ok. 27 mil morskich, a przy próbie użycia uzbrojenia doszło do awarii panelu i utraty łączności."
 official: "Raport DIA/JCS rozesłany m.in. do CIA, NSA i Białego Domu z oceną wysokiej jakości zdarzenia. Brak formalnego rozstrzygnięcia."
 alternatives:
-- "Bolid roju Perseidów w fazie schyłkowej plus błędne skojarzenie awarii technicznych — nie tłumaczy dobrze dwugodzinnej sekwencji ani kontaktu radarowego."
+- "Bolid roju Perseidów w fazie schyłkowej plus błędne skojarzenie awarii technicznych, nie tłumaczy dobrze dwugodzinnej sekwencji ani kontaktu radarowego."
 - "Wenus / Jowisz jako źródło obserwacji wzrokowej przy niezależnych awariach dwóch samolotów."
 - "Awarie sprzętowe F-4 (znane problemy eksploatacyjne floty irańskiej) skorelowane czasowo przypadkiem."
 - "Rzeczywisty nieznany obiekt oddziałujący na systemy."
 sources:
 - "label": "Raport Defense Intelligence Agency / Joint Chiefs of Staff, wrzesień 1976 (odtajniony)"
-  note: "Dokument operacyjny sporządzony w ciągu dni od zdarzenia — najwyższa klasa źródła w tym korpusie."
+  note: "Dokument operacyjny sporządzony w ciągu dni od zdarzenia, najwyższa klasa źródła w tym korpusie."
 - "label": "Późniejsze wywiady z gen. Parvizem Jafarim i innymi uczestnikami"
 ---
 
@@ -26,7 +26,7 @@ dokument operacyjny sporządzony niemal natychmiast po zdarzeniu i rozesłany na
 amerykańskiej struktury wywiadowczej.**
 
 To nie jest wywiad udzielony trzydzieści lat później. To jest raport, który powstał, bo instytucja
-uznała zdarzenie za wystarczająco poważne, by je zaraportować — zanim ktokolwiek wiedział, że
+uznała zdarzenie za wystarczająco poważne, by je zaraportować, zanim ktokolwiek wiedział, że
 stanie się słynne.
 
 ## Struktura zdarzenia
@@ -39,7 +39,7 @@ Sekwencja jest długa i wielowarstwowa:
 4. Drugi F-4: kontakt radarowy na ok. 27 NM, prędkość zbliżania ok. 150 węzłów, cel utrzymuje
    dystans.
 5. Drugi obiekt oddzielający się od pierwszego i kierujący w stronę myśliwca.
-6. Próba użycia AIM-9 — awaria panelu uzbrojenia i utrata łączności.
+6. Próba użycia AIM-9, awaria panelu uzbrojenia i utrata łączności.
 
 Żadna pojedyncza pomyłka nie generuje takiej struktury.
 
@@ -47,7 +47,7 @@ Sekwencja jest długa i wielowarstwowa:
 
 Cała ta sekwencja pochodzi z **jednego dokumentu**. Nie mamy zapisów radaru pokładowego, nie mamy
 logów systemowych F-4, nie mamy zapisu komunikacji. Raport DIA jest doskonałym źródłem tego, **co
-zaraportowali uczestnicy** — nie jest niezależnym pomiarem tego, co fizycznie się działo.
+zaraportowali uczestnicy**, nie jest niezależnym pomiarem tego, co fizycznie się działo.
 
 To wciąż stawia Teheran wysoko. Ale różnica między „instytucja to zaraportowała" a „to zostało
 zmierzone" musi pozostać widoczna.

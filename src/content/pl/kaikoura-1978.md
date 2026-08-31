@@ -9,7 +9,7 @@ witnesses: "Załoga samolotu transportowego, ekipa telewizyjna na pokładzie, ko
 summary: "Ekipa australijskiej telewizji nakręciła z pokładu samolotu serię jasnych świateł, skorelowanych czasowo ze śladami na radarze Wellington. Materiał obiegł świat jako pierwsze „nagranie UFO z pokładu\"."
 official: "Analiza wskazała najprawdopodobniej światła statków rybackich odbite w warstwie inwersyjnej oraz jasne ciała niebieskie."
 alternatives:
-- "Światła kutrów rybackich (połów kalmarów) załamane przez inwersję temperaturową — wyjaśnienie zgodne z pozycją i barwą."
+- "Światła kutrów rybackich (połów kalmarów) załamane przez inwersję temperaturową, wyjaśnienie zgodne z pozycją i barwą."
 - "Wenus i Jowisz w niskim położeniu nad horyzontem, rozogniskowane w obiektywie."
 - "Anomalna propagacja radarowa dająca niezależne fałszywe echa."
 sources:
@@ -24,5 +24,5 @@ Kaikoura zasługuje na miejsce w bazie, bo jest jednym z nielicznych przypadków
 kutrów rybackich, profil inwersji i położenie planet.
 
 Rozogniskowany punkt świetlny w obiektywie kamery filmowej przybiera kształt przysłony obiektywu.
-Wiele „struktur" widocznych na materiale jest artefaktem optyki, a nie cechą obiektu — dokładnie
+Wiele „struktur" widocznych na materiale jest artefaktem optyki, a nie cechą obiektu, dokładnie
 ten sam mechanizm wróci w 2019 r. przy nagraniu „piramid" z USS Russell.

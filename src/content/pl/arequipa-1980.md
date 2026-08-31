@@ -6,10 +6,10 @@ countryName: "Peru"
 location: "Baza lotnicza La Joya, w pobliżu Arequipy"
 witnesses: "Personel bazy na porannej zbiórce; pilot przechwytujący"
 duration: "ok. 30 minut"
-summary: "Personel peruwiańskiej bazy lotniczej zaobserwował o świcie nieruchomy obiekt w kształcie balonu. Poderwano Su-22, który — według relacji pilota — oddał serię z działka bez żadnego efektu, po czym obiekt wzniósł się poza zasięg ścigającego samolotu."
+summary: "Personel peruwiańskiej bazy lotniczej zaobserwował o świcie nieruchomy obiekt w kształcie balonu. Poderwano Su-22, który, według relacji pilota, oddał serię z działka bez żadnego efektu, po czym obiekt wzniósł się poza zasięg ścigającego samolotu."
 official: "Brak opublikowanego oficjalnego rozstrzygnięcia. Relacja pochodzi od pilota, potwierdzona później przez innych żołnierzy bazy."
 alternatives:
-- "Balon wysokościowy, co tłumaczyłoby kształt, utrzymywanie pozycji i niemożność dosięgnięcia go przez pilota — wyjaśnienie wiodące."
+- "Balon wysokościowy, co tłumaczyłoby kształt, utrzymywanie pozycji i niemożność dosięgnięcia go przez pilota, wyjaśnienie wiodące."
 - "Błędnie oceniony atak na cel znacznie odleglejszy, niż zakładano."
 - "Rzeczywisty niezidentyfikowany obiekt."
 sources:
@@ -41,5 +41,5 @@ Wszystkiego, co instrumentalne. Nie opublikowano zapisu radarowego, nagrania z k
 dokumentacji jednostki. Sprawa opiera się niemal wyłącznie na zeznaniu pilota, złożonym publicznie
 dekady później, z późniejszym potwierdzeniem kolegów.
 
-To umieszcza ją w warstwie „interesujące, ale nieweryfikowalne” — tej samej co Malmstrom i z tego
+To umieszcza ją w warstwie „interesujące, ale nieweryfikowalne”, tej samej co Malmstrom i z tego
 samego powodu.

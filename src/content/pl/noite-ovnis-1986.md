@@ -24,5 +24,5 @@ Trzy elementy jednocześnie: **wiele niezależnych stanowisk radarowych**, **wie
 maszyn różnych typów** i **publiczne potwierdzenie na szczeblu ministerialnym w ciągu dni**.
 
 To ostatnie jest w skali światowej niemal bezprecedensowe. W większości państw potwierdzenie
-przychodzi po dekadach albo wcale. Brazylia potwierdziła od razu — co paradoksalnie sprawiło, że
+przychodzi po dekadach albo wcale. Brazylia potwierdziła od razu, co paradoksalnie sprawiło, że
 sprawa jest znacznie mniej znana niż Rendlesham, o którym rząd milczał.

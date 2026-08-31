@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CaseCard from '../../components/CaseCard.astro';
+import HeroScope from '../../components/HeroScope.astro';
 import { getCases } from '../../lib/cases';
 import { overall, TIER_LABEL, TIER_DESC, bi } from '../../lib/scoring';
 import { claims } from '../../data/claims';
@@ -14,7 +15,7 @@ const t = useT(lang);
 const all = await getCases(lang);
 const countries = new Set(all.map(c => c.data.country));
 const core = all.filter(c => c.data.tier === 1).sort((a, b) => overall(b.data.scores) - overall(a.data.scores));
-const years = all.map(c => c.data.date.getFullYear()).filter(y => y > 1900);
+const years = all.map(c => c.data.date.getFullYear());
 const span = `${Math.min(...years)}–${Math.max(...years)}`;
 
 const featured = claims.filter(c => ['nimitz-transmedium', 'rb47-three-sensors', 'gofast-extreme-speed',
@@ -49,14 +50,19 @@ const UNCONFIRMED = {
 <Base title="disclosure.zone" description={t('site.desc')} lang={lang} rest="/">
   <section class="hero">
     <div class="hero__sky"><div class="hero__glow"></div><div class="hero__beam"></div></div>
-    <div class="wrap">
-      <div class="hero__kicker"><i></i><span class="label label--phos">{t('home.kicker')} · {span}</span></div>
-      <h1>{t('home.h1a')}<br />{t('home.h1b')}<br /><em style="color:var(--phos)">{t('home.h1c')}</em></h1>
-      <p class="lead" style="max-width:58ch;margin-top:1.8rem">{t('home.lead')}</p>
-      <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2.4rem">
-        <a class="btn" href={path(lang, '/cases')}>{t('home.cta1')}</a>
-        <a class="btn btn--ghost" href={path(lang, '/methodology')}>{t('home.cta2')}</a>
+    <div class="wrap hero__grid">
+      <div>
+        <div class="hero__kicker"><i></i><span class="label label--phos">{t('home.kicker')} · {span}</span></div>
+        <h1>{t('home.h1a')}<br />{t('home.h1b')}<br /><em style="color:var(--phos)">{t('home.h1c')}</em></h1>
+        <p class="lead" style="max-width:58ch;margin-top:1.8rem">{t('home.lead')}</p>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2.4rem">
+          <a class="btn" href={path(lang, '/cases')}>{t('home.cta1')}</a>
+          <a class="btn btn--ghost" href={path(lang, '/methodology')}>{t('home.cta2')}</a>
+        </div>
       </div>
+      <HeroScope lang={lang} cases={all.length} countries={countries.size} span={span}
+                 blips={core.map(c => ({ id: c.id, title: c.data.title, lon: c.data.lon,
+                                         year: c.data.date.getFullYear(), status: c.data.status }))} />
     </div>
   </section>
 
@@ -74,13 +80,13 @@ const UNCONFIRMED = {
       <div class="rise" style="background:var(--void-2);padding:clamp(1.6rem,4vw,2.6rem)">
         <p class="label label--phos" style="margin-bottom:1.2rem">{t('home.confirmed')}</p>
         <ul style="list-style:none;padding:0;margin:0;font-size:.98rem;line-height:1.7;color:var(--fg-dim)">
-          {CONFIRMED.map(x => <li>— {x}</li>)}
+          {CONFIRMED.map(x => <li>{lang === 'en' ? '— ' : '· '}{x}</li>)}
         </ul>
       </div>
       <div class="rise" style="background:var(--void-2);padding:clamp(1.6rem,4vw,2.6rem)">
         <p class="label" style="color:var(--stamp-2);margin-bottom:1.2rem">{t('home.unconfirmed')}</p>
         <ul style="list-style:none;padding:0;margin:0;font-size:.98rem;line-height:1.7;color:var(--fg-dim)">
-          {UNCONFIRMED.map(x => <li>— {x}</li>)}
+          {UNCONFIRMED.map(x => <li>{lang === 'en' ? '— ' : '· '}{x}</li>)}
         </ul>
       </div>
     </div>

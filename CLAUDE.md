@@ -60,6 +60,17 @@ npm run preview
 - `src/data/archives.ts` — rejestr archiwów państwowych, dwujęzyczny
 - `src/lib/scoring.ts` — skala S/R/O/P/M/T/X/D, wagi, klasy dowodowe
 - `src/lib/og.ts` — generator OG image
+- `scripts/make-banner.mjs` — banner repozytorium (`docs/banner.png`), odpalany ręcznie
+
+## Zasady językowe
+
+- **Polska wersja nie używa pauz (—).** Zamiast pauzy: przecinek, dwukropek albo
+  przebudowane zdanie. Dotyczy `src/content/pl/*.md`, polskich wartości w
+  `src/data/*.ts`, słownika `pl` w `src/i18n/index.ts` oraz polskich gałęzi
+  w komponentach i stronach. Angielska wersja pauzy zachowuje, to poprawna
+  typografia angielska.
+- **Repozytorium jest po angielsku**: README, komunikaty skryptów budujących,
+  nazwy plików i gałęzi. Komentarze w kodzie i CLAUDE.md zostają po polsku.
 
 ## Zasady redakcyjne
 

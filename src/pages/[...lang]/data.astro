@@ -17,7 +17,7 @@ const files = [
       : `${all.length} spraw z pełną strukturą: metadane, oceny na ośmiu osiach, hipotezy alternatywne, źródła z klasami.` },
   { p: '/api/claims.json', d: en
       ? `${claims.length} claims: origin, source tier, verification status, resolution condition — in both languages.`
-      : `${claims.length} twierdzeń: pochodzenie, klasa źródła, status weryfikacji, warunek rozstrzygnięcia — w obu językach.` },
+      : `${claims.length} twierdzeń: pochodzenie, klasa źródła, status weryfikacji, warunek rozstrzygnięcia, w obu językach.` },
   { p: '/api/sources.json', d: en
       ? `${SOURCE_COUNT} verified links to state archives and primary documents.`
       : `${SOURCE_COUNT} zweryfikowanych odnośników do archiwów państwowych i dokumentów pierwotnych.` },
@@ -27,7 +27,7 @@ const files = [
 ];
 ---
 <Base title={en ? 'Open data' : 'Dane otwarte'}
-      description={en ? 'The UAP case database in machine-readable formats — JSON and CSV under CC BY 4.0.' : 'Baza przypadków UAP w formatach maszynowych — JSON i CSV na licencji CC BY 4.0.'}
+      description={en ? 'The UAP case database in machine-readable formats — JSON and CSV under CC BY 4.0.' : 'Baza przypadków UAP w formatach maszynowych, JSON i CSV na licencji CC BY 4.0.'}
       lang={lang} rest="/data">
   <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
     <p class="label label--phos" style="margin-bottom:.8rem">CC BY 4.0</p>
@@ -53,7 +53,7 @@ const files = [
 
   <section class="wrap wrap--read prose" style="padding-bottom:5rem">
     <h2>{en ? 'How to cite' : 'Jak cytować'}</h2>
-    <p><code>disclosure.zone — UAP case database, CC BY 4.0, accessed: [date]</code></p>
+    <p><code>{en ? 'disclosure.zone — UAP case database, CC BY 4.0, accessed: [date]' : 'disclosure.zone, baza przypadków UAP, CC BY 4.0, dostęp: [data]'}</code></p>
     <h2>{en ? 'Why the data is open' : 'Dlaczego dane są otwarte'}</h2>
     <p>
       {en

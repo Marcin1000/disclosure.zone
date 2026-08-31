@@ -37,7 +37,7 @@ export const archives: Archive[] = [
     volume: { en: 'Over a thousand cases on file; hundreds of new reports a year', pl: 'Ponad tysiąc spraw w zasobie; setki nowych zgłoszeń rocznie' },
     note: {
       en: 'The most important methodological change since Blue Book: AARO breaks the old “unidentified” category into three — resolved, unresolved for lack of data, and requiring further analysis. That distinction changes how the whole field counts.',
-      pl: 'Najważniejsza zmiana metodologiczna od czasów Blue Book: AARO rozbija dawną kategorię „unidentified” na trzy osobne — rozwiązane, nierozstrzygnięte z powodu braku danych oraz wymagające dalszej analizy. To rozróżnienie zmienia sposób liczenia całej dziedziny.',
+      pl: 'Najważniejsza zmiana metodologiczna od czasów Blue Book: AARO rozbija dawną kategorię „unidentified” na trzy osobne, rozwiązane, nierozstrzygnięte z powodu braku danych oraz wymagające dalszej analizy. To rozróżnienie zmienia sposób liczenia całej dziedziny.',
     },
     ref: 'aaro',
   },
@@ -46,11 +46,11 @@ export const archives: Archive[] = [
     countryName: { en: 'France', pl: 'Francja' },
     program: 'GEPAN → SEPRA → GEIPAN',
     years: '1977–present', status: 'active', publicDb: true,
-    institution: { en: 'CNES — the French space agency', pl: 'CNES — francuska agencja kosmiczna' },
+    institution: { en: 'CNES — the French space agency', pl: 'CNES, francuska agencja kosmiczna' },
     volume: { en: 'Over 3,300 cases in a public database', pl: 'Ponad 3300 przypadków w publicznej bazie' },
     note: {
       en: 'The best-structured public collection in the world. A four-level classification: A identified, B probably identified, C insufficient data, D unexplained after investigation. Category D covers roughly 3% of the set and is further split into D1 and D2 by the consistency of the material.',
-      pl: 'Najlepiej ustrukturyzowany publiczny zbiór na świecie. Klasyfikacja czteropoziomowa: A — zidentyfikowane, B — prawdopodobnie zidentyfikowane, C — brak wystarczających danych, D — niewyjaśnione po dochodzeniu. Kategoria D obejmuje ok. 3% zbioru i dzieli się dodatkowo na D1 i D2 według konsystencji materiału.',
+      pl: 'Najlepiej ustrukturyzowany publiczny zbiór na świecie. Klasyfikacja czteropoziomowa: A, zidentyfikowane, B, prawdopodobnie zidentyfikowane, C, brak wystarczających danych, D, niewyjaśnione po dochodzeniu. Kategoria D obejmuje ok. 3% zbioru i dzieli się dodatkowo na D1 i D2 według konsystencji materiału.',
     },
     ref: 'geipan',
   },
@@ -76,7 +76,7 @@ export const archives: Archive[] = [
     volume: { en: 'An unbroken register since 1978', pl: 'Nieprzerwany rejestr od 1978 r.' },
     note: {
       en: 'One of very few states that assigned the task to a named institution and never revoked it. The result is a uniformly maintained register spanning nearly half a century — comparable in quality to GEIPAN and almost entirely overlooked by English-language literature.',
-      pl: 'Jedno z niewielu państw, które przypisało zadanie konkretnej instytucji i nigdy tego nie odwołało. Dzięki temu istnieje jednolicie prowadzony rejestr obejmujący prawie pół wieku — zasób jakościowo porównywalny z GEIPAN i niemal całkowicie pominięty przez anglojęzyczną literaturę.',
+      pl: 'Jedno z niewielu państw, które przypisało zadanie konkretnej instytucji i nigdy tego nie odwołało. Dzięki temu istnieje jednolicie prowadzony rejestr obejmujący prawie pół wieku, zasób jakościowo porównywalny z GEIPAN i niemal całkowicie pominięty przez anglojęzyczną literaturę.',
     },
     ref: 'am-ovni',
   },
@@ -85,7 +85,7 @@ export const archives: Archive[] = [
     countryName: { en: 'Chile', pl: 'Chile' },
     program: 'CEFAA → SEFAA',
     years: '1997–present', status: 'transformed', publicDb: true,
-    institution: { en: 'DGAC — the Chilean civil aviation authority', pl: 'DGAC — chilijski urząd lotnictwa cywilnego' },
+    institution: { en: 'DGAC — the Chilean civil aviation authority', pl: 'DGAC, chilijski urząd lotnictwa cywilnego' },
     volume: { en: 'Published case resolutions, including contemporary ones', pl: 'Publikowane rozstrzygnięcia spraw, także współczesnych' },
     note: {
       en: 'Not a ufology group but a unit of the state civil aviation authority. It requires original material for analysis, not screenshots from messaging apps, which destroy the data the work depends on. That is the standard the whole field should demand.',
@@ -128,7 +128,7 @@ export const archives: Archive[] = [
     volume: { en: 'Thousands of documents from 1946 onward', pl: 'Wielotysięczny zbiór dokumentów od 1946 r.' },
     note: {
       en: 'The first serious state investigation into UAP in history — a year before the Kenneth Arnold sighting. This moves the field’s true starting date from 1947 to 1946.',
-      pl: 'Pierwsze poważne państwowe dochodzenie w sprawie UAP w historii — rok przed obserwacją Kennetha Arnolda. To przesuwa właściwą datę początkową całej dziedziny z 1947 na 1946.',
+      pl: 'Pierwsze poważne państwowe dochodzenie w sprawie UAP w historii, rok przed obserwacją Kennetha Arnolda. To przesuwa właściwą datę początkową całej dziedziny z 1947 na 1946.',
     },
   },
   {
@@ -179,7 +179,7 @@ export const archives: Archive[] = [
     volume: { en: 'F-16 radar recordings, gendarmerie reports, thousands of sightings', pl: 'Zapisy radarowe F-16, raporty żandarmerii, tysiące zgłoszeń' },
     note: {
       en: 'A rare instance of an air force collaborating with a civilian research association on the analysis. The F-16 radar recordings are among the most important datasets in the field’s history — and among the most frequently misread.',
-      pl: 'Rzadki przypadek współpracy sił powietrznych z cywilnym stowarzyszeniem badawczym przy analizie. Zapisy radarowe F-16 są jednym z najważniejszych zbiorów danych w historii dziedziny — i jednym z najczęściej błędnie interpretowanych.',
+      pl: 'Rzadki przypadek współpracy sił powietrznych z cywilnym stowarzyszeniem badawczym przy analizie. Zapisy radarowe F-16 są jednym z najważniejszych zbiorów danych w historii dziedziny i jednym z najczęściej błędnie interpretowanych.',
     },
   },
   {
@@ -191,7 +191,7 @@ export const archives: Archive[] = [
     volume: { en: 'About 3,000 reports per later participant accounts', pl: 'Ok. 3000 zgłoszeń wg późniejszych relacji uczestników' },
     note: {
       en: 'The programme was created after the wave triggered by the Petrozavodsk phenomenon. A significant share of reports was tied to rocket launches from Soviet cosmodromes — that is, to the state’s own classified programmes. It is the clearest illustration of the mechanism that generates UAP with nothing unknown involved.',
-      pl: 'Program powstał po fali wywołanej zjawiskiem nad Pietrozawodskiem. Znacząca część zgłoszeń została powiązana ze startami rakiet z kosmodromów — czyli z tajnymi programami własnego państwa. To najlepsza ilustracja mechanizmu, który generuje UAP bez udziału czegokolwiek nieznanego.',
+      pl: 'Program powstał po fali wywołanej zjawiskiem nad Pietrozawodskiem. Znacząca część zgłoszeń została powiązana ze startami rakiet z kosmodromów, czyli z tajnymi programami własnego państwa. To najlepsza ilustracja mechanizmu, który generuje UAP bez udziału czegokolwiek nieznanego.',
     },
   },
 ];

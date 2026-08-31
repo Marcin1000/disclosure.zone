@@ -9,7 +9,7 @@ duration: "ok. 4 godzin"
 summary: "Jedenaście osób zgłosiło trwające całą noc oblężenie farmy przez małe srebrzyste postacie, do których wielokrotnie strzelano ze strzelb. Przybyła policja stwierdziła ślady po strzałach i nic poza tym. Sprawa stała się wzorcem dla całego gatunku relacji o bliskich spotkaniach."
 official: "Policja nie znalazła śladów intruzów. Nie było dochodzenia federalnego."
 alternatives:
-- "Puchacze wirginijskie — ich postawa, srebrzysty spód i odblaskowe oczy dobrze pasują do opisu — broniące nocą gniazda."
+- "Puchacze wirginijskie, ich postawa, srebrzysty spód i odblaskowe oczy dobrze pasują do opisu, broniące nocą gniazda."
 - "Panika zbiorowa w domu przestraszonym już wcześniejszą obserwacją bolidu."
 - "Rzeczywiste spotkanie o nieustalonej naturze."
 sources:
@@ -35,4 +35,4 @@ odbijające światło latarki i jest nocą agresywnie terytorialny. Dwa takie pt
 przed ludźmi ze światłami pasują do relacji zaskakująco dobrze.
 
 Ta hipoteza też nie jest udowodniona. Jest po prostu tą, która wymaga najmniejszej liczby nowych
-założeń — a w sprawie bez dowodów fizycznych to jedyne dostępne kryterium.
+założeń, a w sprawie bez dowodów fizycznych to jedyne dostępne kryterium.

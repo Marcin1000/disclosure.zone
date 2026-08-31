@@ -9,7 +9,7 @@ duration: "ok. 1 godziny zakłóceń"
 summary: "Port lotniczy Xiaoshan wstrzymał operacje na około godzinę po zgłoszeniu niezidentyfikowanego obiektu w swojej przestrzeni. Loty przekierowano i opóźniono. Chińskie władze wskazały później na związek wojskowy, nie podając szczegółów."
 official: "Wstrzymanie operacji zostało potwierdzone. Władze zasugerowały wojskowe wyjaśnienie obiektu i odmówiły rozwinięcia."
 alternatives:
-- "Test lub lot ćwiczebny wojska, co władze zdawały się potwierdzać bez szczegółów — wyjaśnienie wiodące."
+- "Test lub lot ćwiczebny wojska, co władze zdawały się potwierdzać bez szczegółów, wyjaśnienie wiodące."
 - "Smuga rakiety lub pocisku oświetlona po zachodzie słońca."
 - "Rzeczywisty niezidentyfikowany obiekt."
 sources:

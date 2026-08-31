@@ -88,7 +88,13 @@ img, svg { max-width: 100%; }
 /* ============================================================ ATMOSFERA
    Ziarno filmowe + scanlines + winieta. Fixed, pod treścią.
 */
-.atmos { position: fixed; inset: 0; pointer-events: none; z-index: 9999; }
+.atmos {
+  position: fixed; top: 0; left: 0; right: 0; height: 100vh;
+  pointer-events: none; z-index: 9999; overflow: hidden;
+}
+/* Pasek adresu chowa się przy przewijaniu i odsłania pas pod winietą.
+   lvh to wysokość okna z cofniętym paskiem, czyli największa możliwa. */
+@supports (height: 100lvh) { .atmos { height: 100lvh; } }
 .atmos__grain {
   position: absolute; inset: -50%;
   background-image: var(--grain-url);
@@ -269,7 +275,6 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
   color: var(--stamp-2);
   border: 2px solid var(--stamp);
   padding: .3rem .7rem;
-  transform: rotate(-3.5deg);
   opacity: .88;
   mix-blend-mode: screen;
   box-shadow: inset 0 0 0 1px rgba(196,57,46,.25);
@@ -329,6 +334,8 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .tbl tr:hover td { background: rgba(77,227,160,.028); color: var(--fg); }
 .tbl td strong { font-weight: 500; color: var(--fg); }
 .tbl-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+/* Klasa zamiast stylu w atrybucie, żeby zapytanie medialne mogło ją zdjąć */
+.tbl__nw { white-space: nowrap; }
 
 /* ============================================================ DOKUMENT / DOSSIER HEADER */
 .dossier {
@@ -381,11 +388,14 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .f {
   font-family: var(--mono); font-size: .63rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
   padding: .42rem .7rem; border: 1px solid var(--line-2); background: transparent; color: var(--fg-faint);
-  cursor: pointer; transition: all var(--t-fast); white-space: nowrap;
+  cursor: pointer; transition: all var(--t-fast); white-space: nowrap; max-width: 100%;
 }
 .f:hover { color: var(--fg); border-color: var(--fg-faint); }
 .f[aria-pressed="true"] { color: var(--phos); border-color: var(--phos-dim); background: var(--phos-ghost); }
 .f b { font-weight: 700; opacity: .5; margin-left: .3rem; }
+/* Długie etykiety założeń nie mieszczą się w jednej linii na telefonie */
+.filters--stack { flex-direction: column; align-items: stretch; }
+.filters--stack .f { white-space: normal; text-align: left; }
 
 /* ============================================================ MAPA / PLOTTING BOARD */
 .plot { position: relative; background: #070C0D; border: 1px solid var(--line-2); overflow: hidden; }
@@ -394,6 +404,9 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .plot__land--has { fill: #16302C; stroke: rgba(77,227,160,.5); stroke-width: .7; cursor: pointer; }
 .plot__land--has:hover { fill: #21463F; stroke: var(--phos); }
 .plot__land--sel { fill: #2A5A50; stroke: var(--phos); stroke-width: 1; }
+/* Kraj to ścieżka, więc outline obrysowałby jej prostokąt otaczający —
+   dla Rosji to cała szerokość mapy. Fokus pokazujemy samą ścieżką. */
+.plot__land--has:focus-visible { outline: none; fill: #2A5A50; stroke: var(--phos); stroke-width: 1.8; }
 .plot__grat { fill: none; stroke: rgba(77,227,160,.11); stroke-width: .35; vector-effect: non-scaling-stroke; }
 .plot__frame { fill: none; stroke: rgba(77,227,160,.3); stroke-width: .8; vector-effect: non-scaling-stroke; }
 
@@ -411,6 +424,55 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
   animation: scanmove 7.5s linear infinite;
 }
 @keyframes scanmove { 0% { top: -90px } 100% { top: 100% } }
+
+.legend { display: flex; gap: .6rem 1.5rem; flex-wrap: wrap; margin-top: 1rem; }
+.legend .label { display: flex; align-items: center; gap: .5rem; }
+.legend i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.legend__core { color: var(--phos-dim); }
+
+/* ============================================================ MAPA NA TELEFONIE
+   Świat ściśnięty do 360 px to plamka, a 74 znaczniki zlewają się w jedną.
+   Ten sam rozkład podajemy jako listę sygnałów: kraj, liczba, pasek statusów.
+*/
+.geo { display: none; }
+.geo__row {
+  display: grid; grid-template-columns: 1fr auto; gap: .45rem .8rem; align-items: baseline;
+  width: 100%; text-align: left; cursor: pointer;
+  background: var(--void-2); border: 0; padding: .75rem .9rem;
+  font: inherit; color: inherit; transition: background var(--t-fast);
+}
+.geo__name { font-family: var(--mono); font-size: .68rem; letter-spacing: .13em; text-transform: uppercase; color: var(--fg-dim); }
+.geo__n { font-family: var(--mono); font-size: .8rem; color: var(--fg); }
+.geo__bar { grid-column: 1 / -1; display: flex; gap: 1px; height: 5px; width: var(--w); min-width: 6px; }
+.geo__bar i { display: block; }
+.geo__row[aria-pressed="true"] { background: var(--phos-ghost); }
+.geo__row[aria-pressed="true"] .geo__name { color: var(--phos); }
+
+@media (max-width: 760px) {
+  .plot { display: none; }
+  .geo { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .sec--desk { display: none; }
+  .legend { gap: .55rem 1.1rem; }
+  .legend .label { font-size: .6rem; letter-spacing: .16em; }
+
+  /* Tabela w pięciu kolumnach nie mieści się na telefonie, a scroll poziomy
+     ukrywa połowę treści. Każdy wiersz zwija się w kartę z podpisami pól. */
+  .tbl-scroll { overflow-x: visible; }
+  .tbl, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
+  .tbl thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .tbl tr { display: flex; flex-direction: column; padding: .95rem 1rem; border-bottom: 1px solid var(--line); }
+  .tbl tr:last-child { border-bottom: 0; }
+  .tbl td { border: 0; padding: .12rem 0; display: flex; justify-content: space-between; gap: 1.2rem; }
+  .tbl td::before {
+    content: attr(data-l); flex: none;
+    font-family: var(--mono); font-size: .56rem; letter-spacing: .15em;
+    text-transform: uppercase; color: var(--fg-faint); padding-top: .18rem;
+  }
+  .tbl td.tbl__nw { white-space: normal; text-align: right; }
+  .tbl td.tbl__t { order: -1; display: block; margin-bottom: .55rem; font-size: 1.02rem; }
+  .tbl td.tbl__t::before { content: none; }
+  .tbl tr:hover td { background: none; }
+}
 
 .plot__hud {
   position: absolute; left: 0; right: 0; bottom: 0;
@@ -449,6 +511,29 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 }
 @keyframes beam { 0% { transform: translateX(-50%) rotate(9deg) } 100% { transform: translateX(-50%) rotate(-7deg) } }
 .hero h1 { max-width: 17ch; }
+
+/* Po prawej od tytułu było pusto. Ekran radaru pokazuje rdzeń dowodowy:
+   kąt to długość geograficzna sprawy, promień to jej wiek. */
+.hero__grid { display: grid; gap: clamp(2.5rem, 6vw, 4rem); align-items: center; }
+@media (min-width: 1040px) { .hero__grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); } }
+.scope { margin: 0; display: grid; gap: 1.1rem; justify-items: center; }
+.scope > svg { display: block; width: min(100%, 340px); height: auto; }
+.scope__blip .scope__dot { fill: var(--c); }
+.scope__blip .scope__halo { fill: none; stroke: var(--c); stroke-width: 1; opacity: 0; transform-origin: center; transform-box: fill-box; }
+@media (prefers-reduced-motion: no-preference) {
+  .scope__sweep { transform-origin: 130px 130px; animation: scopespin 7s linear infinite; }
+  .scope__blip .scope__halo { animation: scopeblip 7s ease-out infinite; animation-delay: var(--d); }
+}
+@keyframes scopespin { to { transform: rotate(360deg); } }
+@keyframes scopeblip {
+  0%   { opacity: .9; transform: scale(.5); }
+  22%,100% { opacity: 0; transform: scale(2.2); }
+}
+.scope__read { display: flex; gap: 1.6rem; flex-wrap: wrap; justify-content: center; margin: 0; }
+.scope__read span { display: flex; flex-direction: column; align-items: center; gap: .2rem; }
+.scope__read b { font-family: var(--mono); font-size: 1.05rem; color: var(--phos); font-weight: 700; letter-spacing: -.01em; }
+.scope__read span { font-family: var(--mono); font-size: .58rem; letter-spacing: .17em; text-transform: uppercase; color: #7C8A87; }
+.scope__key { margin: 0; font-family: var(--mono); font-size: .55rem; letter-spacing: .13em; text-transform: uppercase; color: var(--fg-faint); text-align: center; max-width: 46ch; line-height: 1.6; }
 .hero__kicker { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.6rem; }
 .hero__kicker i { display: block; width: 34px; height: 1px; background: var(--phos-dim); }
 
@@ -463,7 +548,8 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .foot { border-top: 1px solid var(--line); padding-block: 3rem 4rem; margin-top: 4rem; }
 .foot__grid { display: grid; gap: 2.2rem; }
 @media (min-width: 820px) { .foot__grid { grid-template-columns: 1.6fr 1fr 1fr; } }
-.foot a { color: var(--fg-dim); border: 0; display: block; padding: .22rem 0; font-size: .9rem; }
+/* :not(.logo), bo display:block zabijał flexa w znaku i rozjeżdżał go z nazwą */
+.foot a:not(.logo) { color: var(--fg-dim); border: 0; display: block; padding: .22rem 0; font-size: .9rem; }
 .foot a:hover { color: var(--phos); }
 
 /* ============================================================ POMOCNICZE */
@@ -486,7 +572,7 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .lang__sep { color: var(--line-2); }
 
 /* ============================================================ TOOLKIT */
-.tk { display: grid; gap: 2rem; }
+.tk { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
 @media (min-width: 940px) { .tk { grid-template-columns: minmax(0,1fr) minmax(0,1.15fr); gap: 2.5rem; } }
 .tk__controls { display: grid; gap: 1.15rem; align-content: start; }
 .tk__f label { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: .5rem; }

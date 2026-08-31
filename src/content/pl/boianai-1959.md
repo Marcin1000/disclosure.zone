@@ -14,7 +14,7 @@ alternatives:
 - "Rzeczywisty niezidentyfikowany obiekt."
 sources:
 - label: "Relacja ks. Williama Gilla spisana na bieżąco, z 38 podpisami, czerwiec 1959"
-  note: "Spisana w ciągu godzin i podpisana przez wszystkich świadków — proceduralnie wyjątkowe jak na tamten czas i miejsce."
+  note: "Spisana w ciągu godzin i podpisana przez wszystkich świadków, proceduralnie wyjątkowe jak na tamten czas i miejsce."
 - label: "Późniejsza korespondencja RAAF i wywiady badaczy"
 ---
 
@@ -31,13 +31,13 @@ spodków.
 ## Dlaczego to nadal ocena „relacja”
 
 Nie ma przyrządu. Nie ma zdjęcia, radaru ani śladu. Cała sprawa opiera się na tym, co powiedziało
-trzydzieści osiem osób — zapisane bez zarzutu, ale nadal tylko tyle.
+trzydzieści osiem osób, zapisane bez zarzutu, ale nadal tylko tyle.
 
 ## Zarzut z Wenus, postawiony uczciwie
 
 Wyjaśnienie sceptyczne to Wenus, która była jasna i właściwie położona. Tłumaczy nieruchomy świetlisty
 obiekt przez wiele godzin. Znacznie gorzej tłumaczy raportowaną strukturę i postacie. Żadna strona nie
-zamknie sporu, bo jedyna rzecz, która by to zrobiła — fotografia, pomiar namiaru — nigdy nie powstała.
+zamknie sporu, bo jedyna rzecz, która by to zrobiła, fotografia, pomiar namiaru, nigdy nie powstała.
 
 Boianai jest sufitem tego, co samo ludzkie zeznanie może osiągnąć. Ten sufit jest niżej, niż ludzie
 przypuszczają, i wiedzieć dokładnie gdzie się znajduje jest użyteczne.

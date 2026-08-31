@@ -13,7 +13,7 @@ alternatives:
 - "Nadinterpretacja przez agencję prasową doniesienia lokalnego."
 sources:
 - "label": "Depesza agencji TASS, wrzesień 1989"
-  note: "Depesza agencji prasowej nie jest dokumentem dochodzeniowym — to źródło klasy T5, mimo państwowego charakteru agencji."
+  note: "Depesza agencji prasowej nie jest dokumentem dochodzeniowym: to źródło klasy T5, mimo państwowego charakteru agencji."
 ---
 
 ## Ostrzeżenie metodologiczne: „oficjalne" nie znaczy „dochodzeniowe"
@@ -23,4 +23,4 @@ lądowanie UFO". W rzeczywistości mamy **depeszę agencji prasowej**, nie rapor
 badawczej.
 
 Państwowy charakter nadawcy nie podnosi klasy źródła. Liczy się, czy za komunikatem stoi
-dochodzenie — a nie kto go opublikował. To rozróżnienie stosujemy konsekwentnie w całej bazie.
+dochodzenie, a nie kto go opublikował. To rozróżnienie stosujemy konsekwentnie w całej bazie.

@@ -9,7 +9,7 @@ witnesses: "Załoga F/A-18, komentarz radiowy w czasie rzeczywistym na nagraniu"
 summary: "Nagranie ATFLIR pokazujące obiekt o kształcie soczewki, który w trakcie materiału wykonuje wyraźny obrót o ok. 90°. Na ścieżce dźwiękowej słychać zaskoczenie załogi. Departament Obrony potwierdził autentyczność materiału."
 official: "DoD potwierdził autentyczność nagrania; zdarzenie pozostaje niezidentyfikowane."
 alternatives:
-- "Obrót obrazu wynikający z pracy gimbala ATFLIR przy przejściu przez określony kąt — kształt obiektu pozostaje stały, obraca się układ odniesienia sensora."
+- "Obrót obrazu wynikający z pracy gimbala ATFLIR przy przejściu przez określony kąt, kształt obiektu pozostaje stały, obraca się układ odniesienia sensora."
 - "Sygnatura termiczna silnika odległego samolotu widziana od tyłu (glare przesłaniający rzeczywisty kształt)."
 - "Rzeczywisty obiekt wykonujący obrót."
 sources:
@@ -21,12 +21,12 @@ sources:
 ## Rdzeń sporu
 
 GIMBAL jest najczęściej przywoływany ze względu na obrót obiektu. Jest to element, który
-najtrudniej pogodzić ze znaną technologią — i jednocześnie element najbardziej podatny na
+najtrudniej pogodzić ze znaną technologią i jednocześnie element najbardziej podatny na
 wyjaśnienie instrumentalne.
 
 System ATFLIR jest zamocowany na gimbalu, który przy określonych kątach obserwacji **przetacza
 układ odniesienia obrazu**. W takim przypadku obraca się nie obiekt, tylko rama, w której go
-widzimy — a obiekt o stałym kształcie sprawia wrażenie obracającego się.
+widzimy, a obiekt o stałym kształcie sprawia wrażenie obracającego się.
 
 Rozstrzygnięcie wymaga **metadanych podu**: kąta gimbala w każdej klatce, trybu pracy, odległości
 do celu. Te dane istnieją. Nie są publiczne.

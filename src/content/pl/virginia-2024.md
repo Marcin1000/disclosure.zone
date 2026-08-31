@@ -1,6 +1,6 @@
 ---
 title: "Aktywna sprawa u wybrzeży Wirginii"
-subtitle: "Około stu obiektów powietrznych i dwa systemy nawodne — sprawa nadal otwarta"
+subtitle: "Około stu obiektów powietrznych i dwa systemy nawodne, sprawa nadal otwarta"
 dateDisplay: "2024–2025"
 countryName: "Stany Zjednoczone"
 location: "Wody i przestrzeń powietrzna u wybrzeży Wirginii"
@@ -23,7 +23,7 @@ współczesne sensory, aktywne dochodzenie instytucjonalne i istniejące, cyfrow
 
 Jest też ilustracją najważniejszej zmiany, jaka zaszła w dziedzinie po 2020 r.: granica między
 „UAP" a „nieznanym dronem" przestała być ostra. Znaczna część współczesnych zgłoszeń dotyczy
-systemów bezzałogowych o nieustalonym operatorze — co jest problemem bezpieczeństwa państwa
+systemów bezzałogowych o nieustalonym operatorze, co jest problemem bezpieczeństwa państwa
 niezależnie od tego, kto nimi steruje.
 
 ## Element, który zasługuje na uwagę osobno

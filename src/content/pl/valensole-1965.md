@@ -9,9 +9,9 @@ duration: "kilka minut"
 summary: "Plantator lawendy zgłosił owalny obiekt, który wylądował na jego polu, oraz dwie małe postacie obok niego. Żandarmi udokumentowali ślady w gruncie tego samego dnia. Dotknięty fragment lawendy miał przez lata nie rosnąć normalnie."
 official: "Dochodzenie żandarmerii; sprawa włączona później do archiwum GEIPAN. Nierozstrzygnięta."
 alternatives:
-- "Mistyfikacja — trudna do pogodzenia z udokumentowaną niechęcią świadka do mówienia o zdarzeniu i brakiem jakiejkolwiek korzyści."
+- "Mistyfikacja, trudna do pogodzenia z udokumentowaną niechęcią świadka do mówienia o zdarzeniu i brakiem jakiejkolwiek korzyści."
 - "Test tajnego statku powietrznego lub pojazdu w regionie wykorzystywanym wojskowo."
-- "Błędnie zidentyfikowany śmigłowiec — słabo pasuje do śladów w gruncie."
+- "Błędnie zidentyfikowany śmigłowiec, słabo pasuje do śladów w gruncie."
 sources:
 - label: "Protokół żandarmerii francuskiej z 1 lipca 1965, w archiwum GEIPAN"
 - label: "Późniejsze obserwacje agronomiczne dotkniętego fragmentu pola"

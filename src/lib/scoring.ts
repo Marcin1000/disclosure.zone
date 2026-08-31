@@ -40,7 +40,7 @@ export type EvidenceClass = 'A' | 'B' | 'C' | 'D';
 export function evidenceClass(s: Scores): { c: EvidenceClass; label: Bi } {
   const o = overall(s);
   const instrumental = s.R >= 3 || s.O >= 3 || s.P >= 3;
-  if (o >= 3.6 && instrumental && s.M >= 4) return { c: 'A', label: { en: 'Evidential core', pl: 'Rdzeń dowodowy' } };
+  if (o >= 3.6 && instrumental && s.M >= 4) return { c: 'A', label: { en: 'Evidential core', pl: 'Sprawa kluczowa' } };
   if (o >= 2.8 && instrumental)             return { c: 'B', label: { en: 'Strong documentation', pl: 'Mocna dokumentacja' } };
   if (o >= 2.0)                             return { c: 'C', label: { en: 'Material gaps', pl: 'Istotne luki' } };
   return { c: 'D', label: { en: 'Testimony only', pl: 'Głównie relacja' } };
@@ -84,11 +84,11 @@ export const TIER_LABEL: Record<string, Bi> = {
 
 export const TIER_DESC: Record<string, Bi> = {
   T1: { en: 'Operational report, case file, gendarmerie protocol, lab result — produced close to the event.',
-        pl: 'Raport operacyjny, akta sprawy, protokół żandarmerii, wynik laboratoryjny — dokument powstały blisko zdarzenia.' },
+        pl: 'Raport operacyjny, akta sprawy, protokół żandarmerii, wynik laboratoryjny, dokument powstały blisko zdarzenia.' },
   T2: { en: 'Institutional confirmation: ministry statement, authenticity release, agency determination.',
         pl: 'Potwierdzenie instytucji: komunikat resortu, oświadczenie o autentyczności materiału, rozstrzygnięcie agencji.' },
   T3: { en: 'Witness account given under legal weight — congressional testimony, sworn statement.',
-        pl: 'Relacja świadka złożona z rygorem prawnym — zeznanie przed komisją, oświadczenie pod przysięgą.' },
+        pl: 'Relacja świadka złożona z rygorem prawnym, zeznanie przed komisją, oświadczenie pod przysięgą.' },
   T4: { en: 'Interview, memoir or reconstruction produced years after the event. The layer most prone to growth.',
         pl: 'Wywiad, wspomnienie lub rekonstrukcja powstała lata po zdarzeniu. Warstwa najbardziej podatna na narastanie.' },
   T5: { en: 'A claim circulating without documentary backing. Recorded because it shapes how a case is read.',

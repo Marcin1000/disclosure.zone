@@ -24,4 +24,4 @@ spraw w korpusie, w których raportowany jest konflikt między działaniem pilot
 instrumentu.
 
 Jednocześnie: nie zachował się zapis rejestratora. Mamy odczyt zapamiętany i zaraportowany przez
-załogę, a nie zapis maszynowy. Cztery niezależne relacje to dużo — ale to nadal relacje.
+załogę, a nie zapis maszynowy. Cztery niezależne relacje to dużo, ale to nadal relacje.

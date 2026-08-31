@@ -9,8 +9,8 @@ witnesses: "2 pilotów liniowych, 1 pasażer"
 summary: "Dwaj piloci Eastern Air Lines zgłosili minięcie dużego, cygaropodobnego obiektu z rzędem jasnych okien i płomieniem z tyłu. Sprawa była jednym z filarów wewnętrznego dokumentu Project SIGN sugerującego hipotezę międzyplanetarną."
 official: "Blue Book ostatecznie zaklasyfikował zdarzenie jako bolid (meteor)."
 alternatives:
-- "Jasny bolid rozpadający się w atmosferze — „okna\" jako fragmenty w rozpadzie, obserwowane w ułamku sekundy."
-- "Rzeczywisty obiekt o konstrukcji cygara — brak jakiegokolwiek potwierdzenia instrumentalnego."
+- "Jasny bolid rozpadający się w atmosferze, „okna\" jako fragmenty w rozpadzie, obserwowane w ułamku sekundy."
+- "Rzeczywisty obiekt o konstrukcji cygara, brak jakiegokolwiek potwierdzenia instrumentalnego."
 sources:
 - "label": "Akta Project SIGN / Blue Book, sprawa Chiles–Whitted"
 - "label": "Relacje o dokumencie „Estimate of the Situation\""
@@ -23,11 +23,11 @@ To Chiles–Whitted była jednym z głównych przypadków, na których zespół 
 wewnętrzny dokument sugerujący pozaziemskie pochodzenie części obserwacji.
 
 Kluczowe: **dokument nie zachował się w archiwach**. Cała nasza wiedza o nim pochodzi z relacji
-zebranych później. To czyni go interesującym tropem historycznym, ale nie dowodem — ani na
+zebranych później. To czyni go interesującym tropem historycznym, ale nie dowodem, ani na
 istnienie ukrywanej wiedzy, ani na jej brak.
 
 ## Dlaczego bolid jest mocnym wyjaśnieniem
 
 Obserwacja trwała kilka sekund w nocy, przy bardzo szybkim ruchu kątowym. W takich warunkach mózg
 domyka „okna" i strukturę tam, gdzie ich nie ma. Jasny, rozpadający się bolid obserwowany z boku
-daje dokładnie taki obraz, jaki opisali piloci — łącznie z wrażeniem cygara ciągnącego płomień.
+daje dokładnie taki obraz, jaki opisali piloci, łącznie z wrażeniem cygara ciągnącego płomień.

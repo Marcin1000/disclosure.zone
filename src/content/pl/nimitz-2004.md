@@ -1,6 +1,6 @@
 ---
 title: "USS Nimitz / Tic Tac"
-subtitle: "Najważniejszy współczesny przypadek UAP — i najlepszy przykład granicy między zeznaniem a pomiarem"
+subtitle: "Najważniejszy współczesny przypadek UAP i najlepszy przykład granicy między zeznaniem a pomiarem"
 dateDisplay: "14 listopada 2004"
 countryName: "Stany Zjednoczone"
 location: "Pacyfik, rejon ćwiczeń Carrier Strike Group 11, na zachód od Kalifornii"
@@ -10,7 +10,7 @@ summary: "Podczas ćwiczeń grupy lotniskowcowej operatorzy radaru SPY-1 na USS 
 official: "Departament Obrony USA potwierdził w 2020 r. autentyczność nagrania jako materiału Marynarki Wojennej i zaklasyfikował zdarzenie jako niezidentyfikowane. Potwierdzenie autentyczności nagrania nie jest identyfikacją obiektu."
 alternatives:
 - "Kombinacja niezależnych zdarzeń: nietypowe ślady radarowe (możliwe problemy z aktualizacją oprogramowania SPY-1 w tamtym okresie), niezależne zjawisko na powierzchni oceanu, obserwacja obiektu o błędnie ocenionej odległości."
-- "Balon lub obiekt dryfujący przy błędnej ocenie odległości i rozmiaru — trudno godzi się z relacją o reakcji obiektu na manewr."
+- "Balon lub obiekt dryfujący przy błędnej ocenie odległości i rozmiaru, trudno godzi się z relacją o reakcji obiektu na manewr."
 - "Statek powietrzny własny w programie niejawnym."
 - "Nieznana technologia."
 sources:
@@ -26,12 +26,12 @@ sources:
 Największy błąd w literaturze o Nimitz polega na traktowaniu tego jako jednej ciągłej ścieżki
 sensorycznej. To są **pięć osobnych warstw**, o różnej wartości dowodowej:
 
-1. **Ślady radarowe SPY-1 w dniach poprzedzających** — źródło: relacje operatora, nie surowy zapis.
-2. **Obserwacja wzrokowa Fravora i Dietrich** — czterech świadków, zeznania pod przysięgą.
-3. **Ponowne wykrycie radarowe po utracie kontaktu** — źródło: relacja przekazana pilotowi przez
+1. **Ślady radarowe SPY-1 w dniach poprzedzających**, źródło: relacje operatora, nie surowy zapis.
+2. **Obserwacja wzrokowa Fravora i Dietrich**, czterech świadków, zeznania pod przysięgą.
+3. **Ponowne wykrycie radarowe po utracie kontaktu**, źródło: relacja przekazana pilotowi przez
    kontrolera.
-4. **Nagranie FLIR1** — autentyczne, potwierdzone przez DoD, wykonane podczas **kolejnego lotu**.
-5. **Późniejsze rekonstrukcje i analizy** — warstwa wtórna.
+4. **Nagranie FLIR1**, autentyczne, potwierdzone przez DoD, wykonane podczas **kolejnego lotu**.
+5. **Późniejsze rekonstrukcje i analizy**, warstwa wtórna.
 
 Warstwy 2 i 4 dotyczą różnych lotów. Nie istnieje publicznie dostępny materiał, który dowodziłby,
 że obiekt widziany przez Fravora i obiekt na FLIR1 to ten sam obiekt.
@@ -53,7 +53,7 @@ wskazania radarowe dotyczyły tego samego obiektu, że nie było utraty i ponown
 
 **„Zejście z 80 000 ft w niecałą sekundę."** Pochodzi z relacji operatora radaru, nie z zapisu.
 
-**„Obiekt wszedł do oceanu."** Fravor sam zeznał, że **nie widzieli obiektu pod wodą** — widzieli
+**„Obiekt wszedł do oceanu."** Fravor sam zeznał, że **nie widzieli obiektu pod wodą**, widzieli
 zaburzenie powierzchni. Popularna wersja „transmedium" jest rozbudowaniem tego, czego świadek nie
 powiedział.
 
@@ -61,7 +61,7 @@ powiedział.
 
 Kierownictwo AARO stwierdziło publicznie, że urząd **nie dysponuje dodatkowymi danymi**
 pozwalającymi przeprowadzić pełną analizę tego zdarzenia. To nie jest obalenie sprawy ani jej
-potwierdzenie — to stwierdzenie, że materiał źródłowy nie wystarcza do rozstrzygnięcia.
+potwierdzenie: to stwierdzenie, że materiał źródłowy nie wystarcza do rozstrzygnięcia.
 
 ## Co by to rozstrzygnęło
 

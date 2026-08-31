@@ -21,7 +21,7 @@ const en = lang === 'en';
     <p class="lead dim">
       {en
         ? 'A score that cannot be checked is not a score. Below is the complete description of the scale, the weights and the editorial rules — enough for anyone to recompute our results and show us where we are wrong.'
-        : 'Ocena, której nie da się sprawdzić, nie jest oceną. Poniżej jest kompletny opis skali, wag i zasad redakcyjnych — wystarczający, żeby ktokolwiek mógł przeliczyć nasze wyniki i wykazać nam błąd.'}
+        : 'Ocena, której nie da się sprawdzić, nie jest oceną. Poniżej jest kompletny opis skali, wag i zasad redakcyjnych, wystarczający, żeby ktokolwiek mógł przeliczyć nasze wyniki i wykazać nam błąd.'}
     </p>
   </section>
 
@@ -35,7 +35,7 @@ const en = lang === 'en';
     <p>
       {en
         ? 'Two errors dominate this field and they are mirror images. First: “we do not know what it was, so it must be something extraordinary.” Second: “most cases have an ordinary explanation, so every case has one.” Both are unlicensed logical leaps, and both produce the same result — people stop looking at the data.'
-        : 'Dwa błędy dominują w tej dziedzinie i są lustrzane. Pierwszy: „nie wiemy, co to było, więc to musi być coś niezwykłego”. Drugi: „większość przypadków ma zwykłe wyjaśnienie, więc każdy przypadek je ma”. Oba są nieuprawnionymi skokami logicznymi i oba prowadzą do tego samego skutku — przestaje się patrzeć na dane.'}
+        : 'Dwa błędy dominują w tej dziedzinie i są lustrzane. Pierwszy: „nie wiemy, co to było, więc to musi być coś niezwykłego”. Drugi: „większość przypadków ma zwykłe wyjaśnienie, więc każdy przypadek je ma”. Oba są nieuprawnionymi skokami logicznymi i oba prowadzą do tego samego skutku, przestaje się patrzeć na dane.'}
     </p>
     <p>
       {en
@@ -48,7 +48,7 @@ const en = lang === 'en';
     <p>
       {en
         ? 'Every case is scored 0–5 on eight independent axes. The axes measure how well documented a case is, not how anomalous it is. A solved case can score highly if it is exemplarily documented — as the Chilean Navy footage of 2014 does.'
-        : 'Każda sprawa dostaje ocenę 0–5 na ośmiu niezależnych osiach. Osie mierzą jakość udokumentowania, a nie stopień niezwykłości. Sprawa wyjaśniona może mieć wysoką ocenę, jeśli jest wzorowo udokumentowana — i tak jest z chilijskim nagraniem z 2014 r.'}
+        : 'Każda sprawa dostaje ocenę 0–5 na ośmiu niezależnych osiach. Osie mierzą jakość udokumentowania, a nie stopień niezwykłości. Sprawa wyjaśniona może mieć wysoką ocenę, jeśli jest wzorowo udokumentowana i tak jest z chilijskim nagraniem z 2014 r.'}
     </p>
   </section>
 
@@ -83,12 +83,12 @@ const en = lang === 'en';
     </p>
 
     <h3>{en ? 'Evidence classes' : 'Klasy dowodowe'}</h3>
-    <p>{en ? 'A class is derived from the scores, deliberately modelled on the French GEIPAN scale:' : 'Z ocen wyliczana jest klasa — świadomie wzorowana na skali francuskiej agencji GEIPAN:'}</p>
+    <p>{en ? 'A class is derived from the scores, deliberately modelled on the French GEIPAN scale:' : 'Z ocen wyliczana jest klasa, świadomie wzorowana na skali francuskiej agencji GEIPAN:'}</p>
     <ul>
-      <li><strong>A — {en ? 'evidential core.' : 'rdzeń dowodowy.'}</strong> {en ? 'High score, instrumental evidence, many independent channels.' : 'Wysoka ocena, dowód instrumentalny, wiele niezależnych kanałów.'}</li>
-      <li><strong>B — {en ? 'strong documentation.' : 'mocna dokumentacja.'}</strong> {en ? 'Good score and at least one instrumental record.' : 'Dobra ocena i przynajmniej jeden dowód instrumentalny.'}</li>
-      <li><strong>C — {en ? 'material gaps.' : 'istotne luki.'}</strong> {en ? 'A real case with incomplete material.' : 'Sprawa realna, materiał niepełny.'}</li>
-      <li><strong>D — {en ? 'testimony only.' : 'głównie relacja.'}</strong> {en ? 'No evidence beyond an account.' : 'Brak dowodu poza zeznaniem.'}</li>
+      <li><strong>A{en ? ' — ' : ': '}{en ? 'evidential core.' : 'sprawa kluczowa.'}</strong> {en ? 'High score, instrumental evidence, many independent channels.' : 'Wysoka ocena, dowód instrumentalny, wiele niezależnych kanałów.'}</li>
+      <li><strong>B{en ? ' — ' : ': '}{en ? 'strong documentation.' : 'mocna dokumentacja.'}</strong> {en ? 'Good score and at least one instrumental record.' : 'Dobra ocena i przynajmniej jeden dowód instrumentalny.'}</li>
+      <li><strong>C{en ? ' — ' : ': '}{en ? 'material gaps.' : 'istotne luki.'}</strong> {en ? 'A real case with incomplete material.' : 'Sprawa realna, materiał niepełny.'}</li>
+      <li><strong>D{en ? ' — ' : ': '}{en ? 'testimony only.' : 'głównie relacja.'}</strong> {en ? 'No evidence beyond an account.' : 'Brak dowodu poza zeznaniem.'}</li>
     </ul>
 
     <h2>{en ? 'Five source tiers' : 'Pięć klas źródeł'}</h2>
@@ -127,8 +127,8 @@ const en = lang === 'en';
       <li><strong>{en ? 'Without range there is no speed.' : 'Bez odległości nie ma prędkości.'}</strong> {en ? 'Any claim of extreme performance requires a known range to target. Where there was none, we mark it as a claim, not a measurement.' : 'Każde twierdzenie o ekstremalnych osiągach wymaga znanej odległości do celu. Jeśli jej nie było, oznaczamy to jako twierdzenie, nie jako pomiar.'}</li>
       <li><strong>{en ? 'A measurement is not the same as a software product.' : 'Pomiar to nie to samo co produkt oprogramowania.'}</strong> {en ? 'An airborne radar shows the output of a tracking filter, not a raw position. An IR camera shows a projection onto an observation plane from a moving platform. Before calling anything extraordinary, we rule out sensor physics.' : 'Radar pokładowy pokazuje wynik filtru śledzącego, nie surową pozycję. Kamera IR pokazuje rzut na płaszczyznę obserwacji z ruchomej platformy. Zanim nazwiemy coś niezwykłym, wykluczamy fizykę sensora.'}</li>
       <li><strong>{en ? 'Without a chain of custody there is no material evidence.' : 'Bez łańcucha opieki nie ma dowodu materialnego.'}</strong> {en ? 'Analysis of a sample of unknown origin has no evidential value, however precise the analysis.' : 'Analiza próbki o nieznanym pochodzeniu nie ma wartości dowodowej, niezależnie od precyzji analizy.'}</li>
-      <li><strong>{en ? 'A missing link is visible.' : 'Brak odnośnika jest widoczny.'}</strong> {en ? 'Every case states how many of its sources have a link to the material. We do not hide gaps in provenance — that would be exactly what we criticise in others.' : 'Przy każdej sprawie podajemy, ile źródeł ma odnośnik do materiału. Nie ukrywamy luk w proweniencji — to byłoby dokładnie tym, co zarzucamy innym.'}</li>
-      <li><strong>{en ? 'A link to the archive is not a link to the document.' : 'Odnośnik do archiwum to nie odnośnik do dokumentu.'}</strong> {en ? 'Where we know which institution holds a record but cannot reach the record itself, we say so and point at the holding — but it does not count toward provenance. “We know where it is” and “here is the material” are different statements, and merging them is the easiest way to inflate an apparent evidence base.' : 'Gdy wiemy, która instytucja przechowuje dokument, ale nie mamy dostępu do samego dokumentu, mówimy to wprost i wskazujemy zbiór — ale nie liczy się to do proweniencji. „Wiemy, gdzie to leży” i „oto materiał” to dwa różne zdania, a ich łączenie jest najprostszym sposobem na zawyżenie pozornej bazy dowodowej.'}</li>
+      <li><strong>{en ? 'A missing link is visible.' : 'Brak odnośnika jest widoczny.'}</strong> {en ? 'Every case states how many of its sources have a link to the material. We do not hide gaps in provenance — that would be exactly what we criticise in others.' : 'Przy każdej sprawie podajemy, ile źródeł ma odnośnik do materiału. Nie ukrywamy luk w proweniencji: to byłoby dokładnie tym, co zarzucamy innym.'}</li>
+      <li><strong>{en ? 'A link to the archive is not a link to the document.' : 'Odnośnik do archiwum to nie odnośnik do dokumentu.'}</strong> {en ? 'Where we know which institution holds a record but cannot reach the record itself, we say so and point at the holding — but it does not count toward provenance. “We know where it is” and “here is the material” are different statements, and merging them is the easiest way to inflate an apparent evidence base.' : 'Gdy wiemy, która instytucja przechowuje dokument, ale nie mamy dostępu do samego dokumentu, mówimy to wprost i wskazujemy zbiór, ale nie liczy się to do proweniencji. „Wiemy, gdzie to leży” i „oto materiał” to dwa różne zdania, a ich łączenie jest najprostszym sposobem na zawyżenie pozornej bazy dowodowej.'}</li>
       <li><strong>{en ? 'The sceptical hypothesis is stated as carefully as any other.' : 'Hipotezę sceptyczną stawiamy tak samo starannie jak każdą inną.'}</strong> {en ? 'If a prosaic explanation has a weak point, we describe it. Scepticism is not exempt from the burden of proof.' : 'Jeśli wyjaśnienie prozaiczne ma słaby punkt, opisujemy go. Sceptycyzm nie jest zwolniony z obowiązku dowodowego.'}</li>
     </ol>
 
@@ -136,7 +136,7 @@ const en = lang === 'en';
     <p>
       {en
         ? 'It does not assign probabilities to the extraterrestrial hypothesis. We have no model that would license one, and a number produced without a model is worse than no number — because it looks like knowledge.'
-        : 'Nie przypisuje prawdopodobieństw hipotezie pozaziemskiej. Nie mamy modelu, który by na to pozwalał, a liczba wyprodukowana bez modelu jest gorsza niż jej brak — bo wygląda na wiedzę.'}
+        : 'Nie przypisuje prawdopodobieństw hipotezie pozaziemskiej. Nie mamy modelu, który by na to pozwalał, a liczba wyprodukowana bez modelu jest gorsza niż jej brak, bo wygląda na wiedzę.'}
     </p>
     <p>
       {en
@@ -148,7 +148,7 @@ const en = lang === 'en';
     <p>
       {en
         ? 'This database certainly contains errors. Its complete revision history is public — every score correction, every change of source tier and every factual fix is visible together with its reasoning. Provenance applies to us as well.'
-        : 'Ta baza na pewno zawiera błędy. Kompletna historia zmian jest publiczna — każda korekta oceny, każda zmiana klasy źródła i każda poprawka faktograficzna jest widoczna wraz z uzasadnieniem. Proweniencja dotyczy także nas.'}
+        : 'Ta baza na pewno zawiera błędy. Kompletna historia zmian jest publiczna, każda korekta oceny, każda zmiana klasy źródła i każda poprawka faktograficzna jest widoczna wraz z uzasadnieniem. Proweniencja dotyczy także nas.'}
     </p>
   </section>
 </Base>

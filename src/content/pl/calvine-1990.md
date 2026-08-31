@@ -9,8 +9,8 @@ witnesses: "2 (pracownicy sezonowi)"
 summary: "Dwóch młodych mężczyzn wykonało sześć fotografii dużego, statycznego obiektu w kształcie diamentu, w pobliżu którego przelatywał samolot wojskowy. Negatywy trafiły do Ministerstwa Obrony i zaginęły; jedna kopia ujawniona została dopiero w 2022 r."
 official: "MOD nie ujawniło rozstrzygnięcia. Oryginalne negatywy pozostają nieodnalezione."
 alternatives:
-- "Mistyfikacja z modelem — analiza ujawnionej kopii nie rozstrzyga ze względu na jakość reprodukcji."
-- "Tajny statek powietrzny w fazie prób — rejon Szkocji był wykorzystywany do lotów testowych."
+- "Mistyfikacja z modelem, analiza ujawnionej kopii nie rozstrzyga ze względu na jakość reprodukcji."
+- "Tajny statek powietrzny w fazie prób, rejon Szkocji był wykorzystywany do lotów testowych."
 - "Zjawisko optyczne / odbicie."
 sources:
 - "label": "Kopia fotografii i korespondencja MOD, ujawnione publicznie w 2022 r."
@@ -23,7 +23,7 @@ Calvine jest najlepszym w bazie przykładem tego, jak **utrata materiału źród
 bez rozstrzygnięcia**.
 
 Istniało sześć negatywów. Trafiły do instytucji państwowej. Nie ma ich. Wszystko, co dziś
-analizujemy, to reprodukcja reprodukcji — na której nie da się przeprowadzić analizy ziarna,
+analizujemy, to reprodukcja reprodukcji, na której nie da się przeprowadzić analizy ziarna,
 ostrości ani głębi ostrości, czyli dokładnie tych badań, które rozstrzygnęłyby kwestię modelu na
 żyłce.
 

@@ -6,10 +6,10 @@ countryName: "Stany Zjednoczone"
 location: "Farma w pobliżu Delphos, hrabstwo Ottawa, Kansas"
 witnesses: "Nastoletni chłopiec, następnie jego rodzice; badacze pobrali próbki z miejsca"
 duration: "kilka minut"
-summary: "Chłopiec z farmy zgłosił obiekt w kształcie grzyba, który zawisł i odleciał, zostawiając na ziemi świecący pierścień. Gleba w pierścieniu stała się silnie hydrofobowa — latami odpychała wodę — i była analizowana przez kilka laboratoriów bez zgody co do przyczyny."
+summary: "Chłopiec z farmy zgłosił obiekt w kształcie grzyba, który zawisł i odleciał, zostawiając na ziemi świecący pierścień. Gleba w pierścieniu stała się silnie hydrofobowa, latami odpychała wodę i była analizowana przez kilka laboratoriów bez zgody co do przyczyny."
 official: "Brak dochodzenia federalnego; Blue Book był już zamknięty. Sprawę badali naukowcy cywilni."
 alternatives:
-- "Pierścień grzybni — część grzybów glebowych wytwarza hydrofobową grzybnię i rośnie kołowo. Wyjaśnienie wiodące, kwestionowane ze względu na ostrość granicy i głębokość efektu."
+- "Pierścień grzybni, część grzybów glebowych wytwarza hydrofobową grzybnię i rośnie kołowo. Wyjaśnienie wiodące, kwestionowane ze względu na ostrość granicy i głębokość efektu."
 - "Wyciek chemiczny lub pozostałości rolnicze."
 - "Rzeczywista interakcja fizyczna z niezidentyfikowanym obiektem."
 sources:
@@ -38,6 +38,6 @@ odczytowi grzybowemu i uczciwe potraktowanie sprawy musi to powiedzieć.
 ## Dlaczego stoi tam, gdzie stoi
 
 Jeden młody świadek, brak radaru, brak obserwatora potwierdzającego w momencie zdarzenia. Ale
-**ślad przeżył relację świadka o lata i mógł być mierzony przez obcych ludzi** — a to dokładnie ta
+**ślad przeżył relację świadka o lata i mógł być mierzony przez obcych ludzi**, a to dokładnie ta
 własność, która czyni Trans-en-Provence cennym, i dokładnie to, czego sprawy uprowadzeń nigdy nie
 zaoferują.

@@ -1,5 +1,5 @@
 ---
-title: "USS Russell — „piramidy\""
+title: "USS Russell, „piramidy\""
 subtitle: "Trójkątne obiekty, które są kształtem przysłony obiektywu"
 dateDisplay: "lipiec 2019"
 countryName: "Stany Zjednoczone"
@@ -9,7 +9,7 @@ witnesses: "Załoga USS Russell"
 summary: "Nagranie noktowizyjne pokazujące trójkątne, migoczące obiekty nad okrętem. Materiał obiegł świat jako dowód na pojazdy o konstrukcji piramidalnej."
 official: "Marynarka Wojenna potwierdziła autentyczność nagrania. Analiza wskazuje, że trójkątny kształt jest artefaktem optycznym."
 alternatives:
-- "Rozogniskowane punkty świetlne (samoloty, gwiazdy) rejestrowane przez noktowizor z trójkątną przysłoną — bokeh przyjmuje kształt przysłony obiektywu."
+- "Rozogniskowane punkty świetlne (samoloty, gwiazdy) rejestrowane przez noktowizor z trójkątną przysłoną, bokeh przyjmuje kształt przysłony obiektywu."
 sources:
 - "label": "Nagranie noktowizyjne z USS Russell"
 - "label": "Potwierdzenie autentyczności przez Marynarkę Wojenną"

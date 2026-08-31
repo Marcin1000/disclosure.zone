@@ -6,11 +6,11 @@ countryName: "Stany Zjednoczone"
 location: "Strefy ćwiczeń nad Atlantykiem, od Wirginii po Florydę"
 duration: "seria zdarzeń przez wiele miesięcy"
 witnesses: "Wielu pilotów Marynarki Wojennej z eskadr wschodniego wybrzeża"
-summary: "Po modernizacji radarów AESA piloci Marynarki Wojennej zaczęli regularnie rejestrować obiekty w strefach treningowych nad Atlantykiem — w niektórych relacjach niemal codziennie. Seria doprowadziła do zmiany procedur zgłaszania i, pośrednio, do powstania AARO."
+summary: "Po modernizacji radarów AESA piloci Marynarki Wojennej zaczęli regularnie rejestrować obiekty w strefach treningowych nad Atlantykiem, w niektórych relacjach niemal codziennie. Seria doprowadziła do zmiany procedur zgłaszania i, pośrednio, do powstania AARO."
 official: "Marynarka Wojenna wprowadziła formalne procedury raportowania UAP. Zdarzenia pozostają w większości niezidentyfikowane."
 alternatives:
 - "Systemy bezzałogowe (własne lub obce) operujące w strefach ćwiczeń."
-- "Balony i obiekty dryfujące — część przypadków została później tak zidentyfikowana."
+- "Balony i obiekty dryfujące, część przypadków została później tak zidentyfikowana."
 - "Artefakty nowego, znacznie czulszego radaru AESA, wcześniej niewidoczne dla starszego sprzętu."
 sources:
 - "label": "Zeznania pilotów Marynarki Wojennej, w tym publiczne wystąpienia przed Kongresem"

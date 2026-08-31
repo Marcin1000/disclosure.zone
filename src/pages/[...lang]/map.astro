@@ -16,9 +16,18 @@ const points: PlotPoint[] = all.map(c => ({
   year: c.data.dateDisplay, tier: c.data.tier, status: c.data.status,
   href: path(lang, `/cases/${c.id}`),
 }));
+const STATUS_ORDER = ['unresolved', 'insufficient', 'explained', 'disputed'] as const;
 const byCountry = [...new Set(all.map(c => c.data.country))]
-  .map(k => ({ k, name: all.find(c => c.data.country === k)!.data.countryName, n: all.filter(c => c.data.country === k).length }))
+  .map(k => {
+    const mine = all.filter(c => c.data.country === k);
+    return {
+      k, name: mine[0].data.countryName, n: mine.length,
+      // rozbicie na statusy — z tego powstaje pasek w widoku mobilnym
+      seg: STATUS_ORDER.map(st => ({ st, n: mine.filter(c => c.data.status === st).length })).filter(x => x.n),
+    };
+  })
   .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, lang));
+const maxN = Math.max(...byCountry.map(c => c.n));
 const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explained' ? 'var(--phos)'
   : k === 'disputed' ? 'var(--stamp-2)' : 'var(--fg-faint)';
 ---
@@ -31,19 +40,35 @@ const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explaine
 
   <section class="wrap">
     <WorldPlot points={points} lang={lang} />
-    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1rem">
+
+    {/* Świat w 360 px to plamka. Na telefonie ten sam rozkład czyta się z pasków. */}
+    <div class="geo" data-geo>
+      {byCountry.map(c => (
+        <button class="geo__row" data-c={c.k} aria-pressed="false">
+          <span class="geo__name">{c.name}</span>
+          <span class="geo__n">{c.n}</span>
+          <span class="geo__bar" style={`--w:${(c.n / maxN * 100).toFixed(1)}%`}>
+            {c.seg.map(g => (
+              <i style={`flex:${g.n};background:${dot(g.st)}`} title={`${bi(STATUS[g.st].label, lang)}: ${g.n}`}></i>
+            ))}
+          </span>
+        </button>
+      ))}
+    </div>
+
+    <div class="legend">
       {Object.entries(STATUS).map(([k, v]) => (
-        <span class="label" style="display:flex;align-items:center;gap:.5rem">
-          <i style={`width:8px;height:8px;border-radius:50%;background:${dot(k)}`}></i>{bi(v.label, lang)}
+        <span class="label">
+          <i style={`background:${dot(k)}`}></i>{bi(v.label, lang)}
         </span>
       ))}
-      <span class="label" style="color:var(--phos-dim)">{t('map.core')}</span>
+      <span class="label legend__core">{t('map.core')}</span>
     </div>
   </section>
 
-  <section class="wrap section--tight">
+  <section class="wrap section--tight sec--desk">
     <p class="label" style="margin-bottom:.7rem">{t('map.pick')}</p>
-    <div class="filters" data-rail>
+    <div class="filters filters--desk" data-rail>
       <button class="f" data-c="" aria-pressed="true">{t('map.world')} <b>{all.length}</b></button>
       {byCountry.map(c => <button class="f" data-c={c.k} aria-pressed="false">{c.name} <b>{c.n}</b></button>)}
     </div>
@@ -59,12 +84,12 @@ const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explaine
         <tbody>
           {all.map(c => (
             <tr data-row data-country={c.data.country}>
-              <td class="mono" style="white-space:nowrap;font-size:.85rem">{c.data.dateDisplay}</td>
-              <td><a href={path(lang, `/cases/${c.id}`)}><strong>{c.data.title}</strong></a>
+              <td class="mono tbl__nw" data-l={t('map.thDate')} style="font-size:.85rem">{c.data.dateDisplay}</td>
+              <td class="tbl__t"><a href={path(lang, `/cases/${c.id}`)}><strong>{c.data.title}</strong></a>
                 {c.data.tier === 1 && <span class="label" style="color:var(--amber);margin-left:.5rem">◆</span>}</td>
-              <td>{c.data.countryName}</td>
-              <td>{bi(STATUS[c.data.status].label, lang)}</td>
-              <td class="mono" style="white-space:nowrap;font-size:.8rem;color:var(--fg-faint)">
+              <td data-l={t('map.thCountry')}>{c.data.countryName}</td>
+              <td data-l={t('map.thStatus')}>{bi(STATUS[c.data.status].label, lang)}</td>
+              <td class="mono tbl__nw" data-l={t('map.thPos')} style="font-size:.8rem;color:var(--fg-faint)">
                 {Math.abs(c.data.lat).toFixed(1)}° {c.data.lat >= 0 ? 'N' : 'S'} · {Math.abs(c.data.lon).toFixed(1)}° {c.data.lon >= 0 ? 'E' : 'W'}
               </td>
             </tr>
@@ -81,7 +106,7 @@ const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explaine
       const rows = [...document.querySelectorAll('[data-row]')];
       const marks = [...document.querySelectorAll('[data-mk]')];
       const lands = [...document.querySelectorAll('.plot__land--has')];
-      const rail = [...document.querySelectorAll('[data-rail] .f')];
+      const rail = [...document.querySelectorAll('[data-rail] .f, [data-geo] .geo__row')];
       let sel = '';
       function select(c) {
         sel = sel === c ? '' : c;

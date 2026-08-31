@@ -6,10 +6,10 @@ countryName: "Brazylia"
 location: "Wyspa Trindade, Atlantyk Południowy; pokład NE Almirante Saldanha"
 witnesses: "Załoga okrętu i cywilni uczestnicy ekspedycji; fotograf był zawodowcem"
 duration: "ok. 15 sekund"
-summary: "Fotograf na pokładzie okrętu brazylijskiej marynarki wykonał cztery zdjęcia obiektu w kształcie Saturna mijającego wyspę. Marynarka zbadała negatywy, a zdjęcia ujawniono publicznie z poparciem prezydenta Brazylii — to niezwykle wysoki szczebel interwencji."
+summary: "Fotograf na pokładzie okrętu brazylijskiej marynarki wykonał cztery zdjęcia obiektu w kształcie Saturna mijającego wyspę. Marynarka zbadała negatywy, a zdjęcia ujawniono publicznie z poparciem prezydenta Brazylii: to niezwykle wysoki szczebel interwencji."
 official: "Marynarka Wojenna Brazylii oświadczyła, że nie widzi powodu, by kwestionować fotografie. Nie dokonano identyfikacji."
 alternatives:
-- "Mistyfikacja fotografa, który miał doświadczenie w fotografii trikowej — hipoteza podnoszona najczęściej."
+- "Mistyfikacja fotografa, który miał doświadczenie w fotografii trikowej, hipoteza podnoszona najczęściej."
 - "Samolot lub chmura soczewkowata przy błędnej ocenie skali."
 - "Rzeczywisty niezidentyfikowany obiekt."
 sources:
@@ -24,7 +24,7 @@ Trindade jest nietypowa pod jednym konkretnym względem: **głowa państwa osobi
 udostępnienie** zdjęć UFO wykonanych z okrętu wojennego. Nic porównywalnego nie wydarzyło się w USA.
 
 To fakt o zachowaniu instytucji, nie o obiekcie. Mówi nam, że marynarka po zbadaniu negatywów nie
-znalazła powodu, by nazwać je fałszerstwem — co jest stwierdzeniem istotnie mocniejszym niż „nie
+znalazła powodu, by nazwać je fałszerstwem, co jest stwierdzeniem istotnie mocniejszym niż „nie
 potrafimy tego zidentyfikować”.
 
 ## Dlaczego ocena pozostaje umiarkowana

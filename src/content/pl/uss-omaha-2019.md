@@ -9,7 +9,7 @@ witnesses: "Załogi kilku okrętów Marynarki Wojennej USA"
 summary: "Przez kilka nocy załogi okrętów raportowały wiele obiektów powietrznych operujących wokół grupy. Powstały nagrania w podczerwieni oraz zapisy w dziennikach okrętowych. Marynarka Wojenna potwierdziła autentyczność materiałów."
 official: "Marynarka Wojenna potwierdziła autentyczność nagrań i wpisów w dziennikach; sprawa pozostaje bez identyfikacji."
 alternatives:
-- "Bezzałogowe systemy powietrzne operowane z jednostki nawodnej — hipoteza wskazywana jako najbardziej prawdopodobna, zgodna z liczbą obiektów, czasem trwania i schematem lotu."
+- "Bezzałogowe systemy powietrzne operowane z jednostki nawodnej, hipoteza wskazywana jako najbardziej prawdopodobna, zgodna z liczbą obiektów, czasem trwania i schematem lotu."
 - "Obiekty prozaiczne w warunkach nocnych o niskiej rozdzielczości sensora."
 sources:
 - "label": "Nagrania IR i wyciągi z dzienników okrętowych, ujawnione w trybie FOIA"
@@ -23,7 +23,7 @@ zarejestrowane przez sensory i wpisane do dzienników okrętowych, a materiały 
 
 **Co nie jest potwierdzone:** że obiekty wchodziły do wody. Popularna wersja tej sprawy zawiera
 element „obiekt zniknął pod powierzchnią", którego publicznie dostępny materiał nie pokazuje w
-sposób rozstrzygający — utrata śladu na sensorze nie jest dowodem zanurzenia.
+sposób rozstrzygający, utrata śladu na sensorze nie jest dowodem zanurzenia.
 
 ## Najbardziej prawdopodobne wyjaśnienie i dlaczego to nie jest uspokajające
 

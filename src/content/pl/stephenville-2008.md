@@ -9,7 +9,7 @@ witnesses: "Kilkudziesięciu mieszkańców, w tym pilot i funkcjonariusz"
 summary: "Po fali zgłoszeń o dużym, cichym obiekcie ze światłami niezależni badacze uzyskali w trybie FOIA dane radarowe FAA, które wykazały niezidentyfikowany ślad w rejonie oraz aktywność myśliwców F-16, wcześniej zaprzeczaną przez bazę."
 official: "Baza lotnicza początkowo zaprzeczyła obecności swoich maszyn, następnie skorygowała stanowisko, potwierdzając loty treningowe F-16 tego wieczoru."
 alternatives:
-- "Flary i loty treningowe F-16 — potwierdzone; tłumaczą znaczną część obserwacji."
+- "Flary i loty treningowe F-16, potwierdzone; tłumaczą znaczną część obserwacji."
 - "Niezidentyfikowany ślad radarowy jako artefakt lub obiekt niewspółpracujący (bez transpondera)."
 - "Rzeczywisty duży obiekt."
 sources:

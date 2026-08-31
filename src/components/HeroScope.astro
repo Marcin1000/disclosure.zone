@@ -1,0 +1,68 @@
+---
+import { useT, type Lang } from '../i18n';
+
+export interface Blip { id: string; title: string; lon: number; year: number; status: string }
+interface Props { blips: Blip[]; cases: number; countries: number; span: string; lang: Lang }
+const { blips, cases, countries, span, lang } = Astro.props;
+const t = useT(lang);
+
+/* Kąt to długość geograficzna, promień to wiek liczony rangą, nie liczbą lat —
+   inaczej jedna sprawa z XVI wieku ścisnęłaby całą resztę przy krawędzi. */
+const R_IN = 34, R_OUT = 116;
+const ranked = [...blips].sort((a, b) => b.year - a.year);
+const marks = ranked.map((b, i) => {
+  const rad = (b.lon - 90) * Math.PI / 180;
+  const r = R_IN + (ranked.length > 1 ? i / (ranked.length - 1) : 0) * (R_OUT - R_IN);
+  return {
+    ...b,
+    x: +(130 + r * Math.cos(rad)).toFixed(2),
+    y: +(130 + r * Math.sin(rad)).toFixed(2),
+    delay: +(i * 0.19).toFixed(2),
+    color: b.status === 'unresolved' ? 'var(--amber)'
+      : b.status === 'disputed' ? 'var(--stamp-2)'
+      : b.status === 'explained' ? 'var(--phos)' : 'var(--fg-faint)',
+  };
+});
+const ticks = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
+---
+<figure class="scope" aria-label={t('scope.alt', { n: blips.length })}>
+  <svg viewBox="0 0 260 260" role="img">
+    <defs>
+      <radialGradient id="scopeBg" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#0B1A17" /><stop offset="1" stop-color="#060B0C" />
+      </radialGradient>
+      <linearGradient id="scopeSweep" x1="130" y1="130" x2="130" y2="14" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="var(--phos)" stop-opacity=".30" />
+        <stop offset="1" stop-color="var(--phos)" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+
+    <circle cx="130" cy="130" r="120" fill="url(#scopeBg)" />
+    {[40, 78, 116].map(r => <circle cx="130" cy="130" r={r} fill="none" stroke="var(--phos-dim)" stroke-width=".8" opacity=".34" />)}
+    <circle cx="130" cy="130" r="120" fill="none" stroke="var(--phos-dim)" stroke-width="1.2" opacity=".7" />
+    <path d="M130 10V250M10 130H250" stroke="var(--phos-dim)" stroke-width=".6" opacity=".26" />
+    {ticks.map(a => {
+      const rad = a * Math.PI / 180;
+      return <line x1={130 + 116 * Math.cos(rad)} y1={130 + 116 * Math.sin(rad)}
+                   x2={130 + 120 * Math.cos(rad)} y2={130 + 120 * Math.sin(rad)}
+                   stroke="var(--phos-dim)" stroke-width="1.4" opacity=".6" />;
+    })}
+
+    <g class="scope__sweep"><path d="M130 130 L74 22 A120 120 0 0 1 186 22 Z" fill="url(#scopeSweep)" /></g>
+
+    {marks.map(m => (
+      <g class="scope__blip" style={`--c:${m.color};--d:${m.delay}s`}>
+        <circle cx={m.x} cy={m.y} r="7" class="scope__halo" />
+        <circle cx={m.x} cy={m.y} r="2.6" class="scope__dot" />
+      </g>
+    ))}
+    <circle cx="130" cy="130" r="2" fill="var(--phos)" opacity=".8" />
+  </svg>
+
+  <figcaption class="scope__read">
+    <span><b>{cases}</b>{t('scope.cases')}</span>
+    <span><b>{countries}</b>{t('scope.countries')}</span>
+    <span><b>{span}</b>{t('scope.span')}</span>
+  </figcaption>
+  <p class="scope__key">{t('scope.key')}</p>
+</figure>

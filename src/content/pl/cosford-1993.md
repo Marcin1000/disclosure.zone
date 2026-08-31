@@ -9,9 +9,9 @@ duration: "kilka godzin"
 summary: "W ciągu jednej nocy personel RAF w dwóch bazach, policja i dziesiątki cywilów zgłosiły duży trójkątny obiekt oraz snop światła omiatający ziemię. Komórka UFO w MOD eskalowała sprawę wewnętrznie jako jedną z najpoważniejszych, jakimi się zajmowała."
 official: "Ocena MOD: zgłoszenia w znacznej mierze tłumaczy wejście w atmosferę rosyjskiego członu rakiety wcześniej tej nocy oraz operacja tankowania w powietrzu."
 alternatives:
-- "Wejście w atmosferę członu rakiety Kosmos, które tej nocy dało szeroko obserwowane bolidy nad Wielką Brytanią — tłumaczy czas i korytarz."
+- "Wejście w atmosferę członu rakiety Kosmos, które tej nocy dało szeroko obserwowane bolidy nad Wielką Brytanią, tłumaczy czas i korytarz."
 - "Tankowanie w powietrzu z użyciem reflektorów, tłumaczące późniejsze obserwacje niskiego przelotu."
-- "Tajny statek powietrzny — hipoteza, którą same akta MOD podnoszą i nie rozstrzygają."
+- "Tajny statek powietrzny, hipoteza, którą same akta MOD podnoszą i nie rozstrzygają."
 sources:
 - label: "Akta komórki UFO w MOD dotyczące incydentu w Cosford, The National Archives"
   note: "Zawierają wewnętrzną ocenę opisującą sprawę jako jedną z najpoważniejszych zgłoszonych."
@@ -26,7 +26,7 @@ Komórka UFO w MOD nie zbyła tego wzruszeniem ramion. Wewnętrzna ocena potrakt
 z najpoważniejszych otrzymanych, odnotowała, że raportowane osiągi obiektu przewyższają cokolwiek w
 brytyjskim inwentarzu, i eskalowała ją.
 
-To udokumentowany przypadek, w którym ministerstwo obrony na piśmie traktuje zgłoszenie UAP poważnie —
+To udokumentowany przypadek, w którym ministerstwo obrony na piśmie traktuje zgłoszenie UAP poważnie, 
 a nie plotka o takim przypadku.
 
 ## I dlaczego sprawa jest mimo to zaklasyfikowana jako wyjaśniona
@@ -41,4 +41,4 @@ przelotu.
 Powaga MOD i prozaiczne wyjaśnienie są **jednocześnie prawdziwe i nie stoją w sprzeczności.**
 Instytucja może słusznie uznać zgłoszenie za warte zbadania, a zgłoszenie i tak może mieć zwyczajną
 przyczynę. Traktowanie zaniepokojenia instytucji jako dowodu na nadzwyczajny obiekt to błąd
-kategorialny — i jeden z najczęstszych w tej dziedzinie.
+kategorialny i jeden z najczęstszych w tej dziedzinie.

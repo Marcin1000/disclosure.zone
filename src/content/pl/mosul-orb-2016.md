@@ -21,8 +21,8 @@ sources:
 Mosul Orb jest w bazie jako przykład **uczciwego „nie wiem" ze strony instytucji**.
 
 AARO mogło tego nagrania nie pokazywać albo dopasować do niego wyjaśnienie. Zamiast tego
-przedstawiło je publicznie z komentarzem, że danych jest za mało, by cokolwiek stwierdzić — i że
+przedstawiło je publicznie z komentarzem, że danych jest za mało, by cokolwiek stwierdzić i że
 brak rozstrzygnięcia nie oznacza nadzwyczajności.
 
 Ta postawa jest wzorem dla całej dziedziny. Kategoria „nierozstrzygnięty z powodu braku danych"
-musi istnieć osobno — inaczej każdy nieostry piksel staje się dowodem.
+musi istnieć osobno, inaczej każdy nieostry piksel staje się dowodem.

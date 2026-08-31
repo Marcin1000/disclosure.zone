@@ -9,7 +9,7 @@ witnesses: "Personel ochrony instalacji nuklearnych, naukowcy, piloci"
 summary: "Seria jaskrawozielonych kul ognia obserwowanych nad najbardziej wrażliwymi instalacjami nuklearnymi USA. Zjawisko było na tyle poważnie traktowane, że powołano dedykowany program obserwacyjny Project Twinkle z kamerami i teodolitami."
 official: "Project Twinkle zakończył się bez rozstrzygnięcia. Dominująca hipoteza: nietypowa aktywność bolidowa."
 alternatives:
-- "Bolidy o wysokiej zawartości miedzi (charakterystyczna zielona barwa) — hipoteza dr. Lincolna LaPaza była odrzucana przez niego samego ze względu na tor lotu."
+- "Bolidy o wysokiej zawartości miedzi (charakterystyczna zielona barwa), hipoteza dr. Lincolna LaPaza była odrzucana przez niego samego ze względu na tor lotu."
 - "Zjawiska elektryczne w górnej atmosferze."
 - "Efekt skupienia obserwatorów: instalacje nuklearne miały całodobową ochronę patrzącą w niebo, więc rejestrowały to, czego gdzie indziej nikt nie widział."
 sources:
@@ -28,12 +28,12 @@ miejsca o **najgęstszej obsadzie obserwatorów, najlepszych sensorach i najniż
 zgłaszania anomalii**. Zjawisko może więc grupować się wokół nich albo dlatego, że coś się nimi
 interesuje, albo dlatego, że tylko tam ktokolwiek systematycznie patrzy i raportuje.
 
-Na dostępnych danych nie da się tych dwóch wyjaśnień rozdzielić. To nie jest wykręt — to realna
+Na dostępnych danych nie da się tych dwóch wyjaśnień rozdzielić. To nie jest wykręt: to realna
 granica tego korpusu.
 
 ## Project Twinkle
 
 Ważny precedens: rząd USA rozstawił **dedykowaną aparaturę pomiarową**, żeby zmierzyć zjawisko
 UAP. Program zebrał niewiele użytecznych danych, głównie z powodu niedofinansowania i złego
-rozmieszczenia stanowisk. Ten sam problem — sprzęt jest, ale nie tam i nie wtedy, gdzie trzeba —
+rozmieszczenia stanowisk. Ten sam problem, sprzęt jest, ale nie tam i nie wtedy, gdzie trzeba, 
 wróci przy ekspedycji Hessdalen w 1984 r.

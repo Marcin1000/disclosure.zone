@@ -9,7 +9,7 @@ witnesses: "Relacja przekazana listownie dziennikarzowi; brak bezpośrednio prze
 summary: "Fragmenty bardzo czystego magnezu miały pochodzić z obiektu, który eksplodował nad plażą. Próbki przeszły przez wiele analiz, w tym w laboratoriach rządowych, ale historia ich pochodzenia nie została nigdy niezależnie ustalona."
 official: "Analizy wykazały magnez o wysokiej czystości, osiągalny jednak metodami przemysłowymi znanymi w latach 50."
 alternatives:
-- "Materiał przemysłowy ziemski o wysokiej czystości — zgodny z wynikami analiz."
+- "Materiał przemysłowy ziemski o wysokiej czystości, zgodny z wynikami analiz."
 - "Mistyfikacja: brak zidentyfikowanego świadka zdarzenia i brak dokumentacji pobrania próbek."
 sources:
 - "label": "List do redakcji będący jedynym źródłem opisu zdarzenia"
@@ -17,13 +17,13 @@ sources:
 - "label": "Wyniki analiz laboratoryjnych próbek (Brazylia, później USA)"
 ---
 
-## Dlaczego to jest przypadek wzorcowy — negatywnie
+## Dlaczego to jest przypadek wzorcowy, negatywnie
 
 Ubatuba pokazuje, że **analiza laboratoryjna materiału o nieznanym pochodzeniu nie ma wartości
 dowodowej**, niezależnie od tego, jak dokładna jest sama analiza.
 
 Możemy z ogromną precyzją ustalić, że próbka to magnez o czystości X. Nie możemy w żaden sposób
-ustalić, że ta próbka pochodzi z obiektu, który eksplodował nad plażą — bo nie mamy
+ustalić, że ta próbka pochodzi z obiektu, który eksplodował nad plażą, bo nie mamy
 udokumentowanego łańcucha opieki od miejsca zdarzenia do laboratorium.
 
 Ten sam problem powtórzy się dokładnie sześćdziesiąt lat później przy słynnej próbce

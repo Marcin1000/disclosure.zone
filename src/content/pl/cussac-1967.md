@@ -10,7 +10,7 @@ summary: "Rodzeństwo zgłosiło jasną sferę i cztery niewielkie postacie na �
 official: "GEIPAN utrzymuje sprawę w kategorii niewyjaśnionych po dochodzeniu."
 alternatives:
 - "Błędna interpretacja zjawiska atmosferycznego przez dzieci."
-- "Konfabulacja — osłabiana przez natychmiastowość zgłoszenia i spójność niezależnych relacji."
+- "Konfabulacja, osłabiana przez natychmiastowość zgłoszenia i spójność niezależnych relacji."
 sources:
 - "label": "Protokół żandarmerii francuskiej z 29 sierpnia 1967, w aktach GEIPAN"
 ---

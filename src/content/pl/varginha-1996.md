@@ -19,10 +19,10 @@ sources:
 
 ## Dlaczego ocena jest niska mimo ogromnej popularności
 
-Varginha jest w Brazylii tym, czym Roswell w USA — i ma dokładnie tę samą strukturę problemu.
+Varginha jest w Brazylii tym, czym Roswell w USA i ma dokładnie tę samą strukturę problemu.
 
-Relacja pierwotna jest krótka i skromna: trzy osoby widziały coś nietypowego. Cała reszta —
-wojsko, szpital, ciało, tajny transport — pochodzi z **warstw narracyjnych dobudowanych później**,
+Relacja pierwotna jest krótka i skromna: trzy osoby widziały coś nietypowego. Cała reszta, 
+wojsko, szpital, ciało, tajny transport, pochodzi z **warstw narracyjnych dobudowanych później**,
 przez osoby, które same niczego nie widziały.
 
 Sprawa jest w bazie jako przykład tego, jak wygląda przypadek zbudowany niemal wyłącznie ze

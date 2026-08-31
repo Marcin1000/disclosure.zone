@@ -10,10 +10,10 @@ summary: "Rok przed Roswell przez Skandynawię przeszła fala obserwacji szybkic
 official: "Szwedzkie dochodzenie nie zidentyfikowało źródła. Dominującą hipotezą roboczą były radzieckie testy rakietowe wykorzystujące zdobyczną technologię niemiecką (V-2 / Peenemünde)."
 alternatives:
 - "Radzieckie próby rakietowe z poligonów na Bałtyku."
-- "Bolidy i rój meteorów w okresie letnim — część zgłoszeń pasuje do tej kategorii."
+- "Bolidy i rój meteorów w okresie letnim, część zgłoszeń pasuje do tej kategorii."
 - "Efekt fali medialnej: gwałtowny wzrost zgłoszeń po pierwszych publikacjach prasowych."
 sources:
-- "label": "Archiwum szwedzkich sił zbrojnych / FOI — dokumentacja obserwacji od 1946 r."
+- "label": "Archiwum szwedzkich sił zbrojnych / FOI, dokumentacja obserwacji od 1946 r."
   note: "Obszerny zbiór; wielotysięczny wolumen dokumentów obejmujący także lata późniejsze."
 - "label": "Depesze attaché wojskowych USA i Wielkiej Brytanii z 1946 r."
 - "label": "Późniejsze opracowania historyczne fali skandynawskiej"
@@ -31,7 +31,7 @@ potencjalny sygnał radzieckiego programu rakietowego.
 ## Co znaleziono
 
 Nie znaleziono szczątków, które dałoby się przypisać nieznanej konstrukcji. Sprawa zamknęła się
-bez identyfikacji źródła — i to jest wzorzec, który powtórzy się w tej bazie kilkadziesiąt razy.
+bez identyfikacji źródła i to jest wzorzec, który powtórzy się w tej bazie kilkadziesiąt razy.
 
 ## Wniosek
 
