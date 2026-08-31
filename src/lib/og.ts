@@ -62,9 +62,10 @@ function mark(size: number) {
       position: 'absolute', left: -4, top: size * 0.57,
       width: size + 8, height: size * 0.13, background: C.bg,
     }),
+    // Przemiat: start dokładnie w środku, koniec tuż pod zewnętrznym pierścieniem (0.46 promienia)
     el('div', {
-      position: 'absolute', left: size / 2, top: size * 0.20,
-      width: size * 0.30, height: 3, background: C.phos,
+      position: 'absolute', left: size / 2, top: size / 2 - 1.5,
+      width: size * 0.43, height: 3, background: C.phos,
       transform: 'rotate(-33deg)', transformOrigin: 'left center',
     }),
   ]);

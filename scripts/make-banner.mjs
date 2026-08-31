@@ -22,7 +22,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 
   <g mask="url(#gap)">
     ${ring(52, .85)}${ring(34, .55, 1)}${ring(16, .35, 1)}
-    <path d="M96 210 L148 176" stroke="${PHOS}" stroke-width="2" opacity=".9"/>
+    <path d="M96 210 L136.5 183.8" stroke="${PHOS}" stroke-width="2" opacity=".9"/>
     <g stroke="${PHOS}" stroke-width="2" opacity=".8">
       <path d="M96 152v14M96 254v14M42 210h14M136 210h14"/>
     </g>

@@ -140,7 +140,6 @@ const en: Dict = {
   'scope.cases': 'case files',
   'scope.countries': 'countries',
   'scope.span': 'years covered',
-  'scope.key': 'Angle = longitude · Radius = age · Colour = status',
 };
 
 const pl: Dict = {
@@ -257,7 +256,6 @@ const pl: Dict = {
   'scope.cases': 'akt spraw',
   'scope.countries': 'państw',
   'scope.span': 'lat w bazie',
-  'scope.key': 'Kąt to długość geograficzna, promień to wiek, kolor to status',
 };
 
 const DICT: Record<Lang, Dict> = { en, pl };
