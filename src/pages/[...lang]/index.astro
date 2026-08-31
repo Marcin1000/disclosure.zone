@@ -60,7 +60,7 @@ const UNCONFIRMED = {
           <a class="btn btn--ghost" href={path(lang, '/methodology')}>{t('home.cta2')}</a>
         </div>
       </div>
-      <HeroScope lang={lang} cases={all.length} countries={countries.size} span={span}
+      <HeroScope lang={lang}
                  blips={core.map(c => ({ id: c.id, title: c.data.title, lon: c.data.lon,
                                          year: c.data.date.getFullYear(), status: c.data.status }))} />
     </div>

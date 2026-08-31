@@ -2,8 +2,8 @@
 import { useT, type Lang } from '../i18n';
 
 export interface Blip { id: string; title: string; lon: number; year: number; status: string }
-interface Props { blips: Blip[]; cases: number; countries: number; span: string; lang: Lang }
-const { blips, cases, countries, span, lang } = Astro.props;
+interface Props { blips: Blip[]; lang: Lang }
+const { blips, lang } = Astro.props;
 const t = useT(lang);
 
 /* Kąt to długość geograficzna, promień to wiek liczony rangą, nie liczbą lat —
@@ -58,10 +58,4 @@ const ticks = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
     ))}
     <circle cx="130" cy="130" r="2" fill="var(--phos)" opacity=".8" />
   </svg>
-
-  <figcaption class="scope__read">
-    <span><b>{cases}</b>{t('scope.cases')}</span>
-    <span><b>{countries}</b>{t('scope.countries')}</span>
-    <span><b>{span}</b>{t('scope.span')}</span>
-  </figcaption>
 </figure>

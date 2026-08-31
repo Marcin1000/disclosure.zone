@@ -137,9 +137,6 @@ const en: Dict = {
   'og.tagline': 'DISCLOSURE.ZONE — DOCUMENTS, NOT RUMORS',
 
   'scope.alt': 'Radar scope: {n} evidential-core cases, angle by longitude, radius by age',
-  'scope.cases': 'case files',
-  'scope.countries': 'countries',
-  'scope.span': 'years covered',
 };
 
 const pl: Dict = {
@@ -252,10 +249,7 @@ const pl: Dict = {
 
   'og.tagline': 'DISCLOSURE.ZONE, DOKUMENTY, NIE PLOTKI',
 
-  'scope.alt': 'Ekran radaru: {n} spraw z rdzenia dowodowego, kąt to długość geograficzna, promień to wiek',
-  'scope.cases': 'akt spraw',
-  'scope.countries': 'państw',
-  'scope.span': 'lat w bazie',
+  'scope.alt': 'Ekran radaru: {n} spraw kluczowych, kąt to długość geograficzna, promień to wiek',
 };
 
 const DICT: Record<Lang, Dict> = { en, pl };
