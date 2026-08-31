@@ -404,9 +404,12 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .plot__land--has { fill: #16302C; stroke: rgba(77,227,160,.5); stroke-width: .7; cursor: pointer; }
 .plot__land--has:hover { fill: #21463F; stroke: var(--phos); }
 .plot__land--sel { fill: #2A5A50; stroke: var(--phos); stroke-width: 1; }
-/* Kraj to ścieżka, więc outline obrysowałby jej prostokąt otaczający —
-   dla Rosji to cała szerokość mapy. Fokus pokazujemy samą ścieżką. */
-.plot__land--has:focus-visible { outline: none; fill: #2A5A50; stroke: var(--phos); stroke-width: 1.8; }
+/* Kraj to ścieżka, więc outline obrysowałby jej prostokąt otaczający,
+   a dla Rosji to cała szerokość mapy. Musi być :focus, nie :focus-visible:
+   klik myszą daje :focus bez :focus-visible i wtedy przeglądarka rysuje
+   własny domyślny pierścień. Zaznaczenie pokazujemy samym wypełnieniem. */
+.plot__land--has:focus { outline: none; }
+.plot__land--has:focus-visible { fill: #2A5A50; stroke: var(--phos); stroke-width: 1.8; }
 .plot__grat { fill: none; stroke: rgba(77,227,160,.11); stroke-width: .35; vector-effect: non-scaling-stroke; }
 .plot__frame { fill: none; stroke: rgba(77,227,160,.3); stroke-width: .8; vector-effect: non-scaling-stroke; }
 
