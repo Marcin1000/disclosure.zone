@@ -34,6 +34,7 @@ alternatives:
 - "Commercial or research activity misclassified."
 claims:
 - "virginia-2024-uas"
+- "satellite-flaring-2025"
 sources:
 - "tier": "T1"
   label: "AARO annual report listing the case as active"

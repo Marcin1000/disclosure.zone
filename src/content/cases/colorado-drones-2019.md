@@ -33,6 +33,7 @@ alternatives:
 - "An unattributed operation, never identified."
 claims:
 - "colorado-drones-unattributed"
+- "satellite-flaring-2025"
 sources:
 - "tier": "T1"
   label: "Colorado multi-agency task force report, January 2020"

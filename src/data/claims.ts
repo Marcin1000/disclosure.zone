@@ -43,7 +43,7 @@ export const claims: Claim[] = [
     verdict:  { en: "The figure comes from dividing a distance relayed to the pilot over the radio by a duration recalled from memory. To treat it as a velocity measurement you must assume both radar returns were the same object and that there was no loss and reacquisition of track. Neither assumption can be checked today.",
                pl: "Liczba powstaje z podzielenia odległości podanej pilotowi przez radio przez czas oszacowany z pamięci. Aby uznać ją za pomiar prędkości, trzeba założyć, że oba wskazania radarowe dotyczyły tego samego obiektu i że nie było utraty oraz ponownego przechwycenia śladu. Żadnego z tych założeń nie da się dziś sprawdzić." },
     resolver: { en: "The raw SPY-1 track file from USS Princeton, with continuity of track and timestamps.",
-               pl: "Surowy track file SPY-1 z USS Princeton z ciągłością śledzenia i timestampami." },
+               pl: "Surowy track file SPY-1 z USS Princeton z ciągłością śledzenia i znacznikami czasu." },
   },
   {
     id: "nimitz-flir-is-fravor",
@@ -1276,6 +1276,20 @@ export const claims: Claim[] = [
                pl: "Zespół zadaniowy ustalił, że większość zgłoszeń to błędnie zidentyfikowane samoloty, planety i gwiazdy, wzmocnione uwagą mediów, dobrze poparte i zgodne z wzorcem z Ladakhu. Nie ustalił, co wygenerowało początkowy zbiór wiarygodnych zgłoszeń od służb, zanim ruszyła fala medialna. Odejmij egzotyczne słownictwo, a to jest kształt współczesnego problemu: nieprzypisane statki powietrzne, dużo szumu, mały nierozstrzygnięty rdzeń i żadna agencja mająca jednocześnie uprawnienia i sensory, żeby to zamknąć." },
     resolver: { en: "FAA registration and flight data for the region during the reporting window.",
                pl: "Dane rejestracyjne i lotnicze FAA dla regionu w okresie zgłoszeń." },
+  },
+  {
+    id: "satellite-flaring-2025",
+    originTier: "T1",
+    status: "confirmed",
+    cases: ["virginia-2024", "colorado-drones-2019"],
+    claim:    { en: "“A bright, brief flash high in the sky, moving with no sound, is unexplained.”",
+               pl: "„Jasny, krótki błysk wysoko na niebie, przesuwający się bezgłośnie, jest niewyjaśniony.\"" },
+    origin:   { en: "The default reading of night-sky reports, from witnesses and from aggregators alike",
+               pl: "Domyślny odczyt zgłoszeń z nocnego nieba, zarówno u świadków, jak i u zbierających raporty" },
+    verdict:  { en: "Sunlight reflecting off a satellite produces exactly this signature. AARO distinguishes two mechanisms: specular reflection off mirror-like panels and antennas, giving an intense flash of a second or two, and diffuse reflection off many satellites launched together, giving the trains seen after a Starlink deployment. In the year to 30 May 2025 this single mechanism accounted for 238 resolutions, more than twice the 114 cases AARO closed by every other means combined. It is now the largest identified source of UAP reports on record.",
+               pl: "Odbicie światła słonecznego od satelity daje dokładnie taki obraz. AARO rozróżnia dwa mechanizmy: odbicie kierunkowe od lustrzanych paneli i anten, dające intensywny błysk trwający sekundę lub dwie, oraz odbicie rozproszone od wielu satelitów wyniesionych razem, dające „pociągi\" widywane po starcie Starlinka. W roku do 30 maja 2025 ten jeden mechanizm odpowiadał za 238 rozstrzygnięć, ponad dwa razy więcej niż 114 spraw zamkniętych przez AARO wszystkimi pozostałymi sposobami razem. To dziś największe zidentyfikowane źródło zgłoszeń UAP." },
+    resolver: { en: "Nothing further: the mechanism is established. What it does not do is settle any individual report, which still needs the observer's time, bearing and elevation checked against the catalogue of orbits and the sun angle.",
+               pl: "Nic więcej: mechanizm jest ustalony. Nie rozstrzyga natomiast pojedynczego zgłoszenia, do czego wciąż potrzebny jest czas, azymut i wysokość obserwacji zestawione z katalogiem orbit i kątem padania światła." },
   },
 ];
 
