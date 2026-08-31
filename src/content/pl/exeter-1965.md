@@ -23,7 +23,7 @@ Exeter jest mocny, bo świadkowie przybyli **niezależnie i sceptycznie nastawie
 zaraportowali to samo zjawisko, co pierwszy zgłaszający.
 
 Jest też jednym z lepiej udokumentowanych przypadków, w których **oficjalne wyjaśnienie okazało
-się demonstrowalnie błędne**, wskazane ćwiczenia lotnicze zakończyły się przed obserwacją.
+się dowodnie błędne**, wskazane ćwiczenia lotnicze zakończyły się przed obserwacją.
 Blue Book skorygował klasyfikację po interwencji.
 
 To ważny kontrapunkt do dwóch skrajności. Oficjalne wyjaśnienia bywały nierzetelne. I bywały

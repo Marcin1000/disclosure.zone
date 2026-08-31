@@ -31,7 +31,7 @@ jednej osi czasu.
 ## Co dokładnie by to rozstrzygnęło
 
 Dzienniki utrzymania ruchu i logi systemowe stanowisk startowych z 16 i 24 marca 1967 r., z
-dokładnymi timestampami, zestawione z dziennikami ochrony naziemnej. Bez tego mamy dwa zbiory
+dokładnymi znacznikami czasu, zestawione z dziennikami ochrony naziemnej. Bez tego mamy dwa zbiory
 faktów, awarie i obserwacje, połączone wyłącznie relacją ludzi, którzy je pamiętają razem.
 
 Korelacja pamięciowa nie jest korelacją czasową. To rozróżnienie decyduje o całej sprawie.

@@ -28,7 +28,7 @@ System ATFLIR jest zamocowany na gimbalu, który przy określonych kątach obser
 układ odniesienia obrazu**. W takim przypadku obraca się nie obiekt, tylko rama, w której go
 widzimy, a obiekt o stałym kształcie sprawia wrażenie obracającego się.
 
-Rozstrzygnięcie wymaga **metadanych podu**: kąta gimbala w każdej klatce, trybu pracy, odległości
+Rozstrzygnięcie wymaga **metadanych zasobnika celowniczego**: kąta gimbala w każdej klatce, trybu pracy, odległości
 do celu. Te dane istnieją. Nie są publiczne.
 
 ## Właściwy status

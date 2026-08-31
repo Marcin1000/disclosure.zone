@@ -18,10 +18,10 @@ sources:
 - label: "Późniejsza korespondencja RAAF i wywiady badaczy"
 ---
 
-## Najlepiej poświadczona sprawa świadkowska w korpusie
+## Najlepiej poświadczona sprawa oparta na zeznaniach
 
 Boianai ma coś, czego nie ma żadna inna sprawa oparta wyłącznie na zeznaniach: **relację spisano
-natychmiast i podpisali ją wszyscy trzydziestu ośmiu świadków.** To jednym ruchem eliminuje dryf i
+natychmiast i podpisało ją wszystkich trzydziestu ośmiu świadków.** To jednym ruchem eliminuje dryf i
 narastanie narracji, które psują Roswell, Rendlesham i Westall.
 
 Świadkiem był ksiądz misyjny bez motywacji do sensacji, a wśród współpodpisanych byli miejscowi

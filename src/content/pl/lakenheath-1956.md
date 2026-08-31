@@ -38,6 +38,6 @@ hipotez dalszych.
 
 ## Czego brakuje
 
-Wszystkiego, co pozwoliłoby to dziś przeliczyć: zapisów scope'ów, dzienników radarowych z
-timestampami, danych meteorologicznych o profilu pionowym atmosfery w rozdzielczości godzinowej.
+Wszystkiego, co pozwoliłoby to dziś przeliczyć: zapisów z ekranów radaru, dzienników radarowych ze
+znacznikami czasu, danych meteorologicznych o profilu pionowym atmosfery w rozdzielczości godzinowej.
 Sprawa jest mocna strukturalnie i słaba materiałowo: to definicja przypadku z lat 50.
