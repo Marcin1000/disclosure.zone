@@ -17,8 +17,8 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
 
 ## What is in here
 
-- **74 cases** from 24 countries, from 1561 to cases still open in 2024
-- **89 claims** in a myth-versus-document ledger, each with its origin, source tier,
+- **77 cases** from 26 countries, from 1561 to cases still open in 2024
+- **90 claims** in a myth-versus-document ledger, each with its origin, source tier,
   verification status and the condition that would settle it
 - **14 state programmes** across the US, France, the UK, Italy, Chile, Canada,
   Australia, Sweden, Spain, Brazil, Norway, Belgium and the USSR
@@ -83,11 +83,11 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **74 of 170** sources have an address for the material itself — the only ones that
+- **74 of 181** sources have an address for the material itself — the only ones that
   count toward provenance
 - **40** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
-- **56** have neither, so far
+- **67** have neither, so far
 
 Every address in the registry was checked against a live source rather than guessed. The
 provenance counter is visible on each case and on [`/about`](https://disclosure.zone/about).

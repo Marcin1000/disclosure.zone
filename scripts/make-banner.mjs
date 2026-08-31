@@ -1,5 +1,6 @@
 /* Repository banner. Rendered to PNG so GitHub and npm display it identically. */
 import { Resvg } from '@resvg/resvg-js';
+import { corpusStats } from './corpus-stats.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
@@ -7,6 +8,8 @@ const F = (f) => readFile(join(process.cwd(), 'src/assets/fonts', f));
 const [mono, monoB, serif] = await Promise.all([
   F('CourierPrime-Regular.ttf'), F('CourierPrime-Bold.ttf'), F('Newsreader-SemiBold.ttf'),
 ]);
+
+const st = await corpusStats();
 
 const W = 1280, H = 420;
 const PHOS = '#4DE3A0', DIM = '#32916B', FG = '#DCE3E1', FAINT = '#758482';
@@ -38,7 +41,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
   <text x="188" y="338" font-family="Newsreader" font-size="21" fill="#8D9997">Unresolved never means extraterrestrial.</text>
 
   <g font-family="Courier Prime" font-size="17" letter-spacing="3">
-    <text x="188" y="392" fill="${DIM}">74 CASES  ·  24 COUNTRIES  ·  89 CLAIMS  ·  1561–2024  ·  CC BY 4.0</text>
+    <text x="188" y="392" fill="${DIM}">${st.cases} CASES  ·  ${st.countries} COUNTRIES  ·  ${st.claims} CLAIMS  ·  ${st.minYear}–${st.maxYear}  ·  CC BY 4.0</text>
   </g>
 </svg>`;
 

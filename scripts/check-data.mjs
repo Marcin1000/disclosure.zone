@@ -7,6 +7,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
+import { corpusStats } from './corpus-stats.mjs';
 
 const CANON = 'src/content/cases';
 const PL = 'src/content/pl';
@@ -84,6 +85,26 @@ for (const s of canon) {
   }
 }
 for (const u of unknownRefs) errors.push(`odnośnik spoza rejestru: ${u}`);
+
+// README podaje te same liczby prozą, więc musi nadążać za korpusem
+const st = await corpusStats();
+const readme = readFileSync('README.md', 'utf8');
+const expect = [
+  [/\*\*(\d+) cases\*\* from (\d+) countries, from (\d+) to cases still open in (\d+)/,
+   [st.cases, st.countries, st.minYear, st.maxYear], 'sprawy, państwa, zakres lat'],
+  [/\*\*(\d+) claims\*\*/, [st.claims], 'twierdzenia'],
+  [/\*\*(\d+) state programmes\*\*/, [st.archives], 'programy państwowe'],
+  [/\*\*(\d+) of (\d+)\*\* sources/, [linked, total], 'źródła z adresem materiału'],
+  [/^- \*\*(\d+)\*\* point at the archive/m, [aided], 'wskazania archiwum'],
+  [/^- \*\*(\d+)\*\* have neither/m, [total - linked - aided], 'źródła bez niczego'],
+];
+for (const [re, want, what] of expect) {
+  const m = re.exec(readme);
+  if (!m) { errors.push(`README: nie znaleziono liczby dla „${what}"`); continue; }
+  const got = m.slice(1).map(Number);
+  if (got.join(',') !== want.join(','))
+    errors.push(`README nieaktualny (${what}): podaje ${got.join(', ')}, a jest ${want.join(', ')}`);
+}
 
 console.log(`cases: ${canon.length} · claims: ${claims.length}`);
 console.log(`sources: ${total} · linked to material: ${linked} · archive pointer only: ${aided} · neither: ${total - linked - aided}`);
