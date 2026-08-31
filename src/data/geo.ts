@@ -5,7 +5,7 @@ export const ISO_N: Record<string, string> = {
   ZW: '716', RU: '643', JP: '392', DE: '276', IQ: '368', MX: '484', PR: '630',
   DK: '208', FI: '246', AR: '032', PT: '620', IN: '356', CN: '156', ZA: '710',
   NL: '528', PL: '616', UA: '804', TR: '792', EG: '818', PE: '604',
-  PG: '598', PT2: '620', NZ2: '554',
+  PG: '598', CR: '188',
 };
 
 /** Odwrotnie — do podświetlania krajów na mapie. */
