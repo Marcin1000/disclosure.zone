@@ -30,7 +30,7 @@ To jest korelacja, którą trzeba postawić uczciwie i w obie strony:
 prozaiczne, które wcześniej nie przekraczały progu detekcji.
 
 Obie interpretacje przewidują dokładnie to samo: nagły wzrost liczby zgłoszeń po modernizacji.
-Danych publicznych nie wystarcza, by je rozdzielić.
+Dane publiczne nie wystarczają, by je rozdzielić.
 
 ## Znaczenie instytucjonalne
 

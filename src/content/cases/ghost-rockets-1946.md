@@ -47,7 +47,7 @@ sources:
 ## The first genuine state investigation
 
 Ghost Rockets hold a unique status: this is **the first case in which a Western government committed
-real intelligence resources to a phenomenon in the sky**, before the term "flying saucer" existed.
+real intelligence resources to a phenomenon in the sky**, before the term “flying saucer” existed.
 
 Sweden ran observations, witness interviews, attempts to localise impact sites and searches for
 debris. US and British intelligence tracked the case as a possible signal of a Soviet missile
@@ -61,5 +61,5 @@ source — a pattern that will repeat several dozen times in this database.
 ## Conclusion
 
 Ghost Rockets set the correct time frame for the entire field and show that a state's first
-response to UAP was not "this is nonsense" but **"is this an enemy weapon?"** That question, not the
+response to UAP was not “this is nonsense” but **“is this an enemy weapon?”** That question, not the
 extraterrestrial hypothesis, drove the first decade of investigation.

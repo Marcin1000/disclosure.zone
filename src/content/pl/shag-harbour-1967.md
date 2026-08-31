@@ -26,5 +26,5 @@ zaginionego statku powietrznego, formalne zamknięcie sprawy bez identyfikacji.
 pod wodą ani o obecności okrętów podwodnych.
 
 To rozróżnienie jest w Shag Harbour szczególnie ważne, bo sprawa bywa przedstawiana jako
-„kanadyjskie Roswell z dowodami rządowymi". Dowody rządowe istnieją, dotyczą jednak
+„kanadyjskie Roswell z dowodami rządowymi”. Dowody rządowe istnieją, dotyczą jednak
 **dochodzenia**, a nie odzyskania czegokolwiek.

@@ -81,16 +81,16 @@ No single banal explanation covers that whole structure.
 
 ## What must not be presented as measurement
 
-**"60 miles in under a minute."** This is a distance relayed to the pilot by radio, divided by a
+**“60 miles in under a minute.”** This is a distance relayed to the pilot by radio, divided by a
 duration estimated from memory. To treat it as a speed measurement you must assume both radar
 indications referred to the same object, that there was no loss and reacquisition of track, and that
 the time estimate is accurate. None of those assumptions can be checked today.
 
-**"A descent from 80,000 ft in under a second."** This comes from a radar operator's account, not
+**“A descent from 80,000 ft in under a second.”** This comes from a radar operator's account, not
 from a recording.
 
-**"The object entered the ocean."** Fravor himself testified that they **did not see the object
-underwater** — they saw a surface disturbance. The popular "transmedium" version elaborates on what
+**“The object entered the ocean.”** Fravor himself testified that they **did not see the object
+underwater** — they saw a surface disturbance. The popular “transmedium” version elaborates on what
 the witness did not say.
 
 ## AARO's position

@@ -7,7 +7,7 @@ location: "Wąwóz na południe od Socorro, Nowy Meksyk"
 duration: "ok. 2 minut"
 witnesses: "1 funkcjonariusz policji (obserwacja bezpośrednia), świadkowie śladów w kilka godzin później"
 summary: "Sierżant policji Lonnie Zamora, ścigając pojazd, zauważył biały owalny obiekt na ziemi oraz dwie niewielkie postacie obok niego. Obiekt wystartował z rykiem i płomieniem. W gruncie pozostały wgniecenia, wypalenia i śladowa roślinność w stanie zwęglenia."
-official: "Blue Book pozostawił sprawę jako niezidentyfikowaną, jest to najbardziej znany przypadek „unidentified\" w całym programie."
+official: "Blue Book pozostawił sprawę jako niezidentyfikowaną, jest to najbardziej znany przypadek „unidentified” w całym programie."
 alternatives:
 - "Mistyfikacja studencka z użyciem balonu na gorące powietrze, hipoteza podnoszona później, bez potwierdzenia materialnego."
 - "Test tajnego pojazdu (np. lądownik księżycowy w fazie prób), rejon Nowego Meksyku był obszarem intensywnych testów; brak dokumentacji odpowiadającego lotu tego dnia."

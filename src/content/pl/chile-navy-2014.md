@@ -7,7 +7,7 @@ location: "Wybrzeże w pobliżu Santiago"
 duration: "ok. 9 minut materiału"
 witnesses: "Załoga śmigłowca Marynarki Wojennej Chile (pilot i operator sensora)"
 summary: "Śmigłowiec chilijskiej marynarki zarejestrował dziewięciominutowy materiał IR obiektu emitującego coś, co wyglądało na zrzut materii. Państwowa agencja CEFAA badała sprawę przez dwa lata, angażując astronomów, meteorologów i analityków obrazu."
-official: "Sprawa została rozwiązana: obiekt zidentyfikowano jako samolot pasażerski w locie rejsowym, a „zrzut materii\" jako smugi kondensacyjne rozpraszające się w warstwie o wysokiej wilgotności."
+official: "Sprawa została rozwiązana: obiekt zidentyfikowano jako samolot pasażerski w locie rejsowym, a „zrzut materii” jako smugi kondensacyjne rozpraszające się w warstwie o wysokiej wilgotności."
 alternatives:
 - "Airbus A340 w locie rejsowym, potwierdzony planami lotu, czasem i pozycją."
 sources:
@@ -24,7 +24,7 @@ CEFAA pracowała nad dziewięcioma minutami materiału przez **dwa lata**. Zaang
 meteorologów, analityków obrazu i specjalistów ruchu lotniczego. Sprawę ogłoszono publicznie jako
 nierozstrzygniętą, zanim została rozwiązana, a potem publicznie ogłoszono rozwiązanie.
 
-Rozwiązaniem był rejsowy Airbus. „Zrzut materii" to smugi kondensacyjne rozpraszające się w
+Rozwiązaniem był rejsowy Airbus. „Zrzut materii” to smugi kondensacyjne rozpraszające się w
 warstwie o wysokiej wilgotności, widoczne w podczerwieni znacznie wyraźniej niż w świetle
 widzialnym.
 
@@ -37,6 +37,6 @@ widzialnym.
 3. Instytucja, która publicznie przyznaje, że przez dwa lata nie umiała czegoś rozwiązać, a potem
    publikuje rozwiązanie, jest bardziej wiarygodna niż instytucja, która nigdy się nie myli.
 
-Chilijskie SEFAA (następca CEFAA) do dziś wymaga do analizy **materiałów oryginalnych**, 
+Chilijskie SEFAA (następca CEFAA) do dziś wymaga do analizy **materiałów oryginalnych**,
 nie zrzutów ekranu z komunikatorów, które niszczą dane potrzebne do badania. To jest standard,
 którego powinna wymagać cała dziedzina.

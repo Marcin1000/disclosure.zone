@@ -42,7 +42,7 @@ sources:
   archive: "nara-bluebook-catalog"
 ---
 
-## The case that built the "Estimate of the Situation" myth
+## The case that built the “Estimate of the Situation” myth
 
 Chiles–Whitted was one of the principal cases on which the Project SIGN team is said to have based
 an internal document arguing an extraterrestrial origin for some sightings.
@@ -54,6 +54,6 @@ evidence — neither of concealed knowledge nor of its absence.
 ## Why the bolide explanation is strong
 
 The sighting lasted seconds, at night, with very rapid angular motion. Under those conditions the
-brain closes "windows" and structure where none exist. A bright, fragmenting bolide seen from the
+brain closes “windows” and structure where none exist. A bright, fragmenting bolide seen from the
 side produces exactly the image the pilots described — including the impression of a cigar trailing
 flame.

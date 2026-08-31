@@ -1,6 +1,6 @@
 ---
 title: "Aguadilla"
-subtitle: "Najsłynniejsze nagranie „transmedium\" i rekonstrukcja 3D, która je rozłożyła"
+subtitle: "Najsłynniejsze nagranie „transmedium” i rekonstrukcja 3D, która je rozłożyła"
 dateDisplay: "25 kwietnia 2013"
 countryName: "Portoryko"
 location: "Okolice lotniska Rafael Hernández, Aguadilla"
@@ -15,7 +15,7 @@ sources:
 - "label": "Analiza AARO: rekonstrukcja trajektorii 3D i identyfikacja"
 ---
 
-## Dlaczego to najważniejszy „rozwiązany" przypadek współczesny
+## Dlaczego to najważniejszy „rozwiązany” przypadek współczesny
 
 Aguadilla jest w bazie jako **eksponat metodologiczny numer jeden**.
 
@@ -24,10 +24,10 @@ rozdziela na dwa. Trudno o bardziej przekonujący materiał wizualny.
 
 Wszystkie te cztery obserwacje okazały się artefaktami geometrii patrzenia:
 
-- „wejście do wody", obiekt przechodzący **za** linią brzegową widzianą z góry pod małym kątem,
-- „rozdzielenie", dwa obiekty od początku, chwilowo nierozróżnialne przy niskiej rozdzielczości
+- „wejście do wody”, obiekt przechodzący **za** linią brzegową widzianą z góry pod małym kątem,
+- „rozdzielenie”, dwa obiekty od początku, chwilowo nierozróżnialne przy niskiej rozdzielczości
   sensora,
-- „ogromna prędkość", złudzenie wynikające z ruchu samolotu obserwującego, nie z ruchu celu.
+- „ogromna prędkość”, złudzenie wynikające z ruchu samolotu obserwującego, nie z ruchu celu.
 
 Prędkość rzeczywista: rzędu prędkości wiatru.
 

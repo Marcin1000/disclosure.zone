@@ -39,7 +39,7 @@ sources:
   label: "Witness accounts and material from the Soviet research programme established after the event"
 ---
 
-## The most important "explained" case in this database
+## The most important “explained” case in this database
 
 Petrozavodsk stays in the corpus precisely because it is solved — and shows something no unresolved
 case can.
@@ -54,6 +54,6 @@ The vast scale of a phenomenon, the vast number of witnesses, and the complete i
 witnesses to recognise it **are not evidence of anything unusual.** They are evidence that the
 observers did not know what was flying above them.
 
-The same mechanism — a state's own classified programme as the source of an "inexplicable"
+The same mechanism — a state's own classified programme as the source of an “inexplicable”
 phenomenon — has to be considered at Mantell 1948, Lakenheath 1956, Cash–Landrum 1980, and in a
 number of contemporary cases.

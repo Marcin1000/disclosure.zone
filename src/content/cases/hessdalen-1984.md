@@ -80,6 +80,6 @@ report looks like, as opposed to a report with something to prove.
 
 ## What it means for the field
 
-If some of what we call "UAP" is an unknown natural phenomenon — plasma, geophysical,
+If some of what we call “UAP” is an unknown natural phenomenon — plasma, geophysical,
 electromagnetic — Hessdalen is where it will be identified first. And no declassification will be
 required to do it.

@@ -16,7 +16,7 @@ sources:
 - "label": "Protokół wypadku lotniczego USAF, styczeń 1948"
 ---
 
-## Dlaczego przypadek jest „wyjaśniony", a mimo to ważny
+## Dlaczego przypadek jest „wyjaśniony”, a mimo to ważny
 
 Balon Skyhook wyjaśnia obserwację dobrze: rozmiar, jasność, zachowanie i wysokość się zgadzają, a
 program był wtedy tajny, więc ani pilot, ani wieża nie mieli podstaw, by go rozpoznać.

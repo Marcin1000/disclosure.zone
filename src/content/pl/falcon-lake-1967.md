@@ -36,7 +36,7 @@ analizę rządową i nigdy nieprzypisanej do żadnego źródła.
 
 Jeden obserwator zdarzenia. Brak radaru, brak zdjęcia obiektu, brak świadka potwierdzającego.
 
-A kluczowe zastrzeżenie wobec radioaktywnej gleby jest to samo co przy Ubatubie: **skażenie
+A kluczowe zastrzeżenie wobec radioaktywnej gleby jest takie samo jak przy Ubatubie: **skażenie
 potwierdza, że coś radioaktywnego tam było, a nie co je tam umieściło.** Śledczy szukali
 wcześniejszego źródła przemysłowego lub naturalnego i go nie znaleźli, co jest sugestywne, ale nie
 rozstrzygające.

@@ -53,7 +53,7 @@ that would let us separate the description of a phenomenon from the genre in whi
 ## What we do not know
 
 Broadsheets of this kind were the sixteenth-century equivalent of the sensational press fused with
-religious commentary. "Signs in the sky" were an expected element of the form — not neutral
+religious commentary. “Signs in the sky” were an expected element of the form — not neutral
 observational reporting. We cannot now establish how much of the woodcut is observation and how
 much is iconography.
 

@@ -49,7 +49,7 @@ sources:
 ## Two things, kept apart
 
 **Roswell as a historical event: 5/5.** Something did come down, the base did issue a statement
-about a "disc", and the statement was withdrawn the same day. Those are facts documented by the
+about a “disc”, and the statement was withdrawn the same day. Those are facts documented by the
 contemporary press.
 
 **Roswell as extraterrestrial evidence: 2/5.** Practically the entire drama of the case — bodies,

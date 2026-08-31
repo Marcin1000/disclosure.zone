@@ -27,5 +27,5 @@ Rezultat był mieszany i właśnie dlatego cenny. Dane potwierdziły, że pierws
 stanowisko było błędne (F-16 jednak latały). Jednocześnie duża część obserwacji daje się
 wytłumaczyć właśnie tymi lotami i flarami.
 
-To jest model pracy, do którego powinna dążyć cała dziedzina: nie „ujawnienie" od góry, tylko
+To jest model pracy, do którego powinna dążyć cała dziedzina: nie „ujawnienie” od góry, tylko
 **systematyczne pozyskiwanie surowych danych i publiczna analiza**.

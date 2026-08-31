@@ -18,11 +18,11 @@ sources:
 
 ## Dlaczego to ważne, mimo że nic nie widać
 
-Mosul Orb jest w bazie jako przykład **uczciwego „nie wiem" ze strony instytucji**.
+Mosul Orb jest w bazie jako przykład **uczciwego „nie wiem” ze strony instytucji**.
 
 AARO mogło tego nagrania nie pokazywać albo dopasować do niego wyjaśnienie. Zamiast tego
 przedstawiło je publicznie z komentarzem, że danych jest za mało, by cokolwiek stwierdzić i że
 brak rozstrzygnięcia nie oznacza nadzwyczajności.
 
-Ta postawa jest wzorem dla całej dziedziny. Kategoria „nierozstrzygnięty z powodu braku danych"
+Ta postawa jest wzorem dla całej dziedziny. Kategoria „nierozstrzygnięty z powodu braku danych”
 musi istnieć osobno, inaczej każdy nieostry piksel staje się dowodem.

@@ -58,7 +58,7 @@ joining them.** Not because they are careless, but because that is what human vi
 coherently moving points.
 
 This is the closest thing the field has to a calibration measurement for mass sightings — and it says
-the intuition "so many people cannot all be wrong about a solid craft" is simply false.
+the intuition “so many people cannot all be wrong about a solid craft” is simply false.
 
 ## The honest remainder
 

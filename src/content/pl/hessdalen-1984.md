@@ -48,6 +48,6 @@ odróżnieniu od raportu, który ma coś udowodnić.
 
 ## Co to znaczy dla całej dziedziny
 
-Jeżeli część zjawisk nazywanych „UAP" to nieznane zjawisko naturalne, plazmowe, geofizyczne,
+Jeżeli część zjawisk nazywanych „UAP” to nieznane zjawisko naturalne, plazmowe, geofizyczne,
 elektromagnetyczne: to Hessdalen jest miejscem, gdzie zostanie ono zidentyfikowane jako
 pierwsze. I nie będzie do tego potrzebne żadne odtajnienie dokumentów.

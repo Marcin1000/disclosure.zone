@@ -38,5 +38,5 @@ obiektu i zgłoszenia nierównej pracy silnika.
 ## Dlaczego pozostaje nierozstrzygnięta
 
 Zaginiony samolot i zaginiony pilot. Brak wraku, brak śladu radarowego drugiego obiektu, brak ciała.
-Dochodzenie australijskie zamknięto z przyczyną nieznaną i to pozostaje uczciwym werdyktem, jest to
+Dochodzenie australijskie zamknięto z przyczyną nieznaną i to pozostaje uczciwym werdyktem: jest to
 wypadek lotniczy o nieustalonej przyczynie, w którym pilot akurat opisywał coś nietypowego.

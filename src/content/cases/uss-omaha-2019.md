@@ -50,7 +50,7 @@ sources:
 captured by sensors and entered in the ships' logs, and the material is authentic.
 
 **What is not confirmed:** that the objects entered the water. The popular version of this case
-contains a "the object vanished beneath the surface" element that the publicly available material
+contains a “the object vanished beneath the surface” element that the publicly available material
 does not show conclusively — loss of a sensor track is not evidence of submergence.
 
 ## The most probable explanation, and why it is not reassuring

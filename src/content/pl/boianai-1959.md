@@ -40,4 +40,4 @@ obiekt przez wiele godzin. Znacznie gorzej tłumaczy raportowaną strukturę i p
 zamknie sporu, bo jedyna rzecz, która by to zrobiła, fotografia, pomiar namiaru, nigdy nie powstała.
 
 Boianai jest sufitem tego, co samo ludzkie zeznanie może osiągnąć. Ten sufit jest niżej, niż ludzie
-przypuszczają, i wiedzieć dokładnie gdzie się znajduje jest użyteczne.
+przypuszczają, a wiedza o tym, gdzie dokładnie leży, jest użyteczna.

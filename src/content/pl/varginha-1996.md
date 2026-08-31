@@ -21,7 +21,7 @@ sources:
 
 Varginha jest w Brazylii tym, czym Roswell w USA i ma dokładnie tę samą strukturę problemu.
 
-Relacja pierwotna jest krótka i skromna: trzy osoby widziały coś nietypowego. Cała reszta, 
+Relacja pierwotna jest krótka i skromna: trzy osoby widziały coś nietypowego. Cała reszta,
 wojsko, szpital, ciało, tajny transport, pochodzi z **warstw narracyjnych dobudowanych później**,
 przez osoby, które same niczego nie widziały.
 

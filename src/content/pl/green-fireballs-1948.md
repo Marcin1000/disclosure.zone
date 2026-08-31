@@ -17,7 +17,7 @@ sources:
 - "label": "Raporty ochrony Los Alamos i Sandia z okresu fali"
 ---
 
-## Pierwszy „związek z bronią jądrową"
+## Pierwszy „związek z bronią jądrową”
 
 To tutaj rodzi się jeden z najtrwalszych motywów całej dziedziny: **UAP grupują się wokół
 instalacji nuklearnych**. Motyw wróci przy Malmstrom 1967, przy australijskim Maralinga i w
@@ -35,5 +35,5 @@ granica tego korpusu.
 
 Ważny precedens: rząd USA rozstawił **dedykowaną aparaturę pomiarową**, żeby zmierzyć zjawisko
 UAP. Program zebrał niewiele użytecznych danych, głównie z powodu niedofinansowania i złego
-rozmieszczenia stanowisk. Ten sam problem, sprzęt jest, ale nie tam i nie wtedy, gdzie trzeba, 
-wróci przy ekspedycji Hessdalen w 1984 r.
+rozmieszczenia stanowisk. Ten sam problem, czyli sprzęt jest, ale nie tam i nie wtedy, gdzie trzeba, wróci przy
+ekspedycji Hessdalen w 1984 r.

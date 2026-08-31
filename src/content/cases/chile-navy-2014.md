@@ -52,7 +52,7 @@ CEFAA worked on nine minutes of footage for **two years.** Astronomers, meteorol
 and air traffic specialists were involved. The case was publicly announced as unresolved before it was
 solved — and then the solution was publicly announced too.
 
-The solution was a scheduled Airbus. The "venting of material" was contrails dispersing in a
+The solution was a scheduled Airbus. The “venting of material” was contrails dispersing in a
 high-humidity layer, far more visible in infrared than in visible light.
 
 ## Three conclusions

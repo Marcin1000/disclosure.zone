@@ -48,7 +48,7 @@ sources:
 
 ## The strongest element
 
-Not "an object behind the fighter". The strongest element is **correlation between two independent
+Not “an object behind the fighter”. The strongest element is **correlation between two independent
 radar stations and a visual sighting**, sustained over several hours.
 
 A single radar can lie. Two radars of different characteristics, looking from different angles, lie
@@ -60,7 +60,7 @@ in agreement far more rarely — though under a strong inversion it is not impos
 the region, including high-altitude operations under strict secrecy. A GCA radar operator had no
 reason and no clearance to know what was flying above him.
 
-**The "classified domestic technology" hypothesis has to be weighed here on equal terms with any
+**The “classified domestic technology” hypothesis has to be weighed here on equal terms with any
 other.** That does not weaken the case — it organises it, by establishing what exactly would have
 to be excluded before moving to more exotic hypotheses.
 

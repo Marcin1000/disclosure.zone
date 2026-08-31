@@ -42,7 +42,7 @@ sources:
 
 ## The classic relative-geometry trap
 
-This is the textbook case for why pilot accounts of "an object that reacted to my manoeuvre" demand
+This is the textbook case for why pilot accounts of “an object that reacted to my manoeuvre” demand
 particular care.
 
 When a pilot manoeuvres around a distant, stationary or slowly drifting point of light, **the

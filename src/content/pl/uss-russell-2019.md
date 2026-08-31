@@ -1,5 +1,5 @@
 ---
-title: "USS Russell, „piramidy\""
+title: "USS Russell, „piramidy”"
 subtitle: "Trójkątne obiekty, które są kształtem przysłony obiektywu"
 dateDisplay: "lipiec 2019"
 countryName: "Stany Zjednoczone"

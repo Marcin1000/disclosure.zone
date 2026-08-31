@@ -1,6 +1,6 @@
 ---
 title: "Magnez z Ubatuby"
-subtitle: "Najsłynniejsza „próbka UFO\" i lekcja o łańcuchu opieki nad materiałem"
+subtitle: "Najsłynniejsza „próbka UFO” i lekcja o łańcuchu opieki nad materiałem"
 dateDisplay: "wrzesień 1957"
 countryName: "Brazylia"
 location: "Plaża w pobliżu Ubatuby, São Paulo"

@@ -75,7 +75,7 @@ The entire sequence comes from **one document.** There are no airborne radar rec
 system logs, no communications recording. The DIA report is an excellent source for **what the
 participants reported** — it is not an independent measurement of what physically occurred.
 
-That still places Tehran high. But the difference between "an institution reported this" and "this
+That still places Tehran high. But the difference between “an institution reported this” and "this
 was measured" has to stay visible.
 
 ## One element worth separate study

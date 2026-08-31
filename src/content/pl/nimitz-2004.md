@@ -46,15 +46,15 @@ Do tego dochodzą niezależne zgłoszenia radarowe z okrętu i autentyczne nagra
 
 ## Czego nie wolno przedstawiać jako pomiaru
 
-**„60 mil w mniej niż minutę."** To wynik podzielenia odległości podanej pilotowi przez radio
+**„60 mil w mniej niż minutę.”** To wynik podzielenia odległości podanej pilotowi przez radio
 przez czas oszacowany z pamięci. Aby uznać to za pomiar prędkości, trzeba założyć, że oba
 wskazania radarowe dotyczyły tego samego obiektu, że nie było utraty i ponownego przechwycenia
 śladu oraz że oszacowanie czasu jest dokładne. Żadnego z tych założeń nie da się dziś sprawdzić.
 
-**„Zejście z 80 000 ft w niecałą sekundę."** Pochodzi z relacji operatora radaru, nie z zapisu.
+**„Zejście z 80 000 ft w niecałą sekundę.”** Pochodzi z relacji operatora radaru, nie z zapisu.
 
-**„Obiekt wszedł do oceanu."** Fravor sam zeznał, że **nie widzieli obiektu pod wodą**, widzieli
-zaburzenie powierzchni. Popularna wersja „transmedium" jest rozbudowaniem tego, czego świadek nie
+**„Obiekt wszedł do oceanu.”** Fravor sam zeznał, że **nie widzieli obiektu pod wodą**, widzieli
+zaburzenie powierzchni. Popularna wersja „transmedium” jest rozbudowaniem tego, czego świadek nie
 powiedział.
 
 ## Stanowisko AARO
@@ -66,7 +66,7 @@ potwierdzenie: to stwierdzenie, że materiał źródłowy nie wystarcza do rozst
 ## Co by to rozstrzygnęło
 
 Surowy track file SPY-1 z USS Princeton. Dane APG-73 z obu maszyn. Metadane ATFLIR z
-odległością. Pozycje INS/GPS samolotów. Zsynchronizowane timestampy. Pełny zapis łączności.
+odległością. Pozycje INS/GPS samolotów. Zsynchronizowane znaczniki czasu. Pełny zapis łączności.
 
 Mając to, sprawa zamyka się w jedną albo w drugą stronę w ciągu tygodni. Nie mając tego, Nimitz
 pozostaje najlepiej poświadczonym i najgorzej zmierzonym zdarzeniem w nowoczesnej historii UAP.

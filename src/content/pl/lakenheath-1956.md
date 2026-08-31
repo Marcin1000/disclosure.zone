@@ -20,7 +20,7 @@ sources:
 
 ## Najmocniejszy element
 
-Nie „obiekt za ogonem myśliwca". Najmocniejszym elementem jest **korelacja między dwoma
+Nie „obiekt za ogonem myśliwca”. Najmocniejszym elementem jest **korelacja między dwoma
 niezależnymi stanowiskami radarowymi a obserwacją wzrokową**, rozciągnięta na kilka godzin.
 
 Pojedynczy radar może kłamać. Dwa radary o różnej charakterystyce, patrzące pod różnymi kątami,
@@ -32,7 +32,7 @@ Rok 1956, wschodnia Anglia. To okres najintensywniejszej aktywności lotnictwa r
 zimnej wojny w tym rejonie, w tym operacji na dużych wysokościach objętych ścisłą tajemnicą.
 Operator radaru GCA nie miał żadnego powodu ani prawa wiedzieć, co lata nad jego głową.
 
-**Hipoteza „tajna technologia własna" musi tu być rozpatrywana na równi z każdą inną.** To nie
+**Hipoteza „tajna technologia własna” musi tu być rozpatrywana na równi z każdą inną.** To nie
 osłabia sprawy: to ją porządkuje. Ustala, co dokładnie trzeba by wykluczyć, żeby przejść do
 hipotez dalszych.
 

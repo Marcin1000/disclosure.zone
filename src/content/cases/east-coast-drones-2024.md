@@ -86,7 +86,7 @@ wave, a century before drones existed, and in the Italian wave of 1978.
 ## What this case does not prove
 
 It does not show that nothing unauthorised flew over New Jersey. Roughly 100 leads were followed and
-their individual outcomes are not all public. "We identified nothing anomalous" is a statement about
+their individual outcomes are not all public. “We identified nothing anomalous” is a statement about
 what was found, not a guarantee about what was there.
 
 Nor does it retire the Colorado drone swarms of 2019, which remain unresolved in this database. The

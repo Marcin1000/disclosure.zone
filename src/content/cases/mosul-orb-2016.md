@@ -49,5 +49,5 @@ AARO could have withheld the footage, or fitted an explanation to it. Instead it
 publicly with the comment that there is too little data to state anything — and that absence of
 resolution does not imply anomaly.
 
-That posture is a model for the whole field. The category "unresolved for lack of data" has to exist
+That posture is a model for the whole field. The category “unresolved for lack of data” has to exist
 separately; otherwise every blurry pixel becomes evidence.

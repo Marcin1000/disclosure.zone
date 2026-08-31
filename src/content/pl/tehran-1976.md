@@ -49,8 +49,8 @@ Cała ta sekwencja pochodzi z **jednego dokumentu**. Nie mamy zapisów radaru po
 logów systemowych F-4, nie mamy zapisu komunikacji. Raport DIA jest doskonałym źródłem tego, **co
 zaraportowali uczestnicy**, nie jest niezależnym pomiarem tego, co fizycznie się działo.
 
-To wciąż stawia Teheran wysoko. Ale różnica między „instytucja to zaraportowała" a „to zostało
-zmierzone" musi pozostać widoczna.
+To wciąż stawia Teheran wysoko. Ale różnica między „instytucja to zaraportowała” a „to zostało
+zmierzone” musi pozostać widoczna.
 
 ## Element wart osobnego badania
 

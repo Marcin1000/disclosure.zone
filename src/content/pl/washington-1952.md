@@ -37,7 +37,7 @@ który potrafi wyprodukować dokładnie takie ślady.
 
 Problemem jest to, że nie da się dziś ustalić, **które** ślady były propagacją, a które nie.
 Radar z 1952 r. nie zostawiał ciągłego zapisu cyfrowego. Nie mamy track files. Nie mamy
-timestampów pozwalających skorelować konkretne echo z konkretną obserwacją wzrokową co do sekundy.
+znaczników czasu pozwalających skorelować konkretne echo z konkretną obserwacją wzrokową co do sekundy.
 
 ## Liczba, której nie należy używać
 

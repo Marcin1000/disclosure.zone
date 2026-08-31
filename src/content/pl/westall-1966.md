@@ -16,7 +16,7 @@ sources:
 - "label": "Dokumentacja programu balonowego HIBAL, National Archives of Australia"
 ---
 
-## Dlaczego „dwustu świadków" to nie „dwieście razy mocniejszy dowód"
+## Dlaczego „dwustu świadków” to nie „dwieście razy mocniejszy dowód”
 
 Westall to najlepszy w tej bazie test intuicji, że liczba świadków przekłada się na siłę dowodu.
 Nie przekłada się, przynajmniej nie liniowo.

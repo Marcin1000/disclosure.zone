@@ -6,7 +6,7 @@ countryName: "Australia"
 location: "Rejon poligonu Maralinga, Australia Południowa"
 duration: "kilka minut"
 witnesses: "Personel wojskowy poligonu"
-summary: "Formalny raport obserwacji sporządzony na standardowym formularzu RAAF, w którym analizowano kolejno meteor, efekty elektrostatyczne, satelitę i „flying saucer\", bez rozstrzygnięcia."
+summary: "Formalny raport obserwacji sporządzony na standardowym formularzu RAAF, w którym analizowano kolejno meteor, efekty elektrostatyczne, satelitę i „flying saucer”, bez rozstrzygnięcia."
 official: "Raport zamknięty bez identyfikacji."
 alternatives:
 - "Ponowne wejście fragmentu satelity lub bolid."
@@ -21,7 +21,7 @@ sources:
 Nie ze względu na siłę obserwacji, ta jest przeciętna. Ze względu na **formularz**.
 
 Australijski raport pokazuje, jak wyglądało zdyscyplinowane państwowe podejście do UAP poza USA:
-lista hipotez do odhaczenia, kolejno rozpatrywanych, z „flying saucer" jako jedną z rubryk, a nie
+lista hipotez do odhaczenia, kolejno rozpatrywanych, z „flying saucer” jako jedną z rubryk, a nie
 jako wnioskiem. Dokładnie ten sposób pracy stosuje dziś GEIPAN i AARO.
 
 Sprawa jest też dowodem, że **archiwa poza USA istnieją, są kompletne i są dostępne**, a

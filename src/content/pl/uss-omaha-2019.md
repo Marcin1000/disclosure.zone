@@ -22,7 +22,7 @@ sources:
 zarejestrowane przez sensory i wpisane do dzienników okrętowych, a materiały są autentyczne.
 
 **Co nie jest potwierdzone:** że obiekty wchodziły do wody. Popularna wersja tej sprawy zawiera
-element „obiekt zniknął pod powierzchnią", którego publicznie dostępny materiał nie pokazuje w
+element „obiekt zniknął pod powierzchnią”, którego publicznie dostępny materiał nie pokazuje w
 sposób rozstrzygający, utrata śladu na sensorze nie jest dowodem zanurzenia.
 
 ## Najbardziej prawdopodobne wyjaśnienie i dlaczego to nie jest uspokajające

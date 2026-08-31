@@ -45,7 +45,7 @@ sources:
 
 Arnold **did not describe saucer-shaped objects.** He described a manner of motion: the objects
 skipped like a saucer thrown across water. The press moved the metaphor from the motion to the
-shape, and within weeks "flying saucer" had become a ready-made perceptual template for hundreds
+shape, and within weeks “flying saucer” had become a ready-made perceptual template for hundreds
 of subsequent witnesses.
 
 This is one of the best-documented phenomena in the whole of UAP history — and it concerns people,

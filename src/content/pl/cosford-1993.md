@@ -26,7 +26,7 @@ Komórka UFO w MOD nie zbyła tego wzruszeniem ramion. Wewnętrzna ocena potrakt
 z najpoważniejszych otrzymanych, odnotowała, że raportowane osiągi obiektu przewyższają cokolwiek w
 brytyjskim inwentarzu, i eskalowała ją.
 
-To udokumentowany przypadek, w którym ministerstwo obrony na piśmie traktuje zgłoszenie UAP poważnie, 
+To udokumentowany przypadek, w którym ministerstwo obrony na piśmie traktuje zgłoszenie UAP poważnie,
 a nie plotka o takim przypadku.
 
 ## I dlaczego sprawa jest mimo to zaklasyfikowana jako wyjaśniona

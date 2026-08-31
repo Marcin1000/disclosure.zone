@@ -10,7 +10,7 @@ summary: "Podczas nocnego podejścia do Bariloche załoga rejsowego Boeinga 727 
 official: "Argentyńskie Siły Powietrzne przeprowadziły badanie i uznały, że nie ma dowodów, by obiekt był statkiem nieznanego pochodzenia stwarzającym konkretne zagrożenie."
 alternatives:
 - "Samolot nieujęty w obrazie ruchu, wojskowy albo inny. Pasuje to do towarzyszenia i zmiany pozycji, a znacznie gorzej do zgłoszonego pionowego wznoszenia."
-- "Jasny obiekt niebieski, najprawdopodobniej planeta, z błędnie oceniona odległością podczas nocnego podejścia o dużym obciążeniu pracą. Pasuje to do światła nieruchomego, a znacznie gorzej do światła, które zatrzymuje się kilkaset metrów od samolotu."
+- "Jasny obiekt niebieski, najprawdopodobniej planeta, z błędnie ocenioną odległością podczas nocnego podejścia o dużym obciążeniu pracą. Pasuje to do światła nieruchomego, a znacznie gorzej do światła, które zatrzymuje się kilkaset metrów od samolotu."
 - "Zbieg okoliczności: zwykłe źródło światła zobaczone podczas niezwiązanej z nim awarii zasilania, połączone w jedno dopiero w opowieści."
 sources:
 - "label": "Akta badania Argentyńskich Sił Powietrznych dotyczące podejścia z 31 lipca 1995"

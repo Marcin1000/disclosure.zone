@@ -16,10 +16,10 @@ sources:
   note: "Depesza agencji prasowej nie jest dokumentem dochodzeniowym: to źródło klasy T5, mimo państwowego charakteru agencji."
 ---
 
-## Ostrzeżenie metodologiczne: „oficjalne" nie znaczy „dochodzeniowe"
+## Ostrzeżenie metodologiczne: „oficjalne” nie znaczy „dochodzeniowe”
 
 Woroneż jest w bazie jako kontrprzykład. Sprawa bywa cytowana jako „ZSRR oficjalnie potwierdził
-lądowanie UFO". W rzeczywistości mamy **depeszę agencji prasowej**, nie raport instytucji
+lądowanie UFO”. W rzeczywistości mamy **depeszę agencji prasowej**, nie raport instytucji
 badawczej.
 
 Państwowy charakter nadawcy nie podnosi klasy źródła. Liczy się, czy za komunikatem stoi

@@ -7,7 +7,7 @@ location: "Levelland i okolice, Teksas"
 duration: "ok. 3 godzin, seria zdarzeń"
 witnesses: "Kilkunastu niezależnych kierowców, funkcjonariusz szeryfa"
 summary: "W ciągu jednej nocy kilkunastu niezależnych kierowców zgłosiło duży świecący obiekt na drodze, przy którym gaśnie silnik i światła pojazdu. Po oddaleniu się obiektu pojazdy uruchamiały się normalnie."
-official: "Blue Book zamknął sprawę jako burzę elektryczną / zjawisko typu „ball lightning\", opierając się na wywiadach z niewielką częścią świadków."
+official: "Blue Book zamknął sprawę jako burzę elektryczną / zjawisko typu „piorun kulisty”, opierając się na wywiadach z niewielką częścią świadków."
 alternatives:
 - "Piorun kulisty lub zjawisko koronowe przy nietypowych warunkach elektrycznych, nie tłumaczy dobrze rozmiarów opisywanego obiektu."
 - "Efekt kaskadowy zgłoszeń po pierwszej relacji w lokalnym radiu."

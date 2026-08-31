@@ -46,7 +46,7 @@ sources:
 Not for the strength of the sighting — that is unremarkable. For **the form**.
 
 The Australian report shows what disciplined state handling of UAP looked like outside the United
-States: a list of hypotheses to be worked through in order, with "flying saucer" as one of the
+States: a list of hypotheses to be worked through in order, with “flying saucer” as one of the
 boxes rather than as a conclusion. This is precisely how GEIPAN and AARO work today.
 
 The case is also proof that **archives outside the US exist, are complete and are accessible** —

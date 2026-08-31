@@ -113,7 +113,7 @@ export const claims: Claim[] = [
     verdict:  { en: "This is not a measurement. It is the distance between successive returns divided by time, assuming the returns are the same object. Under anomalous propagation — meteorologically confirmed on those nights — that is precisely the assumption that fails first.",
                pl: "To nie jest pomiar, tylko wynik obliczenia odległości między kolejnymi odczytami przy założeniu, że dotyczą tego samego obiektu. Przy anomalnej propagacji radarowej, potwierdzonej meteorologicznie w te noce: to założenie zawodzi w pierwszej kolejności." },
     resolver: { en: "A continuous timestamped radar record. None exists; 1952 technology did not produce one.",
-               pl: "Ciągły zapis radarowy z timestampami. Nie istnieje, technologia z 1952 r. go nie tworzyła." },
+               pl: "Ciągły zapis radarowy ze znacznikami czasu. Nie istnieje, technologia z 1952 r. go nie tworzyła." },
   },
   {
     id: "washington-radar-visual-lock",

@@ -43,7 +43,7 @@ sources:
   ref: "aaro-historical-v1"
 ---
 
-## The first "nuclear connection"
+## The first “nuclear connection”
 
 This is where one of the most durable motifs in the field is born: **UAP cluster around nuclear
 installations.** The motif returns at Malmstrom in 1967, at Australia's Maralinga, and in AARO

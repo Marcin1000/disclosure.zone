@@ -1,6 +1,6 @@
 ---
 title: "Rendlesham Forest"
-subtitle: "Trzy noce, memorandum płk. Halta i „brytyjskie Roswell\", które dokumenty widzą inaczej"
+subtitle: "Trzy noce, memorandum płk. Halta i „brytyjskie Roswell”, które dokumenty widzą inaczej"
 dateDisplay: "26–28 grudnia 1980"
 countryName: "Wielka Brytania"
 location: "Las Rendlesham, między RAF Woodbridge a RAF Bentwaters, Suffolk"

@@ -29,7 +29,7 @@ Struktura jest jak na 1968 r. niezwykle kompletna:
 1. Zespoły ochrony rozproszonych stanowisk rakietowych niezależnie zgłaszają świetlisty obiekt.
 2. Radar naziemny przechwytuje cel.
 3. B-52 wracający z lotu szkolnego zostaje na niego skierowany.
-4. Radar pokładowy samolotu maluje echo.
+4. Radar pokładowy samolotu rejestruje echo.
 5. Załoga raportuje zakłócenia UHF przy bliskim przelocie obiektu.
 6. Załoga obserwuje obiekt wzrokowo.
 

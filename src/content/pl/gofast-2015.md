@@ -1,6 +1,6 @@
 ---
 title: "GOFAST"
-subtitle: "Obiekt „pędzący nad wodą\", który po przeliczeniu geometrii leci z prędkością wiatru"
+subtitle: "Obiekt „pędzący nad wodą”, który po przeliczeniu geometrii leci z prędkością wiatru"
 dateDisplay: "styczeń 2015"
 countryName: "Stany Zjednoczone"
 location: "Strefa ćwiczeń nad Atlantykiem, wschodnie wybrzeże"
@@ -26,7 +26,7 @@ na HUD. Po ich uwzględnieniu okazuje się, że obiekt znajduje się wysoko nad 
 przy niej, a jego rzeczywista prędkość względem powietrza jest rzędu prędkości wiatru.
 
 Wrażenie pędu wynika z **ruchu samolotu obserwującego**. To jest paralaksa, ten sam efekt, przez
-który drzewa przy drodze „przelatują", a odległe góry stoją.
+który drzewa przy drodze „przelatują”, a odległe góry stoją.
 
 ## Dlaczego trzymamy tę sprawę w bazie z oceną anomalności 1/5
 

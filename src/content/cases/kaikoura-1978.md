@@ -49,5 +49,5 @@ be verified rather than merely asserted**: fishing fleet positions, the inversio
 planetary positions were all checked.
 
 A defocused point of light in a film lens takes the shape of the lens aperture. Much of the
-"structure" visible in the footage is an artefact of the optics rather than a property of the object
-— precisely the mechanism that returns in 2019 with the USS Russell "pyramid" video.
+“structure” visible in the footage is an artefact of the optics rather than a property of the object
+— precisely the mechanism that returns in 2019 with the USS Russell “pyramid” video.

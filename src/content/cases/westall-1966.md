@@ -42,7 +42,7 @@ sources:
   archive: "naa-recordsearch"
 ---
 
-## Why "two hundred witnesses" is not "two hundred times the evidence"
+## Why “two hundred witnesses” is not “two hundred times the evidence”
 
 Westall is the best test in this database of the intuition that witness count converts into
 evidential strength. It does not — at least not linearly.

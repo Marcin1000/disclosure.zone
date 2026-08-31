@@ -37,7 +37,7 @@ faktem**, i kto powołuje się na to zdarzenie, powinien powiedzieć, który ma 
 
 ## Gdzie pękła granica kategorii
 
-Trzy obiekty zniszczyły nad Ameryką Północną nowoczesne myśliwce i nigdy ich nie zidentyfikowano. Przy
+Trzy obiekty zostały zniszczone nad Ameryką Północną przez nowoczesne myśliwce i nigdy ich nie zidentyfikowano. Przy
 każdej spójnej definicji są to niezidentyfikowane zjawiska anomalne. Są też, niemal na pewno, balonami.
 
 To moment, w którym „UAP” przestało być pytaniem o gości, a stało się pytaniem o świadomość sytuacyjną

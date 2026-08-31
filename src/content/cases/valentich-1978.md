@@ -55,7 +55,7 @@ limits very clear: we know precisely what he reported, and nothing at all about 
 
 The leading investigative hypothesis is that the pilot became disoriented, entered an inverted
 attitude, and saw his own aircraft's lights reflected in the water — which would explain lights
-"above" him that mirrored his own manoeuvres.
+“above” him that mirrored his own manoeuvres.
 
 It is a serious explanation and it fits parts of the transcript well. It fits others less well,
 including his description of the object's shape and his report of rough running.

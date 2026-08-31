@@ -1,6 +1,6 @@
 ---
 title: "Ghost Rockets"
-subtitle: "Skandynawska fala „pocisków widmo\" i pierwsze państwowe śledztwo w sprawie UAP"
+subtitle: "Skandynawska fala „pocisków widmo” i pierwsze państwowe śledztwo w sprawie UAP"
 dateDisplay: "maj–grudzień 1946"
 countryName: "Szwecja"
 location: "Szwecja, Norwegia, Finlandia, Dania"
@@ -22,7 +22,7 @@ sources:
 ## Pierwsze prawdziwe państwowe dochodzenie
 
 Ghost Rockets mają unikalny status: to **pierwszy przypadek, w którym rząd zachodni poświęcił
-zjawisku na niebie realne zasoby wywiadowcze**, zanim istniało pojęcie „latającego spodka".
+zjawisku na niebie realne zasoby wywiadowcze**, zanim istniało pojęcie „latającego spodka”.
 
 Szwecja prowadziła obserwacje, przesłuchania świadków, próby lokalizacji miejsc upadku i
 poszukiwania szczątków. Sprawa była śledzona przez wywiad USA i Wielkiej Brytanii jako
@@ -36,5 +36,5 @@ bez identyfikacji źródła i to jest wzorzec, który powtórzy się w tej bazie
 ## Wniosek
 
 Ghost Rockets ustawiają właściwą ramę czasową dla całej dziedziny i pokazują, że pierwsza reakcja
-państwa na UAP nie brzmiała „to bzdura", tylko **„czy to broń przeciwnika?"**. To pytanie, a nie
+państwa na UAP nie brzmiała „to bzdura”, tylko **„czy to broń przeciwnika?”**. To pytanie, a nie
 hipoteza pozaziemska, napędzało pierwszą dekadę badań.

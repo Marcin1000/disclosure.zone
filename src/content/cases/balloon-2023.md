@@ -70,6 +70,6 @@ Three objects were destroyed by advanced fighters over North America and never i
 consistent definition they are unidentified anomalous phenomena. They are also, almost certainly,
 balloons.
 
-That is where "UAP" stopped being a question about visitors and became a question about airspace
+That is where “UAP” stopped being a question about visitors and became a question about airspace
 awareness — which is the frame AARO now works in, and the frame the Virginia coast case of 2024
 belongs to.

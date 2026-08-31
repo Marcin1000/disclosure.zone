@@ -40,7 +40,7 @@ sources:
   archive: "nara-bluebook-catalog"
 ---
 
-## Why an "explained" case still matters
+## Why an “explained” case still matters
 
 The Skyhook balloon explains the sighting well: size, brightness, behaviour and altitude all fit,
 and the programme was classified at the time, so neither the pilot nor the tower had grounds to

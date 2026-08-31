@@ -39,7 +39,7 @@ sources:
   note: "A press agency dispatch is not an investigative document — this is a T5 source despite the agency's state character."
 ---
 
-## A methodological warning: "official" is not "investigative"
+## A methodological warning: “official” is not “investigative”
 
 Voronezh is in the database as a counter-example. The case is cited as "the USSR officially confirmed
 a UFO landing". In reality we have **a press agency dispatch**, not a report from a research

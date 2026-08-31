@@ -20,7 +20,7 @@ sources:
 
 ## Najważniejsza korekta
 
-„Phoenix Lights" to **dwa różne zdarzenia**, oddzielone godziną, o różnym charakterze i różnym
+„Phoenix Lights” to **dwa różne zdarzenia**, oddzielone godziną, o różnym charakterze i różnym
 statusie wyjaśnienia. Łączenie ich jest źródłem większości nieporozumień wokół sprawy.
 
 **Epizod ok. 22:00** jest wyjaśniony. Flary oświetlające zrzucone podczas ćwiczeń, z

@@ -51,7 +51,7 @@ target are displayed on the HUD. Once applied, the object turns out to be high a
 rather than near it, and its actual airspeed is on the order of the wind.
 
 The sense of velocity comes from **the motion of the observing aircraft.** This is parallax — the
-same effect by which roadside trees "fly past" while distant mountains stand still.
+same effect by which roadside trees “fly past” while distant mountains stand still.
 
 ## Why the case stays in the database with an anomaly score of 1/5
 

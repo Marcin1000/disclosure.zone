@@ -52,5 +52,5 @@ The result was mixed, and valuable precisely for that. The data confirmed that t
 position was wrong — the F-16s had been flying. At the same time, a large share of the sightings is
 explained by exactly those flights and their flares.
 
-This is the working model the whole field should aim at: not "disclosure" from above, but
+This is the working model the whole field should aim at: not “disclosure” from above, but
 **systematic acquisition of raw data and public analysis.**

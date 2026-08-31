@@ -9,7 +9,7 @@ witnesses: "Pilot Gwardii Narodowej, kontrolerzy lotniska, obserwatorzy naziemni
 summary: "Ppor. George Gorman prowadził w F-51 przedłużający się manewr za małym, jasnym światłem, które według jego relacji reagowało na jego ruchy i przewyższało go w zwrotach."
 official: "Blue Book przypisał zdarzenie oświetlonemu balonowi meteorologicznemu."
 alternatives:
-- "Balon meteorologiczny z oświetleniem, dryfujący obiekt w połączeniu z manewrami własnego samolotu daje złudzenie „reakcji\" i „pościgu\"."
+- "Balon meteorologiczny z oświetleniem, dryfujący obiekt w połączeniu z manewrami własnego samolotu daje złudzenie „reakcji” i „pościgu”."
 - "Planeta Jowisz przy błędnej ocenie odległości."
 sources:
 - "label": "Akta Project Blue Book, sprawa Gorman"
@@ -19,7 +19,7 @@ sources:
 ## Klasyczna pułapka geometrii względnej
 
 To jest podręcznikowy przypadek pokazujący, dlaczego relacje pilotów o „obiekcie, który reagował
-na mój manewr" wymagają szczególnej ostrożności.
+na mój manewr” wymagają szczególnej ostrożności.
 
 Gdy pilot manewruje wokół odległego, stacjonarnego lub wolno dryfującego punktu świetlnego,
 **ruch własnego samolotu przenosi się na postrzegany ruch celu**. Obiekt wydaje się nurkować,

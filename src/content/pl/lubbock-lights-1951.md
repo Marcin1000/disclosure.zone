@@ -15,7 +15,7 @@ sources:
 - "label": "Akta Project Blue Book, sprawa Lubbock Lights"
 ---
 
-## Wartość: „wiarygodny świadek" nie równa się „wiarygodna identyfikacja"
+## Wartość: „wiarygodny świadek” nie równa się „wiarygodna identyfikacja”
 
 Sprawa zyskała status dzięki temu, że świadkami byli naukowcy. To jednak dotyczy **uczciwości
 relacji**, a nie zdolności rozpoznania obiektu.

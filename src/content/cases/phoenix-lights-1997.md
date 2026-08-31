@@ -47,7 +47,7 @@ sources:
 
 ## The correction that matters most
 
-"The Phoenix Lights" are **two different events**, an hour apart, of different character and
+“The Phoenix Lights” are **two different events**, an hour apart, of different character and
 different resolution status. Conflating them is the source of most of the confusion around the case.
 
 **The ~22:00 episode is explained.** Illumination flares dropped during an exercise — with

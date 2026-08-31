@@ -22,7 +22,7 @@ Ta sprawa ma cechy, których nie ma żadna sprawa z lat 50.: **wiele obiektów j
 współczesne sensory, aktywne dochodzenie instytucjonalne i istniejące, cyfrowe dane**.
 
 Jest też ilustracją najważniejszej zmiany, jaka zaszła w dziedzinie po 2020 r.: granica między
-„UAP" a „nieznanym dronem" przestała być ostra. Znaczna część współczesnych zgłoszeń dotyczy
+„UAP” a „nieznanym dronem” przestała być ostra. Znaczna część współczesnych zgłoszeń dotyczy
 systemów bezzałogowych o nieustalonym operatorze, co jest problemem bezpieczeństwa państwa
 niezależnie od tego, kto nimi steruje.
 

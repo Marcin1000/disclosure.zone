@@ -9,7 +9,7 @@ witnesses: "Tysiące mieszkańców, funkcjonariusze policji, politycy stanowi i 
 summary: "Od połowy listopada 2024 r. nocne zgłoszenia dużych dronów nad New Jersey i sąsiednimi stanami wywołały tygodnie ogólnokrajowych relacji, pilnych odpraw i czasowych ograniczeń lotów. Cztery agencje federalne przeanalizowały ponad 5000 zgłoszeń i nie zidentyfikowały niczego anomalnego."
 official: "DHS, FBI, FAA i Departament Obrony wspólnie ocenili zgłoszenia jako mieszaninę legalnych dronów komercyjnych, hobbystycznych i policyjnych oraz załogowych samolotów, śmigłowców i gwiazd branych za drony. Ponad 5000 zgłoszeń dało około 100 tropów. Nie stwierdzono zagrożenia dla bezpieczeństwa narodowego ani publicznego."
 alternatives:
-- "Zwykły ruch lotniczy z błędnie oceniona odległością i wielkością w nocy. To wyjaśnienie przyjęte przez agencje i wspierane przez udostępnione później akta policyjne."
+- "Zwykły ruch lotniczy z błędnie ocenioną odległością i wielkością w nocy. To wyjaśnienie przyjęte przez agencje i wspierane przez udostępnione później akta policyjne."
 - "Rzeczywiste nieuprawnione wtargnięcie, ukryte albo przeoczone. Argumentowane gęstością zgłoszeń, a nie odzyskanym płatowcem, śladem czy obrazem."
 - "Program państwowy lub kontraktorski prowadzony bez powiadomienia. Nie pojawił się żaden dokument, który by to potwierdzał, a ograniczenia lotów wprowadzone w trakcie fali wskazują w przeciwną stronę."
 sources:
@@ -61,7 +61,7 @@ fali sterowcowej z 1896 r., sto lat przed powstaniem dronów, i w fali włoskiej
 ## Czego ta sprawa nie dowodzi
 
 Nie wykazuje, że nad New Jersey nie przeleciało nic nieuprawnionego. Sprawdzono około 100 tropów, a
-losy każdego z nich nie są w pełni jawne. „Nie zidentyfikowaliśmy niczego anomalnego" to zdanie o
+losy każdego z nich nie są w pełni jawne. „Nie zidentyfikowaliśmy niczego anomalnego” to zdanie o
 tym, co znaleziono, a nie gwarancja tego, czego tam nie było.
 
 Nie unieważnia też roju dronów nad Kolorado z 2019 r., który pozostaje w tej bazie nierozstrzygnięty.

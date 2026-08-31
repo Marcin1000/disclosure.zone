@@ -49,8 +49,8 @@ sources:
 This case has properties no 1950s case has: **multiple objects simultaneously, contemporary sensors,
 an active institutional investigation, and existing digital data.**
 
-It also illustrates the most important change in the field since 2020: the boundary between "UAP" and
-"unknown drone" has ceased to be sharp. A substantial share of contemporary reports concerns unmanned
+It also illustrates the most important change in the field since 2020: the boundary between “UAP” and
+“unknown drone” has ceased to be sharp. A substantial share of contemporary reports concerns unmanned
 systems with an undetermined operator — which is a national security problem regardless of who is
 flying them.
 

@@ -49,10 +49,10 @@ splits in two. It is hard to imagine more persuasive visual material.
 
 All four of those observations turned out to be artefacts of viewing geometry:
 
-- "water entry" — an object passing **behind** a shoreline viewed from above at a shallow angle,
-- "splitting" — two objects present from the start, momentarily unresolvable at the sensor's
+- “water entry” — an object passing **behind** a shoreline viewed from above at a shallow angle,
+- “splitting” — two objects present from the start, momentarily unresolvable at the sensor's
   resolution,
-- "enormous speed" — an illusion produced by the motion of the observing aircraft, not the target.
+- “enormous speed” — an illusion produced by the motion of the observing aircraft, not the target.
 
 Actual speed: on the order of the wind.
 

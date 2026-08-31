@@ -53,7 +53,7 @@ UFO photographs taken from a naval vessel. Nothing comparable happened in the Un
 
 That is a fact about institutional behaviour, not about the object. It tells us the Brazilian Navy
 found no reason to call the images fraudulent after examining the negatives — a meaningfully
-stronger statement than "we cannot identify it".
+stronger statement than “we cannot identify it”.
 
 ## Why the score stays moderate
 

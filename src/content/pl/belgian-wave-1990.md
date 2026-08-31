@@ -9,7 +9,7 @@ witnesses: "Funkcjonariusze żandarmerii, tysiące świadków cywilnych, załogi
 summary: "Przez pięć miesięcy tysiące osób w Belgii, w tym funkcjonariusze żandarmerii, zgłaszało duże, ciche obiekty trójkątne. W nocy 30/31 marca 1990 r. przy korelacji z radarami naziemnymi poderwano dwa F-16, których radary uzyskiwały krótkotrwałe kontakty."
 official: "Belgijskie siły powietrzne opublikowały dokumentację i uczestniczyły w analizie. Sprawa pozostała bez identyfikacji."
 alternatives:
-- "Artefakty filtru śledzenia radaru pokładowego F-16, późniejsze analizy wskazały, że nagłe „przyspieszenia\" w zapisach odpowiadają zachowaniu filtru Kalmana przy przeskoku śledzenia, a nie ruchowi obiektu."
+- "Artefakty filtru śledzenia radaru pokładowego F-16, późniejsze analizy wskazały, że nagłe „przyspieszenia” w zapisach odpowiadają zachowaniu filtru Kalmana przy przeskoku śledzenia, a nie ruchowi obiektu."
 - "Helikoptery, samoloty w nietypowych konfiguracjach świetlnych i balony jako źródło części obserwacji naziemnych."
 - "Tajne statki powietrzne (hipoteza stealth), nigdy nie potwierdzona."
 sources:

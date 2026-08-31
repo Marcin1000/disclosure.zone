@@ -59,6 +59,6 @@ sky.**
 1. Trained military observers, in numbers, over months, can consistently misidentify planets. The
    Blue Book explanation everybody sneers at is sometimes simply correct.
 2. Vigilance amplifies reporting. These units were watching a hostile border — exactly the
-   observer-concentration effect that complicates the "UAP cluster around sensitive sites" claim.
+   observer-concentration effect that complicates the “UAP cluster around sensitive sites” claim.
 3. Sending scientists works. It cost very little and it closed a case that was consuming military
    attention on a nuclear-armed frontier.

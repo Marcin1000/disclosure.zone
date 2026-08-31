@@ -1,12 +1,12 @@
 ---
 title: "Obserwacja Kennetha Arnolda"
-subtitle: "Dziewięć obiektów nad Mount Rainier i narodziny terminu „latający spodek\""
+subtitle: "Dziewięć obiektów nad Mount Rainier i narodziny terminu „latający spodek”"
 dateDisplay: "24 czerwca 1947"
 countryName: "Stany Zjednoczone"
 location: "Kaskady, w pobliżu Mount Rainier, Waszyngton"
 duration: "ok. 2–3 minut"
 witnesses: "1 (pilot prywatny)"
-summary: "Pilot prywatny Kenneth Arnold zgłosił dziewięć obiektów przemieszczających się w formacji w pobliżu Mount Rainier. Jego opis ruchu, „jak spodek rzucony po wodzie\", został przez prasę przekształcony w kształt obiektu i dał początek terminowi flying saucer."
+summary: "Pilot prywatny Kenneth Arnold zgłosił dziewięć obiektów przemieszczających się w formacji w pobliżu Mount Rainier. Jego opis ruchu, „jak spodek rzucony po wodzie”, został przez prasę przekształcony w kształt obiektu i dał początek terminowi flying saucer."
 official: "Wczesne dochodzenie USAF nie ustaliło źródła; rozważano miraż i błędną ocenę odległości."
 alternatives:
 - "Formacja pelikanów lub innych dużych ptaków w silnym oświetleniu."
@@ -21,7 +21,7 @@ sources:
 
 Arnold **nie opisał obiektów w kształcie spodka**. Opisał sposób poruszania się: obiekty miały
 podskakiwać jak spodek puszczony kaczkami po wodzie. Prasa przeniosła metaforę z ruchu na kształt
-i w ciągu tygodni „latający spodek" stał się gotowym szablonem percepcyjnym dla setek kolejnych
+i w ciągu tygodni „latający spodek” stał się gotowym szablonem percepcyjnym dla setek kolejnych
 świadków.
 
 To jest jedno z najlepiej udokumentowanych zjawisk w całej historii UAP i nie dotyczy ono
