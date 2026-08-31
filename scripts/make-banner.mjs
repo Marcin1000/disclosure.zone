@@ -9,7 +9,7 @@ const [mono, monoB, serif] = await Promise.all([
 ]);
 
 const W = 1280, H = 420;
-const PHOS = '#4DE3A0', DIM = '#2C7F5E', FG = '#DCE3E1', FAINT = '#5C6866';
+const PHOS = '#4DE3A0', DIM = '#32916B', FG = '#DCE3E1', FAINT = '#758482';
 
 const ring = (r, o, w = 1.4) =>
   `<circle cx="96" cy="210" r="${r}" fill="none" stroke="${DIM}" stroke-width="${w}" opacity="${o}"/>`;

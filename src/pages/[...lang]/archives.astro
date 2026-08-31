@@ -37,7 +37,7 @@ const open = archives.filter(a => a.publicDb).length;
             <p class="mono dim" style="font-size:.82rem;margin:0 0 1rem">{a.institution[lang]}</p>
             <p style="margin:0 0 1rem;color:var(--fg-dim);font-size:.97rem;max-width:80ch">{a.note[lang]}</p>
             <p class="label" style="margin:0">{t('arch.volume')}: <span style="color:var(--fg-dim);letter-spacing:0;text-transform:none;font-weight:400">{a.volume[lang]}</span></p>
-            {url && <p style="margin:.9rem 0 0"><a href={url} rel="noopener noreferrer" target="_blank" class="mono" style="font-size:.85rem">{t('arch.source')}</a></p>}
+            {url && <p style="margin:.9rem 0 0"><a href={url} rel="noopener noreferrer" target="_blank" class="mono link-act" style="font-size:.85rem">{t('arch.source')}</a></p>}
           </article>
         );
       })}

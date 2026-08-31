@@ -17,12 +17,12 @@
   /* --- Fosfor: radar, dane, sygnał --- */
   --phos:      #4DE3A0;
   --phos-2:    #7CF0BC;
-  --phos-dim:  #2C7F5E;
+  --phos-dim:  #32916B;
   --phos-ghost:rgba(77, 227, 160, 0.09);
 
   /* --- Bursztyn CRT: niepewność, "unresolved" --- */
   --amber:     #F0A93B;
-  --amber-dim: #8A6220;
+  --amber-dim: #A97827;
 
   /* --- Czerwień stempla: klauzula, obalone --- */
   --stamp:     #C4392E;
@@ -37,7 +37,7 @@
   /* --- Tekst --- */
   --fg:        #DCE3E1;
   --fg-dim:    #8D9997;
-  --fg-faint:  #5C6866;
+  --fg-faint:  #758482;
 
   /* --- Typografia --- */
   --mono: "Courier Prime", "Courier New", ui-monospace, monospace;
@@ -201,9 +201,10 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .nav__links a:hover, .nav__links a[aria-current] { color: var(--phos); }
 .nav__links a:hover::after, .nav__links a[aria-current]::after { right: 0; }
 @media (max-width: 860px) {
-  .nav__links { gap: .95rem; overflow-x: auto; scrollbar-width: none; }
+  .nav__links { gap: .5rem; overflow-x: auto; scrollbar-width: none; }
   .nav__links::-webkit-scrollbar { display: none; }
-  .nav__links a { white-space: nowrap; font-size: .64rem; }
+  /* krótkie hasła jak „Map" mają poniżej 24 px szerokości bez tego marginesu */
+  .nav__links a { white-space: nowrap; font-size: .64rem; padding: .5rem .45rem; min-width: 24px; text-align: center; }
 }
 
 /* ============================================================ LOGO */
@@ -473,6 +474,8 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
   }
   .tbl td.tbl__nw { white-space: normal; text-align: right; }
   .tbl td.tbl__t { order: -1; display: block; margin-bottom: .55rem; font-size: 1.02rem; }
+  /* tytuł sprawy to główne przejście dalej, więc musi mieć sensowne pole dotyku */
+  .tbl td.tbl__t a { display: inline-block; padding-block: .3rem; }
   .tbl td.tbl__t::before { content: none; }
   .tbl tr:hover td { background: none; }
 }
@@ -567,7 +570,7 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .lang a { color: var(--fg-faint); border: 0; }
 .lang a:hover { color: var(--phos); }
 .lang__on { color: var(--fg-dim); }
-.lang__sep { color: var(--line-2); }
+.lang__sep { color: var(--fg-faint); }
 
 /* ============================================================ TOOLKIT */
 .tk { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
@@ -579,8 +582,10 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .tk__f--hero output { font-size: 1.05rem; font-weight: 700; }
 .tk__f--hero { padding: 1rem; border: 1px solid var(--phos-dim); background: var(--phos-ghost); }
 .tk__help { font-size: .82rem; color: var(--fg-faint); margin: .6rem 0 0; line-height: 1.5; }
+/* Wnętrze wyróżnionego pola ma jaśniejsze tło, więc tekst musi być jaśniejszy */
+.tk__f--hero .tk__help, .tk__f--hero label span { color: var(--fg-dim); }
 
-.tk__f input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 22px; background: transparent; cursor: pointer; }
+.tk__f input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 26px; background: transparent; cursor: pointer; }
 .tk__f input[type=range]::-webkit-slider-runnable-track { height: 3px; background: var(--line-2); }
 .tk__f input[type=range]::-moz-range-track { height: 3px; background: var(--line-2); }
 .tk__f input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 15px; height: 15px; margin-top: -6px; background: var(--phos); border: 0; box-shadow: 0 0 0 3px rgba(77,227,160,.18); }
@@ -608,11 +613,13 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 
 /* Wskazanie archiwum: nie jest linkiem do materiału, więc wygląda inaczej niż źródło */
 .src__aid {
-  display: inline-block; margin-top: .3rem;
+  display: inline-block; margin-top: .3rem; padding-block: .3rem;
   font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase;
   color: var(--fg-faint); border-bottom: 1px dotted var(--line-2);
 }
 .src__aid:hover { color: var(--phos-dim); border-color: var(--phos-dim); }
+/* Samodzielne odnośniki akcji, w odróżnieniu od tych w zdaniu, dostają własne pole dotyku */
+.link-act { display: inline-block; padding-block: .35rem; }
 
 /* Schemat geometrii w kalkulatorze */
 .tk__svg { aspect-ratio: 520 / 300; }

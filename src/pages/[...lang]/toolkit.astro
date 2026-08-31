@@ -36,6 +36,7 @@ const L = en ? {
   legAng: 'depression angle',
   assumptionsTitle: 'Assumptions of this model — read them',
   bokehTitle: 'Aperture shape, not object shape',
+  bokehAlt: 'Defocused points of light taking the shape of the selected aperture',
   bokehLead: 'A defocused point of light takes the shape of the lens aperture. A night-vision device with a triangular aperture turns every distant light into a triangle. This is why the USS Russell “pyramids” are pyramids.',
   bokehPick: 'Aperture',
   angularTitle: 'Angular size proves nothing about size',
@@ -74,6 +75,7 @@ const L = en ? {
   legAng: 'kąt zejścia',
   assumptionsTitle: 'Założenia tego modelu, przeczytaj je',
   bokehTitle: 'Kształt przysłony, nie kształt obiektu',
+  bokehAlt: 'Rozogniskowane punkty świetlne przyjmujące kształt wybranej przysłony',
   bokehLead: 'Rozogniskowany punkt świetlny przyjmuje kształt przysłony obiektywu. Noktowizor z trójkątną przysłoną zamienia każde odległe światło w trójkąt. Dlatego „piramidy” z USS Russell są piramidami.',
   bokehPick: 'Przysłona',
   angularTitle: 'Rozmiar kątowy nic nie mówi o rozmiarze',
@@ -293,7 +295,7 @@ const ASSUMPTIONS = en ? [
         </div>
       </div>
       <div class="panel corners" style="padding:1.5rem;display:grid;place-items:center;min-height:230px">
-        <svg viewBox="0 0 260 180" style="width:100%">
+        <svg viewBox="0 0 260 180" style="width:100%" role="img" aria-label={L.bokehAlt}>
           <rect width="260" height="180" fill="#05090A"/>
           <g id="bokeh"></g>
         </svg>

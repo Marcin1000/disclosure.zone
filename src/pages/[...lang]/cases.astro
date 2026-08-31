@@ -56,6 +56,8 @@ const countries = [...new Set(all.map(c => c.data.country))]
   </section>
 
   <section class="wrap" style="padding-bottom:5rem">
+    {/* karty mają h3, więc bez tego poziom skacze z h1 na h3 */}
+    <h2 class="sr">{t('cases.listHeading')}</h2>
     <div class="grid grid--3" id="list" style="background:var(--line);border:1px solid var(--line)">
       {all.map(c => (
         <div data-item data-status={c.data.status} data-domain={c.data.domain}

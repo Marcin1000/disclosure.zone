@@ -22,8 +22,8 @@ async function loadFonts() {
 
 const C = {
   bg: '#06090A', panel: '#0C1214', line: '#1B2528',
-  phos: '#4DE3A0', phosDim: '#2C7F5E', amber: '#F0A93B',
-  stamp: '#E05446', fg: '#DCE3E1', dim: '#8D9997', faint: '#5C6866',
+  phos: '#4DE3A0', phosDim: '#32916B', amber: '#F0A93B',
+  stamp: '#E05446', fg: '#DCE3E1', dim: '#8D9997', faint: '#758482',
 };
 
 const el = (type: string, style: Record<string, unknown>, children?: unknown) =>
