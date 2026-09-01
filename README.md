@@ -18,11 +18,12 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
 ## What is in here
 
 - **77 cases** from 26 countries, from 1561 to cases still open in 2024
-- **90 claims** in a myth-versus-document ledger, each with its origin, source tier,
+- **92 claims** in a myth-versus-document ledger, each with its origin, source tier,
   verification status and the condition that would settle it
-- **14 state programmes** across the US, France, the UK, Italy, Chile, Canada,
+- **16 state programmes** across the US, France, the UK, Italy, Chile, Canada,
   Australia, Sweden, Spain, Brazil, Norway, Belgium and the USSR
-- **Sensor Sanity Toolkit** — an interactive parallax calculator worked on the GOFAST footage
+- **Sensor Sanity Toolkit** — four modules on parallax, aperture shape, angular size
+  and the Earth's shadow, worked on real footage
 - **World map** with per-country filtering, rendered at build time
 - **Per-case Open Graph images**
 - **Open data** — JSON and CSV under CC BY 4.0

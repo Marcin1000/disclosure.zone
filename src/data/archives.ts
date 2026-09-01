@@ -34,12 +34,36 @@ export const archives: Archive[] = [
     program: 'AARO (All-domain Anomaly Resolution Office)',
     years: '2022–present', status: 'active', publicDb: true,
     institution: { en: 'Department of Defense', pl: 'Department of Defense' },
-    volume: { en: 'Over a thousand cases on file; hundreds of new reports a year', pl: 'Ponad tysiąc spraw w zasobie; setki nowych zgłoszeń rocznie' },
+    volume: { en: '319 new reports in FY2025: 274 air, 44 space, 1 maritime; 114 resolved', pl: '319 nowych zgłoszeń w roku 2025: 274 powietrzne, 44 kosmiczne, 1 morskie; 114 rozstrzygniętych' },
     note: {
       en: 'The most important methodological change since Blue Book: AARO breaks the old “unidentified” category into three — resolved, unresolved for lack of data, and requiring further analysis. That distinction changes how the whole field counts.',
       pl: 'Najważniejsza zmiana metodologiczna od czasów Blue Book: AARO rozbija dawną kategorię „unidentified” na trzy osobne, rozwiązane, nierozstrzygnięte z powodu braku danych oraz wymagające dalszej analizy. To rozróżnienie zmienia sposób liczenia całej dziedziny.',
     },
     ref: 'aaro',
+  },
+  {
+    country: 'US',
+    countryName: { en: 'United States', pl: 'Stany Zjednoczone' },
+    program: 'PURSUE (Presidential Unsealing and Reporting System for UAP Encounters)',
+    years: '2026–present', status: 'active', publicDb: true,
+    institution: { en: 'Department of War', pl: 'Department of War' },
+    volume: { en: 'Five tranches between 8 May and 7 August 2026, released on a rolling basis', pl: 'Pięć transz między 8 maja a 7 sierpnia 2026, publikowane sukcesywnie' },
+    note: {
+      en: 'The largest release of holdings in this field since Blue Book was digitised. The tranches mix War Department records from 1947–1948 with recent AARO video and FBI witness interviews. Be precise about what this is: agencies are publishing files they held, not conclusions about what the files show. Nothing released so far asserts a non-human origin, and AARO’s own captions state what was reported, not what was established.',
+      pl: 'Największe udostępnienie zasobu w tej dziedzinie od czasu digitalizacji Blue Book. Transze mieszają akta Departamentu Wojny z lat 1947–1948 z niedawnymi nagraniami AARO i protokołami przesłuchań FBI. Warto być tu precyzyjnym: agencje publikują akta, które miały, a nie wnioski o tym, co z tych akt wynika. Nic z dotychczas opublikowanych materiałów nie stwierdza pochodzenia nieludzkiego, a opisy AARO przy nagraniach mówią, co zgłoszono, nie co ustalono.',
+    },
+  },
+  {
+    country: 'US',
+    countryName: { en: 'United States', pl: 'Stany Zjednoczone' },
+    program: 'UAP Records Collection (Record Group 615)',
+    years: '2024–present', status: 'active', publicDb: true,
+    institution: { en: 'National Archives and Records Administration', pl: 'National Archives and Records Administration' },
+    volume: { en: 'Transfers from ODNI, the Department of Defense, the FAA and the Nuclear Regulatory Commission, added as they arrive', pl: 'Przekazania z ODNI, Departamentu Obrony, FAA i Nuclear Regulatory Commission, dokładane w miarę wpływania' },
+    note: {
+      en: 'Created under the 2024 National Defense Authorization Act, which obliges federal agencies to transfer digital copies of their UAP records to the National Archives. Structurally this is the more durable of the two American channels: PURSUE is a release programme run by the department that holds the files, RG 615 is an archive with a statutory accession requirement behind it. A release programme ends with an administration; an accession duty is harder to reverse.',
+      pl: 'Powstała na mocy ustawy budżetowej obronnej z 2024 r., która zobowiązuje agencje federalne do przekazywania cyfrowych kopii akt UAP do archiwum państwowego. Strukturalnie to trwalszy z dwóch kanałów amerykańskich: PURSUE jest programem publikacyjnym prowadzonym przez resort, który te akta trzyma, a RG 615 archiwum z ustawowym obowiązkiem przejęcia. Program publikacyjny kończy się razem z administracją, obowiązek archiwalny jest trudniejszy do odwrócenia.',
+    },
   },
   {
     country: 'FR',

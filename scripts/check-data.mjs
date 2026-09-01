@@ -91,19 +91,19 @@ const st = await corpusStats();
 const readme = readFileSync('README.md', 'utf8');
 const expect = [
   [/\*\*(\d+) cases\*\* from (\d+) countries, from (\d+) to cases still open in (\d+)/,
-   [st.cases, st.countries, st.minYear, st.maxYear], 'sprawy, państwa, zakres lat'],
-  [/\*\*(\d+) claims\*\*/, [st.claims], 'twierdzenia'],
-  [/\*\*(\d+) state programmes\*\*/, [st.archives], 'programy państwowe'],
-  [/\*\*(\d+) of (\d+)\*\* sources/, [linked, total], 'źródła z adresem materiału'],
-  [/^- \*\*(\d+)\*\* point at the archive/m, [aided], 'wskazania archiwum'],
-  [/^- \*\*(\d+)\*\* have neither/m, [total - linked - aided], 'źródła bez niczego'],
+   [st.cases, st.countries, st.minYear, st.maxYear], 'cases, countries, year span'],
+  [/\*\*(\d+) claims\*\*/, [st.claims], 'claims'],
+  [/\*\*(\d+) state programmes\*\*/, [st.archives], 'state programmes'],
+  [/\*\*(\d+) of (\d+)\*\* sources/, [linked, total], 'sources linked to material'],
+  [/^- \*\*(\d+)\*\* point at the archive/m, [aided], 'archive pointers'],
+  [/^- \*\*(\d+)\*\* have neither/m, [total - linked - aided], 'sources with neither'],
 ];
 for (const [re, want, what] of expect) {
   const m = re.exec(readme);
-  if (!m) { errors.push(`README: nie znaleziono liczby dla „${what}"`); continue; }
+  if (!m) { errors.push(`README: no figure found for "${what}"`); continue; }
   const got = m.slice(1).map(Number);
   if (got.join(',') !== want.join(','))
-    errors.push(`README nieaktualny (${what}): podaje ${got.join(', ')}, a jest ${want.join(', ')}`);
+    errors.push(`README out of date (${what}): says ${got.join(', ')}, data says ${want.join(', ')}`);
 }
 
 console.log(`cases: ${canon.length} · claims: ${claims.length}`);
