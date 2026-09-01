@@ -27,7 +27,7 @@ scores:
   X: 1
   D: 3
 summary: "V-shaped formations of lights passed over the city for several weeks. The witnesses included university faculty, which gave the case unusual credibility, and a student produced a series of photographs."
-official: "Blue Book classified the phenomenon as birds — probably plovers — reflecting the light of the city's newly installed street lighting."
+official: "Blue Book classified the phenomenon as birds — probably plovers — reflecting the light of the city’s newly installed street lighting."
 alternatives:
 - "Birds reflecting city lights — consistent with the formation behaviour and with later controlled observations."
 - "Moths in the beam of street lighting."
@@ -44,5 +44,5 @@ The case gained status because the witnesses were scientists. That, however, bea
 of the account**, not on the ability to identify an object.
 
 A professor of geology looking at the night sky has no advantage over anyone else in judging the
-distance to an unlit object. Competence is domain-specific. That distinction — a witness's
+distance to an unlit object. Competence is domain-specific. That distinction — a witness’s
 credibility versus their identification ability — runs through this entire corpus.

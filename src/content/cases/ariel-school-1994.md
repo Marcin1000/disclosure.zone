@@ -25,7 +25,7 @@ scores:
   T: 4
   X: 3
   D: 4
-summary: "During a break, a group of children reported an object landing and the presence of beings at the edge of the school grounds. Interviews were conducted within days and partly recorded, including by a Harvard psychiatrist's team."
+summary: "During a break, a group of children reported an object landing and the presence of beings at the edge of the school grounds. Interviews were conducted within days and partly recorded, including by a Harvard psychiatrist’s team."
 official: "No state investigation."
 alternatives:
 - "Collective conversion within a peer group — a mechanism well documented in psychology."

@@ -26,10 +26,10 @@ scores:
   T: 5
   X: 4
   D: 4
-summary: "Prospector Stefan Michalak reported touching a landed craft that vented hot gas onto his chest, leaving a burn pattern matching a grid of vents. He suffered nausea and weight loss. Investigators later found soil at the site with anomalous radioactivity, and Canada's Department of National Defence still lists the case as unsolved."
+summary: "Prospector Stefan Michalak reported touching a landed craft that vented hot gas onto his chest, leaving a burn pattern matching a grid of vents. He suffered nausea and weight loss. Investigators later found soil at the site with anomalous radioactivity, and Canada’s Department of National Defence still lists the case as unsolved."
 official: "Investigated by the RCMP, the RCAF and Canadian government scientists. Never resolved; radioactive soil samples were confirmed but never sourced."
 alternatives:
-- "A hoax with self-inflicted injury — hard to reconcile with the sustained medical follow-up and the witness's refusal of publicity payment."
+- "A hoax with self-inflicted injury — hard to reconcile with the sustained medical follow-up and the witness’s refusal of publicity payment."
 - "A classified aircraft or an industrial accident."
 - "Pre-existing contamination at the site unrelated to the event — examined and not established."
 claims:
@@ -57,7 +57,7 @@ draft: false
 Falcon Lake has what almost no other single-witness case has: **a physical injury with a geometry,
 and contaminated soil.**
 
-The burn on Michalak's chest formed a regular grid pattern consistent with his description of being
+The burn on Michalak’s chest formed a regular grid pattern consistent with his description of being
 struck by hot gas through a vented panel. That is not a bruise someone reports — it is a mark with a
 shape, photographed and medically documented over weeks.
 
@@ -74,6 +74,6 @@ industrial or natural source and did not find one — which is suggestive, not c
 
 ## Why it matters institutionally
 
-Canada's Department of National Defence continues to list Falcon Lake among its unsolved files, and
+Canada’s Department of National Defence continues to list Falcon Lake among its unsolved files, and
 the records are digitised and public. That combination — an unresolved physical-trace case with an
 open state archive — is rare enough to be worth a great deal on its own.

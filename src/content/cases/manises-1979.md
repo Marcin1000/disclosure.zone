@@ -39,7 +39,7 @@ sources:
   label: "Declassified Ministerio de Defensa (Spain) files on the Manises incident"
   ref: "es-ovni"
 - "tier": "T1"
-  label: "Air traffic control records and the captain's report"
+  label: "Air traffic control records and the captain’s report"
   ref: "es-ovni-listado"
 ---
 
@@ -50,5 +50,5 @@ an emergency diversion with passengers aboard — on the basis of a UAP sighting
 from curiosity to aviation safety incident.
 
 Spain is also an example of a state that **declassified its UFO files in an orderly way** and made
-them available in the defence ministry's digital library. It is a resource English-language
+them available in the defence ministry’s digital library. It is a resource English-language
 literature has barely touched.

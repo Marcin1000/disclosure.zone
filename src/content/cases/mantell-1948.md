@@ -47,7 +47,7 @@ and the programme was classified at the time, so neither the pilot nor the tower
 recognise it.
 
 The case stays in the database for a different reason. This is the first instance in which
-**ignorance of one's own classified programme killed a pilot.** If we are looking for a real
+**ignorance of one’s own classified programme killed a pilot.** If we are looking for a real
 mechanism by which UAP becomes a national security problem, it is here — and it requires no
 extraterrestrial hypothesis whatsoever.
 

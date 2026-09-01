@@ -43,7 +43,7 @@ sources:
   label: "New Mexico State Police and FBI reports, 1964"
   ref: "condon"
 - "tier": "T3"
-  label: "Lonnie Zamora's statements given within hours of the event"
+  label: "Lonnie Zamora’s statements given within hours of the event"
   archive: "nara-bluebook-catalog"
 ---
 

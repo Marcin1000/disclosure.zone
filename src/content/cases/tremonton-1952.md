@@ -1,6 +1,6 @@
 ---
 title: "The Tremonton Film"
-subtitle: "A Navy chief petty officer's footage, analysed frame by frame"
+subtitle: "A Navy chief petty officer’s footage, analysed frame by frame"
 date: 1952-07-02
 dateDisplay: "2 July 1952"
 country: "US"

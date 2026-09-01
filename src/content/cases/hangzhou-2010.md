@@ -55,9 +55,9 @@ consistent with several ordinary sources. No radar record was released.
 ## The interesting institutional detail
 
 Chinese authorities appear to have indicated a military explanation without providing one. That is
-the Petrozavodsk pattern again: **a state's own classified activity generating an unexplained
+the Petrozavodsk pattern again: **a state’s own classified activity generating an unexplained
 phenomenon**, with the explanation withheld for reasons unrelated to the phenomenon itself.
 
 We list the case as disputed rather than explained, because an unelaborated official hint is not a
 determination. But it is the most probable reading, and the case is a useful reminder that the
-world's largest air forces generate UAP reports as a routine by-product.
+world’s largest air forces generate UAP reports as a routine by-product.

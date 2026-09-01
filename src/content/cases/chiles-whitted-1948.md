@@ -1,6 +1,6 @@
 ---
 title: "Chiles–Whitted"
-subtitle: "A DC-3 crew's near-miss over Alabama"
+subtitle: "A DC-3 crew’s near-miss over Alabama"
 date: 1948-07-24
 dateDisplay: "24 July 1948"
 country: "US"

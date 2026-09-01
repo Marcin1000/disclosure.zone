@@ -26,7 +26,7 @@ scores:
   X: 1
   D: 5
 summary: "ATFLIR footage in which a small object appears to skim just above the ocean surface at enormous speed. One of the three videos whose authenticity the Department of Defense confirmed."
-official: "The DoD confirmed the material is authentic. Geometric analyses — including by NASA's independent study team — showed the apparent speed is a product of parallax."
+official: "The DoD confirmed the material is authentic. Geometric analyses — including by NASA’s independent study team — showed the apparent speed is a product of parallax."
 alternatives:
 - "An object at about 4 km altitude (not near the surface), a few kilometres away, moving at some tens of km/h — that is, at wind speed."
 claims:
@@ -57,4 +57,4 @@ same effect by which roadside trees “fly past” while distant mountains stand
 
 Because it is one of three videos whose authenticity the Pentagon confirmed — and it is still
 presented as evidence of non-terrestrial performance. Separating those two things — **an authentic
-recording** and **an extraordinary object** — is this database's principal job.
+recording** and **an extraordinary object** — is this database’s principal job.

@@ -46,5 +46,5 @@ It is not about the 1978 sightings themselves. It is about **the institutional p
 
 Italy is one of very few states that not only collected reports but **assigned the task to a named
 institution and never revoked it.** As a result there exists an unbroken, uniformly maintained
-register spanning nearly half a century — a resource comparable in quality to France's GEIPAN and
+register spanning nearly half a century — a resource comparable in quality to France’s GEIPAN and
 almost entirely ignored by the English-language literature on the subject.

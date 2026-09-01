@@ -1,6 +1,6 @@
 ---
 title: "GIMBAL"
-subtitle: "A rotating object whose rotation is probably the camera's"
+subtitle: "A rotating object whose rotation is probably the camera’s"
 date: 2015-01-21
 dateDisplay: "January 2015"
 country: "US"
@@ -26,11 +26,11 @@ scores:
   T: 4
   X: 2
   D: 4
-summary: "ATFLIR footage showing a lens-shaped object that performs a distinct rotation of about 90° during the clip. The soundtrack captures the crew's surprise. The Department of Defense confirmed the material's authenticity."
+summary: "ATFLIR footage showing a lens-shaped object that performs a distinct rotation of about 90° during the clip. The soundtrack captures the crew’s surprise. The Department of Defense confirmed the material’s authenticity."
 official: "The DoD confirmed the footage is authentic; the event remains unidentified."
 alternatives:
-- "Image rotation produced by the ATFLIR gimbal passing through a particular angle — the object's shape stays constant while the sensor's reference frame rotates."
-- "The thermal signature of a distant aircraft's engine seen from behind, with glare masking the actual shape."
+- "Image rotation produced by the ATFLIR gimbal passing through a particular angle — the object’s shape stays constant while the sensor’s reference frame rotates."
+- "The thermal signature of a distant aircraft’s engine seen from behind, with glare masking the actual shape."
 - "A genuine object performing a rotation."
 claims:
 - "gimbal-rotation"
@@ -39,7 +39,7 @@ sources:
   label: "The GIMBAL recording (US Navy material)"
   ref: "dod-navy-videos-2020"
 - "tier": "T2"
-  label: "DoD statement of 27 April 2020 confirming the recording's authenticity"
+  label: "DoD statement of 27 April 2020 confirming the recording’s authenticity"
   ref: "navy-uap-foia"
 - "tier": "T4"
   label: "Optical analyses indicating the role of the gimbal mechanism"
@@ -47,14 +47,14 @@ sources:
 
 ## The core of the dispute
 
-GIMBAL is cited above all for the object's rotation. It is the element hardest to reconcile with known
+GIMBAL is cited above all for the object’s rotation. It is the element hardest to reconcile with known
 technology — and simultaneously the element most susceptible to an instrumental explanation.
 
 The ATFLIR system is gimbal-mounted, and at certain viewing angles the mount **rolls the image
 reference frame.** In that case what rotates is not the object but the frame in which we see it — and
 an object of constant shape gives the impression of turning.
 
-Settling it requires **the pod's metadata**: gimbal angle per frame, operating mode, range to target.
+Settling it requires **the pod’s metadata**: gimbal angle per frame, operating mode, range to target.
 That data exists. It is not public.
 
 ## The correct status

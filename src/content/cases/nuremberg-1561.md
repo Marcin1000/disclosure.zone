@@ -1,6 +1,6 @@
 ---
 title: "The Nuremberg Phenomenon"
-subtitle: "Hans Glaser's broadsheet and the problem of sources from before instruments"
+subtitle: "Hans Glaser’s broadsheet and the problem of sources from before instruments"
 date: 1561-04-14
 dateDisplay: "14 April 1561"
 country: "DE"

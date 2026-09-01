@@ -58,7 +58,7 @@ The structure is unusually complete for 1968:
 1. Ground security teams at dispersed missile facilities report a luminous object independently.
 2. Ground radar acquires a target.
 3. A B-52 returning from a training mission is vectored toward it.
-4. The aircraft's own radar paints a return.
+4. The aircraft’s own radar paints a return.
 5. The crew reports UHF interference as the object passes close.
 6. The crew sights the object visually.
 
@@ -76,4 +76,4 @@ where the conclusion looks like it was chosen to close the case rather than to f
 ## What is still missing
 
 The radar scope photographs, if they were ever taken. Without them the strongest element of the case
-rests on the crew's written statements rather than on a record.
+rests on the crew’s written statements rather than on a record.

@@ -27,7 +27,7 @@ scores:
   T: 4
   X: 3
   D: 2
-summary: "On the night of 13–14 August 1956 the radars of two USAF bases in England tracked targets correlated with visual sightings from the ground and from the air. A scrambled RAF fighter obtained a contact on its airborne radar, after which — by the crew's account — the target moved behind the intercepting aircraft."
+summary: "On the night of 13–14 August 1956 the radars of two USAF bases in England tracked targets correlated with visual sightings from the ground and from the air. A scrambled RAF fighter obtained a contact on its airborne radar, after which — by the crew’s account — the target moved behind the intercepting aircraft."
 official: "Blue Book left the case unidentified. The Condon Committee described it as one of the most disturbing in the entire corpus."
 alternatives:
 - "Anomalous radar propagation under inversion — a real mechanism, but hard to reconcile with correlation between independent radars and a cockpit sighting."

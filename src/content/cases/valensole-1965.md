@@ -28,7 +28,7 @@ scores:
 summary: "A lavender farmer reported an ovoid object landed in his field with two small figures beside it. Gendarmes documented ground marks the same day. The affected patch of lavender reportedly failed to grow normally for years afterwards."
 official: "Investigated by the gendarmerie; later absorbed into the GEIPAN archive. Unresolved."
 alternatives:
-- "A hoax — hard to reconcile with the witness's documented reluctance to discuss the event and the absence of any gain."
+- "A hoax — hard to reconcile with the witness’s documented reluctance to discuss the event and the absence of any gain."
 - "A classified aircraft or vehicle test, in a region used for military activity."
 - "A misidentified helicopter, poorly fitting the ground marks."
 claims:

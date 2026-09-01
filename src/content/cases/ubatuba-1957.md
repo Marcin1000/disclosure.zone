@@ -35,7 +35,7 @@ claims:
 sources:
 - "tier": "T4"
   label: "The letter to a newspaper that is the only source describing the event"
-  note: "The letter's author was never identified or interviewed."
+  note: "The letter’s author was never identified or interviewed."
 - "tier": "T1"
   label: "Laboratory analysis results for the samples (Brazil, later the US)"
 ---

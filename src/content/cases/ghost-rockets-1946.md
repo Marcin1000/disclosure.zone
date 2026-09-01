@@ -60,6 +60,6 @@ source — a pattern that will repeat several dozen times in this database.
 
 ## Conclusion
 
-Ghost Rockets set the correct time frame for the entire field and show that a state's first
+Ghost Rockets set the correct time frame for the entire field and show that a state’s first
 response to UAP was not “this is nonsense” but **“is this an enemy weapon?”** That question, not the
 extraterrestrial hypothesis, drove the first decade of investigation.

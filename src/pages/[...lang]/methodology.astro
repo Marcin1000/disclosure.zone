@@ -57,7 +57,7 @@ const en = lang === 'en';
       {AXES.map((a, i) => (
         <div style={`padding:1.1rem clamp(1.1rem,3vw,1.7rem);${i ? 'border-top:1px solid var(--line)' : ''}`}>
           <div style="display:flex;gap:.9rem;align-items:baseline">
-            <span class="mono" style="color:var(--phos);font-weight:700;font-size:1.05rem;width:1.2rem">{a.k}</span>
+            <span class="mono" style="color:var(--phos);font-weight:700;font-size:1.05rem;flex:none;width:1.2rem">{a.k}</span>
             <div>
               <p class="mono" style="margin:0 0 .25rem;color:var(--fg);font-size:.92rem">{bi(a.name, lang)}</p>
               <p class="dim" style="margin:0;font-size:.9rem">{bi(a.desc, lang)}</p>

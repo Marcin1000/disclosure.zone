@@ -32,7 +32,7 @@ scores:
 summary: "Since 1981 the Hessdalen valley has produced recurring luminous phenomena — at peak, more than a dozen times a week. In 1984 an expedition deployed radar, a spectrograph, a magnetometer, a seismograph, a laser and a Geiger counter. An automatic monitoring station has operated since 1998."
 official: "None. This is the only case in the database investigated chiefly by civilian science rather than by the military."
 alternatives:
-- "Plasma from ionisation under the valley's specific geological conditions — metal-rich deposits, possible piezoelectric activity."
+- "Plasma from ionisation under the valley’s specific geological conditions — metal-rich deposits, possible piezoelectric activity."
 - "Phenomena associated with combustion of metallic dust in air."
 - "Vehicle-light reflections and atmospheric effects — accounting for some, but not all, observations."
 - "An unknown natural phenomenon."
@@ -42,7 +42,7 @@ claims:
 sources:
 - "tier": "T1"
   label: "Project Hessdalen 1984 technical report — radar, spectrograph, magnetometer and seismograph results"
-  note: "The report openly lists its own limits: noise, monitoring gaps, instrument failures, insufficient staffing, and possible influence of the team's own radar on some spectral records."
+  note: "The report openly lists its own limits: noise, monitoring gaps, instrument failures, insufficient staffing, and possible influence of the team’s own radar on some spectral records."
   ref: "hessdalen-1984"
 - "tier": "T1"
   label: "Automatic measuring station data (from 1998)"
@@ -73,7 +73,7 @@ observations and several dozen radar returns.
 
 The expedition report is an exception in this database: **it lists its own weaknesses.** Measurement
 noise, gaps in monitoring, instrument failures, insufficient staffing, and the possibility that the
-team's own radar influenced some of the spectral records.
+team’s own radar influenced some of the spectral records.
 
 That candour raises rather than lowers the credibility of the material. This is what a scientific
 report looks like, as opposed to a report with something to prove.

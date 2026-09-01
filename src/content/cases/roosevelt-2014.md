@@ -41,7 +41,7 @@ sources:
   label: "US Navy aircrew testimony, including public statements before Congress"
   ref: "oversight-2023"
 - "tier": "T2"
-  label: "Navy confirmation of the material's authenticity and of the reporting procedures introduced"
+  label: "Navy confirmation of the material’s authenticity and of the reporting procedures introduced"
   ref: "odni-2021"
 - "tier": "T1"
   label: "ODNI preliminary assessment (2021) covering this period"

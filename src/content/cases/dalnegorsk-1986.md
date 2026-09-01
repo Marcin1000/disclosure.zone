@@ -49,13 +49,13 @@ draft: false
 Dalnegorsk resembles the French case in shape: an observed event, a site secured within days,
 material collected, laboratory analysis by state scientists.
 
-The critical difference is **publication**. GEIPAN's dossier is public, itemised and citable. The
+The critical difference is **publication**. GEIPAN’s dossier is public, itemised and citable. The
 Dalnegorsk analyses have never been comprehensively published in a form outside researchers can
 examine. What circulates is largely summary and recollection.
 
 ## Why the mining objection matters
 
-Dalnegorsk sits in one of Russia's most intensively mined regions, with a long history of metallurgy
+Dalnegorsk sits in one of Russia’s most intensively mined regions, with a long history of metallurgy
 and ore processing. Finding unusual metallic residue on a hillside there carries a much weaker prior
 than finding it in a Provençal lavender field.
 

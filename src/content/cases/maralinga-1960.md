@@ -1,6 +1,6 @@
 ---
 title: "Maralinga / Wewak"
-subtitle: "An RAAF sighting over Australia's nuclear test range"
+subtitle: "An RAAF sighting over Australia’s nuclear test range"
 date: 1960-05-01
 dateDisplay: "1960"
 country: "AU"

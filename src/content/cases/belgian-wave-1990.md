@@ -58,7 +58,7 @@ The F-16 airborne radar recordings genuinely exist and genuinely show abrupt cha
 parameters. For years they were presented as measurements of accelerations impossible for known
 technology.
 
-Later analysis pointed elsewhere. An F-16 radar does not display the target's raw position. It
+Later analysis pointed elsewhere. An F-16 radar does not display the target’s raw position. It
 displays **the output of a tracking filter** that smooths and predicts a trajectory. When the filter
 loses one target and acquires another, a jump appears in the record — and that jump looks exactly
 like extreme acceleration, while being an artefact of the algorithm.
@@ -74,7 +74,7 @@ we have not seen in raw form.
 
 ## The Petit-Rechain photograph
 
-In 2011 the wave's most famous image — a triangle with four lights — was admitted by its author, on
+In 2011 the wave’s most famous image — a triangle with four lights — was admitted by its author, on
 Belgian television, to be a hoax: painted styrofoam with lights at the corners, hung on threads. In
 2022 he was reported as claiming he had been paid to say that.
 

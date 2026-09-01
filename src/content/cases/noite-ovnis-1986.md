@@ -37,7 +37,7 @@ claims:
 - "brazil-1986-multiple-intercepts"
 sources:
 - "tier": "T2"
-  label: "Press conference by Brazil's Air Minister, May 1986"
+  label: "Press conference by Brazil’s Air Minister, May 1986"
   note: "A rare instance of immediate public confirmation at ministerial level."
   ref: "br-ufo-night"
 - "tier": "T1"

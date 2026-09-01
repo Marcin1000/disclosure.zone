@@ -67,7 +67,7 @@ different jobs, with different views of the sky. A second aircraft holding in th
 same object.
 
 The approach itself is documented, because it had to be. The aircraft was held because Bariloche and
-its airport had lost power. That is an operational fact with a paper trail, separate from anybody's
+its airport had lost power. That is an operational fact with a paper trail, separate from anybody’s
 account of a light.
 
 ## What must not be presented as measurement
@@ -88,7 +88,7 @@ concrete risk, is not wrong. It is simply an answer to a different question. Whe
 a risk to aviation and what that something was are separate questions, and only the first was
 answered.
 
-That gap is the case's real subject. It is why the file still circulates, and why it resurfaced in
+That gap is the case’s real subject. It is why the file still circulates, and why it resurfaced in
 2026 when it was noticed inside a batch of declassified United States material, which transmits the
 case without adding a single measurement to it.
 

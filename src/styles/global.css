@@ -486,6 +486,10 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .f:hover { color: var(--fg); border-color: var(--fg-faint); }
 .f[aria-pressed="true"] { color: var(--phos); border-color: var(--phos-dim); background: var(--phos-ghost); }
 .f b { font-weight: 700; opacity: .5; margin-left: .3rem; }
+/* Przełącznik reszty państw: ta sama pastylka, ale kreską przerywaną,
+   żeby nie udawał filtra, którym nie jest. */
+.f--more { border-style: dashed; color: var(--phos-dim); }
+.f--more:hover { color: var(--phos); border-color: var(--phos-dim); }
 /* Długie etykiety założeń nie mieszczą się w jednej linii na telefonie */
 .filters--stack { flex-direction: column; align-items: stretch; }
 .filters--stack .f { white-space: normal; text-align: left; }
@@ -539,8 +543,12 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 }
 .geo__name { font-family: var(--mono); font-size: .68rem; letter-spacing: .13em; text-transform: uppercase; color: var(--fg-dim); }
 .geo__n { font-family: var(--mono); font-size: .8rem; color: var(--fg); }
-.geo__bar { grid-column: 1 / -1; display: flex; gap: 1px; height: 5px; width: var(--w); min-width: 6px; }
+.geo__bar { grid-column: 1 / -1; grid-row: 2; position: relative; z-index: 1;
+  display: flex; gap: 1px; height: 5px; width: var(--w); min-width: 6px; }
 .geo__bar i { display: block; }
+/* Ścieżka pod paskiem: bez niej jedna sprawa to kikut zawieszony w pustce,
+   a nie wartość odczytana ze wspólnej skali. */
+.geo__row::after { content: ""; grid-column: 1 / -1; grid-row: 2; height: 5px; background: var(--line); }
 .geo__row[aria-pressed="true"] { background: var(--phos-ghost); }
 .geo__row[aria-pressed="true"] .geo__name { color: var(--phos); }
 
@@ -647,7 +655,10 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .foot__grid { display: grid; gap: 2.2rem; }
 @media (min-width: 820px) { .foot__grid { grid-template-columns: 1.6fr 1fr 1fr; } }
 /* :not(.logo), bo display:block zabijał flexa w znaku i rozjeżdżał go z nazwą */
-.foot a:not(.logo) { color: var(--fg-dim); border: 0; display: block; padding: .22rem 0; font-size: .9rem; }
+.foot a:not(.logo) {
+  color: var(--fg-dim); border: 0; display: block; padding: .3rem 0;
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .06em;
+}
 .foot a:hover { color: var(--phos); }
 
 /* ============================================================ POMOCNICZE */
@@ -666,7 +677,7 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .lang { font-family: var(--mono); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; margin: 0; display: flex; gap: .5rem; align-items: baseline; }
 .lang a { color: var(--fg-faint); border: 0; }
 .lang a:hover { color: var(--phos); }
-.lang__on { color: var(--fg-dim); }
+.lang__on { color: var(--phos); }
 .lang__sep { color: var(--fg-faint); }
 
 /* ============================================================ TOOLKIT */
@@ -695,7 +706,7 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .tk__out { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .tk__row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .65rem .85rem; background: var(--void-2); }
 .tk__row span { font-family: var(--mono); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--fg-faint); }
-.tk__row b { font-family: var(--mono); font-size: .95rem; color: var(--fg); font-weight: 400; }
+.tk__row b { font-family: var(--mono); font-size: .95rem; color: var(--fg); font-weight: 400; white-space: nowrap; }
 .tk__row--big { padding: .95rem .85rem; }
 .tk__row--big b { font-size: 1.5rem; font-weight: 700; color: var(--phos); letter-spacing: -.02em; }
 

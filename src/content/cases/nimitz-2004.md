@@ -29,7 +29,7 @@ scores:
   X: 4
   D: 2
 summary: "During carrier strike group exercises, SPY-1 radar operators aboard USS Princeton tracked unusual contacts over several days. On 14 November two F/A-18Fs were vectored to one of them. Four aviators observed a white object with no visible lifting surfaces above an area of disturbed water. A subsequent sortie recorded the infrared footage known as FLIR1."
-official: "The US Department of Defense confirmed in 2020 that the footage is authentic Navy material and classified the event as unidentified. Confirming a video's authenticity is not identifying the object."
+official: "The US Department of Defense confirmed in 2020 that the footage is authentic Navy material and classified the event as unidentified. Confirming a video’s authenticity is not identifying the object."
 alternatives:
 - "A combination of independent events: unusual radar traces (possibly related to SPY-1 software issues in that period), an independent surface phenomenon, and an object observed at badly misjudged range."
 - "A balloon or drifting object with misjudged range and size — hard to reconcile with the account of the object reacting to a manoeuvre."
@@ -86,14 +86,14 @@ duration estimated from memory. To treat it as a speed measurement you must assu
 indications referred to the same object, that there was no loss and reacquisition of track, and that
 the time estimate is accurate. None of those assumptions can be checked today.
 
-**“A descent from 80,000 ft in under a second.”** This comes from a radar operator's account, not
+**“A descent from 80,000 ft in under a second.”** This comes from a radar operator’s account, not
 from a recording.
 
 **“The object entered the ocean.”** Fravor himself testified that they **did not see the object
 underwater** — they saw a surface disturbance. The popular “transmedium” version elaborates on what
 the witness did not say.
 
-## AARO's position
+## AARO’s position
 
 AARO leadership stated publicly that the office **does not hold additional data** enabling a full
 analysis of this event. That is neither a debunking nor a confirmation — it is a statement that the

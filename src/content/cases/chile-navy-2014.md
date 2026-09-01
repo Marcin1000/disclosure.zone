@@ -63,6 +63,6 @@ high-humidity layer, far more visible in infrared than in visible light.
 3. An institution that publicly admits it could not solve something for two years, and then publishes
    the solution, is more credible than an institution that is never wrong.
 
-Chile's SEFAA, CEFAA's successor, still requires **original material** for analysis — not screenshots
+Chile’s SEFAA, CEFAA’s successor, still requires **original material** for analysis — not screenshots
 from messaging apps, which destroy the data needed for the work. That is the standard the whole field
 should demand.

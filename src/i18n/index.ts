@@ -86,8 +86,13 @@ const en: Dict = {
   'cases.all': 'All',
   'cases.core': '◆ Evidential core',
   'cases.listHeading': 'The list of cases',
-  'cases.count': '{n} cases',
+  'cases.count.one': '{n} case',
+  'cases.count.few': '{n} cases',
+  'cases.count.many': '{n} cases',
   'cases.empty': 'No cases match these filters.',
+  'cases.moreCountries': '{n} more',
+  'cases.lessCountries': 'Show fewer',
+  'cases.moreLabel': 'Show the remaining countries, one case each',
   'cases.back': '← All case files',
 
   'case.file': 'File',
@@ -203,8 +208,13 @@ const pl: Dict = {
   'cases.all': 'Wszystkie',
   'cases.core': '◆ Sprawy kluczowe',
   'cases.listHeading': 'Lista spraw',
-  'cases.count': '{n} spraw',
+  'cases.count.one': '{n} sprawa',
+  'cases.count.few': '{n} sprawy',
+  'cases.count.many': '{n} spraw',
   'cases.empty': 'Brak spraw spełniających te kryteria.',
+  'cases.moreCountries': 'Jeszcze {n}',
+  'cases.lessCountries': 'Zwiń',
+  'cases.moreLabel': 'Pokaż pozostałe państwa, po jednej sprawie',
   'cases.back': '← Wszystkie akta',
 
   'case.file': 'Akta',
@@ -261,6 +271,17 @@ const pl: Dict = {
 };
 
 const DICT: Record<Lang, Dict> = { en, pl };
+
+/** Formy liczby mnogiej: angielski ma dwie, polski trzy (1 / 2-4 / reszta). */
+export function plural(lang: Lang, n: number): 'one' | 'few' | 'many' {
+  if (lang === 'pl') {
+    const d = n % 10, h = n % 100;
+    if (n === 1) return 'one';
+    if (d >= 2 && d <= 4 && !(h >= 12 && h <= 14)) return 'few';
+    return 'many';
+  }
+  return n === 1 ? 'one' : 'many';
+}
 
 export function useT(lang: Lang) {
   return (key: string, vars?: Record<string, string | number>): string => {

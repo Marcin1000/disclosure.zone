@@ -28,7 +28,7 @@ scores:
 summary: "Second Lieutenant George Gorman flew an extended series of manoeuvres against a small bright light which, by his account, responded to his movements and out-turned him."
 official: "Blue Book attributed the event to a lighted weather balloon."
 alternatives:
-- "A lighted weather balloon — a drifting object combined with the observer's own manoeuvres produces the illusion of “response” and “pursuit”."
+- "A lighted weather balloon — a drifting object combined with the observer’s own manoeuvres produces the illusion of “response” and “pursuit”."
 - "The planet Jupiter with misjudged distance."
 claims: []
 sources:
@@ -36,7 +36,7 @@ sources:
   label: "Project Blue Book files, Gorman case"
   ref: "nara-bluebook"
 - "tier": "T3"
-  label: "The pilot's written report filed immediately after the flight"
+  label: "The pilot’s written report filed immediately after the flight"
   archive: "nara-bluebook-catalog"
 ---
 
@@ -46,8 +46,8 @@ This is the textbook case for why pilot accounts of “an object that reacted to
 particular care.
 
 When a pilot manoeuvres around a distant, stationary or slowly drifting point of light, **the
-aircraft's own motion transfers onto the target's apparent motion.** The object appears to dive,
-climb and turn, because the line of sight is changing, not the target's position.
+aircraft’s own motion transfers onto the target’s apparent motion.** The object appears to dive,
+climb and turn, because the line of sight is changing, not the target’s position.
 
 Without a range measurement these two scenarios cannot be told apart from the cockpit. The same
 mechanism recurs throughout this database — right up to the GoFast video of 2015.

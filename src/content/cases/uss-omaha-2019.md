@@ -27,7 +27,7 @@ scores:
   T: 4
   X: 3
   D: 3
-summary: "Over several nights ship crews reported multiple aerial objects operating around the group. Infrared recordings and ship's log entries were produced. The Navy confirmed the material is authentic."
+summary: "Over several nights ship crews reported multiple aerial objects operating around the group. Infrared recordings and ship’s log entries were produced. The Navy confirmed the material is authentic."
 official: "The Navy confirmed the authenticity of the footage and the log entries; the case remains unidentified."
 alternatives:
 - "Unmanned aerial systems operated from a surface vessel — the hypothesis indicated as most probable, consistent with the number of objects, the duration and the flight pattern."
@@ -37,7 +37,7 @@ claims:
 - "omaha-drone-swarm"
 sources:
 - "tier": "T1"
-  label: "IR recordings and ship's log extracts released under FOIA"
+  label: "IR recordings and ship’s log extracts released under FOIA"
   ref: "navy-uap-foia"
 - "tier": "T2"
   label: "US Navy confirmation of authenticity"

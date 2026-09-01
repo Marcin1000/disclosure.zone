@@ -12,7 +12,7 @@ domain: "civil"
 tier: 2
 status: "unresolved"
 duration: "about 3 hours, a series of events"
-witnesses: "More than a dozen independent drivers, a sheriff's deputy"
+witnesses: "More than a dozen independent drivers, a sheriff’s deputy"
 evidence:
 - "visual"
 - "multi-witness"
@@ -39,7 +39,7 @@ sources:
   note: "The investigation covered only a fraction of the reporters — the most common criticism levelled at Blue Book."
   ref: "nara-bluebook"
 - "tier": "T1"
-  label: "Hockley County sheriff's office reports"
+  label: "Hockley County sheriff’s office reports"
   archive: "nara-bluebook-catalog"
 ---
 

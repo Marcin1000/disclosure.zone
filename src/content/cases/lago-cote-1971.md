@@ -84,7 +84,7 @@ one anomaly is exactly the situation in which an instrument fault is hardest to 
 
 A high-resolution scan of the original negative, published with the adjacent frames and the flight
 log, would let anyone repeat the analysis instead of taking it on trust. Photogrammetry against the
-mapped shoreline, which is the whole point of a survey frame, could narrow the object's position
+mapped shoreline, which is the whole point of a survey frame, could narrow the object’s position
 along the line of sight far better than any published estimate has.
 
 The material to do this exists and is in one place. That is more than most cases in this database

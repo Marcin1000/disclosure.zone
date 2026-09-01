@@ -37,7 +37,7 @@ sources:
   label: "Project Blue Book files / early USAF investigation, Arnold case"
   ref: "nara-bluebook"
 - "tier": "T3"
-  label: "Kenneth Arnold's written statement to the aviation authorities (1947)"
+  label: "Kenneth Arnold’s written statement to the aviation authorities (1947)"
   archive: "nara-bluebook-catalog"
 ---
 

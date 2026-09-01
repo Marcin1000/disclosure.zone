@@ -47,7 +47,7 @@ draft: false
 Ladakh is a case where **a state deployed astronomers to a border dispute** — and they settled it.
 
 Two military organisations, on high alert along a contested frontier, logged several hundred
-sightings over six months and suspected an adversary's drones. Radar showed nothing. A scientific
+sightings over six months and suspected an adversary’s drones. Radar showed nothing. A scientific
 team was sent, worked the problem, and identified Jupiter and Venus refracted through the thin,
 turbulent high-altitude atmosphere.
 

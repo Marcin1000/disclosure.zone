@@ -12,7 +12,7 @@ domain: "military"
 tier: 2
 status: "disputed"
 duration: "about 15 seconds"
-witnesses: "Ship's crew and civilian expedition members; the photographer was a professional"
+witnesses: "Ship’s crew and civilian expedition members; the photographer was a professional"
 evidence:
 - "photo"
 - "visual"

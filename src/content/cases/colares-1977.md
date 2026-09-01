@@ -27,7 +27,7 @@ scores:
   X: 3
   D: 3
 summary: "Following a wave of reports of luminous objects and injuries among residents, the Brazilian Air Force deployed a detachment to the island tasked with documenting the phenomenon. An extensive body of reports, sketches and photographs resulted, declassified decades later."
-official: "Materials declassified by the Brazilian Air Force; no official determination of the phenomenon's character."
+official: "Materials declassified by the Brazilian Air Force; no official determination of the phenomenon’s character."
 alternatives:
 - "Balloons, aircraft and atmospheric phenomena in a region with very poor observational infrastructure."
 - "Collective panic amplified by the military presence and media attention."

@@ -29,13 +29,13 @@ summary: "Anglican missionary William Gill and thirty-seven others watched a lar
 official: "No state investigation. The RAAF received the report and did not resolve it."
 alternatives:
 - "Venus and other bright planets seen through cloud, with the “figures” as an artefact of atmospheric distortion and expectation."
-- "A misidentified aircraft or ship's lights."
+- "A misidentified aircraft or ship’s lights."
 - "A genuine unidentified object."
 claims:
 - "boianai-signed-testimony"
 sources:
 - "tier": "T1"
-  label: "Rev. William Gill's contemporaneous account with 38 signatures, June 1959"
+  label: "Rev. William Gill’s contemporaneous account with 38 signatures, June 1959"
   note: "Written within hours and signed by all witnesses — procedurally exceptional for its time and place."
   archive: "naa-recordsearch"
 - "tier": "T4"

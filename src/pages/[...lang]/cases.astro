@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import CaseCard from '../../components/CaseCard.astro';
 import { getCases } from '../../lib/cases';
 import { STATUS, DOMAIN, bi } from '../../lib/scoring';
-import { langParams, path, useT, type Lang } from '../../i18n';
+import { langParams, path, plural, useT, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
 const { lang } = Astro.props as { lang: Lang };
@@ -11,13 +11,18 @@ const t = useT(lang);
 
 const all = await getCases(lang);
 const n = (fn: (d: any) => boolean) => all.filter(c => fn(c.data)).length;
+const countLabel = (k: number) => t(`cases.count.${plural(lang, k)}`, { n: k });
 const countries = [...new Set(all.map(c => c.data.country))]
   .map(k => ({ k, name: all.find(c => c.data.country === k)!.data.countryName, c: n(d => d.country === k) }))
   .sort((a, b) => b.c - a.c || a.name.localeCompare(b.name, lang));
+// Osiemnaście państw z jedną sprawą to osiemnaście chipów, które na telefonie
+// spychały pierwszą sprawę o cały ekran w dół. Zwijamy je pod przełącznik.
+const leadCountries = countries.filter(c => c.c > 1);
+const restCountries = countries.filter(c => c.c === 1);
 ---
 <Base title={t('cases.title')} description={t('cases.lead')} lang={lang} rest="/cases">
   <section class="wrap" style="padding-block:clamp(3rem,7vw,5rem) 2rem">
-    <p class="label label--phos" style="margin-bottom:.8rem">{t('cases.count', { n: all.length })}</p>
+    <p class="label label--phos" style="margin-bottom:.8rem">{countLabel(all.length)}</p>
     <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('cases.title')}</h1>
     <p class="lead dim" style="max-width:64ch">{t('cases.lead')}</p>
   </section>
@@ -48,11 +53,22 @@ const countries = [...new Set(all.map(c => c.data.country))]
         <p class="label" style="margin-bottom:.55rem">{t('cases.country')}</p>
         <div class="filters" data-group="country">
           <button class="f" data-v="" aria-pressed="true">{t('cases.all')}</button>
-          {countries.map(c => <button class="f" data-v={c.k} aria-pressed="false">{c.name} <b>{c.c}</b></button>)}
+          {leadCountries.map(c => <button class="f" data-v={c.k} aria-pressed="false">{c.name} <b>{c.c}</b></button>)}
+          {restCountries.map(c => (
+            <button class="f" data-rest hidden data-v={c.k} aria-pressed="false">{c.name} <b>{c.c}</b></button>
+          ))}
+          {restCountries.length > 0 && (
+            <button class="f f--more" type="button" data-more aria-expanded="false"
+                    aria-label={t('cases.moreLabel')}
+                    data-more-label={t('cases.moreCountries', { n: restCountries.length })}
+                    data-less-label={t('cases.lessCountries')}>
+              {t('cases.moreCountries', { n: restCountries.length })}
+            </button>
+          )}
         </div>
       </div>
     </div>
-    <p class="label" style="margin-top:1.5rem" data-result>{t('cases.count', { n: all.length })}</p>
+    <p class="label" style="margin-top:1.5rem" data-result>{countLabel(all.length)}</p>
   </section>
 
   <section class="wrap" style="padding-bottom:5rem">
@@ -71,9 +87,21 @@ const countries = [...new Set(all.map(c => c.data.country))]
     <p class="dim" data-empty hidden style="padding:3rem 0;text-align:center">{t('cases.empty')}</p>
   </section>
 
-  <script is:inline define:vars={{ tpl: t('cases.count', { n: '__N__' }) }}>
+  <script is:inline define:vars={{ lang, forms: {
+    one: t('cases.count.one', { n: '__N__' }),
+    few: t('cases.count.few', { n: '__N__' }),
+    many: t('cases.count.many', { n: '__N__' }),
+  } }}>
     (() => {
       const state = { status: '', domain: '', country: '', tier: '' };
+      // Polski ma trzy formy liczby mnogiej, angielski dwie. „1 spraw" to błąd, nie skrót.
+      function countLabel(k) {
+        const d = k % 10, h = k % 100;
+        const f = lang === 'pl'
+          ? (k === 1 ? 'one' : (d >= 2 && d <= 4 && !(h >= 12 && h <= 14)) ? 'few' : 'many')
+          : (k === 1 ? 'one' : 'many');
+        return forms[f].replace('__N__', k);
+      }
       const items = [...document.querySelectorAll('[data-item]')];
       const out = document.querySelector('[data-result]');
       const empty = document.querySelector('[data-empty]');
@@ -85,10 +113,19 @@ const countries = [...new Set(all.map(c => c.data.country))]
           if (card) card.style.display = ok ? '' : 'none';
           if (ok) n++;
         }
-        out.textContent = tpl.replace('__N__', n);
+        out.textContent = countLabel(n);
         empty.hidden = n > 0;
       }
-      document.querySelectorAll('.f').forEach(btn => {
+      // Przełącznik reszty państw nosi klasę .f dla wyglądu, ale nie jest filtrem.
+      const more = document.querySelector('[data-more]');
+      if (more) more.addEventListener('click', () => {
+        const open = more.getAttribute('aria-expanded') === 'true';
+        more.setAttribute('aria-expanded', String(!open));
+        more.textContent = open ? more.dataset.moreLabel : more.dataset.lessLabel;
+        document.querySelectorAll('[data-rest]').forEach(b => { b.hidden = open; });
+      });
+
+      document.querySelectorAll('.f:not([data-more])').forEach(btn => {
         btn.addEventListener('click', () => {
           const alt = btn.dataset.groupAlt;
           const on = btn.getAttribute('aria-pressed') === 'true';
@@ -98,7 +135,7 @@ const countries = [...new Set(all.map(c => c.data.country))]
           } else {
             const scope = btn.closest('[data-group]');
             state[scope.dataset.group] = btn.dataset.v;
-            scope.querySelectorAll('.f:not([data-group-alt])').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+            scope.querySelectorAll('.f:not([data-group-alt]):not([data-more])').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
           }
           apply();
         });

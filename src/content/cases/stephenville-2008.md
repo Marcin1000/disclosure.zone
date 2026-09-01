@@ -39,13 +39,13 @@ sources:
 - "tier": "T1"
   label: "FAA radar data obtained under FOIA (January 2008)"
 - "tier": "T2"
-  label: "The air base's corrected statement confirming the F-16 flights"
+  label: "The air base’s corrected statement confirming the F-16 flights"
 ---
 
 ## The key element: data obtained from below
 
 Stephenville is a precedent that deserves to be far better known. It is one of the first cases in
-which **independent researchers obtained a state's raw radar data under freedom of information law**
+which **independent researchers obtained a state’s raw radar data under freedom of information law**
 and ran their own analysis.
 
 The result was mixed, and valuable precisely for that. The data confirmed that the first official

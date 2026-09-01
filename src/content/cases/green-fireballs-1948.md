@@ -1,6 +1,6 @@
 ---
 title: "Green Fireballs"
-subtitle: "A wave over New Mexico's nuclear installations, and Project Twinkle"
+subtitle: "A wave over New Mexico’s nuclear installations, and Project Twinkle"
 date: 1948-12-05
 dateDisplay: "1948–1951 (wave)"
 country: "US"
@@ -46,7 +46,7 @@ sources:
 ## The first “nuclear connection”
 
 This is where one of the most durable motifs in the field is born: **UAP cluster around nuclear
-installations.** The motif returns at Malmstrom in 1967, at Australia's Maralinga, and in AARO
+installations.** The motif returns at Malmstrom in 1967, at Australia’s Maralinga, and in AARO
 reporting in the 2020s.
 
 Settling it requires stating the alternative honestly. Nuclear installations are simultaneously the

@@ -29,7 +29,7 @@ scores:
 summary: "A Mexican Air Force surveillance aircraft on an anti-narcotics patrol recorded eleven objects on infrared that appeared to surround it. The Defence Ministry released the footage publicly. Analysis subsequently matched the objects to burning gas flares at the Cantarell offshore oil field."
 official: "Released by the Mexican Secretariat of National Defence. Independent analysis identified the sources as oil platform flares; the identification is widely accepted."
 alternatives:
-- "Burning gas flares at the Cantarell oil field — consistent with position, spacing, thermal signature and the aircraft's own track."
+- "Burning gas flares at the Cantarell oil field — consistent with position, spacing, thermal signature and the aircraft’s own track."
 claims:
 - "mexico-2004-flir"
 sources:
@@ -51,7 +51,7 @@ The crew saw eleven heat sources apparently pacing and surrounding their aircraf
 was sincere and their instrument was working correctly. The heat sources were real.
 
 They were also stationary, on the surface, roughly 200 km away — gas flares on oil platforms. The
-apparent motion and encirclement came from the aircraft's own turn.
+apparent motion and encirclement came from the aircraft’s own turn.
 
 ## The pattern this belongs to
 
@@ -67,6 +67,6 @@ subject rather than a footnote.
 
 ## Institutional note
 
-Mexico's Defence Ministry released the footage promptly and publicly. When the prosaic explanation
+Mexico’s Defence Ministry released the footage promptly and publicly. When the prosaic explanation
 emerged, that release is what made checking possible. Openness with raw material is what allows
 cases to be solved — and it is the argument for releasing the Nimitz data too.

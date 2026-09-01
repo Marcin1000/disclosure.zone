@@ -1,5 +1,5 @@
 ---
-title: "Incydent śmigłowca Coyne'a"
+title: "Incydent śmigłowca Coyne’a"
 subtitle: "Załoga UH-1 Gwardii Narodowej i niewyjaśniony przyrost wysokości"
 dateDisplay: "18 października 1973"
 countryName: "Stany Zjednoczone"

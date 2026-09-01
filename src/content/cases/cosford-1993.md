@@ -25,7 +25,7 @@ scores:
   T: 5
   X: 2
   D: 4
-summary: "Over one night, RAF personnel at two bases, police and dozens of civilians reported a large triangular craft and a beam of light sweeping the ground. The MOD's UFO desk escalated the case internally as one of the most significant it had handled."
+summary: "Over one night, RAF personnel at two bases, police and dozens of civilians reported a large triangular craft and a beam of light sweeping the ground. The MOD’s UFO desk escalated the case internally as one of the most significant it had handled."
 official: "MOD assessment concluded the reports were largely accounted for by the re-entry of a Russian rocket body earlier that night, together with an aircraft refuelling operation."
 alternatives:
 - "Re-entry of a Cosmos rocket stage, which produced widely reported fireballs across the UK that night — accounts for the timing and the corridor."
@@ -48,8 +48,8 @@ draft: false
 
 Cosford is one of the cases where **what the state wrote internally** is the story.
 
-The MOD's UFO desk did not brush this off. The internal assessment treated it as among the most
-significant reports it had received, noted that the object's reported performance exceeded anything
+The MOD’s UFO desk did not brush this off. The internal assessment treated it as among the most
+significant reports it had received, noted that the object’s reported performance exceeded anything
 in the UK inventory, and escalated it.
 
 That is a documented instance of a defence ministry taking a UAP report seriously in writing — not a
@@ -63,7 +63,7 @@ A refuelling operation with searchlights accounts for the later low-level observ
 
 ## The lesson worth extracting
 
-The MOD's seriousness and the prosaic explanation are **both real, and not in conflict.** An
+The MOD’s seriousness and the prosaic explanation are **both real, and not in conflict.** An
 institution can correctly judge a report worth investigating and the report can still have an ordinary
 cause. Treating institutional concern as evidence of an extraordinary object is a category error —
 and it is one of the most common in this field.

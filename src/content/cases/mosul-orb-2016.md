@@ -43,7 +43,7 @@ sources:
 
 ## Why this matters even though nothing is visible
 
-The Mosul orb is in the database as an example of **an institution saying “I don't know” honestly.**
+The Mosul orb is in the database as an example of **an institution saying “I don’t know” honestly.**
 
 AARO could have withheld the footage, or fitted an explanation to it. Instead it presented the clip
 publicly with the comment that there is too little data to state anything — and that absence of

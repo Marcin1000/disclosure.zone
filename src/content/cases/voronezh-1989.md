@@ -36,7 +36,7 @@ claims:
 sources:
 - "tier": "T5"
   label: "TASS agency dispatch, September 1989"
-  note: "A press agency dispatch is not an investigative document — this is a T5 source despite the agency's state character."
+  note: "A press agency dispatch is not an investigative document — this is a T5 source despite the agency’s state character."
 ---
 
 ## A methodological warning: “official” is not “investigative”

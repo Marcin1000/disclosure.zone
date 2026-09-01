@@ -57,7 +57,7 @@ a machine that did not exist. The first powered flight was seven years away.
 The 1890s were saturated with anticipation of the dirigible. Newspapers had been promising one for
 years. When the wave began, the public had a ready-made template — and reports snapped to it.
 
-Half a century later the same mechanism produced flying saucers after Kenneth Arnold's metaphor was
+Half a century later the same mechanism produced flying saucers after Kenneth Arnold’s metaphor was
 misprinted. Half a century after that it produced black triangles. **The shape reported in a wave
 tracks the technology the culture is currently anticipating**, not the shape of anything in the sky.
 

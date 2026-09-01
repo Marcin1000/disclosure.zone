@@ -28,7 +28,7 @@ scores:
 summary: "Bomber and fighter crews on both sides of the front reported glowing spheres pacing their aircraft, sometimes holding formation for minutes. The reports were numerous enough that military intelligence treated them as a possible new enemy weapon."
 official: "Considered as a possible German psychological or interceptor weapon; no corresponding programme was found after the war."
 alternatives:
-- "St Elmo's fire and electrostatic discharge on the airframe."
+- "St Elmo’s fire and electrostatic discharge on the airframe."
 - "Reflections in cockpit glazing at low temperatures."
 - "Misjudged distance to stars, planets and tracer fire under extreme combat stress."
 claims:
