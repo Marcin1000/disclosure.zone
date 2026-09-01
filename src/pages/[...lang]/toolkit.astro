@@ -34,6 +34,7 @@ const L = en ? {
   legLos: 'line of sight',
   legGhost: 'the same line, moments earlier — this rotation is what looks like target motion',
   legAng: 'depression angle',
+  offScale: 'off scale',
   assumptionsTitle: 'Assumptions of this model — read them',
   bokehTitle: 'Aperture shape, not object shape',
   bokehAlt: 'Defocused points of light taking the shape of the selected aperture',
@@ -45,6 +46,21 @@ const L = en ? {
   angSize: 'Implied object diameter',
   angRef: 'Airbus A320 · 36 m span',
   angCompareAlt: 'The implied object next to an airliner drawn to the same scale',
+  satTitle: 'A flare is a mirror, not a manoeuvre',
+  satLead: 'A satellite in low orbit is a moving mirror. When the Sun, a flat panel and your eye line up, the object brightens by several magnitudes in a few seconds and then goes out: an appearance from nothing, a burst of light, a disappearance. That is geometry, and geometry is checkable. A satellite can only shine while it is still in sunlight and you are already in darkness. Set the clock and the orbit and see whether it is even possible.',
+  satTime: 'Time after local sunset',
+  satAltitude: 'Orbit altitude',
+  satDepr: 'Solar depression',
+  satShadow: 'Earth-shadow height overhead',
+  satRate: 'Angular rate at zenith',
+  satState: 'State',
+  satLit: 'Sunlit',
+  satDark: 'In shadow',
+  satChart: 'Height of the Earth’s shadow against time after sunset, with the selected orbit marked',
+  satRegionLit: 'Sunlit',
+  satRegionDark: 'Earth’s shadow',
+  satLast: 'last light',
+  satFine: 'Cylindrical shadow, observer on the equator at equinox, no atmospheric refraction. At higher latitudes the Sun sets at an angle and the window is longer; in midsummer at 50° it never closes at all, which is exactly why Starlink trains get reported at one in the morning in June.',
   footer: 'This toolkit is deliberately simple and states its assumptions. It is a teaching model, not a forensic tool — it demonstrates the sensitivity of the result to one unknown, which is the entire point.',
 } : {
   kicker: 'Kalkulator zdrowego rozsądku',
@@ -73,6 +89,7 @@ const L = en ? {
   legLos: 'linia obserwacji',
   legGhost: 'ta sama linia chwilę wcześniej: to jej obrót wygląda jak ruch obiektu',
   legAng: 'kąt zejścia',
+  offScale: 'poza skalą',
   assumptionsTitle: 'Założenia tego modelu, przeczytaj je',
   bokehTitle: 'Kształt przysłony, nie kształt obiektu',
   bokehAlt: 'Rozogniskowane punkty świetlne przyjmujące kształt wybranej przysłony',
@@ -82,6 +99,21 @@ const L = en ? {
   angularLead: 'Ten sam kadr jest zgodny z małym obiektem blisko i dużym daleko. Fotometria zawęża przedział, nigdy go nie zamyka. Przeciągnij odległość.',
   angRef: 'Airbus A320, rozpiętość 36 m',
   angCompareAlt: 'Wyliczony obiekt obok samolotu narysowanego w tej samej skali',
+  satTitle: 'Rozbłysk to lustro, nie manewr',
+  satLead: 'Satelita na niskiej orbicie jest ruchomym lustrem. Kiedy Słońce, płaski panel i oko obserwatora ustawią się w jednej linii, obiekt jaśnieje o kilka wielkości gwiazdowych w ciągu paru sekund, a potem gaśnie: pojawienie się z niczego, błysk, zniknięcie. To jest geometria, a geometrię da się sprawdzić. Satelita świeci tylko dopóki sam jest w świetle Słońca, a obserwator jest już w ciemności. Ustaw godzinę i orbitę, i zobacz, czy to w ogóle możliwe.',
+  satTime: 'Czas po lokalnym zachodzie Słońca',
+  satAltitude: 'Wysokość orbity',
+  satDepr: 'Zagłębienie Słońca',
+  satShadow: 'Wysokość cienia Ziemi w zenicie',
+  satRate: 'Prędkość kątowa w zenicie',
+  satState: 'Stan',
+  satLit: 'W świetle',
+  satDark: 'W cieniu',
+  satChart: 'Wysokość cienia Ziemi w funkcji czasu po zachodzie, z zaznaczoną wybraną orbitą',
+  satRegionLit: 'W świetle Słońca',
+  satRegionDark: 'Cień Ziemi',
+  satLast: 'ostatnie światło',
+  satFine: 'Cień walcowy, obserwator na równiku w czasie równonocy, bez refrakcji atmosferycznej. Na wyższych szerokościach Słońce zachodzi ukośnie i okno jest dłuższe, a w środku lata na pięćdziesiątym równoleżniku nie zamyka się wcale, i właśnie dlatego pociągi Starlinków bywają zgłaszane o pierwszej w nocy w czerwcu.',
   angDistance: 'Zakładana odległość',
   angSize: 'Wynikowa średnica obiektu',
   footer: 'Ten kalkulator jest celowo prosty i podaje swoje założenia. To model dydaktyczny, nie narzędzie śledcze, pokazuje czułość wyniku na jedną niewiadomą, i o to właśnie chodzi.',
@@ -144,7 +176,7 @@ const ASSUMPTIONS = en ? [
         </div>
 
         <div class="tk__vis">
-          <svg viewBox="0 0 520 300" class="tk__svg" role="img" aria-label={L.diagramLabel}>
+          <svg id="geo" viewBox="0 0 520 300" class="tk__svg" role="img" aria-label={L.diagramLabel}>
             <defs>
               <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0" stop-color="#080F11"/>
@@ -173,30 +205,27 @@ const ASSUMPTIONS = en ? [
                 <stop offset="0" stop-color="var(--phos)" stop-opacity=".38"/>
                 <stop offset="1" stop-color="var(--phos)" stop-opacity="0"/>
               </radialGradient>
-              <clipPath id="plot"><rect x="52" y="8" width="460" height="292"/></clipPath>
+              <clipPath id="plot"><rect id="plotClip" x="52" y="8" width="460" height="292"/></clipPath>
             </defs>
 
-            <rect x="0" y="0" width="520" height="300" fill="url(#sky)"/>
+            <rect id="bg" x="0" y="0" width="520" height="300" fill="url(#sky)"/>
 
             {/* drabinka wysokości */}
             <g class="tk__ladder" data-ladder>
-              <line x1="52" y1="12" x2="52" y2="242" stroke="var(--line-2)" stroke-width="1"/>
+              <line id="axis" x1="52" y1="12" x2="52" y2="242" stroke="var(--line-2)" stroke-width="1"/>
             </g>
 
             {/* morze */}
             <g clip-path="url(#plot)">
-              <rect x="52" y="218" width="460" height="20" fill="url(#horizonGlow)"/>
-              <rect x="52" y="238" width="460" height="62" fill="url(#sea)"/>
-              <rect x="140" y="242" width="290" height="3" fill="url(#spec)"/>
-              <g stroke="var(--phos-2)" stroke-width=".8" opacity=".28">
-                <line x1="52" y1="247" x2="512" y2="247"/>
-                <line x1="52" y1="257" x2="512" y2="257"/>
-                <line x1="52" y1="270" x2="512" y2="270"/>
-                <line x1="52" y1="286" x2="512" y2="286"/>
+              <rect id="seaGlow" fill="url(#horizonGlow)"/>
+              <rect id="seaBody" fill="url(#sea)"/>
+              <rect id="seaSpec" fill="url(#spec)"/>
+              <g id="waves" stroke="var(--phos-2)" stroke-width=".8" opacity=".28">
+                <line /><line /><line /><line />
               </g>
-              <line x1="52" y1="238" x2="512" y2="238" stroke="var(--phos-2)" stroke-width="1.4" opacity=".9"/>
+              <line id="seaTop" stroke="var(--phos-2)" stroke-width="1.4" opacity=".9"/>
             </g>
-            <text x="58" y="254" class="tk__lbl tk__lbl--bright">{L.seaLevel}</text>
+            <text id="seaLbl" class="tk__lbl tk__lbl--bright" x="58" y="254">{L.seaLevel}</text>
 
             {/* linia obserwacji sprzed sekundy — mechanizm paralaksy */}
             <g clip-path="url(#plot)">
@@ -241,11 +270,12 @@ const ASSUMPTIONS = en ? [
               <text id="tgtLbl" x="12" y="4" class="tk__lbl tk__lbl--bright">{L.target}</text>
             </g>
             <line id="drop" x1="0" y1="0" x2="0" y2="250" stroke="var(--line-2)" stroke-width="1" stroke-dasharray="2 3"/>
+            <text id="offLbl" class="tk__lbl tk__lbl--amber" x="0" y="0" text-anchor="end"></text>
             <text id="dropLbl" class="tk__lbl" x="0" y="0" text-anchor="middle"></text>
 
             {/* rogi celownicze — spójne z resztą serwisu */}
             <g stroke="var(--phos-dim)" stroke-width="1" opacity=".5" fill="none">
-              <path d="M4 16V4h12M508 16V4h-12M4 288v8h12M512 288v8h-12"/>
+              <path id="corners" d="M4 16V4h12M516 16V4h-12M4 288v8h12M516 288v8h-12"/>
             </g>
           </svg>
 
@@ -305,7 +335,7 @@ const ASSUMPTIONS = en ? [
 
   <hr class="rule" />
 
-  <section class="wrap section" style="padding-bottom:5rem">
+  <section class="wrap section">
     <div class="grid grid--2" style="gap:2.5rem;background:none;border:0">
       <div>
         <p class="label label--phos" style="margin-bottom:.7rem">03</p>
@@ -328,20 +358,108 @@ const ASSUMPTIONS = en ? [
           <text x="130" y="24" text-anchor="middle" class="tk__lbl tk__lbl--bright" id="ac-obj-lbl">17.5 m</text>
 
           {/* Odnośnik o znanej rozpiętości, z przodu — sylwetka niska, więc nie wchodzi na obiekt */}
-          <g id="ac-ref" transform="translate(130,152) scale(1)">
-            <g fill="var(--fg-faint)" opacity=".6">
-              <path d="M-48 5 L-9 -1 L9 -1 L48 5 L48 9 L9 4 L-9 4 L-48 9 Z"/>
-              <ellipse cx="0" cy="0" rx="7" ry="9"/>
-              <path d="M-2.5 -9 L-1 -25 L1.5 -25 L3 -9 Z"/>
-              <ellipse cx="-21" cy="8" rx="5" ry="4"/>
-              <ellipse cx="21" cy="8" rx="5" ry="4"/>
+          <g id="ac-ref" transform="translate(130,159.1) scale(1)">
+            <g fill="var(--fg-faint)" opacity=".62">
+              {/* Sylwetka w skali: rozpiętość to dokładnie 96 jednostek (2,68 j. na metr),
+                  a proporcje kadłuba, gondoli i statecznika wynikają z wymiarów A320.
+                  Prawa połowa jest odbijana, więc symetria bierze się z konstrukcji,
+                  nie z dokładności ręcznie wpisanych współrzędnych. */}
+              <g id="ac-half">
+                <path d="M0 0 L46.5 -4.2 L46.5 -3.5 L0 1.2 Z"/>
+                <path d="M45.3 -4.05 L46.6 -4.2 L48 -10.4 L46.7 -10.6 Z"/>
+                <path d="M13.6 -.6 L17.2 -1 L17 3 L13.9 3.2 Z"/>
+                <circle cx="15.4" cy="4.4" r="3.2"/>
+                <circle cx="15.4" cy="4.4" r="1.75" fill="#05090A"/>
+              </g>
+              <use href="#ac-half" transform="scale(-1,1)"/>
+              <path d="M-1.5 -8.2 L-.7 -25.8 L.7 -25.8 L1.5 -8.2 Z"/>
+              <circle cx="0" cy="-3.6" r="5.3"/>
             </g>
           </g>
           <text x="130" y="190" text-anchor="middle" class="tk__lbl">{L.angRef}</text>
         </svg>
       </div>
     </div>
-    <p class="dim" style="margin-top:2.5rem;max-width:70ch;font-size:.92rem">{L.footer}</p>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="wrap section" style="padding-bottom:5rem">
+    <div class="grid grid--2" style="gap:2.5rem;background:none;border:0">
+      <div>
+        <p class="label label--phos" style="margin-bottom:.7rem">04</p>
+        <h2 style="font-size:clamp(1.3rem,2.6vw,1.8rem);margin:0 0 .8rem">{L.satTitle}</h2>
+        <p class="dim" style="font-size:.95rem;max-width:56ch">{L.satLead}</p>
+
+        <div class="tk__f" style="margin-top:1.6rem;max-width:400px">
+          <label for="st"><span>{L.satTime}</span><output id="st-out">72 min</output></label>
+          <input id="st" type="range" min="0" max="180" step="1" value="72" />
+        </div>
+        <div class="tk__f" style="margin-top:1.1rem;max-width:400px">
+          <label for="sa"><span>{L.satAltitude}</span><output id="sa-out">550 km</output></label>
+          <input id="sa" type="range" min="200" max="1200" step="10" value="550" />
+        </div>
+        <div class="filters" style="margin-top:1.1rem">
+          <button class="f" data-orb="420">ISS · 420 km</button>
+          <button class="f" data-orb="550">Starlink · 550 km</button>
+          <button class="f" data-orb="780">Iridium · 780 km</button>
+        </div>
+      </div>
+
+      <div class="tk__vis">
+        <svg id="sat" viewBox="0 0 300 220" class="tk__svg" style="--tk-ar:300 / 220"
+             role="img" aria-label={L.satChart}>
+          <defs>
+            <linearGradient id="litg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--phos)" stop-opacity=".17"/>
+              <stop offset="1" stop-color="var(--phos)" stop-opacity=".035"/>
+            </linearGradient>
+            <radialGradient id="satglow">
+              <stop offset="0" stop-color="var(--phos-2)" stop-opacity=".5"/>
+              <stop offset="1" stop-color="var(--phos-2)" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="satClip"><rect x="40" y="14" width="248" height="162"/></clipPath>
+          </defs>
+
+          <rect width="300" height="220" fill="#05090A"/>
+          <rect x="40" y="14" width="248" height="162" fill="url(#litg)"/>
+          <g clip-path="url(#satClip)">
+            <path id="s-fill" fill="#04080A" fill-opacity=".92"/>
+            <g id="s-grid"></g>
+            <path id="s-edge" fill="none" stroke="var(--phos)" stroke-width="1.4"/>
+            <line id="s-cross" stroke="var(--amber-dim)" stroke-width="1" stroke-dasharray="3 3"/>
+            <line id="s-orb" stroke="var(--phos-dim)" stroke-width="1" stroke-dasharray="4 4"/>
+            <line id="s-now" stroke="var(--phos-dim)" stroke-width=".9" opacity=".7"/>
+            <g id="s-dot">
+              <circle id="s-halo" r="14" fill="url(#satglow)"/>
+              <circle class="tk__ping" id="s-ping" r="7" fill="none" stroke="var(--phos-2)" stroke-width="1"/>
+              <circle id="s-core" r="3.4" fill="none" stroke="var(--phos-2)" stroke-width="1.6"/>
+            </g>
+          </g>
+
+          <text x="48" y="28" class="tk__lbl tk__lbl--bright">{L.satRegionLit}</text>
+          <text x="284" y="150" text-anchor="end" class="tk__lbl">{L.satRegionDark}</text>
+          <text id="s-crossLbl" class="tk__lbl tk__lbl--amber" y="202" text-anchor="middle"></text>
+          <g stroke="var(--phos-dim)" stroke-width="1" opacity=".5" fill="none">
+            <path d="M4 16V4h12M296 16V4h-12M4 208v8h12M296 208v8h-12"/>
+          </g>
+        </svg>
+
+        <div class="tk__out">
+          <div class="tk__row"><span>{L.satDepr}</span><b id="s-dep">—</b></div>
+          <div class="tk__row"><span>{L.satShadow}</span><b id="s-sh">—</b></div>
+          <div class="tk__row"><span>{L.satRate}</span><b id="s-rate">—</b></div>
+          <div class="tk__row tk__row--big"><span>{L.satState}</span><b id="s-state">—</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tk__verdict" style="margin-top:2rem">
+      <p id="s-verdict" style="margin:0;font-size:1.02rem;color:var(--fg);max-width:78ch"></p>
+    </div>
+    <p class="faint" style="margin-top:1.2rem;max-width:74ch;font-size:.86rem;line-height:1.6">{L.satFine}</p>
+
+    <p class="dim" style="margin-top:3rem;max-width:70ch;font-size:.92rem">{L.footer}</p>
     <a class="btn btn--ghost" href={path(lang, '/cases/gofast-2015')} style="margin-top:1.5rem">
       {en ? 'Read the GOFAST case file' : 'Zobacz akta sprawy GOFAST'}
     </a>
@@ -357,6 +475,15 @@ const ASSUMPTIONS = en ? [
 
     const S = { ht: $('ht'), ho: $('ho'), th: $('th'), vo: $('vo'), om: $('om') };
     const DEFAULTS = { ht: 13000, ho: 25000, th: 22, vo: 369, om: 1.14 };
+    const L_OFF = en ? 'off scale' : 'poza skalą';
+
+    // Schemat ma dwa układy współrzędnych. Na telefonie kadr 520x300 zjeżdżał
+    // do ok. 200 px wysokości i opisy robiły się nieczytelne, więc wąski wariant
+    // jest wyraźnie wyższy w proporcji i ma większy krój.
+    const WIDE   = { W: 520, H: 300, X0: 52, OX: 118, TOPY: 26, SEA: 238, XMAX: 498, AR: 38, HR: 80, AL: 68, GHX: 48 };
+    const NARROW = { W: 360, H: 272, X0: 40, OX:  88, TOPY: 26, SEA: 208, XMAX: 348, AR: 30, HR: 58, AL: 52, GHX: 34 };
+    const mqNarrow = matchMedia('(max-width: 700px)');
+    let LY = mqNarrow.matches ? NARROW : WIDE;
 
     function speedWords(ms) {
       const kmh = ms * 3.6;
@@ -402,7 +529,8 @@ const ASSUMPTIONS = en ? [
         : `Przy zakładanej wysokości <b>${nf.format(ht)} ft</b> to samo nagranie oznacza obiekt poruszający się <b>${w}</b>. ${note}`);
 
       // ——— schemat geometrii
-      const OX = 118, SEA = 238, TOPY = 26, MAXFT = 40000, XMAX = 498;
+      const { OX, SEA, TOPY, XMAX, W, AR, HR, AL, GHX } = LY;
+      const MAXFT = 40000;
       const yFor = ft => SEA - (ft / MAXFT) * (SEA - TOPY);
       const set = (id, a) => { const e = $(id); for (const k in a) e.setAttribute(k, a[k]); };
 
@@ -419,25 +547,26 @@ const ASSUMPTIONS = en ? [
 
       set('obs', { transform: `translate(${OX},${oy})` });
       set('tgt', { transform: `translate(${tx},${ty})` });
-      const flip = tx > 424;
+      const flip = tx > W - 96;
       set('tgtLbl', { x: flip ? -12 : 12, y: ty > SEA - 20 ? -12 : 4, 'text-anchor': flip ? 'end' : 'start' });
       $('tgt').style.opacity = offscale ? '.45' : '1';
       set('los', { x1: OX, y1: oy, x2: tx, y2: ty });
       set('drop', { x1: tx, x2: tx, y1: ty + 10, y2: SEA });
+      set('offLbl', { x: XMAX - 4, y: ty - 14 });
+      $('offLbl').textContent = offscale ? L_OFF : '';
 
       // wysokość obiektu przy linii opadania
       set('dropLbl', { x: tx + (flip ? -10 : 10), y: (ty + SEA) / 2, 'text-anchor': flip ? 'end' : 'start' });
       $('dropLbl').textContent = ht > 0 ? nf.format(ht) + ' ft' : '';
 
       // kąt zejścia przy obserwatorze
-      const AR = 38;
-      set('horizRef', { x1: OX, y1: oy, x2: OX + 80, y2: oy });
+      set('horizRef', { x1: OX, y1: oy, x2: OX + HR, y2: oy });
       set('angArc', { d: `M${OX + AR} ${oy} A${AR} ${AR} 0 0 1 ${OX + AR * Math.cos(rad)} ${oy + AR * Math.sin(rad)}` });
-      set('angLbl', { x: OX + 68 * Math.cos(rad / 2) + 6, y: oy + 68 * Math.sin(rad / 2) + 4 });
+      set('angLbl', { x: OX + AL * Math.cos(rad / 2) + 6, y: oy + AL * Math.sin(rad / 2) + 4 });
       $('angLbl').textContent = fx(th, 1) + '\u00B0';
 
       // linia wymiarowa zasięgu, równolegle do linii obserwacji
-      const px = uy * 14, py = -ux * 14;
+      const px = -uy * 14, py = ux * 14;
       const ax = OX + ux * 30 + px, ay = oy + uy * 30 + py;
       const bx = tx - ux * 14 + px, by = ty - uy * 14 + py;
       set('rangeLine', { x1: ax, y1: ay, x2: bx, y2: by });
@@ -446,14 +575,14 @@ const ASSUMPTIONS = en ? [
       // etykieta zasięgu odsuwa się od łuku kąta, gdy linia jest krótka
       const dimLen = Math.hypot(bx - ax, by - ay) || 1;
       const f = Math.min(.8, Math.max(.5, 100 / dimLen));
-      const mx = ax + (bx - ax) * f + uy * 11, my = ay + (by - ay) * f - ux * 11;
+      const mx = ax + (bx - ax) * f - uy * 12, my = ay + (by - ay) * f + ux * 12;
       set('rangeLbl', { x: mx, y: my, transform: `rotate(${deg} ${mx} ${my})` });
       $('rangeLbl').textContent = R > 0 ? fx(R / NM, 2) + ' NM' : '';
       $('rangeDim').style.opacity = len > 60 ? '.95' : '0';
       $('rangeLbl').style.opacity = len > 90 ? '1' : '0';
 
       // wcześniejsza linia obserwacji — to ona wytwarza pozorny ruch
-      const GX = OX - 48;
+      const GX = OX - GHX;
       set('ghost', { x1: GX, y1: oy, x2: tx, y2: ty });
       set('ghostObs', { transform: `translate(${GX},${oy})` });
       const moving = vo > 0;
@@ -461,27 +590,56 @@ const ASSUMPTIONS = en ? [
       $('ghostObs').style.opacity = moving ? '.4' : '0';
     }
 
-    // drabinka wysokości — rysowana raz
-    (() => {
+    // Statyczna część schematu zależy od układu, więc rysujemy ją funkcją,
+    // a nie raz na sztywno w znaczniku.
+    function layout() {
       const NS = 'http://www.w3.org/2000/svg';
+      const { W, H, X0, SEA, TOPY } = LY;
+      const R = X0 + 0;                 // lewa krawędź pola rysunku
+      const set = (id, a) => { const e = $(id); for (const k in a) e.setAttribute(k, a[k]); };
+      const svg = $('geo');
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.dataset.lay = LY === NARROW ? 'narrow' : 'wide';
+      svg.style.setProperty('--tk-ar', `${W} / ${H}`);
+
+      set('plotClip', { x: R, y: 8, width: W - 8 - R, height: H - 8 });
+      set('bg', { width: W, height: H });
+      set('axis', { x1: X0, x2: X0, y1: 12, y2: SEA + 4 });
+      set('seaGlow', { x: R, y: SEA - 20, width: W - R, height: 20 });
+      set('seaBody', { x: R, y: SEA, width: W - R, height: H - SEA });
+      set('seaSpec', { x: R + (W - R) * .19, y: SEA + 4, width: (W - R) * .63, height: 3 });
+      set('seaTop',  { x1: R, x2: W - 8, y1: SEA, y2: SEA });
+      [...$('waves').children].forEach((l, i) => {
+        const y = SEA + [9, 19, 32, 48][i];
+        for (const [k, v] of [['x1', R], ['x2', W - 8], ['y1', y], ['y2', y]]) l.setAttribute(k, v);
+      });
+      set('seaLbl', { x: X0 + 6, y: SEA + 16 });
+      set('corners', { d: `M4 16V4h12M${W - 4} 16V4h-12M4 ${H - 12}v8h12M${W - 4} ${H - 12}v8h-12` });
+
+      // drabinka wysokości
       const g = document.querySelector('[data-ladder]');
+      [...g.querySelectorAll('[data-tick]')].forEach(n => n.remove());
       for (const ft of [0, 10000, 20000, 30000, 40000]) {
-        const y = 238 - (ft / 40000) * 212;
+        const y = SEA - (ft / 40000) * (SEA - TOPY);
         const l = document.createElementNS(NS, 'line');
-        l.setAttribute('x1', 52); l.setAttribute('y1', y);
-        l.setAttribute('x2', ft === 0 ? 52 : 512); l.setAttribute('y2', y);
+        l.setAttribute('x1', X0); l.setAttribute('y1', y);
+        l.setAttribute('x2', ft === 0 ? X0 : W - 8); l.setAttribute('y2', y);
         l.setAttribute('stroke', 'var(--phos)');
         l.setAttribute('stroke-width', '.6');
         l.setAttribute('opacity', '.09');
+        l.setAttribute('data-tick', '');
         g.appendChild(l);
         const t = document.createElementNS(NS, 'text');
-        t.setAttribute('x', 48); t.setAttribute('y', y + 3);
+        t.setAttribute('x', X0 - 4); t.setAttribute('y', y + 3);
         t.setAttribute('text-anchor', 'end');
         t.setAttribute('class', 'tk__lbl');
+        t.setAttribute('data-tick', '');
         t.textContent = ft ? (ft / 1000) + 'k' : '0';
         g.appendChild(t);
       }
-    })();
+    }
+    layout();
+    mqNarrow.addEventListener('change', e => { LY = e.matches ? NARROW : WIDE; layout(); calc(); });
 
     Object.values(S).forEach(el => el.addEventListener('input', calc));
     document.querySelectorAll('[data-preset]').forEach(b => b.addEventListener('click', () => {
@@ -529,16 +687,145 @@ const ASSUMPTIONS = en ? [
       $('ad-out').textContent = nf.format(d) + ' m';
       $('ad-size').textContent = fx(size, d < 30 ? 2 : 1);
 
-      // wspólna skala: większa z dwóch figur zajmuje 200 jednostek szerokości
-      const mPerU = Math.max(size, REF_M) / 190;
+      // wspólna skala: większa z dwóch figur zajmuje 178 jednostek szerokości
+      // 178 zamiast pełnej szerokości kadru: przy największej skali statecznik
+      // i gondole potrzebują marginesu na linię odniesienia i podpis.
+      const mPerU = Math.max(size, REF_M) / 178;
       const refU = (REF_M / mPerU) / REF_PX;
-      $('ac-ref').setAttribute('transform', `translate(130,150) scale(${refU.toFixed(4)})`);
+      // Kotwiczymy środek sylwetki, nie płaszczyznę skrzydeł: przy dużej skali
+      // statecznik wychodził poza kadr, przy małej samolot uciekał w dół.
+      const acY = 150 + 9.1 * refU;
+      $('ac-ref').setAttribute('transform', `translate(130,${acY.toFixed(2)}) scale(${refU.toFixed(4)})`);
       const rx = Math.max(0.6, size / mPerU / 2);
       $('ac-obj').setAttribute('rx', rx.toFixed(2));
       $('ac-obj').setAttribute('ry', Math.max(0.6, rx * 0.28).toFixed(2));
       $('ac-obj-lbl').textContent = fx(size, size < 10 ? 2 : 1) + ' m';
     }
     ad.addEventListener('input', ang); ang();
+
+    // ——— 04: cień Ziemi a rozbłyski satelitarne
+    // Satelita świeci odbitym światłem, więc musi być nad granicą cienia Ziemi.
+    // W zenicie obserwatora warunek redukuje się do h > R (1/cos b - 1),
+    // gdzie b to zagłębienie Słońca pod horyzontem.
+    const RE = 6371, MU = 398600.4418;
+    const SX0 = 40, SX1 = 288, SY0 = 14, SY1 = 176, TMAX = 180, HMAX = 1200;
+    const sxf = t => SX0 + (t / TMAX) * (SX1 - SX0);
+    const syf = h => SY1 - (h / HMAX) * (SY1 - SY0);
+    const shH = beta => RE * (1 / Math.cos(beta * Math.PI / 180) - 1);
+    const st = $('st'), sa = $('sa');
+
+    (() => {
+      const NS = 'http://www.w3.org/2000/svg';
+      const g = $('s-grid');
+      const mk = (n, a, cls) => {
+        const e = document.createElementNS(NS, n);
+        for (const k in a) e.setAttribute(k, a[k]);
+        if (cls) e.setAttribute('class', cls);
+        return e;
+      };
+      for (const h of [300, 600, 900, 1200]) {
+        g.appendChild(mk('line', { x1: SX0, x2: SX1, y1: syf(h), y2: syf(h),
+          stroke: 'var(--phos)', 'stroke-width': .6, opacity: .1 }));
+      }
+      for (const t of [30, 60, 90, 120, 150]) {
+        g.appendChild(mk('line', { x1: sxf(t), x2: sxf(t), y1: SY0, y2: SY1,
+          stroke: 'var(--phos)', 'stroke-width': .6, opacity: .07 }));
+      }
+      // opisy osi rysujemy poza obszarem przycinania
+      const svg = $('sat');
+      for (const h of [0, 300, 600, 900, 1200]) {
+        const e = mk('text', { x: SX0 - 5, y: syf(h) + 3, 'text-anchor': 'end' }, 'tk__lbl');
+        e.textContent = h ? h : '0';
+        svg.appendChild(e);
+      }
+      const kmm = mk('text', { x: 13, y: (SY0 + SY1) / 2, 'text-anchor': 'middle',
+        transform: `rotate(-90 13 ${(SY0 + SY1) / 2})` }, 'tk__lbl');
+      kmm.textContent = 'KM';
+      svg.appendChild(kmm);
+      for (const t of [0, 60, 120, 180]) {
+        const e = mk('text', { x: sxf(t), y: SY1 + 13,
+          'text-anchor': t === 0 ? 'start' : t === TMAX ? 'end' : 'middle' }, 'tk__lbl');
+        e.textContent = t === TMAX ? t + ' MIN' : t;
+        svg.appendChild(e);
+      }
+      svg.appendChild(mk('line', { x1: SX0, x2: SX1, y1: SY1, y2: SY1,
+        stroke: 'var(--line-2)', 'stroke-width': 1 }));
+
+      // granica cienia: h(t) = R (1/cos(0,25 t) - 1)
+      let d = '';
+      for (let t = 0; t <= TMAX; t += 1.5) {
+        const y = Math.max(SY0 - 8, syf(shH(0.25 * t)));
+        d += (d ? 'L' : 'M') + sxf(t).toFixed(1) + ' ' + y.toFixed(1);
+      }
+      $('s-edge').setAttribute('d', d);
+      $('s-fill').setAttribute('d', d + `L${SX1} ${SY1}L${SX0} ${SY1}Z`);
+    })();
+
+    function satState() {
+      const t = +st.value, h = +sa.value;
+      const beta = 0.25 * t;
+      const hs = shH(beta);
+      const lit = h > hs;
+      const r = RE + h;
+      const rate = (Math.sqrt(MU / r) / h) * 180 / Math.PI;      // stopnie na sekundę w zenicie
+      const tx = Math.acos(RE / r) * 180 / Math.PI / 0.25;       // minuta wejścia w cień
+
+      $('st-out').textContent = nf.format(t) + ' min';
+      $('sa-out').textContent = nf.format(h) + ' km';
+      $('s-dep').textContent = fx(beta, 1) + '\u00B0';
+      $('s-sh').textContent = nf.format(Math.round(hs)) + ' km';
+      $('s-rate').textContent = fx(rate, 2) + ' \u00B0/s';
+      $('s-state').textContent = lit ? L_LIT : L_DARK;
+      $('s-state').style.color = lit ? 'var(--phos)' : 'var(--amber)';
+
+      const x = sxf(t), y = syf(h), cx = sxf(Math.min(tx, TMAX));
+      const set = (id, a) => { const e = $(id); for (const k in a) e.setAttribute(k, a[k]); };
+      set('s-orb', { x1: SX0, x2: SX1, y1: y, y2: y });
+      set('s-now', { x1: x, x2: x, y1: SY0, y2: SY1 });
+      set('s-cross', { x1: cx, x2: cx, y1: SY0, y2: SY1 });
+      set('s-dot', { transform: `translate(${x.toFixed(1)},${y.toFixed(1)})` });
+      $('s-halo').style.opacity = lit ? '1' : '0';
+      $('s-ping').style.display = lit ? '' : 'none';
+      $('s-core').setAttribute('stroke', lit ? 'var(--phos-2)' : 'var(--fg-faint)');
+
+      // Etykieta siedzi pod osią, wyśrodkowana na linii i dociśnięta do pola wykresu.
+      // Szerokość mierzymy po wstawieniu tekstu, bo zależy od języka i od breakpointu.
+      const cl = $('s-crossLbl');
+      cl.textContent = `${Math.round(tx)} min \u00B7 ${L_LAST}`;
+      const half = cl.getComputedTextLength() / 2;
+      cl.setAttribute('x', Math.max(SX0 + half, Math.min(SX1 - half, cx)).toFixed(1));
+
+      // Polska liczba mnoga minut zależy od końcówki, a zero zasługuje na własne zdanie.
+      const plMin = n => {
+        const d = n % 10, h2 = n % 100;
+        if (n === 1) return 'minuta';
+        if (d >= 2 && d <= 4 && !(h2 >= 12 && h2 <= 14)) return 'minuty';
+        if (d === 1 && h2 !== 11) return 'minuta';
+        return 'minut';
+      };
+      const when = en
+        ? (t === 0 ? 'At the moment of sunset' : `${t} minute${t === 1 ? '' : 's'} after sunset`)
+        : (t === 0 ? 'W chwili zachodu Słońca' : `${t} ${plMin(t)} po zachodzie`);
+
+      const B = v => `<b>${v}</b>`;
+      const hB = B(nf.format(h) + ' km'), sB = B(nf.format(Math.round(hs)) + ' km');
+      const rB = B(fx(rate, 2) + '\u00A0\u00B0/s'), xB = B(Math.round(tx) + ' min');
+      $('s-verdict').innerHTML = en
+        ? (lit
+          ? `${when} the Earth’s shadow reaches only ${sB} overhead. An object at ${hB} is still in full sunlight, so a flare is possible. Crossing your zenith it would sweep ${rB}, the same order as the angular rate called impossible in the first module. It goes dark at ${xB}.`
+          : `${when} the Earth’s shadow already reaches ${sB} overhead. An object at ${hB} sits inside it and reflects nothing. Whatever was reported at this hour, it was not sunlight off a satellite at this altitude: that window closed at ${xB}.`)
+        : (lit
+          ? `${when} cień Ziemi sięga w zenicie zaledwie ${sB}. Obiekt na ${hB} jest wciąż w pełnym słońcu, więc rozbłysk jest możliwy. Przechodząc przez zenit zakreślałby ${rB}, czyli tyle samo co prędkość kątowa uznawana za niemożliwą w pierwszym module. Gaśnie o ${xB}.`
+          : `${when} cień Ziemi sięga w zenicie już ${sB}. Obiekt na ${hB} jest w środku tego cienia i nic nie odbija. Cokolwiek zgłoszono o tej porze, nie było to światło Słońca odbite od satelity na tej wysokości: to okno zamknęło się o ${xB}.`);
+    }
+    const L_LIT = en ? 'Sunlit' : 'W świetle';
+    const L_DARK = en ? 'In shadow' : 'W cieniu';
+    const L_LAST = en ? 'last light' : 'ostatnie światło';
+    [st, sa].forEach(el => el.addEventListener('input', satState));
+    document.querySelectorAll('[data-orb]').forEach(b => b.addEventListener('click', () => {
+      sa.value = b.dataset.orb; satState();
+    }));
+    satState();
   })();
   </script>
 </Base>

@@ -271,12 +271,13 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 
 .sheet__panel:focus-visible { outline: none; }
 /* lista wyśrodkowana w wolnej przestrzeni: inaczej wisi u góry, a pod nią zostaje pustka */
-.sheet__list { list-style: none; margin: 1.6rem 0; padding: 0; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.sheet__list { list-style: none; margin: 1.2rem 0; padding: 0 0 clamp(1rem, 6vh, 4rem); flex: 1;
+  display: flex; flex-direction: column; justify-content: center; }
 .sheet__list li { border-top: 1px solid var(--line); }
 .sheet__list li:last-child { border-bottom: 1px solid var(--line); }
 .sheet__list a {
-  display: grid; grid-template-columns: 2.1rem 1fr auto; align-items: baseline; gap: .6rem;
-  padding: 1.05rem .4rem 1.05rem 12px; border: 0;
+  display: grid; grid-template-columns: 2.1rem 1fr auto; align-items: center; gap: .6rem;
+  min-height: clamp(58px, 9.5vh, 84px); padding: 1.05rem .4rem 1.05rem 12px; border: 0;
   opacity: 0; transform: translateX(14px);
   transition: opacity 320ms ease, transform 320ms cubic-bezier(.16,.9,.24,1), color var(--t-fast);
 }
@@ -284,8 +285,11 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .sheet__n { font-family: var(--mono); font-size: .62rem; letter-spacing: .12em; color: var(--fg-faint); }
 .sheet__t { font-family: var(--mono); font-size: .82rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--fg); }
 .sheet__on { color: var(--amber); font-size: .7rem; }
-.sheet__list a:hover .sheet__t, .sheet__list a[aria-current] .sheet__t { color: var(--phos); }
-.sheet__list a[aria-current] .sheet__n { color: var(--phos-dim); }
+.sheet__list a:hover .sheet__t, .sheet__list a:active .sheet__t,
+.sheet__list a:focus-visible .sheet__t, .sheet__list a[aria-current] .sheet__t { color: var(--phos); }
+/* Numer zapala się razem z etykietą, inaczej pozycja świeci połowicznie. */
+.sheet__list a:hover .sheet__n, .sheet__list a:active .sheet__n,
+.sheet__list a:focus-visible .sheet__n, .sheet__list a[aria-current] .sheet__n { color: var(--phos-dim); }
 .sheet__foot { margin: 0; padding-left: 12px; color: var(--fg-faint); }
 
 body.is-locked { position: fixed; width: 100%; overflow: hidden; }
@@ -588,7 +592,7 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .tip span { font-family: var(--mono); font-size: .58rem; letter-spacing: .14em; text-transform: uppercase; color: var(--phos-dim); }
 
 /* ============================================================ HERO */
-.hero { position: relative; padding-block: clamp(4.5rem, 13vw, 9.5rem) clamp(3rem, 7vw, 5rem); overflow: hidden; }
+.hero { position: relative; padding-block: clamp(2.6rem, 8vw, 6.6rem) clamp(2.6rem, 6vw, 4.5rem); overflow: hidden; }
 .hero__sky { position: absolute; inset: 0; pointer-events: none; }
 .hero__glow {
   position: absolute; left: 50%; top: -22%; width: min(1100px, 130vw); aspect-ratio: 1;
@@ -605,6 +609,11 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 }
 @keyframes beam { 0% { transform: translateX(-50%) rotate(9deg) } 100% { transform: translateX(-50%) rotate(-7deg) } }
 .hero h1 { max-width: 17ch; }
+.hero__lead { max-width: 58ch; margin-top: clamp(1.1rem, 3.4vw, 1.8rem); }
+.hero__cta { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: clamp(1.5rem, 5vw, 2.4rem); }
+/* Na wąskim ekranie przyciski wchodzą jeden pod drugi i rozciągają się na pełną
+   szerokość, zamiast zawijać się w połowie i wypadać poza pierwszy ekran. */
+@media (max-width: 400px) { .hero__cta { flex-direction: column; align-items: stretch; gap: .6rem; } }
 
 /* Po prawej od tytułu było pusto. Ekran radaru pokazuje rdzeń dowodowy:
    kąt to długość geograficzna sprawy, promień to jej wiek. */
@@ -623,7 +632,7 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
   0%   { opacity: .9; transform: scale(.5); }
   22%,100% { opacity: 0; transform: scale(2.2); }
 }
-.hero__kicker { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.6rem; }
+.hero__kicker { display: flex; align-items: center; gap: .75rem; margin-bottom: clamp(1rem, 3vw, 1.6rem); }
 .hero__kicker i { display: block; width: 34px; height: 1px; background: var(--phos-dim); }
 
 /* Licznik statystyk */
@@ -710,7 +719,13 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .link-act { display: inline-block; padding-block: .35rem; }
 
 /* Schemat geometrii w kalkulatorze */
-.tk__svg { aspect-ratio: 520 / 300; }
+.tk__svg { aspect-ratio: var(--tk-ar, 520 / 300); }
+/* Wąski układ schematu rysuje mniej jednostek na tej samej szerokości,
+   więc opis musi urosnąć w jednostkach rysunku, żeby wyjść na to samo. */
+.tk__svg[data-lay="narrow"] .tk__lbl { font-size: 12px; letter-spacing: .08em; }
+/* Wykres cienia Ziemi ma własny, gęstszy kadr niż schemat geometrii. */
+#sat .tk__lbl { font-size: 9px; }
+@media (max-width: 940px) { #sat .tk__lbl { font-size: 10.5px; } }
 .tk__lbl--bright { fill: var(--phos-2); }
 .tk__lbl--amber { fill: var(--amber); }
 .tk__ping { transform-origin: center; transform-box: fill-box; }
