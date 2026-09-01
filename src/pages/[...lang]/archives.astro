@@ -26,18 +26,24 @@ const open = archives.filter(a => a.publicDb).length;
       {archives.map(a => {
         const url = resolveSource(a.ref);
         return (
-          <article style="background:var(--void-2);padding:clamp(1.5rem,3.5vw,2.2rem)">
-            <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.7rem">
-              <span class="label label--phos">{a.countryName[lang]}</span>
-              <span class="label">{a.years}</span>
-              <span class:list={['chip', ST[a.status].cls]}>{t(ST[a.status].k)}</span>
-              {a.publicDb && <span class="chip chip--on">{t('arch.publicDb')}</span>}
+          <article class="arch">
+            <div>
+              <div class="arch__tags">
+                <span class="label label--phos">{a.countryName[lang]}</span>
+                <span class="label">{a.years}</span>
+                <span class:list={['chip', ST[a.status].cls]}>{t(ST[a.status].k)}</span>
+                {a.publicDb && <span class="chip chip--on">{t('arch.publicDb')}</span>}
+              </div>
+              <h2 style="font-size:clamp(1.2rem,2.4vw,1.6rem);margin:0 0 .3rem">{a.program}</h2>
+              <p class="mono dim" style="font-size:.82rem;margin:0 0 1rem">{a.institution[lang]}</p>
+              <p class="arch__note">{a.note[lang]}</p>
             </div>
-            <h2 style="font-size:clamp(1.2rem,2.4vw,1.6rem);margin:0 0 .3rem">{a.program}</h2>
-            <p class="mono dim" style="font-size:.82rem;margin:0 0 1rem">{a.institution[lang]}</p>
-            <p style="margin:0 0 1rem;color:var(--fg-dim);font-size:.97rem;max-width:80ch">{a.note[lang]}</p>
-            <p class="label" style="margin:0">{t('arch.volume')}: <span style="color:var(--fg-dim);letter-spacing:0;text-transform:none;font-weight:400">{a.volume[lang]}</span></p>
-            {url && <p style="margin:.9rem 0 0"><a href={url} rel="noopener noreferrer" target="_blank" class="mono link-act" style="font-size:.85rem">{t('arch.source')}</a></p>}
+            {/* Prawa szyna z metryką wpisu: bez niej panel był w połowie pusty. */}
+            <div class="arch__meta">
+              <p class="label" style="margin:0">{t('arch.volume')}</p>
+              <p class="arch__vol">{a.volume[lang]}</p>
+              {url && <a href={url} rel="noopener noreferrer" target="_blank" class="mono link-act" style="font-size:.85rem">{t('arch.source')}</a>}
+            </div>
           </article>
         );
       })}
