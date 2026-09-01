@@ -8,7 +8,8 @@
     "build": "node scripts/check-data.mjs && astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "check:data": "node scripts/check-data.mjs"
+    "check:data": "node scripts/check-data.mjs",
+    "sources:todo": "node scripts/unlinked-sources.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
