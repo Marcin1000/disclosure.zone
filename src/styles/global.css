@@ -200,13 +200,99 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 }
 .nav__links a:hover, .nav__links a[aria-current] { color: var(--phos); }
 .nav__links a:hover::after, .nav__links a[aria-current]::after { right: 0; }
+/* ============================================================ MENU NA TELEFON
+   Pasek przewijany w poziomie chował połowę działów za krawędzią ekranu.
+   Poniżej 860 px pozycje przenoszą się do wysuwanego arkusza.
+*/
+.burger { display: none; }
 @media (max-width: 860px) {
-  .nav__links { gap: .5rem; overflow-x: auto; scrollbar-width: none; }
-  .nav__links::-webkit-scrollbar { display: none; }
-  /* flex:none, nie min-width: pozycja flex ma domyślnie min-width:auto i to ono
-     powstrzymuje kurczenie. Nadpisanie go liczbą pozwalało tekstowi wyjść poza
-     pudełko i nałożyć się na sąsiada. Odstęp daje pole dotyku, nie szerokość. */
-  .nav__links a { white-space: nowrap; font-size: .64rem; padding: .5rem .45rem; flex: none; }
+  .nav__links { display: none; }
+  .burger {
+    display: grid; place-items: center; margin-left: auto;
+    width: 42px; height: 42px; padding: 0;
+    background: transparent; border: 1px solid var(--line-2); cursor: pointer;
+    transition: border-color var(--t-fast), background var(--t-fast);
+  }
+  .burger:hover, .burger[aria-expanded="true"] { border-color: var(--phos-dim); background: var(--phos-ghost); }
+}
+.burger__lines { display: grid; gap: 4px; width: 18px; }
+.burger__lines i { display: block; height: 1.5px; background: var(--fg-dim); transition: background var(--t-fast), width var(--t); }
+.burger__lines i:nth-child(2) { width: 12px; justify-self: start; }
+.burger:hover .burger__lines i { background: var(--phos); }
+.burger:hover .burger__lines i:nth-child(2) { width: 18px; }
+
+.sheet {
+  position: fixed; inset: 0; z-index: 300;
+  visibility: hidden;
+  transition: visibility 0s linear var(--t-sheet, 340ms);
+}
+.sheet[data-open] { visibility: visible; transition-delay: 0s; }
+
+.sheet__scrim {
+  position: absolute; inset: 0;
+  background: rgba(4, 7, 8, .72); backdrop-filter: blur(3px);
+  opacity: 0; transition: opacity 340ms cubic-bezier(.2,.7,.3,1);
+}
+.sheet[data-open] .sheet__scrim { opacity: 1; }
+
+.sheet__panel {
+  position: absolute; inset: 0 0 0 auto;
+  width: min(88vw, 360px);
+  display: flex; flex-direction: column;
+  padding: 1.1rem clamp(1.2rem, 5vw, 1.9rem) 1.6rem;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--void) 62%);
+  border-left: 1px solid var(--line-2);
+  box-shadow: inset 1px 0 0 rgba(77, 227, 160, .3), -24px 0 60px rgba(0, 0, 0, .55);
+  transform: translateX(100%);
+  transition: transform 340ms cubic-bezier(.16,.9,.24,1);
+  overflow-y: auto;
+}
+.sheet[data-open] .sheet__panel { transform: none; }
+
+/* narożniki jak na kartach akt */
+.sheet__panel::before, .sheet__panel::after {
+  content: ""; position: absolute; width: 14px; height: 14px;
+  border: 1px solid var(--phos-dim); opacity: .5; pointer-events: none;
+}
+.sheet__panel::before { top: 10px; left: 10px; border-width: 1px 0 0 1px; }
+.sheet__panel::after { bottom: 10px; right: 10px; border-width: 0 1px 1px 0; }
+
+.sheet__head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-left: 12px; }
+.sheet__x {
+  width: 42px; height: 42px; display: grid; place-items: center; position: relative;
+  background: transparent; border: 1px solid var(--line-2); cursor: pointer;
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+.sheet__x:hover { border-color: var(--phos-dim); background: var(--phos-ghost); }
+.sheet__x span { position: absolute; width: 16px; height: 1.5px; background: var(--fg-dim); transition: background var(--t-fast); }
+.sheet__x span:first-child { transform: rotate(45deg); }
+.sheet__x span:last-child { transform: rotate(-45deg); }
+.sheet__x:hover span { background: var(--phos); }
+
+.sheet__panel:focus-visible { outline: none; }
+/* lista wyśrodkowana w wolnej przestrzeni: inaczej wisi u góry, a pod nią zostaje pustka */
+.sheet__list { list-style: none; margin: 1.6rem 0; padding: 0; flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.sheet__list li { border-top: 1px solid var(--line); }
+.sheet__list li:last-child { border-bottom: 1px solid var(--line); }
+.sheet__list a {
+  display: grid; grid-template-columns: 2.1rem 1fr auto; align-items: baseline; gap: .6rem;
+  padding: 1.05rem .4rem 1.05rem 12px; border: 0;
+  opacity: 0; transform: translateX(14px);
+  transition: opacity 320ms ease, transform 320ms cubic-bezier(.16,.9,.24,1), color var(--t-fast);
+}
+.sheet[data-open] .sheet__list a { opacity: 1; transform: none; transition-delay: calc(90ms + var(--i) * 45ms); }
+.sheet__n { font-family: var(--mono); font-size: .62rem; letter-spacing: .12em; color: var(--fg-faint); }
+.sheet__t { font-family: var(--mono); font-size: .82rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--fg); }
+.sheet__on { color: var(--amber); font-size: .7rem; }
+.sheet__list a:hover .sheet__t, .sheet__list a[aria-current] .sheet__t { color: var(--phos); }
+.sheet__list a[aria-current] .sheet__n { color: var(--phos-dim); }
+.sheet__foot { margin: 0; padding-left: 12px; color: var(--fg-faint); }
+
+body.is-locked { position: fixed; width: 100%; overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet__panel, .sheet__scrim, .sheet__list a { transition-duration: .01ms; }
+  .sheet__list a { transition-delay: 0s; }
 }
 
 /* ============================================================ LOGO */

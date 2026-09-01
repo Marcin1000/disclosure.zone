@@ -35,6 +35,9 @@ const en: Dict = {
   'nav.toolkit': 'Toolkit',
   'nav.skip': 'Skip to content',
   'nav.main': 'Main',
+  'nav.open': 'Open the menu',
+  'nav.close': 'Close the menu',
+  'nav.sheet': 'Sections',
 
   'site.tagline': 'Documents, not rumors',
   'site.desc': 'A UAP case database with an explicit evidence methodology. Every claim carries a source tier. Unresolved never means extraterrestrial.',
@@ -149,6 +152,9 @@ const pl: Dict = {
   'nav.toolkit': 'Kalkulator',
   'nav.skip': 'Przejdź do treści',
   'nav.main': 'Główna',
+  'nav.open': 'Otwórz menu',
+  'nav.close': 'Zamknij menu',
+  'nav.sheet': 'Działy',
 
   'site.tagline': 'Dokumenty, nie plotki',
   'site.desc': 'Baza przypadków UAP z jawną metodologią oceny dowodów. Każde twierdzenie ma przypisany poziom źródła. Nierozstrzygnięte nigdy nie znaczy pozaziemskie.',

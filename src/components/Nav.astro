@@ -9,15 +9,104 @@ const links = [
   ['cases', 'nav.cases'], ['map', 'nav.map'], ['claims', 'nav.claims'],
   ['archives', 'nav.archives'], ['toolkit', 'nav.toolkit'], ['methodology', 'nav.method'],
 ] as const;
+const isHere = (href: string) => here === href || here.startsWith(href + '/');
 ---
 <header class="nav">
   <div class="wrap nav__in">
     <Logo href={path(lang)} />
+
     <nav class="nav__links" aria-label={t('nav.main')}>
       {links.map(([slug, key]) => {
         const href = path(lang, `/${slug}`);
-        return <a href={href} aria-current={here === href || here.startsWith(href + '/') ? 'page' : undefined}>{t(key)}</a>;
+        return <a href={href} aria-current={isHere(href) ? 'page' : undefined}>{t(key)}</a>;
       })}
     </nav>
+
+    <button class="burger" type="button" data-menu-open
+            aria-expanded="false" aria-controls="menu" aria-label={t('nav.open')}>
+      <span class="burger__lines" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
   </div>
 </header>
+
+{/* Arkusz nawigacji na telefon. W drzewie zawsze, chowany widocznością,
+    żeby dało się animować wejście i wyjście. */}
+<div class="sheet" id="menu" data-sheet>
+  <div class="sheet__scrim" data-menu-close></div>
+
+  <nav class="sheet__panel" tabindex="-1" aria-label={t('nav.sheet')}>
+    <div class="sheet__head">
+      <p class="label label--phos">{t('nav.sheet')}</p>
+      <button class="sheet__x" type="button" data-menu-close aria-label={t('nav.close')}>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <ul class="sheet__list">
+      {links.map(([slug, key], i) => {
+        const href = path(lang, `/${slug}`);
+        const on = isHere(href);
+        return (
+          <li style={`--i:${i}`}>
+            <a href={href} aria-current={on ? 'page' : undefined}>
+              <span class="sheet__n">{String(i + 1).padStart(2, '0')}</span>
+              <span class="sheet__t">{t(key)}</span>
+              {on && <span class="sheet__on" aria-hidden="true">◆</span>}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+
+    <p class="sheet__foot label">{t('site.tagline')}</p>
+  </nav>
+</div>
+
+<script>
+  const sheet = document.querySelector('[data-sheet]') as HTMLElement | null;
+  const opener = document.querySelector('[data-menu-open]') as HTMLButtonElement | null;
+  if (sheet && opener) {
+    const panel = sheet.querySelector('.sheet__panel') as HTMLElement;
+    const focusable = () => [...panel.querySelectorAll<HTMLElement>('a[href], button')];
+    let lastY = 0;
+
+    function open() {
+      lastY = window.scrollY;
+      sheet!.dataset.open = '';
+      opener!.setAttribute('aria-expanded', 'true');
+      // blokada przewijania tła bez skoku pozycji
+      document.body.style.top = `-${lastY}px`;
+      document.body.classList.add('is-locked');
+      panel.focus();
+    }
+
+    function close() {
+      delete sheet!.dataset.open;
+      opener!.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('is-locked');
+      document.body.style.top = '';
+      window.scrollTo(0, lastY);
+      opener!.focus();
+    }
+
+    opener.addEventListener('click', open);
+    sheet.querySelectorAll('[data-menu-close]').forEach(b => b.addEventListener('click', close));
+
+    document.addEventListener('keydown', e => {
+      if (!('open' in sheet.dataset)) return;
+      if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+      if (e.key !== 'Tab') return;
+      // pętla fokusu w obrębie arkusza
+      const f = focusable();
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
+
+    // powrót na szerokość desktopu zamyka arkusz, żeby nie został otwarty w tle
+    matchMedia('(min-width: 861px)').addEventListener('change', e => {
+      if (e.matches && 'open' in sheet.dataset) close();
+    });
+  }
+</script>
