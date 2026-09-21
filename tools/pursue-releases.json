@@ -1,0 +1,11 @@
+{
+  "source": "https://www.war.gov/UFO/",
+  "snapshot_date": "2026-09-21",
+  "releases": [
+    {"release":"01","date":"2026-05-08","documents_mb":1200,"documents_url":"https://www.war.gov/medialink/ufo/bundle/Release_1.zip","videos_gb":1.3,"videos_url":"https://d34w7g4gy10iej.cloudfront.net/uapvideos.zip"},
+    {"release":"02","date":"2026-05-22","documents_mb":70.1,"documents_url":"https://www.war.gov/medialink/ufo/052226/release_02/release_02_document_bundle.zip","videos_gb":5.6,"videos_url":"https://d34w7g4gy10iej.cloudfront.net/uap052226.zip"},
+    {"release":"03","date":"2026-06-12","documents_mb":826,"documents_url":"https://www.war.gov/medialink/ufo/061226/release_03/release_03_documents.zip","videos_gb":4.6,"videos_url":"https://d34w7g4gy10iej.cloudfront.net/release_03/uap_videos_061226.zip"},
+    {"release":"04","date":"2026-07-10","documents_mb":227,"documents_url":"https://www.war.gov/medialink/ufo/071026/release_04/release_04_documents_071026.zip","videos_gb":1.4,"videos_url":"https://d34w7g4gy10iej.cloudfront.net/release_04/uap_release04_videos_071026.zip"},
+    {"release":"05","date":"2026-08-07","documents_mb":130,"documents_url":"https://www.war.gov/medialink/ufo/release_05/Aug_07/release_05_Aug_07_documents.zip","videos_gb":0.513,"videos_url":"https://d34w7g4gy10iej.cloudfront.net/release_05/uap_videos_080726.zip"}
+  ]
+}

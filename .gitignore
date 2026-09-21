@@ -6,3 +6,6 @@ dist/
 .env
 .env.production
 .wrangler/
+
+# Materiał pobrany przez narzędzia z tools/ — żyje lokalnie, nie w repo
+harvest/
