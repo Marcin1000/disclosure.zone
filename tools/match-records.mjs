@@ -22,6 +22,17 @@ if (!input) {
   process.exit(1);
 }
 const jsonOut = rest.includes('--json') ? rest[rest.indexOf('--json') + 1] : null;
+/** Spis z index-bundles: pozwala pokazać, które rekordy leżą już na dysku. */
+const invPath = rest.includes('--files') ? rest[rest.indexOf('--files') + 1] : null;
+/** Jedno zdarzenie w całości, z listą plików do przeczytania. */
+const onlyEvent = rest.includes('--event') ? rest[rest.indexOf('--event') + 1] : null;
+
+const normId = (x) => x.toUpperCase().replace(/[^A-Z0-9]/g, '');
+let localFiles = null;
+if (invPath) {
+  if (!existsSync(invPath)) { console.error(`${invPath} not found — run index-bundles first.`); process.exit(1); }
+  localFiles = JSON.parse(readFileSync(invPath, 'utf8')).coverage?.matches ?? {};
+}
 
 /** Słowa, które w tej dziedzinie nie odróżniają niczego od niczego. */
 const STOP = new Set([
@@ -185,6 +196,9 @@ const events = [...groups].map(([key, items]) => ({
   withGovSource: items.filter(i => govern(i.officialSourceUrl)).length,
   titles: items.map(i => i.title),
   sources: items.map(i => i.officialSourceUrl).filter(Boolean),
+  files: localFiles
+    ? items.flatMap(i => localFiles[normId(i.recordId ?? '')] ?? [])
+    : undefined,
 })).sort((a, b) =>
   b.withGovSource - a.withGovSource || b.records - a.records || (a.year ?? 0) - (b.year ?? 0));
 
@@ -214,11 +228,34 @@ if (review.length) {
 console.log(`\nnew candidate events: ${events.length} (from ${candidates.length} unmatched records)`);
 console.log('ordered by government-sourced records, then by how many records back the event\n');
 for (const [i, e] of events.slice(0, 25).entries()) {
-  console.log(`${String(i + 1).padStart(3)}. ${e.topic.padEnd(34)} ${e.records} record(s), ${e.withGovSource} government-sourced`);
+  const held = e.files ? `, ${e.files.length} file(s) on disk` : '';
+  console.log(`${String(i + 1).padStart(3)}. ${e.topic.padEnd(34)} ${e.records} record(s), ${e.withGovSource} government-sourced${held}`);
   for (const t of e.titles.slice(0, 3)) console.log(`      ${t.slice(0, 92)}`);
   if (e.titles.length > 3) console.log(`      … and ${e.titles.length - 3} more`);
 }
 if (events.length > 25) console.log(`\n… and ${events.length - 25} further events`);
+
+if (onlyEvent) {
+  const want = onlyEvent.toLowerCase();
+  const hit = events.filter(e => e.key.toLowerCase().includes(want));
+  if (!hit.length) {
+    console.error(`\nno event matches "${onlyEvent}". Run without --event to see the list.`);
+    process.exit(1);
+  }
+  for (const e of hit) {
+    console.log(`\n=== ${e.key}  (${e.records} record(s))`);
+    for (const t of e.titles) console.log(`  ${t}`);
+    if (e.files?.length) {
+      console.log(`\n  files held locally (${e.files.length}):`);
+      for (const f of e.files) console.log(`    ${f}`);
+    } else if (localFiles) {
+      console.log('\n  none of these records was found in the download');
+    }
+    console.log('\n  sources:');
+    for (const u of e.sources) console.log(`    ${u}`);
+  }
+  process.exit(0);
+}
 
 const govTotal = records.filter(r => govern(r.officialSourceUrl)).length;
 console.log(`\ndocuments worth fetching: ${govTotal} record(s) point at a government source`);

@@ -76,6 +76,26 @@ For a refused client, `--browser` sends the header set a browser sends, and
 department publishes for download, so this is getting past a header check, not
 past an access control.
 
+## index-bundles.mjs
+
+Indexes what the download actually contains and cross-references it with the
+harvest manifest.
+
+```
+node tools/index-bundles.mjs [--dir harvest/pursue]
+                             [--manifest harvest/disclosure-archive/manifest.json]
+                             [--out harvest/inventory.json]
+```
+
+It does not extract anything — it reads the name list out of each zip, so 16 GB
+takes seconds and needs no second copy on disk. The output holds file names
+only, never document content, which makes it small enough to pass around.
+
+The cross-reference answers the question the rest depends on: how many of the
+indexed records are now held as primary files. Identifiers are matched with a
+boundary, because `D10` is a prefix of `D102` and this corpus has 54 such pairs;
+without that the coverage figure is inflated and the wrong document gets picked.
+
 ## match-records.mjs
 
 Turns a harvest manifest into a reading plan.
@@ -104,3 +124,8 @@ Events are grouped by place and year when the title carries them, which
 archival titles usually do in the form `id, kind, place, date`. Titles without
 that shape fall back to year plus the rarest word. Records sharing an
 identifier are collapsed, since the same record turns up under several URLs.
+
+Pass `--files harvest/inventory.json` and each event also reports how many of
+its records are held locally. `--event "Gulf of Oman"` prints one event in full
+with the exact path of every file, including the archive it sits in — which is
+the list to read when writing that case.

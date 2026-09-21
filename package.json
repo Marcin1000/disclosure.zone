@@ -13,7 +13,8 @@
     "check:obs": "node scripts/check-observations.mjs",
     "harvest:archive": "node tools/harvest-archive.mjs",
     "harvest:pursue": "node tools/fetch-pursue.mjs",
-    "harvest:match": "node tools/match-records.mjs"
+    "harvest:match": "node tools/match-records.mjs",
+    "harvest:index": "node tools/index-bundles.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
