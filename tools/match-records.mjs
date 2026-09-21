@@ -33,11 +33,23 @@ const STOP = new Set([
   'incident','sighting','sightings','encounter','observation','observations','dow','pr','d',
   // Skróty instytucjonalne nazywają rodzaj miejsca, nie zdarzenie.
   'afb','afs','raf','uss','hms','base','station','squadron','wing',
+  // Wydawca rekordu. Siedzi już w jego sygnaturze, więc jako temat nic nie wnosi.
+  'fbi','nasa','cia','dod','dos','doe','eop','ica','usg','lle','aaro','odni',
+  'statement','narrative','mission','rendering','digital','section','unresolved',
 ]);
 
 const YEAR = /^(1[89]\d{2}|20[0-4]\d)$/;
-/** Sygnatury rekordów (DOW-UAP-D102, PR159) identyfikują plik, nie zdarzenie. */
-const stripIds = (s) => s.replace(/\bDOW[-\s]?UAP[-\s]?[A-Z]*\d+\b/gi, ' ').replace(/\b[A-Z]{1,3}\d{2,4}\b/g, ' ');
+/**
+ * Sygnatury rekordów identyfikują plik, nie zdarzenie. Wydawców jest więcej niż
+ * jeden (DOW, FBI, NASA, CIA, DOS, DOE), więc wzorzec bierze dowolny prefiks.
+ */
+const RECORD_ID = /\b[A-Z]{2,5}[-\s]?UAP[-\s]?[A-Z]*\d+\b/i;
+const stripIds = (s) => s
+  .replace(new RegExp(RECORD_ID.source, 'gi'), ' ')
+  .replace(/\b[A-Z]{1,3}\d{2,4}\b/g, ' ');
+
+/** Identyfikator rekordu, gdy tytuł go niesie. Ten sam identyfikator to ten sam rekord. */
+const recordId = (s) => (RECORD_ID.exec(s) ?? [null])[0]?.toUpperCase().replace(/\s/g, '-') ?? null;
 /** Rok wyłapujemy osobno, więc nie może jeszcze raz liczyć się jako wspólne słowo. */
 const words = (s) => (stripIds(s).toLowerCase().match(/[a-zà-ÿ0-9]{3,}/g) ?? [])
   .filter(w => !STOP.has(w) && !YEAR.test(w));
@@ -67,8 +79,21 @@ const corpus = readdirSync(CASES).filter(f => f.endsWith('.md')).map(f => {
 
 // ——— manifest
 const manifest = JSON.parse(readFileSync(input, 'utf8'));
-const records = manifest.records ?? manifest;
-if (!Array.isArray(records)) { console.error('manifest has no records array'); process.exit(1); }
+const raw = manifest.records ?? manifest;
+if (!Array.isArray(raw)) { console.error('manifest has no records array'); process.exit(1); }
+
+// Ten sam rekord bywa opublikowany pod kilkoma adresami. Liczymy go raz,
+// ale odnotowujemy, ile kopii widzieliśmy, bo to informacja o indeksie.
+const byId = new Map();
+const records = [];
+let duplicates = 0;
+for (const r of raw) {
+  const id = recordId(r.title ?? '');
+  if (id && byId.has(id)) { byId.get(id).copies++; duplicates++; continue; }
+  const row = { ...r, recordId: id, copies: 1 };
+  if (id) byId.set(id, row);
+  records.push(row);
+}
 
 /**
  * Bez zgodności roku dopasowanie musi unieść samo słowo, więc poprzeczka jest
@@ -82,6 +107,7 @@ for (const c of corpus)
 const distinctive = (w) => casesPerWord.get(w) === 1 && w.length >= 5;
 
 const covered = [];
+const review = [];
 const candidates = [];
 
 for (const r of records) {
@@ -101,26 +127,46 @@ for (const r of records) {
     const score = shared.length + strong.length + (sameYear ? 1 : 0);
     if (!best || score > best.score) best = { case: c, shared, score, sameYear, strong };
   }
-  if (best) {
-    covered.push({
-      ...r, caseId: best.case.id, caseTitle: best.case.title,
-      matchedOn: best.shared,
-      confidence: best.sameYear && best.strong.length ? 'high' : best.strong.length ? 'medium' : 'low',
-    });
-  } else {
-    candidates.push({ ...r, years: ys, words: [...ws] });
-  }
+  const hit = best && {
+    ...r, caseId: best.case.id, caseTitle: best.case.title,
+    matchedOn: best.shared,
+    confidence: best.sameYear && best.strong.length ? 'high' : best.strong.length ? 'medium' : 'low',
+  };
+  // Tylko zgodność roku i słowa wskazującego jedną sprawę liczymy jako pokrycie.
+  // Słabsze trafienia idą do przejrzenia, bo na tym korpusie okazały się w
+  // większości pozorne: „East China Sea" trafiało w East Coast, „Persian Gulf"
+  // w Gulf of Mexico, a „airport" łączył Kazachstan z Hangzhou.
+  if (hit?.confidence === 'high') covered.push(hit);
+  else if (hit) review.push(hit);
+  else candidates.push({ ...r, years: ys, words: [...ws] });
+}
+
+/**
+ * Tytuły archiwalne często mają postać „sygnatura, rodzaj, miejsce, data".
+ * Gdy tytuł tak się rozkłada, miejsce i rok są lepszym kluczem zdarzenia niż
+ * najrzadsze słowo: „Gulf of Oman 2021" mówi coś, „oman" mniej, a „photo" nic.
+ */
+function structuredKey(title) {
+  const body = title.replace(new RegExp(`^${RECORD_ID.source}[,\\s-]*`, 'i'), '');
+  const seg = body.split(',').map(x => x.trim()).filter(Boolean);
+  if (seg.length < 3) return null;
+  const last = seg[seg.length - 1];
+  const y = (/\b(1[89]\d{2}|20[0-4]\d)\b/.exec(last) ?? [])[1];
+  if (!y) return null;
+  const place = seg[seg.length - 2].replace(/^["']|["']$/g, '').trim();
+  return place ? `${place} · ${y}` : null;
 }
 
 // ——— grupowanie kandydatów w zdarzenia
 const groups = new Map();
 for (const c of candidates) {
   const y = c.years[0] ?? 0;
-  // Klucz zdarzenia: rok plus najrzadsze wyróżniające słowo tytułu.
   const freq = (w) => candidates.filter(o => o.words.includes(w)).length;
-  const key = c.words.length
-    ? `${y}:${[...c.words].sort((a, b) => freq(a) - freq(b) || a.localeCompare(b))[0]}`
-    : `${y}:?`;
+  // Zapasowo, gdy tytuł nie ma struktury: rok plus najrzadsze wyróżniające słowo.
+  const fallback = c.words.length
+    ? `${y || '????'} · ${[...c.words].sort((a, b) => freq(a) - freq(b) || a.localeCompare(b))[0]}`
+    : `${y || '????'} · ?`;
+  const key = structuredKey(c.title ?? '') ?? fallback;
   if (!groups.has(key)) groups.set(key, []);
   groups.get(key).push(c);
 }
@@ -133,8 +179,8 @@ for (const c of candidates) {
 const govern = (u) => !!u && /\.(gov|mil)(\/|$)|archives\.gov|dvidshub\.net/.test(u);
 const events = [...groups].map(([key, items]) => ({
   key,
-  year: Number(key.split(':')[0]) || null,
-  topic: key.split(':')[1],
+  year: Number((/\b(1[89]\d{2}|20[0-4]\d)\b/.exec(key) ?? [])[1]) || null,
+  topic: key,
   records: items.length,
   withGovSource: items.filter(i => govern(i.officialSourceUrl)).length,
   titles: items.map(i => i.title),
@@ -149,19 +195,26 @@ for (const c of covered) {
   byCase.get(c.caseId).push(c);
 }
 
-console.log(`manifest: ${records.length} records · corpus: ${corpus.length} cases\n`);
-const conf = covered.reduce((m, c) => (m[c.confidence]++, m), { high: 0, medium: 0, low: 0 });
+console.log(`manifest: ${raw.length} records${duplicates ? ` (${duplicates} duplicate id(s) collapsed, ${records.length} distinct)` : ''}`);
+console.log(`corpus: ${corpus.length} cases\n`);
 console.log(`already covered by a case: ${covered.length} record(s) across ${byCase.size} case(s)`);
-console.log(`  confidence — high ${conf.high} · medium ${conf.medium} · low ${conf.low} (check the low ones by hand)`);
+console.log('  year agreement plus a word that points at exactly one case');
 for (const [id, list] of [...byCase].sort((a, b) => b[1].length - a[1].length).slice(0, 15))
   console.log(`  ${String(list.length).padStart(3)}  ${id}`);
 if (byCase.size > 15) console.log(`  … and ${byCase.size - 15} more`);
 
+if (review.length) {
+  console.log(`\npossibly related, needs a human: ${review.length} record(s)`);
+  console.log('  one shared word and no year agreement — usually a place name colliding');
+  for (const r of review.slice(0, 12))
+    console.log(`  ${r.caseId.padEnd(22)} ? ${r.title.slice(0, 62)}  ${JSON.stringify(r.matchedOn)}`);
+  if (review.length > 12) console.log(`  … and ${review.length - 12} more in the JSON output`);
+}
+
 console.log(`\nnew candidate events: ${events.length} (from ${candidates.length} unmatched records)`);
 console.log('ordered by government-sourced records, then by how many records back the event\n');
 for (const [i, e] of events.slice(0, 25).entries()) {
-  const tag = `${e.year ?? '????'} · ${e.topic}`;
-  console.log(`${String(i + 1).padStart(3)}. ${tag.padEnd(28)} ${e.records} record(s), ${e.withGovSource} government-sourced`);
+  console.log(`${String(i + 1).padStart(3)}. ${e.topic.padEnd(34)} ${e.records} record(s), ${e.withGovSource} government-sourced`);
   for (const t of e.titles.slice(0, 3)) console.log(`      ${t.slice(0, 92)}`);
   if (e.titles.length > 3) console.log(`      … and ${e.titles.length - 3} more`);
 }
@@ -176,7 +229,7 @@ if (jsonOut) {
     generated: new Date().toISOString(),
     manifest: input,
     corpusCases: corpus.length,
-    covered, events,
+    covered, review, events,
   }, null, 2));
   console.log(`\nwritten: ${jsonOut}`);
 }

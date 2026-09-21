@@ -74,8 +74,17 @@ together as one event, and in what order they are worth reading — records
 carrying a government source first, since those can become a case with real
 provenance.
 
-Matching is deliberately cautious and never decides for you. A record joins an
-existing case on a year agreement plus a shared word, on a single word that
-points at exactly one case and is long enough not to be an abbreviation, or on
-two shared words. A bare year is not enough, and neither is `afb`. Every match
-is labelled high, medium or low so the weak ones can be checked by hand.
+Matching is deliberately cautious and never decides for you. A record counts as
+covered only on a year agreement plus a word that points at exactly one case.
+Everything weaker goes to a separate "needs a human" list rather than being
+asserted. That split came out of the first real run: on one shared word,
+"East China Sea" attached itself to the US East Coast, "Persian Gulf" to the
+Gulf of Mexico, and "airport" joined Kazakhstan to Hangzhou. Place names collide
+constantly in this material, and no token matcher resolves them — a person has
+to read the list. Even the strict rule lets one through: Washington State 1952
+looks exactly like Washington DC 1952.
+
+Events are grouped by place and year when the title carries them, which
+archival titles usually do in the form `id, kind, place, date`. Titles without
+that shape fall back to year plus the rarest word. Records sharing an
+identifier are collapsed, since the same record turns up under several URLs.
