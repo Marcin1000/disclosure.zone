@@ -1,5 +1,8 @@
 # tools
 
+Requires Node 20 or newer (the tools use `fetch`, `AbortSignal.timeout` and
+`fs.statfs`). Windows, macOS and Linux all work.
+
 Operator tooling, run by hand. Not part of the build and not imported by the
 site. Everything here works on material outside the repository.
 
@@ -42,6 +45,11 @@ roughly 13.4 GB and need `--videos`. Free space is checked before anything is
 fetched, counting the extracted copy when `--extract` is passed. Downloads
 resume after an interruption and every bundle gets a SHA-256, so the exact bytes
 behind a citation can be shown later.
+
+Free space is read with `fs.statfs`, which behaves the same on Windows and
+Unix. Extraction shells out to `tar` on Windows (bsdtar reads zip since Windows
+10) and to `unzip` elsewhere, trying the other if the first is missing. If
+neither works the bundle is still downloaded and hashed, and the error says so.
 
 Release dates and bundle URLs live in `pursue-releases.json`. The dates were
 checked against the department's own release announcements; the bundle URLs were

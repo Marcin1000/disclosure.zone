@@ -10,7 +10,7 @@
  * więc wchodzi wyłącznie na żądanie. Pobieranie wznawia się po przerwaniu,
  * a każdy plik dostaje SHA-256, żeby dało się wykazać, co dokładnie wzięliśmy.
  */
-import { createWriteStream, existsSync, mkdirSync, readFileSync, statSync, renameSync, writeFileSync } from 'node:fs';
+import { createWriteStream, existsSync, mkdirSync, readFileSync, statSync, statfsSync, renameSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { createReadStream } from 'node:fs';
 import { Readable } from 'node:stream';
@@ -41,11 +41,15 @@ const kinds = WANT_VIDEOS ? ['documents', 'videos'] : ['documents'];
 const planned = picked.reduce((sum, r) =>
   sum + (r.documents_mb ?? 0) / 1024 + (WANT_VIDEOS ? (r.videos_gb ?? 0) : 0), 0);
 
-/** Miejsce na dysku sprawdzamy zanim zaczniemy, bo to kilkanaście gigabajtów. */
+/**
+ * Miejsce na dysku sprawdzamy zanim zaczniemy, bo to kilkanaście gigabajtów.
+ * statfs działa tak samo na Windowsie i na Uniksie, więc nie wołamy `df`,
+ * którego na Windowsie nie ma i którego brak po cichu wyłączyłby tę kontrolę.
+ */
 function freeGb(dir) {
   try {
-    const out = execFileSync('df', ['-Pk', dir], { encoding: 'utf8' }).trim().split('\n').pop();
-    return Number(out.split(/\s+/)[3]) / 1024 / 1024;
+    const s = statfsSync(dir);
+    return (s.bavail * s.bsize) / 1024 ** 3;
   } catch { return null; }
 }
 
@@ -77,6 +81,30 @@ async function download(url, dest) {
   return resumed ? `resumed from ${(have / 1e6).toFixed(0)} MB` : 'downloaded';
 }
 
+/**
+ * Rozpakowanie zostawiamy narzędziu systemowemu: strumieniuje i radzi sobie
+ * z ZIP64, którego te paczki wymagają. Na Windowsie nie ma `unzip`, ale od
+ * Windows 10 jest `tar` (bsdtar), który czyta zipy. Próbujemy obu.
+ */
+function extract(zip, into) {
+  const attempts = process.platform === 'win32'
+    ? [['tar', ['-xf', zip, '-C', into]], ['unzip', ['-q', '-o', zip, '-d', into]]]
+    : [['unzip', ['-q', '-o', zip, '-d', into]], ['tar', ['-xf', zip, '-C', into]]];
+  const tried = [];
+  for (const [cmd, args] of attempts) {
+    try {
+      execFileSync(cmd, args, { stdio: 'pipe' });
+      return cmd;
+    } catch (e) {
+      tried.push(`${cmd} ${e.code === 'ENOENT' ? 'is not installed' : 'could not read it'}`);
+    }
+  }
+  throw new Error(
+    `no working unzip tool: ${tried.join(', ')}. ` +
+    'Windows 10 and later ship tar; on Linux install unzip. ' +
+    'The bundle itself downloaded fine, so you can also unpack it by hand.');
+}
+
 const sha256 = (p) => new Promise((ok, bad) => {
   const h = createHash('sha256');
   createReadStream(p).on('data', c => h.update(c)).on('end', () => ok(h.digest('hex'))).on('error', bad);
@@ -101,11 +129,8 @@ for (const rel of picked) {
       if (EXTRACT) {
         const into = join(dir, kind);
         mkdirSync(into, { recursive: true });
-        // Rozpakowanie zostawiamy systemowemu unzip: strumieniuje, nie trzyma
-        // całego archiwum w pamięci i radzi sobie z ZIP64.
-        execFileSync('unzip', ['-q', '-o', dest, '-d', into], { stdio: 'inherit' });
         row.extractedTo = into;
-        console.log(`  extracted to ${into}`);
+        console.log(`  extracted to ${into} (${extract(dest, into)})`);
       }
     } catch (e) {
       row.error = String(e.message ?? e);
