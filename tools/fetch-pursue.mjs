@@ -32,9 +32,20 @@ const CHECK = argv.includes('--check');
 /**
  * Serwisy rządowe siedzą często za zaporą, która odrzuca nieznanego klienta
  * kodem 403. To nie jest kontrola dostępu do treści, bo pliki są publiczne
- * i domena publiczna, tylko odsiew botów po nagłówku. --ua pozwala go podmienić.
+ * i w domenie publicznej, tylko odsiew botów po nagłówkach.
+ * --browser wysyła komplet nagłówków przeglądarki, --ua podmienia sam podpis.
  */
-const UA = String(flag('ua', 'disclosure.zone-fetch/1.0 (+https://disclosure.zone)'));
+const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36';
+const AS_BROWSER = argv.includes('--browser');
+const UA = String(flag('ua', AS_BROWSER ? BROWSER_UA : 'disclosure.zone-fetch/1.0 (+https://disclosure.zone)'));
+const headers = () => AS_BROWSER
+  ? {
+      'user-agent': UA,
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'accept-language': 'en-US,en;q=0.9',
+      referer: 'https://www.war.gov/UFO/',
+    }
+  : { 'user-agent': UA };
 
 const releases = JSON.parse(readFileSync(new URL('./pursue-releases.json', import.meta.url), 'utf8')).releases;
 const picked = ONLY ? releases.filter(r => r.release === String(ONLY).padStart(2, '0')) : releases;
@@ -49,7 +60,7 @@ if (!picked.length) {
  */
 async function probe(url) {
   try {
-    const res = await fetch(url, { headers: { 'user-agent': UA, range: 'bytes=0-0' }, redirect: 'follow' });
+    const res = await fetch(url, { headers: { ...headers(), range: 'bytes=0-0' }, redirect: 'follow' });
     const len = res.headers.get('content-range')?.split('/')[1] ?? res.headers.get('content-length');
     return {
       status: res.status,
@@ -71,7 +82,7 @@ if (CHECK) {
       const url = rel[`${kind}_url`];
       if (!url) continue;
       const r = await probe(url);
-      rows.push({ release: rel.release, kind, ...r });
+      rows.push({ release: rel.release, kind, url, ...r });
       const mark = r.ok ? 'ok  ' : `${String(r.status || 'ERR').padEnd(4)}`;
       console.log(`${rel.release} ${kind.padEnd(9)} ${mark} ${(r.size ?? '').padStart(8)}  ${r.server}${r.error ? '  ' + r.error : ''}`);
       console.log(`   ${url}`);
@@ -80,14 +91,40 @@ if (CHECK) {
   const dead = rows.filter(r => !r.ok);
   console.log();
   if (!dead.length) { console.log('every address answers — the manifest is current'); process.exit(0); }
-  const allDead = dead.length === rows.length;
-  console.log(`${dead.length} of ${rows.length} addresses did not answer.`);
-  console.log(allDead
-    ? 'All of them failed, which points at the client being refused rather than the paths being wrong.\n' +
-      'Try a browser user agent:\n  npm run harvest:pursue -- --check --ua "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"'
-    : 'Some answer and some do not, so the failing paths are simply wrong.\n' +
-      'Open war.gov/ufo, right-click the release download link, copy the address,\n' +
-      'and replace the matching *_url in tools/pursue-releases.json.');
+  console.log(`${dead.length} of ${rows.length} addresses did not answer.\n`);
+
+  /**
+   * Rozstrzygamy per host, nie na całym zbiorze. Gdy pada każdy adres jednego
+   * serwera, a inny serwer odpowiada, to ten serwer odrzuca klienta: pięć
+   * różnie zbudowanych ścieżek nie bywa złych naraz. Dopiero gdy na tym samym
+   * hoście część działa, a część nie, winne są same ścieżki.
+   */
+  const hosts = new Map();
+  for (const r of rows) {
+    const h = new URL(r.url).host;   // z portem, żeby dwa serwisy na tym samym adresie nie zlały się w jeden
+    if (!hosts.has(h)) hosts.set(h, []);
+    hosts.get(h).push(r);
+  }
+  let refused = false;
+  for (const [host, list] of hosts) {
+    const bad = list.filter(r => !r.ok);
+    if (!bad.length) { console.log(`${host}: all ${list.length} ok`); continue; }
+    if (bad.length === list.length) {
+      refused = true;
+      const codes = [...new Set(bad.map(r => r.status))].join('/');
+      console.log(`${host}: all ${list.length} refused with ${codes} (${bad[0].server || 'unknown edge'})`);
+      console.log('   Every path on this host fails while another host answers, so the host is');
+      console.log('   refusing the client rather than the paths being wrong.');
+    } else {
+      console.log(`${host}: ${bad.length} of ${list.length} failed`);
+      console.log('   Some paths on this host answer and some do not, so those paths are wrong.');
+      for (const r of bad) console.log(`   wrong: ${r.url}`);
+    }
+  }
+  if (refused) {
+    console.log('\nRetry with a full set of browser headers:');
+    console.log('  npm run harvest:pursue -- --check --browser');
+  }
   process.exit(1);
 }
 
@@ -125,7 +162,7 @@ async function download(url, dest) {
   const part = `${dest}.part`;
   const have = existsSync(part) ? statSync(part).size : 0;
   const res = await fetch(url, {
-    headers: { 'user-agent': UA, ...(have ? { range: `bytes=${have}-` } : {}) },
+    headers: { ...headers(), ...(have ? { range: `bytes=${have}-` } : {}) },
     redirect: 'follow',
   });
   if (res.status === 416 && have) { renameSync(part, dest); return 'already complete'; }

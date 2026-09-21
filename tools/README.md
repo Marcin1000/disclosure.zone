@@ -63,14 +63,18 @@ from a third-party pack and were never opened, so treat them as unverified.
 node tools/fetch-pursue.mjs --check
 ```
 
-checks every address with a one-byte range request and downloads nothing. It
-separates the two reasons a bundle fails: if some addresses answer and others do
-not, the failing paths are simply wrong — take the current one from war.gov/ufo
-by right-clicking the download link. If none answer, the client is being
-refused rather than the paths being wrong, which government sites behind a
-filtering layer do to unfamiliar user agents; `--ua "..."` sets a different one.
-These are public-domain files the department publishes for download, so this is
-about getting past a header check, not past an access control.
+checks every address with a one-byte range request and downloads nothing, and
+separates the two reasons a bundle fails — per host, which is the part that
+matters. Five differently shaped paths on one host do not all go wrong at once,
+so when every address on a host fails while another host answers, that host is
+refusing the client. When some paths on the *same* host answer and others do
+not, those paths really are wrong: take the current one from war.gov/ufo by
+right-clicking the download link.
+
+For a refused client, `--browser` sends the header set a browser sends, and
+`--ua "..."` changes only the signature. These are public-domain files the
+department publishes for download, so this is getting past a header check, not
+past an access control.
 
 ## match-records.mjs
 
