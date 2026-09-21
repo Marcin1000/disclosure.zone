@@ -16,7 +16,6 @@
  */
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { parse } from 'node-html-parser';
 
 const DEFAULT_INDEX = 'https://disclosurearchive.org/records/';
 const UA = 'disclosure.zone-harvester/1.0 (+https://disclosure.zone; manifest only, no content copied)';
@@ -35,6 +34,58 @@ const LIMIT = Number(flag('limit', 0)) || Infinity;
 const PROBE = argv.includes('--probe');
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+/**
+ * Nierozwinięta encja przechodzi dalej do tytułu, a stamtąd do słów kluczowych
+ * w dopasowywaniu, gdzie „mdash" albo „eacute" udaje wyraz. Stąd ta tablica:
+ * typografia i znaki diakrytyczne, które realnie pojawiają się w nazwach miejsc.
+ */
+const ENTITIES = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', shy: '',
+  mdash: '—', ndash: '–', minus: '−', hellip: '…', middot: '·', bull: '•',
+  lsquo: '\u2018', rsquo: '\u2019', ldquo: '\u201C', rdquo: '\u201D',
+  laquo: '«', raquo: '»', deg: '°', times: '×', copy: '©', reg: '®', trade: '™',
+  ensp: ' ', emsp: ' ', thinsp: ' ',
+  aacute: 'á', eacute: 'é', iacute: 'í', oacute: 'ó', uacute: 'ú',
+  agrave: 'à', egrave: 'è', igrave: 'ì', ograve: 'ò', ugrave: 'ù',
+  acirc: 'â', ecirc: 'ê', icirc: 'î', ocirc: 'ô', ucirc: 'û',
+  auml: 'ä', euml: 'ë', iuml: 'ï', ouml: 'ö', uuml: 'ü',
+  ccedil: 'ç', ntilde: 'ñ', atilde: 'ã', otilde: 'õ',
+  aring: 'å', oslash: 'ø', aelig: 'æ', szlig: 'ß',
+};
+const decode = (s) => s.replace(/&(#x?[0-9a-f]+|[a-zA-Z]+);/gi, (m, e) => {
+  // Wielkość liter rozróżnia Aacute od aacute, więc najpierw próba dosłowna.
+  if (e in ENTITIES) return ENTITIES[e];
+  const lower = e.toLowerCase();
+  if (lower in ENTITIES) {
+    const v = ENTITIES[lower];
+    return e[0] === e[0].toUpperCase() && /^[a-z]/.test(lower) ? v.toUpperCase() : v;
+  }
+  if (e[0] === '#') {
+    const n = e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10);
+    return Number.isFinite(n) ? String.fromCodePoint(n) : m;
+  }
+  return m;
+});
+
+/**
+ * Wyciąga kotwice bez biblioteki. Narzędzie odpalane raz na jakiś czas ma
+ * działać ze świeżego klona bez instalowania czegokolwiek, a do znalezienia
+ * odnośników pełny parser HTML nie jest potrzebny. Zagnieżdżone <a> są
+ * niepoprawne w HTML, więc leniwe dopasowanie do </a> wystarcza.
+ */
+function anchors(html) {
+  const out = [];
+  for (const m of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)) {
+    const href = /\bhref\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'>]+))/i.exec(m[1]);
+    if (!href) continue;
+    out.push({
+      href: decode(href[1] ?? href[2] ?? href[3] ?? ''),
+      text: decode(m[2].replace(/<[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim(),
+    });
+  }
+  return out;
+}
 
 async function get(url) {
   const res = await fetch(url, {
@@ -72,39 +123,35 @@ async function disallowedPaths() {
 const blocked = (rules, url) =>
   rules?.some(p => new URL(url).pathname.startsWith(p)) ?? false;
 
-const label = (el) => el.text.replace(/\s+/g, ' ').trim();
-
 function recordLinks(html, base) {
-  const root = parse(html);
   const origin = new URL(base).origin;
   const seen = new Map();
-  for (const a of root.querySelectorAll('a[href]')) {
+  for (const a of anchors(html)) {
     let u;
-    try { u = new URL(a.getAttribute('href'), base); } catch { continue; }
+    try { u = new URL(a.href, base); } catch { continue; }
     if (u.origin !== origin) continue;
     if (!u.pathname.startsWith('/records/')) continue;
     if (u.pathname.replace(/\/$/, '') === new URL(base).pathname.replace(/\/$/, '')) continue;
     u.hash = '';
-    if (!seen.has(u.href)) seen.set(u.href, label(a));
+    if (!seen.has(u.href)) seen.set(u.href, a.text);
   }
   return [...seen].map(([url, title]) => ({ url, title }));
 }
 
 /** Odnośnik do źródła oficjalnego. Etykieta bywa różna, więc bierzemy szerzej. */
 function officialSource(html, base) {
-  const root = parse(html);
-  for (const a of root.querySelectorAll('a[href]')) {
-    const t = label(a).toLowerCase();
-    if (!/official\s+source|source\s+document|view\s+on\s+|original\s+source/.test(t)) continue;
+  const list = anchors(html);
+  for (const a of list) {
+    if (!/official\s+source|source\s+document|view\s+on\s+|original\s+source/.test(a.text.toLowerCase())) continue;
     try {
-      const u = new URL(a.getAttribute('href'), base);
+      const u = new URL(a.href, base);
       if (u.origin !== new URL(base).origin) return u.href;   // wychodzi na zewnątrz, czyli do wydawcy
     } catch { /* ignorujemy nieparsowalny href */ }
   }
   // Zapasowo: pierwszy odnośnik na domenę rządową lub archiwalną.
-  for (const a of root.querySelectorAll('a[href]')) {
+  for (const a of list) {
     try {
-      const u = new URL(a.getAttribute('href'), base);
+      const u = new URL(a.href, base);
       if (/\.(gov|mil)$|archives\.gov|dvidshub\.net/.test(u.hostname)) return u.href;
     } catch { /* jw. */ }
   }
@@ -112,9 +159,8 @@ function officialSource(html, base) {
 }
 
 function probe(html, base) {
-  const root = parse(html);
-  const rows = root.querySelectorAll('a[href]').slice(0, 40)
-    .map(a => `${(a.getAttribute('href') || '').slice(0, 70).padEnd(70)} | ${label(a).slice(0, 50)}`);
+  const rows = anchors(html).slice(0, 40)
+    .map(a => `${a.href.slice(0, 70).padEnd(70)} | ${a.text.slice(0, 50)}`);
   console.log(`\nFirst ${rows.length} anchors on ${base}:\n` + rows.join('\n'));
   console.log('\nNo records matched. Paste the block above and the patterns can be corrected.');
 }

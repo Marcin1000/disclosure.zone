@@ -12,7 +12,7 @@
  * pogrupowanych po roku i wspólnym słowie, bo jedno zdarzenie ma zwykle
  * kilka rekordów: dokument, analizę i materiał filmowy.
  */
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const CASES = 'src/content/cases';
@@ -50,6 +50,10 @@ function frontmatter(path) {
 }
 
 // ——— korpus
+if (!existsSync(CASES)) {
+  console.error(`${CASES} not found — run this from the repository root.`);
+  process.exit(1);
+}
 const corpus = readdirSync(CASES).filter(f => f.endsWith('.md')).map(f => {
   const raw = frontmatter(join(CASES, f));
   const pick = (k) => unquote((new RegExp(`^${k}:\\s*(.+)$`, 'm').exec(raw) ?? [, ''])[1]);

@@ -3,6 +3,10 @@
 Requires Node 20 or newer (the tools use `fetch`, `AbortSignal.timeout` and
 `fs.statfs`). Windows, macOS and Linux all work.
 
+They import nothing but Node built-ins, so they run from a fresh clone without
+`npm install`. `match-records.mjs` reads the corpus and has to be run from the
+repository root; the other two can run anywhere.
+
 Operator tooling, run by hand. Not part of the build and not imported by the
 site. Everything here works on material outside the repository.
 
