@@ -5,6 +5,7 @@
  * Archive tylko wskazują. Chodzimy po dokument tutaj, nie do agregatora.
  *
  *   node tools/fetch-pursue.mjs [--out DIR] [--release 03] [--videos] [--extract]
+ *   node tools/fetch-pursue.mjs --check        sprawdza same adresy, nic nie pobiera
  *
  * Domyślnie same dokumenty (ok. 2,4 GB). Wideo to dodatkowe ok. 13,4 GB,
  * więc wchodzi wyłącznie na żądanie. Pobieranie wznawia się po przerwaniu,
@@ -27,12 +28,66 @@ const OUT = String(flag('out', 'harvest/pursue'));
 const ONLY = flag('release', null);
 const WANT_VIDEOS = argv.includes('--videos');
 const EXTRACT = argv.includes('--extract');
-const UA = 'disclosure.zone-fetch/1.0 (+https://disclosure.zone)';
+const CHECK = argv.includes('--check');
+/**
+ * Serwisy rządowe siedzą często za zaporą, która odrzuca nieznanego klienta
+ * kodem 403. To nie jest kontrola dostępu do treści, bo pliki są publiczne
+ * i domena publiczna, tylko odsiew botów po nagłówku. --ua pozwala go podmienić.
+ */
+const UA = String(flag('ua', 'disclosure.zone-fetch/1.0 (+https://disclosure.zone)'));
 
 const releases = JSON.parse(readFileSync(new URL('./pursue-releases.json', import.meta.url), 'utf8')).releases;
 const picked = ONLY ? releases.filter(r => r.release === String(ONLY).padStart(2, '0')) : releases;
 if (!picked.length) {
   console.error(`no release matches --release ${ONLY}; known: ${releases.map(r => r.release).join(', ')}`);
+  process.exit(1);
+}
+
+/**
+ * Sprawdzenie adresu bez pobierania: zakres jednego bajtu wystarczy, żeby
+ * zobaczyć kod odpowiedzi i rozmiar. Niektóre serwery odrzucają HEAD.
+ */
+async function probe(url) {
+  try {
+    const res = await fetch(url, { headers: { 'user-agent': UA, range: 'bytes=0-0' }, redirect: 'follow' });
+    const len = res.headers.get('content-range')?.split('/')[1] ?? res.headers.get('content-length');
+    return {
+      status: res.status,
+      ok: res.status === 206 || res.status === 200,
+      size: len && len !== '*' ? `${(Number(len) / 1e6).toFixed(0)} MB` : '?',
+      server: res.headers.get('server') ?? '',
+      type: res.headers.get('content-type') ?? '',
+    };
+  } catch (e) {
+    return { status: 0, ok: false, error: String(e.message ?? e) };
+  }
+}
+
+if (CHECK) {
+  console.log('checking bundle addresses, nothing is downloaded\n');
+  const rows = [];
+  for (const rel of picked) {
+    for (const kind of ['documents', 'videos']) {
+      const url = rel[`${kind}_url`];
+      if (!url) continue;
+      const r = await probe(url);
+      rows.push({ release: rel.release, kind, ...r });
+      const mark = r.ok ? 'ok  ' : `${String(r.status || 'ERR').padEnd(4)}`;
+      console.log(`${rel.release} ${kind.padEnd(9)} ${mark} ${(r.size ?? '').padStart(8)}  ${r.server}${r.error ? '  ' + r.error : ''}`);
+      console.log(`   ${url}`);
+    }
+  }
+  const dead = rows.filter(r => !r.ok);
+  console.log();
+  if (!dead.length) { console.log('every address answers — the manifest is current'); process.exit(0); }
+  const allDead = dead.length === rows.length;
+  console.log(`${dead.length} of ${rows.length} addresses did not answer.`);
+  console.log(allDead
+    ? 'All of them failed, which points at the client being refused rather than the paths being wrong.\n' +
+      'Try a browser user agent:\n  npm run harvest:pursue -- --check --ua "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"'
+    : 'Some answer and some do not, so the failing paths are simply wrong.\n' +
+      'Open war.gov/ufo, right-click the release download link, copy the address,\n' +
+      'and replace the matching *_url in tools/pursue-releases.json.');
   process.exit(1);
 }
 
@@ -152,6 +207,6 @@ console.log(`\n${results.length - bad.length}/${results.length} bundles ok`);
 if (bad.length) {
   console.log('failed:');
   for (const r of bad) console.log(`  ${r.release} ${r.kind}: ${r.error}`);
-  console.log('If a URL 404s, check war.gov/ufo for the current address and update tools/pursue-releases.json.');
+  console.log('Run with --check to see every address at once; it tells a wrong path from a refused client.');
   process.exit(1);
 }

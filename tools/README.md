@@ -56,9 +56,21 @@ Unix. Extraction shells out to `tar` on Windows (bsdtar reads zip since Windows
 neither works the bundle is still downloaded and hashed, and the error says so.
 
 Release dates and bundle URLs live in `pursue-releases.json`. The dates were
-checked against the department's own release announcements; the bundle URLs were
-not opened. If one 404s, take the current address from war.gov/ufo and update
-that file.
+checked against the department's own release announcements; the bundle URLs came
+from a third-party pack and were never opened, so treat them as unverified.
+
+```
+node tools/fetch-pursue.mjs --check
+```
+
+checks every address with a one-byte range request and downloads nothing. It
+separates the two reasons a bundle fails: if some addresses answer and others do
+not, the failing paths are simply wrong — take the current one from war.gov/ufo
+by right-clicking the download link. If none answer, the client is being
+refused rather than the paths being wrong, which government sites behind a
+filtering layer do to unfamiliar user agents; `--ua "..."` sets a different one.
+These are public-domain files the department publishes for download, so this is
+about getting past a header check, not past an access control.
 
 ## match-records.mjs
 
