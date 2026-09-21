@@ -25,6 +25,8 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
 - **Sensor Sanity Toolkit** — four modules on parallax, aperture shape, angular size
   and the Earth's shadow, worked on real footage
 - **World map** with per-country filtering, rendered at build time
+- **Open data** as JSON and CSV, including a [DisclosureOS](https://os.disclosure.org/)
+  1.1.0 export so the corpus can be compared with other databases
 - **Per-case Open Graph images**
 - **Open data** — JSON and CSV under CC BY 4.0
 
