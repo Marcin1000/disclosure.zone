@@ -30,6 +30,13 @@ if (!existsSync(DIR)) {
   process.exit(1);
 }
 
+/**
+ * Odpadki po pakowaniu na macOS. W tych paczkach jest ich 180 na 554 wpisy,
+ * czyli jedna trzecia, i każdy dubluje nazwę prawdziwego pliku. Liczone jako
+ * pliki zawyżają wszystko, co potem raportujemy.
+ */
+const junk = (p) => p.includes('__MACOSX/') || p.split('/').pop().startsWith('._');
+
 /** Lista nazw w archiwum. Windows ma bsdtar, reszta zwykle unzip. */
 function zipEntries(zip) {
   const attempts = process.platform === 'win32'
@@ -38,7 +45,7 @@ function zipEntries(zip) {
   for (const [cmd, args] of attempts) {
     try {
       return execFileSync(cmd, args, { encoding: 'utf8', maxBuffer: 256 * 1024 * 1024 })
-        .split('\n').map(x => x.trim()).filter(x => x && !x.endsWith('/'));
+        .split('\n').map(x => x.trim()).filter(x => x && !x.endsWith('/') && !junk(x));
     } catch { /* próbujemy następnego */ }
   }
   return null;
@@ -48,7 +55,10 @@ function walk(dir, base = dir, acc = []) {
   for (const e of readdirSync(dir, { withFileTypes: true })) {
     const p = join(dir, e.name);
     if (e.isDirectory()) walk(p, base, acc);
-    else acc.push({ path: relative(base, p).split(sep).join('/'), bytes: statSync(p).size });
+    else {
+      const rp = relative(base, p).split(sep).join('/');
+      if (!junk(rp)) acc.push({ path: rp, bytes: statSync(p).size });
+    }
   }
   return acc;
 }
@@ -92,6 +102,11 @@ console.log('\nby extension:');
 for (const [e, n] of Object.entries(byExt).sort((a, b) => b[1] - a[1]).slice(0, 12))
   console.log(`  ${String(n).padStart(6)}  ${e}`);
 
+const DOC = new Set(['.pdf', '.jpg', '.jpeg', '.png', '.tif', '.tiff', '.txt', '.doc', '.docx']);
+const docs = all.filter(f => DOC.has(extname(f.path).toLowerCase()));
+const vids = all.filter(f => ['.mp4', '.mov', '.avi', '.wmv'].includes(extname(f.path).toLowerCase()));
+console.log(`\ndocuments: ${docs.length} · recordings: ${vids.length}`);
+
 // ——— zestawienie z manifestem
 const RECORD_ID = /\b[A-Z]{2,5}[-_\s]?UAP[-_\s]?[A-Z]*\d+\b/i;
 const norm = (s) => s.toUpperCase().replace(/[^A-Z0-9]/g, '');
@@ -112,7 +127,11 @@ if (existsSync(MANIFEST)) {
    * a przy wybieraniu plików do sprawy wskazywalibyśmy nie ten dokument.
    */
   const hits = new Map();
-  for (const f of all) {
+  // Identyfikatory niosą nazwy dokumentów. Nagrania nazywane są numerem zasobu
+  // DOD (DOD_111688723.mp4), którego nie da się związać z sygnaturą rekordu
+  // po samej nazwie, więc ich tu nie szukamy, żeby nie zaniżać wyniku pozornym
+  // brakiem dopasowania.
+  for (const f of docs) {
     const key = norm(f.path.split('/').pop());
     for (const id of ids.keys()) {
       let at = key.indexOf(id);
@@ -136,11 +155,22 @@ if (existsSync(MANIFEST)) {
     missingIds: missing.slice(0, 200),
     matches: Object.fromEntries([...hits].map(([id, fs]) => [id, fs.map(f => `${f.container}::${f.path}`)])),
   };
+  // Rekordy typu PR to nagrania; szukanie ich wśród dokumentów zawsze zawiedzie,
+  // więc liczymy je osobno, zamiast wliczać w brakujące.
+  const isPr = (id) => /UAPPR\d+$/.test(id);
+  const docIds = [...ids.keys()].filter(id => !isPr(id));
+  const prIds = [...ids.keys()].filter(isPr);
+  const docHave = docIds.filter(id => hits.has(id));
+  coverage.documentRecords = docIds.length;
+  coverage.documentRecordsPresent = docHave.length;
+  coverage.recordingRecords = prIds.length;
+
   console.log(`\nmanifest cross-reference (${MANIFEST}):`);
-  console.log(`  records carrying an identifier: ${ids.size}`);
-  console.log(`  found in the download:          ${have.length}`);
-  console.log(`  not found:                      ${missing.length}`);
-  if (missing.length) console.log(`  first few missing: ${missing.slice(0, 8).join(', ')}`);
+  console.log(`  document records:      ${docIds.length}, of which ${docHave.length} are here`);
+  console.log(`  recording records:     ${prIds.length}, not matchable by name`);
+  console.log('    recordings are named by DOD asset number, which carries no record identifier');
+  if (docIds.length - docHave.length)
+    console.log(`  missing documents:     ${docIds.length - docHave.length}`);
 } else {
   console.log(`\nno manifest at ${MANIFEST} — skipping the cross-reference`);
 }

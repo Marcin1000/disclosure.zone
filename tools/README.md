@@ -91,10 +91,19 @@ It does not extract anything — it reads the name list out of each zip, so 16 G
 takes seconds and needs no second copy on disk. The output holds file names
 only, never document content, which makes it small enough to pass around.
 
+Entries left behind by packing on macOS are skipped. In the real bundles they
+were 180 of 554 names, a third of the listing, each shadowing a real file.
+
 The cross-reference answers the question the rest depends on: how many of the
 indexed records are now held as primary files. Identifiers are matched with a
 boundary, because `D10` is a prefix of `D102` and this corpus has 54 such pairs;
 without that the coverage figure is inflated and the wrong document gets picked.
+
+Documents and recordings are reported apart, and only documents are searched for
+identifiers. Recordings are named by DOD asset number — `DOD_111688723.mp4` —
+which carries no record identifier and does not appear in the index links
+either, so they cannot be tied to a record by name. Counting them as missing
+would understate coverage by a third.
 
 ## match-records.mjs
 
