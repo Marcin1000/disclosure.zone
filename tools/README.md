@@ -5,7 +5,7 @@ Requires Node 20 or newer (the tools use `fetch`, `AbortSignal.timeout` and
 
 They import nothing but Node built-ins, so they run from a fresh clone without
 `npm install`. `match-records.mjs` reads the corpus and has to be run from the
-repository root; the other two can run anywhere.
+repository root; the others can run anywhere.
 
 Operator tooling, run by hand. Not part of the build and not imported by the
 site. Everything here works on material outside the repository.
@@ -56,8 +56,9 @@ Unix. Extraction shells out to `tar` on Windows (bsdtar reads zip since Windows
 neither works the bundle is still downloaded and hashed, and the error says so.
 
 Release dates and bundle URLs live in `pursue-releases.json`. The dates were
-checked against the department's own release announcements; the bundle URLs came
-from a third-party pack and were never opened, so treat them as unverified.
+checked against the department's own release announcements. All ten bundle URLs
+have since been fetched successfully with `--browser`, so the addresses are
+confirmed rather than assumed.
 
 ```
 node tools/fetch-pursue.mjs --check
@@ -75,6 +76,33 @@ For a refused client, `--browser` sends the header set a browser sends, and
 `--ua "..."` changes only the signature. These are public-domain files the
 department publishes for download, so this is getting past a header check, not
 past an access control.
+
+## probe-parents.mjs
+
+Asks what sits one level above the bundles we already pulled.
+
+```
+node tools/probe-parents.mjs --dry-run          prints the paths, requests nothing
+node tools/probe-parents.mjs --browser --json harvest/parents.json
+```
+
+It does not guess addresses. It takes every URL in `pursue-releases.json`, drops
+one path segment at a time and requests each parent directory, so the walk stays
+inside paths the department already handed us a file from.
+
+A directory answers in one of three ways and only the first adds anything:
+
+- a listing, either a server autoindex or an S3 `ListBucketResult`, in which
+  case every entry is compared against the manifest and anything new is printed;
+- an ordinary page, which means the path exists but publishes no index — a
+  courteous server may return 200 with a not-found page, so the body is read
+  rather than the status trusted;
+- a refusal, which means indexing is simply switched off.
+
+`robots.txt` is honoured with longest-match precedence: a disallowed path is
+reported as skipped, not fetched. CloudFront roots are additionally asked with
+`?list-type=2` and `?delimiter=/`, because an S3 origin only lists when asked
+that way.
 
 ## index-bundles.mjs
 
