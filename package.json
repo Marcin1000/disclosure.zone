@@ -14,7 +14,8 @@
     "harvest:archive": "node tools/harvest-archive.mjs",
     "harvest:pursue": "node tools/fetch-pursue.mjs",
     "harvest:match": "node tools/match-records.mjs",
-    "harvest:index": "node tools/index-bundles.mjs"
+    "harvest:index": "node tools/index-bundles.mjs",
+    "split": "node tools/split-file.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

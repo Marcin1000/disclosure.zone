@@ -105,6 +105,21 @@ which carries no record identifier and does not appear in the index links
 either, so they cannot be tied to a record by name. Counting them as missing
 would understate coverage by a third.
 
+## split-file.mjs
+
+Splits a file into parts that fit an attachment limit, and puts them back.
+
+```
+node tools/split-file.mjs <file> [--size 20] [--out DIR]
+node tools/split-file.mjs --join <file.parts.json> [--out DIR]
+```
+
+The parts are raw byte ranges, so nothing is lost and no format is touched. The
+manifest carries the original's SHA-256, and rejoining verifies it, so a
+truncated or out-of-order part is caught rather than producing a file that looks
+fine and is not. Rejoining is also just concatenation in order, which means the
+parts can be put back with any tool.
+
 ## match-records.mjs
 
 Turns a harvest manifest into a reading plan.
