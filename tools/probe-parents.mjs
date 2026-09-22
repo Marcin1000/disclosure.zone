@@ -46,12 +46,31 @@ const SPACING_MS = 900;
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 const MAX_BODY = 512 * 1024;
 
-/** Adresy startowe: wszystko, co realnie pobieraliśmy, plus strona wykazu. */
+/**
+ * Adresy startowe: wszystko, co realnie pobieraliśmy, plus strona wykazu.
+ * Rejestr dokumentów dokłada katalogi, do których paczki nie prowadzą, bo
+ * trzyma adres każdego pliku z osobna. Tak w zasięgu znalazło się wydanie 06,
+ * którego na stronie wykazu nie było.
+ */
 function seeds() {
   if (ONE && ONE !== true) return [String(ONE)];
   const m = JSON.parse(readFileSync(new URL('./pursue-releases.json', import.meta.url), 'utf8'));
   const out = [m.source];
   for (const r of m.releases) for (const k of ['documents_url', 'videos_url']) if (r[k]) out.push(r[k]);
+
+  try {
+    const reg = JSON.parse(readFileSync(new URL('../src/data/records.json', import.meta.url), 'utf8'));
+    const dirs = new Set();
+    for (const r of reg.records) {
+      if (r.sourceKind !== 'file' || !r.source) continue;
+      const u = new URL(r.source);
+      if (!/(^|\.)war\.gov$/i.test(u.host)) continue;   // strony wydawcy wideo nie są katalogami
+      const dir = u.origin + u.pathname.replace(/[^/]*$/, '');
+      if (dirs.has(dir)) continue;
+      dirs.add(dir);
+      out.push(r.source);
+    }
+  } catch { /* rejestru może nie być, gdy narzędzie działa poza repozytorium */ }
   return out;
 }
 

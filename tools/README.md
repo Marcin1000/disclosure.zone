@@ -86,9 +86,12 @@ node tools/probe-parents.mjs --dry-run          prints the paths, requests nothi
 node tools/probe-parents.mjs --browser --json harvest/parents.json
 ```
 
-It does not guess addresses. It takes every URL in `pursue-releases.json`, drops
-one path segment at a time and requests each parent directory, so the walk stays
-inside paths the department already handed us a file from.
+It does not guess addresses. It takes every URL in `pursue-releases.json` and one
+file address per directory in the document registry, drops one path segment at a
+time and requests each parent directory, so the walk stays inside paths the
+department already handed us a file from. The registry is what puts release 06 in
+range: it holds per-file addresses under `sept-18/release-06/` although the
+landing page listed only releases 01 to 05.
 
 A directory answers in one of three ways and only the first adds anything:
 
