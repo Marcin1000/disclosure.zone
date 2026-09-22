@@ -17,6 +17,8 @@
     "harvest:match": "node tools/match-records.mjs",
     "harvest:index": "node tools/index-bundles.mjs",
     "harvest:records": "node tools/fetch-records.mjs",
+    "media:map": "node tools/map-videos.mjs",
+    "media:make": "node tools/make-media.mjs",
     "split": "node tools/split-file.mjs"
   },
   "dependencies": {

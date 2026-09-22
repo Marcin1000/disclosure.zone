@@ -134,6 +134,52 @@ Downloads resume by byte range, every file gets a SHA-256 over the bytes as
 received, and a file already on disk is hashed and left alone. The run writes
 `fetched.json` next to the files.
 
+## map-videos.mjs
+
+Reads the publisher's page for each recording and takes three things from it:
+the DOD asset number, the direct address of the recording, and the address of
+the still.
+
+```
+node tools/map-videos.mjs --probe               one page, printed in full
+node tools/map-videos.mjs --browser             the map for all recordings
+node tools/map-videos.mjs --posters             stills into public/media/records
+```
+
+Why the map is needed: the files in the video bundles are named by DOD asset
+number, the records are keyed by PURSUE identifier, and the two sets do not
+overlap at all. The publisher's page is the only place that states both.
+
+Nothing is inferred from the page layout. Three patterns are looked for in the
+text: `DOD_` followed by a number, an address ending in `.mp4`, and the
+`og:image` tag. If a page yields none of them the tool prints the start of it and
+exits 1, so the patterns can be corrected rather than guessed at a second time.
+`robots.txt` is honoured and requests are spaced a second apart.
+
+`--posters` is the quick way to fill the films page: the stills come from the
+publisher, so no local copy of the video and no ffmpeg is needed.
+
+## make-media.mjs
+
+Makes what we can show from recordings held locally: a still and, on request, a
+short excerpt.
+
+```
+node tools/make-media.mjs --videos harvest\pursue --dry-run
+node tools/make-media.mjs --videos harvest\pursue --clip 12
+node tools/make-media.mjs --videos harvest\pursue --id DOW-UAP-PR024
+```
+
+Needs ffmpeg and the map from `map-videos.mjs`. A file the map does not tie to a
+record is left alone: naming a frame with somebody else's identifier would
+attribute material to the wrong event, so there is no guessing fallback. Files
+already produced are skipped, so a second run costs nothing.
+
+A still is about 100 kB and a twelve-second 720p excerpt one to two megabytes,
+which a static host serves without complaint. Whole recordings are not the
+target: one release of video runs to gigabytes and the publisher already serves
+it.
+
 ## index-bundles.mjs
 
 Indexes what the download actually contains and cross-references it with the
