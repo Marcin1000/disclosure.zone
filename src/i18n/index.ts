@@ -144,7 +144,7 @@ const en: Dict = {
   'home.stat.programs': 'state<br />programmes',
 
   'home.recKicker': 'Source layer',
-  'home.recH': 'Documents listed before anyone has read them',
+  'home.recH': 'Documents first, assessment second',
   'home.recLead': '{n} records the Department of War has released under PURSUE, each with the link to the material at the publisher. {c} of them are cited by a case so far. The bottleneck in this subject was never the number of sightings: it is that almost nobody reads the paperwork.',
   'home.recCta': 'Open the registry',
   'home.filmCta': '{n} recordings',
@@ -355,7 +355,7 @@ const pl: Dict = {
   'home.stat.programs': 'programów<br />państwowych',
 
   'home.recKicker': 'Warstwa źródłowa',
-  'home.recH': 'Dokumenty wypisane, zanim ktokolwiek je przeczytał',
+  'home.recH': 'Najpierw dokumenty, potem ocena',
   'home.recLead': '{n} rekordów, które Departament Wojny udostępnił w ramach PURSUE, każdy z odnośnikiem do materiału u wydawcy. Na sprawę przełożyło się dotąd {c} z nich. Wąskim gardłem w tym temacie nigdy nie była liczba obserwacji, tylko to, że papierów prawie nikt nie czyta.',
   'home.recCta': 'Otwórz rejestr',
   'home.filmCta': '{n} nagrań',
