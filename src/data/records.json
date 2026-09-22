@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-22T17:08:21.901Z",
+ "generated": "2026-09-22T18:04:53.601Z",
  "count": 450,
  "records": [
   {
@@ -3183,7 +3183,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d078",
@@ -3201,7 +3203,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d079",
@@ -3219,7 +3223,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d080",
@@ -3237,7 +3243,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d081",
@@ -3255,7 +3263,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d082",
@@ -3273,7 +3283,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d083",
@@ -3291,7 +3303,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf",
    "sourceKind": "file",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "dow-uap-d084",
@@ -3633,7 +3647,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D014_Digital-Rendering_Incident-1-1_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d015",
@@ -3651,7 +3667,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D015_Digital-Rendering_Incident-1-2_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d016",
@@ -3669,7 +3687,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d017",
@@ -3687,7 +3707,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D017_Digital-Rendering_Incident-2-2_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d018",
@@ -3705,7 +3727,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D018_Digital-Rendering_Incident-2-3_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d019",
@@ -3723,7 +3747,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D019_Digital-Rendering_Incident-2-4_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d020",
@@ -3741,7 +3767,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D020_Digital-Rendering_Incident-2-5_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d021",
@@ -3759,7 +3787,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D021_Digital-Rendering_Incident-1-3_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d022",
@@ -3777,7 +3807,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D022_Digital-Rendering_Incident-2-6_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-d023",
@@ -3795,7 +3827,9 @@
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg",
    "sourceKind": "file",
    "format": "jpg",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "ica-uap-d001",
@@ -7874,7 +7908,9 @@
    "source": "https://www.dvidshub.net/video/1010272/fbi-uap-pr005-digital-recreation-narrative-statement-3-1-western-united-states-event-2023",
    "sourceKind": "page",
    "format": "video",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "fbi-uap-pr006",
@@ -7892,7 +7928,9 @@
    "source": "https://www.dvidshub.net/video/1010276/fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-event-2023",
    "sourceKind": "page",
    "format": "video",
-   "cases": []
+   "cases": [
+    "western-us-2023"
+   ]
   },
   {
    "slug": "lle-uap-pr001",

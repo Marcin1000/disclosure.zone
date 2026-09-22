@@ -126,6 +126,16 @@ export const SOURCE_URL: Record<string, string> = {
   'aaro-mission-brief':   'https://www.aaro.mil/Portals/136/PDFs/AARO_Mission_Brief_2025.pdf',
   'geipan-search':        'https://geipan.fr/en/recherche/cas/tab',
 
+  // ——— PURSUE: dokumenty pobrane od wydawcy, adresy sprawdzone pobraniem pliku
+  'pursue':               'https://www.war.gov/ufo/',
+  'pursue-d077':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf',
+  'pursue-d078':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf',
+  'pursue-d079':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D079_Narrative-1_Western-US-Event.pdf',
+  'pursue-d080':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D080_Narrative-2_Western-US-Event.pdf',
+  'pursue-d081':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D081_Narrative-3_Western-US-Event.pdf',
+  'pursue-d082':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D082_Narrative-4_Western-US-Event.pdf',
+  'pursue-d083':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DoW-UAP-D083_Narrative-5_Western-US-Event.pdf',
+
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',
   'condon-case02':        'https://files.ncas.org/condon/text/case02.htm',

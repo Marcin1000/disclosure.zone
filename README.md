@@ -17,7 +17,7 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
 
 ## What is in here
 
-- **77 cases** from 26 countries, from 1561 to cases still open in 2024
+- **78 cases** from 26 countries, from 1561 to cases still open in 2024
 - **92 claims** in a myth-versus-document ledger, each with its origin, source tier,
   verification status and the condition that would settle it
 - **16 state programmes** across the US, France, the UK, Italy, Chile, Canada,
@@ -91,7 +91,7 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **74 of 181** sources have an address for the material itself — the only ones that
+- **82 of 189** sources have an address for the material itself — the only ones that
   count toward provenance
 - **40** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
@@ -117,10 +117,10 @@ The same rule about links applies, and the same refusal to round it up:
 - **42** give only the page of the release the document sits inside, which is not an
   address for a document and is not counted as one
 - **16** have no link at all
-- **5** are cited by a case so far
+- **24** are cited by a case so far
 
 That last number is the honest one. Reading a document into a case is work a person does,
-and the gap between 450 and 5 is the point rather than an embarrassment: the shortage in
+and the gap between 450 and 24 is the point rather than an embarrassment: the shortage in
 this subject was never sightings.
 
 `node scripts/build-records.mjs` regenerates `src/data/records.json` from a harvest

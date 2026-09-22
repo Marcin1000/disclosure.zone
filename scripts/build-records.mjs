@@ -44,12 +44,40 @@ const RECORD_GROUP = {
 };
 const RG_AGENCY = { 18: null, 38: null, 59: 'DOS', 65: 'FBI', 255: 'NASA', 331: null, 341: null, 342: null };
 
-/** Sprawy, w których dokument został przeczytany i wskazany ręcznie. */
+/**
+ * Sprawy, w których dokument został przeczytany i wskazany ręcznie.
+ * Klucz to identyfikator, a gdy ten sam identyfikator nosi więcej niż jeden
+ * rekord, trzeba dopisać wydanie w formie „ID@03". Generator przerywa pracę,
+ * gdy klucz bez wydania trafia w kilka rekordów, bo takie przypisanie
+ * podwiesiłoby pod sprawę cudzy dokument.
+ */
 const CASE_LINKS = {
   'DOW-UAP-D102': ['tremonton-1952'],
   'DOW-UAP-D103': ['tremonton-1952'],
   'DOW-UAP-D104': ['tremonton-1952'],   // Newhouse nakręcił film z Tremonton
   'DOW-UAP-D099': ['ghost-rockets-1946'],
+  // Zdarzenie na zachodzie USA: analiza, mapa, pięć relacji, dziesięć renderingów
+  // i dwie rekonstrukcje. Renderingi i rekonstrukcje są ilustracją relacji,
+  // nie zapisem zjawiska, i strona sprawy mówi to wprost.
+  'DOW-UAP-D077': ['western-us-2023'],
+  'DOW-UAP-D078': ['western-us-2023'],
+  'DOW-UAP-D079': ['western-us-2023'],
+  'DOW-UAP-D080': ['western-us-2023'],
+  'DOW-UAP-D081': ['western-us-2023'],
+  'DOW-UAP-D082': ['western-us-2023'],
+  'DOW-UAP-D083': ['western-us-2023'],
+  'FBI-UAP-D014@03': ['western-us-2023'],   // ten sam identyfikator nosi też korespondencja z wydania 04
+  'FBI-UAP-D015': ['western-us-2023'],
+  'FBI-UAP-D016': ['western-us-2023'],
+  'FBI-UAP-D017': ['western-us-2023'],
+  'FBI-UAP-D018': ['western-us-2023'],
+  'FBI-UAP-D019': ['western-us-2023'],
+  'FBI-UAP-D020': ['western-us-2023'],
+  'FBI-UAP-D021': ['western-us-2023'],
+  'FBI-UAP-D022': ['western-us-2023'],
+  'FBI-UAP-D023': ['western-us-2023'],
+  'FBI-UAP-PR005': ['western-us-2023'],
+  'FBI-UAP-PR006': ['western-us-2023'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
@@ -172,9 +200,27 @@ for (const r of manifest.records) {
     source: s.source,
     sourceKind: s.sourceKind,
     format: s.format,
-    cases: CASE_LINKS[t.id] ?? CASE_LINKS[slug] ?? [],
+    cases: CASE_LINKS[`${t.id}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[t.id] ?? [],
   });
 }
+
+/**
+ * Klucz bez wydania, który trafia w kilka rekordów, jest błędem, a nie
+ * niejednoznacznością do rozstrzygnięcia na chybił trafił.
+ */
+const ambiguous = [], unused = [];
+for (const key of Object.keys(CASE_LINKS)) {
+  const [id, rel] = key.split('@');
+  const hits = records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
+  if (!hits.length) unused.push(key);
+  else if (!rel && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
+}
+if (ambiguous.length) {
+  console.error('case link keys that point at more than one record, add the release as ID@NN:');
+  for (const a of ambiguous) console.error(`  ${a}`);
+}
+if (unused.length) console.error(`case link keys that match no record: ${unused.join(', ')}`);
+if (ambiguous.length || unused.length) process.exit(1);
 
 // stała kolejność, żeby diff pokazywał zmiany w danych, a nie w sortowaniu
 records.sort((a, b) =>
