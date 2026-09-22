@@ -107,8 +107,13 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
                      style="display:block;width:100%;height:auto;background:#05090A">
                 <source src={media.clip} type="video/mp4" />
               </video>
-            : <img src={media.poster!} alt="" width="1280" height="720"
-                   style="display:block;width:100%;height:auto" />}
+            : r.source
+              ? <a class="still" href={r.source} rel="noopener" aria-label={openLabel}>
+                  <img src={media.poster!} alt="" width={media.w ?? undefined} height={media.h ?? undefined} />
+                  <span class="play" aria-hidden="true"></span>
+                </a>
+              : <span class="still"><img src={media.poster!} alt=""
+                     width={media.w ?? undefined} height={media.h ?? undefined} /></span>}
         </div>
         <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{t('rec.stillNote')}</p>
       </section>

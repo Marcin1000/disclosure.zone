@@ -502,10 +502,37 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
   font-family: var(--mono); font-size: .58rem; letter-spacing: .2em; text-transform: uppercase;
   color: #35443F; text-align: center; padding: 0 1rem; line-height: 1.8;
 }
-.film__body { padding: .95rem 1.05rem 1.15rem; }
-.film__id { font-family: var(--mono); font-size: .58rem; letter-spacing: .16em; color: var(--phos-dim); display: block; margin-bottom: .45rem; }
-.film__t { font-size: .92rem; color: var(--fg); line-height: 1.45; margin: 0; }
-.film__m { font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-faint); margin: .6rem 0 0; }
+/* Wnętrze kafelka to spany, bo siedzą w <a>. Bez display:block padding i
+   marginesy na nich nie działają: tytuł sklejał się z wierszem metadanych i
+   dotykał krawędzi kafelka. */
+.film__body { display: block; padding: .95rem 1.05rem 1.15rem; }
+.film__id { display: block; font-family: var(--mono); font-size: .58rem; letter-spacing: .16em; color: var(--phos-dim); margin-bottom: .45rem; }
+.film__t { display: block; font-size: .92rem; color: var(--fg); line-height: 1.45; }
+.film__m { display: block; font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-faint); margin-top: .7rem; }
+
+/* Znak odtwarzania. Mówi jedno: pod tym kadrem jest nagranie, nie zdjęcie. */
+.play {
+  position: absolute; display: grid; place-items: center; z-index: 1;
+  border: 1px solid var(--phos-dim); background: rgba(6,9,10,.65);
+  color: var(--phos); transition: background var(--t-fast), border-color var(--t-fast), opacity var(--t-fast);
+}
+.play::before {
+  content: ""; width: 0; height: 0; border-style: solid;
+  border-width: .42em 0 .42em .72em;
+  border-color: transparent transparent transparent currentColor;
+  margin-left: .16em;
+}
+.film__shot .play { left: .55rem; top: .55rem; width: 26px; height: 26px; font-size: 9px; opacity: .72; }
+.film:hover .film__shot .play,
+.film:focus-visible .film__shot .play { opacity: 1; border-color: var(--phos); background: rgba(77,227,160,.18); }
+
+/* Kadr na stronie rekordu prowadzi do nagrania u wydawcy. */
+/* Kadry bywają pionowe. Bez ograniczenia wysokości jeden taki zajmowałby
+   dwa ekrany, więc wtedy szerokość ustępuje wysokości. */
+.still { position: relative; display: block; border: 0; text-align: center; background: #05090A; }
+.still img { display: block; width: 100%; height: auto; max-height: min(64vh, 560px); object-fit: contain; margin-inline: auto; }
+.still .play { left: 50%; top: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; font-size: 17px; }
+.still:hover .play, .still:focus-visible .play { border-color: var(--phos); background: rgba(77,227,160,.22); }
 
 /* Przełącznik widoku rejestru: dokumenty albo nagrania */
 .views { display: flex; gap: 1px; background: var(--line); border: 1px solid var(--line); width: fit-content; max-width: 100%; flex-wrap: wrap; }

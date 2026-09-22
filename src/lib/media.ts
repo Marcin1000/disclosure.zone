@@ -10,13 +10,39 @@
  *   DOW-UAP-PR133.mp4   skrót, jeżeli ktoś go wygenerował
  * Generuje je tools/make-media.mjs z nagrań pobranych lokalnie.
  */
-import { existsSync, readdirSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { records } from './records';
 
 const DIR = 'public/media/records';
 const held = new Set<string>(existsSync(DIR) ? readdirSync(DIR) : []);
 
-export interface Media { poster: string | null; clip: string | null }
+export interface Media { poster: string | null; clip: string | null; w: number | null; h: number | null }
+
+/**
+ * Wymiary klatki czytamy z nagłówka JPEG. Kadry przychodzą w różnych
+ * proporcjach, w tym pionowe, więc wpisanie jednej pary na sztywno przesuwałoby
+ * układ strony po doczytaniu obrazka.
+ */
+const sizes = new Map<string, { w: number; h: number } | null>();
+function jpegSize(file: string): { w: number; h: number } | null {
+  if (sizes.has(file)) return sizes.get(file)!;
+  let out: { w: number; h: number } | null = null;
+  try {
+    const b = readFileSync(file);
+    let i = 2;
+    while (i + 9 < b.length) {
+      if (b[i] !== 0xff) { i++; continue; }
+      const marker = b[i + 1];
+      if (marker === 0xd8 || marker === 0x01 || (marker >= 0xd0 && marker <= 0xd7)) { i += 2; continue; }
+      const len = b.readUInt16BE(i + 2);
+      const isFrame = marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc;
+      if (isFrame) { out = { h: b.readUInt16BE(i + 5), w: b.readUInt16BE(i + 7) }; break; }
+      i += 2 + len;
+    }
+  } catch { /* nieczytelny plik traktujemy jak brak wymiarów, nie jak błąd budowania */ }
+  sizes.set(file, out);
+  return out;
+}
 
 /**
  * Plik nosi identyfikator rekordu, a identyfikator bywa w tym korpusie
@@ -31,10 +57,12 @@ for (const r of records) {
 
 export function mediaFor(rec: { id: string | null; slug: string }): Media {
   const id = rec.id;
-  if (!id || owner.get(id) !== rec.slug) return { poster: null, clip: null };
+  const none: Media = { poster: null, clip: null, w: null, h: null };
+  if (!id || owner.get(id) !== rec.slug) return none;
   const poster = held.has(`${id}.jpg`) ? `/media/records/${id}.jpg` : null;
   const clip = held.has(`${id}.mp4`) ? `/media/records/${id}.mp4` : null;
-  return { poster, clip };
+  const size = poster ? jpegSize(`${DIR}/${id}.jpg`) : null;
+  return { poster, clip, w: size?.w ?? null, h: size?.h ?? null };
 }
 
 /** Ile nagrań ma u nas klatkę. Pokazujemy to, zamiast udawać komplet. */

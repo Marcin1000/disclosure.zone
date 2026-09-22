@@ -34,7 +34,10 @@ const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
         <a class="film" href={path(lang, `/records/${r.slug}`)}>
           <span class="film__shot">
             {m.poster
-              ? <img src={m.poster} alt="" loading="lazy" width="640" height="360" />
+              ? <>
+                  <img src={m.poster} alt="" loading="lazy" width={m.w ?? undefined} height={m.h ?? undefined} />
+                  <span class="play" aria-hidden="true"></span>
+                </>
               : <span class="film__none">{t('films.noStill')}</span>}
           </span>
           <span class="film__body">
