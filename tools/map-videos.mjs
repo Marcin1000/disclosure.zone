@@ -112,11 +112,12 @@ if (POSTERS) {
   }
   const map = JSON.parse(readFileSync(OUT, 'utf8'));
   mkdirSync(OUT_DIR, { recursive: true });
-  let ok = 0, skip = 0, fail = 0;
+  let ok = 0, held = 0, fail = 0;
+  const noAddress = [];
   for (const e of map.videos) {
-    if (!e.poster || !e.id) { skip++; continue; }
+    if (!e.poster || !e.id) { noAddress.push(e.id ?? e.slug ?? e.page); continue; }
     const file = join(OUT_DIR, `${e.id}.jpg`);
-    if (existsSync(file)) { skip++; continue; }
+    if (existsSync(file)) { held++; continue; }
     try {
       const res = await fetch(e.poster, { headers: headers(), redirect: 'follow', signal: AbortSignal.timeout(60000) });
       if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
@@ -129,8 +130,14 @@ if (POSTERS) {
     }
     await sleep(SPACING_MS);
   }
-  console.log(`\nstills fetched ${ok} · already held or no address ${skip} · failed ${fail}`);
-  console.log(`wrote into ${OUT_DIR}`);
+  console.log(`\nstills fetched ${ok} · already held ${held} · failed ${fail}`);
+  if (noAddress.length) {
+    // Bez tej listy „pominięto jedno" nie mówi które, a to jest właśnie ta
+    // pozycja, której na stronie zabraknie.
+    console.log(`\n${noAddress.length} recording(s) have no still address on the publisher's page:`);
+    for (const n of noAddress) console.log(`  ${n}`);
+  }
+  console.log(`\nwrote into ${OUT_DIR}`);
   process.exit(fail && !ok ? 1 : 0);
 }
 

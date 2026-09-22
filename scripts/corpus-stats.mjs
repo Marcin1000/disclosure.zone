@@ -3,8 +3,8 @@
  * liczby stąd, żeby nie rozjechały się z rzeczywistością przy dodaniu sprawy.
  */
 import { readdirSync, readFileSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
+import { loadTs } from './bundle-ts.mjs';
 
 const CANON = 'src/content/cases';
 
@@ -20,13 +20,8 @@ export async function corpusStats() {
     if (d) years.push(+d[1]);
   }
 
-  const tmp = '/tmp/dz-stats';
-  const load = async (src, out) => {
-    execFileSync('npx', ['esbuild', src, '--bundle', '--format=esm',
-      '--external:../i18n', '--external:astro:content', `--outfile=${tmp}-${out}.mjs`,
-      '--log-level=error']);
-    return import(`${tmp}-${out}.mjs`);
-  };
+  const load = (src, out) =>
+    loadTs(src, out, { bundle: true, external: ['../i18n', 'astro:content'] });
   const { claims } = await load('src/data/claims.ts', 'claims');
   const { archives } = await load('src/data/archives.ts', 'archives');
 

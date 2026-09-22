@@ -37,7 +37,7 @@ const citation = [
   r.source,
 ].filter(Boolean).join('. ') + (en ? ' (accessed: [date])' : ' (dostęp: [data])');
 
-const media = mediaFor(r.id);
+const media = mediaFor(r);
 
 const openLabel = r.kind === 'recording' ? t('films.watch')
   : r.sourceKind === 'file' ? t('rec.open')

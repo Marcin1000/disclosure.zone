@@ -5,9 +5,9 @@
  * z nakładką językową oraz wzajemne referencje spraw i twierdzeń.
  */
 import { readdirSync, readFileSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import { corpusStats } from './corpus-stats.mjs';
+import { loadTs, cleanupTs } from './bundle-ts.mjs';
 
 const CANON = 'src/content/cases';
 const PL = 'src/content/pl';
@@ -44,10 +44,7 @@ for (const s of canon.filter(x => pl.includes(x))) {
 }
 
 // twierdzenia i rejestr źródeł — przez esbuild, bo to TS
-const tmp = '/tmp/dz-check';
-execFileSync('npx', ['esbuild', 'src/data/claims.ts', '--bundle', '--format=esm',
-  '--external:../i18n', `--outfile=${tmp}-claims.mjs`, '--log-level=error']);
-const { claims } = await import(`${tmp}-claims.mjs`);
+const { claims } = await loadTs('src/data/claims.ts', 'claims', { bundle: true, external: ['../i18n'] });
 
 const claimIds = new Set(claims.map(c => c.id));
 const canonSet = new Set(canon);
@@ -65,9 +62,7 @@ for (const c of claims) {
   }
 }
 
-execFileSync('npx', ['esbuild', 'src/data/sources.ts', '--format=esm',
-  `--outfile=${tmp}-sources.mjs`, '--log-level=error']);
-const { FINDING_AIDS, SOURCE_URL } = await import(`${tmp}-sources.mjs`);
+const { FINDING_AIDS, SOURCE_URL } = await loadTs('src/data/sources.ts', 'sources');
 
 let linked = 0, aided = 0, total = 0;
 const unknownRefs = new Set();
@@ -141,6 +136,8 @@ for (const [re, want, what] of expect) {
   if (got.join(',') !== want.join(','))
     errors.push(`README out of date (${what}): says ${got.join(', ')}, data says ${want.join(', ')}`);
 }
+
+cleanupTs();
 
 console.log(`cases: ${canon.length} · claims: ${claims.length}`);
 console.log(`registry: ${reg.records.length} records · reach the material: ${regFile} · cited by a case: ${regCited}`);

@@ -9,7 +9,7 @@ const { lang } = Astro.props as { lang: Lang };
 const t = useT(lang);
 
 const films = records.filter(r => r.kind === 'recording');
-const shots = films.map(r => ({ r, m: mediaFor(r.id), asset: /\/video\/(\d+)/.exec(r.source ?? '')?.[1] ?? null }));
+const shots = films.map(r => ({ r, m: mediaFor(r), asset: /\/video\/(\d+)/.exec(r.source ?? '')?.[1] ?? null }));
 const withStill = shots.filter(s => s.m.poster).length;
 const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
 ---
