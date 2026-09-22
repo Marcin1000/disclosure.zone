@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, RELEASES } from '../../../lib/records';
 import { getCases } from '../../../lib/cases';
+import { mediaFor } from '../../../lib/media';
 import { LOCALES, DEFAULT_LANG, path, useT, type Lang } from '../../../i18n';
 
 export function getStaticPaths() {
@@ -36,7 +37,10 @@ const citation = [
   r.source,
 ].filter(Boolean).join('. ') + (en ? ' (accessed: [date])' : ' (dostęp: [data])');
 
-const openLabel = r.sourceKind === 'file' ? t('rec.open')
+const media = mediaFor(r.id);
+
+const openLabel = r.kind === 'recording' ? t('films.watch')
+  : r.sourceKind === 'file' ? t('rec.open')
   : r.sourceKind === 'page' ? t('rec.openPage') : t('rec.openRelease');
 ---
 <Base title={!r.id ? r.title : en ? `${r.id} — ${r.title}` : `${r.id}, ${r.title}`}
@@ -94,6 +98,22 @@ const openLabel = r.sourceKind === 'file' ? t('rec.open')
       </div>
     </section>
 
+    {(media.poster || media.clip) && (
+      <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+        <p class="label label--phos" style="margin-bottom:.8rem">{t('rec.still')}</p>
+        <div class="panel corners" style="padding:0;overflow:hidden">
+          {media.clip
+            ? <video controls preload="none" playsinline poster={media.poster ?? undefined}
+                     style="display:block;width:100%;height:auto;background:#05090A">
+                <source src={media.clip} type="video/mp4" />
+              </video>
+            : <img src={media.poster!} alt="" width="1280" height="720"
+                   style="display:block;width:100%;height:auto" />}
+        </div>
+        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{t('rec.stillNote')}</p>
+      </section>
+    )}
+
     <section class="wrap wrap--read" style="padding-block:2.5rem 0">
       <div class="panel panel--pad corners">
         {r.source
@@ -104,13 +124,6 @@ const openLabel = r.sourceKind === 'file' ? t('rec.open')
             </>
           : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}
       </div>
-
-      {r.findingAid && (
-        <p class="dim" style="margin:1.1rem 0 0;font-size:.9rem">
-          {t('rec.aid')} <a href={r.findingAid} rel="noopener nofollow">disclosurearchive.org</a>.
-          {' '}{t('rec.aidNote')}
-        </p>
-      )}
     </section>
 
     <section class="wrap wrap--read" style="padding-block:2.5rem 0">

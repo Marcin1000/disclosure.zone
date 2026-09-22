@@ -33,7 +33,6 @@ export interface Rec {
   source: string | null;
   sourceKind: SourceKind;
   format: string | null;
-  findingAid: string | null;
   cases: string[];
 }
 

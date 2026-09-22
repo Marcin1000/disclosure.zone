@@ -16,6 +16,7 @@ const t = useT(lang);
 const all = await getCases(lang);
 const countries = new Set(all.map(c => c.data.country));
 const prov = provenance();
+const films = records.filter(r => r.kind === 'recording').length;
 const core = all.filter(c => c.data.tier === 1).sort((a, b) => overall(b.data.scores) - overall(a.data.scores));
 const years = all.map(c => c.data.date.getFullYear());
 const span = `${Math.min(...years)}–${Math.max(...years)}`;
@@ -126,7 +127,10 @@ const UNCONFIRMED = {
       <div class="stat"><b>{prov.landing}</b><span set:html={t('records.link.landing')} /></div>
       <div class="stat"><b>{prov.none}</b><span set:html={t('records.link.none')} /></div>
     </div>
-    <a class="btn btn--ghost" href={path(lang, '/records')} style="margin-top:1.6rem">{t('home.recCta')}</a>
+    <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem">
+      <a class="btn btn--ghost" href={path(lang, '/records')}>{t('home.recCta')}</a>
+      <a class="btn btn--ghost" href={path(lang, '/films')}>{t('home.filmCta', { n: films })}</a>
+    </div>
   </section>
 
   <hr class="rule" />

@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import { records, yearLabel } from '../../lib/records';
+import { mediaFor } from '../../lib/media';
+import { langParams, path, plural, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+
+const films = records.filter(r => r.kind === 'recording');
+const shots = films.map(r => ({ r, m: mediaFor(r.id), asset: /\/video\/(\d+)/.exec(r.source ?? '')?.[1] ?? null }));
+const withStill = shots.filter(s => s.m.poster).length;
+const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
+---
+<Base title={t('films.title')} description={t('films.lead')} lang={lang} rest="/films">
+  <section class="wrap" style="padding-block:clamp(3rem,7vw,5rem) 1.6rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{countLabel(films.length)}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('films.title')}</h1>
+    <p class="lead dim" style="max-width:68ch">{t('films.lead')}</p>
+    <p class="label" style="margin-top:1.3rem">{t('films.stills', { n: withStill, t: films.length })}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:2rem">
+    <nav class="views" aria-label={t('records.title')}>
+      <a href={path(lang, '/records')}>{t('view.documents')}</a>
+      <a href={path(lang, '/films')} aria-current="page">{t('view.films')}</a>
+    </nav>
+  </section>
+
+  <section class="wrap" style="padding-bottom:3rem">
+    <div class="films">
+      {shots.map(({ r, m, asset }) => (
+        <a class="film" href={path(lang, `/records/${r.slug}`)}>
+          <span class="film__shot">
+            {m.poster
+              ? <img src={m.poster} alt="" loading="lazy" width="640" height="360" />
+              : <span class="film__none">{t('films.noStill')}</span>}
+          </span>
+          <span class="film__body">
+            <span class="film__id">{r.id ?? r.slug}</span>
+            <span class="film__t">{r.title}</span>
+            <span class="film__m">
+              {[r.place, yearLabel(r), asset && t('films.asset', { n: asset })].filter(Boolean).join(' · ')}
+            </span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:5rem">
+    <div class="panel panel--pad corners">
+      <p class="label label--phos" style="margin:0 0 .8rem">{t('films.why')}</p>
+      <p class="dim" style="margin:0;font-size:.95rem">{t('films.whyNote')}</p>
+    </div>
+  </section>
+</Base>

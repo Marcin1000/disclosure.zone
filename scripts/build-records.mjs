@@ -172,7 +172,6 @@ for (const r of manifest.records) {
     source: s.source,
     sourceKind: s.sourceKind,
     format: s.format,
-    findingAid: r.recordUrl ?? null,
     cases: CASE_LINKS[t.id] ?? CASE_LINKS[slug] ?? [],
   });
 }
