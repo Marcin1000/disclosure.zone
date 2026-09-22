@@ -18,7 +18,8 @@ const slugs = (dir) => readdirSync(dir).filter(f => f.endsWith('.md')).map(f => 
 
 /** Minimalny parser frontmatteru — wystarczy do liczenia i pól prostych. */
 function fm(path) {
-  const t = readFileSync(path, 'utf8');
+  // checkout na Windows z core.autocrlf daje CRLF, parser zakłada LF
+  const t = readFileSync(path, 'utf8').replace(/\r\n/g, '\n');
   const m = /^---\n([\s\S]*?)\n---\n/.exec(t);
   if (!m) { errors.push(`${path}: brak frontmatteru`); return { raw: '', body: t }; }
   return { raw: m[1], body: t.slice(m[0].length) };
