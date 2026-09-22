@@ -65,6 +65,11 @@ const en: Dict = {
   'view.films': 'Films',
   'rec.still': 'Still',
   'rec.stillNote': 'Frame taken from the recording. The recording itself is served by the publisher.',
+  'rec.image': 'Image',
+  'rec.imageNote': 'The image as the publisher released it, served here from a copy. The original is at the publisher and that is where it should be cited from.',
+  'rec.synthetic': 'This is not a photograph',
+  'rec.syntheticNote': 'The publisher calls this a digital rendering. It illustrates what a witness described, it was made after the event, and it records nothing that was photographed or filmed.',
+  'rec.openImage': 'Open the original at the publisher',
 
   'cite.copy': 'Copy',
   'cite.copied': 'Copied',
@@ -276,6 +281,11 @@ const pl: Dict = {
   'view.films': 'Filmy',
   'rec.still': 'Klatka',
   'rec.stillNote': 'Kadr z nagrania. Samo nagranie udostępnia wydawca.',
+  'rec.image': 'Obraz',
+  'rec.imageNote': 'Obraz w postaci, w jakiej wydał go wydawca, podany u nas z kopii. Oryginał jest u wydawcy i stamtąd należy go cytować.',
+  'rec.synthetic': 'To nie jest zdjęcie',
+  'rec.syntheticNote': 'Wydawca nazywa to renderingiem cyfrowym. Ilustruje to, co opisał świadek, powstało po zdarzeniu i nie zapisuje niczego, co sfotografowano albo sfilmowano.',
+  'rec.openImage': 'Otwórz oryginał u wydawcy',
 
   'cite.copy': 'Kopiuj',
   'cite.copied': 'Skopiowano',

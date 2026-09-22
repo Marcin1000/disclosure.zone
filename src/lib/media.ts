@@ -19,16 +19,22 @@ const held = new Set<string>(existsSync(DIR) ? readdirSync(DIR) : []);
 export interface Media { poster: string | null; clip: string | null; w: number | null; h: number | null }
 
 /**
- * Wymiary klatki czytamy z nagłówka JPEG. Kadry przychodzą w różnych
- * proporcjach, w tym pionowe, więc wpisanie jednej pary na sztywno przesuwałoby
- * układ strony po doczytaniu obrazka.
+ * Wymiary czytamy z nagłówka pliku. Materiał przychodzi w różnych proporcjach,
+ * w tym pionowych, więc wpisanie jednej pary na sztywno przesuwałoby układ
+ * strony po doczytaniu obrazka.
  */
 const sizes = new Map<string, { w: number; h: number } | null>();
-function jpegSize(file: string): { w: number; h: number } | null {
+function imageSize(file: string): { w: number; h: number } | null {
   if (sizes.has(file)) return sizes.get(file)!;
   let out: { w: number; h: number } | null = null;
   try {
     const b = readFileSync(file);
+    // PNG: szerokość i wysokość stoją w IHDR, zaraz za ośmiobajtowym podpisem
+    if (b.length > 24 && b.readUInt32BE(0) === 0x89504e47) {
+      out = { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+      sizes.set(file, out);
+      return out;
+    }
     let i = 2;
     while (i + 9 < b.length) {
       if (b[i] !== 0xff) { i++; continue; }
@@ -55,13 +61,28 @@ for (const r of records) {
   if (r.id && !owner.has(r.id)) owner.set(r.id, r.slug);
 }
 
+/**
+ * Plik nosi identyfikator rekordu albo jego adres. Klatki nagrań zapisuje
+ * tools/map-videos.mjs pod identyfikatorem, obrazy z rejestru zapisuje
+ * tools/import-images.mjs pod adresem, bo osiem z nich identyfikatora nie ma.
+ */
 export function mediaFor(rec: { id: string | null; slug: string }): Media {
   const id = rec.id;
   const none: Media = { poster: null, clip: null, w: null, h: null };
-  if (!id || owner.get(id) !== rec.slug) return none;
-  const poster = held.has(`${id}.jpg`) ? `/media/records/${id}.jpg` : null;
-  const clip = held.has(`${id}.mp4`) ? `/media/records/${id}.mp4` : null;
-  const size = poster ? jpegSize(`${DIR}/${id}.jpg`) : null;
+
+  const keys: string[] = [];
+  if (id && owner.get(id) === rec.slug) keys.push(id);
+  keys.push(rec.slug);
+
+  let poster: string | null = null, file: string | null = null;
+  outer: for (const k of keys) {
+    for (const ext of ['jpg', 'png']) {
+      if (held.has(`${k}.${ext}`)) { poster = `/media/records/${k}.${ext}`; file = `${DIR}/${k}.${ext}`; break outer; }
+    }
+  }
+  const clip = id && owner.get(id) === rec.slug && held.has(`${id}.mp4`) ? `/media/records/${id}.mp4` : null;
+  if (!poster && !clip) return none;
+  const size = file ? imageSize(file) : null;
   return { poster, clip, w: size?.w ?? null, h: size?.h ?? null };
 }
 

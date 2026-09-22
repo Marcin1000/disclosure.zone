@@ -429,6 +429,10 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .tbl-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 /* Klasa zamiast stylu w atrybucie, żeby zapytanie medialne mogło ją zdjąć */
 .tbl__nw { white-space: nowrap; }
+/* Tytuły nadane przez wydawcę bywają jednym wyrazem sklejonym podkreślnikami,
+   na przykład 341_110448_Records_Relating_to_the_Collection_and_Dissemination.
+   Bez łamania w dowolnym miejscu taki wyraz wychodzi poza ekran telefonu. */
+.tbl__t, .film__t, .rec__title { overflow-wrap: anywhere; }
 
 /* ============================================================ DOKUMENT / DOSSIER HEADER */
 .dossier {
@@ -522,6 +526,11 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
   border-color: transparent transparent transparent currentColor;
   margin-left: .16em;
 }
+/* Obraz nie jest nagraniem, więc zamiast trójkąta dostaje strzałkę na zewnątrz. */
+.play--out::before {
+  content: "\2197"; width: auto; height: auto; border: 0; margin: 0;
+  font-family: var(--mono); font-size: 1.1em; line-height: 1;
+}
 .film__shot .play { left: .55rem; top: .55rem; width: 26px; height: 26px; font-size: 9px; opacity: .72; }
 .film:hover .film__shot .play,
 .film:focus-visible .film__shot .play { opacity: 1; border-color: var(--phos); background: rgba(77,227,160,.18); }
@@ -532,6 +541,8 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .still { position: relative; display: block; border: 0; text-align: center; background: #05090A; }
 .still img { display: block; width: 100%; height: auto; max-height: min(64vh, 560px); object-fit: contain; margin-inline: auto; }
 .still .play { left: 50%; top: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; font-size: 17px; }
+/* Obrazu nie zasłaniamy na środku, bo to on jest treścią. Strzałka idzie w róg. */
+.still .play--out { left: auto; right: .7rem; top: .7rem; transform: none; width: 38px; height: 38px; font-size: 13px; }
 .still:hover .play, .still:focus-visible .play { border-color: var(--phos); background: rgba(77,227,160,.22); }
 
 /* Przełącznik widoku rejestru: dokumenty albo nagrania */

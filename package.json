@@ -19,6 +19,7 @@
     "harvest:records": "node tools/fetch-records.mjs",
     "media:map": "node tools/map-videos.mjs",
     "media:make": "node tools/make-media.mjs",
+    "media:images": "node tools/import-images.mjs",
     "split": "node tools/split-file.mjs"
   },
   "dependencies": {

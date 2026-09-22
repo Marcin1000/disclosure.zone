@@ -185,6 +185,29 @@ which a static host serves without complaint. Whole recordings are not the
 target: one release of video runs to gigabytes and the publisher already serves
 it.
 
+## import-images.mjs
+
+Pulls the registry's image records into `public/media/records`, so a record whose
+material is a picture has the picture on its own page.
+
+```
+node tools/import-images.mjs --dry-run
+node tools/import-images.mjs --browser
+node tools/import-images.mjs --browser --id FBI-UAP-D014
+```
+
+Twenty-seven records are images: the ten renderings of the Western United States
+event, eight FBI photographs, six Apollo frames and three from STS-80.
+
+Files are named by the record's address, not its identifier, because an
+identifier can be shared: FBI-UAP-D014 belongs both to a rendering in release 03
+and to a correspondence file in release 04. An address is unique by construction,
+so a picture cannot end up under the wrong record.
+
+These files go into the repository, so there is a size limit. An image over
+`--max-mb` (4 by default) is skipped with a message rather than quietly adding
+tens of megabytes to the history.
+
 ## index-bundles.mjs
 
 Indexes what the download actually contains and cross-references it with the

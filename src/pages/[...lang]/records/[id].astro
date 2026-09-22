@@ -38,8 +38,12 @@ const citation = [
 ].filter(Boolean).join('. ') + (en ? ' (accessed: [date])' : ' (dostęp: [data])');
 
 const media = mediaFor(r);
+/** Wydawca sam nazywa te pliki renderingiem albo rekonstrukcją, nie zapisem. */
+const synthetic = /digital render|digital recreation/i.test(r.title);
+const isImage = r.kind === 'image';
 
 const openLabel = r.kind === 'recording' ? t('films.watch')
+  : r.kind === 'image' ? t('rec.openImage')
   : r.sourceKind === 'file' || r.sourceKind === 'dead' ? t('rec.open')
   : r.sourceKind === 'page' ? t('rec.openPage') : t('rec.openRelease');
 ---
@@ -51,7 +55,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
         <div class="dossier__holes"><i></i><i></i><i></i><i></i></div>
         <div style="padding-left:2.2rem">
           <p class="dossier__id" style="margin:0">{t('rec.file')} / {r.id ?? r.slug}</p>
-          <h1 style="font-size:clamp(1.55rem,3.6vw,2.5rem);margin:1rem 0 .4rem">{r.title}</h1>
+          <h1 class="rec__title" style="font-size:clamp(1.55rem,3.6vw,2.5rem);margin:1rem 0 .4rem">{r.title}</h1>
           <p class="label" style="margin:0">{t('rec.titleNote')}</p>
           <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.6rem">
             <span class="chip">{t(`records.kind.${r.kind}`)}</span>
@@ -100,7 +104,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
 
     {(media.poster || media.clip) && (
       <section class="wrap wrap--read" style="padding-block:2.5rem 0">
-        <p class="label label--phos" style="margin-bottom:.8rem">{t('rec.still')}</p>
+        <p class="label label--phos" style="margin-bottom:.8rem">{isImage ? t('rec.image') : t('rec.still')}</p>
         <div class="panel corners" style="padding:0;overflow:hidden">
           {media.clip
             ? <video controls preload="none" playsinline poster={media.poster ?? undefined}
@@ -110,12 +114,17 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
             : r.source
               ? <a class="still" href={r.source} rel="noopener" aria-label={openLabel}>
                   <img src={media.poster!} alt="" width={media.w ?? undefined} height={media.h ?? undefined} />
-                  <span class="play" aria-hidden="true"></span>
+                  <span class:list={['play', isImage && 'play--out']} aria-hidden="true"></span>
                 </a>
               : <span class="still"><img src={media.poster!} alt=""
                      width={media.w ?? undefined} height={media.h ?? undefined} /></span>}
         </div>
-        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{t('rec.stillNote')}</p>
+        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{isImage ? t('rec.imageNote') : t('rec.stillNote')}</p>
+        {synthetic && (
+          <p class="dim" style="margin:.9rem 0 0;font-size:.9rem;color:var(--amber)">
+            <strong style="color:var(--amber)">{t('rec.synthetic')}.</strong> {t('rec.syntheticNote')}
+          </p>
+        )}
       </section>
     )}
 
