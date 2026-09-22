@@ -19,7 +19,7 @@ const linked = sources.filter(s => s.url).length;
       <span class:list={['tier', `tier-${s.tier}`]} title={bi(TIER_LABEL[s.tier], lang)}>{s.tier}</span>
       <span class="src__body">
         {s.url ? <a href={s.url} rel="noopener noreferrer" target="_blank">{s.label}</a> : <span>{s.label}</span>}
-        <span class="src__note">{bi(TIER_LABEL[s.tier], lang)}{s.note ? ` — ${s.note}` : ''}</span>
+        <span class="src__note">{bi(TIER_LABEL[s.tier], lang)}{s.note ? `${lang === 'pl' ? ' · ' : ' — '}${s.note}` : ''}</span>
         {!s.url && (
           s.archiveUrl
             ? <a class="src__aid" href={s.archiveUrl} rel="noopener noreferrer" target="_blank">{t('src.heldAt')}</a>

@@ -23,7 +23,7 @@ const ec = evidenceClass(scores);
     {AXES.map(a => {
       const v = scores[a.k];
       return (
-        <div class="score__row" title={`${bi(a.name, lang)} — ${bi(a.desc, lang)}`}>
+        <div class="score__row" title={`${bi(a.name, lang)}${lang === 'pl' ? ': ' : ' — '}${bi(a.desc, lang)}`}>
           <span class="score__k">{a.k}</span>
           <span class="score__bar"><span class:list={['score__fill', v === 0 && 'score__fill--zero']} style={`--w:${(v / 5) * 100}%`}></span></span>
           <span class="score__v">{v}</span>

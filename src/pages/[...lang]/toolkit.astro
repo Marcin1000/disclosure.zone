@@ -286,10 +286,10 @@ const ASSUMPTIONS = en ? [
           </div>
 
           <div class="tk__out">
-            <div class="tk__row"><span>{L.outRange}</span><b id="o-range">—</b></div>
-            <div class="tk__row"><span>{L.outApparent}</span><b id="o-app">—</b></div>
-            <div class="tk__row"><span>{L.outParallax}</span><b id="o-par">—</b></div>
-            <div class="tk__row tk__row--big"><span>{L.outTarget}</span><b id="o-tgt">—</b></div>
+            <div class="tk__row"><span>{L.outRange}</span><b id="o-range">·</b></div>
+            <div class="tk__row"><span>{L.outApparent}</span><b id="o-app">·</b></div>
+            <div class="tk__row"><span>{L.outParallax}</span><b id="o-par">·</b></div>
+            <div class="tk__row tk__row--big"><span>{L.outTarget}</span><b id="o-tgt">·</b></div>
           </div>
         </div>
       </div>
@@ -446,10 +446,10 @@ const ASSUMPTIONS = en ? [
         </svg>
 
         <div class="tk__out">
-          <div class="tk__row"><span>{L.satDepr}</span><b id="s-dep">—</b></div>
-          <div class="tk__row"><span>{L.satShadow}</span><b id="s-sh">—</b></div>
-          <div class="tk__row"><span>{L.satRate}</span><b id="s-rate">—</b></div>
-          <div class="tk__row tk__row--big"><span>{L.satState}</span><b id="s-state">—</b></div>
+          <div class="tk__row"><span>{L.satDepr}</span><b id="s-dep">·</b></div>
+          <div class="tk__row"><span>{L.satShadow}</span><b id="s-sh">·</b></div>
+          <div class="tk__row"><span>{L.satRate}</span><b id="s-rate">·</b></div>
+          <div class="tk__row tk__row--big"><span>{L.satState}</span><b id="s-state">·</b></div>
         </div>
       </div>
     </div>
@@ -518,7 +518,7 @@ const ASSUMPTIONS = en ? [
       const vPar = vo * KT * Math.cos(rad);
       const vTgt = Math.abs(vApp - vPar);
 
-      $('o-range').textContent = R > 0 ? fx(R / NM, 2) + ' NM' : '—';
+      $('o-range').textContent = R > 0 ? fx(R / NM, 2) + ' NM' : '·';
       $('o-app').textContent = fx(vApp * 3.6, 0) + ' km/h';
       $('o-par').textContent = fx(vPar * 3.6, 0) + ' km/h';
       $('o-tgt').textContent = fx(vTgt * 3.6, 0) + ' km/h';
