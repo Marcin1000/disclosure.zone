@@ -6,6 +6,7 @@ import { getCases } from '../../lib/cases';
 import { overall, TIER_LABEL, TIER_DESC, bi } from '../../lib/scoring';
 import { claims } from '../../data/claims';
 import { archives } from '../../data/archives';
+import { records, provenance } from '../../lib/records';
 import { langParams, path, useT, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
@@ -14,6 +15,7 @@ const t = useT(lang);
 
 const all = await getCases(lang);
 const countries = new Set(all.map(c => c.data.country));
+const prov = provenance();
 const core = all.filter(c => c.data.tier === 1).sort((a, b) => overall(b.data.scores) - overall(a.data.scores));
 const years = all.map(c => c.data.date.getFullYear());
 const span = `${Math.min(...years)}–${Math.max(...years)}`;
@@ -110,6 +112,21 @@ const UNCONFIRMED = {
           status={c.data.status} tier={c.data.tier} scores={c.data.scores} />
       ))}
     </div>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="wrap section">
+    <p class="label label--phos" style="margin-bottom:.7rem">{t('home.recKicker')}</p>
+    <h2 style="margin:0 0 .8rem;max-width:24ch">{t('home.recH')}</h2>
+    <p class="lead dim" style="max-width:62ch;margin-bottom:2.2rem">{t('home.recLead', { n: records.length })}</p>
+    <div class="stats rise">
+      <div class="stat"><b>{prov.file}</b><span set:html={t('records.link.file')} /></div>
+      <div class="stat"><b>{prov.page}</b><span set:html={t('records.link.page')} /></div>
+      <div class="stat"><b>{prov.landing}</b><span set:html={t('records.link.landing')} /></div>
+      <div class="stat"><b>{prov.none}</b><span set:html={t('records.link.none')} /></div>
+    </div>
+    <a class="btn btn--ghost" href={path(lang, '/records')} style="margin-top:1.6rem">{t('home.recCta')}</a>
   </section>
 
   <hr class="rule" />

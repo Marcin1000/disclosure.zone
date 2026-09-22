@@ -11,6 +11,7 @@
     "check:data": "node scripts/check-data.mjs",
     "sources:todo": "node scripts/unlinked-sources.mjs",
     "check:obs": "node scripts/check-observations.mjs",
+    "records:build": "node scripts/build-records.mjs",
     "harvest:archive": "node tools/harvest-archive.mjs",
     "harvest:pursue": "node tools/fetch-pursue.mjs",
     "harvest:match": "node tools/match-records.mjs",

@@ -5,6 +5,7 @@ import Sources from '../../../components/Sources.astro';
 import { getCases, getCaseBody } from '../../../lib/cases';
 import { STATUS, DOMAIN, EVIDENCE, bi } from '../../../lib/scoring';
 import { claimsById, STATUS_META } from '../../../data/claims';
+import { recordsForCase } from '../../../lib/records';
 import { LOCALES, DEFAULT_LANG, path, useT, type Lang } from '../../../i18n';
 import { getCollection } from 'astro:content';
 
@@ -25,6 +26,8 @@ const d = c.data;
 const { Content } = await getCaseBody(id, lang);
 const st = STATUS[d.status];
 const linked = d.claims.map(x => claimsById.get(x)).filter(Boolean);
+/** Rekordy z rejestru PURSUE, które ktoś przeczytał i przypisał do tej sprawy. */
+const regRecords = recordsForCase(id);
 const stChip = st.cls === 'st-unresolved' ? 'chip--amber'
   : st.cls === 'st-disputed' ? 'chip--stamp'
   : st.cls === 'st-explained' ? 'chip--on' : '';
@@ -90,6 +93,17 @@ const stChip = st.cls === 'st-unresolved' ? 'chip--amber'
         <aside class="stack" style="--s:2.5rem">
           <Scorecard scores={d.scores} lang={lang} />
           <Sources sources={d.sources} lang={lang} />
+          {regRecords.length > 0 && (
+            <div>
+              <p class="label" style="margin-bottom:.8rem">{t('case.records')}</p>
+              {regRecords.map(r => (
+                <a href={path(lang, `/records/${r.slug}`)} style="display:block;border:0;padding:.85rem 0;border-top:1px solid var(--line)">
+                  <span class="mono" style="display:block;font-size:.66rem;letter-spacing:.14em;color:var(--phos-dim);margin-bottom:.35rem">{r.id ?? r.slug}</span>
+                  <span style="display:block;font-size:.92rem;color:var(--fg-dim);line-height:1.5">{r.title}</span>
+                </a>
+              ))}
+            </div>
+          )}
           {linked.length > 0 && (
             <div>
               <p class="label" style="margin-bottom:.8rem">{t('case.claimsHere')}</p>

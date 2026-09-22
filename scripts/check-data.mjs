@@ -86,6 +86,30 @@ for (const s of canon) {
 }
 for (const u of unknownRefs) errors.push(`odnośnik spoza rejestru: ${u}`);
 
+/**
+ * Rejestr dokumentów. Jest generowany, więc sprawdzamy nie literówki, tylko
+ * to, co generator mógłby po cichu zepsuć: unikalność adresów, spójność
+ * odnośnika ze stanem odnośnika i to, że każda wskazana sprawa istnieje.
+ */
+const reg = JSON.parse(readFileSync('src/data/records.json', 'utf8'));
+const KNOWN_RELEASES = new Set(['01', '02', '03', '04', '05', '06']);
+const seenSlug = new Set();
+for (const r of reg.records) {
+  if (seenSlug.has(r.slug)) errors.push(`rejestr: powtórzony adres ${r.slug}`);
+  seenSlug.add(r.slug);
+  const hasUrl = Boolean(r.source);
+  if (hasUrl !== (r.sourceKind !== 'none'))
+    errors.push(`rejestr ${r.slug}: sourceKind=${r.sourceKind}, a adres ${hasUrl ? 'jest' : 'go nie ma'}`);
+  if (r.release && !KNOWN_RELEASES.has(r.release))
+    errors.push(`rejestr ${r.slug}: nieznane wydanie ${r.release}`);
+  for (const c of r.cases)
+    if (!canon.includes(c)) errors.push(`rejestr ${r.slug}: wskazuje na nieistniejącą sprawę ${c}`);
+}
+if (reg.count !== reg.records.length)
+  errors.push(`rejestr: count=${reg.count}, a rekordów jest ${reg.records.length}`);
+const regFile = reg.records.filter(r => r.sourceKind === 'file').length;
+const regCited = reg.records.filter(r => r.cases.length).length;
+
 // README podaje te same liczby prozą, więc musi nadążać za korpusem
 const st = await corpusStats();
 const readme = readFileSync('README.md', 'utf8');
@@ -97,6 +121,18 @@ const expect = [
   [/\*\*(\d+) of (\d+)\*\* sources/, [linked, total], 'sources linked to material'],
   [/^- \*\*(\d+)\*\* point at the archive/m, [aided], 'archive pointers'],
   [/^- \*\*(\d+)\*\* have neither/m, [total - linked - aided], 'sources with neither'],
+  [/\*\*(\d+) records\*\* in a registry/, [reg.records.length], 'registry size'],
+  [/\*\*(\d+) of (\d+)\*\* records have an address/,
+   [regFile, reg.records.length], 'registry records reaching the material'],
+  [/^- \*\*(\d+)\*\* point at the publisher's page/m,
+   [reg.records.filter(r => r.sourceKind === 'page').length], 'registry publisher pages'],
+  [/^- \*\*(\d+)\*\* give only the page of the release/m,
+   [reg.records.filter(r => r.sourceKind === 'landing').length], 'registry release pages'],
+  [/^- \*\*(\d+)\*\* have no link at all/m,
+   [reg.records.filter(r => r.sourceKind === 'none').length], 'registry records with no link'],
+  [/^- \*\*(\d+)\*\* are cited by a case/m, [regCited], 'registry records cited by a case'],
+  [/the gap between (\d+) and (\d+) is the point/,
+   [reg.records.length, regCited], 'registry gap sentence'],
 ];
 for (const [re, want, what] of expect) {
   const m = re.exec(readme);
@@ -107,6 +143,7 @@ for (const [re, want, what] of expect) {
 }
 
 console.log(`cases: ${canon.length} · claims: ${claims.length}`);
+console.log(`registry: ${reg.records.length} records · reach the material: ${regFile} · cited by a case: ${regCited}`);
 console.log(`sources: ${total} · linked to material: ${linked} · archive pointer only: ${aided} · neither: ${total - linked - aided}`);
 if (warn.length) console.log('warnings:\n  ' + warn.join('\n  '));
 if (errors.length) {

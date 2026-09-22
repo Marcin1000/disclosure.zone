@@ -6,7 +6,7 @@ const { lang } = Astro.props;
 const t = useT(lang);
 const here = Astro.url.pathname.replace(/\/$/, '') || '/';
 const links = [
-  ['cases', 'nav.cases'], ['map', 'nav.map'], ['claims', 'nav.claims'],
+  ['cases', 'nav.cases'], ['records', 'nav.records'], ['map', 'nav.map'], ['claims', 'nav.claims'],
   ['archives', 'nav.archives'], ['toolkit', 'nav.toolkit'], ['methodology', 'nav.method'],
 ] as const;
 const isHere = (href: string) => here === href || here.startsWith(href + '/');

@@ -1,0 +1,162 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, RELEASES } from '../../../lib/records';
+import { getCases } from '../../../lib/cases';
+import { LOCALES, DEFAULT_LANG, path, useT, type Lang } from '../../../i18n';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap(l =>
+    records.map(r => ({
+      params: { lang: l === DEFAULT_LANG ? undefined : l, id: r.slug },
+      props: { lang: l, id: r.slug },
+    })));
+}
+
+const { lang, id } = Astro.props as { lang: Lang; id: string };
+const t = useT(lang);
+const en = lang === 'en';
+const r = recordBySlug.get(id)!;
+
+const all = await getCases(lang);
+const citing = all.filter(c => r.cases.includes(c.id));
+
+const relMeta = r.release ? RELEASES[r.release] : null;
+const relText = r.release
+  ? `${r.release} · ${releaseLabel(r.release, lang)}${relMeta && !relMeta.dateKnown ? ` (${t('rec.releaseUndated')})` : ''}`
+  : null;
+
+/**
+ * Cytowanie wskazuje materiał u wydawcy, nie nasz rejestr. Nasz adres jest
+ * dopiskiem, żeby dało się wrócić po ścieżkę, ale to wydawca jest źródłem.
+ */
+const citation = [
+  [r.id, r.title].filter(Boolean).join(', '),
+  r.agencyName ?? r.agency,
+  r.release ? `PURSUE release ${r.release}` : null,
+  r.source,
+].filter(Boolean).join('. ') + (en ? ' (accessed: [date])' : ' (dostęp: [data])');
+
+const openLabel = r.sourceKind === 'file' ? t('rec.open')
+  : r.sourceKind === 'page' ? t('rec.openPage') : t('rec.openRelease');
+---
+<Base title={!r.id ? r.title : en ? `${r.id} — ${r.title}` : `${r.id}, ${r.title}`}
+      description={t('rec.assessmentNote')} lang={lang} rest={`/records/${r.slug}`}>
+  <article>
+    <header class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 0">
+      <div class="dossier corners">
+        <div class="dossier__holes"><i></i><i></i><i></i><i></i></div>
+        <div style="padding-left:2.2rem">
+          <p class="dossier__id" style="margin:0">{t('rec.file')} / {r.id ?? r.slug}</p>
+          <h1 style="font-size:clamp(1.55rem,3.6vw,2.5rem);margin:1rem 0 .4rem">{r.title}</h1>
+          <p class="label" style="margin:0">{t('rec.titleNote')}</p>
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.6rem">
+            <span class="chip">{t(`records.kind.${r.kind}`)}</span>
+            {r.release && <span class="chip">{t('records.f.release')} {r.release}</span>}
+            <span class:list={['chip', r.sourceKind === 'file' || r.sourceKind === 'page' ? '' : 'chip--amber']}>
+              {t(`records.link.${r.sourceKind}`)}
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+      <div class="meta">
+        {(r.agencyName || r.agency) && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.agency')}</span>
+            <span class="meta__v">{r.agencyName ?? r.agency}{r.agencyName && r.agency ? ` (${r.agency})` : ''}</span></div>
+        )}
+        {relText && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.release')}</span>
+            <span class="meta__v">{relText}</span></div>
+        )}
+        {r.place && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.place')}</span>
+            <span class="meta__v">{r.place}</span></div>
+        )}
+        {yearLabel(r) && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.year')}</span>
+            <span class="meta__v mono">{yearLabel(r)}</span></div>
+        )}
+        {r.series && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.series')}</span>
+            <span class="meta__v">NARA RG {r.series.rg} · {r.series.name}
+              <span class="dim" style="font-size:.85rem"> ({t('rec.meta.seriesNote')})</span></span></div>
+        )}
+        {r.publisher && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.publisher')}</span>
+            <span class="meta__v mono" style="font-size:.9rem">{r.publisher}</span></div>
+        )}
+        {r.format && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.format')}</span>
+            <span class="meta__v mono" style="font-size:.9rem">{r.format.toUpperCase()}</span></div>
+        )}
+      </div>
+    </section>
+
+    <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+      <div class="panel panel--pad corners">
+        {r.source
+          ? <>
+              <a class="btn" href={r.source} rel="noopener">{openLabel}</a>
+              <p class="mono" style="margin:1rem 0 0;font-size:.76rem;color:var(--fg-faint);overflow-wrap:anywhere">{r.source}</p>
+              {r.sourceKind === 'landing' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.landingNote')}</p>}
+            </>
+          : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}
+      </div>
+
+      {r.findingAid && (
+        <p class="dim" style="margin:1.1rem 0 0;font-size:.9rem">
+          {t('rec.aid')} <a href={r.findingAid} rel="noopener nofollow">disclosurearchive.org</a>.
+          {' '}{t('rec.aidNote')}
+        </p>
+      )}
+    </section>
+
+    <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+      <p class="label label--phos" style="margin-bottom:.7rem">{t('rec.assessment')}</p>
+      <p class="dim" style="margin:0;max-width:66ch">{t('rec.assessmentNote')}</p>
+      <p style="margin:1.3rem 0 0"><a class="btn btn--ghost" href={path(lang, '/methodology')}>{t('nav.method')}</a></p>
+    </section>
+
+    <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+      <p class="label label--phos" style="margin-bottom:.7rem">{t('rec.cases')}</p>
+      {citing.length
+        ? <ul style="margin:0;padding-left:1.1rem">
+            {citing.map(c => (
+              <li style="margin-bottom:.4rem">
+                <a href={path(lang, `/cases/${c.id}`)}>{c.data.title}</a>
+                <span class="dim"> · {c.data.dateDisplay}</span>
+              </li>
+            ))}
+          </ul>
+        : <p class="dim" style="margin:0">{t('rec.noCases')}</p>}
+    </section>
+
+    <section class="wrap wrap--read prose" style="padding-block:2.5rem 5rem">
+      <h2 style="margin-top:0">{t('rec.cite')}</h2>
+      <div class="cite">
+        <p class="cite__txt" id="cite">{citation}</p>
+        <button class="btn btn--ghost cite__btn" type="button" data-copy="cite"
+                data-done={t('cite.copied')} hidden>{t('cite.copy')}</button>
+      </div>
+      <p style="margin-top:2rem"><a class="btn btn--ghost" href={path(lang, '/records')}>{t('rec.back')}</a></p>
+    </section>
+  </article>
+
+  <script>
+    for (const btn of document.querySelectorAll('[data-copy]')) {
+      const el = document.getElementById(btn.getAttribute('data-copy'));
+      if (!el || !navigator.clipboard) continue;
+      const idle = btn.textContent;
+      btn.hidden = false;
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(el.textContent.trim());
+          btn.textContent = btn.getAttribute('data-done');
+          setTimeout(() => { btn.textContent = idle; }, 1800);
+        } catch { /* odmowa schowka nie jest błędem strony */ }
+      });
+    }
+  </script>
+</Base>

@@ -464,8 +464,28 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 }
 .prose ul, .prose ol { padding-left: 1.2em; margin: 0 0 1.15em; }
 .prose li { margin-bottom: .42em; }
-.prose code { font-family: var(--mono); font-size: .88em; background: var(--panel-2); padding: .1em .35em; border: 1px solid var(--line); color: var(--phos-2); }
+/* box-decoration-break: kod w akapicie potrafi złamać się na kilka linii,
+   a wtedy bez tego każdy fragment dostaje własne obramowanie i własne
+   wcięcie, co czyta się jak zbędna spacja przed pierwszym znakiem. */
+.prose code {
+  font-family: var(--mono); font-size: .88em; background: var(--panel-2);
+  padding: .1em .35em; border: 1px solid var(--line); color: var(--phos-2);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
 .prose hr { margin: 2.5em 0; }
+
+/* ============================================================ CYTOWANIE */
+/* Odnośnik do zacytowania jest blokiem, nie kodem w zdaniu: ma się łamać
+   jak akapit, a nie jak ciąg znaków, i ma się dać skopiować jednym ruchem. */
+.cite { display: flex; flex-wrap: wrap; align-items: stretch; gap: .8rem; margin: 1.4em 0 0; }
+.cite__txt {
+  flex: 1 1 20rem; min-width: 0; margin: 0;
+  font-family: var(--mono); font-size: .8rem; line-height: 1.8;
+  padding: .9rem 1.05rem; background: var(--panel-2); border: 1px solid var(--line);
+  color: var(--phos-2); overflow-wrap: anywhere;
+}
+.cite__btn { flex: 0 0 auto; align-self: stretch; }
+.cite__btn[hidden] { display: none; }
 
 /* ============================================================ PRZYCISKI */
 .btn {

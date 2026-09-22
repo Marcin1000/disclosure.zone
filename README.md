@@ -22,6 +22,8 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
   verification status and the condition that would settle it
 - **16 state programmes** across the US, France, the UK, Italy, Chile, Canada,
   Australia, Sweden, Spain, Brazil, Norway, Belgium and the USSR
+- **450 records** in a registry of the documents released by the Department of War
+  under PURSUE, each with the link to the material at the publisher
 - **Sensor Sanity Toolkit** — four modules on parallax, aperture shape, angular size
   and the Earth's shadow, worked on real footage
 - **World map** with per-country filtering, rendered at build time
@@ -64,14 +66,17 @@ src/content/cases/*.md   canonical record: structure + English text
 src/content/pl/*.md      Polish overlay: text only, no structure
 src/lib/cases.ts         merges the record with its overlay
 src/data/sources.ts      registry of verified links (cases refer to it by key)
+src/data/records.json    PURSUE document registry, generated and checked in
+src/lib/records.ts       registry access: provenance counts, case links, releases
 src/data/claims.ts       claim ledger, bilingual
 src/data/archives.ts     registry of state archives, bilingual
 src/lib/scoring.ts       the S–D scale, weights, evidence classes
 src/lib/og.ts            Open Graph image generator (satori + resvg)
 src/components/          Logo, WorldPlot (d3-geo + world-atlas), HeroScope, Scorecard, Sources
 src/pages/[...lang]/     pages in both language versions
-src/pages/api/           cases.json, claims.json, sources.json, cases.csv
+src/pages/api/           cases.json, claims.json, sources.json, records.json, cases.csv
 scripts/check-data.mjs   corpus consistency check, runs before every build
+scripts/build-records.mjs regenerates the document registry from a harvest manifest
 scripts/make-banner.mjs  renders docs/banner.png
 ```
 
@@ -97,6 +102,30 @@ provenance counter is visible on each case and on [`/about`](https://disclosure.
 
 `npm run check:data` validates the canonical records against their overlays and the
 cross-references between cases and claims. The build fails if anything drifts.
+
+### The document registry
+
+The registry is a separate layer and must not be read as a case base. It holds what the
+issuing body itself published — identifier, title, release, address — and nothing we
+wrote. A document appearing there proves that the document exists, and nothing beyond
+that: it has not been read, scored or summarised.
+
+The same rule about links applies, and the same refusal to round it up:
+
+- **286 of 450** records have an address for the material itself
+- **106** point at the publisher's page for that item
+- **42** give only the page of the release the document sits inside, which is not an
+  address for a document and is not counted as one
+- **16** have no link at all
+- **5** are cited by a case so far
+
+That last number is the honest one. Reading a document into a case is work a person does,
+and the gap between 450 and 5 is the point rather than an embarrassment: the shortage in
+this subject was never sightings.
+
+`node scripts/build-records.mjs` regenerates `src/data/records.json` from a harvest
+manifest. The generated file is checked in, so the site builds without network access and
+every change to the registry shows up in a diff.
 
 ## Editorial rules
 

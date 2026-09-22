@@ -1,0 +1,173 @@
+---
+import Base from '../../layouts/Base.astro';
+import { records, provenance, counts, yearLabel, releaseLabel, RELEASES, RECORDS_HARVESTED } from '../../lib/records';
+import { langParams, path, plural, useT, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const t = useT(lang);
+const en = lang === 'en';
+
+const p = provenance();
+const countLabel = (k: number) => t(`records.count.${plural(lang, k)}`, { n: k });
+
+const releases = counts('release').sort((a, b) => a.k.localeCompare(b.k));
+const kinds = (['document', 'recording', 'image', 'unknown'] as const)
+  .map(k => ({ k, n: records.filter(r => r.kind === k).length })).filter(x => x.n);
+const agencies = counts('agency');
+const links = ([
+  ['file', p.file], ['page', p.page], ['landing', p.landing], ['none', p.none],
+] as const).filter(([, n]) => n);
+
+const harvested = RECORDS_HARVESTED
+  ? new Intl.DateTimeFormat(en ? 'en-GB' : 'pl-PL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+      .format(new Date(RECORDS_HARVESTED))
+  : '';
+---
+<Base title={t('records.title')} description={t('records.lead')} lang={lang} rest="/records">
+  <section class="wrap" style="padding-block:clamp(3rem,7vw,5rem) 2rem">
+    <p class="label label--phos" style="margin-bottom:.8rem">{countLabel(records.length)}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('records.title')}</h1>
+    <p class="lead dim" style="max-width:68ch">{t('records.lead')}</p>
+    {harvested && <p class="label" style="margin-top:1.2rem">{t('records.harvested', { d: harvested })}</p>}
+  </section>
+
+  <section class="wrap" style="padding-bottom:2rem">
+    <div class="grid grid--2" style="gap:1px;background:var(--line);border:1px solid var(--line)">
+      <div class="panel--pad" style="background:var(--panel)">
+        <p class="label label--phos" style="margin:0 0 1rem">{t('records.prov')}</p>
+        <div class="meta">
+          <div class="meta__row"><span class="meta__k">{t('records.link.file')}</span><span class="meta__v mono">{p.file}</span></div>
+          <div class="meta__row"><span class="meta__k">{t('records.link.page')}</span><span class="meta__v mono">{p.page}</span></div>
+          <div class="meta__row"><span class="meta__k">{t('records.link.landing')}</span><span class="meta__v mono" style="color:var(--amber)">{p.landing}</span></div>
+          <div class="meta__row"><span class="meta__k">{t('records.link.none')}</span><span class="meta__v mono" style="color:var(--amber)">{p.none}</span></div>
+          <div class="meta__row"><span class="meta__k">{t('records.cited')}</span><span class="meta__v mono">{p.cited}</span></div>
+        </div>
+        <p class="dim" style="margin:1.2rem 0 0;font-size:.9rem">{t('records.provNote')}</p>
+      </div>
+      <div class="panel--pad" style="background:var(--panel)">
+        <p class="label label--phos" style="margin:0 0 1rem">{t('records.notCase')}</p>
+        <p class="dim" style="margin:0;font-size:.95rem">{t('records.notCaseNote')}</p>
+        <p style="margin:1.4rem 0 0">
+          <a class="btn btn--ghost" href={path(lang, '/methodology')}>{t('nav.method')}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:1.5rem">
+    <div class="stack" style="--s:.9rem">
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('records.f.release')}</p>
+        <div class="filters" data-group="release">
+          <button class="f" data-v="" aria-pressed="true">{t('records.all')} <b>{records.length}</b></button>
+          {releases.map(r => (
+            <button class="f" data-v={r.k} aria-pressed="false">{r.k} <b>{r.n}</b></button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('records.f.kind')}</p>
+        <div class="filters" data-group="kind">
+          <button class="f" data-v="" aria-pressed="true">{t('records.all')}</button>
+          {kinds.map(k => (
+            <button class="f" data-v={k.k} aria-pressed="false">{t(`records.kind.${k.k}`)} <b>{k.n}</b></button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('records.f.link')}</p>
+        <div class="filters" data-group="link">
+          <button class="f" data-v="" aria-pressed="true">{t('records.all')}</button>
+          {links.map(([k, n]) => (
+            <button class="f" data-v={k} aria-pressed="false">{t(`records.link.${k}`)} <b>{n}</b></button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:.55rem">{t('records.f.agency')}</p>
+        <div class="filters" data-group="agency">
+          <button class="f" data-v="" aria-pressed="true">{t('records.all')}</button>
+          {agencies.map(a => (
+            <button class="f" data-v={a.k} aria-pressed="false">{a.k} <b>{a.n}</b></button>
+          ))}
+        </div>
+      </div>
+    </div>
+    <p class="label" style="margin-top:1.5rem" data-result>{countLabel(records.length)}</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:5rem">
+    <h2 class="sr">{t('records.listHeading')}</h2>
+    <div class="tbl-scroll panel corners">
+      <table class="tbl">
+        <thead><tr>
+          <th>{t('records.th.id')}</th><th>{t('records.th.title')}</th>
+          <th>{t('records.th.place')}</th><th>{t('records.th.year')}</th>
+          <th>{t('records.th.release')}</th><th>{t('records.th.link')}</th>
+        </tr></thead>
+        <tbody>
+          {records.map(r => (
+            <tr data-row data-release={r.release ?? ''} data-kind={r.kind}
+                data-link={r.sourceKind} data-agency={r.agency ?? ''}>
+              <td class="mono tbl__nw" data-l={t('records.th.id')} style="font-size:.76rem;color:var(--phos-dim)">{r.id ?? '·'}</td>
+              <td class="tbl__t" data-l={t('records.th.title')}>
+                <a href={path(lang, `/records/${r.slug}`)}><strong>{r.title}</strong></a>
+                {r.cases.length > 0 && <span class="label" style="color:var(--amber);margin-left:.5rem">◆</span>}
+              </td>
+              <td data-l={t('records.th.place')} style="font-size:.88rem">{r.place ?? '·'}</td>
+              <td class="mono tbl__nw" data-l={t('records.th.year')} style="font-size:.82rem">{yearLabel(r) || '·'}</td>
+              <td class="mono tbl__nw" data-l={t('records.th.release')} style="font-size:.82rem">{r.release ?? '·'}</td>
+              <td class="tbl__nw" data-l={t('records.th.link')} style="font-size:.8rem">
+                <span style={r.sourceKind === 'file' || r.sourceKind === 'page' ? '' : 'color:var(--amber)'}>
+                  {t(`records.link.${r.sourceKind}`)}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="dim" data-empty hidden style="padding:3rem 0;text-align:center">{t('records.empty')}</p>
+  </section>
+
+  <script is:inline define:vars={{ lang, forms: {
+    one: t('records.count.one', { n: '__N__' }),
+    few: t('records.count.few', { n: '__N__' }),
+    many: t('records.count.many', { n: '__N__' }),
+  } }}>
+    (() => {
+      const state = { release: '', kind: '', link: '', agency: '' };
+      function countLabel(k) {
+        const d = k % 10, h = k % 100;
+        const f = lang === 'pl'
+          ? (k === 1 ? 'one' : (d >= 2 && d <= 4 && !(h >= 12 && h <= 14)) ? 'few' : 'many')
+          : (k === 1 ? 'one' : 'many');
+        return forms[f].replace('__N__', k);
+      }
+      const rows = [...document.querySelectorAll('[data-row]')];
+      const out = document.querySelector('[data-result]');
+      const empty = document.querySelector('[data-empty]');
+      function apply() {
+        let n = 0;
+        for (const row of rows) {
+          const ok = ['release', 'kind', 'link', 'agency']
+            .every(k => !state[k] || row.dataset[k] === state[k]);
+          row.style.display = ok ? '' : 'none';
+          if (ok) n++;
+        }
+        out.textContent = countLabel(n);
+        empty.hidden = n > 0;
+      }
+      document.querySelectorAll('.filters .f').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const group = btn.closest('[data-group]').dataset.group;
+          state[group] = btn.dataset.v;
+          btn.closest('[data-group]').querySelectorAll('.f')
+            .forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+          apply();
+        });
+      });
+    })();
+  </script>
+</Base>

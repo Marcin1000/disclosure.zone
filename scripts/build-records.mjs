@@ -1,0 +1,205 @@
+#!/usr/bin/env node
+/**
+ * Buduje rejestr dokumentów z manifestu zebranego przez tools/harvest-archive.mjs.
+ * Wynik, src/data/records.json, jest w repozytorium, więc strona buduje się
+ * bez sięgania do sieci, a zmiany w rejestrze widać w diffie.
+ *
+ *   node scripts/build-records.mjs [--manifest PLIK] [--out PLIK]
+ *
+ * Rejestr nie jest bazą spraw. Trzyma to, co wydawca sam podał: identyfikator,
+ * tytuł, wydanie i adres materiału. Niczego tu nie oceniamy i nie streszczamy.
+ */
+import { readFileSync, writeFileSync } from 'node:fs';
+
+const argv = process.argv.slice(2);
+const flag = (n, d) => { const i = argv.indexOf(`--${n}`); return i < 0 ? d : argv[i + 1]; };
+const MANIFEST = flag('manifest', 'harvest/disclosure-archive/manifest.json');
+const OUT = flag('out', 'src/data/records.json');
+
+/** Kody wydawcy, których rozwinięcia jesteśmy pewni. Reszta zostaje kodem. */
+const AGENCY = {
+  DOW: 'Department of War',
+  FBI: 'Federal Bureau of Investigation',
+  CIA: 'Central Intelligence Agency',
+  NASA: 'National Aeronautics and Space Administration',
+  DOS: 'Department of State',
+  DOE: 'Department of Energy',
+  EOP: 'Executive Office of the President',
+};
+
+/**
+ * Część materiału z NARA nie ma identyfikatora PURSUE, tylko nazwę pliku
+ * zaczynającą się numerem zespołu archiwalnego. Numer czytamy z nazwy, więc
+ * podpisujemy to jako odczyt z nazwy pliku, nie jako ustalenie wydawcy.
+ */
+const RECORD_GROUP = {
+  18: 'Records of the Army Air Forces',
+  38: 'Records of the Office of the Chief of Naval Operations',
+  59: 'General Records of the Department of State',
+  65: 'Records of the Federal Bureau of Investigation',
+  255: 'Records of the National Aeronautics and Space Administration',
+  331: 'Records of Allied Operational and Occupation Headquarters, World War II',
+  341: 'Records of Headquarters U.S. Air Force (Air Staff)',
+  342: 'Records of U.S. Air Force Commands, Activities, and Organizations',
+};
+const RG_AGENCY = { 18: null, 38: null, 59: 'DOS', 65: 'FBI', 255: 'NASA', 331: null, 341: null, 342: null };
+
+/** Sprawy, w których dokument został przeczytany i wskazany ręcznie. */
+const CASE_LINKS = {
+  'DOW-UAP-D102': ['tremonton-1952'],
+  'DOW-UAP-D103': ['tremonton-1952'],
+  'DOW-UAP-D104': ['tremonton-1952'],   // Newhouse nakręcił film z Tremonton
+  'DOW-UAP-D099': ['ghost-rockets-1946'],
+  'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
+};
+
+const slugify = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+  .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80).replace(/-+$/, '');
+
+const MONTH = '(january|february|march|april|may|june|july|august|september|october|november|december)';
+const isDateSegment = (s) => new RegExp(`^(${MONTH}\\s+)?\\d{1,2}$|^(${MONTH}\\s+)?\\d{4}(\\s*[-–]\\s*\\d{2,4})?$|^${MONTH}$|^(circa|undated|n\\.d\\.)$`, 'i').test(s.trim());
+
+/**
+ * W pozycji miejsca stoi czasem temat dokumentu, nie geografia. Przyjmujemy
+ * człon tylko wtedy, gdy wygląda na nazwę własną: krótki, bez cyfr, każdy
+ * wyraz wielką literą poza spójnikiem. Serie tematyczne, w których ta pozycja
+ * z definicji nie jest miejscem, wykluczamy po nazwie serii.
+ */
+const SUBJECT_SERIES = new Set(['AAWSAP DIRD']);
+const CONNECTORS = new Set(['of', 'the', 'and', 'de', 'la', 'du', 'el', 'al']);
+/** Człony, które mają kształt nazwy własnej, a niczego nie lokalizują. */
+const NOT_A_PLACE = /^(part\s+[ivxlc]+|report|continued|n\/?a|unknown|various)$/i;
+function isPlaceLike(seg) {
+  if (!seg || seg.length > 34 || /\d/.test(seg) || NOT_A_PLACE.test(seg)) return false;
+  const words = seg.split(/\s+/);
+  if (words.length > 4) return false;
+  return words.every(w => CONNECTORS.has(w) || /^[A-Z\u00c0-\u00de]/.test(w));
+}
+
+/** Tytuł ma zwykle postać „identyfikator, opis, miejsce, data". */
+function parseTitle(raw) {
+  const clean = raw.replace(/\s+/g, ' ').trim();
+  const idm = /^([A-Z]{2,6}-UAP-[A-Z]{0,3}\d+)\s*[,:]?\s*/i.exec(clean);
+  const id = idm ? idm[1].toUpperCase() : null;
+  let rest = idm ? clean.slice(idm[0].length) : clean;
+  rest = rest.replace(/^["“]|["”]$/g, '').trim();
+
+  // Granica \b nie działa przy podkreślnikach, a tak wyglądają nazwy plików
+  // z NARA. Zamiast niej pilnujemy, żeby z żadnej strony nie stała cyfra.
+  const years = [...clean.matchAll(/(?<![0-9])(1[89]\d\d|20\d\d)(?![0-9])/g)].map(m => Number(m[1]));
+  const year = years.length ? Math.min(...years) : null;
+  const yearEnd = years.length && Math.max(...years) !== year ? Math.max(...years) : null;
+
+  // miejsce: idziemy od końca, zjadamy człony wyglądające na datę
+  let place = null;
+  const segs = rest.split(',').map(s => s.trim()).filter(Boolean);
+  if (segs.length >= 2) {
+    let i = segs.length - 1;
+    while (i > 0 && isDateSegment(segs[i])) i--;
+    // Bierzemy człon tylko wtedy, gdy stoi przed datą albo gdy tytuł ma
+    // dokładnie dwie części. Inaczej łapaliśmy ostatni człon wyliczenia.
+    const shaped = i < segs.length - 1 || segs.length === 2;
+    if (i > 0 && shaped && isPlaceLike(segs[i]) && !SUBJECT_SERIES.has(segs[0])) place = segs[i];
+  }
+  return { id, title: rest || clean, place, year, yearEnd };
+}
+
+function parseSource(url) {
+  if (!url) return { source: null, sourceKind: 'none', format: null, release: null, publisher: null };
+  const u = new URL(url);
+  const publisher = u.host.replace(/^www\./, '');
+  const rel = /release[-_/]?0?(\d)\b/i.exec(u.pathname);
+  const release = rel ? rel[1].padStart(2, '0') : null;
+  if (/dvidshub\.net$/i.test(u.host)) {
+    return { source: url, sourceKind: 'page', format: 'video', release, publisher };
+  }
+  const ext = /\.([a-z0-9]{2,5})$/i.exec(u.pathname)?.[1]?.toLowerCase() ?? null;
+  if (!ext) return { source: url, sourceKind: 'landing', format: null, release, publisher };
+  return { source: url, sourceKind: 'file', format: ext, release, publisher };
+}
+
+function agencyOf(id, title) {
+  if (id) {
+    const code = id.split('-UAP-')[0];
+    return { code, name: AGENCY[code] ?? null };
+  }
+  if (/^FBI\b/i.test(title)) return { code: 'FBI', name: AGENCY.FBI };
+  if (/^State Department\b/i.test(title)) return { code: 'DOS', name: AGENCY.DOS };
+  const rg = /^(\d{2,3})[_-]/.exec(title);
+  if (rg && RECORD_GROUP[Number(rg[1])]) {
+    const code = RG_AGENCY[Number(rg[1])];
+    return { code: code ?? null, name: code ? AGENCY[code] : null };
+  }
+  return { code: null, name: null };
+}
+
+function seriesOf(title) {
+  const rg = /^(\d{2,3})[_-]/.exec(title);
+  const n = rg ? Number(rg[1]) : null;
+  return n && RECORD_GROUP[n] ? { rg: n, name: RECORD_GROUP[n] } : null;
+}
+
+const manifest = JSON.parse(readFileSync(MANIFEST, 'utf8'));
+const taken = new Map();
+const records = [];
+
+for (const r of manifest.records) {
+  const t = parseTitle(r.title);
+  const s = parseSource(r.officialSourceUrl || null);
+  const a = agencyOf(t.id, r.title.trim());
+  const series = t.id ? null : seriesOf(r.title.trim());
+
+  let base = t.id ? t.id.toLowerCase() : slugify(t.title);
+  if (!base) base = 'record';
+  const seen = (taken.get(base) ?? 0) + 1;
+  taken.set(base, seen);
+  const slug = seen === 1 ? base : `${base}-${seen}`;
+
+  records.push({
+    slug,
+    id: t.id,
+    title: t.title,
+    agency: a.code,
+    agencyName: a.name,
+    series,
+    place: t.place,
+    year: t.year,
+    yearEnd: t.yearEnd,
+    kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
+        : s.sourceKind === 'file' ? 'document' : 'unknown',
+    release: s.release,
+    publisher: s.publisher,
+    source: s.source,
+    sourceKind: s.sourceKind,
+    format: s.format,
+    findingAid: r.recordUrl ?? null,
+    cases: CASE_LINKS[t.id] ?? CASE_LINKS[slug] ?? [],
+  });
+}
+
+// stała kolejność, żeby diff pokazywał zmiany w danych, a nie w sortowaniu
+records.sort((a, b) =>
+  (a.release ?? 'zz').localeCompare(b.release ?? 'zz') ||
+  a.slug.localeCompare(b.slug));
+
+const out = {
+  dataset: 'disclosure.zone / PURSUE document registry',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us.',
+  index: manifest.index ?? null,
+  harvested: manifest.harvested ?? null,
+  generated: new Date().toISOString(),
+  count: records.length,
+  records,
+};
+writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n');
+
+const by = (fn) => records.reduce((m, r) => (m.set(fn(r), (m.get(fn(r)) ?? 0) + 1), m), new Map());
+console.log(`records: ${records.length} -> ${OUT}`);
+console.log('  link to the file  ', records.filter(r => r.sourceKind === 'file').length);
+console.log('  publisher page    ', records.filter(r => r.sourceKind === 'page').length);
+console.log('  release page only ', records.filter(r => r.sourceKind === 'landing').length);
+console.log('  no link at all    ', records.filter(r => r.sourceKind === 'none').length);
+console.log('  cited by a case   ', records.filter(r => r.cases.length).length);
+console.log('  release:', [...by(r => r.release ?? '--')].sort().map(([k, v]) => `${k}=${v}`).join(' '));
+console.log('  kind:   ', [...by(r => r.kind)].sort().map(([k, v]) => `${k}=${v}`).join(' '));
+console.log('  no year:', records.filter(r => !r.year).length, '· no place:', records.filter(r => !r.place).length);
