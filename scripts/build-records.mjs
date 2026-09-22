@@ -81,6 +81,14 @@ const CASE_LINKS = {
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
+/**
+ * Adresy, które indeks podaje, a wydawca ich nie obsługuje. Wpisujemy tu tylko
+ * to, co sprawdzone pobraniem: DOW-UAP-D134 oddaje 404 przy ścieżce zbudowanej
+ * tak samo jak działająca ścieżka D135, więc nazwa pliku w indeksie jest inna
+ * niż u wydawcy. Poprawnego adresu nie zgadujemy, pokazujemy stan faktyczny.
+ */
+const DEAD_SOURCES = new Set(['DOW-UAP-D134']);
+
 const slugify = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80).replace(/-+$/, '');
 
@@ -195,10 +203,10 @@ for (const r of manifest.records) {
     yearEnd: t.yearEnd,
     kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
         : s.sourceKind === 'file' ? 'document' : 'unknown',
+    sourceKind: t.id && DEAD_SOURCES.has(t.id) ? 'dead' : s.sourceKind,
     release: s.release,
     publisher: s.publisher,
     source: s.source,
-    sourceKind: s.sourceKind,
     format: s.format,
     cases: CASE_LINKS[`${t.id}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[t.id] ?? [],
   });
@@ -243,6 +251,7 @@ console.log(`records: ${records.length} -> ${OUT}`);
 console.log('  link to the file  ', records.filter(r => r.sourceKind === 'file').length);
 console.log('  publisher page    ', records.filter(r => r.sourceKind === 'page').length);
 console.log('  release page only ', records.filter(r => r.sourceKind === 'landing').length);
+console.log('  address dead      ', records.filter(r => r.sourceKind === 'dead').length);
 console.log('  no link at all    ', records.filter(r => r.sourceKind === 'none').length);
 console.log('  cited by a case   ', records.filter(r => r.cases.length).length);
 console.log('  release:', [...by(r => r.release ?? '--')].sort().map(([k, v]) => `${k}=${v}`).join(' '));

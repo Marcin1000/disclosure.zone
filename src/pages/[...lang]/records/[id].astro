@@ -40,7 +40,7 @@ const citation = [
 const media = mediaFor(r);
 
 const openLabel = r.kind === 'recording' ? t('films.watch')
-  : r.sourceKind === 'file' ? t('rec.open')
+  : r.sourceKind === 'file' || r.sourceKind === 'dead' ? t('rec.open')
   : r.sourceKind === 'page' ? t('rec.openPage') : t('rec.openRelease');
 ---
 <Base title={!r.id ? r.title : en ? `${r.id} — ${r.title}` : `${r.id}, ${r.title}`}
@@ -126,6 +126,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               <a class="btn" href={r.source} rel="noopener">{openLabel}</a>
               <p class="mono" style="margin:1rem 0 0;font-size:.76rem;color:var(--fg-faint);overflow-wrap:anywhere">{r.source}</p>
               {r.sourceKind === 'landing' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.landingNote')}</p>}
+              {r.sourceKind === 'dead' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.deadNote')}</p>}
             </>
           : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}
       </div>

@@ -112,10 +112,11 @@ that: it has not been read, scored or summarised.
 
 The same rule about links applies, and the same refusal to round it up:
 
-- **286 of 450** records have an address for the material itself
+- **285 of 450** records have an address for the material itself
 - **106** point at the publisher's page for that item
 - **42** give only the page of the release the document sits inside, which is not an
   address for a document and is not counted as one
+- **1** gives an address the publisher does not serve, confirmed by fetching it
 - **16** have no link at all
 - **24** are cited by a case so far
 

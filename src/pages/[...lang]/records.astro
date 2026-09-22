@@ -16,7 +16,7 @@ const kinds = (['document', 'recording', 'image', 'unknown'] as const)
   .map(k => ({ k, n: records.filter(r => r.kind === k).length })).filter(x => x.n);
 const agencies = counts('agency');
 const links = ([
-  ['file', p.file], ['page', p.page], ['landing', p.landing], ['none', p.none],
+  ['file', p.file], ['page', p.page], ['landing', p.landing], ['dead', p.dead], ['none', p.none],
 ] as const).filter(([, n]) => n);
 
 const harvested = RECORDS_HARVESTED
@@ -47,6 +47,9 @@ const harvested = RECORDS_HARVESTED
           <div class="meta__row"><span class="meta__k">{t('records.link.file')}</span><span class="meta__v mono">{p.file}</span></div>
           <div class="meta__row"><span class="meta__k">{t('records.link.page')}</span><span class="meta__v mono">{p.page}</span></div>
           <div class="meta__row"><span class="meta__k">{t('records.link.landing')}</span><span class="meta__v mono" style="color:var(--amber)">{p.landing}</span></div>
+          {p.dead > 0 && (
+            <div class="meta__row"><span class="meta__k">{t('records.link.dead')}</span><span class="meta__v mono" style="color:var(--amber)">{p.dead}</span></div>
+          )}
           <div class="meta__row"><span class="meta__k">{t('records.link.none')}</span><span class="meta__v mono" style="color:var(--amber)">{p.none}</span></div>
           <div class="meta__row"><span class="meta__k">{t('records.cited')}</span><span class="meta__v mono">{p.cited}</span></div>
         </div>

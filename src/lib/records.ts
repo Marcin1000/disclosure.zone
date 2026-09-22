@@ -14,7 +14,7 @@
 import data from '../data/records.json';
 import type { Lang } from '../i18n';
 
-export type SourceKind = 'file' | 'page' | 'landing' | 'none';
+export type SourceKind = 'file' | 'page' | 'landing' | 'dead' | 'none';
 export type RecordKind = 'document' | 'recording' | 'image' | 'unknown';
 
 export interface Rec {
@@ -70,6 +70,8 @@ export function provenance() {
     file: n('file'),
     page: n('page'),
     landing: n('landing'),
+    /** Adres jest, ale wydawca go nie obsługuje. Nie liczy się do proweniencji. */
+    dead: n('dead'),
     none: n('none'),
     cited: records.filter(r => r.cases.length > 0).length,
   };

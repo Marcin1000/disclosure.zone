@@ -120,12 +120,14 @@ const UNCONFIRMED = {
   <section class="wrap section">
     <p class="label label--phos" style="margin-bottom:.7rem">{t('home.recKicker')}</p>
     <h2 style="margin:0 0 .8rem;max-width:24ch">{t('home.recH')}</h2>
-    <p class="lead dim" style="max-width:62ch;margin-bottom:2.2rem">{t('home.recLead', { n: records.length })}</p>
+    <p class="lead dim" style="max-width:62ch;margin-bottom:2.2rem">{t('home.recLead', { n: records.length, c: prov.cited })}</p>
     <div class="stats rise">
       <div class="stat"><b>{prov.file}</b><span set:html={t('records.link.file')} /></div>
       <div class="stat"><b>{prov.page}</b><span set:html={t('records.link.page')} /></div>
       <div class="stat"><b>{prov.landing}</b><span set:html={t('records.link.landing')} /></div>
-      <div class="stat"><b>{prov.none}</b><span set:html={t('records.link.none')} /></div>
+      {/* Martwy adres i brak adresu to na stronie głównej jedna pozycja, żeby
+          cztery kafelki sumowały się do całości rejestru. Rozbicie jest na /records. */}
+      <div class="stat"><b>{prov.none + prov.dead}</b><span set:html={t('home.recNoLink')} /></div>
     </div>
     <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem">
       <a class="btn btn--ghost" href={path(lang, '/records')}>{t('home.recCta')}</a>
