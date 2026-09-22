@@ -4,6 +4,7 @@
  *
  *   node tools/fetch-records.mjs --release 06 --browser
  *   node tools/fetch-records.mjs --case tremonton-1952 --browser
+ *   node tools/fetch-records.mjs --place "Western United States Event" --browser
  *   node tools/fetch-records.mjs --id DOW-UAP-D077 --id DOW-UAP-D078 --browser
  *   node tools/fetch-records.mjs --release 06 --dry-run
  *
@@ -32,6 +33,8 @@ const OUT = String(flag('out', 'harvest/records'));
 const REGISTRY = String(flag('registry', 'src/data/records.json'));
 const RELEASE = flag('release', null);
 const CASE = flag('case', null);
+const PLACE = flag('place', null);
+const YEAR = flag('year', null);
 const IDS = many('id').map(s => s.toUpperCase());
 const LIMIT = Number(flag('limit', 0)) || 0;
 const DRY = argv.includes('--dry-run');
@@ -56,6 +59,12 @@ const reg = JSON.parse(readFileSync(REGISTRY, 'utf8'));
 let picked = reg.records;
 if (RELEASE && RELEASE !== true) picked = picked.filter(r => r.release === String(RELEASE).padStart(2, '0'));
 if (CASE && CASE !== true) picked = picked.filter(r => r.cases.includes(String(CASE)));
+if (PLACE && PLACE !== true) {
+  const needle = String(PLACE).toLowerCase();
+  picked = picked.filter(r => (r.place ?? '').toLowerCase().includes(needle)
+    || r.title.toLowerCase().includes(needle));
+}
+if (YEAR && YEAR !== true) picked = picked.filter(r => String(r.year) === String(YEAR));
 if (IDS.length) picked = picked.filter(r => r.id && IDS.includes(r.id));
 
 const skipped = picked.filter(r => r.sourceKind !== 'file');
@@ -152,7 +161,7 @@ writeFileSync(indexFile, JSON.stringify({
   dataset: 'disclosure.zone / fetched PURSUE records',
   note: 'Local copies of documents the publisher serves directly. Hashes are over the bytes as received.',
   generated: new Date().toISOString(),
-  filters: { release: RELEASE ?? null, case: CASE ?? null, ids: IDS },
+  filters: { release: RELEASE ?? null, case: CASE ?? null, place: PLACE ?? null, year: YEAR ?? null, ids: IDS },
   files: results,
 }, null, 1) + '\n');
 

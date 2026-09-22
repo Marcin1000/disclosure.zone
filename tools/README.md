@@ -116,8 +116,13 @@ Fetches individual documents by the addresses held in the registry
 node tools/fetch-records.mjs --release 06 --browser
 node tools/fetch-records.mjs --case tremonton-1952 --browser
 node tools/fetch-records.mjs --id DOW-UAP-D077 --id DOW-UAP-D078 --browser
+node tools/fetch-records.mjs --place "Western United States Event" --browser
 node tools/fetch-records.mjs --release 06 --dry-run
 ```
+
+`--place` matches the place parsed from the title or anything in the title, and
+`--year` narrows further, which is how a whole dossier comes down in one command
+without naming seventeen identifiers.
 
 This complements the bundles, it does not replace them: a bundle is faster when
 you want a whole release. Use this when there is no bundle, or when the job needs
