@@ -104,6 +104,33 @@ reported as skipped, not fetched. CloudFront roots are additionally asked with
 `?list-type=2` and `?delimiter=/`, because an S3 origin only lists when asked
 that way.
 
+## fetch-records.mjs
+
+Fetches individual documents by the addresses held in the registry
+(`src/data/records.json`), rather than a whole bundle.
+
+```
+node tools/fetch-records.mjs --release 06 --browser
+node tools/fetch-records.mjs --case tremonton-1952 --browser
+node tools/fetch-records.mjs --id DOW-UAP-D077 --id DOW-UAP-D078 --browser
+node tools/fetch-records.mjs --release 06 --dry-run
+```
+
+This complements the bundles, it does not replace them: a bundle is faster when
+you want a whole release. Use this when there is no bundle, or when the job needs
+three documents and not a gigabyte. Release 06 is the first case of the former:
+the index carries its 55 per-file addresses although the landing page listed only
+releases 01 to 05 when the harvest ran.
+
+Only records that carry an address for the material are requested. A record whose
+link reaches a release page, or reaches nothing, is skipped and counted apart,
+because inferring a file address from a directory is exactly what this project
+does not do.
+
+Downloads resume by byte range, every file gets a SHA-256 over the bytes as
+received, and a file already on disk is hashed and left alone. The run writes
+`fetched.json` next to the files.
+
 ## index-bundles.mjs
 
 Indexes what the download actually contains and cross-references it with the
