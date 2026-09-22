@@ -29,8 +29,7 @@ const harvested = RECORDS_HARVESTED
     <p class="label label--phos" style="margin-bottom:.8rem">{countLabel(records.length)}</p>
     <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('records.title')}</h1>
     <p class="lead dim" style="max-width:68ch">{t('records.lead')}</p>
-    <p class="dim" style="margin-top:1.4rem;max-width:66ch;font-size:.92rem">{t('records.origin')}</p>
-    {harvested && <p class="label" style="margin-top:1rem">{t('records.harvested', { d: harvested })}</p>}
+    {harvested && <p class="label" style="margin-top:1.2rem">{t('records.harvested', { d: harvested })}</p>}
   </section>
 
   <section class="wrap" style="padding-bottom:2rem">

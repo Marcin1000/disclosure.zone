@@ -103,7 +103,6 @@ const en: Dict = {
   'records.notCaseNote': 'Cases carry an eight-axis assessment, alternative hypotheses and an analysis somebody wrote. Records carry none of that. Moving a document from this registry into the case base means reading it, and that is work a person does.',
   'records.cited': 'Cited by a case',
   'records.harvested': 'Record list compiled on {d}',
-  'records.origin': 'Every address in this registry points at the body that published the material. We fetched the documents from the publisher ourselves; nothing here is served through anybody else.',
 
   'rec.file': 'Record',
   'rec.open': 'Open the material at the publisher',
@@ -312,7 +311,6 @@ const pl: Dict = {
   'records.notCaseNote': 'Sprawa ma ocenę na ośmiu osiach, hipotezy alternatywne i analizę, którą ktoś napisał. Rekord nie ma nic z tych rzeczy. Przeniesienie dokumentu z rejestru do bazy spraw wymaga przeczytania go, a to jest robota dla człowieka.',
   'records.cited': 'Cytowane przez sprawę',
   'records.harvested': 'Lista rekordów zestawiona {d}',
-  'records.origin': 'Każdy adres w tym rejestrze prowadzi do instytucji, która materiał opublikowała. Dokumenty pobraliśmy od wydawcy sami, nic tutaj nie idzie przez pośrednika.',
 
   'rec.file': 'Rekord',
   'rec.open': 'Otwórz materiał u wydawcy',
