@@ -31,7 +31,8 @@ alternatives:
 - "Steep-climbing aircraft or missiles from the airfield. The CIA's reading of three of the four accounts, qualified as \"probably\". It sits with the searchlight on the field and the launch the information report describes, and it leaves Colonel Hathaway's account unexplained."
 - "A radically new Soviet aircraft. The question the CIA was asking. It found the evidence not firm enough; only Colonel Hathaway's account supports it."
 - "More than one object. The memorandum of 31 October says the others saw \"another object\" a few minutes after the senator's, and the information report records \"the second launching in rapid succession\". The four accounts need not describe the same thing."
-claims: []
+claims:
+- "russell-cia-saucer-1955"
 sources:
 - "tier": "T1"
   label: "CIA memorandum for the Director of Central Intelligence, \"Flying Saucers or Unconventional Aircraft\", October 1955 (CIA-UAP-D021)"

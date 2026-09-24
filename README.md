@@ -18,7 +18,7 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
 ## What is in here
 
 - **80 cases** from 27 countries, from 1561 to cases still open in 2024
-- **99 claims** in a myth-versus-document ledger, each with its origin, source tier,
+- **100 claims** in a myth-versus-document ledger, each with its origin, source tier,
   verification status and the condition that would settle it
 - **17 state programmes** across the US, France, the UK, Italy, Chile, Canada,
   Australia, Sweden, Spain, Brazil, Norway, Belgium and the USSR
