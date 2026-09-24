@@ -49,24 +49,26 @@ To jest sprawa, dla której ten projekt powstał. To jednocześnie, na naszej sk
 
 Mapa opublikowana razem z aktami nadaje im nazwy.
 
-**Incydent 1, „kule wypuszczające kule".** Około zmierzchu świetlista pomarańczowa kula pojawia się na
+**Incydent 1, „Orbs Launching Orbs" (kule wypuszczające kule).** Około zmierzchu świetlista pomarańczowa kula pojawia się na
 sekundę lub dwie, wypuszcza grupę dwóch do czterech mniejszych czerwonych kul i znika. Powtarza się
 przez kilka godzin. Świadek 2 naliczył około pięciu cykli między 19.00 a 19.30. Świadek 3 opisał
-czerwone kule jako „winogrona wypluwane z piłki do koszykówki". Świadek 4 stracił rachubę po piątym
+czerwone kule jako „like grapes being expelled from a basketball", czyli jak winogrona wypluwane z piłki do koszykówki. Świadek 4 stracił rachubę po piątym
 razie. Czerwone kule odchodzą w skoordynowanych formacjach, a w co najmniej jednym przypadku jedna z
 nich stała nad granią przez kilka godzin.
 
-**Incydent 2, „ognista kula".** Duża kula na tle zbocza, z bliska. Świadek 1 zmierzył później
+**Incydent 2, „Fiery Orb" (ognista kula).** Duża kula na tle zbocza, z bliska. Świadek 1 zmierzył później
 dalmierzem odległość do zbocza za nią na około 1100 metrów i ocenił świecący dysk na co najmniej
-sześć metrów średnicy: „krąg światła wyglądający jak wirujący wzór jasnej lawy", bez widocznej
+sześć metrów średnicy: „a circle of light that looked like a swirly pattern of bright lava", czyli krąg
+światła jak wirujący wzór jasnej lawy, bez widocznej
 struktury na krawędziach i bez poświaty rzucanej na grunt za nim.
 
-**Incydent 3, „ciemny latawiec".** Cienki, ciemny obiekt w kształcie latawca z jednym czerwonym i
+**Incydent 3, „Dark Kite" (ciemny latawiec).** Cienki, ciemny obiekt w kształcie latawca z jednym czerwonym i
 jednym białym światłem, widziany z bliska.
 
-**Incydent 4, „przezroczysty latawiec".** Ten sam kształt, przezroczysty. Świadek 1 patrzył, jak jeden
+**Incydent 4, „Translucent Kite" (przezroczysty latawiec).** Ten sam kształt, przezroczysty. Świadek 1 patrzył, jak jeden
 z nich przepływa na wysokości pięciu, sześciu metrów, i widział przez niego gwiazdę, grzbiet wzgórza i
-roślinność, „prawie jak patrzenie na coś przez wodę".
+roślinność: „almost like looking at something through water", czyli prawie jak patrzenie na coś
+przez wodę.
 
 Przez relacje przewijają się jeszcze dwa wątki, których nie ma wśród czterech incydentów mapy:
 obiekty zachowujące się jak pojazdy drogowe i nimi niebędące, czyli pojedynczy środkowy reflektor,
@@ -93,7 +95,8 @@ znanego statku powietrznego w szacowanej linii wzroku obserwatorów. A flara nie
 czerwona kula zgłoszona jako nieruchoma nad granią przez kilka godzin jest nie do pogodzenia z czasem
 palenia i prędkością opadania żadnej flary w wyposażeniu.
 
-Własną zaślepką AARO na tę resztę jest „technologia nierozpoznana (w toku)" i agencja natychmiast ją
+Własną zaślepką AARO na tę resztę jest „Unrecognized Technology (Pending)", czyli technologia
+nierozpoznana w toku, i agencja natychmiast ją
 rozbraja: ocena opiera się wyłącznie na relacjach i na wyeliminowaniu konkurencyjnych hipotez, a *nie
 ma oparcia w danych technicznych ani dowodzie materialnym.* Agencja, która pisze takie zdanie o
 własnej wiodącej hipotezie, robi swoją pracę jak należy. Nic w tych aktach nie uprawnia do czytania
@@ -101,8 +104,8 @@ owych 40 procent jako czegokolwiek poza niewyjaśnionym.
 
 ## Obrazy nie są zdjęciami
 
-Do zdarzenia dołączono dziesięć obrazów opublikowanych jako „renderingi cyfrowe" i dwa krótkie filmy
-opublikowane jako „rekonstrukcje cyfrowe". Wyglądają jak zdjęcia nocnej pustyni z kulami. Nie są nimi.
+Do zdarzenia dołączono dziesięć obrazów opublikowanych jako „Digital Rendering", czyli rendering
+cyfrowy, i dwa krótkie filmy opublikowane jako „Digital Recreation", czyli rekonstrukcja cyfrowa. Wyglądają jak zdjęcia nocnej pustyni z kulami. Nie są nimi.
 
 Świadek 2 mówi to wprost w aktach: to obrazy wygenerowane przez sztuczną inteligencję na podstawie
 poleceń, które sam podał, zawierające wyłącznie ogólny krajobraz, z kulami dobranymi pod czytelność, a
@@ -120,16 +123,16 @@ Renderingi warto publikować. Warto je publikować podpisane.
 
 Najmocniejszy szczegół w aktach to coś, czego nikt nie wymyśliłby dwa razy.
 
-Świadek 1, jadąc nocą za samochodem, zauważa, że tylne światła są nie te: „jedno tylne światło było
-czerwone, a drugie białe, jedno okrągłe, a drugie kwadratowe". Samochód zjeżdża potem z drogi, wisi,
+Świadek 1, jadąc nocą za samochodem, zauważa, że tylne światła są nie te: „one taillight was red and one was
+white… one was round and one was square", jedno czerwone, drugie białe, jedno okrągłe, drugie kwadratowe. Samochód zjeżdża potem z drogi, wisi,
 nie wzbija pyłu, a później przepływa w powietrzu z wygaszonymi światłami.
 
-Świadek 5, około 4.30, widzi dwa światła metr nad ziemią nad asfaltem: „jedno białe i kwadratowe,
-drugie okrągłe i czerwone". W noktowizorze światła gasną i zostaje cienka linia, szeroka na jakieś
+Świadek 5, około 4.30, widzi dwa światła metr nad ziemią nad asfaltem: „One was white and square, the
+second was round and red", jedno białe i kwadratowe, drugie okrągłe i czerwone. W noktowizorze światła gasną i zostaje cienka linia, szeroka na jakieś
 półtora metra, pozioma względem ziemi. Szkic jest w aktach.
 
-To ten sam obiekt opisany przez dwóch agentów niemal tymi samymi słowami i odpowiada on „ciemnemu
-latawcowi" z mapy, czyli jednemu czerwonemu i jednemu białemu światłu na cienkim ciemnym kształcie.
+To ten sam obiekt opisany przez dwóch agentów niemal tymi samymi słowami i odpowiada
+incydentowi „Dark Kite" z mapy, czyli jednemu czerwonemu i jednemu białemu światłu na cienkim ciemnym kształcie.
 To najsilniejsza wewnętrzna zbieżność w całej paczce.
 
 I w tym miejscu trzeba się zatrzymać. Relacje nie mówią, czy ci dwaj agenci byli partnerami w jednym
@@ -141,7 +144,7 @@ zgodnie z tym.
 
 Dokumentacja dostaje **5**. To najlepiej udokumentowana sprawa w tym korpusie: podpisana analiza
 agencji z odsłoniętym rozumowaniem, pięć relacji z pierwszej ręki opublikowanych bez redakcji, w
-których jeden świadek nazywa smugi kondensacyjne „chemtrails", a inny sięga po „portale" i zaraz
+których jeden świadek nazywa smugi kondensacyjne „chemtrails", a inny sięga po „portals", czyli portale, i zaraz
 starannie zastrzega, że tego nie twierdzi, mapa, szkice i podany podział na to, co wyjaśnione, i to,
 co nie. Nikt nie musiał tego wyciągać siłą.
 

@@ -71,6 +71,14 @@ npm run preview
   typografia angielska.
 - **Repozytorium jest po angielsku**: README, komunikaty skryptów budujących,
   nazwy plików i gałęzi. Komentarze w kodzie i CLAUDE.md zostają po polsku.
+- **Cytat zostaje w brzmieniu dokumentu.** W polskiej wersji słowa dokumentu,
+  świadka albo instytucji stoją w cudzysłowie „…” w oryginale, zwykle po
+  angielsku, a polskie tłumaczenie idzie obok bez cudzysłowu: w nawiasie albo po
+  „czyli”. Cudzysłów wokół polskich słów mówi czytelnikowi, że tak brzmi dokument,
+  więc nie wolno go stawiać wokół tłumaczenia. Przykład:
+  „one was round and one was square”, jedno okrągłe, drugie kwadratowe.
+  Nie dotyczy pola `claim` w Claim Ledger: to sformułowanie krążącego twierdzenia,
+  oddawane w języku czytelnika, nie cytat z dokumentu.
 
 ## Zasady redakcyjne
 
