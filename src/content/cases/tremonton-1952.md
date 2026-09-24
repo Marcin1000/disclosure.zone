@@ -32,7 +32,8 @@ alternatives:
 - "Pillow balloons, December 1952. Officers of the Office of Naval Research and balloon specialists at General Mills in Minneapolis, shown the film eight times, agreed the objects closely resembled pillow balloons in flight; General Mills’ own head of balloon research was the least convinced, finding them a bit too bright and too quick. The Blue Book photo file’s catalogue card gives “Pillow balloons” or birds as the probable explanation. Attempts to trace a launch near Tremonton were negative, and the ATIC worksheet notes there were too many objects for balloons."
 - "Genuine unidentified objects. The Air Force laboratory, without densitometry, judged the images brighter than any bird and the objects non-spherical if they were reflecting light at all. The Navy Photographic Interpretation Center, with densitometry, went further and called them light sources. Its brightness measurements were made on a duplicate of a copy and were rejected by two astronomers as methodologically wrong, and its speeds rest on assumptions the report itself calls arbitrary."
 - "A mirage. Listed first on the ATIC worksheet: no inversion layer, but a very high lapse rate between 4,000 and 10,000 feet. The 1956 Douglas Aircraft analysis considered it and found it hard to square with the clear air and the steady, unshimmering images."
-claims: []
+claims:
+- "tremonton-seagulls-1956"
 sources:
 - "tier": "T1"
   label: "The original film and the analysis in the Project Blue Book files"
