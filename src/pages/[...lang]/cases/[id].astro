@@ -125,8 +125,24 @@ const stChip = st.cls === 'st-unresolved' ? 'chip--amber'
     </section>
   </article>
 
+  <script>
+    // Tabela w treści sprawy przychodzi z Markdownu, więc komórki nie znają nagłówków
+    // swoich kolumn. Dopisujemy je, żeby na telefonie tabela mogła się rozłożyć w pionie.
+    for (const table of document.querySelectorAll('.prose table')) {
+      const heads = [...table.querySelectorAll('thead th')].map(th => th.textContent?.trim() ?? '');
+      if (heads.length < 3) continue;
+      for (const row of table.querySelectorAll('tbody tr')) {
+        [...row.children].forEach((cell, i) => { if (i > 0 && heads[i]) cell.setAttribute('data-l', heads[i]); });
+      }
+      table.classList.add('is-stacked');
+    }
+  </script>
+
   <style>
-    [data-cols] { grid-template-columns: 1fr; gap: 2.5rem; }
+    /* minmax(0, 1fr), nie 1fr: kolumna 1fr nie zejdzie poniżej najszerszej
+       zawartości, więc tabela w treści sprawy rozpychała całą stronę na telefonie,
+       zamiast przewijać się we własnym polu. Na szerokim ekranie było już dobrze. */
+    [data-cols] { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
     @media (min-width: 1060px) {
       [data-cols] { grid-template-columns: minmax(0, 1fr) 350px; gap: 3.5rem; }
       [data-cols] > aside { position: sticky; top: 86px; align-self: start; }

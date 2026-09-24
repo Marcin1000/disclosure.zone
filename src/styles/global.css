@@ -477,15 +477,40 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
   -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
 .prose hr { margin: 2.5em 0; }
-/* Tabela w treści sprawy przewija się sama, zamiast rozpychać stronę na telefonie */
-.prose table { display: block; overflow-x: auto; border-collapse: collapse; margin: 0 0 1.4em; font-size: .9rem; }
+/* Tabela w treści sprawy zajmuje pełną szerokość kolumny tekstu i łamie komórki,
+   zamiast ucinać ostatnie kolumny. Na telefonie rozkłada się w pionie (niżej). */
+.prose table { width: 100%; border-collapse: collapse; margin: 0 0 1.4em; font-size: .88rem; }
 .prose th {
   font-family: var(--mono); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase;
   color: var(--fg-faint); text-align: left; font-weight: 700;
   padding: .6rem .7rem; border-bottom: 1px solid var(--line-2);
 }
-.prose td { padding: .7rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--fg-dim); min-width: 11rem; }
-.prose td:first-child { min-width: 7rem; color: var(--fg); }
+.prose td { padding: .7rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--fg-dim); }
+.prose td:first-child { color: var(--fg); padding-left: 0; }
+.prose th:first-child { padding-left: 0; }
+/* Na telefonie tabela porównawcza rozkłada się w pionie, tak jak tabele rejestru:
+   każdy wiersz to blok, a każda komórka dostaje nad sobą nagłówek swojej kolumny.
+   Etykiety dopisuje skrypt na stronie sprawy; bez niego tabela zostaje przewijana. */
+@media (max-width: 700px) {
+  /* bez skryptu tabela zostaje tabelą, ale przewija się we własnym polu */
+  .prose table:not(.is-stacked) { display: block; overflow-x: auto; }
+  .prose table:not(.is-stacked) td { min-width: 9rem; }
+  .prose table.is-stacked, .prose table.is-stacked tbody,
+  .prose table.is-stacked tr, .prose table.is-stacked td { display: block; width: 100%; min-width: 0; }
+  .prose table.is-stacked { overflow: visible; }
+  .prose table.is-stacked thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+  .prose table.is-stacked tr { padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .prose table.is-stacked td { border: 0; padding: .35rem 0; }
+  .prose table.is-stacked td:first-child {
+    font-family: var(--mono); font-size: .66rem; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--phos-dim); padding-bottom: .5rem;
+  }
+  .prose table.is-stacked td[data-l]::before {
+    content: attr(data-l); display: block; margin-bottom: .15rem;
+    font-family: var(--mono); font-size: .56rem; letter-spacing: .15em; text-transform: uppercase;
+    color: var(--fg-faint);
+  }
+}
 
 /* ============================================================ NAGRANIA */
 .films {
