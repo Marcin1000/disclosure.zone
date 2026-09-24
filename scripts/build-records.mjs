@@ -89,6 +89,14 @@ const CASE_LINKS = {
  */
 const DEAD_SOURCES = new Set(['DOW-UAP-D134']);
 
+/**
+ * Rok zdarzenia tam, gdzie tytuł z indeksu przeczy nazwie pliku u wydawcy.
+ * FBI-UAP-D022 ma w tytule rok 2026, a nazwa pliku u wydawcy i dziewięć pozostałych
+ * renderingów tego samego zdarzenia podają 2023. Tytuł zostawiamy dosłownie,
+ * poprawiamy wyłącznie rok, bo to on trafia do filtrów i na stronę rekordu.
+ */
+const YEAR_FIXES = { 'FBI-UAP-D022@03': 2023 };
+
 const slugify = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80).replace(/-+$/, '');
 
@@ -199,8 +207,8 @@ for (const r of manifest.records) {
     agencyName: a.name,
     series,
     place: t.place,
-    year: t.year,
-    yearEnd: t.yearEnd,
+    year: YEAR_FIXES[`${t.id}@${s.release}`] ?? t.year,
+    yearEnd: YEAR_FIXES[`${t.id}@${s.release}`] ? null : t.yearEnd,
     kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
         : s.sourceKind === 'file' ? 'document' : 'unknown',
     sourceKind: t.id && DEAD_SOURCES.has(t.id) ? 'dead' : s.sourceKind,
