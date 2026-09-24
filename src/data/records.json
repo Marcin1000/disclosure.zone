@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-24T21:27:53.391Z",
+ "generated": "2026-09-24T22:25:14.194Z",
  "count": 450,
  "records": [
   {
@@ -2931,7 +2931,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "russell-1955"
+   ]
   },
   {
    "slug": "cia-uap-007",
@@ -4035,7 +4037,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "russell-1955"
+   ]
   },
   {
    "slug": "cia-uap-d021",
@@ -4053,7 +4057,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "russell-1955"
+   ]
   },
   {
    "slug": "doe-uap-d004",

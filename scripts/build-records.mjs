@@ -84,6 +84,10 @@ const CASE_LINKS = {
   'FBI-UAP-D001': ['colorado-springs-2022'],
   'FBI-UAP-D002': ['colorado-springs-2022'],
   'FBI-UAP-D003': ['colorado-springs-2022'],
+  // Pociąg z Baku, 1955: dwa memoranda OSI dla DCI i nieoceniony raport informacyjny
+  'CIA-UAP-D020': ['russell-1955'],
+  'CIA-UAP-D021': ['russell-1955'],
+  'CIA-UAP-006': ['russell-1955'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 

@@ -148,6 +148,9 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-ica-d001':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf',
   'pursue-fbi-d001':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf',
   'pursue-fbi-d002':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf',
+  'pursue-cia-d020':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf',
+  'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',
+  'pursue-cia-006':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf',
 
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',
