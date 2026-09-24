@@ -12,7 +12,7 @@
  * niż --max-mb jest pomijany z komunikatem, zamiast po cichu wpuszczać
  * kilkudziesięciomegabajtowy skan do historii gita.
  */
-import { createWriteStream, existsSync, mkdirSync, readFileSync, statSync, renameSync } from 'node:fs';
+import { createWriteStream, existsSync, mkdirSync, readFileSync, rmSync, statSync, renameSync } from 'node:fs';
 import { Readable } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 import { extname, join } from 'node:path';
@@ -88,6 +88,7 @@ for (const r of picked) {
     const size = statSync(part).size;
     if (size > MAX_MB * 1e6) {
       console.log(`${label} SKIP  ${(size / 1e6).toFixed(1)} MB is over the ${MAX_MB} MB limit`);
+      rmSync(part, { force: true });
       big++;
     } else {
       renameSync(part, out);
@@ -95,6 +96,8 @@ for (const r of picked) {
       ok++;
     }
   } catch (e) {
+    // Pobieranie nie jest wznawiane, więc urwany plik .part do niczego się nie przyda
+    rmSync(part, { force: true });
     console.log(`${label} FAILED  ${String(e.message ?? e)}`);
     failed++;
   }

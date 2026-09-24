@@ -9,3 +9,6 @@ dist/
 
 # Materiał pobrany przez narzędzia z tools/ — żyje lokalnie, nie w repo
 harvest/
+
+# Niedokończone pobrania; fetch-records i fetch-pursue wznawiają z nich, ale do repo nie trafiają
+*.part
