@@ -7,6 +7,7 @@
  *   node tools/import-images.mjs --dry-run
  *   node tools/import-images.mjs --browser
  *   node tools/import-images.mjs --browser --id FBI-UAP-D014
+ *   node tools/import-images.mjs --browser --id fbi-photo-a1
  *
  * Te pliki idą do repozytorium, więc obowiązuje limit rozmiaru. Obraz większy
  * niż --max-mb jest pomijany z komunikatem, zamiast po cichu wpuszczać
@@ -46,7 +47,8 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 const reg = JSON.parse(readFileSync(REGISTRY, 'utf8'));
 let picked = reg.records.filter(r => r.kind === 'image' && r.sourceKind === 'file' && r.source);
-if (IDS.length) picked = picked.filter(r => r.id && IDS.includes(r.id));
+// Zdjęcia FBI nie mają identyfikatora, tylko adres, więc --id przyjmuje jedno i drugie
+if (IDS.length) picked = picked.filter(r => [r.id, r.slug].some(k => k && IDS.includes(k.toUpperCase())));
 
 if (!picked.length) { console.error('no image record matches'); process.exit(1); }
 

@@ -194,7 +194,12 @@ material is a picture has the picture on its own page.
 node tools/import-images.mjs --dry-run
 node tools/import-images.mjs --browser
 node tools/import-images.mjs --browser --id FBI-UAP-D014
+node tools/import-images.mjs --browser --id fbi-photo-a1
 ```
+
+`--id` takes either the record's identifier or its address, in any case. The
+eight FBI photographs have no identifier from the publisher, so the address is
+the only way to pick one of them.
 
 Twenty-seven records are images: the ten renderings of the Western United States
 event, eight FBI photographs, six Apollo frames and three from STS-80.
