@@ -145,6 +145,9 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-d102':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.pdf',
   'pursue-d103':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D103_Project-Blue-Book-Photo-File-Relating-to-Tremonton-Film-Utah-1952.pdf',
   'pursue-d104':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D104_Final-Personnel-Record-for-Newhouse-Delbert-C-US-Navy-1957.pdf',
+  'pursue-ica-d001':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf',
+  'pursue-fbi-d001':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf',
+  'pursue-fbi-d002':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf',
 
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',

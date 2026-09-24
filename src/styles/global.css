@@ -477,6 +477,15 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
   -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
 .prose hr { margin: 2.5em 0; }
+/* Tabela w treści sprawy przewija się sama, zamiast rozpychać stronę na telefonie */
+.prose table { display: block; overflow-x: auto; border-collapse: collapse; margin: 0 0 1.4em; font-size: .9rem; }
+.prose th {
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--fg-faint); text-align: left; font-weight: 700;
+  padding: .6rem .7rem; border-bottom: 1px solid var(--line-2);
+}
+.prose td { padding: .7rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--fg-dim); min-width: 11rem; }
+.prose td:first-child { min-width: 7rem; color: var(--fg); }
 
 /* ============================================================ NAGRANIA */
 .films {

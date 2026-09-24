@@ -78,6 +78,12 @@ const CASE_LINKS = {
   'FBI-UAP-D023': ['western-us-2023'],
   'FBI-UAP-PR005': ['western-us-2023'],
   'FBI-UAP-PR006': ['western-us-2023'],
+  // Cheyenne Mountain 2022: analiza i dwa przesłuchania FBI. Rendering nie ma
+  // autora, daty ani podstawy, więc jest podpięty jako ilustracja, nie źródło.
+  'ICA-UAP-D001': ['colorado-springs-2022'],
+  'FBI-UAP-D001': ['colorado-springs-2022'],
+  'FBI-UAP-D002': ['colorado-springs-2022'],
+  'FBI-UAP-D003': ['colorado-springs-2022'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 

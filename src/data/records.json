@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-24T21:07:07.207Z",
+ "generated": "2026-09-24T21:27:53.391Z",
  "count": 450,
  "records": [
   {
@@ -3413,7 +3413,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "colorado-springs-2022"
+   ]
   },
   {
    "slug": "fbi-uap-d002",
@@ -3431,7 +3433,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "colorado-springs-2022"
+   ]
   },
   {
    "slug": "fbi-uap-d003",
@@ -3449,7 +3453,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "colorado-springs-2022"
+   ]
   },
   {
    "slug": "fbi-uap-d004",
@@ -3847,7 +3853,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "colorado-springs-2022"
+   ]
   },
   {
    "slug": "nasa-uap-d015",
