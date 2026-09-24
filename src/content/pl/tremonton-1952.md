@@ -9,9 +9,9 @@ witnesses: "Delbert C. Newhouse, Chief Photographer marynarki USA (commissioned 
 summary: "Chorąży marynarki, zawodowy fotograf lotniczy, nakręcił kolorowy film przedstawiający grupę jasnych obiektów w ruchu. Materiał został poddany jednej z najbardziej szczegółowych analiz w historii Blue Book, w tym analizie densytometrycznej."
 official: "Akta zawierają nie jedną odpowiedź, lecz trzy, jedna po drugiej. Arkusz ATIC dla tej obserwacji, z 1952 r., zaznacza jako ocenę końcową „Unknown” (nieznane). Wiadomość telekonferencyjna Blue Book z 3 lutego 1953 r., dostarczająca tekst do komunikatu prasowego, nazywa mewy szybujące w prądach termicznych „strong possibility” (dużą możliwością) i stwierdza, że Siły Powietrzne nie planują dalszych działań. Memorandum przygotowane dla biura prasowego Sił Powietrznych 1 czerwca 1956 r. uznaje, że pozostaje „little reasonable doubt” (niewiele rozsądnych wątpliwości), iż obiekty były „indeed seagulls” (rzeczywiście mewami), i przypisuje wniosek o mewach laboratorium Photo Reconnaissance Laboratory Sił Powietrznych. Analiza laboratorium w tej samej teczce mówi coś przeciwnego: jest w miarę pewne, że jasność obrazów przewyższa jasność każdego naturalnego rozpraszającego odbłyśnika, takiego jak białe ptaki na tle nieba."
 alternatives:
-- "Mewy szybujące w termice. Zaproponowane w arkuszu ATIC w 1952 r., obok migrujących śnieżnych gęsi, i przyjęte przez Siły Powietrzne na potrzeby prasy w 1956 r. Pasuje do kłębiącego się ruchu i braku widocznej struktury, ale zderza się z ustaleniem samego laboratorium Sił Powietrznych, że obrazy są jaśniejsze niż jakikolwiek ptak. W aktach nie ma ani klatek z rozpoznawalnymi mewami, ani testowych filmów z mewami, na których opiera się memorandum z 1956 r."
+- "Mewy szybujące w termice. Zaproponowane w arkuszu ATIC w 1952 r., obok migrujących śnieżnych gęsi, i przyjęte przez Siły Powietrzne na potrzeby prasy w 1956 r. Pasuje do kłębiącego się ruchu i braku widocznej struktury, ale zderza się z ustaleniem samego laboratorium Sił Powietrznych, że obrazy są jaśniejsze niż jakikolwiek ptak. Panel naukowy CIA w styczniu 1953 r. uznał, że ruch, rozmiary i jasność obiektów „strongly to suggest birds” (mocno wskazują na ptaki), zaznaczając zarazem, że brak danych o albedo ptaków. W aktach Blue Book nie ma ani klatek z rozpoznawalnymi mewami, ani testowych filmów z mewami, na których opiera się memorandum z 1956 r."
 - "Balony typu „pillow”, grudzień 1952. Oficerowie Office of Naval Research i specjaliści od balonów z General Mills w Minneapolis, którym osiem razy pokazano film, zgodzili się, że obiekty bardzo przypominają lecące balony „pillow”. Najmniej przekonany był szef badań balonowych samego General Mills, dla którego były nieco za jasne i za szybkie. Karta katalogowa z teczki zdjęć Blue Book podaje jako prawdopodobne wyjaśnienie „Pillow balloons” albo ptaki. Próby wyśledzenia startu w pobliżu Tremonton dały wynik negatywny, a arkusz ATIC odnotowuje, że obiektów było za dużo jak na balony."
-- "Rzeczywiste niezidentyfikowane obiekty. Laboratorium Sił Powietrznych, bez densytometrii, oceniło obrazy jako jaśniejsze niż jakikolwiek ptak, a obiekty jako niesferyczne, o ile w ogóle odbijały światło. Naval Photographic Interpretation Center, z densytometrią, poszło dalej i uznało je za źródła światła. Jego pomiary jasności wykonano na duplikacie kopii, dwóch astronomów odrzuciło je jako metodologicznie błędne, a wyliczone prędkości stoją na założeniach, które sam raport nazywa arbitralnymi."
+- "Rzeczywiste niezidentyfikowane obiekty. Laboratorium Sił Powietrznych, bez densytometrii, oceniło obrazy jako jaśniejsze niż jakikolwiek ptak, a obiekty jako niesferyczne, o ile w ogóle odbijały światło. Naval Photographic Interpretation Center, z densytometrią, poszło dalej i uznało je za źródła światła. Jego pomiary jasności wykonano na duplikacie kopii, dwóch astronomów odrzuciło je jako metodologicznie błędne, wyliczone prędkości stoją na założeniach, które sam raport nazywa arbitralnymi, a panel naukowy CIA nie przyjął jego wniosków."
 - "Miraż. Wymieniony jako pierwszy w arkuszu ATIC: brak warstwy inwersyjnej, ale bardzo duży gradient temperatury między 4000 a 10 000 stóp. Analiza Douglas Aircraft z 1956 r. rozważyła go i uznała za trudny do pogodzenia z przejrzystym powietrzem oraz stałymi, niedrgającymi obrazami."
 sources:
 - "label": "Oryginalny film i analiza w aktach Project Blue Book"
@@ -22,6 +22,8 @@ sources:
   note: "Pięć stron: karta tytułowa datująca teczkę na 7 lipca 1952, karta katalogowa podająca jako prawdopodobne wyjaśnienie „Pillow balloons” albo ptaki oraz fotografia General Mills przedstawiająca wypuszczanie balonów „pillow”, z niepodpisaną odręczną notatką na odwrocie."
 - "label": "Końcowe akta personalne Delberta C. Newhouse'a, Marynarka Wojenna USA"
   note: "585 stron. Akta nie wspominają ani o filmie, ani o obserwacji i nie podają łącznej liczby godzin nalotu, więc nie da się nimi zweryfikować 1000 ani 2200 godzin przytaczanych w aktach Blue Book. Potwierdzają natomiast jego stopień w 1952 r., szkolenie w Naval School of Photography w 1935 r. oraz zatwierdzony urlop od 19 czerwca do 7 lipca 1952 (s. 82–83, 345, 369)."
+- "label": "Raport panelu naukowego w sprawie niezidentyfikowanych obiektów latających i sprawozdanie z jego posiedzeń, CIA, styczeń 1953 (CIA-UAP-002)"
+  note: "42-stronicowa teczka CIA. Ocena filmu z Tremonton jest w sprawozdaniu F. C. Duranta z posiedzeń (s. 21–24), a film z mewami pokazany panelowi figuruje na liście dowodów (s. 11). Części I sprawozdania nie ma w teczce, a dwie pozycje z niej wycofano."
 ---
 
 ## Trzy odpowiedzi w jednej teczce
@@ -72,14 +74,51 @@ laboratorium jest „reasonably certain that the brightness of the images on the
 any bird”, a obiekty „are not spherical”.
 
 Memorandum z 1956 r. przypisuje więc laboratorium wniosek, którego jego własny raport nie zawiera. W
-aktach nie ma żadnej klatki z rozpoznawalną mewą ani żadnego z filmów z mewami, które według
-memorandum miały wzmocnić tę tezę. Jest za to problem z chronologią: telekonferencja z lutego 1953 r.
-podaje już, że filmy z mewami pokazały „bright spots of light very similar to those in the movies”
-(jasne punkty bardzo podobne do tych z nagrania), podczas gdy memorandum napisane po 9 lutego nadal
-wymienia sfilmowanie mew na Florydzie jako coś, co dopiero trzeba zrobić.
+aktach Blue Book nie ma żadnej klatki z rozpoznawalną mewą ani żadnego z filmów z mewami, które według
+memorandum miały wzmocnić tę tezę.
+
+Film z mewami istniał. Teczka CIA o panelu naukowym wymienia wśród dowodów przedstawionych od 14 do 17
+stycznia 1953 r. „Motion picture of seagulls in bright sunlight showing high reflectivity” (film z
+mewami w jasnym słońcu pokazujący silne odbicie światła) i odnotowuje, że panel obejrzał „a short film
+showing high reflectivity of seagulls in bright sunlight”, czyli krótki film pokazujący silne odbicie
+światła od mew w jasnym słońcu. Było to przed lutową telekonferencją, która podaje, że filmy z mewami
+pokazały „bright spots of light very similar to those in the movies” (jasne punkty bardzo podobne do
+tych z nagrania). Brakuje testu, który czyniłby z takiego filmu dowód: mew sfilmowanych w jasnym słońcu
+obiektywem 3-calowym, ze świadomością, „how far the gulls were away each time a movie was taken”, czyli
+jak daleko były mewy przy każdym ujęciu. Memorandum napisane po 9 lutego nadal wymienia ten test, na
+Florydzie, jako coś, co dopiero trzeba zrobić, a ani akta Blue Book, ani teczka CIA nie podają dla
+żadnego filmu z mewami odległości ani pomiaru.
 
 To jest główne ustalenie tego wydania. Nie to, że obiekty były czymś konkretnym, lecz to, że
 opublikowane wyjaśnienie zostało napisane ponad analizą, która wskazywała w przeciwną stronę.
+
+## Panel CIA
+
+W styczniu 1953 r. panel konsultantów naukowych zwołany przez Office of Scientific Intelligence CIA
+przestudiował film, historię sprawy i interpretację ATIC oraz wysłuchał prezentacji analizy Navy Photo
+Interpretation Laboratory. Sprawozdanie F. C. Duranta z posiedzeń odnotowuje, że członkowie panelu
+„could not accept the conclusions reached” (nie mogli przyjąć wniosków). Wśród powodów: „Although no
+data was available on the ‚albedo’ of birds or polyethylene balloons in bright sunlight, the apparent
+motions, sizes and brightnesses of the objects were considered strongly to suggest birds, particularly
+after the Panel viewed a short film showing high reflectivity of seagulls in bright sunlight”, czyli
+choć brakowało danych o albedo ptaków i balonów polietylenowych w jasnym słońcu, pozorny ruch,
+rozmiary i jasność obiektów uznano za mocno wskazujące na ptaki, zwłaszcza po obejrzeniu krótkiego
+filmu z mewami. Panel zauważył też, że analizę natężenia światła Marynarki „made from duplicate rather
+than original film” (wykonano na duplikacie, a nie na oryginale) i że „The original film was noted to
+have a much lighter background (affecting relative brightness of object) and the objects appeared much
+less bright”, czyli oryginał miał znacznie jaśniejsze tło, a obiekty wyglądały na nim na dużo mniej
+jasne.
+
+Panel nie uznał sprawy za rozwiązaną. Sprawozdanie mówi: „The Panel believed strongly that the data
+available on this sighting was
+sufficient for positive identification if further data is obtained by photographing polyethylene
+‚pillow’ balloons released near the site under similar weather conditions, checking bird flight and
+reflection characteristics with competent ornithologists and calculating apparent ‚G’ forces acting
+upon objects from their apparent tracks”, czyli był przekonany, że dane wystarczą do identyfikacji,
+jeśli sfotografuje się balony „pillow” wypuszczone w pobliżu w podobnej pogodzie, sprawdzi z
+ornitologami lot i odbicie światła u ptaków i wyliczy pozorne przeciążenia z torów obiektów. Ptaki,
+mocno wskazane, pod warunkiem testów, których przeprowadzenia nie pokazują ani akta Blue Book, ani
+teczka CIA.
 
 ## „Calculated risk”
 
@@ -212,8 +251,8 @@ r., a pomiary Marynarki wykonano na duplikacie kopii.
 **Oryginalny film** albo najwcześniejsza zachowana jego generacja. Korespondencja z 1954 r. śledzi go
 do ATIC i nie dalej.
 
-**Filmy z mewami z 1953 r.** Linia prasowa na nich stoi. Akta przytaczają ich wynik, ale ich nie
-zawierają.
+**Filmy z mewami z 1953 r.** Linia prasowa na nich stoi. Akta Blue Book przytaczają ich wynik, a
+panelowi CIA jeden z nich pokazano, ale żadna z teczek nie zawiera filmu, odległości ani pomiaru.
 
 **Powtórzona densytometria Marynarki** na najwcześniejszej kopii, metodą, której żądali astronomowie.
 Sam ośrodek Marynarki zalecał dalsze testy, by potwierdzić albo obalić swoje ustalenia.

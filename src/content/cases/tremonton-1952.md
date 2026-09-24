@@ -28,9 +28,9 @@ scores:
 summary: "A Navy warrant officer and professional aerial photographer shot colour film showing a group of bright objects in motion. The material received one of the most detailed analyses in Blue Book history, including densitometric measurement."
 official: "The file holds three answers in sequence, not one. The ATIC worksheet for the sighting, in 1952, marks the final evaluation “Unknown”. A teleconference message from Blue Book of 3 February 1953, supplying text for a press release, calls sea gulls soaring in thermal air currents a “strong possibility” and says the Air Force contemplates no further action. A memorandum prepared for the Air Force press room on 1 June 1956 finds “little reasonable doubt” that the objects were “indeed seagulls”, and credits a seagull conclusion to the Air Force Photo Reconnaissance Laboratory. The laboratory analysis in the same file says the opposite: it is reasonably certain that the brightness of the images exceeds that of any natural diffuse reflector such as white birds against the sky."
 alternatives:
-- "Gulls soaring in a thermal. Proposed on the ATIC worksheet in 1952, alongside migrating snow geese, and adopted by the Air Force for the press in 1956. It fits the milling motion and the absence of visible structure, and it runs into the Air Force laboratory’s own finding that the images are brighter than any bird. The file contains neither the frames with identifiable gulls nor the gull test films the 1956 memorandum relies on."
+- "Gulls soaring in a thermal. Proposed on the ATIC worksheet in 1952, alongside migrating snow geese, and adopted by the Air Force for the press in 1956. It fits the milling motion and the absence of visible structure, and it runs into the Air Force laboratory’s own finding that the images are brighter than any bird. The CIA’s scientific panel, in January 1953, found the motions, sizes and brightnesses “strongly to suggest birds”, while noting that no data was available on the albedo of birds. The Blue Book file contains neither the frames with identifiable gulls nor the gull test films the 1956 memorandum relies on."
 - "Pillow balloons, December 1952. Officers of the Office of Naval Research and balloon specialists at General Mills in Minneapolis, shown the film eight times, agreed the objects closely resembled pillow balloons in flight; General Mills’ own head of balloon research was the least convinced, finding them a bit too bright and too quick. The Blue Book photo file’s catalogue card gives “Pillow balloons” or birds as the probable explanation. Attempts to trace a launch near Tremonton were negative, and the ATIC worksheet notes there were too many objects for balloons."
-- "Genuine unidentified objects. The Air Force laboratory, without densitometry, judged the images brighter than any bird and the objects non-spherical if they were reflecting light at all. The Navy Photographic Interpretation Center, with densitometry, went further and called them light sources. Its brightness measurements were made on a duplicate of a copy and were rejected by two astronomers as methodologically wrong, and its speeds rest on assumptions the report itself calls arbitrary."
+- "Genuine unidentified objects. The Air Force laboratory, without densitometry, judged the images brighter than any bird and the objects non-spherical if they were reflecting light at all. The Navy Photographic Interpretation Center, with densitometry, went further and called them light sources. Its brightness measurements were made on a duplicate of a copy and were rejected by two astronomers as methodologically wrong, its speeds rest on assumptions the report itself calls arbitrary, and the CIA’s scientific panel could not accept its conclusions."
 - "A mirage. Listed first on the ATIC worksheet: no inversion layer, but a very high lapse rate between 4,000 and 10,000 feet. The 1956 Douglas Aircraft analysis considered it and found it hard to square with the clear air and the steady, unshimmering images."
 claims:
 - "tremonton-seagulls-1956"
@@ -53,6 +53,10 @@ sources:
   label: "Final personnel record of Delbert C. Newhouse, U.S. Navy"
   note: "585 pages. The record mentions neither the film nor the sighting, and it gives no total of flying hours, so the 1,000 and 2,200 hours cited in the Blue Book file cannot be verified against it. It does confirm his rank in 1952, his training at the Naval School of Photography in 1935, and approved leave from 19 June to 7 July 1952 (pp. 82–83, 345, 369)."
   ref: "pursue-d104"
+- "tier": "T2"
+  label: "Report of the Scientific Panel on Unidentified Flying Objects and the report of its meetings, CIA, January 1953 (CIA-UAP-002)"
+  note: "A 42-page CIA folder. The panel's assessment of the Tremonton film is in F. C. Durant's report of the meetings (pp. 21–24), and a film of seagulls shown to the panel is listed among the evidence (p. 11). Part I of the report of meetings is not in the folder, and two items were withdrawn from it."
+  ref: "pursue-cia-002"
 ---
 
 ## Three answers in one file
@@ -98,13 +102,41 @@ is "reasonably certain that the brightness of the images on the film exceeds tha
 the objects "are not spherical."
 
 So the 1956 memorandum credits the laboratory with a conclusion its own report does not contain. The
-file holds no frame showing an identifiable gull, and none of the gull films the memorandum says
-strengthened the case. It does hold one timing problem: the February 1953 teleconference already
-says gull films had shown "bright spots of light very similar to those in the movies," while a
-memorandum written after 9 February still lists filming gulls in Florida as something to be done.
+Blue Book file holds no frame showing an identifiable gull, and none of the gull films the memorandum
+says strengthened the case.
+
+A gull film did exist. The CIA's folder on its scientific panel lists, among the evidence presented
+on 14 to 17 January 1953, a "Motion picture of seagulls in bright sunlight showing high
+reflectivity", and records that the panel viewed "a short film showing high reflectivity of seagulls
+in bright sunlight". That was before the February teleconference, which says gull films had shown
+"bright spots of light very similar to those in the movies." What is missing is the test that would
+make such a film evidence: gulls filmed in bright sunlight with a 3-inch lens, knowing "how far the
+gulls were away each time a movie was taken". A memorandum written after 9 February still lists that
+test, in Florida, as something to be done, and neither the Blue Book file nor the CIA folder records a
+distance or a measurement for any gull film.
 
 This is the main finding of this release. Not that the objects were anything in particular, but that
 the published explanation was written over an analysis that pointed the other way.
+
+## The CIA's panel
+
+In January 1953 a panel of scientific consultants convened by the CIA's Office of Scientific
+Intelligence studied the film, the case history and ATIC's interpretation, and heard the Navy Photo
+Interpretation Laboratory present its analysis. F. C. Durant's report of the meetings records that
+the panel members "could not accept the conclusions reached". Among the reasons: "Although no data was
+available on the 'albedo' of birds or polyethylene balloons in bright sunlight, the apparent motions,
+sizes and brightnesses of the objects were considered strongly to suggest birds, particularly after
+the Panel viewed a short film showing high reflectivity of seagulls in bright sunlight." It also noted
+that the Navy's light-intensity analysis was "made from duplicate rather than original film", and
+that "The original film was noted to have a much lighter background (affecting relative brightness of
+object) and the objects appeared much less bright."
+
+The panel did not call the case solved. It "believed strongly that the data available on this
+sighting was sufficient for positive identification if further data is obtained by photographing
+polyethylene 'pillow' balloons released near the site under similar weather conditions, checking bird
+flight and reflection characteristics with competent ornithologists and calculating apparent 'G'
+forces acting upon objects from their apparent tracks." Birds, strongly suggested, pending tests that
+neither the Blue Book file nor the CIA folder shows were made.
 
 ## "A calculated risk"
 
@@ -233,8 +265,8 @@ copy.
 **The original film**, or the earliest surviving generation of it. The 1954 correspondence traces it
 as far as ATIC and no further.
 
-**The gull films of 1953.** The press line depends on them. The file quotes their result and does not
-contain them.
+**The gull films of 1953.** The press line depends on them. The Blue Book file quotes their result and
+the CIA's panel was shown one, but neither file contains a film, a distance or a measurement.
 
 **The Navy densitometry repeated** on the earliest copy, by the method the astronomers asked for. The
 Navy centre itself recommended further tests to prove or disprove its findings.
