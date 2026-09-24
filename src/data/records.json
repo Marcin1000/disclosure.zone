@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-24T22:25:14.194Z",
+ "generated": "2026-09-24T23:07:29.168Z",
  "count": 450,
  "records": [
   {
@@ -2859,7 +2859,11 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
    "format": "pdf",
-   "cases": []
+   "cases": [
+    "tremonton-1952",
+    "green-fireballs-1948",
+    "foo-fighters-1944"
+   ]
   },
   {
    "slug": "cia-uap-003",

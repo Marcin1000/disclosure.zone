@@ -88,6 +88,10 @@ const CASE_LINKS = {
   'CIA-UAP-D020': ['russell-1955'],
   'CIA-UAP-D021': ['russell-1955'],
   'CIA-UAP-006': ['russell-1955'],
+  // Teczka CIA o panelu naukowym (Robertson), styczeń 1953: panel ocenia film z
+  // Tremonton, wymienia raport o zielonych kulach wśród dowodów i omawia „Foo Fighters”.
+  // Waszyngton i Lubbock są tam tylko wymienione, więc ich nie podpinamy.
+  'CIA-UAP-002': ['tremonton-1952', 'green-fireballs-1948', 'foo-fighters-1944'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
