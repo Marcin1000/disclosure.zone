@@ -177,7 +177,7 @@ export function resolveSource(ref?: string, url?: string): string | undefined {
 /**
  * Pomoce archiwalne. Wskazują instytucję przechowującą dokument, a nie sam dokument,
  * więc NIE liczą się do wskaźnika proweniencji. Rozróżnienie jest celowe:
- * „wiemy, gdzie to leży" to nie to samo co „oto materiał".
+ * „wiemy, gdzie to leży” to nie to samo co „oto materiał”.
  */
 export const FINDING_AIDS = new Set([
   'naa-recordsearch', 'lac-collection', 'tna-discovery', 'nara-catalog',
