@@ -134,6 +134,15 @@ const en: Dict = {
   'rec.cite': 'How to cite this record',
   'case.records': 'Documents in the registry',
   'rec.releaseUndated': 'date read from the address',
+  'rec.meta.id': 'Identifier',
+  'rec.meta.idNote': 'read from the published file name; the index gives none',
+  'rec.related': 'The same document elsewhere in the registry',
+  'rec.rel.same': 'The same document in another scan:',
+  'rec.rel.part': 'Every page of this file is also in',
+  'rec.rel.whole': 'Part of this file was also published on its own as',
+  'rec.relNote': 'Checked by comparing the pages, not the titles. Cite the copy you actually read.',
+  'rec.illegible': 'This file cannot be read',
+  'rec.illegible.thumbnail': 'The publisher serves a single page scanned at 134 × 221 pixels, a thumbnail rather than a document. Neither the image nor any text layer can be read. We link it as published and say nothing about its contents.',
 
 
   'home.kicker': 'Open archive',
@@ -350,6 +359,15 @@ const pl: Dict = {
   'rec.cite': 'Jak cytować ten rekord',
   'case.records': 'Dokumenty w rejestrze',
   'rec.releaseUndated': 'data odczytana z adresu',
+  'rec.meta.id': 'Identyfikator',
+  'rec.meta.idNote': 'odczytany z nazwy pliku u wydawcy, indeks go nie podaje',
+  'rec.related': 'Ten sam dokument w innym miejscu rejestru',
+  'rec.rel.same': 'Ten sam dokument w innym skanie:',
+  'rec.rel.part': 'Wszystkie strony tego pliku są też w',
+  'rec.rel.whole': 'Część tego pliku wydano też osobno jako',
+  'rec.relNote': 'Sprawdzone porównaniem stron, nie tytułów. Cytuj tę kopię, którą faktycznie czytasz.',
+  'rec.illegible': 'Tego pliku nie da się przeczytać',
+  'rec.illegible.thumbnail': 'Wydawca udostępnia jedną stronę zeskanowaną w 134 × 221 pikseli, czyli miniaturę, a nie dokument. Nie da się odczytać ani obrazu, ani warstwy tekstowej. Podajemy link w postaci, w jakiej go wydano, i nie mówimy nic o treści.',
 
 
   'home.kicker': 'Archiwum otwarte',

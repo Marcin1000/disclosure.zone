@@ -17,9 +17,14 @@ import type { Lang } from '../i18n';
 export type SourceKind = 'file' | 'page' | 'landing' | 'dead' | 'none';
 export type RecordKind = 'document' | 'recording' | 'image' | 'unknown';
 
+/** same: ten sam dokument w innym skanie; part: cały ten plik jest w tamtym; whole: odwrotnie. */
+export type RecRelation = 'same' | 'part' | 'whole';
+
 export interface Rec {
   slug: string;
   id: string | null;
+  /** Skąd identyfikator: z tytułu w indeksie albo z nazwy pliku u wydawcy. */
+  idFrom: 'title' | 'file' | null;
   title: string;
   agency: string | null;
   agencyName: string | null;
@@ -34,6 +39,10 @@ export interface Rec {
   sourceKind: SourceKind;
   format: string | null;
   cases: string[];
+  /** Plik jest udostępniony, ale nieczytelny. Wartość mówi dlaczego. */
+  illegible: 'thumbnail' | null;
+  /** Ten sam dokument wydany pod innym rekordem, sprawdzony porównaniem stron. */
+  related: { slug: string; rel: RecRelation }[];
 }
 
 export const records: Rec[] = data.records as Rec[];

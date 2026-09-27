@@ -37,6 +37,10 @@ const citation = [
   r.source,
 ].filter(Boolean).join('. ') + (en ? ' (accessed: [date])' : ' (dostęp: [data])');
 
+const related = r.related
+  .map(x => ({ rel: x.rel, rec: recordBySlug.get(x.slug)! }))
+  .filter(x => x.rec);
+
 const media = mediaFor(r);
 /** Wydawca sam nazywa te pliki renderingiem albo rekonstrukcją, nie zapisem. */
 const synthetic = /digital render|digital recreation/i.test(r.title);
@@ -70,6 +74,11 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
 
     <section class="wrap wrap--read" style="padding-block:2.5rem 0">
       <div class="meta">
+        {r.id && r.idFrom === 'file' && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.id')}</span>
+            <span class="meta__v"><span class="mono" style="font-size:.9rem">{r.id}</span>
+              <span class="dim" style="font-size:.85rem"> ({t('rec.meta.idNote')})</span></span></div>
+        )}
         {(r.agencyName || r.agency) && (
           <div class="meta__row"><span class="meta__k">{t('rec.meta.agency')}</span>
             <span class="meta__v">{r.agencyName ?? r.agency}{r.agencyName && r.agency ? ` (${r.agency})` : ''}</span></div>
@@ -140,6 +149,28 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
           : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}
       </div>
     </section>
+
+    {r.illegible && (
+      <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+        <p class="label" style="margin-bottom:.7rem;color:var(--amber)">{t('rec.illegible')}</p>
+        <p class="dim" style="margin:0;max-width:66ch">{t(`rec.illegible.${r.illegible}`)}</p>
+      </section>
+    )}
+
+    {related.length > 0 && (
+      <section class="wrap wrap--read" style="padding-block:2.5rem 0">
+        <p class="label label--phos" style="margin-bottom:.7rem">{t('rec.related')}</p>
+        <ul style="margin:0;padding-left:1.1rem">
+          {related.map(({ rel, rec }) => (
+            <li style="margin-bottom:.4rem">
+              {t(`rec.rel.${rel}`)} <a href={path(lang, `/records/${rec.slug}`)}>{rec.id ?? rec.slug}</a>
+              <span class="dim">, {rec.title}{rec.release ? ` · ${t('records.f.release')} ${rec.release}` : ''}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relNote')}</p>
+      </section>
+    )}
 
     <section class="wrap wrap--read" style="padding-block:2.5rem 0">
       <p class="label label--phos" style="margin-bottom:.7rem">{t('rec.assessment')}</p>

@@ -25,6 +25,7 @@ const AGENCY = {
   DOS: 'Department of State',
   DOE: 'Department of Energy',
   EOP: 'Executive Office of the President',
+  ODNI: 'Office of the Director of National Intelligence',
 };
 
 /**
@@ -111,6 +112,28 @@ const DEAD_SOURCES = new Set(['DOW-UAP-D134']);
  */
 const YEAR_FIXES = { 'FBI-UAP-D022@03': 2023 };
 
+/**
+ * Ten sam dokument wydany więcej niż raz. Wpisujemy wyłącznie pary sprawdzone
+ * porównaniem stron, nie po tytule. „same" to ten sam dokument w innym skanie,
+ * „part" znaczy, że wszystkie strony pierwszego pliku są w drugim.
+ * Klucze jak w CASE_LINKS: slug albo identyfikator, z wydaniem, gdy trzeba.
+ */
+const SAME_DOCUMENT = [
+  // Sary Shagan: D001 skanowany w 300 dpi, 011 w 144 dpi, te same strony raportu
+  ['CIA-UAP-011', 'same', 'CIA-UAP-D001'],
+  // Budapeszt: strona 1 pliku 018 to ten sam skan co cały plik 013
+  ['CIA-UAP-013', 'part', 'CIA-UAP-018'],
+];
+
+/**
+ * Pliki, które wydawca udostępnia, a których nie da się przeczytać. Link zostaje,
+ * bo to stan faktyczny; strona rekordu mówi, co z plikiem jest nie tak.
+ */
+const ILLEGIBLE = {
+  // jedna strona 67×110 pt zeskanowana w 134×221 px: miniatura, nie dokument
+  'CIA-UAP-009': 'thumbnail',
+};
+
 const slugify = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80).replace(/-+$/, '');
 
@@ -162,6 +185,12 @@ function parseTitle(raw) {
   return { id, title: rest || clean, place, year, yearEnd };
 }
 
+/** Identyfikator PURSUE z początku nazwy pliku, np. CIA-UAP-D001_Intelligence_... */
+function idFromFile(url) {
+  const file = decodeURIComponent(new URL(url).pathname.split('/').pop() ?? '');
+  return /^([A-Z]{2,6}-UAP-[A-Z]{0,3}\d+)[_-]/.exec(file)?.[1] ?? null;
+}
+
 function parseSource(url) {
   if (!url) return { source: null, sourceKind: 'none', format: null, release: null, publisher: null };
   const u = new URL(url);
@@ -204,8 +233,13 @@ const records = [];
 for (const r of manifest.records) {
   const t = parseTitle(r.title);
   const s = parseSource(r.officialSourceUrl || null);
-  const a = agencyOf(t.id, r.title.trim());
-  const series = t.id ? null : seriesOf(r.title.trim());
+  // Wydanie 02 podaje w indeksie sam opis, a identyfikator stoi tylko w nazwie
+  // pliku u wydawcy. Bierzemy go stamtąd, ale adres strony rekordu budujemy
+  // jak dotąd z tytułu, żeby istniejące linki dalej działały.
+  const fileId = !t.id && s.source ? idFromFile(s.source) : null;
+  const id = t.id ?? fileId;
+  const a = agencyOf(id, r.title.trim());
+  const series = id ? null : seriesOf(r.title.trim());
 
   let base = t.id ? t.id.toLowerCase() : slugify(t.title);
   if (!base) base = 'record';
@@ -215,22 +249,25 @@ for (const r of manifest.records) {
 
   records.push({
     slug,
-    id: t.id,
+    id,
+    idFrom: id ? (t.id ? 'title' : 'file') : null,
     title: t.title,
     agency: a.code,
     agencyName: a.name,
     series,
     place: t.place,
-    year: YEAR_FIXES[`${t.id}@${s.release}`] ?? t.year,
-    yearEnd: YEAR_FIXES[`${t.id}@${s.release}`] ? null : t.yearEnd,
+    year: YEAR_FIXES[`${id}@${s.release}`] ?? t.year,
+    yearEnd: YEAR_FIXES[`${id}@${s.release}`] ? null : t.yearEnd,
     kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
         : s.sourceKind === 'file' ? 'document' : 'unknown',
-    sourceKind: t.id && DEAD_SOURCES.has(t.id) ? 'dead' : s.sourceKind,
+    sourceKind: id && DEAD_SOURCES.has(id) ? 'dead' : s.sourceKind,
     release: s.release,
     publisher: s.publisher,
     source: s.source,
     format: s.format,
-    cases: CASE_LINKS[`${t.id}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[t.id] ?? [],
+    cases: CASE_LINKS[`${id}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
+    illegible: (id && ILLEGIBLE[id]) ?? null,
+    related: [],
   });
 }
 
@@ -238,19 +275,30 @@ for (const r of manifest.records) {
  * Klucz bez wydania, który trafia w kilka rekordów, jest błędem, a nie
  * niejednoznacznością do rozstrzygnięcia na chybił trafił.
  */
-const ambiguous = [], unused = [];
-for (const key of Object.keys(CASE_LINKS)) {
+const lookup = (key) => {
   const [id, rel] = key.split('@');
-  const hits = records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
+  return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
+};
+const ambiguous = [], unused = [];
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b])]) {
+  const hits = lookup(key);
   if (!hits.length) unused.push(key);
-  else if (!rel && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
+  else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
 }
 if (ambiguous.length) {
-  console.error('case link keys that point at more than one record, add the release as ID@NN:');
+  console.error('registry keys that point at more than one record, add the release as ID@NN:');
   for (const a of ambiguous) console.error(`  ${a}`);
 }
-if (unused.length) console.error(`case link keys that match no record: ${unused.join(', ')}`);
+if (unused.length) console.error(`registry keys that match no record: ${unused.join(', ')}`);
 if (ambiguous.length || unused.length) process.exit(1);
+
+// powiązania zapisujemy po obu stronach, żeby każda strona rekordu je pokazała
+const INVERSE = { same: 'same', part: 'whole' };
+for (const [a, rel, b] of SAME_DOCUMENT) {
+  const [ra] = lookup(a), [rb] = lookup(b);
+  ra.related.push({ slug: rb.slug, rel });
+  rb.related.push({ slug: ra.slug, rel: INVERSE[rel] });
+}
 
 // stała kolejność, żeby diff pokazywał zmiany w danych, a nie w sortowaniu
 records.sort((a, b) =>
@@ -259,7 +307,7 @@ records.sort((a, b) =>
 
 const out = {
   dataset: 'disclosure.zone / PURSUE document registry',
-  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us.',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
   index: manifest.index ?? null,
   harvested: manifest.harvested ?? null,
   generated: new Date().toISOString(),
