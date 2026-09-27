@@ -212,8 +212,10 @@ taken with a Revere 16 mm camera with an f/1.9 wide-angle telephoto lens. Newhou
 
 The length varies with the copy. Newhouse exposed about thirty feet. The Air Force laboratory's
 sequence table ends near frame 1,140, about 71 seconds at sixteen frames per second. The Navy centre
-describes the objects as visible continuously for about 90 seconds. Douglas counted about 1,200 frames
-on its reprint. Hence the range given above rather than one figure.
+describes the objects as visible continuously for about 90 seconds. The CIA's scientific panel, in
+January 1953, writes of "Kodachrome motion picture films (about 1600 frames)" but gives no frame rate,
+so that figure cannot be turned into seconds. Douglas counted about 1,200 frames on its reprint. Hence
+the range given above rather than one figure.
 
 ## The witness
 

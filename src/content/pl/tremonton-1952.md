@@ -200,8 +200,11 @@ z października 1952 r. i jego list z 1954 r. nazywają go filmem 35 mm.
 
 Długość zależy od kopii. Newhouse naświetlił około trzydziestu stóp. Tabela sekwencji laboratorium
 Sił Powietrznych kończy się w okolicy klatki 1140, co przy szesnastu klatkach na sekundę daje około
-71 sekund. Ośrodek Marynarki opisuje obiekty jako widoczne bez przerwy przez około 90 sekund. Douglas
-naliczył na swojej odbitce około 1200 klatek. Stąd podany wyżej przedział zamiast jednej liczby.
+71 sekund. Ośrodek Marynarki opisuje obiekty jako widoczne bez przerwy przez około 90 sekund. Panel
+naukowy CIA w styczniu 1953 r. pisze o „Kodachrome motion picture films (about 1600 frames)” (filmach
+na taśmie Kodachrome, około 1600 klatek), ale nie podaje liczby klatek na sekundę, więc tej wartości
+nie da się przeliczyć na sekundy. Douglas naliczył na swojej odbitce około 1200 klatek. Stąd podany
+wyżej przedział zamiast jednej liczby.
 
 ## Świadek
 
