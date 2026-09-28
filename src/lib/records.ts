@@ -17,8 +17,11 @@ import type { Lang } from '../i18n';
 export type SourceKind = 'file' | 'page' | 'landing' | 'dead' | 'none';
 export type RecordKind = 'document' | 'recording' | 'image' | 'unknown';
 
-/** same: ten sam dokument w innym skanie; part: cały ten plik jest w tamtym; whole: odwrotnie. */
-export type RecRelation = 'same' | 'part' | 'whole';
+/**
+ * same: ten sam dokument w innym skanie; part: cały ten plik jest w tamtym; whole: odwrotnie;
+ * edition: ten sam tekst w innym wydaniu; next: dokument ciągnie się w tamtym pliku; prev: odwrotnie.
+ */
+export type RecRelation = 'same' | 'part' | 'whole' | 'edition' | 'next' | 'prev';
 
 export interface Rec {
   slug: string;

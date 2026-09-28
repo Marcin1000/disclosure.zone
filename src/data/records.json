@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T13:38:02.330Z",
+ "generated": "2026-09-28T13:43:37.631Z",
  "count": 450,
  "records": [
   {
@@ -3957,7 +3957,12 @@
     "mantell-1948"
    ],
    "illegible": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d088",
+     "rel": "next"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d088",
@@ -3981,7 +3986,12 @@
     "gorman-1948"
    ],
    "illegible": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d087",
+     "rel": "prev"
+    }
+   ]
   },
   {
    "slug": "fbi-uap-d001",
@@ -4895,7 +4905,12 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d094",
+     "rel": "edition"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d094",
@@ -4918,7 +4933,12 @@
     "mantell-1948"
    ],
    "illegible": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d093",
+     "rel": "edition"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d095",

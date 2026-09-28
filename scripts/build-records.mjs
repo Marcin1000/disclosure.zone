@@ -131,7 +131,9 @@ const YEAR_FIXES = { 'FBI-UAP-D022@03': 2023 };
 /**
  * Ten sam dokument wydany więcej niż raz. Wpisujemy wyłącznie pary sprawdzone
  * porównaniem stron, nie po tytule. „same" to ten sam dokument w innym skanie,
- * „part" znaczy, że wszystkie strony pierwszego pliku są w drugim.
+ * „part" znaczy, że wszystkie strony pierwszego pliku są w drugim, „edition"
+ * to ten sam tekst w innym wydaniu (np. maszynopis i druk), a „next" znaczy,
+ * że dokument z pierwszego pliku ciągnie się w drugim.
  * Klucze jak w CASE_LINKS: slug albo identyfikator, z wydaniem, gdy trzeba.
  */
 const SAME_DOCUMENT = [
@@ -139,6 +141,10 @@ const SAME_DOCUMENT = [
   ['CIA-UAP-011', 'same', 'CIA-UAP-D001'],
   // Budapeszt: strona 1 pliku 018 to ten sam skan co cały plik 013
   ['CIA-UAP-013', 'part', 'CIA-UAP-018'],
+  // Studium nr 203 z 10 grudnia 1948: D093 to maszynopis, D094 wydanie drukowane
+  ['DOW-UAP-D093', 'edition', 'DOW-UAP-D094'],
+  // Streszczenia incydentów z 14 marca 1949: D087 kończy się na 100, D088 zaczyna od 101
+  ['DOW-UAP-D087', 'next', 'DOW-UAP-D088'],
 ];
 
 /**
@@ -309,7 +315,7 @@ if (unused.length) console.error(`registry keys that match no record: ${unused.j
 if (ambiguous.length || unused.length) process.exit(1);
 
 // powiązania zapisujemy po obu stronach, żeby każda strona rekordu je pokazała
-const INVERSE = { same: 'same', part: 'whole' };
+const INVERSE = { same: 'same', part: 'whole', edition: 'edition', next: 'prev' };
 for (const [a, rel, b] of SAME_DOCUMENT) {
   const [ra] = lookup(a), [rb] = lookup(b);
   ra.related.push({ slug: rb.slug, rel });
