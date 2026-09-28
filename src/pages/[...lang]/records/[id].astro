@@ -141,7 +141,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               : <span class="still"><img src={media.poster!} alt=""
                      width={media.w ?? undefined} height={media.h ?? undefined} /></span>}
         </div>
-        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{isImage ? t('rec.imageNote') : still ? t('rec.stillAt', { t: stillTime(still.at) }) : t('rec.stillNote')}</p>
+        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{isImage ? t('rec.imageNote') : still ? t('rec.stillAt', { t: stillTime(still.at, lang) }) : t('rec.stillNote')}</p>
         {still && still.object !== 'shown' && (
           <p class="dim" style="margin:.6rem 0 0;font-size:.9rem;color:var(--amber)">{t(`rec.still.${still.object}`)}</p>
         )}

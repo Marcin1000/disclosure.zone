@@ -70,11 +70,11 @@ export const STILLS: Record<string, StillInfo> = {
   'FBI-UAP-PR006': shown(3),
 };
 
-/** 135 -> "2:15", 2.6 -> "0:02.6" */
-export function stillTime(at: number): string {
+/** 135 -> "2:15", 2.6 -> "0:02.6" (po polsku "0:02,6") */
+export function stillTime(at: number, lang: 'en' | 'pl' = 'en'): string {
   const m = Math.floor(at / 60);
   const s = at - m * 60;
   const whole = Math.floor(s);
   const frac = Math.round((s - whole) * 10);
-  return `${m}:${String(whole).padStart(2, '0')}${frac ? `.${frac}` : ''}`;
+  return `${m}:${String(whole).padStart(2, '0')}${frac ? `${lang === 'pl' ? ',' : '.'}${frac}` : ''}`;
 }
