@@ -33,3 +33,18 @@ istnienie ukrywanej wiedzy, ani na jej brak.
 Obserwacja trwała kilka sekund w nocy, przy bardzo szybkim ruchu kątowym. W takich warunkach mózg
 domyka „okna” i strukturę tam, gdzie ich nie ma. Jasny, rozpadający się bolid obserwowany z boku
 daje dokładnie taki obraz, jaki opisali piloci, łącznie z wrażeniem cygara ciągnącego płomień.
+
+## Gdzie dokumenty z 1948 r. się rozchodzą
+
+Streszczenia incydentów przesłane z Wright Field w marcu 1949 r. (DOW-UAP-D088) zawierają tę sprawę
+jako incydent 144: formularz, list kapitana Chilesa do Eastern Air Lines z 3 sierpnia 1948 r. i
+oświadczenie drugiego pilota, Johna B. Whitteda. Umieszczają obserwację w różnych miejscach.
+Formularz podaje „20 miles south of Montgomery, Ala”, czyli 20 mil na południe od Montgomery. Chiles
+pisze, że byli „twenty miles southwest of Montgomery, Ala.”, czyli dwadzieścia mil na południowy
+zachód od Montgomery, a Whitted, że „our position was 25 miles southwest of Montgomery, Ala.”, czyli
+25 mil na południowy zachód.
+
+Formularz i list Chilesa datują obserwację na 24 lipca 1948 r. Whitted podaje jedną datę, datę
+wylotu: rejs 576 „left Houston, Texas at 8:40 PM Eastern Standard Time, Friday night”, czyli wyleciał
+z Houston o 20.40 czasu wschodniego w piątek wieczorem, a dalej stoi „July 22, 1948”, czyli 22 lipca
+1948. Dokumenty nie mówią, która wersja jest prawdziwa, i ten wpis też tego nie rozstrzyga.

@@ -61,3 +61,16 @@ The sighting lasted seconds, at night, with very rapid angular motion. Under tho
 brain closes “windows” and structure where none exist. A bright, fragmenting bolide seen from the
 side produces exactly the image the pilots described — including the impression of a cigar trailing
 flame.
+
+## Where the 1948 papers disagree
+
+The incident summaries forwarded from Wright Field in March 1949 (DOW-UAP-D088) hold the case as
+incident 144: a check-list, Captain Chiles's letter to Eastern Air Lines of 3 August 1948 and a
+statement by his co-pilot, John B. Whitted. They place the sighting differently. The check-list
+gives the location as "20 miles south of Montgomery, Ala". Chiles writes that they "were twenty miles
+southwest of Montgomery, Ala.", Whitted that "our position was 25 miles southwest of Montgomery,
+Ala."
+
+The check-list and Chiles's letter date the sighting 24 July 1948. Whitted gives one date, for the
+departure: trip 576 "left Houston, Texas at 8:40 PM Eastern Standard Time, Friday night", followed by
+"July 22, 1948". The papers do not say which version is right, and this entry does not either.
