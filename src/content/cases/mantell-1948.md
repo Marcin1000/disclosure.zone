@@ -38,6 +38,14 @@ sources:
 - "tier": "T1"
   label: "USAF aircraft accident report, January 1948"
   archive: "nara-bluebook-catalog"
+- "tier": "T1"
+  label: "Incident summaries of unidentified flying objects, forwarded from Wright Field on 14 March 1949, incidents 1 to 100 (DOW-UAP-D087)"
+  note: "Incidents 33 and 33a to 33g (pp. 81–96): check-lists and statements from Godman Field and the surrounding area for 7 January 1948. Page 94 sets out the radio exchange between the tower and NG 869 as four people at Godman reported it."
+  ref: "pursue-d087"
+- "tier": "T1"
+  label: "Air Intelligence Division Study No. 203, “Analysis of Flying Object Incidents in the U. S.”, 10 December 1948 (DOW-UAP-D094)"
+  note: "Directorate of Intelligence, USAF, and Office of Naval Intelligence. Paragraph 2k of Appendix C (p. 17) describes the death of “a National Guard pilot” on 7 January 1948 without naming him. Page 21 puts a Godman sighting of 19 August 1948 down to Venus and suggests the earlier Godman incidents may have been Venus too."
+  ref: "pursue-d094"
 ---
 
 ## Why an “explained” case still matters
@@ -56,3 +64,11 @@ extraterrestrial hypothesis whatsoever.
 The first official explanation (Venus) was wrong and was quickly challenged. The second proved
 durable. The lesson: **a fast official explanation is neither automatically true nor automatically
 a cover-up.** Sometimes it is simply the first hypothesis offered under incomplete data.
+
+Challenged is not the same as dropped. The Air Intelligence Division's study of 10 December 1948,
+prepared with the Office of Naval Intelligence, describes a sighting at Godman on 19 August 1948 and
+ends: “The object was determined to be the planet Venus by Mr. Moore, the head astronomer at the
+University of Louisville, Louisville, Kentucky. It is believed that earlier incidents at Godman
+Field (reference paragraph 2k, page 12, Appendix ‘C’) may also have been observations of the planet
+Venus.” Its paragraph 2k is the event of 7 January 1948: “a National Guard pilot was killed while
+attempting to chase an unidentified object up to 30,000 feet.” The study does not name Mantell.

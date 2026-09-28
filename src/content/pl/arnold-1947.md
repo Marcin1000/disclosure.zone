@@ -15,6 +15,8 @@ alternatives:
 sources:
 - "label": "Akta Project Blue Book / wczesne dochodzenie USAF, sprawa Arnolda"
 - "label": "Pisemna relacja Kennetha Arnolda złożona władzom lotniczym (1947)"
+- "label": "Streszczenia incydentów z niezidentyfikowanymi obiektami latającymi, przesłane z Wright Field 14 marca 1949, incydenty od 1 do 100 (DOW-UAP-D087)"
+  note: "Incydent 17 (s. 45–46): formularz i relacja ze szkicem. Kalka jest tak blada, że większości wpisów nie da się odczytać."
 ---
 
 ## Najważniejsze nieporozumienie w historii dziedziny

@@ -38,6 +38,10 @@ sources:
 - "tier": "T3"
   label: "The pilot’s written report filed immediately after the flight"
   archive: "nara-bluebook-catalog"
+- "tier": "T1"
+  label: "Incident summaries of unidentified flying objects, forwarded from Wright Field on 14 March 1949, incidents 101 to 172 (DOW-UAP-D088)"
+  note: "Incidents 172 and 172A to 172c (pp. 203–209): check-lists for George F. Gorman, the Fargo tower controllers L. D. Jensen and Manuel E. Johnson, and Dr. Cannon, with narratives. The pages are negative photostats with no text layer."
+  ref: "pursue-d088"
 ---
 
 ## The classic relative-geometry trap

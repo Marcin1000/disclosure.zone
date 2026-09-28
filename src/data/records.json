@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T11:58:31.825Z",
+ "generated": "2026-09-28T13:38:02.330Z",
  "count": 450,
  "records": [
   {
@@ -3952,7 +3952,10 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "arnold-1947",
+    "mantell-1948"
+   ],
    "illegible": null,
    "related": []
   },
@@ -3973,7 +3976,10 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "chiles-whitted-1948",
+    "gorman-1948"
+   ],
    "illegible": null,
    "related": []
   },
@@ -4908,7 +4914,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D094_Analysis-of-Flying-Object-Incidents-in-the-US_1949.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "mantell-1948"
+   ],
    "illegible": null,
    "related": []
   },

@@ -103,6 +103,12 @@ const CASE_LINKS = {
   'CIA-UAP-016': ['himalaya-1968'],
   // Depesza z 3 lipca 2008: obiekt nad lotniskiem w Harare i zimbabweńska gotowość
   'CIA-UAP-017': ['harare-2008'],
+  // Streszczenia incydentów z Wright Field z 14 marca 1949, dwie części jednego dokumentu:
+  // D087 ma Arnolda (17) i Godman (33 do 33g), D088 Chilesa i Whitteda (144) oraz Fargo (172 do 172c).
+  'DOW-UAP-D087': ['arnold-1947', 'mantell-1948'],
+  'DOW-UAP-D088': ['chiles-whitted-1948', 'gorman-1948'],
+  // Studium nr 203 z 10 grudnia 1948: Wenus nad Godman i odesłanie do incydentu z 7 stycznia 1948
+  'DOW-UAP-D094': ['mantell-1948'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 

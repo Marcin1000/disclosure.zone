@@ -25,7 +25,7 @@ scores:
   T: 4
   X: 2
   D: 3
-summary: "Two Eastern Air Lines pilots reported passing a large cigar-shaped object with a row of bright windows and a flame at the rear. The case was one of the pillars of the internal Project SIGN document said to have argued an interplanetary hypothesis."
+summary: "Two Eastern Air Lines pilots reported passing a large cigar-shaped object with two rows of bright windows and a flame at the rear. The case was one of the pillars of the internal Project SIGN document said to have argued an interplanetary hypothesis."
 official: "Blue Book ultimately classified the event as a bolide (meteor)."
 alternatives:
 - "A bright bolide breaking up in the atmosphere — the “windows” being fragments seen for a fraction of a second."
@@ -40,6 +40,10 @@ sources:
   label: "Accounts of the “Estimate of the Situation” document"
   note: "The document itself does not survive in the archives and its existence is unconfirmed."
   archive: "nara-bluebook-catalog"
+- "tier": "T1"
+  label: "Incident summaries of unidentified flying objects, forwarded from Wright Field on 14 March 1949, incidents 101 to 172 (DOW-UAP-D088)"
+  note: "Incident 144 (pp. 127–136): the check-list, Captain C. S. Chiles’s letter to Eastern Air Lines of 3 August 1948 (p. 131) and John B. Whitted’s statement (p. 134). Incidents 144a and 144b are other sightings the same night near Blackstone, Virginia."
+  ref: "pursue-d088"
 ---
 
 ## The case that built the “Estimate of the Situation” myth

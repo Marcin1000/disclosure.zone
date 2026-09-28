@@ -14,6 +14,8 @@ alternatives:
 sources:
 - "label": "Akta Project Blue Book, sprawa Gorman"
 - "label": "Pisemny raport pilota złożony bezpośrednio po locie"
+- "label": "Streszczenia incydentów z niezidentyfikowanymi obiektami latającymi, przesłane z Wright Field 14 marca 1949, incydenty od 101 do 172 (DOW-UAP-D088)"
+  note: "Incydenty 172 i od 172A do 172c (s. 203–209): formularze George'a F. Gormana, kontrolerów z wieży w Fargo L. D. Jensena i Manuela E. Johnsona oraz dr. Cannona, z relacjami. Strony są negatywami fotostatów bez warstwy tekstowej."
 ---
 
 ## Klasyczna pułapka geometrii względnej
