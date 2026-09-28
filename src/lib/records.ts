@@ -21,7 +21,7 @@ export type RecordKind = 'document' | 'recording' | 'image' | 'unknown';
  * same: ten sam dokument w innym skanie; part: cały ten plik jest w tamtym; whole: odwrotnie;
  * edition: ten sam tekst w innym wydaniu; next: dokument ciągnie się w tamtym pliku; prev: odwrotnie.
  */
-export type RecRelation = 'same' | 'part' | 'whole' | 'edition' | 'next' | 'prev';
+export type RecRelation = 'same' | 'part' | 'whole' | 'edition' | 'next' | 'prev' | 'report' | 'recording';
 
 export interface Rec {
   slug: string;

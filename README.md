@@ -112,12 +112,14 @@ that: it has not been read, scored or summarised.
 
 The same rule about links applies, and the same refusal to round it up:
 
-- **285 of 450** records have an address for the material itself
-- **106** point at the publisher's page for that item
+- **273 of 450** records have an address for the material itself
+- **133** point at the publisher's page for that item, including 27 recordings from release
+  01 that the index linked to a mission report or to nothing, and that we point at the
+  publisher's video page instead, keeping the address the index gave
 - **42** give only the page of the release the document sits inside, which is not an
   address for a document and is not counted as one
 - **1** gives an address the publisher does not serve, confirmed by fetching it
-- **16** have no link at all
+- **1** has no link at all
 - **40** are cited by a case so far
 
 That last number is the honest one. Reading a document into a case is work a person does,

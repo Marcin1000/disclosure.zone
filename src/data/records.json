@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T15:20:13.559Z",
+ "generated": "2026-09-28T16:08:56.227Z",
  "count": 450,
  "records": [
   {
@@ -885,7 +885,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr19",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d12",
@@ -908,7 +913,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr20",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d14",
@@ -930,7 +940,7 @@
    "cases": [],
    "illegible": null,
    "documentSays": {
-    "place": "Syrian coast, north of Latakia",
+    "place": "Syrian coast near Hmeimim air base, south-east of Latakia",
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
@@ -957,7 +967,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr22",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d18",
@@ -980,7 +995,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr23",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d19",
@@ -1053,7 +1073,16 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr26",
+     "rel": "recording"
+    },
+    {
+     "slug": "dow-uap-pr27",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d23-2",
@@ -1099,7 +1128,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr28",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d27",
@@ -1126,7 +1160,12 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr29",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d28",
@@ -1195,7 +1234,20 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr31",
+     "rel": "recording"
+    },
+    {
+     "slug": "dow-uap-pr32",
+     "rel": "recording"
+    },
+    {
+     "slug": "dow-uap-pr33",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d32-2",
@@ -1264,7 +1316,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr34",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d35",
@@ -1287,7 +1344,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr35",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d38",
@@ -1310,7 +1372,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr36",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d4",
@@ -1917,17 +1984,22 @@
    "place": "Middle East",
    "year": 2022,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006056/dow-uap-pr19-unresolved-uap-report-middle-east-may-2022",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d10",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr20",
@@ -1950,7 +2022,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d12",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr21",
@@ -1963,19 +2040,19 @@
    "place": "Iraq",
    "year": 2022,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006059/dow-uap-pr21-unresolved-uap-report-iraq-may-2022",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": {
-    "place": "Syrian coast, north of Latakia",
+    "place": "Syrian coast near Hmeimim air base, south-east of Latakia",
     "placeFrom": "grid"
    },
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
    "related": []
   },
   {
@@ -1989,17 +2066,22 @@
    "place": "Syria",
    "year": 2022,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006060/dow-uap-pr22-unresolved-uap-report-syria-july-2022",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d16",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr23",
@@ -2012,17 +2094,22 @@
    "place": "Iraq",
    "year": 2022,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006062/dow-uap-pr23-unresolved-uap-report-iraq-december-2022",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d18",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr26",
@@ -2035,17 +2122,22 @@
    "place": "United Arab Emirates",
    "year": 2023,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006063/dow-uap-pr26-unresolved-uap-report-united-arab-emirates-october-2023",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d23",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr27",
@@ -2058,17 +2150,78 @@
    "place": "United Arab Emirates",
    "year": 2023,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006067/dow-uap-pr27-unresolved-uap-report-united-arab-emirates-october-2023",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d23",
+     "rel": "report"
+    }
+   ]
+  },
+  {
+   "slug": "dow-uap-pr28",
+   "id": "DOW-UAP-PR28",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Greece, January 2024",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Greece",
+   "year": 2024,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d25",
+     "rel": "report"
+    }
+   ]
+  },
+  {
+   "slug": "dow-uap-pr29",
+   "id": "DOW-UAP-PR29",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, United Arab Emirates, June 2024",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "United Arab Emirates",
+   "year": 2024,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": [
+    {
+     "slug": "dow-uap-d27",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr31",
@@ -2081,17 +2234,22 @@
    "place": "Syria",
    "year": 2024,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006076/dow-uap-pr31-unresolved-uap-report-syria-october-2024",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d32",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr32",
@@ -2104,17 +2262,22 @@
    "place": "Syria",
    "year": 2024,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006078/dow-uap-pr32-unresolved-uap-report-syria-october-2024",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d32",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr33",
@@ -2127,17 +2290,22 @@
    "place": "Syria",
    "year": 2024,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006079/dow-uap-pr33-unresolved-uap-report-syria-october-2024",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d32",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr34",
@@ -2150,17 +2318,22 @@
    "place": "Greece",
    "year": 2023,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d33",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr35",
@@ -2173,17 +2346,22 @@
    "place": "Greece",
    "year": 2023,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d35",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr36",
@@ -2196,12 +2374,316 @@
    "place": "Middle East",
    "year": 2020,
    "yearEnd": null,
-   "kind": "document",
-   "sourceKind": "file",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "01",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
-   "format": "pdf",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006083/dow-uap-pr36-unresolved-uap-report-middle-east-may-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
+   "related": [
+    {
+     "slug": "dow-uap-d38",
+     "rel": "report"
+    }
+   ]
+  },
+  {
+   "slug": "dow-uap-pr37",
+   "id": "DOW-UAP-PR37",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006087/dow-uap-pr37-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr38",
+   "id": "DOW-UAP-PR38",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2013",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2013,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006088/dow-uap-pr38-unresolved-uap-report-middle-east-2013",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr39",
+   "id": "DOW-UAP-PR39",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006089/dow-uap-pr39-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr40",
+   "id": "DOW-UAP-PR40",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006093/dow-uap-pr40-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr41",
+   "id": "DOW-UAP-PR41",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006094/dow-uap-pr41-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr42",
+   "id": "DOW-UAP-PR42",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006097/dow-uap-pr42-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr43",
+   "id": "DOW-UAP-PR43",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Africa, 2025",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Africa",
+   "year": 2025,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006159/dow-uap-pr43-unresolved-uap-report-africa-2025",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr44",
+   "id": "DOW-UAP-PR44",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006104/dow-uap-pr44-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr45",
+   "id": "DOW-UAP-PR45",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Middle East, 2020",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Middle East",
+   "year": 2020,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006105/dow-uap-pr45-unresolved-uap-report-middle-east-2020",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr46",
+   "id": "DOW-UAP-PR46",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, INDOPACOM, 2024",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "INDOPACOM",
+   "year": 2024,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr47",
+   "id": "DOW-UAP-PR47",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, INDOPACOM, 2023",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "INDOPACOM",
+   "year": 2023,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006107/dow-uap-pr47-unresolved-uap-report-indopacom-2023",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr48",
+   "id": "DOW-UAP-PR48",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, INDOPACOM, 2024",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "INDOPACOM",
+   "year": 2024,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006110/dow-uap-pr48-unresolved-uap-report-indopacom-2024",
+   "format": "video",
+   "cases": [],
+   "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
+   "related": []
+  },
+  {
+   "slug": "dow-uap-pr49",
+   "id": "DOW-UAP-PR49",
+   "idFrom": "title",
+   "title": "Unresolved UAP Report, Department of the Army, 2026",
+   "agency": "DOW",
+   "agencyName": "Department of War",
+   "series": null,
+   "place": "Department of the Army",
+   "year": 2026,
+   "yearEnd": null,
+   "kind": "recording",
+   "sourceKind": "page",
+   "release": "01",
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1006111/dow-uap-pr49-unresolved-uap-report-department-army-2026",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
@@ -9708,351 +10190,6 @@
    "publisher": "dvidshub.net",
    "source": "https://www.dvidshub.net/video/1023407/dow-uap-pr160-presentation-captain-edward-j-ruppelt-1952",
    "format": "video",
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr28",
-   "id": "DOW-UAP-PR28",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Greece, January 2024",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Greece",
-   "year": 2024,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr29",
-   "id": "DOW-UAP-PR29",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, United Arab Emirates, June 2024",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "United Arab Emirates",
-   "year": 2024,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr37",
-   "id": "DOW-UAP-PR37",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr38",
-   "id": "DOW-UAP-PR38",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2013",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2013,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr39",
-   "id": "DOW-UAP-PR39",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr40",
-   "id": "DOW-UAP-PR40",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr41",
-   "id": "DOW-UAP-PR41",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr42",
-   "id": "DOW-UAP-PR42",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr43",
-   "id": "DOW-UAP-PR43",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Africa, 2025",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Africa",
-   "year": 2025,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr44",
-   "id": "DOW-UAP-PR44",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr45",
-   "id": "DOW-UAP-PR45",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Middle East, 2020",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Middle East",
-   "year": 2020,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr46",
-   "id": "DOW-UAP-PR46",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, INDOPACOM, 2024",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "INDOPACOM",
-   "year": 2024,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr47",
-   "id": "DOW-UAP-PR47",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, INDOPACOM, 2023",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "INDOPACOM",
-   "year": 2023,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr48",
-   "id": "DOW-UAP-PR48",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, INDOPACOM, 2024",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "INDOPACOM",
-   "year": 2024,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
-   "cases": [],
-   "illegible": null,
-   "documentSays": null,
-   "sourceAsIndexed": null,
-   "related": []
-  },
-  {
-   "slug": "dow-uap-pr49",
-   "id": "DOW-UAP-PR49",
-   "idFrom": "title",
-   "title": "Unresolved UAP Report, Department of the Army, 2026",
-   "agency": "DOW",
-   "agencyName": "Department of War",
-   "series": null,
-   "place": "Department of the Army",
-   "year": 2026,
-   "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "none",
-   "release": null,
-   "publisher": null,
-   "source": null,
-   "format": null,
    "cases": [],
    "illegible": null,
    "documentSays": null,

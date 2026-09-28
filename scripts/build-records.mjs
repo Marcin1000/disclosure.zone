@@ -141,6 +141,57 @@ const SOURCE_FIXES = {
 };
 
 /**
+ * Filmy wydania 01. Indeks podaje przy nich albo raport z misji (PDF), albo nic,
+ * a same nagrania wydawca trzyma na DVIDS. Każdy adres otwarty na żywo; tytuł
+ * strony zgadza się z nagłówkiem XMP pliku z paczki uapvideos.zip wydania 01.
+ * Rekord dostaje stronę nagrania, a adres z indeksu zostaje w sourceAsIndexed.
+ */
+const RECORDING_PAGES = {
+  'DOW-UAP-PR19': 'https://www.dvidshub.net/video/1006056/dow-uap-pr19-unresolved-uap-report-middle-east-may-2022',
+  'DOW-UAP-PR21': 'https://www.dvidshub.net/video/1006059/dow-uap-pr21-unresolved-uap-report-iraq-may-2022',
+  'DOW-UAP-PR22': 'https://www.dvidshub.net/video/1006060/dow-uap-pr22-unresolved-uap-report-syria-july-2022',
+  'DOW-UAP-PR23': 'https://www.dvidshub.net/video/1006062/dow-uap-pr23-unresolved-uap-report-iraq-december-2022',
+  'DOW-UAP-PR26': 'https://www.dvidshub.net/video/1006063/dow-uap-pr26-unresolved-uap-report-united-arab-emirates-october-2023',
+  'DOW-UAP-PR27': 'https://www.dvidshub.net/video/1006067/dow-uap-pr27-unresolved-uap-report-united-arab-emirates-october-2023',
+  'DOW-UAP-PR28': 'https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024',
+  'DOW-UAP-PR29': 'https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024',
+  'DOW-UAP-PR31': 'https://www.dvidshub.net/video/1006076/dow-uap-pr31-unresolved-uap-report-syria-october-2024',
+  'DOW-UAP-PR32': 'https://www.dvidshub.net/video/1006078/dow-uap-pr32-unresolved-uap-report-syria-october-2024',
+  'DOW-UAP-PR33': 'https://www.dvidshub.net/video/1006079/dow-uap-pr33-unresolved-uap-report-syria-october-2024',
+  'DOW-UAP-PR34': 'https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023',
+  'DOW-UAP-PR35': 'https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023',
+  'DOW-UAP-PR36': 'https://www.dvidshub.net/video/1006083/dow-uap-pr36-unresolved-uap-report-middle-east-may-2020',
+  'DOW-UAP-PR37': 'https://www.dvidshub.net/video/1006087/dow-uap-pr37-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR38': 'https://www.dvidshub.net/video/1006088/dow-uap-pr38-unresolved-uap-report-middle-east-2013',
+  'DOW-UAP-PR39': 'https://www.dvidshub.net/video/1006089/dow-uap-pr39-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR40': 'https://www.dvidshub.net/video/1006093/dow-uap-pr40-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR41': 'https://www.dvidshub.net/video/1006094/dow-uap-pr41-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR42': 'https://www.dvidshub.net/video/1006097/dow-uap-pr42-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR43': 'https://www.dvidshub.net/video/1006159/dow-uap-pr43-unresolved-uap-report-africa-2025',
+  'DOW-UAP-PR44': 'https://www.dvidshub.net/video/1006104/dow-uap-pr44-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR45': 'https://www.dvidshub.net/video/1006105/dow-uap-pr45-unresolved-uap-report-middle-east-2020',
+  'DOW-UAP-PR46': 'https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024',
+  'DOW-UAP-PR47': 'https://www.dvidshub.net/video/1006107/dow-uap-pr47-unresolved-uap-report-indopacom-2023',
+  'DOW-UAP-PR48': 'https://www.dvidshub.net/video/1006110/dow-uap-pr48-unresolved-uap-report-indopacom-2024',
+  'DOW-UAP-PR49': 'https://www.dvidshub.net/video/1006111/dow-uap-pr49-unresolved-uap-report-department-army-2026',
+};
+
+/**
+ * Nagranie i raport z misji, który je opisuje. Tylko pary potwierdzone treścią
+ * (opis, data, czujnik, kierunek), nie tytułem; opisy wydawcy mylą się przy
+ * PR26, PR28 i PR29. PR21 pomijamy: ta sama misja co D14, ale nie wiadomo,
+ * którą z dwóch obserwacji pokazuje film.
+ */
+const REPORT_PAIRS = [
+  ['DOW-UAP-PR19', 'DOW-UAP-D10'], ['DOW-UAP-PR20', 'DOW-UAP-D12'],
+  ['DOW-UAP-PR22', 'DOW-UAP-D16'], ['DOW-UAP-PR23', 'DOW-UAP-D18'],
+  ['DOW-UAP-PR26', 'dow-uap-d23'], ['DOW-UAP-PR27', 'dow-uap-d23'],
+  ['DOW-UAP-PR28', 'DOW-UAP-D25'], ['DOW-UAP-PR29', 'DOW-UAP-D27'],
+  ['DOW-UAP-PR31', 'dow-uap-d32'], ['DOW-UAP-PR32', 'dow-uap-d32'], ['DOW-UAP-PR33', 'dow-uap-d32'],
+  ['DOW-UAP-PR34', 'DOW-UAP-D33'], ['DOW-UAP-PR35', 'DOW-UAP-D35'], ['DOW-UAP-PR36', 'DOW-UAP-D38'],
+];
+
+/**
  * Tytuł wydawcy przeczy treści dokumentu. Tytuł zostawiamy dosłownie i miejsce
  * „z tytułu” też; obok zapisujemy, co mówi sam dokument. placeFrom mówi, skąd
  * miejsce: text to słowa dokumentu, grid to nasze przeliczenie siatki MGRS z dokumentu.
@@ -148,8 +199,8 @@ const SOURCE_FIXES = {
  */
 const DOCUMENT_SAYS = {
   'DOW-UAP-D20@01': { place: 'Syria', year: 2023, placeFrom: 'text' },
-  'DOW-UAP-D14@01': { place: 'Syrian coast, north of Latakia', placeFrom: 'grid' },
-  'DOW-UAP-PR21@01': { place: 'Syrian coast, north of Latakia', placeFrom: 'grid' },
+  'DOW-UAP-D14@01': { place: 'Syrian coast near Hmeimim air base, south-east of Latakia', placeFrom: 'grid' },
+  'DOW-UAP-PR21@01': { place: 'Syrian coast near Hmeimim air base, south-east of Latakia', placeFrom: 'grid' },
   'DOW-UAP-D27@01': { place: 'Gulf of Oman', year: 2024, placeFrom: 'grid' },
   'DOW-UAP-D42@01': { place: 'Persian Gulf', year: 2020, placeFrom: 'grid' },
   'DOW-UAP-D4@01': { place: 'Ionian Sea', placeFrom: 'grid' },
@@ -333,12 +384,24 @@ for (const r of manifest.records) {
  * Klucz bez wydania, który trafia w kilka rekordów, jest błędem, a nie
  * niejednoznacznością do rozstrzygnięcia na chybił trafił.
  */
+for (const r of records) {
+  const page = r.id && RECORDING_PAGES[r.id];
+  if (!page) continue;
+  r.sourceAsIndexed = r.source;
+  r.source = page;
+  r.sourceKind = 'page';
+  r.format = 'video';
+  r.kind = 'recording';
+  r.publisher = 'dvidshub.net';
+  r.release ??= '01';
+}
+
 const lookup = (key) => {
   const [id, rel] = key.split('@');
   return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
 };
 const ambiguous = [], unused = [];
-for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(DOCUMENT_SAYS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b])]) {
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
   const hits = lookup(key);
   if (!hits.length) unused.push(key);
   else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
@@ -351,11 +414,16 @@ if (unused.length) console.error(`registry keys that match no record: ${unused.j
 if (ambiguous.length || unused.length) process.exit(1);
 
 // powiązania zapisujemy po obu stronach, żeby każda strona rekordu je pokazała
-const INVERSE = { same: 'same', part: 'whole', edition: 'edition', next: 'prev' };
+const INVERSE = { same: 'same', part: 'whole', edition: 'edition', next: 'prev', report: 'recording' };
 for (const [a, rel, b] of SAME_DOCUMENT) {
   const [ra] = lookup(a), [rb] = lookup(b);
   ra.related.push({ slug: rb.slug, rel });
   rb.related.push({ slug: ra.slug, rel: INVERSE[rel] });
+}
+for (const [a, b] of REPORT_PAIRS) {
+  const [ra] = lookup(a), [rb] = lookup(b);
+  ra.related.push({ slug: rb.slug, rel: 'report' });
+  rb.related.push({ slug: ra.slug, rel: 'recording' });
 }
 
 // stała kolejność, żeby diff pokazywał zmiany w danych, a nie w sortowaniu

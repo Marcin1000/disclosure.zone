@@ -43,6 +43,9 @@ const related = r.related
 /** Kopie tego samego tekstu dostają jedną notkę, części jednego dokumentu drugą. */
 const relCopy = related.some(x => ['same', 'edition', 'part', 'whole'].includes(x.rel));
 const relSeq = related.some(x => x.rel === 'next' || x.rel === 'prev');
+const relPair = related.some(x => x.rel === 'report' || x.rel === 'recording');
+/** Przy nagraniu indeks podawał raport, który istnieje; przy D20 adres, którego nie ma. */
+const indexedReport = r.kind === 'recording' && !!r.sourceAsIndexed;
 
 const media = mediaFor(r);
 /** Wydawca sam nazywa te pliki renderingiem albo rekonstrukcją, nie zapisem. */
@@ -154,9 +157,9 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               {r.sourceKind === 'landing' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.landingNote')}</p>}
               {r.sourceKind === 'dead' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.deadNote')}</p>}
               {r.sourceAsIndexed && (
-                <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.asIndexed')}
+                <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t(indexedReport ? 'rec.asIndexedReport' : 'rec.asIndexed')}
                   <span class="mono" style="display:block;font-size:.76rem;color:var(--fg-faint);overflow-wrap:anywhere;margin-top:.3rem">{r.sourceAsIndexed}</span>
-                  {t('rec.asIndexedNote')}</p>
+                  {!indexedReport && t('rec.asIndexedNote')}</p>
               )}
             </>
           : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}
@@ -183,6 +186,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
         </ul>
         {relCopy && <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relNote')}</p>}
         {relSeq && <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relSeqNote')}</p>}
+        {relPair && <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relPairNote')}</p>}
       </section>
     )}
 
