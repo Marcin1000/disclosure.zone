@@ -26,8 +26,12 @@ export const STILLS: Record<string, StillInfo> = {
   // opisanego biało-czerwonego półowalu nie ma w żadnej z 198 klatek pliku z paczki
   'DOW-UAP-PR32': { at: 3, object: 'absent' },
   'DOW-UAP-PR33': shown(1.5),
-  'DOW-UAP-PR34': shown(30),
-  'DOW-UAP-PR35': shown(3),
+  // 1:04,5: biały punkt w małym celowniku tuż pod krzyżem; znak N u góry to nakładka, nie obiekt
+  'DOW-UAP-PR34': shown(64.5),
+  // 0:12,5: mały punkt tuż przy krzyżu, po prawej u dołu. Biały kłębiasty kształt, który płynie
+  // z chmurami, nie jest obiektem i siedzi teraz pod górnym zaczernieniem (widać jego odłamki);
+  // punkt dalej w prawo to drugi punkt, którego wydawca nie wymienia
+  'DOW-UAP-PR35': shown(12.5),
   'DOW-UAP-PR36': shown(50),
   // w każdym kadrze jednostka pływająca, której opis wydawcy nie wymienia
   'DOW-UAP-PR37': { at: 3, object: 'not-found' },
@@ -58,6 +62,12 @@ export const STILLS: Record<string, StillInfo> = {
   'DOW-UAP-PR089': shown(15),
   // punkt widać dopiero po powiększeniu; szary znak N krążący wokół krzyża to nakładka, nie obiekt
   'DOW-UAP-PR092': shown(94),
+  // Rekonstrukcje, które FBI przygotowało dla wydawcy z relacji świadka 3 (western-us-2023):
+  // ilustracja relacji, nie zapis zjawiska. „Shown” znaczy tu, że widać to, co opisuje relacja.
+  // 0:35: pomarańczowa kula i trzy czerwone kule w linii tuż po wyrzuceniu
+  'FBI-UAP-PR005': shown(35),
+  // plakat wydawcy, około 0:03: trzy z czterech czerwonych świateł, czwarte wchodzi chwilę później
+  'FBI-UAP-PR006': shown(3),
 };
 
 /** 135 -> "2:15", 2.6 -> "0:02.6" */
