@@ -411,10 +411,30 @@ for (const r of manifest.records) {
  */
 /**
  * Nagrania, których indeks nie przypisuje do wydania, a które leżą w paczce
- * wydania. PR050–PR099 są w uap052226.zip wydania 02 (22 V 2026); sprawdzone
- * na plikach, nie po dacie publikacji na DVIDS.
+ * wideo wydania. Sprawdzone na plikach, nie po dacie publikacji na DVIDS:
+ * numer zasobu ze strony DVIDS zgadza się z nazwą pliku w paczce, a na
+ * próbkach z każdej grupy dane obrazu (mdat) są identyczne. Paczka wydania 03
+ * trzyma przekodowane wersje tych samych klatek, nie te same bajty.
+ * Paczka wydania 06 jest tylko na stronie wydawcy; jej spis czytano zdalnie.
  */
-const BUNDLE_RELEASE = [{ from: 50, to: 99, release: '02' }];
+const BUNDLE_RELEASE = [
+  { prefix: 'DOW-UAP-PR', nums: [[50, 99]], release: '02' },               // uap052226.zip
+  { prefix: 'NASA-UAP-D', nums: [[8, 14]], release: '02' },                // uap052226.zip
+  { prefix: 'FBI-UAP-PR', nums: [[1, 6]], release: '03' },                 // uap_videos_061226.zip
+  { prefix: 'NASA-UAP-D', nums: [[23, 25]], release: '03' },               // uap_videos_061226.zip
+  { prefix: 'DOW-UAP-PR', nums: [[24, 24], [30, 30], [100, 116]], release: '04' }, // uap_release04_videos_071026.zip
+  { prefix: 'NASA-UAP-D', nums: [[26, 29]], release: '04' },               // uap_release04_videos_071026.zip
+  { prefix: 'DOW-UAP-PR', nums: [[133, 133], [135, 135], [140, 141], [143, 144], [148, 148], [150, 152], [159, 160]], release: '06' }, // pursue_vids_091826.zip
+  { prefix: 'LLE-UAP-PR', nums: [[1, 4]], release: '06' },                 // pursue_vids_091826.zip
+];
+const bundleRelease = (id) => {
+  for (const b of BUNDLE_RELEASE) {
+    if (!id.startsWith(b.prefix)) continue;
+    const n = /^\d+$/.test(id.slice(b.prefix.length)) ? +id.slice(b.prefix.length) : NaN;
+    if (b.nums.some(([lo, hi]) => n >= lo && n <= hi)) return b.release;
+  }
+  return null;
+};
 /**
  * Rok nagrania tam, gdzie tytuł w indeksie go ucina. PR088 i PR089: indeks
  * podaje „31 AUG”, a tytuł nadany przez użytkownika, cytowany przez AARO na
@@ -423,9 +443,8 @@ const BUNDLE_RELEASE = [{ from: 50, to: 99, release: '02' }];
 const RECORDING_YEARS = { 'DOW-UAP-PR088': 2020, 'DOW-UAP-PR089': 2020 };
 
 for (const r of records) {
-  const n = /^DOW-UAP-PR0?(\d+)$/.exec(r.id ?? '')?.[1];
-  const b = n && BUNDLE_RELEASE.find(x => +n >= x.from && +n <= x.to);
-  if (b && !r.release) r.release = b.release;
+  const b = r.id && !r.release ? bundleRelease(r.id) : null;
+  if (b) r.release = b;
   if (r.id && RECORDING_YEARS[r.id] && !r.year) r.year = RECORDING_YEARS[r.id];
 }
 
