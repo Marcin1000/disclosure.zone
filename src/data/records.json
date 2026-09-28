@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T11:53:37.092Z",
+ "generated": "2026-09-28T11:58:31.825Z",
  "count": 450,
  "records": [
   {
@@ -3658,7 +3658,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "harare-2008"
+   ],
    "illegible": null,
    "related": []
   },

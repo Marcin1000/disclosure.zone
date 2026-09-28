@@ -101,6 +101,8 @@ const CASE_LINKS = {
   // Raport informacyjny z 1968: siedem obserwacji w Ladakhu, Nepalu, Sikkimie i Bhutanie
   // oraz krater w Baltichaur. Ladakh 2012 nie jest podpięty, bo raport nie daje ku temu powodu.
   'CIA-UAP-016': ['himalaya-1968'],
+  // Depesza z 3 lipca 2008: obiekt nad lotniskiem w Harare i zimbabweńska gotowość
+  'CIA-UAP-017': ['harare-2008'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
