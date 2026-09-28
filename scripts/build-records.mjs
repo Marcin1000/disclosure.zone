@@ -131,6 +131,35 @@ const DEAD_SOURCES = new Set(['DOW-UAP-D134']);
 const YEAR_FIXES = { 'FBI-UAP-D022@03': 2023 };
 
 /**
+ * Adres z indeksu, którego wydawca nie obsługuje, a ten sam plik leży u niego
+ * pod inną nazwą. Wpisujemy tylko adresy pobrane i porównane bajt w bajt
+ * z paczką wydania. Strona rekordu pokazuje oba: podany i działający.
+ */
+const SOURCE_FIXES = {
+  // indeks: …southern-united-states-2020.pdf (404); ten sam plik pod nazwą „iraq-2023”
+  'DOW-UAP-D20@01': 'https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf',
+};
+
+/**
+ * Tytuł wydawcy przeczy treści dokumentu. Tytuł zostawiamy dosłownie i miejsce
+ * „z tytułu” też; obok zapisujemy, co mówi sam dokument. placeFrom mówi, skąd
+ * miejsce: text to słowa dokumentu, grid to nasze przeliczenie siatki MGRS z dokumentu.
+ * Rok, jeśli podany, to data zdarzenia z dokumentu; zastępuje rok z tytułu w filtrach.
+ */
+const DOCUMENT_SAYS = {
+  'DOW-UAP-D20@01': { place: 'Syria', year: 2023, placeFrom: 'text' },
+  'DOW-UAP-D14@01': { place: 'Syrian coast, north of Latakia', placeFrom: 'grid' },
+  'DOW-UAP-PR21@01': { place: 'Syrian coast, north of Latakia', placeFrom: 'grid' },
+  'DOW-UAP-D27@01': { place: 'Gulf of Oman', year: 2024, placeFrom: 'grid' },
+  'DOW-UAP-D42@01': { place: 'Persian Gulf', year: 2020, placeFrom: 'grid' },
+  'DOW-UAP-D4@01': { place: 'Ionian Sea', placeFrom: 'grid' },
+  'DOW-UAP-D5@01': { place: 'Ionian Sea and Black Sea', placeFrom: 'grid' },
+  'DOW-UAP-D6@01': { place: 'Libyan Sea, south of Crete', placeFrom: 'grid' },
+  'DOW-UAP-D8@01': { place: 'Eastern Mediterranean', placeFrom: 'grid' },
+  'DOW-UAP-D74@01': { place: 'Western Iraq', placeFrom: 'grid' },
+};
+
+/**
  * Ten sam dokument wydany więcej niż raz. Wpisujemy wyłącznie pary sprawdzone
  * porównaniem stron, nie po tytule. „same" to ten sam dokument w innym skanie,
  * „part" znaczy, że wszystkie strony pierwszego pliku są w drugim, „edition"
@@ -256,7 +285,10 @@ const records = [];
 
 for (const r of manifest.records) {
   const t = parseTitle(r.title);
-  const s = parseSource(r.officialSourceUrl || null);
+  const idPre = t.id ?? (r.officialSourceUrl ? idFromFile(r.officialSourceUrl) : null);
+  const fixKey = idPre && `${idPre}@${parseSource(r.officialSourceUrl || null).release}`;
+  const fixedUrl = fixKey ? SOURCE_FIXES[fixKey] : undefined;
+  const s = parseSource(fixedUrl ?? r.officialSourceUrl ?? null);
   // Wydanie 02 podaje w indeksie sam opis, a identyfikator stoi tylko w nazwie
   // pliku u wydawcy. Bierzemy go stamtąd, ale adres strony rekordu budujemy
   // jak dotąd z tytułu, żeby istniejące linki dalej działały.
@@ -280,8 +312,8 @@ for (const r of manifest.records) {
     agencyName: a.name,
     series,
     place: t.place,
-    year: YEAR_FIXES[`${id}@${s.release}`] ?? t.year,
-    yearEnd: YEAR_FIXES[`${id}@${s.release}`] ? null : t.yearEnd,
+    year: YEAR_FIXES[`${id}@${s.release}`] ?? DOCUMENT_SAYS[`${id}@${s.release}`]?.year ?? t.year,
+    yearEnd: YEAR_FIXES[`${id}@${s.release}`] || DOCUMENT_SAYS[`${id}@${s.release}`]?.year ? null : t.yearEnd,
     kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
         : s.sourceKind === 'file' ? 'document' : 'unknown',
     sourceKind: id && DEAD_SOURCES.has(id) ? 'dead' : s.sourceKind,
@@ -291,6 +323,8 @@ for (const r of manifest.records) {
     format: s.format,
     cases: CASE_LINKS[`${id}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
     illegible: (id && ILLEGIBLE[id]) ?? null,
+    documentSays: DOCUMENT_SAYS[`${id}@${s.release}`] ?? null,
+    sourceAsIndexed: fixedUrl ? r.officialSourceUrl : null,
     related: [],
   });
 }
@@ -304,7 +338,7 @@ const lookup = (key) => {
   return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
 };
 const ambiguous = [], unused = [];
-for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b])]) {
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(DOCUMENT_SAYS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b])]) {
   const hits = lookup(key);
   if (!hits.length) unused.push(key);
   else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
@@ -331,7 +365,7 @@ records.sort((a, b) =>
 
 const out = {
   dataset: 'disclosure.zone / PURSUE document registry',
-  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
   index: manifest.index ?? null,
   harvested: manifest.harvested ?? null,
   generated: new Date().toISOString(),

@@ -46,6 +46,10 @@ export interface Rec {
   illegible: 'thumbnail' | null;
   /** Ten sam dokument wydany pod innym rekordem, sprawdzony porównaniem stron. */
   related: { slug: string; rel: RecRelation }[];
+  /** Co mówi sam dokument, gdy tytuł wydawcy mu przeczy. placeFrom: słowa dokumentu albo nasze przeliczenie siatki. */
+  documentSays: { place: string; year?: number; placeFrom: 'text' | 'grid' } | null;
+  /** Adres z indeksu, gdy wydawca serwuje ten sam plik pod innym; source trzyma wtedy działający. */
+  sourceAsIndexed: string | null;
 }
 
 export const records: Rec[] = data.records as Rec[];

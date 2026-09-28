@@ -94,6 +94,11 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
           <div class="meta__row"><span class="meta__k">{t('rec.meta.place')}</span>
             <span class="meta__v">{r.place}</span></div>
         )}
+        {r.documentSays && (
+          <div class="meta__row"><span class="meta__k">{t('rec.meta.docSays')}</span>
+            <span class="meta__v">{r.documentSays.place}{r.documentSays.year ? `, ${r.documentSays.year}` : ''}
+              <span class="dim" style="font-size:.85rem"> ({t(`rec.docSays.${r.documentSays.placeFrom}`)})</span></span></div>
+        )}
         {yearLabel(r) && (
           <div class="meta__row"><span class="meta__k">{t('rec.meta.year')}</span>
             <span class="meta__v mono">{yearLabel(r)}</span></div>
@@ -148,6 +153,11 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               <p class="mono" style="margin:1rem 0 0;font-size:.76rem;color:var(--fg-faint);overflow-wrap:anywhere">{r.source}</p>
               {r.sourceKind === 'landing' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.landingNote')}</p>}
               {r.sourceKind === 'dead' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.deadNote')}</p>}
+              {r.sourceAsIndexed && (
+                <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.asIndexed')}
+                  <span class="mono" style="display:block;font-size:.76rem;color:var(--fg-faint);overflow-wrap:anywhere;margin-top:.3rem">{r.sourceAsIndexed}</span>
+                  {t('rec.asIndexedNote')}</p>
+              )}
             </>
           : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}
       </div>

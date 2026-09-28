@@ -1,9 +1,9 @@
 {
  "dataset": "disclosure.zone / PURSUE document registry",
- "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
+ "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T14:07:26.242Z",
+ "generated": "2026-09-28T15:20:13.559Z",
  "count": 450,
  "records": [
   {
@@ -28,6 +28,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -52,6 +54,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -76,6 +80,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -100,6 +106,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -124,6 +132,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -148,6 +158,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -172,6 +184,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -196,6 +210,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -220,6 +236,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -244,6 +262,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -268,6 +288,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -292,6 +314,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -316,6 +340,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -340,6 +366,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -364,6 +392,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -388,6 +418,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -412,6 +444,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -436,6 +470,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -460,6 +496,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -484,6 +522,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -508,6 +548,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -532,6 +574,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -556,6 +600,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -580,6 +626,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -604,6 +652,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -628,6 +678,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -652,6 +704,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -676,6 +730,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -700,6 +756,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -724,6 +782,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -748,6 +808,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -772,6 +834,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -796,6 +860,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -817,6 +883,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -838,6 +906,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -859,6 +929,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Syrian coast, north of Latakia",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -880,6 +955,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -901,6 +978,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -922,6 +1001,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -933,16 +1014,22 @@
    "agencyName": "Department of War",
    "series": null,
    "place": "Southern United States",
-   "year": 2020,
+   "year": 2023,
    "yearEnd": null,
    "kind": "document",
    "sourceKind": "file",
    "release": "01",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-southern-united-states-2020.pdf",
+   "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf",
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Syria",
+    "year": 2023,
+    "placeFrom": "text"
+   },
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-southern-united-states-2020.pdf",
    "related": []
   },
   {
@@ -964,6 +1051,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -985,6 +1074,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1006,6 +1097,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1017,7 +1110,7 @@
    "agencyName": "Department of War",
    "series": null,
    "place": "United Arab Emirates",
-   "year": 2023,
+   "year": 2024,
    "yearEnd": null,
    "kind": "document",
    "sourceKind": "file",
@@ -1027,6 +1120,12 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Gulf of Oman",
+    "year": 2024,
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1048,6 +1147,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1069,6 +1170,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1090,6 +1193,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1111,6 +1216,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1132,6 +1239,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1153,6 +1262,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1174,6 +1285,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1195,6 +1308,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1216,6 +1331,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Ionian Sea",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1227,7 +1347,7 @@
    "agencyName": "Department of War",
    "series": null,
    "place": "Japan",
-   "year": 2023,
+   "year": 2020,
    "yearEnd": null,
    "kind": "document",
    "sourceKind": "file",
@@ -1237,6 +1357,12 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Persian Gulf",
+    "year": 2020,
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1258,6 +1384,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1279,6 +1407,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1300,6 +1430,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1321,6 +1453,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Ionian Sea and Black Sea",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1342,6 +1479,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1363,6 +1502,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1384,6 +1525,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1405,6 +1548,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1426,6 +1571,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1447,6 +1594,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1468,6 +1617,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1489,6 +1640,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1510,6 +1663,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Libyan Sea, south of Crete",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1531,6 +1689,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1552,6 +1712,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1573,6 +1735,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1594,6 +1758,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1615,6 +1781,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1636,6 +1804,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1657,6 +1827,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1678,6 +1850,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Western Iraq",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1699,6 +1876,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1720,6 +1899,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Eastern Mediterranean",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1741,6 +1925,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1762,6 +1948,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1783,6 +1971,11 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": {
+    "place": "Syrian coast, north of Latakia",
+    "placeFrom": "grid"
+   },
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1804,6 +1997,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1825,6 +2020,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1846,6 +2043,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1867,6 +2066,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1888,6 +2089,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1909,6 +2112,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1930,6 +2135,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1951,6 +2158,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1972,6 +2181,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -1993,6 +2204,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2014,6 +2227,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2035,6 +2250,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2056,6 +2273,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2077,6 +2296,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2098,6 +2319,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2119,6 +2342,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2140,6 +2365,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2161,6 +2388,8 @@
    "format": "png",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2182,6 +2411,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2203,6 +2434,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2224,6 +2457,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2245,6 +2480,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2266,6 +2503,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2287,6 +2526,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2308,6 +2549,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2329,6 +2572,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2350,6 +2595,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2371,6 +2618,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2392,6 +2641,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2413,6 +2664,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2434,6 +2687,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2455,6 +2710,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2476,6 +2733,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2497,6 +2756,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2518,6 +2779,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2539,6 +2802,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2560,6 +2825,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2581,6 +2848,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2602,6 +2871,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2623,6 +2894,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2644,6 +2917,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2665,6 +2940,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2686,6 +2963,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2707,6 +2986,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2728,6 +3009,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2749,6 +3032,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2770,6 +3055,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2791,6 +3078,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2812,6 +3101,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2833,6 +3124,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2854,6 +3147,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2875,6 +3170,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2896,6 +3193,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2917,6 +3216,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2938,6 +3239,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2959,6 +3262,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -2980,6 +3285,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3001,6 +3308,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3022,6 +3331,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3043,6 +3354,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3064,6 +3377,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3085,6 +3400,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3106,6 +3423,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3127,6 +3446,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3148,6 +3469,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3169,6 +3492,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3190,6 +3515,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "cia-uap-011",
@@ -3216,6 +3543,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3237,6 +3566,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3258,6 +3589,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3279,6 +3612,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3302,6 +3637,8 @@
     "green-fireballs-1948"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3327,6 +3664,8 @@
     "foo-fighters-1944"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3348,6 +3687,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3369,6 +3710,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3390,6 +3733,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3413,6 +3758,8 @@
     "russell-1955"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3434,6 +3781,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3455,6 +3804,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3476,6 +3827,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": "thumbnail",
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3497,6 +3850,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3518,6 +3873,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "cia-intelligence-information-report-sary-shagan-ussr-1973",
@@ -3544,6 +3901,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3565,6 +3924,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "cia-uap-018",
@@ -3593,6 +3954,8 @@
     "tremonton-1952"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3616,6 +3979,8 @@
     "tremonton-1952"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3639,6 +4004,8 @@
     "himalaya-1968"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3662,6 +4029,8 @@
     "harare-2008"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3683,6 +4052,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "cia-uap-013",
@@ -3709,6 +4080,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3732,6 +4105,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3755,6 +4130,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3778,6 +4155,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3801,6 +4180,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3824,6 +4205,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3847,6 +4230,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3870,6 +4255,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3891,6 +4278,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3912,6 +4301,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3933,6 +4324,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -3957,6 +4350,8 @@
     "mantell-1948"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "dow-uap-d088",
@@ -3986,6 +4381,8 @@
     "gorman-1948"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "dow-uap-d087",
@@ -4014,6 +4411,8 @@
     "colorado-springs-2022"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4037,6 +4436,8 @@
     "colorado-springs-2022"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4060,6 +4461,8 @@
     "colorado-springs-2022"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4081,6 +4484,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4102,6 +4507,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4123,6 +4530,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4144,6 +4553,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4165,6 +4576,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4186,6 +4599,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4207,6 +4622,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4228,6 +4645,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4249,6 +4668,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4270,6 +4691,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4293,6 +4716,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4316,6 +4741,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4339,6 +4766,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4362,6 +4791,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4385,6 +4816,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4408,6 +4841,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4431,6 +4866,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4454,6 +4891,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4477,6 +4916,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4500,6 +4941,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4523,6 +4966,8 @@
     "colorado-springs-2022"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4544,6 +4989,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4565,6 +5012,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4586,6 +5035,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4607,6 +5058,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4628,6 +5081,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4649,6 +5104,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4670,6 +5127,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4691,6 +5150,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4712,6 +5173,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4735,6 +5198,8 @@
     "russell-1955"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4758,6 +5223,8 @@
     "russell-1955"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4779,6 +5246,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4800,6 +5269,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4821,6 +5292,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4842,6 +5315,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4863,6 +5338,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4884,6 +5361,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4905,6 +5384,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "dow-uap-d094",
@@ -4933,6 +5414,8 @@
     "mantell-1948"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": [
     {
      "slug": "dow-uap-d093",
@@ -4961,6 +5444,8 @@
     "newfoundland-1955"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -4982,6 +5467,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5003,6 +5490,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5024,6 +5513,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5045,6 +5536,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5066,6 +5559,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5087,6 +5582,8 @@
    "format": "jpg",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5108,6 +5605,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5129,6 +5628,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5150,6 +5651,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5171,6 +5674,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5192,6 +5697,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5215,6 +5722,8 @@
     "ghost-rockets-1946"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5236,6 +5745,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5257,6 +5768,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5278,6 +5791,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5299,6 +5814,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5320,6 +5837,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5341,6 +5860,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5362,6 +5883,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5383,6 +5906,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5404,6 +5929,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5425,6 +5952,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5446,6 +5975,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5467,6 +5998,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5488,6 +6021,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5509,6 +6044,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5530,6 +6067,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5551,6 +6090,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5572,6 +6113,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5593,6 +6136,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5614,6 +6159,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5635,6 +6182,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5656,6 +6205,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5677,6 +6228,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5698,6 +6251,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5719,6 +6274,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5740,6 +6297,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5761,6 +6320,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5782,6 +6343,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5803,6 +6366,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5824,6 +6389,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5845,6 +6412,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5866,6 +6435,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5887,6 +6458,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5908,6 +6481,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5929,6 +6504,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5950,6 +6527,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5973,6 +6552,8 @@
     "tremonton-1952"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -5996,6 +6577,8 @@
     "tremonton-1952"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6019,6 +6602,8 @@
     "tremonton-1952"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6040,6 +6625,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6061,6 +6648,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6082,6 +6671,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6103,6 +6694,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6124,6 +6717,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6145,6 +6740,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6166,6 +6763,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6187,6 +6786,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6208,6 +6809,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6229,6 +6832,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6250,6 +6855,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6271,6 +6878,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6292,6 +6901,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6313,6 +6924,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6334,6 +6947,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6355,6 +6970,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6376,6 +6993,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6397,6 +7016,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6418,6 +7039,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6439,6 +7062,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6460,6 +7085,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6481,6 +7108,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6502,6 +7131,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6523,6 +7154,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6544,6 +7177,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6565,6 +7200,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6586,6 +7223,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6607,6 +7246,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6628,6 +7269,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6649,6 +7292,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6670,6 +7315,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6691,6 +7338,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6712,6 +7361,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6733,6 +7384,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6754,6 +7407,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6775,6 +7430,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6796,6 +7453,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6817,6 +7476,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6838,6 +7499,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6859,6 +7522,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6880,6 +7545,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6901,6 +7568,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6922,6 +7591,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6943,6 +7614,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6964,6 +7637,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -6985,6 +7660,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7006,6 +7683,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7027,6 +7706,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7048,6 +7729,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7069,6 +7752,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7090,6 +7775,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7111,6 +7798,8 @@
    "format": "pdf",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7135,6 +7824,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7156,6 +7847,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7177,6 +7870,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7198,6 +7893,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7219,6 +7916,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7240,6 +7939,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7261,6 +7962,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7282,6 +7985,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7303,6 +8008,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7324,6 +8031,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7345,6 +8054,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7366,6 +8077,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7387,6 +8100,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7408,6 +8123,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7429,6 +8146,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7450,6 +8169,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7471,6 +8192,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7492,6 +8215,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7513,6 +8238,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7534,6 +8261,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7555,6 +8284,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7576,6 +8307,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7597,6 +8330,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7618,6 +8353,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7639,6 +8376,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7660,6 +8399,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7681,6 +8422,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7702,6 +8445,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7723,6 +8468,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7744,6 +8491,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7765,6 +8514,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7786,6 +8537,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7807,6 +8560,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7828,6 +8583,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7849,6 +8606,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7870,6 +8629,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7891,6 +8652,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7912,6 +8675,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7933,6 +8698,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7954,6 +8721,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7975,6 +8744,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -7996,6 +8767,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8017,6 +8790,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8038,6 +8813,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8059,6 +8836,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8080,6 +8859,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8101,6 +8882,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8122,6 +8905,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8143,6 +8928,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8164,6 +8951,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8185,6 +8974,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8206,6 +8997,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8227,6 +9020,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8248,6 +9043,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8269,6 +9066,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8290,6 +9089,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8311,6 +9112,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8332,6 +9135,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8353,6 +9158,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8374,6 +9181,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8395,6 +9204,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8416,6 +9227,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8437,6 +9250,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8458,6 +9273,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8479,6 +9296,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8500,6 +9319,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8521,6 +9342,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8542,6 +9365,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8563,6 +9388,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8584,6 +9411,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8605,6 +9434,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8626,6 +9457,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8647,6 +9480,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8668,6 +9503,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8689,6 +9526,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8710,6 +9549,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8731,6 +9572,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8752,6 +9595,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8773,6 +9618,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8794,6 +9641,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8815,6 +9664,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8836,6 +9687,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8857,6 +9710,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8878,6 +9733,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8899,6 +9756,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8920,6 +9779,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8941,6 +9802,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8962,6 +9825,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -8983,6 +9848,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9004,6 +9871,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9025,6 +9894,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9046,6 +9917,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9067,6 +9940,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9088,6 +9963,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9109,6 +9986,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9130,6 +10009,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9151,6 +10032,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9172,6 +10055,8 @@
    "format": null,
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9193,6 +10078,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9214,6 +10101,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9235,6 +10124,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9256,6 +10147,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9279,6 +10172,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9302,6 +10197,8 @@
     "western-us-2023"
    ],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9323,6 +10220,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9344,6 +10243,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9365,6 +10266,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9386,6 +10289,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9407,6 +10312,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9428,6 +10335,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9449,6 +10358,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9470,6 +10381,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9491,6 +10404,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9512,6 +10427,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9533,6 +10450,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9554,6 +10473,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9575,6 +10496,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9596,6 +10519,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9617,6 +10542,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9638,6 +10565,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9659,6 +10588,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   },
   {
@@ -9680,6 +10611,8 @@
    "format": "video",
    "cases": [],
    "illegible": null,
+   "documentSays": null,
+   "sourceAsIndexed": null,
    "related": []
   }
  ]
