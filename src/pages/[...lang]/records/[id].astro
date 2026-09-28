@@ -40,6 +40,9 @@ const citation = [
 const related = r.related
   .map(x => ({ rel: x.rel, rec: recordBySlug.get(x.slug)! }))
   .filter(x => x.rec);
+/** Kopie tego samego tekstu dostają jedną notkę, części jednego dokumentu drugą. */
+const relCopy = related.some(x => ['same', 'edition', 'part', 'whole'].includes(x.rel));
+const relSeq = related.some(x => x.rel === 'next' || x.rel === 'prev');
 
 const media = mediaFor(r);
 /** Wydawca sam nazywa te pliki renderingiem albo rekonstrukcją, nie zapisem. */
@@ -168,7 +171,8 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
             </li>
           ))}
         </ul>
-        <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relNote')}</p>
+        {relCopy && <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relNote')}</p>}
+        {relSeq && <p class="dim" style="margin:.8rem 0 0;font-size:.9rem;max-width:66ch">{t('rec.relSeqNote')}</p>}
       </section>
     )}
 

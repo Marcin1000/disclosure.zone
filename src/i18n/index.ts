@@ -144,6 +144,7 @@ const en: Dict = {
   'rec.rel.next': 'Continues in',
   'rec.rel.prev': 'Continued from',
   'rec.relNote': 'Checked by comparing the pages, not the titles. Cite the copy you actually read.',
+  'rec.relSeqNote': 'Two parts of one document, published as separate files. Where one ends and the other begins was checked against the pages.',
   'rec.illegible': 'This file cannot be read',
   'rec.illegible.thumbnail': 'The publisher serves a single page scanned at 134 × 221 pixels, a thumbnail rather than a document. Neither the image nor any text layer can be read. We link it as published and say nothing about its contents.',
 
@@ -372,6 +373,7 @@ const pl: Dict = {
   'rec.rel.next': 'Ciąg dalszy w',
   'rec.rel.prev': 'Początek w',
   'rec.relNote': 'Sprawdzone porównaniem stron, nie tytułów. Cytuj tę kopię, którą faktycznie czytasz.',
+  'rec.relSeqNote': 'Dwie części jednego dokumentu wydane jako osobne pliki. Miejsce, w którym jedna się kończy, a druga zaczyna, sprawdzono na stronach.',
   'rec.illegible': 'Tego pliku nie da się przeczytać',
   'rec.illegible.thumbnail': 'Wydawca udostępnia jedną stronę zeskanowaną w 134 × 221 pikseli, czyli miniaturę, a nie dokument. Nie da się odczytać ani obrazu, ani warstwy tekstowej. Podajemy link w postaci, w jakiej go wydano, i nie mówimy nic o treści.',
 
