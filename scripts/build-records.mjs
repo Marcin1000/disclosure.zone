@@ -390,6 +390,26 @@ for (const r of manifest.records) {
  * Klucz bez wydania, który trafia w kilka rekordów, jest błędem, a nie
  * niejednoznacznością do rozstrzygnięcia na chybił trafił.
  */
+/**
+ * Nagrania, których indeks nie przypisuje do wydania, a które leżą w paczce
+ * wydania. PR050–PR099 są w uap052226.zip wydania 02 (22 V 2026); sprawdzone
+ * na plikach, nie po dacie publikacji na DVIDS.
+ */
+const BUNDLE_RELEASE = [{ from: 50, to: 99, release: '02' }];
+/**
+ * Rok nagrania tam, gdzie tytuł w indeksie go ucina. PR088 i PR089: indeks
+ * podaje „31 AUG”, a tytuł nadany przez użytkownika, cytowany przez AARO na
+ * stronie DVIDS, brzmi „31 AUG 2020”, i opis mówi o nagraniu z 2020 r.
+ */
+const RECORDING_YEARS = { 'DOW-UAP-PR088': 2020, 'DOW-UAP-PR089': 2020 };
+
+for (const r of records) {
+  const n = /^DOW-UAP-PR0?(\d+)$/.exec(r.id ?? '')?.[1];
+  const b = n && BUNDLE_RELEASE.find(x => +n >= x.from && +n <= x.to);
+  if (b && !r.release) r.release = b.release;
+  if (r.id && RECORDING_YEARS[r.id] && !r.year) r.year = RECORDING_YEARS[r.id];
+}
+
 for (const r of records) {
   const page = r.id && RECORDING_PAGES[r.id];
   if (!page) continue;
@@ -407,7 +427,7 @@ const lookup = (key) => {
   return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
 };
 const ambiguous = [], unused = [];
-for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
   const hits = lookup(key);
   if (!hits.length) unused.push(key);
   else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
