@@ -17,11 +17,17 @@ const points: PlotPoint[] = all.map(c => ({
   href: path(lang, `/cases/${c.id}`),
 }));
 const STATUS_ORDER = ['unresolved', 'insufficient', 'explained', 'disputed'] as const;
+/**
+ * Wiersz listy to kraj z kodu ISO, nie podpis pierwszej sprawy. countryName
+ * opisuje sprawę („USSR / Azerbaijan”, „Nepal / India / Bhutan”), a lista
+ * liczy sprawy na dzisiejszej mapie, więc nazwę bierzemy z kodu w języku strony.
+ */
+const regionName = new Intl.DisplayNames([lang], { type: 'region' });
 const byCountry = [...new Set(all.map(c => c.data.country))]
   .map(k => {
     const mine = all.filter(c => c.data.country === k);
     return {
-      k, name: mine[0].data.countryName, n: mine.length,
+      k, name: regionName.of(k) ?? mine[0].data.countryName, n: mine.length,
       // rozbicie na statusy — z tego powstaje pasek w widoku mobilnym
       seg: STATUS_ORDER.map(st => ({ st, n: mine.filter(c => c.data.status === st).length })).filter(x => x.n),
     };

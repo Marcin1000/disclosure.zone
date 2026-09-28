@@ -1,6 +1,6 @@
 ---
 title: "Krater w Baltichaur"
-subtitle: "Siedem obserwacji wzdłuż Himalajów w nieocenionym raporcie CIA i metalowy dysk w kraterze, o którym raport wspomina jednym zdaniem"
+subtitle: "Siedem obserwacji wzdłuż Himalajów w nieocenionym raporcie CIA i metalowy dysk w kraterze, wspomniany jednym zdaniem"
 dateDisplay: "19 lutego – 25 marca 1968"
 countryName: "Nepal / Indie / Bhutan"
 location: "Siedem miejsc od południowego Ladakhu po region Kaski w Nepalu. Znacznik na mapie stoi pięć mil na północny wschód od Pokhary, w punkcie wyliczonym z „five miles NE of Pokhara” w raporcie przy Pokharze w 28,21 N, 83,99 E; nie jest to ustalone położenie Baltichaur"

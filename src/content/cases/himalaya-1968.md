@@ -1,13 +1,13 @@
 ---
 title: "The Crater at Baltichaur"
-subtitle: "Seven sightings along the Himalaya in an unevaluated CIA report, and a metal disc in a crater that the report mentions in one sentence"
+subtitle: "Seven sightings along the Himalaya in an unevaluated CIA report, and a metal disc in a crater it mentions in one sentence"
 date: 1968-02-19
 dateDisplay: "19 February – 25 March 1968"
 country: "NP"
 countryName: "Nepal / India / Bhutan"
 location: "Seven places from south Ladakh to the Kaski region of Nepal. The map pin stands five miles north-east of Pokhara, computed from the report's “five miles NE of Pokhara” with Pokhara at 28.21 N, 83.99 E; it is not an established location of Baltichaur"
 lat: 28.26
-lon: 84.04
+lon: 84.05
 domain: "mixed"
 tier: 3
 status: "insufficient"
