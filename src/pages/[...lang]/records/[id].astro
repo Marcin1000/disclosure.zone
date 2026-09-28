@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, RELEASES } from '../../../lib/records';
 import { getCases } from '../../../lib/cases';
 import { mediaFor } from '../../../lib/media';
+import { STILLS, stillTime } from '../../../data/stills';
 import { LOCALES, DEFAULT_LANG, path, useT, type Lang } from '../../../i18n';
 
 export function getStaticPaths() {
@@ -48,6 +49,7 @@ const relPair = related.some(x => x.rel === 'report' || x.rel === 'recording');
 const indexedReport = r.kind === 'recording' && !!r.sourceAsIndexed;
 
 const media = mediaFor(r);
+const still = r.id && r.kind === 'recording' ? STILLS[r.id] : undefined;
 /** Wydawca sam nazywa te pliki renderingiem albo rekonstrukcją, nie zapisem. */
 const synthetic = /digital render|digital recreation/i.test(r.title);
 const isImage = r.kind === 'image';
@@ -139,7 +141,10 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               : <span class="still"><img src={media.poster!} alt=""
                      width={media.w ?? undefined} height={media.h ?? undefined} /></span>}
         </div>
-        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{isImage ? t('rec.imageNote') : t('rec.stillNote')}</p>
+        <p class="dim" style="margin:.9rem 0 0;font-size:.9rem">{isImage ? t('rec.imageNote') : still ? t('rec.stillAt', { t: stillTime(still.at) }) : t('rec.stillNote')}</p>
+        {still && still.object !== 'shown' && (
+          <p class="dim" style="margin:.6rem 0 0;font-size:.9rem;color:var(--amber)">{t(`rec.still.${still.object}`)}</p>
+        )}
         {synthetic && (
           <p class="dim" style="margin:.9rem 0 0;font-size:.9rem;color:var(--amber)">
             <strong style="color:var(--amber)">{t('rec.synthetic')}.</strong> {t('rec.syntheticNote')}

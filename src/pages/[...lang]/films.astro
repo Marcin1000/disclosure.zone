@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { records, yearLabel } from '../../lib/records';
 import { mediaFor } from '../../lib/media';
+import { STILLS } from '../../data/stills';
 import { langParams, path, plural, useT, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
@@ -46,6 +47,9 @@ const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
             <span class="film__m">
               {[r.place, yearLabel(r), asset && t('films.asset', { n: asset })].filter(Boolean).join(' · ')}
             </span>
+            {m.poster && r.id && STILLS[r.id] && STILLS[r.id].object !== 'shown' && (
+              <span class="film__m" style="color:var(--amber)">{t('films.noObject')}</span>
+            )}
           </span>
         </a>
       ))}
