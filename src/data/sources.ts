@@ -165,6 +165,19 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-d27':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf',
   'pursue-pr28':          'https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024',
   'pursue-pr29':          'https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024',
+  // 482 ATKS nad Zatoką Perską, lipiec–listopad 2020: raporty z wydania 01 (porównane bajt w bajt
+  // z paczką) i nagrania z wydania 02 na stronach DVIDS (otwarte na żywo)
+  'pursue-d42':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf',
+  'pursue-d60':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d60-mission-report-persian-gulf-august-2020.pdf',
+  'pursue-d61':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d61-mission-report-persian-gulf-august-2020.pdf',
+  'pursue-d62':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d62-mission-report-strait-of-hormuz-september-2020.pdf',
+  'pursue-d63':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.pdf',
+  'pursue-d64':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d64-mission-report-iran-november-2020.pdf',
+  'pursue-d65':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d65-mission-report-persian-gulf-july-2020.pdf',
+  'pursue-pr077':         'https://www.dvidshub.net/video/1007809/dow-uap-pr077-2-november-2020-callsign-callsign-observes-and-tracks-uap-1-2',
+  'pursue-pr078':         'https://www.dvidshub.net/video/1007812/dow-uap-pr078-2-november-2020-callsign-callsign-observes-and-tracks-uap-2-2',
+  'pursue-pr088':         'https://www.dvidshub.net/video/1007800/dow-uap-pr088-31-aug-callsign-callsign-observes-uap',
+  'pursue-pr089':         'https://www.dvidshub.net/video/1007712/dow-uap-pr089-31-aug-callsign-callsign-observes-uap-part2',
 
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',

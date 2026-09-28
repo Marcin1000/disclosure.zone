@@ -117,6 +117,19 @@ const CASE_LINKS = {
   'DOW-UAP-PR28': ['eastern-mediterranean-2024'],
   'DOW-UAP-D27': ['eastern-mediterranean-2024'],
   'DOW-UAP-PR29': ['eastern-mediterranean-2024'],
+  // 482 ATKS nad Zatoką Perską, lipiec–listopad 2020: sześć raportów z misji i formularz Range Fouler
+  // (wydanie 01) oraz cztery nagrania z wydania 02, sparowane przez nas z D64 i D42 po dacie i treści
+  'DOW-UAP-D42': ['persian-gulf-2020'],
+  'DOW-UAP-D60': ['persian-gulf-2020'],
+  'DOW-UAP-D61': ['persian-gulf-2020'],
+  'DOW-UAP-D62': ['persian-gulf-2020'],
+  'DOW-UAP-D63': ['persian-gulf-2020'],
+  'DOW-UAP-D64': ['persian-gulf-2020'],
+  'DOW-UAP-D65': ['persian-gulf-2020'],
+  'DOW-UAP-PR077': ['persian-gulf-2020'],
+  'DOW-UAP-PR078': ['persian-gulf-2020'],
+  'DOW-UAP-PR088': ['persian-gulf-2020'],
+  'DOW-UAP-PR089': ['persian-gulf-2020'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
