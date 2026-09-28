@@ -44,6 +44,20 @@ export const STILLS: Record<string, StillInfo> = {
   'DOW-UAP-PR47': shown(40),
   'DOW-UAP-PR48': shown(3),
   'DOW-UAP-PR49': shown(25),
+  // Wydanie 02 (paczka uap052226.zip): nagrania, które sprawa persian-gulf-2020 łączy z raportami
+  // 482 ATKS albo omawia jako słabe pary. Obiekty mają po kilka pikseli.
+  // 3:16,5: punkt przy krzyżu i drugi przecinający prawy górny róg, jak w opisie wydawcy
+  'DOW-UAP-PR077': shown(196.5),
+  // opis wydawcy powtarza opis PR077; przelotu przez prawy górny róg w 3:15–3:17 w tym pliku
+  // nie ma, klatka pokazuje punkt trzymany przy krzyżu
+  'DOW-UAP-PR078': shown(215),
+  // jasna plamka przy prawej krawędzi jest w każdej klatce: to ślad czujnika, nie obiekt
+  'DOW-UAP-PR085': shown(150),
+  // dwa punkty naraz; ciemny kształt z 0:39–1:49 wygląda na łódź z kilwaterem
+  'DOW-UAP-PR088': shown(171),
+  'DOW-UAP-PR089': shown(15),
+  // punkt widać dopiero po powiększeniu; szary znak N krążący wokół krzyża to nakładka, nie obiekt
+  'DOW-UAP-PR092': shown(94),
 };
 
 /** 135 -> "2:15", 2.6 -> "0:02.6" */
