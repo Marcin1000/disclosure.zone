@@ -130,6 +130,12 @@ const CASE_LINKS = {
   'DOW-UAP-PR078': ['persian-gulf-2020'],
   'DOW-UAP-PR088': ['persian-gulf-2020'],
   'DOW-UAP-PR089': ['persian-gulf-2020'],
+  // Misje 33 SOS z 27 i 29 października 2023: D33 z nagraniem PR34 (zwroty nad północnym Morzem
+  // Egejskim) i D35 z PR35 (lot prosto ku Krecie), które sprawa cytuje do porównania
+  'DOW-UAP-D33': ['north-aegean-2023'],
+  'DOW-UAP-PR34': ['north-aegean-2023'],
+  'DOW-UAP-D35': ['north-aegean-2023'],
+  'DOW-UAP-PR35': ['north-aegean-2023'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 

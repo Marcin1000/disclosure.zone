@@ -165,6 +165,12 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-d27':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf',
   'pursue-pr28':          'https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024',
   'pursue-pr29':          'https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024',
+  // 33 SOS nad Morzem Egejskim, 27 i 29 października 2023: raporty z wydania 01 porównane bajt
+  // w bajt z paczką i z plikiem na żywo, nagrania na stronach DVIDS otwartych na żywo
+  'pursue-d33':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf',
+  'pursue-d35':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf',
+  'pursue-pr34':          'https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023',
+  'pursue-pr35':          'https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023',
   // 482 ATKS nad Zatoką Perską, lipiec–listopad 2020: raporty z wydania 01 (porównane bajt w bajt
   // z paczką) i nagrania z wydania 02 na stronach DVIDS (otwarte na żywo)
   'pursue-d42':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf',
