@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T16:08:56.227Z",
+ "generated": "2026-09-28T16:20:48.074Z",
  "count": 450,
  "records": [
   {
@@ -1124,7 +1124,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "eastern-mediterranean-2024"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
@@ -1152,7 +1154,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "eastern-mediterranean-2024"
+   ],
    "illegible": null,
    "documentSays": {
     "place": "Gulf of Oman",
@@ -2184,7 +2188,9 @@
    "publisher": "dvidshub.net",
    "source": "https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024",
    "format": "video",
-   "cases": [],
+   "cases": [
+    "eastern-mediterranean-2024"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
@@ -2212,7 +2218,9 @@
    "publisher": "dvidshub.net",
    "source": "https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024",
    "format": "video",
-   "cases": [],
+   "cases": [
+    "eastern-mediterranean-2024"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,

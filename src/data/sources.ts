@@ -159,6 +159,12 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-cia-014':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf',
   'pursue-cia-016':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf',
   'pursue-cia-017':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf',
+  // Wydanie 01: raporty z misji porównane bajt w bajt z paczką, nagrania na stronach DVIDS
+  // otwartych na żywo; tytuł strony zgadza się z nagłówkiem XMP pliku z paczki uapvideos.zip
+  'pursue-d25':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf',
+  'pursue-d27':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d27-mission-report-united-arab-emirates-october-2023.pdf',
+  'pursue-pr28':          'https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024',
+  'pursue-pr29':          'https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024',
 
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',

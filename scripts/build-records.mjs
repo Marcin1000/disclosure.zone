@@ -111,6 +111,12 @@ const CASE_LINKS = {
   'DOW-UAP-D094': ['mantell-1948'],
   // Teczka zarządu wywiadu USAF, s. 37–46: KC-97 i radar naziemny nad Nową Fundlandią, 6 lipca 1955
   'DOW-UAP-D095': ['newfoundland-1955'],
+  // Misja 33 SOS z 25 stycznia 2024: raport D25 i nagranie PR28. D27 i PR29 (czerwiec 2024,
+  // Zatoka Omańska) sprawa cytuje do porównania: ta sama sylwetka, inne zdarzenie.
+  'DOW-UAP-D25': ['eastern-mediterranean-2024'],
+  'DOW-UAP-PR28': ['eastern-mediterranean-2024'],
+  'DOW-UAP-D27': ['eastern-mediterranean-2024'],
+  'DOW-UAP-PR29': ['eastern-mediterranean-2024'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 

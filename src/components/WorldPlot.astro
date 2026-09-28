@@ -2,7 +2,7 @@
 import { geoEquirectangular, geoPath, geoGraticule10 } from 'd3-geo';
 import { feature } from 'topojson-client';
 import world from 'world-atlas/countries-110m.json';
-import { N_ISO } from '../data/geo';
+import { N_ISO, isCountry } from '../data/geo';
 import { useT, type Lang } from '../i18n';
 
 export interface PlotPoint {
@@ -25,6 +25,8 @@ const projection = geoEquirectangular().fitSize([W, H], { type: 'FeatureCollecti
 const path = geoPath(projection);
 
 const withCases = new Set(points.map(p => p.country));
+/** Wody międzynarodowe (X*) mają punkty na mapie, ale nie są państwem do policzenia. */
+const nCountries = [...withCases].filter(isCountry).length;
 
 const lands = shown.map((f: any) => {
   const a2 = N_ISO[String(f.id).padStart(3, '0')] ?? '';
@@ -72,7 +74,7 @@ const marks = points.map(p => {
   <div class="plot__scan"></div>
   <div class="tip" data-tip><b></b><span></span></div>
   <div class="plot__hud">
-    <span data-hud-l>{t('map.events', { n: points.length, c: withCases.size })}</span>
+    <span data-hud-l>{t('map.events', { n: points.length, c: nCountries })}</span>
     <span data-hud-r>{t('map.proj')}</span>
   </div>
 </div>
