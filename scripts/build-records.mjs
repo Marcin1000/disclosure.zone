@@ -98,6 +98,9 @@ const CASE_LINKS = {
   // raport, który sprawa cytuje jako dtic-special-report-14.
   'CIA-UAP-014': ['tremonton-1952'],
   'CIA-UAP-015': ['tremonton-1952'],
+  // Raport informacyjny z 1968: siedem obserwacji w Ladakhu, Nepalu, Sikkimie i Bhutanie
+  // oraz krater w Baltichaur. Ladakh 2012 nie jest podpięty, bo raport nie daje ku temu powodu.
+  'CIA-UAP-016': ['himalaya-1968'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
