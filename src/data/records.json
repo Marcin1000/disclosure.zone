@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-27T22:38:20.055Z",
+ "generated": "2026-09-28T10:51:53.730Z",
  "count": 450,
  "records": [
   {
@@ -3589,7 +3589,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "tremonton-1952"
+   ],
    "illegible": null,
    "related": []
   },
@@ -3610,7 +3612,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "tremonton-1952"
+   ],
    "illegible": null,
    "related": []
   },

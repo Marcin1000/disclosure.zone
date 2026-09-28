@@ -57,6 +57,10 @@ sources:
   label: "Report of the Scientific Panel on Unidentified Flying Objects and the report of its meetings, CIA, January 1953 (CIA-UAP-002)"
   note: "A 42-page CIA folder. The panel's assessment of the Tremonton film is in F. C. Durant's report of the meetings (pp. 21–24), and a film of seagulls shown to the panel is listed among the evidence (p. 11). Part I of the report of meetings is not in the folder, and two items were withdrawn from it."
   ref: "pursue-cia-002"
+- "tier": "T1"
+  label: "CIA memorandum for the record, “British Activity in the field of ‘Unidentified Flying Objects’”, 18 December 1952 (CIA-UAP-014)"
+  note: "Signed by H. Marshall Chadwell, Assistant Director, Scientific Intelligence. Records what a messenger from Britain reported on 15 December about his talks with R. V. Jones; the second person he talked with is redacted. The Tremonton film appears in one sentence (p. 1, point 5), which does not name Newhouse. Page 2 is an undated page from a different document."
+  ref: "pursue-cia-014"
 ---
 
 ## Three answers in one file
@@ -225,7 +229,10 @@ released with this file, agrees. He enlisted in 1933, held the permanent rank of
 from October 1942, served as a temporary commissioned officer up to lieutenant during and after the
 war, and reverted to his permanent rank at the end of 1949. It records the Naval School of Photography
 at Pensacola in 1935 and years of aerial photography before the war, which matches what the Air Force
-interviewer was told.
+interviewer was told. A CIA memorandum for the record of 18 December 1952 also calls him a
+non-commissioned officer, though not by name: a messenger from Britain, it records, had talked with
+R. V. Jones and "mentioned the film which had been taken by the Naval non-commissioned officer
+(Tremonton incident)."
 
 The interview itself took place at the family's home in Berkeley on 10 September 1952. Newhouse, his
 wife, their son of 14 and their daughter of 12 were all questioned. No sound, no trails, no aircraft,

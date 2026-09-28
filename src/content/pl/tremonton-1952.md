@@ -24,6 +24,8 @@ sources:
   note: "585 stron. Akta nie wspominają ani o filmie, ani o obserwacji i nie podają łącznej liczby godzin nalotu, więc nie da się nimi zweryfikować 1000 ani 2200 godzin przytaczanych w aktach Blue Book. Potwierdzają natomiast jego stopień w 1952 r., szkolenie w Naval School of Photography w 1935 r. oraz zatwierdzony urlop od 19 czerwca do 7 lipca 1952 (s. 82–83, 345, 369)."
 - "label": "Raport panelu naukowego w sprawie niezidentyfikowanych obiektów latających i sprawozdanie z jego posiedzeń, CIA, styczeń 1953 (CIA-UAP-002)"
   note: "42-stronicowa teczka CIA. Ocena filmu z Tremonton jest w sprawozdaniu F. C. Duranta z posiedzeń (s. 21–24), a film z mewami pokazany panelowi figuruje na liście dowodów (s. 11). Części I sprawozdania nie ma w teczce, a dwie pozycje z niej wycofano."
+- "label": "Memorandum CIA do akt, „British Activity in the field of ‚Unidentified Flying Objects’”, 18 grudnia 1952 (CIA-UAP-014)"
+  note: "Podpisane przez H. Marshalla Chadwella, zastępcę dyrektora do spraw wywiadu naukowego. Zapisuje, co kurier z Wielkiej Brytanii zrelacjonował 15 grudnia o swoich rozmowach z R. V. Jonesem; drugi rozmówca jest zaczerniony. Film z Tremonton pojawia się w jednym zdaniu (s. 1, pkt 5), które nie wymienia Newhouse'a z nazwiska. Strona 2 to niedatowana strona innego dokumentu."
 ---
 
 ## Trzy odpowiedzi w jednej teczce
@@ -214,7 +216,11 @@ warrant officer). Jego akta personalne, udostępnione razem z tą teczką, to po
 się w 1933 r., stały stopień Chief Photographer miał od października 1942 r., w czasie wojny i po
 niej pełnił służbę jako tymczasowy oficer aż do stopnia porucznika, a pod koniec 1949 r. wrócił do
 stałego stopnia. Akta odnotowują Naval School of Photography w Pensacoli w 1935 r. i lata fotografii
-lotniczej przed wojną, co zgadza się z tym, co usłyszał przesłuchujący z Sił Powietrznych.
+lotniczej przed wojną, co zgadza się z tym, co usłyszał przesłuchujący z Sił Powietrznych. Memorandum
+CIA do akt z 18 grudnia 1952 r. także nazywa go podoficerem, choć bez nazwiska: według notatki kurier
+z Wielkiej Brytanii rozmawiał z R. V. Jonesem i „mentioned the film which had been taken by the Naval
+non-commissioned officer (Tremonton incident)”, czyli wspomniał o filmie nakręconym przez podoficera
+marynarki (incydent w Tremonton).
 
 Samo przesłuchanie odbyło się w domu rodziny w Berkeley 10 września 1952 r. Przesłuchano Newhouse'a,
 jego żonę, czternastoletniego syna i dwunastoletnią córkę. Żadnego dźwięku, żadnych smug, żadnych

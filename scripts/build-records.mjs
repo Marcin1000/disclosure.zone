@@ -93,6 +93,11 @@ const CASE_LINKS = {
   // Tremonton, wymienia raport o zielonych kulach wśród dowodów i omawia „Foo Fighters”.
   // Waszyngton i Lubbock są tam tylko wymienione, więc ich nie podpinamy.
   'CIA-UAP-002': ['tremonton-1952', 'green-fireballs-1948', 'foo-fighters-1944'],
+  // Memorandum do akt z 18 grudnia 1952: kurier z Wielkiej Brytanii wspomniał R. V. Jonesowi
+  // o filmie z Tremonton (pkt 5). 015 to kopia Special Report 14 z archiwum CIA, ten sam
+  // raport, który sprawa cytuje jako dtic-special-report-14.
+  'CIA-UAP-014': ['tremonton-1952'],
+  'CIA-UAP-015': ['tremonton-1952'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
