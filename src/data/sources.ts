@@ -138,6 +138,7 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-d087':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf',
   'pursue-d088':          'https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf',
   'pursue-d094':          'https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D094_Analysis-of-Flying-Object-Incidents-in-the-US_1949.pdf',
+  'pursue-d095':          'https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D095_Joint-US-Canadian-Aviation-Projects-and-UFO-Sighting-Reports_1954-1955.pdf',
   'pursue-d110':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D110_AAWSAP-Statement-of-Objectives-July-18-2008.pdf',
   'pursue-d111':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D111_AAWSAP-Solicitation-and-Original-Order-September-22-2008.pdf',
   'pursue-d112':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D112_AAWSAP-Contract-Modification-P00001-September-2-2009.pdf',

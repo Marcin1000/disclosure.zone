@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-28T13:43:37.631Z",
+ "generated": "2026-09-28T14:07:26.242Z",
  "count": 450,
  "records": [
   {
@@ -4957,7 +4957,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D095_Joint-US-Canadian-Aviation-Projects-and-UFO-Sighting-Reports_1954-1955.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "newfoundland-1955"
+   ],
    "illegible": null,
    "related": []
   },

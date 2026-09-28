@@ -109,6 +109,8 @@ const CASE_LINKS = {
   'DOW-UAP-D088': ['chiles-whitted-1948', 'gorman-1948'],
   // Studium nr 203 z 10 grudnia 1948: Wenus nad Godman i odesłanie do incydentu z 7 stycznia 1948
   'DOW-UAP-D094': ['mantell-1948'],
+  // Teczka zarządu wywiadu USAF, s. 37–46: KC-97 i radar naziemny nad Nową Fundlandią, 6 lipca 1955
+  'DOW-UAP-D095': ['newfoundland-1955'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
