@@ -8,13 +8,14 @@ import { claims } from '../../data/claims';
 import { archives } from '../../data/archives';
 import { records, provenance } from '../../lib/records';
 import { langParams, path, useT, type Lang } from '../../i18n';
+import { isCountry } from '../../data/geo';
 
 export function getStaticPaths() { return langParams(); }
 const { lang } = Astro.props as { lang: Lang };
 const t = useT(lang);
 
 const all = await getCases(lang);
-const countries = new Set(all.map(c => c.data.country));
+const countries = new Set(all.map(c => c.data.country).filter(isCountry));
 const prov = provenance();
 const films = records.filter(r => r.kind === 'recording').length;
 const core = all.filter(c => c.data.tier === 1).sort((a, b) => overall(b.data.scores) - overall(a.data.scores));

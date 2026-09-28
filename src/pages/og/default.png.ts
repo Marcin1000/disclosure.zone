@@ -1,10 +1,11 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { renderOg } from '../../lib/og';
+import { isCountry } from '../../data/geo';
 
 export const GET: APIRoute = async () => {
   const cases = (await getCollection('cases')).filter(c => !c.data.draft);
-  const countries = new Set(cases.map(c => c.data.country)).size;
+  const countries = new Set(cases.map(c => c.data.country).filter(isCountry)).size;
   const png = await renderOg({
     title: 'Unresolved does not mean extraterrestrial.',
     kicker: `${cases.length} DOCUMENTED CASES · ${countries} COUNTRIES · SINCE 1946`,

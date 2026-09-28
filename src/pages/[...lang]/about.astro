@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCases } from '../../lib/cases';
+import { isCountry } from '../../data/geo';
 import { claims } from '../../data/claims';
 import { langParams, path, useT, type Lang } from '../../i18n';
 
@@ -13,7 +14,7 @@ const totalSrc = all.reduce((n, c) => n + c.data.sources.length, 0);
 const withUrl = all.reduce((n, c) => n + c.data.sources.filter(s => s.url).length, 0);
 const withAid = all.reduce((n, c) => n + c.data.sources.filter(s => !s.url && s.archiveUrl).length, 0);
 const withNone = totalSrc - withUrl - withAid;
-const countries = new Set(all.map(c => c.data.country)).size;
+const countries = new Set(all.map(c => c.data.country).filter(isCountry)).size;
 ---
 <Base title={en ? 'About' : 'O projekcie'}
       description={en ? 'What disclosure.zone is, who it is for, and what its limits are.' : 'Czym jest disclosure.zone, dla kogo powstaje i jakie ma ograniczenia.'}

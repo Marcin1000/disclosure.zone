@@ -173,7 +173,12 @@ short excerpt.
 node tools/make-media.mjs --videos harvest\pursue --dry-run
 node tools/make-media.mjs --videos harvest\pursue --clip 12
 node tools/make-media.mjs --videos harvest\pursue --id DOW-UAP-PR024
+node tools/make-media.mjs --videos harvest\pursue --id DOW-UAP-PR28 --at 20
 ```
+
+The still is taken at second 3 unless `--at` names another. Some recordings open on a
+split screen or an empty sky and show the object only later; a still without the object
+would misrepresent the recording, so pick the second by watching it first.
 
 Needs ffmpeg and the map from `map-videos.mjs`. A file the map does not tie to a
 record is left alone: naming a frame with somebody else's identifier would

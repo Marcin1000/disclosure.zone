@@ -9,6 +9,16 @@ export const ISO_N: Record<string, string> = {
 };
 
 /** Odwrotnie — do podświetlania krajów na mapie. */
+/**
+ * Kody X* to zakres ISO 3166-1 zostawiony użytkownikom. XZ oznacza u nas wody
+ * międzynarodowe (jak w UN/LOCODE): zdarzenie nad otwartym morzem nie należy do
+ * żadnego państwa, więc nie liczymy go jako kraju i nie podświetlamy na mapie.
+ */
+export const isCountry = (code: string) => !code.startsWith('X');
+export const NOT_A_COUNTRY: Record<string, { en: string; pl: string }> = {
+  XZ: { en: 'International waters', pl: 'Wody międzynarodowe' },
+};
+
 export const N_ISO: Record<string, string> = Object.fromEntries(
   Object.entries(ISO_N).map(([a2, n]) => [n, a2]),
 );

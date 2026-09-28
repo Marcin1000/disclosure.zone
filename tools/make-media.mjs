@@ -8,6 +8,7 @@
  *   node tools/make-media.mjs --videos harvest\pursue
  *   node tools/make-media.mjs --videos harvest\pursue --clip 12
  *   node tools/make-media.mjs --videos harvest\pursue --id DOW-UAP-PR024
+ *   node tools/make-media.mjs --videos harvest\pursue --id DOW-UAP-PR28 --at 20
  *
  * Pliki lokalne nazywają się numerem zasobu DOD, a rekordy identyfikatorem
  * PURSUE, więc jedno z drugim wiąże mapa z tools/map-videos.mjs. Bez mapy nie
@@ -29,6 +30,8 @@ const VIDEOS = flag('videos', null);
 const MAP = String(flag('map', 'harvest/video-map.json'));
 const OUT = String(flag('out', 'public/media/records'));
 const CLIP = Number(flag('clip', 0)) || 0;
+/** Sekunda, z której bierzemy klatkę. Domyślnie 3, ale bywa, że obiekt pojawia się później. */
+const AT = Number(flag('at', 3)) || 3;
 const IDS = many('id').map(s => s.toUpperCase());
 const DRY = argv.includes('--dry-run');
 
@@ -114,7 +117,7 @@ for (const { file, id } of jobs) {
   if (!existsSync(jpg)) {
     try {
       // sekunda trzecia, a nie zerowa: pierwsze klatki bywają czarne albo to plansza
-      ffmpeg(['-ss', '3', '-i', file, '-frames:v', '1', '-vf', 'scale=1280:-2', '-q:v', '4', jpg]);
+      ffmpeg(['-ss', String(AT), '-i', file, '-frames:v', '1', '-vf', 'scale=1280:-2', '-q:v', '4', jpg]);
       console.log(`${id.padEnd(16)} still  ${(statSync(jpg).size / 1024).toFixed(0)} kB`);
       stills++;
     } catch (e) {

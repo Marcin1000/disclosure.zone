@@ -15,7 +15,8 @@ export async function corpusStats() {
   for (const f of files) {
     const raw = readFileSync(join(CANON, f), 'utf8');
     const c = /^country:\s*"([A-Z]{2})"/m.exec(raw);
-    if (c) countries.add(c[1]);
+    // X* to wody międzynarodowe i inne obszary poza państwami (src/data/geo.ts)
+    if (c && !c[1].startsWith('X')) countries.add(c[1]);
     const d = /^date:\s*(\d{4})-/m.exec(raw);
     if (d) years.push(+d[1]);
   }

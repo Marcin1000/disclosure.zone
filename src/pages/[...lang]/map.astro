@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import WorldPlot, { type PlotPoint } from '../../components/WorldPlot.astro';
 import { getCases } from '../../lib/cases';
+import { isCountry, NOT_A_COUNTRY } from '../../data/geo';
 import { STATUS, bi } from '../../lib/scoring';
 import { langParams, path, useT, type Lang } from '../../i18n';
 
@@ -27,21 +28,22 @@ const byCountry = [...new Set(all.map(c => c.data.country))]
   .map(k => {
     const mine = all.filter(c => c.data.country === k);
     return {
-      k, name: regionName.of(k) ?? mine[0].data.countryName, n: mine.length,
+      k, name: NOT_A_COUNTRY[k]?.[lang] ?? regionName.of(k) ?? mine[0].data.countryName, n: mine.length,
       // rozbicie na statusy — z tego powstaje pasek w widoku mobilnym
       seg: STATUS_ORDER.map(st => ({ st, n: mine.filter(c => c.data.status === st).length })).filter(x => x.n),
     };
   })
   .sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, lang));
 const maxN = Math.max(...byCountry.map(c => c.n));
+const nCountries = byCountry.filter(c => isCountry(c.k)).length;
 const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explained' ? 'var(--phos)'
   : k === 'disputed' ? 'var(--stamp-2)' : 'var(--fg-faint)';
 ---
-<Base title={t('map.title')} description={t('map.lead', { n: all.length, c: byCountry.length })} lang={lang} rest="/map">
+<Base title={t('map.title')} description={t('map.lead', { n: all.length, c: nCountries })} lang={lang} rest="/map">
   <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4rem) 1.8rem">
     <p class="label label--phos" style="margin-bottom:.8rem">{t('map.kicker')}</p>
     <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{t('map.title')}</h1>
-    <p class="lead dim" style="max-width:64ch">{t('map.lead', { n: all.length, c: byCountry.length })}</p>
+    <p class="lead dim" style="max-width:64ch">{t('map.lead', { n: all.length, c: nCountries })}</p>
   </section>
 
   <section class="wrap">
