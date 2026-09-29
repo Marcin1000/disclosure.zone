@@ -48,7 +48,7 @@ const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
               {[r.place, yearLabel(r), asset && t('films.asset', { n: asset })].filter(Boolean).join(' · ')}
             </span>
             {m.poster && r.id && STILLS[r.id] && STILLS[r.id].object !== 'shown' && (
-              <span class="film__m" style="color:var(--amber)">{t('films.noObject')}</span>
+              <span class="film__m" style="color:var(--amber)">{t(STILLS[r.id].object === 'audio' ? 'films.audio' : 'films.noObject')}</span>
             )}
           </span>
         </a>

@@ -4,11 +4,13 @@
  *
  * at: sekunda nagrania, z której wzięto klatkę (make-media --at).
  * object: shown, czyli widać to, co opisuje wydawca; not-found, czyli w tej
- * klatce tego nie znaleźliśmy; absent, czyli nie ma tego w żadnej klatce pliku.
+ * klatce tego nie znaleźliśmy; absent, czyli nie ma tego w żadnej klatce pliku;
+ * audio, czyli nagranie dźwiękowe: przez cały plik stoi plansza, a opisane
+ * zjawiska są w relacjach mówionych, więc obrazu nie ma z natury rzeczy.
  * Wpisy dotyczą klatek sprawdzonych na powiększeniu, bez nich strona podaje
  * tylko ogólny podpis.
  */
-export type StillObject = 'shown' | 'not-found' | 'absent';
+export type StillObject = 'shown' | 'not-found' | 'absent' | 'audio';
 export interface StillInfo { at: number; object: StillObject }
 
 const shown = (at: number): StillInfo => ({ at, object: 'shown' });
@@ -221,22 +223,21 @@ export const STILLS: Record<string, StillInfo> = {
   'DOW-UAP-PR159': shown(21),
   // Nagrania dźwiękowe: przez cały plik stoi logo NASA z przebiegiem dźwięku. Opisane obiekty
   // (światła, cząstki, rozbłyski) są w relacjach mówionych, obrazu ich nie ma z natury rzeczy.
-  // „Absent” jest tu dosłownie prawdziwe, ale nie znaczy, że obraz czegoś nie uchwycił.
-  'DOW-UAP-PR160': { at: 3, object: 'absent' },
-  'NASA-UAP-D008': { at: 3, object: 'absent' },
-  'NASA-UAP-D009': { at: 3, object: 'absent' },
-  'NASA-UAP-D010': { at: 3, object: 'absent' },
-  'NASA-UAP-D011': { at: 3, object: 'absent' },
-  'NASA-UAP-D012': { at: 3, object: 'absent' },
-  'NASA-UAP-D013': { at: 3, object: 'absent' },
-  'NASA-UAP-D014': { at: 3, object: 'absent' },
-  'NASA-UAP-D023': { at: 3, object: 'absent' },
-  'NASA-UAP-D024': { at: 3, object: 'absent' },
-  'NASA-UAP-D025': { at: 3, object: 'absent' },
-  'NASA-UAP-D026': { at: 3, object: 'absent' },
-  'NASA-UAP-D027': { at: 3, object: 'absent' },
-  'NASA-UAP-D028': { at: 3, object: 'absent' },
-  'NASA-UAP-D029': { at: 3, object: 'absent' },
+  'DOW-UAP-PR160': { at: 3, object: 'audio' },
+  'NASA-UAP-D008': { at: 3, object: 'audio' },
+  'NASA-UAP-D009': { at: 3, object: 'audio' },
+  'NASA-UAP-D010': { at: 3, object: 'audio' },
+  'NASA-UAP-D011': { at: 3, object: 'audio' },
+  'NASA-UAP-D012': { at: 3, object: 'audio' },
+  'NASA-UAP-D013': { at: 3, object: 'audio' },
+  'NASA-UAP-D014': { at: 3, object: 'audio' },
+  'NASA-UAP-D023': { at: 3, object: 'audio' },
+  'NASA-UAP-D024': { at: 3, object: 'audio' },
+  'NASA-UAP-D025': { at: 3, object: 'audio' },
+  'NASA-UAP-D026': { at: 3, object: 'audio' },
+  'NASA-UAP-D027': { at: 3, object: 'audio' },
+  'NASA-UAP-D028': { at: 3, object: 'audio' },
+  'NASA-UAP-D029': { at: 3, object: 'audio' },
   // Nagrania telefonem od funkcjonariuszy policji lokalnej (Kolorado, październik 2023)
   'LLE-UAP-PR001': shown(3),
   // jasne światło nad przewodami; w 0:03 rozmazane ruchem telefonu w smugę
