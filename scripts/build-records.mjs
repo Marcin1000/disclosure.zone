@@ -152,7 +152,12 @@ const CASE_LINKS = {
   // teczka FBI 62-HQ-83894: teleks Dallas z 8 VII 1947 o Roswell (s. 70) i dopisek dyrektora (s. 127, 131)
   '65-hs1-834228961-62-hq-83894-section-1@01': ['roswell-1947'],
   // zielone kule ognia: depesza dowódcy Kirtland z 31 I 1949 (Section 4, s. 106)
-  '65-hs1-834228961-62-hq-83894-section-4@01': ['green-fireballs-1948'],
+  '65-hs1-834228961-62-hq-83894-section-4@01': ['green-fireballs-1948', 'oak-ridge-1950'],
+  // Oak Ridge 1947–1951: zdjęcia Presleya (Section 4, Serial 153), radar Adcocka z marca 1950 (Section 5),
+  // radar lotnictwa, „radar jamming” i obserwacja z 18 XII 1950 (Section 6)
+  '65-hs1-834228961-62-hq-83894-section-5@01': ['oak-ridge-1950'],
+  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950'],
+  '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],
   '65-hs1-834228961-62-hq-83894-section-9@01': ['socorro-1964'],
