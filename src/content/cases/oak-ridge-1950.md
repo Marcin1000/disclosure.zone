@@ -27,6 +27,8 @@ scores:
   X: 2
   D: 2
 summary: "Between March 1950 and January 1951 the FBI's file on flying discs collected a run of reports of objects over the Atomic Energy Commission's plant at Oak Ridge, Tennessee. A radio amateur in Knoxville reported an object “directly over Oak Ridge” at up to 100,000 feet on a surplus radar set; the Navy's radar saw nothing, and the Air Force officers who examined his set found it unreliable. In October an Air Force radar at Knoxville tracked eleven objects across the controlled area that a fighter could not find. On 18 December two carloads of officers and engineers saw a bright light over the turnpike, which the three who signed one of the statements compared to sunlight reflected from a distant aircraft. In January 1951 a pilot and the plant's patrol identified a light over the area as a star. The file records every check; none of them found an object, and several of the records it refers to are not in the release."
+claims:
+- "uap-nuclear-affinity"
 alternatives:
 - "A faulty set and an unreliable operator, for the March reports. Captain Cross “had very grave doubts as to the capabilities of the surplus APN-7 radar set which had been adapted by ADCOCK”, Colonel Gasser and Captain Cross judged the equipment “haphazard at best”, and the Army reported on 9 March that the “radar set has been modified so as to cast doubt on reliability of reading” (Section 5, pp. 88, 94)."
 - "Sunlight reflected from a distant aircraft, for 18 December 1950. The three officers who signed one of the statements wrote: “The object appeared only as the bright reflection of the sun from an apparently metal surface, much as might be expected from an aircraft at a great distance” (Section 6, p. 103)."
