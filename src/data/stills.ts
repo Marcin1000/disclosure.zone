@@ -158,6 +158,101 @@ export const STILLS: Record<string, StillInfo> = {
   'DOW-UAP-PR098': shown(61),
   // mała biała kropka tuż pod prawym ramieniem krzyża
   'DOW-UAP-PR099': shown(84),
+  // Wydania 04 i 06 (paczki uap_release04_videos_071026.zip i pursue_vids_091826.zip). Plakat
+  // wydawcy to klatka z 0:03; gdzie nie pokazywał opisanego obiektu, klatkę wzięto na nowo.
+  // dwa jasne obszary kontrastu w lewo pod krzyżem; ciemny punkt przy krzyżu to trzeci, śledzony
+  'DOW-UAP-PR024': shown(4),
+  // pierwszy z dwóch przelotów: duży ciemny kształt z czerwonym środkiem w prawo w dół;
+  // czerwona kropka na krzyżu to znacznik nakładki
+  'DOW-UAP-PR030': shown(6.6),
+  // biały obiekt na lewo od krzyża
+  'DOW-UAP-PR100': shown(60),
+  // jasna „linia” z kilku obszarów kontrastu pod krzyżem
+  'DOW-UAP-PR101': shown(80),
+  'DOW-UAP-PR102': shown(3),
+  'DOW-UAP-PR103': shown(3),
+  // gwiazda o sześciu ramionach na krzyżu
+  'DOW-UAP-PR104': shown(3),
+  // dwie białe plamki jedna nad drugą na lewo od krzyża
+  'DOW-UAP-PR105': shown(72),
+  // mała jasna plamka nad krzyżem; biała kropka przy górnej krawędzi stoi w każdej klatce
+  'DOW-UAP-PR106': shown(1),
+  // ciemna plamka w lewo pod krzyżem; biała kropka przy górnej krawędzi stoi w każdej klatce
+  'DOW-UAP-PR107': shown(19.5),
+  // biała plamka tuż na prawo od krzyża; biała kropka przy górnej krawędzi stoi w każdej klatce
+  'DOW-UAP-PR108': shown(30),
+  // jasny punkt tuż nad prawym ramieniem krzyża; przelot trwa około dwóch sekund
+  'DOW-UAP-PR109': shown(10),
+  // ciemny kształt w ramce automatycznego śledzenia
+  'DOW-UAP-PR110': shown(19),
+  // drobny punkt w małym kwadracie śledzenia pod krzyżem, widać go dopiero po powiększeniu;
+  // liczby z literą M obok to nakładka
+  'DOW-UAP-PR111': shown(30),
+  // ciemny kształt z jasnym znakiem nad krzyżem w lewo
+  'DOW-UAP-PR112': shown(3),
+  // ciemna ukośna smuga przelatująca przez środek kadru; liczby i kreski to drabinka nakładki
+  'DOW-UAP-PR113': shown(16.5),
+  // mała kropka w białym kwadracie śledzenia na krzyżu, widać ją dopiero po powiększeniu
+  'DOW-UAP-PR114': shown(29.5),
+  // mała ciemna kropka tuż na lewo od krzyża
+  'DOW-UAP-PR115': shown(3),
+  'DOW-UAP-PR116': shown(3),
+  // biała okrągła plama tuż pod krzyżem
+  'DOW-UAP-PR133': shown(3),
+  // rząd jasnych kropek pod krzyżem; wieża na wyspie z pierwszych sekund to nie obiekt
+  'DOW-UAP-PR135': shown(30),
+  // mała ciemna kropka w prawo nad krzyżem, widać ją dopiero po powiększeniu
+  'DOW-UAP-PR140': shown(20),
+  // ciemna kropka w obu połówkach podzielonego obrazu: podczerwień z lewej, obraz dzienny z prawej
+  'DOW-UAP-PR141': shown(17),
+  'DOW-UAP-PR143': shown(3),
+  // biała kropka nad wodą tuż nad krzyżem
+  'DOW-UAP-PR144': shown(22),
+  // ciemna kropka pod krzyżem; statek z pierwszych sekund to nie obiekt
+  'DOW-UAP-PR148': shown(48),
+  // ciemna kropka z jasnym środkiem nad krzyżem w prawo; wydawca: 0:00–0:05 bez treści
+  'DOW-UAP-PR150': shown(22),
+  // jasna plamka w narożnikach celownika na krzyżu
+  'DOW-UAP-PR151': shown(20),
+  // biała kropka na prawo od krzyża
+  'DOW-UAP-PR152': shown(75),
+  // film z Tremonton: kilka jasnych punktów na niebie; plakat to plansza z numerem taśmy, a od
+  // 0:55 na taśmie są inne ujęcia
+  'DOW-UAP-PR159': shown(21),
+  // Nagrania dźwiękowe: przez cały plik stoi logo NASA z przebiegiem dźwięku. Opisane obiekty
+  // (światła, cząstki, rozbłyski) są w relacjach mówionych, obrazu ich nie ma z natury rzeczy.
+  // „Absent” jest tu dosłownie prawdziwe, ale nie znaczy, że obraz czegoś nie uchwycił.
+  'DOW-UAP-PR160': { at: 3, object: 'absent' },
+  'NASA-UAP-D008': { at: 3, object: 'absent' },
+  'NASA-UAP-D009': { at: 3, object: 'absent' },
+  'NASA-UAP-D010': { at: 3, object: 'absent' },
+  'NASA-UAP-D011': { at: 3, object: 'absent' },
+  'NASA-UAP-D012': { at: 3, object: 'absent' },
+  'NASA-UAP-D013': { at: 3, object: 'absent' },
+  'NASA-UAP-D014': { at: 3, object: 'absent' },
+  'NASA-UAP-D023': { at: 3, object: 'absent' },
+  'NASA-UAP-D024': { at: 3, object: 'absent' },
+  'NASA-UAP-D025': { at: 3, object: 'absent' },
+  'NASA-UAP-D026': { at: 3, object: 'absent' },
+  'NASA-UAP-D027': { at: 3, object: 'absent' },
+  'NASA-UAP-D028': { at: 3, object: 'absent' },
+  'NASA-UAP-D029': { at: 3, object: 'absent' },
+  // Nagrania telefonem od funkcjonariuszy policji lokalnej (Kolorado, październik 2023)
+  'LLE-UAP-PR001': shown(3),
+  // jasne światło nad przewodami; w 0:03 rozmazane ruchem telefonu w smugę
+  'LLE-UAP-PR002': shown(300),
+  'LLE-UAP-PR003': shown(3),
+  // małe jasne światło pod środkiem kadru, widać je dopiero po powiększeniu
+  'LLE-UAP-PR004': shown(3),
+  // Nagrania świadków telefonem (FBI, północny wschód USA), nie rekonstrukcje
+  // pojedyncze jasne światło, zanim według świadka rozpadło się na kilka
+  'FBI-UAP-PR001': shown(3),
+  // dwa czerwone światła obok siebie; w 0:03 zlewają się w jedną plamę
+  'FBI-UAP-PR002': shown(100),
+  // jasne światło nad stawem i mniejszy punkt pod nim
+  'FBI-UAP-PR003': shown(3),
+  // dwie pomarańczowe kule nad linią drzew
+  'FBI-UAP-PR004': shown(3),
   // Rekonstrukcje, które FBI przygotowało dla wydawcy z relacji świadka 3 (western-us-2023):
   // ilustracja relacji, nie zapis zjawiska. „Shown” znaczy tu, że widać to, co opisuje relacja.
   // 0:35: pomarańczowa kula i trzy czerwone kule w linii tuż po wyrzuceniu
