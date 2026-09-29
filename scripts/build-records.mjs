@@ -146,6 +146,9 @@ const CASE_LINKS = {
   'DOW-UAP-PR140': ['iraq-2022'],
   'DOW-UAP-PR141': ['iraq-2022'],
   'DOW-UAP-D10': ['iraq-2022'],
+  // 65 SOS, 29 lipca 2025: sześć punktów bez miejsca, wszystkie położenia zaczernione
+  'DOW-UAP-D108': ['six-spheres-2025'],
+  'DOW-UAP-PR135': ['six-spheres-2025'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
@@ -231,6 +234,9 @@ const REPORT_PAIRS = [
   // a D109 obserwuje 05:24–07:04Z (dzień), D106 o 20:26Z (noc); do tego pył na obrazie i „DUST STORMS”
   // w D109 wobec „WEATHER WAS NOT A FACTOR” w D106. Para z treści, nie z tytułu
   ['DOW-UAP-PR140', 'DOW-UAP-D109'], ['DOW-UAP-PR141', 'DOW-UAP-D109'],
+  // PR135 należy do D108 z treści, nie z tytułu: raport opisuje sześć małych kulistych obiektów o 20:22Z,
+  // nagranie jest w samej podczerwieni i pokazuje grupę, w której od 0:39,8 widać sześć osobnych punktów
+  ['DOW-UAP-PR135', 'DOW-UAP-D108'],
 ];
 
 /**

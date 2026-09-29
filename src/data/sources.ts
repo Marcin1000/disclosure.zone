@@ -181,6 +181,10 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-pr140':         'https://www.dvidshub.net/video/1023398/dow-uap-pr140-unresolved-uap-report-middle-east-2022',
   'pursue-pr141':         'https://www.dvidshub.net/video/1023400/dow-uap-pr141-unresolved-uap-report-middle-east-2022',
   'pursue-d10':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf',
+  // 65 SOS, 29 lipca 2025: raport D108 (porównany bajt w bajt z paczką wydania 06, CRC 5f85ae27)
+  // i nagranie PR135 (strona DVIDS otwarta na żywo)
+  'pursue-d108':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D108_Mission-Report-Middle-East-2025.pdf',
+  'pursue-pr135':         'https://www.dvidshub.net/video/1023397/dow-uap-pr135-unresolved-uap-report-middle-east-2025',
   // 482 ATKS nad Zatoką Perską, lipiec–listopad 2020: raporty z wydania 01 (porównane bajt w bajt
   // z paczką) i nagrania z wydania 02 na stronach DVIDS (otwarte na żywo)
   'pursue-d42':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf',
