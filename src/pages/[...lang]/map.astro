@@ -98,7 +98,9 @@ const dot = (k: string) => k === 'unresolved' ? 'var(--amber)' : k === 'explaine
               <td data-l={t('map.thCountry')}>{c.data.countryName}</td>
               <td data-l={t('map.thStatus')}>{bi(STATUS[c.data.status].label, lang)}</td>
               <td class="mono tbl__nw" data-l={t('map.thPos')} style="font-size:.8rem;color:var(--fg-faint)">
-                {Math.abs(c.data.lat).toFixed(1)}° {c.data.lat >= 0 ? 'N' : 'S'} · {Math.abs(c.data.lon).toFixed(1)}° {c.data.lon >= 0 ? 'E' : 'W'}
+                {c.data.lat !== null && c.data.lon !== null
+                ? `${Math.abs(c.data.lat).toFixed(1)}° ${c.data.lat >= 0 ? 'N' : 'S'} · ${Math.abs(c.data.lon).toFixed(1)}° ${c.data.lon >= 0 ? 'E' : 'W'}`
+                : t('case.noCoords')}
               </td>
             </tr>
           ))}

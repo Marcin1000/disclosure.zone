@@ -149,8 +149,8 @@ export function toObservation(
       name: d.location,
       country: d.countryName,
       countryCode: d.country,
-      longitude: d.lon,
-      latitude: d.lat,
+      longitude: d.lon!,
+      latitude: d.lat!,
       // Współrzędne są środkiem obszaru zdarzenia, nie punktem pomiaru.
       coordinatePrecision: 'approximate',
       coordinatesApproximate: true,

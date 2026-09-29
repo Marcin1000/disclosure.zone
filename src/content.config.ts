@@ -28,8 +28,12 @@ const cases = defineCollection({
     ...translatable,
     date: z.coerce.date(),
     country: z.string().length(2),
-    lat: z.number().min(-90).max(90),
-    lon: z.number().min(-180).max(180),
+    /**
+     * Współrzędne pinezki. null wyłącznie przy country „XX”: dokumenty utajniają
+     * każde położenie, a pinezka w środku obszaru operacji udawałaby wiedzę.
+     */
+    lat: z.number().min(-90).max(90).nullable(),
+    lon: z.number().min(-180).max(180).nullable(),
     domain: z.enum(['military', 'civil', 'mixed', 'scientific']),
     tier: z.union([z.literal(1), z.literal(2), z.literal(3)]),
     status: z.enum(['unresolved', 'insufficient', 'explained', 'disputed']),
@@ -59,6 +63,12 @@ const cases = defineCollection({
       archive: z.string().optional(),
     })).default([]),
     draft: z.boolean().default(false),
+  }).superRefine((d, ctx) => {
+    const none = d.lat === null || d.lon === null;
+    if (none && (d.lat !== null || d.lon !== null))
+      ctx.addIssue({ code: 'custom', message: 'lat and lon are both set or both null' });
+    if (none !== (d.country === 'XX'))
+      ctx.addIssue({ code: 'custom', message: 'lat/lon may be null only for country XX (location withheld), and must be null there' });
   }),
 });
 

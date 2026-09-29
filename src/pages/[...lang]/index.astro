@@ -65,7 +65,7 @@ const UNCONFIRMED = {
         </div>
       </div>
       <HeroScope lang={lang}
-                 blips={core.map(c => ({ id: c.id, title: c.data.title, lon: c.data.lon,
+                 blips={core.filter(c => c.data.lon !== null).map(c => ({ id: c.id, title: c.data.title, lon: c.data.lon!,
                                          year: c.data.date.getFullYear(), status: c.data.status }))} />
     </div>
   </section>

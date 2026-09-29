@@ -17,6 +17,8 @@ export const ISO_N: Record<string, string> = {
 export const isCountry = (code: string) => !code.startsWith('X');
 export const NOT_A_COUNTRY: Record<string, { en: string; pl: string }> = {
   XZ: { en: 'International waters', pl: 'Wody międzynarodowe' },
+  // dokumenty utajniają każde położenie; sprawa nie ma pinezki (lat/lon null)
+  XX: { en: 'Location withheld', pl: 'Miejsce utajnione' },
 };
 
 export const N_ISO: Record<string, string> = Object.fromEntries(

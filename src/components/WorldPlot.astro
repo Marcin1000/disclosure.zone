@@ -6,7 +6,7 @@ import { N_ISO, isCountry } from '../data/geo';
 import { useT, type Lang } from '../i18n';
 
 export interface PlotPoint {
-  id: string; title: string; lon: number; lat: number;
+  id: string; title: string; lon: number | null; lat: number | null;
   country: string; countryName: string; year: string;
   tier: number; status: string; href: string;
 }
@@ -40,8 +40,8 @@ const STATUS_COLOR: Record<string, string> = {
   explained: 'var(--phos)', disputed: 'var(--stamp-2)',
 };
 
-const marks = points.map(p => {
-  const xy = projection([p.lon, p.lat]);
+const marks = points.filter(p => p.lat !== null && p.lon !== null).map(p => {
+  const xy = projection([p.lon!, p.lat!]);
   return xy ? { ...p, x: xy[0], y: xy[1], color: STATUS_COLOR[p.status] ?? 'var(--fg-faint)' } : null;
 }).filter(Boolean) as (PlotPoint & { x: number; y: number; color: string })[];
 ---

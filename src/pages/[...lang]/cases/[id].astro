@@ -63,7 +63,9 @@ const stChip = st.cls === 'st-unresolved' ? 'chip--amber'
               <div class="meta__row"><span class="meta__k">{t('case.country')}</span><span class="meta__v">{d.countryName}</span></div>
               <div class="meta__row"><span class="meta__k">{t('case.witnesses')}</span><span class="meta__v">{d.witnesses}</span></div>
               {d.duration && <div class="meta__row"><span class="meta__k">{t('case.duration')}</span><span class="meta__v">{d.duration}</span></div>}
-              <div class="meta__row"><span class="meta__k">{t('case.coords')}</span><span class="meta__v mono" style="font-size:.85rem">{Math.abs(d.lat).toFixed(2)}° {d.lat >= 0 ? 'N' : 'S'} · {Math.abs(d.lon).toFixed(2)}° {d.lon >= 0 ? 'E' : 'W'}</span></div>
+              <div class="meta__row"><span class="meta__k">{t('case.coords')}</span><span class="meta__v mono" style="font-size:.85rem">{d.lat !== null && d.lon !== null
+                ? `${Math.abs(d.lat).toFixed(2)}° ${d.lat >= 0 ? 'N' : 'S'} · ${Math.abs(d.lon).toFixed(2)}° ${d.lon >= 0 ? 'E' : 'W'}`
+                : t('case.noCoords')}</span></div>
             </div>
           </div>
 

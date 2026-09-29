@@ -7,7 +7,14 @@ export const GET: APIRoute = async () => {
   const pl = new Map((await getCases('pl')).map(c => [c.id, c.data]));
   const generated = new Date().toISOString();
 
-  const observations = en.map(c => {
+  /**
+   * DisclosureOS wymaga współrzędnych przy każdej obserwacji. Sprawy, których
+   * dokumenty utajniają położenie, pomijamy i wymieniamy z nazwy, zamiast
+   * wpisywać punkt, którego nie znamy.
+   */
+  const omitted = en.filter(c => c.data.lat === null || c.data.lon === null)
+    .map(c => ({ id: c.id, reason: 'location withheld in every document; the standard requires coordinates' }));
+  const observations = en.filter(c => c.data.lat !== null && c.data.lon !== null).map(c => {
     const p = pl.get(c.id);
     return toObservation(c.id, c.data, p && { title: p.title, summary: p.summary }, { generated });
   });
@@ -20,6 +27,7 @@ export const GET: APIRoute = async () => {
     note: 'Our own assessment lives under extensions["disclosure.zone"] and is not part of the standard. Fields we do not measure are omitted rather than filled with placeholders.',
     generated,
     count: observations.length,
+    omitted,
     observations,
   }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' } });
 };
