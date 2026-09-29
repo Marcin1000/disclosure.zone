@@ -212,6 +212,8 @@ export const SOURCE_URL: Record<string, string> = {
   'roswell-fact-fiction': 'https://apps.dtic.mil/sti/pdfs/ADA326148.pdf',
   // teczka FBI 62-HQ-83894 z wydania 01, pliki porównane bajt w bajt z paczką
   'pursue-fbi-62-83894-s1': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_1.pdf',
+  'pursue-fbi-62-83894-s9': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf',
+  'pursue-fbi-62-83894-serial-438': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_438.pdf',
   'roswell-af':           'https://www.af.mil/The-Roswell-Report/',
   'gao-roswell-1995':     'https://www.govinfo.gov/content/pkg/GAOREPORTS-NSIAD-95-187/pdf/GAOREPORTS-NSIAD-95-187.pdf',
   'nara-roswell-vol1':    'https://archive.org/details/gov.archives.341-roswell-1',
