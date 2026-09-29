@@ -237,6 +237,11 @@ const REPORT_PAIRS = [
   // PR135 należy do D108 z treści, nie z tytułu: raport opisuje sześć małych kulistych obiektów o 20:22Z,
   // nagranie jest w samej podczerwieni i pokazuje grupę, w której od 0:39,8 widać sześć osobnych punktów
   ['DOW-UAP-PR135', 'DOW-UAP-D108'],
+  // PR133 należy do D107 z treści, nie z tytułu: raport opisuje jeden obiekt, „A WHITE ROUND ORBIT”,
+  // śledzony od 01:41Z do 01:50Z; nagranie w samej podczerwieni pokazuje jeden biały okrągły punkt,
+  // śledzony przez 4 min 58 s, co mieści się w tych 9 minutach. Daty nagranie nie pokazuje (nakładka
+  // zaczerniona), a opis wydawcy podaje rok 2024 wbrew tytułowi i raportowi (2025)
+  ['DOW-UAP-PR133', 'DOW-UAP-D107'],
 ];
 
 /**
