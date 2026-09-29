@@ -149,6 +149,8 @@ const CASE_LINKS = {
   // 65 SOS, 29 lipca 2025: sześć punktów bez miejsca, wszystkie położenia zaczernione
   'DOW-UAP-D108': ['six-spheres-2025'],
   'DOW-UAP-PR135': ['six-spheres-2025'],
+  // teczka FBI 62-HQ-83894: teleks Dallas z 8 VII 1947 o Roswell (s. 70) i dopisek dyrektora (s. 127, 131)
+  '65-hs1-834228961-62-hq-83894-section-1@01': ['roswell-1947'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
@@ -431,7 +433,7 @@ for (const r of manifest.records) {
     publisher: s.publisher,
     source: s.source,
     format: s.format,
-    cases: CASE_LINKS[`${id}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
+    cases: CASE_LINKS[`${id}@${s.release}`] ?? CASE_LINKS[`${slug}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
     illegible: (id && ILLEGIBLE[id]) ?? null,
     documentSays: DOCUMENT_SAYS[`${id}@${s.release}`] ?? null,
     sourceAsIndexed: fixedUrl ? r.officialSourceUrl : null,

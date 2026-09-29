@@ -210,6 +210,8 @@ export const SOURCE_URL: Record<string, string> = {
   // ——— Roswell: oficjalne raporty USAF i GAO
   'roswell-case-closed':  'https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo92195/pdf/GOVPUB-D301-PURL-gpo92195.pdf',
   'roswell-fact-fiction': 'https://apps.dtic.mil/sti/pdfs/ADA326148.pdf',
+  // teczka FBI 62-HQ-83894 z wydania 01, pliki porównane bajt w bajt z paczką
+  'pursue-fbi-62-83894-s1': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_1.pdf',
   'roswell-af':           'https://www.af.mil/The-Roswell-Report/',
   'gao-roswell-1995':     'https://www.govinfo.gov/content/pkg/GAOREPORTS-NSIAD-95-187/pdf/GAOREPORTS-NSIAD-95-187.pdf',
   'nara-roswell-vol1':    'https://archive.org/details/gov.archives.341-roswell-1',
