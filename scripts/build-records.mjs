@@ -179,6 +179,10 @@ const SOURCE_FIXES = {
   // indeks: …/DOW-UAP-D134_%20AAWSAP-DIRD-… (404), ze spacją po „D134_”; ten sam plik
   // bez spacji, tak jak nazywa go paczka wydania 06 (25 627 490 B, CRC32 3cad1f4a)
   'DOW-UAP-D134@06': 'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D134_AAWSAP-DIRD-Maverick-Inventor-Versus-Corporate-Inventor-Where-Will-the-Next-Major-Innovations-Arise-March-30-2010.pdf',
+  // indeks: …/65_hs1-8342289+M5+M11 (404): nazwa ucięta w pół numeru, a „+M5+M11” to ślad
+  // odwołań do komórek arkusza; ten sam plik pod pełną nazwą, jak w paczce wydania 01
+  // (1 082 077 B, identyczny bajt w bajt)
+  '65-hs1-834228961-62-hq-83894-serial-153@01': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf',
 };
 
 /**
@@ -390,8 +394,10 @@ const records = [];
 for (const r of manifest.records) {
   const t = parseTitle(r.title);
   const idPre = t.id ?? (r.officialSourceUrl ? idFromFile(r.officialSourceUrl) : null);
-  const fixKey = idPre && `${idPre}@${parseSource(r.officialSourceUrl || null).release}`;
-  const fixedUrl = fixKey ? SOURCE_FIXES[fixKey] : undefined;
+  const rel0 = parseSource(r.officialSourceUrl || null).release;
+  const fixKey = idPre && `${idPre}@${rel0}`;
+  // rekordy bez identyfikatora (np. teczki FBI) poprawiamy po slugu z tytułu
+  const fixedUrl = (fixKey ? SOURCE_FIXES[fixKey] : undefined) ?? SOURCE_FIXES[`${slugify(t.title)}@${rel0}`];
   const s = parseSource(fixedUrl ?? r.officialSourceUrl ?? null);
   // Wydanie 02 podaje w indeksie sam opis, a identyfikator stoi tylko w nazwie
   // pliku u wydawcy. Bierzemy go stamtąd, ale adres strony rekordu budujemy
