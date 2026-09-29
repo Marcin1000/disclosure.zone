@@ -136,6 +136,16 @@ const CASE_LINKS = {
   'DOW-UAP-PR34': ['north-aegean-2023'],
   'DOW-UAP-D35': ['north-aegean-2023'],
   'DOW-UAP-PR35': ['north-aegean-2023'],
+  // Irak, 5 maja 2022: D109 i D106 opisują obiekty tym samym akapitem; PR140 i PR141 należą do
+  // D109 (światło dnia, pył), PR130 i PR131 łączy z D106 tylko kolejność stron w przesyłce MDR;
+  // D10 (nazajutrz, 60 km dalej, „POSSIBLE BIRDS”) sprawa cytuje do porównania
+  'DOW-UAP-D106': ['iraq-2022'],
+  'DOW-UAP-D109': ['iraq-2022'],
+  'DOW-UAP-PR130': ['iraq-2022'],
+  'DOW-UAP-PR131': ['iraq-2022'],
+  'DOW-UAP-PR140': ['iraq-2022'],
+  'DOW-UAP-PR141': ['iraq-2022'],
+  'DOW-UAP-D10': ['iraq-2022'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 

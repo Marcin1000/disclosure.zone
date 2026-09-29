@@ -171,6 +171,16 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-d35':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf',
   'pursue-pr34':          'https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023',
   'pursue-pr35':          'https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023',
+  // Irak, 5 maja 2022: raporty 20 ATKS (D109) i 196 ATKS (D106) z tym samym akapitem, nagrania
+  // PR140/PR141 (należą do D109), stopklatki PR130/PR131 (tylko kolejność stron przed D106) i D10
+  // do porównania; pliki porównane bajt w bajt z paczkami, strony DVIDS otwarte na żywo
+  'pursue-d106':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D106_Mission-Report-Iraq-2022.pdf',
+  'pursue-d109':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D109_Mission-Report-Middle-East-2022.pdf',
+  'pursue-pr130':         'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-PR130_Unresolved-UAP-Report-Iraq-2022.pdf',
+  'pursue-pr131':         'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-PR131_Unresolved-UAP-Report-Iraq-2022.pdf',
+  'pursue-pr140':         'https://www.dvidshub.net/video/1023398/dow-uap-pr140-unresolved-uap-report-middle-east-2022',
+  'pursue-pr141':         'https://www.dvidshub.net/video/1023400/dow-uap-pr141-unresolved-uap-report-middle-east-2022',
+  'pursue-d10':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf',
   // 482 ATKS nad Zatoką Perską, lipiec–listopad 2020: raporty z wydania 01 (porównane bajt w bajt
   // z paczką) i nagrania z wydania 02 na stronach DVIDS (otwarte na żywo)
   'pursue-d42':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf',
