@@ -26,7 +26,7 @@ scores:
   T: 5
   X: 4
   D: 4
-summary: "Police sergeant Lonnie Zamora, pursuing a speeding car, saw a white ovoid object on the ground and two small figures beside it. The object departed with a roar and a flame. The ground was left with indentations, burns and scorched vegetation."
+summary: "Police officer Lonnie Zamora, pursuing a speeding car, saw a white ovoid object on the ground and two small figures beside it. The object departed with a roar and a flame. The ground was left with indentations, burns and scorched vegetation."
 official: "Blue Book left the case unidentified — it is the best-known “unidentified” in the entire programme."
 alternatives:
 - "A student hoax using a hot-air balloon — raised later, without material confirmation."
