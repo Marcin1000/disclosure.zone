@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-29T16:47:02.200Z",
+ "generated": "2026-09-29T17:03:10.593Z",
  "count": 450,
  "records": [
   {
@@ -9319,7 +9319,16 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-pr140",
+     "rel": "recording"
+    },
+    {
+     "slug": "dow-uap-pr141",
+     "rel": "recording"
+    }
+   ]
   },
   {
    "slug": "dow-uap-d110",
@@ -10475,7 +10484,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d109",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr141",
@@ -10500,7 +10514,12 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
-   "related": []
+   "related": [
+    {
+     "slug": "dow-uap-d109",
+     "rel": "report"
+    }
+   ]
   },
   {
    "slug": "dow-uap-pr143",

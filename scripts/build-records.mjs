@@ -227,6 +227,10 @@ const REPORT_PAIRS = [
   ['DOW-UAP-PR28', 'DOW-UAP-D25'], ['DOW-UAP-PR29', 'DOW-UAP-D27'],
   ['DOW-UAP-PR31', 'dow-uap-d32'], ['DOW-UAP-PR32', 'dow-uap-d32'], ['DOW-UAP-PR33', 'dow-uap-d32'],
   ['DOW-UAP-PR34', 'DOW-UAP-D33'], ['DOW-UAP-PR35', 'DOW-UAP-D35'], ['DOW-UAP-PR36', 'DOW-UAP-D38'],
+  // PR140 i PR141 należą do D109, nie do D106: oba mają kolorowy obraz dzienny terenu w słońcu,
+  // a D109 obserwuje 05:24–07:04Z (dzień), D106 o 20:26Z (noc); do tego pył na obrazie i „DUST STORMS”
+  // w D109 wobec „WEATHER WAS NOT A FACTOR” w D106. Para z treści, nie z tytułu
+  ['DOW-UAP-PR140', 'DOW-UAP-D109'], ['DOW-UAP-PR141', 'DOW-UAP-D109'],
 ];
 
 /**
