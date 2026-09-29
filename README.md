@@ -91,7 +91,7 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **133 of 240** sources have an address for the material itself — the only ones that
+- **134 of 241** sources have an address for the material itself — the only ones that
   count toward provenance
 - **40** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
@@ -122,10 +122,10 @@ The same rule about links applies, and the same refusal to round it up:
   them, are served under a different file name; we point there and keep the address the index
   gave
 - **1** has no link at all
-- **71** are cited by a case so far
+- **72** are cited by a case so far
 
 That last number is the honest one. Reading a document into a case is work a person does,
-and the gap between 450 and 71 is the point rather than an embarrassment: the shortage in
+and the gap between 450 and 72 is the point rather than an embarrassment: the shortage in
 this subject was never sightings.
 
 `node scripts/build-records.mjs` regenerates `src/data/records.json` from a harvest

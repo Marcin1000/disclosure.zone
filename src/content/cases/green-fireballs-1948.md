@@ -41,6 +41,10 @@ sources:
 - "tier": "T1"
   label: "Los Alamos and Sandia security reports from the wave period"
   ref: "aaro-historical-v1"
+- "tier": "T1"
+  label: "Message from the commanding officer, Kirtland AFB, to the Chief of Staff USAF, 31 January 1949 (FBI file 62-HQ-83894, Section 4, p. 106)"
+  note: "A copy received by the FBI in February 1949."
+  ref: "pursue-fbi-62-83894-s4"
 ---
 
 ## The first “nuclear connection”
@@ -48,6 +52,14 @@ sources:
 This is where one of the most durable motifs in the field is born: **UAP cluster around nuclear
 installations.** The motif returns at Malmstrom in 1967, at Australia’s Maralinga, and in AARO
 reporting in the 2020s.
+
+How seriously it was taken at the time shows in a message the commanding officer at Kirtland AFB sent
+the Air Force's Chief of Staff on 31 January 1949, a copy of which sits in the FBI's file: "Sighting of
+identical object reported at 2255Z 30 Jan 49 by aprx 30 people. Estimate at least 100 total
+sightings. AEC, AFSWP, 4th Army, local commanders perturbed by implications of phenomena." (Section 4,
+p. 106). The message does not describe the object; it adds that "All appear to be same object at
+different points in trajectory" and that the office would "make all out investigation with view to
+location of impact point if any".
 
 Settling it requires stating the alternative honestly. Nuclear installations are simultaneously the
 sites with **the densest observer coverage, the best sensors and the lowest threshold for reporting
