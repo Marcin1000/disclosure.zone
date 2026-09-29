@@ -124,7 +124,7 @@ const expect = [
    [reg.records.filter(r => r.sourceKind === 'page').length], 'registry publisher pages'],
   [/^- \*\*(\d+)\*\* give only the page of the release/m,
    [reg.records.filter(r => r.sourceKind === 'landing').length], 'registry release pages'],
-  [/^- \*\*(\d+)\*\* gives an address the publisher does not serve/m,
+  [/^- \*\*(\d+)\*\* gives? an address the publisher does not serve/m,
    [reg.records.filter(r => r.sourceKind === 'dead').length], 'registry records with a dead address'],
   [/^- \*\*(\d+)\*\* ha(?:ve|s) no link at all/m,
    [reg.records.filter(r => r.sourceKind === 'none').length], 'registry records with no link'],

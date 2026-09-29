@@ -140,12 +140,12 @@ const CASE_LINKS = {
 };
 
 /**
- * Adresy, które indeks podaje, a wydawca ich nie obsługuje. Wpisujemy tu tylko
- * to, co sprawdzone pobraniem: DOW-UAP-D134 oddaje 404 przy ścieżce zbudowanej
- * tak samo jak działająca ścieżka D135, więc nazwa pliku w indeksie jest inna
- * niż u wydawcy. Poprawnego adresu nie zgadujemy, pokazujemy stan faktyczny.
+ * Adresy, które indeks podaje, a wydawca ich nie obsługuje, i dla których nie
+ * znaleźliśmy działającej ścieżki. Wpisujemy tu tylko to, co sprawdzone
+ * pobraniem. Poprawnego adresu nie zgadujemy, pokazujemy stan faktyczny.
+ * DOW-UAP-D134 przeszedł do SOURCE_FIXES, gdy znalazł się działający adres.
  */
-const DEAD_SOURCES = new Set(['DOW-UAP-D134']);
+const DEAD_SOURCES = new Set([]);
 
 /**
  * Rok zdarzenia tam, gdzie tytuł z indeksu przeczy nazwie pliku u wydawcy.
@@ -163,6 +163,9 @@ const YEAR_FIXES = { 'FBI-UAP-D022@03': 2023 };
 const SOURCE_FIXES = {
   // indeks: …southern-united-states-2020.pdf (404); ten sam plik pod nazwą „iraq-2023”
   'DOW-UAP-D20@01': 'https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf',
+  // indeks: …/DOW-UAP-D134_%20AAWSAP-DIRD-… (404), ze spacją po „D134_”; ten sam plik
+  // bez spacji, tak jak nazywa go paczka wydania 06 (25 627 490 B, CRC32 3cad1f4a)
+  'DOW-UAP-D134@06': 'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D134_AAWSAP-DIRD-Maverick-Inventor-Versus-Corporate-Inventor-Where-Will-the-Next-Major-Innovations-Arise-March-30-2010.pdf',
 };
 
 /**
