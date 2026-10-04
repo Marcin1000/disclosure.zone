@@ -5,6 +5,9 @@ export const DEFAULT_LANG: Lang = 'en';
 export const LOCALE_NAME: Record<Lang, string> = { en: 'English', pl: 'Polski' };
 export const HTML_LANG: Record<Lang, string> = { en: 'en', pl: 'pl' };
 
+/** Jedyne miejsce wsparcia finansowego. Zwykły link, bez widżetu i skryptów zewnętrznych. */
+export const SUPPORT_URL = 'https://ko-fi.com/disclosurezone';
+
 /** Ścieżka z prefiksem języka. Domyślny język bez prefiksu. */
 export function path(lang: Lang, p = '/'): string {
   const clean = p === '/' ? '' : p.replace(/^\/|\/$/g, '');
@@ -46,6 +49,7 @@ const en: Dict = {
   'foot.project': 'Project',
   'foot.about': 'About',
   'foot.data': 'Open data',
+  'foot.support': 'Support the project',
   'foot.rights': 'Content under CC BY 4.0 · Source documents remain the property of the issuing institutions',
   'foot.lang': 'Language',
 
@@ -291,6 +295,7 @@ const pl: Dict = {
   'foot.project': 'Projekt',
   'foot.about': 'O projekcie',
   'foot.data': 'Dane otwarte',
+  'foot.support': 'Wesprzyj projekt',
   'foot.rights': 'Treść na licencji CC BY 4.0 · Dokumenty źródłowe pozostają własnością wydających je instytucji',
   'foot.lang': 'Język',
 

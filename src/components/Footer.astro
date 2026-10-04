@@ -1,6 +1,6 @@
 ---
 import Logo from './Logo.astro';
-import { path, useT, LOCALES, LOCALE_NAME, type Lang } from '../i18n';
+import { path, useT, LOCALES, LOCALE_NAME, SUPPORT_URL, type Lang } from '../i18n';
 interface Props { lang: Lang; rest?: string }
 const { lang, rest = '/' } = Astro.props;
 const t = useT(lang);
@@ -28,6 +28,7 @@ const year = new Date().getFullYear();
       <a href={path(lang, '/toolkit')}>{t('nav.toolkit')}</a>
       <a href={path(lang, '/about')}>{t('foot.about')}</a>
       <a href={path(lang, '/data')}>{t('foot.data')}</a>
+      <a href={SUPPORT_URL} rel="noopener">{t('foot.support')}</a>
     </div>
   </div>
   <div class="wrap" style="margin-top:2.5rem">

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import { getCases } from '../../lib/cases';
 import { isCountry } from '../../data/geo';
 import { claims } from '../../data/claims';
-import { langParams, path, useT, type Lang } from '../../i18n';
+import { langParams, path, useT, SUPPORT_URL, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
 const { lang } = Astro.props as { lang: Lang };
@@ -89,6 +89,19 @@ const countries = new Set(all.map(c => c.data.country).filter(isCountry)).size;
         ? 'Database content is available under CC BY 4.0. Source documents remain the property of the issuing institutions and are linked, not copied. Machine-readable data: '
         : 'Treść bazy jest dostępna na licencji CC BY 4.0. Dokumenty źródłowe pozostają własnością wydających je instytucji i są linkowane, a nie kopiowane. Dane w formatach maszynowych: '}
       <a href={path(lang, '/data')}>{en ? 'the open data page' : 'strona danych otwartych'}</a>.
+    </p>
+
+    <h2 id="support">{en ? 'Support' : 'Wsparcie'}</h2>
+    <p>
+      {en
+        ? 'The database is built and maintained by one person. Reading it is free and will stay free: no paywall, no accounts, no advertising. Anyone who finds it useful can '
+        : 'Bazę buduje i utrzymuje jedna osoba. Czytanie jest bezpłatne i takie zostanie: bez paywalla, bez kont, bez reklam. Kto uzna ją za przydatną, może '}
+      <a href={SUPPORT_URL} rel="noopener">{en ? 'support it on Ko-fi' : 'wesprzeć ją na Ko-fi'}</a>.
+    </p>
+    <p>
+      {en
+        ? 'Support pays for the time spent reading documents page by page and for hosting. It buys no influence: no supporter has any say over how a case is assessed, which cases are added or what a verdict says. The data stays under CC BY 4.0 for everyone, whether they support the project or not.'
+        : 'Wsparcie pokrywa czas spędzony na czytaniu dokumentów strona po stronie oraz hosting. Nie kupuje wpływu: żaden wspierający nie ma głosu w tym, jak oceniana jest sprawa, które sprawy trafiają do bazy ani co mówi werdykt. Dane zostają na licencji CC BY 4.0 dla wszystkich, niezależnie od tego, czy wspierają projekt.'}
     </p>
   </section>
 </Base>
