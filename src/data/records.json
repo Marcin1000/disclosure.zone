@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-10-04T20:11:09.349Z",
+ "generated": "2026-10-04T20:29:51.367Z",
  "count": 450,
  "records": [
   {
@@ -3627,7 +3627,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "test-site-2023"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
@@ -3651,7 +3653,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "test-site-2023"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
@@ -3675,7 +3679,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "test-site-2023"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
@@ -3699,7 +3705,9 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "test-site-2023"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",

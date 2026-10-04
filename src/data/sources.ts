@@ -152,6 +152,13 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-ica-d001':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/ICA-UAP-D001_Analysis_Colorado-Springs-UAP-Incident.pdf',
   'pursue-fbi-d001':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf',
   'pursue-fbi-d002':      'https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D002_FD-1057_Unresolved-UAP-Report_ColoradoSprings_2022.pdf',
+  // FBI, obserwacja z września 2023 (wydanie 01): trzy FD-302 i szkic, otwarte na żywo 4 X 2026
+  // i porównane bajt w bajt z paczką; uap-data.csv to wykaz, z którego war.gov/ufo buduje tabelę
+  'pursue-fbi-sep2023-serial-3': 'https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf',
+  'pursue-fbi-sep2023-serial-4': 'https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf',
+  'pursue-fbi-sep2023-serial-5': 'https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf',
+  'pursue-fbi-sep2023-sketch':   'https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf',
+  'pursue-uap-data-csv':         'https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv',
   'pursue-cia-d020':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-006':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf',

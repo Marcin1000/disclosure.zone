@@ -161,6 +161,11 @@ const CASE_LINKS = {
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],
   '65-hs1-834228961-62-hq-83894-section-9@01': ['socorro-1964'],
+  // obserwacja z września 2023: trzy FD-302 (pliki według LINK_SHIFTS) i szkic, datowany tylko nazwą pliku
+  'fbi-september-2023-sighting-serial-3@01': ['test-site-2023'],
+  'fbi-september-2023-sighting-serial-4@01': ['test-site-2023'],
+  'fbi-september-2023-sighting-serial-5@01': ['test-site-2023'],
+  'fbi-september-2023-sighting-composite-sketch@01': ['test-site-2023'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
 };
 
