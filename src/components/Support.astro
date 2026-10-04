@@ -1,0 +1,30 @@
+---
+import { path, useT, SUPPORT_URL, type Lang } from '../i18n';
+interface Props { lang: Lang; context?: 'case' | 'site' }
+const { lang, context = 'site' } = Astro.props;
+const t = useT(lang);
+---
+{/* Ramka wsparcia: zwykły link do Ko-fi, bez widżetu i skryptów zewnętrznych. */}
+<aside class="support" aria-labelledby={`support-${context}`}>
+  <p class="label label--amber" id={`support-${context}`} style="margin:0 0 .7rem">{t('support.kicker')}</p>
+  <p class="support__lead">{t(context === 'case' ? 'support.case' : 'support.site')}</p>
+  <div class="support__row">
+    <a class="btn support__btn" href={SUPPORT_URL} rel="noopener">{t('support.cta')}</a>
+    <p class="support__note">
+      {t('support.note')} <a href={path(lang, '/about#support')}>{t('support.how')}</a>
+    </p>
+  </div>
+</aside>
+
+<style>
+  .support {
+    border: 1px solid var(--line-2); border-left: 2px solid var(--amber-dim);
+    background: rgba(240, 169, 59, .04);
+    padding: clamp(1.2rem, 3vw, 1.8rem) clamp(1.1rem, 3vw, 2rem);
+  }
+  .support__lead { margin: 0 0 1.2rem; max-width: 64ch; color: var(--fg); line-height: 1.6; }
+  .support__row { display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1.4rem; }
+  .support__btn { border-color: var(--amber-dim); color: var(--amber); background: rgba(240, 169, 59, .08); }
+  .support__btn:hover { border-color: var(--amber); color: var(--amber); background: rgba(240, 169, 59, .16); }
+  .support__note { margin: 0; font-size: .85rem; color: var(--fg-faint); max-width: 46ch; }
+</style>

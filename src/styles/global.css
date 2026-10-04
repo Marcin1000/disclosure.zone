@@ -200,12 +200,23 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 }
 .nav__links a:hover, .nav__links a[aria-current] { color: var(--phos); }
 .nav__links a:hover::after, .nav__links a[aria-current]::after { right: 0; }
+/* Wsparcie: jedyna pozycja w ramce, w bursztynie, żeby nie udawała działu bazy. */
+.nav__links a.nav__support { color: var(--amber); border: 1px solid var(--amber-dim); padding: .35rem .65rem; }
+.nav__links a.nav__support::after { display: none; }
+.nav__links a.nav__support:hover { border-color: var(--amber); background: rgba(240, 169, 59, .08); }
+/* Między arkuszem a szerokim ekranem polskie etykiety z ramką wsparcia nie mieszczą się
+   przy pełnych odstępach, więc odstępy i rozstrzelenie liter maleją. */
+@media (max-width: 1120px) {
+  .nav__in { gap: 1.1rem; }
+  .nav__links { gap: .9rem; }
+  .nav__links a { letter-spacing: .1em; }
+}
 /* ============================================================ MENU NA TELEFON
    Pasek przewijany w poziomie chował połowę działów za krawędzią ekranu.
-   Poniżej 860 px pozycje przenoszą się do wysuwanego arkusza.
+   Poniżej 900 px pozycje przenoszą się do wysuwanego arkusza.
 */
 .burger { display: none; }
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   .nav__links { display: none; }
   .burger {
     display: grid; place-items: center; margin-left: auto;
@@ -290,6 +301,12 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 /* Numer zapala się razem z etykietą, inaczej pozycja świeci połowicznie. */
 .sheet__list a:hover .sheet__n, .sheet__list a:active .sheet__n,
 .sheet__list a:focus-visible .sheet__n, .sheet__list a[aria-current] .sheet__n { color: var(--phos-dim); }
+.sheet__support {
+  display: block; margin: 0 0 1.2rem; padding: .95rem 12px; text-align: center;
+  font-family: var(--mono); font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--amber); border: 1px solid var(--amber-dim); background: rgba(240, 169, 59, .06);
+}
+.sheet__support:hover, .sheet__support:focus-visible { color: var(--amber); border-color: var(--amber); background: rgba(240, 169, 59, .12); }
 .sheet__foot { margin: 0; padding-left: 12px; color: var(--fg-faint); }
 
 body.is-locked { position: fixed; width: 100%; overflow: hidden; }

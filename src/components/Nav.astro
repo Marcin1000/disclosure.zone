@@ -1,6 +1,6 @@
 ---
 import Logo from './Logo.astro';
-import { path, useT, type Lang } from '../i18n';
+import { path, useT, SUPPORT_URL, type Lang } from '../i18n';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = useT(lang);
@@ -20,6 +20,7 @@ const isHere = (href: string) => here === href || here.startsWith(href + '/');
         const href = path(lang, `/${slug}`);
         return <a href={href} aria-current={isHere(href) ? 'page' : undefined}>{t(key)}</a>;
       })}
+      <a class="nav__support" href={SUPPORT_URL} rel="noopener">{t('nav.support')}</a>
     </nav>
 
     <button class="burger" type="button" data-menu-open
@@ -57,6 +58,8 @@ const isHere = (href: string) => here === href || here.startsWith(href + '/');
         );
       })}
     </ul>
+
+    <a class="sheet__support" href={SUPPORT_URL} rel="noopener">{t('foot.support')}</a>
 
     <p class="sheet__foot label">{t('site.tagline')}</p>
   </nav>
@@ -105,7 +108,7 @@ const isHere = (href: string) => here === href || here.startsWith(href + '/');
     });
 
     // powrót na szerokość desktopu zamyka arkusz, żeby nie został otwarty w tle
-    matchMedia('(min-width: 861px)').addEventListener('change', e => {
+    matchMedia('(min-width: 901px)').addEventListener('change', e => {
       if (e.matches && 'open' in sheet.dataset) close();
     });
   }
