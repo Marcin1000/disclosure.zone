@@ -48,6 +48,9 @@ const relSeq = related.some(x => x.rel === 'next' || x.rel === 'prev');
 const relPair = related.some(x => x.rel === 'report' || x.rel === 'recording');
 /** Przy nagraniu indeks podawał raport, który istnieje; przy D20 adres, którego nie ma. */
 const indexedReport = r.kind === 'recording' && !!r.sourceAsIndexed;
+/** Przy przesunięciu oba adresy działają, tylko indeks podlinkował inny plik z zestawu. */
+const asIndexedKey = indexedReport ? 'rec.asIndexedReport' : r.linkShift ? 'rec.asIndexedShift' : 'rec.asIndexed';
+const asIndexedNote = indexedReport ? null : r.linkShift ? 'rec.asIndexedShiftNote' : 'rec.asIndexedNote';
 
 const media = mediaFor(r);
 const still = r.id && r.kind === 'recording' ? STILLS[r.id] : undefined;
@@ -163,9 +166,9 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               {r.sourceKind === 'landing' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.landingNote')}</p>}
               {r.sourceKind === 'dead' && <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t('rec.deadNote')}</p>}
               {r.sourceAsIndexed && (
-                <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t(indexedReport ? 'rec.asIndexedReport' : 'rec.asIndexed')}
+                <p class="dim" style="margin:1rem 0 0;font-size:.92rem">{t(asIndexedKey)}
                   <span class="mono" style="display:block;font-size:.76rem;color:var(--fg-faint);overflow-wrap:anywhere;margin-top:.3rem">{r.sourceAsIndexed}</span>
-                  {!indexedReport && t('rec.asIndexedNote')}</p>
+                  {asIndexedNote && t(asIndexedNote)}</p>
               )}
             </>
           : <p class="dim" style="margin:0;font-size:.95rem">{t('rec.noneNote')}</p>}

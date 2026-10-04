@@ -1,9 +1,9 @@
 {
  "dataset": "disclosure.zone / PURSUE document registry",
- "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
+ "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-09-29T20:32:44.314Z",
+ "generated": "2026-10-04T20:11:09.349Z",
  "count": 450,
  "records": [
   {
@@ -30,6 +30,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -56,6 +57,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -82,6 +84,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -108,6 +111,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -134,6 +138,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -160,6 +165,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -186,6 +192,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -212,6 +219,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -238,6 +246,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -264,6 +273,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -290,6 +300,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -316,6 +327,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -342,6 +354,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -368,6 +381,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -394,6 +408,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -422,6 +437,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -448,6 +464,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -474,6 +491,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -500,6 +518,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -529,6 +548,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -557,6 +577,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -585,6 +606,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -611,6 +633,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -637,6 +660,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -665,6 +689,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -691,6 +716,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -719,6 +745,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/65_hs1-8342289+M5+M11",
+   "linkShift": false,
    "related": []
   },
   {
@@ -745,6 +772,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -771,6 +799,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -797,6 +826,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -825,6 +855,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -851,6 +882,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -877,6 +909,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -902,6 +935,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr19",
@@ -930,6 +964,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr20",
@@ -961,6 +996,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -984,6 +1020,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr22",
@@ -1012,6 +1049,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr23",
@@ -1040,6 +1078,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1067,6 +1106,7 @@
     "placeFrom": "text"
    },
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-southern-united-states-2020.pdf",
+   "linkShift": false,
    "related": []
   },
   {
@@ -1090,6 +1130,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr26",
@@ -1122,6 +1163,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1147,6 +1189,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr28",
@@ -1181,6 +1224,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr29",
@@ -1209,6 +1253,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1232,6 +1277,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1255,6 +1301,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr31",
@@ -1291,6 +1338,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1314,6 +1362,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1339,6 +1388,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr34",
@@ -1369,6 +1419,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr35",
@@ -1397,6 +1448,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr36",
@@ -1428,6 +1480,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1457,6 +1510,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1480,6 +1534,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1503,6 +1558,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1526,6 +1582,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1552,6 +1609,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1575,6 +1633,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1598,6 +1657,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1621,6 +1681,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1644,6 +1705,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1667,6 +1729,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1690,6 +1753,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1713,6 +1777,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1736,6 +1801,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1762,6 +1828,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1787,6 +1854,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1812,6 +1880,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1837,6 +1906,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1862,6 +1932,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1887,6 +1958,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1912,6 +1984,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1935,6 +2008,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1961,6 +2035,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -1984,6 +2059,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2010,6 +2086,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2033,6 +2110,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d10",
@@ -2061,6 +2139,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d12",
@@ -2092,6 +2171,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
+   "linkShift": false,
    "related": []
   },
   {
@@ -2115,6 +2195,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d16",
@@ -2143,6 +2224,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d18",
@@ -2171,6 +2253,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d23",
@@ -2199,6 +2282,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d23",
@@ -2229,6 +2313,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d25",
@@ -2259,6 +2344,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d27",
@@ -2287,6 +2373,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d32",
@@ -2315,6 +2402,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d32",
@@ -2343,6 +2431,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d32",
@@ -2373,6 +2462,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d33",
@@ -2403,6 +2493,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d35",
@@ -2431,6 +2522,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d38",
@@ -2459,6 +2551,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2482,6 +2575,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2505,6 +2599,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2528,6 +2623,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2551,6 +2647,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2574,6 +2671,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2597,6 +2695,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2620,6 +2719,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2643,6 +2743,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2666,6 +2767,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2689,6 +2791,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2712,6 +2815,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2735,6 +2839,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2758,6 +2863,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2781,6 +2887,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2804,6 +2911,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2827,6 +2935,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2850,6 +2959,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2873,6 +2983,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2896,6 +3007,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2919,6 +3031,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2942,6 +3055,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2965,6 +3079,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -2988,6 +3103,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3011,6 +3127,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3034,6 +3151,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3057,6 +3175,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3080,6 +3199,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3103,6 +3223,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3126,6 +3247,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3149,6 +3271,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3172,6 +3295,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3195,6 +3319,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3218,6 +3343,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3241,6 +3367,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3264,6 +3391,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3287,6 +3415,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3310,6 +3439,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3333,6 +3463,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3356,6 +3487,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3379,6 +3511,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3402,6 +3535,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3425,6 +3559,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3448,6 +3583,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3471,6 +3607,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3494,6 +3631,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3511,12 +3649,13 @@
    "sourceKind": "file",
    "release": "01",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
+   "source": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
    "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
+   "linkShift": true,
    "related": []
   },
   {
@@ -3534,12 +3673,13 @@
    "sourceKind": "file",
    "release": "01",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
+   "source": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
    "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
+   "linkShift": true,
    "related": []
   },
   {
@@ -3557,12 +3697,13 @@
    "sourceKind": "file",
    "release": "01",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
+   "source": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
    "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
+   "linkShift": true,
    "related": []
   },
   {
@@ -3586,6 +3727,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3609,6 +3751,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3632,6 +3775,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3655,6 +3799,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3678,6 +3823,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3701,6 +3847,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3724,6 +3871,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3747,6 +3895,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3770,6 +3919,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3793,6 +3943,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3816,6 +3967,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3839,6 +3991,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3862,6 +4015,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3885,6 +4039,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3908,6 +4063,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3931,6 +4087,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3954,6 +4111,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -3977,6 +4135,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4000,6 +4159,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4023,6 +4183,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4046,6 +4207,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "cia-uap-011",
@@ -4074,6 +4236,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4097,6 +4260,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4120,6 +4284,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4143,6 +4308,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4166,6 +4332,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4189,6 +4356,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4212,6 +4380,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4235,6 +4404,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4258,6 +4428,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4281,6 +4452,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4304,6 +4476,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4327,6 +4500,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4350,6 +4524,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4373,6 +4548,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4396,6 +4572,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4419,6 +4596,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4442,6 +4620,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4465,6 +4644,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4488,6 +4668,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4511,6 +4692,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4534,6 +4716,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4557,6 +4740,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4580,6 +4764,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4603,6 +4788,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4626,6 +4812,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4649,6 +4836,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4672,6 +4860,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4695,6 +4884,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4720,6 +4910,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4745,6 +4936,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4768,6 +4960,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4791,6 +4984,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4814,6 +5008,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4837,6 +5032,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4860,6 +5056,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4883,6 +5080,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4906,6 +5104,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4929,6 +5128,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4952,6 +5152,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -4977,6 +5178,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5002,6 +5204,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5025,6 +5228,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5048,6 +5252,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5071,6 +5276,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5094,6 +5300,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5117,6 +5324,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5140,6 +5348,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5163,6 +5372,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5186,6 +5396,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5209,6 +5420,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5232,6 +5444,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5255,6 +5468,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5278,6 +5492,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5301,6 +5516,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5324,6 +5540,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5347,6 +5564,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5370,6 +5588,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5393,6 +5612,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5416,6 +5636,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5439,6 +5660,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5462,6 +5684,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5485,6 +5708,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5510,6 +5734,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5537,6 +5762,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5560,6 +5786,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5583,6 +5810,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5606,6 +5834,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5631,6 +5860,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5654,6 +5884,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5677,6 +5908,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5700,6 +5932,7 @@
    "illegible": "thumbnail",
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5723,6 +5956,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5746,6 +5980,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "cia-intelligence-information-report-sary-shagan-ussr-1973",
@@ -5774,6 +6009,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5797,6 +6033,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "cia-uap-018",
@@ -5827,6 +6064,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5852,6 +6090,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5877,6 +6116,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5902,6 +6142,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5925,6 +6166,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "cia-uap-013",
@@ -5953,6 +6195,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -5978,6 +6221,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6003,6 +6247,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6028,6 +6273,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6053,6 +6299,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6078,6 +6325,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6103,6 +6351,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6128,6 +6377,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6151,6 +6401,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6174,6 +6425,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6197,6 +6449,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6223,6 +6476,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d088",
@@ -6254,6 +6508,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d087",
@@ -6284,6 +6539,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6309,6 +6565,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6334,6 +6591,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6357,6 +6615,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6380,6 +6639,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6403,6 +6663,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6426,6 +6687,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6449,6 +6711,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6472,6 +6735,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6495,6 +6759,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6518,6 +6783,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6541,6 +6807,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6564,6 +6831,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6589,6 +6857,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6614,6 +6883,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6639,6 +6909,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6664,6 +6935,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6689,6 +6961,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6714,6 +6987,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6739,6 +7013,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6764,6 +7039,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6789,6 +7065,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6814,6 +7091,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6837,6 +7115,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6860,6 +7139,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6883,6 +7163,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6906,6 +7187,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6931,6 +7213,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6956,6 +7239,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -6981,6 +7265,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7004,6 +7289,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7027,6 +7313,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7050,6 +7337,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7073,6 +7361,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7096,6 +7385,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7119,6 +7409,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7142,6 +7433,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7165,6 +7457,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7188,6 +7481,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7211,6 +7505,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7234,6 +7529,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7257,6 +7553,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7282,6 +7579,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7307,6 +7605,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7330,6 +7629,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7353,6 +7653,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7376,6 +7677,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7399,6 +7701,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7422,6 +7725,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7445,6 +7749,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7468,6 +7773,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d094",
@@ -7498,6 +7804,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d093",
@@ -7528,6 +7835,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7551,6 +7859,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7574,6 +7883,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7597,6 +7907,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7620,6 +7931,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7643,6 +7955,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7666,6 +7979,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7689,6 +8003,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7712,6 +8027,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7735,6 +8051,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7758,6 +8075,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7781,6 +8099,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7804,6 +8123,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7827,6 +8147,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7850,6 +8171,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7873,6 +8195,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7896,6 +8219,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7919,6 +8243,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7942,6 +8267,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7965,6 +8291,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -7988,6 +8315,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8011,6 +8339,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8034,6 +8363,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8057,6 +8387,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8080,6 +8411,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8103,6 +8435,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8126,6 +8459,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8149,6 +8483,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8172,6 +8507,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8195,6 +8531,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8218,6 +8555,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8241,6 +8579,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8264,6 +8603,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8287,6 +8627,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8310,6 +8651,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8335,6 +8677,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8358,6 +8701,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8381,6 +8725,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8404,6 +8749,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8427,6 +8773,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8450,6 +8797,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8473,6 +8821,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8496,6 +8845,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8519,6 +8869,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8542,6 +8893,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8565,6 +8917,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8588,6 +8941,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8611,6 +8965,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8634,6 +8989,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8657,6 +9013,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8680,6 +9037,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8703,6 +9061,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8726,6 +9085,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8749,6 +9109,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8772,6 +9133,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8795,6 +9157,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8818,6 +9181,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8841,6 +9205,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8864,6 +9229,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8887,6 +9253,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8910,6 +9277,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8933,6 +9301,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8956,6 +9325,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -8979,6 +9349,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9002,6 +9373,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9025,6 +9397,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9048,6 +9421,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9071,6 +9445,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9094,6 +9469,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9117,6 +9493,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9140,6 +9517,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9165,6 +9543,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9190,6 +9569,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9215,6 +9595,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9238,6 +9619,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9263,6 +9645,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9286,6 +9669,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr133",
@@ -9316,6 +9700,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr135",
@@ -9346,6 +9731,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-pr140",
@@ -9378,6 +9764,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9401,6 +9788,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9424,6 +9812,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9447,6 +9836,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9470,6 +9860,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9493,6 +9884,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9516,6 +9908,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9539,6 +9932,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9562,6 +9956,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9585,6 +9980,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9608,6 +10004,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9631,6 +10028,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9654,6 +10052,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9677,6 +10076,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9700,6 +10100,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9723,6 +10124,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9746,6 +10148,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9769,6 +10172,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9792,6 +10196,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9815,6 +10220,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9838,6 +10244,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9861,6 +10268,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9884,6 +10292,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9907,6 +10316,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9930,6 +10340,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D134_%20AAWSAP-DIRD-Maverick-Inventor-Versus-Corporate-Inventor-Where-Will-the-Next-Major-Innovations-Arise-March-30-2010.pdf",
+   "linkShift": false,
    "related": []
   },
   {
@@ -9953,6 +10364,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9976,6 +10388,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -9999,6 +10412,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10022,6 +10436,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10045,6 +10460,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10068,6 +10484,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10091,6 +10508,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10114,6 +10532,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10137,6 +10556,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10160,6 +10580,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10183,6 +10604,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10206,6 +10628,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10229,6 +10652,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10252,6 +10676,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10275,6 +10700,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10298,6 +10724,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10321,6 +10748,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10344,6 +10772,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10367,6 +10796,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10390,6 +10820,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10415,6 +10846,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10440,6 +10872,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10463,6 +10896,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d107",
@@ -10493,6 +10927,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d108",
@@ -10523,6 +10958,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d109",
@@ -10553,6 +10989,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": [
     {
      "slug": "dow-uap-d109",
@@ -10581,6 +11018,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10604,6 +11042,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10627,6 +11066,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10650,6 +11090,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10673,6 +11114,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10696,6 +11138,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10719,6 +11162,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10742,6 +11186,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10765,6 +11210,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10788,6 +11234,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10811,6 +11258,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10834,6 +11282,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   },
   {
@@ -10860,6 +11309,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "linkShift": false,
    "related": []
   }
  ]

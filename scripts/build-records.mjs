@@ -198,6 +198,18 @@ const SOURCE_FIXES = {
 };
 
 /**
+ * Indeks wydawcy łączy trzy tytuły z tego zestawu z plikami przesuniętymi o jeden.
+ * Tytuł, opis w uap-data.csv i nazwa pliku zgadzają się ze sobą, nie zgadza się
+ * tylko link. Oba adresy działają, a pliki są bajt w bajt zgodne z paczką wydania 01.
+ * Rekord dostaje plik zgodny z tytułem, a adres z indeksu zostaje w sourceAsIndexed.
+ */
+const LINK_SHIFTS = {
+  'fbi-september-2023-sighting-serial-3@01': 'https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf',
+  'fbi-september-2023-sighting-serial-4@01': 'https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf',
+  'fbi-september-2023-sighting-serial-5@01': 'https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf',
+};
+
+/**
  * Filmy wydania 01. Indeks podaje przy nich albo raport z misji (PDF), albo nic,
  * a same nagrania wydawca trzyma na DVIDS. Każdy adres otwarty na żywo; tytuł
  * strony zgadza się z nagłówkiem XMP pliku z paczki uapvideos.zip wydania 01.
@@ -410,7 +422,8 @@ for (const r of manifest.records) {
   const fixKey = idPre && `${idPre}@${rel0}`;
   // rekordy bez identyfikatora (np. teczki FBI) poprawiamy po slugu z tytułu
   const fixedUrl = (fixKey ? SOURCE_FIXES[fixKey] : undefined) ?? SOURCE_FIXES[`${slugify(t.title)}@${rel0}`];
-  const s = parseSource(fixedUrl ?? r.officialSourceUrl ?? null);
+  const shiftedUrl = LINK_SHIFTS[`${slugify(t.title)}@${rel0}`];
+  const s = parseSource(shiftedUrl ?? fixedUrl ?? r.officialSourceUrl ?? null);
   // Wydanie 02 podaje w indeksie sam opis, a identyfikator stoi tylko w nazwie
   // pliku u wydawcy. Bierzemy go stamtąd, ale adres strony rekordu budujemy
   // jak dotąd z tytułu, żeby istniejące linki dalej działały.
@@ -446,7 +459,8 @@ for (const r of manifest.records) {
     cases: CASE_LINKS[`${id}@${s.release}`] ?? CASE_LINKS[`${slug}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
     illegible: (id && ILLEGIBLE[id]) ?? null,
     documentSays: DOCUMENT_SAYS[`${id}@${s.release}`] ?? null,
-    sourceAsIndexed: fixedUrl ? r.officialSourceUrl : null,
+    sourceAsIndexed: shiftedUrl || fixedUrl ? r.officialSourceUrl : null,
+    linkShift: Boolean(shiftedUrl),
     related: [],
   });
 }
@@ -511,7 +525,7 @@ const lookup = (key) => {
   return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
 };
 const ambiguous = [], unused = [];
-for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(LINK_SHIFTS), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
   const hits = lookup(key);
   if (!hits.length) unused.push(key);
   else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
@@ -543,7 +557,7 @@ records.sort((a, b) =>
 
 const out = {
   dataset: 'disclosure.zone / PURSUE document registry',
-  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
   index: manifest.index ?? null,
   harvested: manifest.harvested ?? null,
   generated: new Date().toISOString(),

@@ -50,6 +50,8 @@ export interface Rec {
   documentSays: { place: string; year?: number; placeFrom: 'text' | 'grid' } | null;
   /** Adres z indeksu, gdy wydawca serwuje ten sam plik pod innym; source trzyma wtedy działający. */
   sourceAsIndexed: string | null;
+  /** Indeks łączy ten tytuł z innym plikiem z tego samego zestawu; source to plik zgodny z tytułem. */
+  linkShift: boolean;
 }
 
 export const records: Rec[] = data.records as Rec[];
