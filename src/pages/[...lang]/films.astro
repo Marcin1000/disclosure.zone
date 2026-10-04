@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Support from '../../components/Support.astro';
 import { records, yearLabel } from '../../lib/records';
 import { mediaFor } from '../../lib/media';
 import { STILLS } from '../../data/stills';
@@ -56,10 +57,14 @@ const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
     </div>
   </section>
 
-  <section class="wrap wrap--read" style="padding-bottom:5rem">
+  <section class="wrap wrap--read" style="padding-bottom:2.5rem">
     <div class="panel panel--pad corners">
       <p class="label label--phos" style="margin:0 0 .8rem">{t('films.why')}</p>
       <p class="dim" style="margin:0;font-size:.95rem">{t('films.whyNote')}</p>
     </div>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:5rem">
+    <Support lang={lang} context="films" />
   </section>
 </Base>

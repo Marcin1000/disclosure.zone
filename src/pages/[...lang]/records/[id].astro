@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Support from '../../../components/Support.astro';
 import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, RELEASES } from '../../../lib/records';
 import { getCases } from '../../../lib/cases';
 import { mediaFor } from '../../../lib/media';
@@ -215,13 +216,17 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
         : <p class="dim" style="margin:0">{t('rec.noCases')}</p>}
     </section>
 
-    <section class="wrap wrap--read prose" style="padding-block:2.5rem 5rem">
+    <section class="wrap wrap--read prose" style="padding-block:2.5rem">
       <h2 style="margin-top:0">{t('rec.cite')}</h2>
       <div class="cite">
         <p class="cite__txt" id="cite">{citation}</p>
         <button class="btn btn--ghost cite__btn" type="button" data-copy="cite"
                 data-done={t('cite.copied')} hidden>{t('cite.copy')}</button>
       </div>
+    </section>
+
+    <section class="wrap wrap--read" style="padding-block:0 5rem">
+      <Support lang={lang} context="record" />
       <p style="margin-top:2rem"><a class="btn btn--ghost" href={path(lang, '/records')}>{t('rec.back')}</a></p>
     </section>
   </article>

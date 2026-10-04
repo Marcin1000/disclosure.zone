@@ -1,13 +1,13 @@
 ---
 import { path, useT, SUPPORT_URL, type Lang } from '../i18n';
-interface Props { lang: Lang; context?: 'case' | 'site' }
+interface Props { lang: Lang; context?: 'case' | 'record' | 'films' | 'site' }
 const { lang, context = 'site' } = Astro.props;
 const t = useT(lang);
 ---
 {/* Ramka wsparcia: zwykły link do Ko-fi, bez widżetu i skryptów zewnętrznych. */}
 <aside class="support" aria-labelledby={`support-${context}`}>
   <p class="label label--amber" id={`support-${context}`} style="margin:0 0 .7rem">{t('support.kicker')}</p>
-  <p class="support__lead">{t(context === 'case' ? 'support.case' : 'support.site')}</p>
+  <p class="support__lead">{t(`support.${context}`)}</p>
   <div class="support__row">
     <a class="btn support__btn" href={SUPPORT_URL} rel="noopener">{t('support.cta')}</a>
     <p class="support__note">
