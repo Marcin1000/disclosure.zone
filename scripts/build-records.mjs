@@ -106,7 +106,8 @@ const CASE_LINKS = {
   // Streszczenia incydentów z Wright Field z 14 marca 1949, dwie części jednego dokumentu:
   // D087 ma Arnolda (17) i Godman (33 do 33g), D088 Chilesa i Whitteda (144) oraz Fargo (172 do 172c).
   'DOW-UAP-D087': ['arnold-1947', 'mantell-1948'],
-  'DOW-UAP-D088': ['chiles-whitted-1948', 'gorman-1948'],
+  // List Markhama z 14 III 1948 (D088 s. 9) zestawia pościg Mantella z historią z Maury Island
+  'DOW-UAP-D088': ['chiles-whitted-1948', 'gorman-1948', 'maury-island-1947', 'mantell-1948'],
   // Studium nr 203 z 10 grudnia 1948: Wenus nad Godman i odesłanie do incydentu z 7 stycznia 1948
   'DOW-UAP-D094': ['mantell-1948'],
   // Teczka zarządu wywiadu USAF, s. 37–46: KC-97 i radar naziemny nad Nową Fundlandią, 6 lipca 1955
@@ -149,8 +150,17 @@ const CASE_LINKS = {
   // 65 SOS, 29 lipca 2025: sześć punktów bez miejsca, wszystkie położenia zaczernione
   'DOW-UAP-D108': ['six-spheres-2025'],
   'DOW-UAP-PR135': ['six-spheres-2025'],
-  // teczka FBI 62-HQ-83894: teleks Dallas z 8 VII 1947 o Roswell (s. 70) i dopisek dyrektora (s. 127, 131)
-  '65-hs1-834228961-62-hq-83894-section-1@01': ['roswell-1947'],
+  // teczka FBI 62-HQ-83894: teleks Dallas z 8 VII 1947 o Roswell (s. 70) i dopisek dyrektora (s. 127, 131);
+  // Maury Island: teleks z Portland z 5 VIII 1947 (s. 139–143) i z Seattle z 14 VIII (s. 119)
+  '65-hs1-834228961-62-hq-83894-section-1@01': ['roswell-1947', 'maury-island-1947'],
+  // Maury Island 1947: teleksy z Seattle z 6, 7, 12 VIII i depesza dyrektora z 14 VIII (S2); raport A-2,
+  // oświadczenie z 7 VIII, zeznanie Smitha, list z Seattle, notatki z Butte i Chicago (S3); list Palmera
+  // do Arnolda z 22 VII i przesłuchanie Arnolda (S3) cytuje też arnold-1947; wycinek z 1950 (SUB_A);
+  // druga kopia listu Markhama w streszczeniach incydentów RG 38
+  '65-hs1-834228961-62-hq-83894-section-2@01': ['maury-island-1947'],
+  '65-hs1-834228961-62-hq-83894-section-3@01': ['maury-island-1947', 'arnold-1947'],
+  '65-hs1-834228961-62-hq-83894-sub-a@01': ['maury-island-1947'],
+  '38-143685-box-incident-summaries-101-172@01': ['maury-island-1947'],
   // zielone kule ognia: depesza dowódcy Kirtland z 31 I 1949 (Section 4, s. 106)
   '65-hs1-834228961-62-hq-83894-section-4@01': ['green-fireballs-1948', 'oak-ridge-1950'],
   // Oak Ridge 1947–1951: zdjęcia Presleya (Section 4, Serial 153), radar Adcocka z marca 1950 (Section 5),

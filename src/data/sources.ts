@@ -225,6 +225,10 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-fbi-62-83894-s4': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf',
   'pursue-fbi-62-83894-s9': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf',
   'pursue-fbi-62-83894-serial-438': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_438.pdf',
+  // Maury Island 1947: Section 2 i 3 oraz SUB_A, otwarte na żywo 5 X 2026 i zgodne bajt w bajt z paczką
+  'pursue-fbi-62-83894-s2': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf',
+  'pursue-fbi-62-83894-s3': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_3.pdf',
+  'pursue-fbi-62-83894-sub-a': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_sub_a.pdf',
   'roswell-af':           'https://www.af.mil/The-Roswell-Report/',
   'gao-roswell-1995':     'https://www.govinfo.gov/content/pkg/GAOREPORTS-NSIAD-95-187/pdf/GAOREPORTS-NSIAD-95-187.pdf',
   'nara-roswell-vol1':    'https://archive.org/details/gov.archives.341-roswell-1',

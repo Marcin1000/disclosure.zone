@@ -46,6 +46,10 @@ sources:
   label: "Air Intelligence Division Study No. 203, “Analysis of Flying Object Incidents in the U. S.”, 10 December 1948 (DOW-UAP-D094)"
   note: "Directorate of Intelligence, USAF, and Office of Naval Intelligence. Paragraph 2k of Appendix C (p. 17) describes the death of “a National Guard pilot” on 7 January 1948 without naming him. Page 21 puts a Godman sighting of 19 August 1948 down to Venus and suggests the earlier Godman incidents may have been Venus too."
   ref: "pursue-d094"
+- "tier": "T5"
+  label: "Letter of Norman G. Markham to the Chief Signal Officer, 14 March 1948 (DOW-UAP-D088, p. 9)"
+  note: "Filed under incident 101 of the incident summaries forwarded from Wright Field on 14 March 1949. Markham’s speculation, not a report: page 9 mentions Mantell and, in the next sentence, the two officers and Maury Island."
+  ref: "pursue-d088"
 ---
 
 ## Why an “explained” case still matters
@@ -72,3 +76,11 @@ University of Louisville, Louisville, Kentucky. It is believed that earlier inci
 Field (reference paragraph 2k, page 12, Appendix ‘C’) may also have been observations of the planet
 Venus.” Its paragraph 2k is the event of 7 January 1948: “a National Guard pilot was killed while
 attempting to chase an unidentified object up to 30,000 feet.” The study does not name Mantell.
+
+In a letter of 14 March 1948, filed with the incident summaries forwarded from Wright Field in 1949,
+Norman G. Markham, setting out by his own account “a speculation”, wrote that “Something like a
+‘flying disc’ was pursued by one Lt. Mantell and two other pilots” and, “in this connection”,
+mentioned “the deaths of two military officers” said to have been bringing back material evidence
+from flying discs, one of which “was said to have met with some kind of accident over Maury Island”;
+this is Markham's speculation, and nothing in the files connects the two cases (see [The Maury Island
+Fragments](/cases/maury-island-1947)).
