@@ -414,10 +414,17 @@ function isPlaceLike(seg) {
 /** Tytuł ma zwykle postać „identyfikator, opis, miejsce, data". */
 function parseTitle(raw) {
   const clean = raw.replace(/\s+/g, ' ').trim();
-  const idm = /^([A-Z]{2,6}-UAP-[A-Z]{0,3}\d+)\s*[,:]?\s*/i.exec(clean);
+  // Litera dopisana do numeru (DOW-UAP-PR057a, PR057b) schodzi z tytułu razem z identyfikatorem,
+  // ale do id jej nie bierzemy: id i slug tych rekordów zostają takie jak dotąd, a z nimi adresy.
+  const idm = /^([A-Z]{2,6}-UAP-[A-Z]{0,3}\d+)(?:[a-z](?=[\s,:]|$))?\s*[,:]?\s*/i.exec(clean);
   const id = idm ? idm[1].toUpperCase() : null;
   let rest = idm ? clean.slice(idm[0].length) : clean;
-  rest = rest.replace(/^["“]|["”]$/g, '').trim();
+  // Cudzysłów zdejmujemy tylko wtedy, gdy obejmuje cały tytuł, albo gdy stoi na brzegu sam,
+  // bez pary (DOW-UAP-PR073). Para wewnątrz tytułu zostaje: „"Triangle Orbs," …, 2021”
+  // i „… of "Unidentified Flying Objects"” traciły dotąd po jednym cudzysłowie.
+  const quotes = (rest.match(/["“”]/g) ?? []).length;
+  if (quotes === 2 && /^["“]/.test(rest) && /["”]$/.test(rest)) rest = rest.slice(1, -1).trim();
+  else if (quotes === 1) rest = rest.replace(/^["“]|["”]$/, '').trim();
 
   // Granica \b nie działa przy podkreślnikach, a tak wyglądają nazwy plików
   // z NARA. Zamiast niej pilnujemy, żeby z żadnej strony nie stała cyfra.
