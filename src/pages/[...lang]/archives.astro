@@ -27,6 +27,8 @@ const open = archives.filter(a => a.publicDb === true).length;
     <div class="stack" style="--s:1px;background:var(--line);border:1px solid var(--line)">
       {archives.map(a => {
         const url = resolveSource(a.ref);
+        // Strona z liczbami, gdy to nie ta sama strona co ref (pole volumeRef w archives.ts).
+        const figUrl = resolveSource(a.volumeRef);
         return (
           <article class="arch">
             <div>
@@ -43,7 +45,10 @@ const open = archives.filter(a => a.publicDb === true).length;
             {/* Prawa szyna z metryką wpisu: bez niej panel był w połowie pusty. */}
             <div class="arch__meta">
               <p class="label" style="margin:0">{t('arch.volume')}</p>
-              <p class="arch__vol">{a.volume[lang]}</p>
+              <p class="arch__vol">
+                {a.volume[lang]}
+                {figUrl && <>{' '}<a href={figUrl} rel="noopener noreferrer" target="_blank" class="mono link-act arch__fig">{t('arch.figures')}</a></>}
+              </p>
               {url && <a href={url} rel="noopener noreferrer" target="_blank" class="mono link-act" style="font-size:.85rem">{t('arch.source')}</a>}
             </div>
           </article>

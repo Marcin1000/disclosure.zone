@@ -10,6 +10,11 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bluebook':        'https://www.archives.gov/research/military/air-force/ufos',
   'nara-uap':             'https://www.archives.gov/research/topics/uaps',
   'nara-uap-microfilm':   'https://www.archives.gov/research/topics/uaps/textual-and-microfilm',
+  // Seria oczyszczonych akt spraw Blue Book w katalogu NARA (10 622 jednostki, 116 537 obiektów cyfrowych, 5 X 2026)
+  'nara-bluebook-sanitized': 'https://catalog.archives.gov/id/597821',
+  'nara-rg615':           'https://www.archives.gov/research/topics/uaps/rg-615',
+  // Rekord RG 615 w katalogu NARA: 9 serii, 717 jednostek z 719 obiektami cyfrowymi (5 X 2026)
+  'nara-rg615-catalog':   'https://catalog.archives.gov/id/445887258',
   'nara-catalog':         'https://catalog.archives.gov/',
   'nara-washington-1952': 'https://prologue.blogs.archives.gov/2019/12/19/saucers-over-washington-the-history-of-project-blue-book/',
 
@@ -51,6 +56,8 @@ export const SOURCE_URL: Record<string, string> = {
 
   // ——— Włochy
   'am-ovni':              'https://www.aeronautica.difesa.it/en/ovni/',
+  // Tabela zbiorcza obserwacji 1972–1990 według regionów i lat (razem 208), podlinkowana na stronie am-ovni
+  'am-ovni-1972-1990':    'https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/INT.Dperiodo1972-1990.pdf',
 
   // ——— Kanada
   'lac-ufo-timeline':     'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Pages/timeline.aspx',
@@ -58,6 +65,8 @@ export const SOURCE_URL: Record<string, string> = {
   'lac-falcon-lake':      'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Documents/1967-05-26.pdf',
   'lac-falcon-lake-2':    'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Documents/1967-08-10.pdf',
   'lac-falcon-podcast':   'https://library-archives.canada.ca/eng/collection/engage-learn/podcast/Pages/ufo-falcon-lake-incident.aspx',
+  // Opis zbioru UFO Library and Archives Canada na canada.ca; adresy bac-lac.gc.ca 5 X 2026 zrywały połączenie
+  'lac-ufos':             'https://www.canada.ca/en/library-archives/collection/research-help/science-technology/ufos.html',
 
   // ——— Australia
   'naa-ufo':              'https://www.naa.gov.au/blog/flying-saucers-fact-or-fiction',
@@ -73,6 +82,11 @@ export const SOURCE_URL: Record<string, string> = {
   'br-ufo-night':         'https://www.gov.br/en/government-of-brazil/latest-news/2022/official-ufo-night-in-brazil',
   'br-varginha-file':     'http://imagem.sian.an.gov.br/acervo/derivadas/BR_DFANBSB_ARX/0/0/0443/BR_DFANBSB_ARX_0_0_0443_d0001de0001.pdf',
   'br-1977-file':         'http://imagem.sian.an.gov.br/acervo/derivadas/br_dfanbsb_v8/mic/gnc/kkk/83003252/br_dfanbsb_v8_mic_gnc_kkk_83003252_d0001de0001.pdf',
+
+  // ——— Szwecja
+  // Zapis podcastu Riksarkivet (Arkivpodden, odcinek 33 z 27 IV 2023, zapis opublikowany 15 XI 2024): rozmowa
+  // z kierownikiem Krigsarkivet. To relacja archiwisty, a nie dokument; jedyna sygnatura w tekście to rozkaz Fst/L 12/6 1946 NR 7:49.
+  'ra-spokraketer':       'https://riksarkivet.se/resurser/spokraketer',
 
   // ——— Chile
   'cl-sefaa':             'https://sefaa.dgac.gob.cl/',
@@ -263,7 +277,7 @@ export const FINDING_AIDS = new Set([
   'nara-citizen-archivist', 'nara-unwritten-record', 'zb-wickiana',
   'hessdalen-reports', 'faa-uas-sightings', 'lac-ufo-timeline',
   'aaro-case-reports', 'aaro-imagery', 'aaro-trends', 'geipan-search',
-  'condon-contents', 'roswell-af',
+  'condon-contents', 'roswell-af', 'nara-rg615', 'lac-ufos',
 ]);
 
 export function isFindingAid(ref?: string): boolean {

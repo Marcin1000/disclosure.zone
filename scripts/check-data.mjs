@@ -82,6 +82,12 @@ for (const s of canon) {
 }
 for (const u of unknownRefs) errors.push(`odnośnik spoza rejestru: ${u}`);
 
+// Rejestr archiwów: ref i volumeRef muszą być kluczami z sources.ts, inaczej link po cichu znika ze strony /archives
+const { archives } = await loadTs('src/data/archives.ts', 'archives-check', { bundle: true, external: ['../i18n'] });
+for (const a of archives)
+  for (const key of [a.ref, a.volumeRef])
+    if (key && !SOURCE_URL[key]) errors.push(`archiwa (${a.country}, ${a.program}): klucz spoza rejestru "${key}"`);
+
 /**
  * Rejestr dokumentów. Jest generowany, więc sprawdzamy nie literówki, tylko
  * to, co generator mógłby po cichu zepsuć: unikalność adresów, spójność

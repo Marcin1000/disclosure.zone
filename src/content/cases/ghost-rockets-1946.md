@@ -66,6 +66,10 @@ sources:
   label: "COMETA, “UFOs and Defense: What Should We Prepare For?”, 1999, in an English translation filed in the release (Appendix 6, p. 75 of the file)"
   note: "A report by a French association, first published, according to its own title page, in the magazine VSD in July 1999. Gives no source for what it says about 1946, and its dates and its “no debris” do not match the review of 1947."
   ref: "pursue-rg255-cometa"
+- "tier": "T4"
+  label: "Riksarkivet, podcast Arkivpodden, episode 33 “Spökraketer” of 27 April 2023 (transcript published on 15 November 2024): the head of the War Archives (Krigsarkivet), Bo Berg, in conversation with Jim Hedlund"
+  note: "A podcast transcript, not a document: an archivist’s account given in conversation. The only archival reference in it is the Defense Staff order of 12 June 1946, Fst/L 12/6 1946 NR 7:49."
+  ref: "ra-spokraketer"
 ---
 
 ## What the file holds
@@ -242,6 +246,12 @@ Three official positions are on record, and none of them reaches us first hand:
 
 No Swedish document is in the US releases: not a report, not a communiqué, not the Government’s report.
 Every Swedish position here is known at second hand.
+
+Outside the releases, in a podcast of Riksarkivet (episode of 27 April 2023, transcript published in
+2024), the head of the War Archives says that the Defense Staff’s committee met for the last time on
+12 December 1946 and never presented a tenable explanation. Beside it stands the G-2 paper of 1950, which
+says that by 1947 the Swedish Government issued a report “identifying most of the incidents with natural
+phenomena and denying that any foreign power was involved”.
 
 Both Swedish statements, as they are relayed, put most of the reports down to celestial or natural
 causes, and the US analysts agreed for the high-altitude ones. What stays open is the rest: the 2 or 3,

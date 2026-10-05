@@ -29,6 +29,8 @@ sources:
   note: "Strona nie podaje tytułu gazety ani daty; poprzedni wycinek pochodzi z „Milwaukee Journal” z 7 lipca 1947."
 - "label": "COMETA, „UFOs and Defense: What Should We Prepare For?”, 1999, w angielskim przekładzie złożonym w wydaniu (załącznik 6, s. 75 pliku)"
   note: "Raport francuskiego stowarzyszenia, według jego własnej strony tytułowej pierwotnie opublikowany w magazynie „VSD” w lipcu 1999 r. Nie podaje źródła tego, co pisze o 1946 r., a jego daty i „no debris” (brak szczątków) nie zgadzają się z przeglądem z 1947 r."
+- "label": "Riksarkivet, podcast Arkivpodden, odcinek 33 „Spökraketer” (rakiety widma) z 27 kwietnia 2023 (zapis opublikowany 15 listopada 2024): kierownik Archiwum Wojennego (Krigsarkivet) Bo Berg w rozmowie z Jimem Hedlundem"
+  note: "Zapis podcastu, nie dokument: relacja archiwisty w rozmowie. Jedyna sygnatura archiwalna w tekście to rozkaz sztabu obrony z 12 czerwca 1946 r., Fst/L 12/6 1946 NR 7:49."
 ---
 
 ## Co zawiera teczka
@@ -275,6 +277,13 @@ W dokumentach są trzy oficjalne stanowiska i żadne nie dociera do nas z pierws
 
 W wydaniach USA nie ma żadnego szwedzkiego dokumentu: ani zgłoszenia, ani komunikatu, ani raportu
 rządu. Każde szwedzkie stanowisko znamy tu z drugiej ręki.
+
+Poza wydaniami, w podcaście Riksarkivet (odcinek z 27 kwietnia 2023 r., zapis opublikowany w 2024 r.)
+kierownik Archiwum Wojennego mówi, że komisja sztabu obrony zebrała się ostatni raz 12 grudnia 1946 r.
+i nie przedstawiła trwałego wyjaśnienia. Obok stoi notatka G-2 z 1950 r., według której do 1947 r. rząd
+szwedzki wydał raport „identifying most of the incidents with natural phenomena and denying that any
+foreign power was involved” (który większość zdarzeń przypisał zjawiskom naturalnym i zaprzeczył udziałowi
+obcego mocarstwa).
 
 Oba stanowiska szwedzkie, w przekazie, jaki mamy, przypisują większość zgłoszeń przyczynom niebieskim
 albo naturalnym, a analitycy amerykańscy zgodzili się z tym co do obiektów widzianych wysoko. Otwarta

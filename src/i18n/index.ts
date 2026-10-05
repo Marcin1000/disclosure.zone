@@ -281,11 +281,12 @@ const en: Dict = {
 
   'arch.kicker': '{n} programmes · {o} with public access',
   'arch.title': 'State archives',
-  'arch.lead': 'English-language UAP literature rests almost entirely on Blue Book. Meanwhile France runs a public database, Italy an unbroken register since 1978, and Chile publishes resolutions.',
+  'arch.lead': 'State UAP programmes and archives, each entry with the source that states it. France runs a public database, Italy’s Air Force has held the task since 1978 and publishes its sighting lists, and Chile publishes resolved cases.',
   'arch.volume': 'Volume',
-  'arch.source': 'Source archive ↗',
+  'arch.source': 'Source ↗',
+  'arch.figures': 'Figures ↗',
   'arch.active': 'Active', 'arch.closed': 'Closed', 'arch.transformed': 'Transformed', 'arch.unknown': 'Status not known',
-  'arch.publicDb': 'Public database',
+  'arch.publicDb': 'Public access',
 
   'og.tagline': 'DISCLOSURE.ZONE — DOCUMENTS, NOT RUMORS',
 
@@ -544,11 +545,12 @@ const pl: Dict = {
 
   'arch.kicker': '{n} programów · {o} z dostępem publicznym',
   'arch.title': 'Archiwa państwowe',
-  'arch.lead': 'Anglojęzyczna literatura o UAP opiera się prawie wyłącznie na Blue Book. Tymczasem Francja prowadzi publiczną bazę, Włochy nieprzerwany rejestr od 1978 r., a Chile publikuje rozstrzygnięcia.',
+  'arch.lead': 'Państwowe programy i archiwa UAP, każdy wpis ze źródłem, które to podaje. Francja prowadzi publiczną bazę, włoskie lotnictwo wojskowe ma to zadanie od 1978 r. i publikuje listy obserwacji, a Chile publikuje rozstrzygnięte sprawy.',
   'arch.volume': 'Wolumen',
-  'arch.source': 'Archiwum źródłowe ↗',
+  'arch.source': 'Źródło ↗',
+  'arch.figures': 'Liczby ↗',
   'arch.active': 'Działa', 'arch.closed': 'Zamknięty', 'arch.transformed': 'Przekształcony', 'arch.unknown': 'Status nieznany',
-  'arch.publicDb': 'Baza publiczna',
+  'arch.publicDb': 'Dostęp publiczny',
 
   'og.tagline': 'DISCLOSURE.ZONE, DOKUMENTY, NIE PLOTKI',
 

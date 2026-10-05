@@ -20,8 +20,8 @@ The premise: **the UAP problem is not a shortage of cases, it is a shortage of d
 - **92 cases** from 28 countries, from 1561 to cases still open in 2025
 - **106 claims** in a myth-versus-document ledger, each with its origin, source tier,
   verification status and the condition that would settle it
-- **17 state programmes** across the US, France, the UK, Italy, Chile, Canada,
-  Australia, Sweden, Spain, Brazil, Norway, Belgium and the USSR
+- **14 state programmes** across the US, France, the UK, Italy, Chile, Canada,
+  Australia, Sweden, Spain and Brazil
 - **450 records** in a registry of the documents released by the Department of War
   under PURSUE, each with the link to the material at the publisher
 - **Sensor Sanity Toolkit** — four modules on parallax, aperture shape, angular size
@@ -91,7 +91,7 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **169 of 273** sources have an address for the material itself — the only ones that
+- **170 of 274** sources have an address for the material itself — the only ones that
   count toward provenance
 - **40** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
