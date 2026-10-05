@@ -221,6 +221,40 @@ export const STILLS: Record<string, StillInfo> = {
   // film z Tremonton: kilka jasnych punktów na niebie; plakat to plansza z numerem taśmy, a od
   // 0:55 na taśmie są inne ujęcia
   'DOW-UAP-PR159': shown(21),
+  // Wydanie 05 (paczka uap_videos_080726.zip). Klatki wzięte z nagrań w chwili, w której widać opisany obiekt.
+  // PR117–PR122: telefon filmuje ekran czujnika AC-130J nad Zatoką Omańską (raport D101). Obiekt to drobna
+  // ciemna kropka przy krzyżu; pierścienie i trójkąt przy krzyżu to symbole nakładki, nie obiekt.
+  // przy krzyżu nie ma kropki w żadnej z przejrzanych klatek; ciemny pierścień w prawo pod krzyżem to symbol
+  'DOW-UAP-PR117': { at: 3, object: 'not-found' },
+  // mała ciemna kropka prawie w samym środku krzyża
+  'DOW-UAP-PR118': shown(0.5),
+  // przy krzyżu tylko dwa pierścienie i trójkąt; kropki nie ma w żadnej z przejrzanych klatek (plik ma 2,8 s)
+  'DOW-UAP-PR119': { at: 1.5, object: 'not-found' },
+  // ciemna kropka tuż w lewo pod środkiem krzyża; przelatuje od lewego dołu w prawo między 0,4 a 1,2 s
+  'DOW-UAP-PR120': shown(0.6),
+  // ciemna kropka tuż w lewo od środka krzyża
+  'DOW-UAP-PR121': shown(1.8),
+  // ciemna kropka w lewo pod środkiem krzyża
+  'DOW-UAP-PR122': shown(2),
+  // PR123–PR127: Pacyfik 2019; PR123–PR125 nagrane ręczną kamerą z ekranu czujnika, PR126 i PR127 nocą
+  // ciemna plama w małej ramce śledzenia na środku krzyża
+  'DOW-UAP-PR123': shown(48),
+  // ciemna okrągła plama w ramce śledzenia na krzyżu, nad pasem morza
+  'DOW-UAP-PR124': shown(12),
+  // ciemna plama wypełnia ramkę śledzenia na krzyżu
+  'DOW-UAP-PR125': shown(3),
+  // czerwone i białe światło obok siebie w środku kadru, na przybliżeniu
+  'DOW-UAP-PR126': shown(64),
+  // dwa czerwone światła tuż obok siebie, blisko środka kadru
+  'DOW-UAP-PR127': shown(95),
+  // biała okrągła plamka tuż nad lewym ramieniem krzyża, w obrazie dziennym; czarne prostokąty to zaczernienia
+  'DOW-UAP-PR134': shown(4),
+  // ciemna plamka w fioletowym znaczniku w prawo nad krzyżem
+  'DOW-UAP-PR136': shown(11),
+  // jasna plamka ze smugą, w przelocie przez kadr od lewej do prawej; ciemny podłużny kształt niżej to nie ona
+  'DOW-UAP-PR142': shown(6.6),
+  // mała jasna okrągła plamka w lewo pod środkiem kadru; statek z pierwszych sekund to nie obiekt
+  'DOW-UAP-PR149': shown(31.4),
   // Nagrania dźwiękowe: przez cały plik stoi logo NASA z przebiegiem dźwięku. Opisane obiekty
   // (światła, cząstki, rozbłyski) są w relacjach mówionych, obrazu ich nie ma z natury rzeczy.
   'DOW-UAP-PR160': { at: 3, object: 'audio' },
@@ -260,6 +294,9 @@ export const STILLS: Record<string, StillInfo> = {
   'FBI-UAP-PR005': shown(35),
   // plakat wydawcy, około 0:03: trzy z czterech czerwonych świateł, czwarte wchodzi chwilę później
   'FBI-UAP-PR006': shown(3),
+  // Nagranie agenta ręczną kamerą termowizyjną (zachód USA, 2026, wydanie 05), opisane w FBI-UAP-D032
+  // dwie małe ciemne plamki pod chmurą („black-hot”), słabsza z lewej, wyraźniejsza z prawej
+  'FBI-UAP-PR007': shown(1.5),
 };
 
 /** 135 -> "2:15", 2.6 -> "0:02.6" (po polsku "0:02,6") */
