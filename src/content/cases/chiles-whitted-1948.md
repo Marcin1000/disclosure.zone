@@ -39,7 +39,7 @@ sources:
 - "tier": "T4"
   label: "Accounts of the “Estimate of the Situation” document"
   note: "The document itself does not survive in the archives and its existence is unconfirmed."
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 - "tier": "T1"
   label: "Incident summaries of unidentified flying objects, forwarded from Wright Field on 14 March 1949, incidents 101 to 172 (DOW-UAP-D088)"
   note: "Incident 144 (pp. 127–136): the check-list, Captain C. S. Chiles’s letter to Eastern Air Lines of 3 August 1948 (p. 131) and John B. Whitted’s statement (p. 134). Incidents 144a and 144b are other sightings the same night near Blackstone, Virginia."

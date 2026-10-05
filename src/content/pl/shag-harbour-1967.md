@@ -13,7 +13,7 @@ alternatives:
 - "Bolid wpadający do wody i przypadkowo skorelowana piana morska."
 - "Flara lub odpad rakietowy."
 sources:
-- "label": "Akta rządu Kanady dotyczące zdarzenia (Library and Archives Canada), w tym korespondencja RCMP i Departamentu Obrony Narodowej"
+- "label": "Akta rządu Kanady o obserwacjach z 4 października 1967 r. w bazie UFO Library and Archives Canada: relacje świadków w aktach National Research Council i korespondencja w aktach RCMP"
 - "label": "Dzienniki akcji poszukiwawczej Straży Wybrzeża"
 ---
 

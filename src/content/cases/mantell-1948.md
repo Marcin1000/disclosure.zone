@@ -37,7 +37,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T1"
   label: "USAF aircraft accident report, January 1948"
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 - "tier": "T1"
   label: "Incident summaries of unidentified flying objects, forwarded from Wright Field on 14 March 1949, incidents 1 to 100 (DOW-UAP-D087)"
   note: "Incidents 33 and 33a to 33g (pp. 81–96): check-lists and statements from Godman Field and the surrounding area for 7 January 1948. Page 94 sets out the radio exchange between the tower and NG 869 as four people at Godman reported it."

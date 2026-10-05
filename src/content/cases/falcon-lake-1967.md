@@ -39,16 +39,15 @@ sources:
 - "tier": "T1"
   label: "Government of Canada case file, Stefan Michalak, Falcon Beach, Manitoba"
   ref: "lac-falcon-lake"
-  note: "Digitised and publicly available from Library and Archives Canada."
+  note: "The link opens page 1 of the RCMP report of 26 May 1967 (file HQ-400-Q-5) in the UFO database of Library and Archives Canada."
 - "tier": "T1"
-  label: "Follow-up government correspondence, August 1967"
+  label: "RCMP report on Stefan Michalak, continuation page “5”, dated 10 August 1967 in the database of Library and Archives Canada"
   ref: "lac-falcon-lake-2"
-- "tier": "T1"
-  label: "Library and Archives Canada case history"
+- "tier": "T4"
+  label: "Library and Archives Canada podcast “UFOs at LAC: The Falcon Lake incident, part 1” (15 May 2019): a conversation with Stan Michalak and the researchers Chris Rutkowski and Palmiro Campagna"
   ref: "lac-falcon-podcast"
 - "tier": "T1"
   label: "Medical records documenting the burn pattern and subsequent illness"
-  archive: "lac-collection"
 draft: false
 ---
 

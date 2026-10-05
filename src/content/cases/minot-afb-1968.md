@@ -42,7 +42,7 @@ sources:
   note: "One of the largest single case files in the programme, including crew statements and radar data."
 - "tier": "T1"
   label: "B-52 crew statements and maintenance records"
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 - "tier": "T4"
   label: "Later reconstructions from the case file"
 draft: false

@@ -45,7 +45,7 @@ sources:
   ref: "nara-washington-1952"
 - "tier": "T2"
   label: "Press briefing by Maj. Gen. John Samford, 29 July 1952"
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 - "tier": "T4"
   label: "Later historical reconstructions and meteorological analyses"
   ref: "condon-radar"

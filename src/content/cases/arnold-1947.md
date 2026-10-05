@@ -38,7 +38,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T3"
   label: "Kenneth Arnold’s written statement to the aviation authorities (1947)"
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 - "tier": "T1"
   label: "Incident summaries of unidentified flying objects, forwarded from Wright Field on 14 March 1949, incidents 1 to 100 (DOW-UAP-D087)"
   note: "Incident 17 (pp. 45–46): a check-list and a narrative with a sketch. The carbon is so faint that most of the entries cannot be read."

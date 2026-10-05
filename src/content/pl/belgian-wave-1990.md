@@ -19,6 +19,8 @@ sources:
   note: "To tutaj pojawia się kluczowa poprawka dotycząca filtru śledzenia."
 - "label": "Słynna fotografia trójkąta z Petit-Rechain"
   note: "Autor przyznał się do mistyfikacji. Zdjęcie nie ma żadnej wartości dowodowej."
+- "label": "The National Archives (Wielka Brytania), strona „UFO reports”: akapit o wydarzeniach w Belgii 30–31 marca 1990"
+  note: "Streszczenie archiwum brytyjskiego, nie dokument belgijski: „Radar reportedly tracked an unknown object over central Belgium, and the Belgian Air Force scrambled two F-16s. The pilots reported no sightings, and the object was not identified.”, czyli radar podobno śledził nieznany obiekt nad środkową Belgią, belgijskie lotnictwo poderwało dwa F-16, piloci niczego nie zobaczyli, a obiektu nie zidentyfikowano."
 ---
 
 ## Dlaczego to najlepsza lekcja o radarze w całej bazie

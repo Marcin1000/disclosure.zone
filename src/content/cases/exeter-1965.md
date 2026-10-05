@@ -38,7 +38,7 @@ sources:
   ref: "nara-bluebook"
 - "tier": "T1"
   label: "Exeter police reports"
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 ---
 
 ## Value: police as independent witnesses

@@ -14,9 +14,9 @@ alternatives:
 - "Wcześniejsze skażenie terenu niezwiązane ze zdarzeniem, badane i niepotwierdzone."
 sources:
 - label: "Akta sprawy rządu Kanady, Stefan Michalak, Falcon Beach, Manitoba"
-  note: "Zdigitalizowane i publicznie dostępne w Library and Archives Canada."
-- label: "Późniejsza korespondencja rządowa, sierpień 1967"
-- label: "Opracowanie historii sprawy przez Library and Archives Canada"
+  note: "Odnośnik otwiera stronę 1 raportu RCMP z 26 maja 1967 r. (teczka HQ-400-Q-5) w bazie UFO Library and Archives Canada."
+- label: "Raport RCMP w sprawie Stefana Michalaka, strona „5” ciągu dalszego, w bazie Library and Archives Canada datowana na 10 sierpnia 1967"
+- label: "Podcast Library and Archives Canada „UFOs at LAC: The Falcon Lake incident, part 1” (15 maja 2019): rozmowa ze Stanem Michalakiem oraz badaczami Chrisem Rutkowskim i Palmiro Campagną"
 - label: "Dokumentacja medyczna opisująca układ oparzeń i późniejszą chorobę"
 ---
 

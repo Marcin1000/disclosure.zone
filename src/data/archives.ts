@@ -25,13 +25,13 @@ export const archives: Archive[] = [
     program: 'Project SIGN → GRUDGE → BLUE BOOK',
     years: '1947–1969', status: 'closed', publicDb: true,
     institution: { en: 'United States Air Force', pl: 'United States Air Force' },
-    volume: { en: '12,618 sightings reported 1947–1969, 701 “Unidentified”', pl: '12 618 zgłoszonych obserwacji z lat 1947–1969, 701 „Unidentified” (niezidentyfikowane)' },
+    volume: { en: '12,618 sightings reported 1947–1969, 701 “Unidentified”; the sanitized case files are in the National Archives Catalog as 10,622 file units with 116,537 digital objects', pl: '12 618 zgłoszonych obserwacji z lat 1947–1969, 701 „Unidentified” (niezidentyfikowane); oczyszczone akta spraw są w katalogu National Archives jako 10 622 jednostki z 116 537 obiektami cyfrowymi' },
     note: {
-      en: 'Project Sign and Project Grudge preceded Blue Book. The National Archives holds about 2 cubic feet of administrative files, 37 of case files and 3 of OSI records, consulted on 94 rolls of microfilm, with film, sound and stills in separate branches; the sanitized case files are in the National Archives Catalog as 10,622 file units with 116,537 digital objects. The 12,618 and 701 come from the Air Force fact sheet of January 1985, which also says that “there has been no evidence indicating that sightings categorized as ‘unidentified’ are extraterrestrial vehicles.”',
-      pl: 'Blue Book poprzedziły Project Sign i Project Grudge. National Archives przechowuje ok. 2 stóp sześciennych akt administracyjnych, 37 stóp akt spraw i 3 stopy akt OSI, udostępnianych na 94 rolkach mikrofilmu, a filmy, nagrania i zdjęcia w osobnych działach; oczyszczone akta spraw są w katalogu National Archives jako 10 622 jednostki z 116 537 obiektami cyfrowymi. Liczby 12 618 i 701 pochodzą z karty informacyjnej Sił Powietrznych ze stycznia 1985 r., która stwierdza też: „there has been no evidence indicating that sightings categorized as ‚unidentified’ are extraterrestrial vehicles”, czyli nie ma dowodu, że obserwacje zaliczone do niezidentyfikowanych to pojazdy pozaziemskie.',
+      en: 'Project Sign and Project Grudge preceded Blue Book. The National Archives holds about 2 cubic feet of administrative files, 37 of case files and 3 of OSI records, consulted on 94 rolls of microfilm, with film, sound and stills in separate branches. The 12,618 and 701 come from the Air Force fact sheet of January 1985, which also says that “there has been no evidence indicating that sightings categorized as ‘unidentified’ are extraterrestrial vehicles.”',
+      pl: 'Blue Book poprzedziły Project Sign i Project Grudge. National Archives przechowuje ok. 2 stóp sześciennych akt administracyjnych, 37 stóp akt spraw i 3 stopy akt OSI, udostępnianych na 94 rolkach mikrofilmu, a filmy, nagrania i zdjęcia w osobnych działach. Liczby 12 618 i 701 pochodzą z karty informacyjnej Sił Powietrznych ze stycznia 1985 r., która stwierdza też: „there has been no evidence indicating that sightings categorized as ‚unidentified’ are extraterrestrial vehicles”, czyli nie ma dowodu, że obserwacje zaliczone do niezidentyfikowanych to pojazdy pozaziemskie.',
     },
     ref: 'nara-bluebook',
-    // 12 618 i 701 są na stronie z ref; volumeRef to katalog z liczbą jednostek i obiektów cyfrowych z noty.
+    // 12 618 i 701 są na stronie z ref; volumeRef to katalog z liczbą jednostek i obiektów cyfrowych z wolumenu.
     volumeRef: 'nara-bluebook-sanitized',
   },
   {

@@ -35,11 +35,10 @@ claims:
 - "shag-harbour-recovery"
 sources:
 - "tier": "T1"
-  label: "Canadian government files on the incident (Library and Archives Canada), including RCMP and Department of National Defence correspondence"
-  ref: "lac-ufo-timeline"
+  label: "Canadian government files on the sightings of 4 October 1967 in the UFO database of Library and Archives Canada: witness reports in the National Research Council records and correspondence in the RCMP records"
+  archive: "lac-ufo-search-1967-10-04"
 - "tier": "T1"
   label: "Coast Guard search operation logs"
-  archive: "lac-collection"
 ---
 
 ## What the documents actually establish

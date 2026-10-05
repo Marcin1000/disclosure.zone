@@ -47,6 +47,10 @@ sources:
 - "tier": "T5"
   label: "The famous Petit-Rechain triangle photograph"
   note: "The author admitted the hoax. The image has no evidential value."
+- "tier": "T4"
+  label: "The National Archives (UK), “UFO reports”: a paragraph on the events in Belgium of 30–31 March 1990"
+  note: "A British archive’s summary, not a Belgian document: “Radar reportedly tracked an unknown object over central Belgium, and the Belgian Air Force scrambled two F-16s. The pilots reported no sightings, and the object was not identified.”"
+  ref: "tna-ufo"
 ---
 
 ## Why this is the best radar lesson in the database

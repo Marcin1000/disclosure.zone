@@ -49,7 +49,7 @@ sources:
   ref: "pursue-fbi-62-83894-s9"
 - "tier": "T3"
   label: "Lonnie Zamora’s statements given within hours of the event"
-  archive: "nara-bluebook-catalog"
+  archive: "nara-bluebook-sanitized"
 ---
 
 ## Why this is the best classic close encounter

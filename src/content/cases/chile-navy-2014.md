@@ -38,7 +38,6 @@ sources:
   ref: "cl-sefaa"
 - "tier": "T2"
   label: "CEFAA/DGAC announcement resolving the case"
-  ref: "cl-cefaa-model"
 - "tier": "T1"
   label: "Flight plans and air traffic data for the day"
   archive: "cl-sefaa"

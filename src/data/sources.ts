@@ -60,11 +60,14 @@ export const SOURCE_URL: Record<string, string> = {
   'am-ovni-1972-1990':    'https://www.aeronautica.difesa.it/wp-content/uploads/2023/05/INT.Dperiodo1972-1990.pdf',
 
   // ——— Kanada
-  'lac-ufo-timeline':     'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Pages/timeline.aspx',
-  'lac-project-magnet':   'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Documents/magnet-report.pdf',
-  'lac-falcon-lake':      'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Documents/1967-05-26.pdf',
-  'lac-falcon-lake-2':    'https://www.bac-lac.gc.ca/eng/discover/unusual/ufo/Documents/1967-08-10.pdf',
-  'lac-falcon-podcast':   'https://library-archives.canada.ca/eng/collection/engage-learn/podcast/Pages/ufo-falcon-lake-incident.aspx',
+  // Archiwalna baza UFO Library and Archives Canada (collectionscanada.gc.ca); stare adresy bac-lac.gc.ca 5 X 2026 zrywały połączenie.
+  // Teczka RCMP HQ-400-Q-5 (MIKAN 134176): raport o Stefanie Michalaku, s. 1 z datą 26 V 1967 i strona „5” z datą 10 VIII 1967.
+  'lac-falcon-lake':      'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8332&record_id=37024-8332-6343',
+  'lac-falcon-lake-2':    'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8291&record_id=37024-8291-6311',
+  // Podcast LAC z 15 V 2019, część 1, z zapisem rozmowy: relacja, nie dokument
+  'lac-falcon-podcast':   'https://www.canada.ca/en/library-archives/collection/engage-learn/podcasts/discover/episode-053.html',
+  // Wyszukiwanie w bazie po dacie obserwacji 4 X 1967: relacje świadków w aktach NRC i korespondencja w aktach RCMP
+  'lac-ufo-search-1967-10-04': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-110.01-e.php?interval=50&q2=10/4/1967',
   // Opis zbioru UFO Library and Archives Canada na canada.ca; adresy bac-lac.gc.ca 5 X 2026 zrywały połączenie
   'lac-ufos':             'https://www.canada.ca/en/library-archives/collection/research-help/science-technology/ufos.html',
 
@@ -90,7 +93,6 @@ export const SOURCE_URL: Record<string, string> = {
 
   // ——— Chile
   'cl-sefaa':             'https://sefaa.dgac.gob.cl/',
-  'cl-cefaa-model':       'https://www.dgac.gob.cl/cefaa-un-modelo-investigativo-de-fenomenos-aereos-anomalos/',
 
   // ——— Norwegia
   'hessdalen':            'https://www.hessdalen.org/',
@@ -98,7 +100,6 @@ export const SOURCE_URL: Record<string, string> = {
   'hessdalen-reports':    'https://old.hessdalen.org/reports/',
 
   // ——— Dodane w drugiej rundzie weryfikacji
-  'nara-bluebook-catalog': 'https://catalog.archives.gov/id/595466',
   'nara-uap-bulk':        'https://www.archives.gov/research/catalog/catalog-bulk-downloads/uap-bulk-download',
   'nara-citizen-archivist': 'https://www.archives.gov/citizen-archivist/missions',
   'nara-unwritten-record':  'https://unwritten-record.blogs.archives.gov/tag/project-blue-book/',
@@ -125,7 +126,6 @@ export const SOURCE_URL: Record<string, string> = {
 
   // ——— Pomoce archiwalne (wskazują, gdzie dokument leży — nie sam dokument)
   'naa-recordsearch':     'https://recordsearch.naa.gov.au/',
-  'lac-collection':       'https://library-archives.canada.ca/eng/collection/',
   'tna-discovery':        'https://discovery.nationalarchives.gov.uk/',
 
   // ——— AARO: raporty rozstrzygnięcia poszczególnych spraw
@@ -271,13 +271,14 @@ export function resolveSource(ref?: string, url?: string): string | undefined {
  * „wiemy, gdzie to leży” to nie to samo co „oto materiał”.
  */
 export const FINDING_AIDS = new Set([
-  'naa-recordsearch', 'lac-collection', 'tna-discovery', 'nara-catalog',
+  'naa-recordsearch', 'tna-discovery', 'nara-catalog',
   'nara-uap', 'nara-uap-microfilm', 'cia-readingroom', 'dia-foia-iran',
   'geipan', 'br-an-ovni', 'es-ovni', 'aaro-records', 'loc-chronicling',
   'nara-citizen-archivist', 'nara-unwritten-record', 'zb-wickiana',
-  'hessdalen-reports', 'faa-uas-sightings', 'lac-ufo-timeline',
+  'hessdalen-reports', 'faa-uas-sightings',
   'aaro-case-reports', 'aaro-imagery', 'aaro-trends', 'geipan-search',
   'condon-contents', 'roswell-af', 'nara-rg615', 'lac-ufos',
+  'lac-ufo-search-1967-10-04',
 ]);
 
 export function isFindingAid(ref?: string): boolean {
