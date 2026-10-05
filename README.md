@@ -112,12 +112,14 @@ that: it has not been read, scored or summarised.
 
 The same rule about links applies, and the same refusal to round it up:
 
-- **275 of 450** records have an address for the material itself
-- **133** point at the publisher's page for that item, including 27 recordings from release
+- **300 of 450** records have an address for the material itself
+- **149** point at the publisher's page for that item, including 27 recordings from release
   01 that the index linked to a mission report or to nothing, and that we point at the
   publisher's video page instead, keeping the address the index gave
-- **41** give only the page of the release the document sits inside, which is not an
-  address for a document and is not counted as one
+- **0** give only the page of the release the document sits inside. The index gives no more
+  than that for the 41 records of release 05; the publisher's own listing has the file, or
+  the recording's page, for each of them, checked against the release bundle, so we point
+  there and keep the release page the index gave
 - **0** give an address the publisher does not serve. The three we found, confirmed by fetching
   them, are served under a different file name; we point there and keep the address the index
   gave

@@ -64,11 +64,18 @@ const related = r.related
 const relCopy = related.some(x => ['same', 'edition', 'part', 'whole'].includes(x.rel));
 const relSeq = related.some(x => x.rel === 'next' || x.rel === 'prev');
 const relPair = related.some(x => x.rel === 'report' || x.rel === 'recording');
+/**
+ * Indeks dał tylko stronę wydania, a adres wzięliśmy ze spisu wydawcy. Sprawdzane przed
+ * indexedReport, bo nagrania z tego spisu też mają sourceAsIndexed.
+ */
+const fromListing = r.fromListing;
 /** Przy nagraniu indeks podawał raport, który istnieje; przy D20 adres, którego nie ma. */
-const indexedReport = r.kind === 'recording' && !!r.sourceAsIndexed;
+const indexedReport = !fromListing && r.kind === 'recording' && !!r.sourceAsIndexed;
 /** Przy przesunięciu oba adresy działają, tylko indeks podlinkował inny plik z zestawu. */
-const asIndexedKey = indexedReport ? 'rec.asIndexedReport' : r.linkShift ? 'rec.asIndexedShift' : 'rec.asIndexed';
-const asIndexedNote = indexedReport ? null : r.linkShift ? 'rec.asIndexedShiftNote' : 'rec.asIndexedNote';
+const asIndexedKey = fromListing ? 'rec.asIndexedLanding'
+  : indexedReport ? 'rec.asIndexedReport' : r.linkShift ? 'rec.asIndexedShift' : 'rec.asIndexed';
+const asIndexedNote = fromListing ? (r.kind === 'recording' ? 'rec.asIndexedLandingVideoNote' : 'rec.asIndexedLandingNote')
+  : indexedReport ? null : r.linkShift ? 'rec.asIndexedShiftNote' : 'rec.asIndexedNote';
 
 const media = mediaFor(r);
 const still = r.id && r.kind === 'recording' ? STILLS[r.id] : undefined;

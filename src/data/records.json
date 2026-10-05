@@ -1,9 +1,9 @@
 {
  "dataset": "disclosure.zone / PURSUE document registry",
- "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
+ "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher's own listing gives for the file or the recording's page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-10-04T22:46:52.253Z",
+ "generated": "2026-10-05T07:33:15.775Z",
  "count": 450,
  "records": [
   {
@@ -31,6 +31,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -58,6 +59,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -85,6 +87,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -112,6 +115,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -139,6 +143,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -166,6 +171,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -193,6 +199,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -220,6 +227,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -249,6 +257,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -276,6 +285,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -303,6 +313,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -330,6 +341,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -357,6 +369,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -384,6 +397,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -411,6 +425,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -441,6 +456,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -468,6 +484,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -497,6 +514,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -527,6 +545,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -557,6 +576,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -586,6 +606,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -615,6 +636,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -642,6 +664,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -669,6 +692,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -698,6 +722,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -725,6 +750,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -754,6 +780,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/65_hs1-8342289+M5+M11",
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -781,6 +808,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -808,6 +836,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -835,6 +864,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -864,6 +894,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -891,6 +922,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -920,6 +952,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -946,6 +979,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr19",
@@ -975,6 +1009,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr20",
@@ -1007,6 +1042,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1031,6 +1067,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr22",
@@ -1060,6 +1097,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr23",
@@ -1089,6 +1127,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1117,6 +1156,7 @@
    },
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-southern-united-states-2020.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1141,6 +1181,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr26",
@@ -1174,6 +1215,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1200,6 +1242,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr28",
@@ -1235,6 +1278,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr29",
@@ -1264,6 +1308,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1288,6 +1333,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1312,6 +1358,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr31",
@@ -1349,6 +1396,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1373,6 +1421,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1399,6 +1448,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr34",
@@ -1430,6 +1480,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr35",
@@ -1459,6 +1510,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr36",
@@ -1491,6 +1543,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1521,6 +1574,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1545,6 +1599,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1569,6 +1624,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1593,6 +1649,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1620,6 +1677,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1644,6 +1702,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1668,6 +1727,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1692,6 +1752,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1716,6 +1777,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1740,6 +1802,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1764,6 +1827,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1788,6 +1852,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1812,6 +1877,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1839,6 +1905,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1865,6 +1932,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1891,6 +1959,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1917,6 +1986,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1943,6 +2013,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1969,6 +2040,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -1995,6 +2067,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2019,6 +2092,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2046,6 +2120,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2070,6 +2145,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2097,6 +2173,7 @@
    },
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2121,6 +2198,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d10",
@@ -2150,6 +2228,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d12",
@@ -2182,6 +2261,7 @@
    },
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2206,6 +2286,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d16",
@@ -2235,6 +2316,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d18",
@@ -2264,6 +2346,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d23",
@@ -2293,6 +2376,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d23",
@@ -2324,6 +2408,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d25",
@@ -2355,6 +2440,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d27",
@@ -2384,6 +2470,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d32",
@@ -2413,6 +2500,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d32",
@@ -2442,6 +2530,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d32",
@@ -2473,6 +2562,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d33",
@@ -2504,6 +2594,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d35",
@@ -2533,6 +2624,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d38",
@@ -2562,6 +2654,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2586,6 +2679,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2610,6 +2704,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2634,6 +2729,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2658,6 +2754,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2682,6 +2779,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2706,6 +2804,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2730,6 +2829,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2754,6 +2854,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2778,6 +2879,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2802,6 +2904,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2826,6 +2929,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2850,6 +2954,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2874,6 +2979,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2898,6 +3004,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2922,6 +3029,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2946,6 +3054,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2970,6 +3079,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -2994,6 +3104,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3018,6 +3129,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3042,6 +3154,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3066,6 +3179,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3090,6 +3204,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3114,6 +3229,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3138,6 +3254,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3162,6 +3279,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3186,6 +3304,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3210,6 +3329,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3234,6 +3354,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3258,6 +3379,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3282,6 +3404,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3306,6 +3429,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3330,6 +3454,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3354,6 +3479,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3378,6 +3504,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3402,6 +3529,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3426,6 +3554,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3450,6 +3579,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3474,6 +3604,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3498,6 +3629,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3522,6 +3654,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3546,6 +3679,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3570,6 +3704,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3594,6 +3729,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3618,6 +3754,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3644,6 +3781,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3670,6 +3808,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
    "linkShift": true,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3696,6 +3835,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
    "linkShift": true,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3722,6 +3862,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
    "linkShift": true,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3746,6 +3887,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3770,6 +3912,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3794,6 +3937,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3818,6 +3962,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3842,6 +3987,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3866,6 +4012,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3890,6 +4037,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3914,6 +4062,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3938,6 +4087,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3962,6 +4112,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -3986,6 +4137,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4010,6 +4162,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4034,6 +4187,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4058,6 +4212,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4082,6 +4237,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4106,6 +4262,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4130,6 +4287,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4154,6 +4312,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4178,6 +4337,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4202,6 +4362,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4226,6 +4387,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "cia-uap-011",
@@ -4255,6 +4417,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4279,6 +4442,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4303,6 +4467,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4327,6 +4492,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4351,6 +4517,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4375,6 +4542,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4399,6 +4567,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4423,6 +4592,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4447,6 +4617,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4471,6 +4642,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4495,6 +4667,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4519,6 +4692,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4543,6 +4717,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4567,6 +4742,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4591,6 +4767,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4615,6 +4792,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4639,6 +4817,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4663,6 +4842,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4687,6 +4867,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4711,6 +4892,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4735,6 +4917,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4759,6 +4942,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4783,6 +4967,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4807,6 +4992,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4831,6 +5017,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4855,6 +5042,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4879,6 +5067,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4903,6 +5092,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4929,6 +5119,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4955,6 +5146,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -4979,6 +5171,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5003,6 +5196,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5027,6 +5221,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5051,6 +5246,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5075,6 +5271,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5099,6 +5296,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5123,6 +5321,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5147,6 +5346,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5171,6 +5371,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5197,6 +5398,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5223,6 +5425,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5247,6 +5450,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5271,6 +5475,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5295,6 +5500,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5319,6 +5525,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5343,6 +5550,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5367,6 +5575,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5391,6 +5600,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5415,6 +5625,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5439,6 +5650,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5463,6 +5675,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5487,6 +5700,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5511,6 +5725,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5535,6 +5750,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5559,6 +5775,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5583,6 +5800,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5607,6 +5825,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5631,6 +5850,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5655,6 +5875,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5679,6 +5900,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5703,6 +5925,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5727,6 +5950,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5753,6 +5977,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5781,6 +6006,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5805,6 +6031,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5829,6 +6056,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5853,6 +6081,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5879,6 +6108,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5903,6 +6133,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5927,6 +6158,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5951,6 +6183,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5975,6 +6208,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -5999,6 +6233,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "cia-intelligence-information-report-sary-shagan-ussr-1973",
@@ -6028,6 +6263,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6052,6 +6288,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "cia-uap-018",
@@ -6083,6 +6320,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6109,6 +6347,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6135,6 +6374,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6161,6 +6401,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6185,6 +6426,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "cia-uap-013",
@@ -6214,6 +6456,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6240,6 +6483,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6266,6 +6510,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6292,6 +6537,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6318,6 +6564,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6344,6 +6591,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6370,6 +6618,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6396,6 +6645,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6420,6 +6670,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6444,6 +6695,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6468,6 +6720,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6495,6 +6748,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d088",
@@ -6529,6 +6783,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d087",
@@ -6560,6 +6815,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6586,6 +6842,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6612,6 +6869,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6636,6 +6894,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6660,6 +6919,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6684,6 +6944,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6708,6 +6969,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6732,6 +6994,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6756,6 +7019,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6780,6 +7044,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6804,6 +7069,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6828,6 +7094,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6852,6 +7119,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6878,6 +7146,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6904,6 +7173,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6930,6 +7200,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6956,6 +7227,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -6982,6 +7254,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7008,6 +7281,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7034,6 +7308,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7060,6 +7335,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7086,6 +7362,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7112,6 +7389,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7136,6 +7414,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7160,6 +7439,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7184,6 +7464,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7208,6 +7489,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7234,6 +7516,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7260,6 +7543,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7286,6 +7570,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7310,6 +7595,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7334,6 +7620,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7358,6 +7645,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7382,6 +7670,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7406,6 +7695,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7430,6 +7720,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7454,6 +7745,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7478,6 +7770,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7502,6 +7795,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7526,6 +7820,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7550,6 +7845,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7574,6 +7870,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7600,6 +7897,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7626,6 +7924,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7650,6 +7949,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7674,6 +7974,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7698,6 +7999,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7722,6 +8024,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7746,6 +8049,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7770,6 +8074,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7794,6 +8099,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d094",
@@ -7825,6 +8131,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d093",
@@ -7856,6 +8163,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7880,6 +8188,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7904,6 +8213,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7928,6 +8238,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7952,6 +8263,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -7976,6 +8288,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8000,6 +8313,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8024,6 +8338,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8048,6 +8363,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8072,6 +8388,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8096,6 +8413,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8120,6 +8438,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8144,6 +8463,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8168,6 +8488,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8192,6 +8513,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8216,6 +8538,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8240,6 +8563,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8264,6 +8588,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8288,6 +8613,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8312,6 +8638,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8336,6 +8663,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8360,6 +8688,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8384,6 +8713,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8408,6 +8738,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8432,6 +8763,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8456,6 +8788,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8480,6 +8813,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8504,6 +8838,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8528,6 +8863,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8552,6 +8888,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -8565,17 +8902,18 @@
    "place": null,
    "year": 1965,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8589,17 +8927,18 @@
    "place": null,
    "year": null,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D023_Briefing-Notes-for-Mr-Walter-Elder.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8613,17 +8952,18 @@
    "place": "Brazil",
    "year": 1963,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8637,17 +8977,18 @@
    "place": "Brazil",
    "year": 1963,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D002_Diplomatic-Cable_Brazil_November-20-1963.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8661,17 +9002,18 @@
    "place": null,
    "year": 1953,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D098_Film-Analysis-of-Unidentified-Objects_1953.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8685,19 +9027,20 @@
    "place": null,
    "year": 1947,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf",
+   "format": "pdf",
    "cases": [
     "ghost-rockets-1946"
    ],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8711,17 +9054,18 @@
    "place": null,
    "year": 1947,
    "yearEnd": 1948,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8735,17 +9079,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8759,17 +9104,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017793/dow-uap-pr117-unresolved-uap-report-gulf-oman-2021",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8783,17 +9129,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017795/dow-uap-pr118-unresolved-uap-report-gulf-oman-2021",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8807,17 +9154,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017798/dow-uap-pr119-unresolved-uap-report-gulf-oman-2021",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8831,17 +9179,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017800/dow-uap-pr120-unresolved-uap-report-gulf-oman-2021",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8855,17 +9204,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017802/dow-uap-pr121-unresolved-uap-report-gulf-oman-2021",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8879,17 +9229,18 @@
    "place": "Gulf of Oman",
    "year": 2021,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017803/dow-uap-pr122-unresolved-uap-report-gulf-oman-2021",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8903,17 +9254,18 @@
    "place": "Pacific Ocean",
    "year": 2019,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017805/dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8927,17 +9279,18 @@
    "place": "Pacific Ocean",
    "year": 2019,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017806/dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8951,17 +9304,18 @@
    "place": "Pacific Ocean",
    "year": 2019,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017788/dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8975,17 +9329,18 @@
    "place": "Pacific Ocean",
    "year": 2019,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017790/dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -8999,17 +9354,18 @@
    "place": "Pacific Ocean",
    "year": 2019,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017791/dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9023,17 +9379,18 @@
    "place": "Middle East",
    "year": 2025,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017792/dow-uap-pr134-unresolved-uap-report-middle-east-2025",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9047,17 +9404,18 @@
    "place": "Middle East",
    "year": 2023,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017796/dow-uap-pr136-unresolved-uap-report-middle-east-2023",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9071,17 +9429,18 @@
    "place": "Middle East",
    "year": 2025,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017797/dow-uap-pr142-unresolved-uap-report-middle-east-2025",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9095,17 +9454,18 @@
    "place": "Middle East",
    "year": 2023,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017799/dow-uap-pr149-unresolved-uap-report-middle-east-2023",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9116,20 +9476,21 @@
    "agency": "EOP",
    "agencyName": "Executive Office of the President",
    "series": null,
-   "place": "Brazil Incident",
+   "place": null,
    "year": 1963,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9143,17 +9504,18 @@
    "place": null,
    "year": 2002,
    "yearEnd": 2024,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D024_FD-302_Airborne-Lights-and-Triangle_2002_2023-2024.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9167,17 +9529,18 @@
    "place": null,
    "year": 2002,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "image",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D025_Digital-Rendering_Airborne-Triangle_2002.jpg",
+   "format": "jpg",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9191,17 +9554,18 @@
    "place": null,
    "year": 2023,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9215,17 +9579,18 @@
    "place": null,
    "year": 2023,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9239,17 +9604,18 @@
    "place": null,
    "year": 2011,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D028_FD-302_Dark-Triangle-with-Lights_2011.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9263,17 +9629,18 @@
    "place": null,
    "year": 2011,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "image",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D029_Digital-Rendering_Dark-Triangle-with-Lights_2011.jpg",
+   "format": "jpg",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9287,17 +9654,18 @@
    "place": null,
    "year": 2023,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9311,17 +9679,18 @@
    "place": null,
    "year": 2023,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "image",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg",
+   "format": "jpg",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9335,17 +9704,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9359,17 +9729,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9383,17 +9754,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D037_FD-302_Multiple-Red-Lights_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9407,17 +9779,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D038_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9431,17 +9804,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D039_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9455,17 +9829,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D040_FD-302_Multiple-Red-Lights_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9479,17 +9854,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D041_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9503,17 +9879,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "document",
+   "sourceKind": "file",
    "release": "05",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "source": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D042_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf",
+   "format": "pdf",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9527,17 +9904,18 @@
    "place": null,
    "year": 2026,
    "yearEnd": null,
-   "kind": "unknown",
-   "sourceKind": "landing",
+   "kind": "recording",
+   "sourceKind": "page",
    "release": "05",
-   "publisher": "war.gov",
-   "source": "https://www.war.gov/UFO/release/05/",
-   "format": null,
+   "publisher": "dvidshub.net",
+   "source": "https://www.dvidshub.net/video/1017801/fbi-uap-pr007-slow-moving-objects-2026",
+   "format": "video",
    "cases": [],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
    "linkShift": false,
+   "fromListing": true,
    "related": []
   },
   {
@@ -9564,6 +9942,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9590,6 +9969,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9616,6 +9996,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9640,6 +10021,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9666,6 +10048,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9690,6 +10073,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr133",
@@ -9721,6 +10105,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr135",
@@ -9752,6 +10137,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-pr140",
@@ -9785,6 +10171,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9809,6 +10196,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9833,6 +10221,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9857,6 +10246,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9881,6 +10271,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9905,6 +10296,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9929,6 +10321,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9953,6 +10346,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -9977,6 +10371,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10001,6 +10396,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10025,6 +10421,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10049,6 +10446,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10073,6 +10471,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10097,6 +10496,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10121,6 +10521,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10145,6 +10546,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10169,6 +10571,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10193,6 +10596,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10217,6 +10621,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10241,6 +10646,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10265,6 +10671,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10289,6 +10696,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10313,6 +10721,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10337,6 +10746,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10361,6 +10771,7 @@
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D134_%20AAWSAP-DIRD-Maverick-Inventor-Versus-Corporate-Inventor-Where-Will-the-Next-Major-Innovations-Arise-March-30-2010.pdf",
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10385,6 +10796,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10409,6 +10821,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10433,6 +10846,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10457,6 +10871,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10481,6 +10896,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10505,6 +10921,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10529,6 +10946,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10553,6 +10971,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10577,6 +10996,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10601,6 +11021,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10625,6 +11046,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10649,6 +11071,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10673,6 +11096,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10697,6 +11121,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10721,6 +11146,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10745,6 +11171,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10769,6 +11196,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10793,6 +11221,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10817,6 +11246,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10841,6 +11271,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10867,6 +11298,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10893,6 +11325,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -10917,6 +11350,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d107",
@@ -10948,6 +11382,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d108",
@@ -10979,6 +11414,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d109",
@@ -11010,6 +11446,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": [
     {
      "slug": "dow-uap-d109",
@@ -11039,6 +11476,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11063,6 +11501,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11087,6 +11526,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11111,6 +11551,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11135,6 +11576,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11159,6 +11601,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11183,6 +11626,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11207,6 +11651,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11231,6 +11676,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11255,6 +11701,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11279,6 +11726,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11303,6 +11751,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   },
   {
@@ -11330,6 +11779,7 @@
    "documentSays": null,
    "sourceAsIndexed": null,
    "linkShift": false,
+   "fromListing": false,
    "related": []
   }
  ]

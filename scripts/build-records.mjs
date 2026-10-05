@@ -225,6 +225,57 @@ const LINK_SHIFTS = {
 };
 
 /**
+ * Indeks podaje dla tych rekordów tylko stronę wydania. Adres pliku albo strony nagrania
+ * na DVIDS podaje spis samego wydawcy, uap-data.csv, z którego war.gov/UFO buduje tabelę;
+ * HTML strony wydania tych adresów nie zawiera. Każdy pobrany 2026-10-05: dokumenty bajt
+ * w bajt zgodne z release_05_Aug_07_documents.zip, nagrania na stronach DVIDS, których MP4
+ * to plik z uap_videos_080726.zip z dopisanym na końcu blokiem XMP.
+ */
+const LISTING_SOURCES = {
+  'CIA-UAP-D022@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.pdf',
+  'CIA-UAP-D023@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D023_Briefing-Notes-for-Mr-Walter-Elder.pdf',
+  'DOS-UAP-D001@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf',
+  'DOS-UAP-D002@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D002_Diplomatic-Cable_Brazil_November-20-1963.pdf',
+  'DOW-UAP-D098@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D098_Film-Analysis-of-Unidentified-Objects_1953.pdf',
+  'DOW-UAP-D099@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf',
+  'DOW-UAP-D100@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf',
+  'DOW-UAP-D101@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf',
+  'EOP-UAP-D001@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf',
+  'FBI-UAP-D024@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D024_FD-302_Airborne-Lights-and-Triangle_2002_2023-2024.pdf',
+  'FBI-UAP-D025@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D025_Digital-Rendering_Airborne-Triangle_2002.jpg',
+  'FBI-UAP-D026@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf',
+  'FBI-UAP-D027@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf',
+  'FBI-UAP-D028@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D028_FD-302_Dark-Triangle-with-Lights_2011.pdf',
+  'FBI-UAP-D029@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D029_Digital-Rendering_Dark-Triangle-with-Lights_2011.jpg',
+  'FBI-UAP-D030@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf',
+  'FBI-UAP-D031@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg',
+  'FBI-UAP-D032@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf',
+  'FBI-UAP-D033@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf',
+  'FBI-UAP-D037@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D037_FD-302_Multiple-Red-Lights_2026.pdf',
+  'FBI-UAP-D038@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D038_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf',
+  'FBI-UAP-D039@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D039_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf',
+  'FBI-UAP-D040@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D040_FD-302_Multiple-Red-Lights_2026.pdf',
+  'FBI-UAP-D041@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D041_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf',
+  'FBI-UAP-D042@05': 'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D042_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf',
+  'DOW-UAP-PR117@05': 'https://www.dvidshub.net/video/1017793/dow-uap-pr117-unresolved-uap-report-gulf-oman-2021',
+  'DOW-UAP-PR118@05': 'https://www.dvidshub.net/video/1017795/dow-uap-pr118-unresolved-uap-report-gulf-oman-2021',
+  'DOW-UAP-PR119@05': 'https://www.dvidshub.net/video/1017798/dow-uap-pr119-unresolved-uap-report-gulf-oman-2021',
+  'DOW-UAP-PR120@05': 'https://www.dvidshub.net/video/1017800/dow-uap-pr120-unresolved-uap-report-gulf-oman-2021',
+  'DOW-UAP-PR121@05': 'https://www.dvidshub.net/video/1017802/dow-uap-pr121-unresolved-uap-report-gulf-oman-2021',
+  'DOW-UAP-PR122@05': 'https://www.dvidshub.net/video/1017803/dow-uap-pr122-unresolved-uap-report-gulf-oman-2021',
+  'DOW-UAP-PR123@05': 'https://www.dvidshub.net/video/1017805/dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019',
+  'DOW-UAP-PR124@05': 'https://www.dvidshub.net/video/1017806/dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019',
+  'DOW-UAP-PR125@05': 'https://www.dvidshub.net/video/1017788/dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019',
+  'DOW-UAP-PR126@05': 'https://www.dvidshub.net/video/1017790/dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019',
+  'DOW-UAP-PR127@05': 'https://www.dvidshub.net/video/1017791/dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019',
+  'DOW-UAP-PR134@05': 'https://www.dvidshub.net/video/1017792/dow-uap-pr134-unresolved-uap-report-middle-east-2025',
+  'DOW-UAP-PR136@05': 'https://www.dvidshub.net/video/1017796/dow-uap-pr136-unresolved-uap-report-middle-east-2023',
+  'DOW-UAP-PR142@05': 'https://www.dvidshub.net/video/1017797/dow-uap-pr142-unresolved-uap-report-middle-east-2025',
+  'DOW-UAP-PR149@05': 'https://www.dvidshub.net/video/1017799/dow-uap-pr149-unresolved-uap-report-middle-east-2023',
+  'FBI-UAP-PR007@05': 'https://www.dvidshub.net/video/1017801/fbi-uap-pr007-slow-moving-objects-2026',
+};
+
+/**
  * Filmy wydania 01. Indeks podaje przy nich albo raport z misji (PDF), albo nic,
  * a same nagrania wydawca trzyma na DVIDS. Każdy adres otwarty na żywo; tytuł
  * strony zgadza się z nagłówkiem XMP pliku z paczki uapvideos.zip wydania 01.
@@ -348,8 +399,11 @@ const isDateSegment = (s) => new RegExp(`^(${MONTH}\\s+)?\\d{1,2}$|^(${MONTH}\\s
  */
 const SUBJECT_SERIES = new Set(['AAWSAP DIRD']);
 const CONNECTORS = new Set(['of', 'the', 'and', 'de', 'la', 'du', 'el', 'al']);
-/** Człony, które mają kształt nazwy własnej, a niczego nie lokalizują. */
-const NOT_A_PLACE = /^(part\s+[ivxlc]+|report|continued|n\/?a|unknown|various)$/i;
+/**
+ * Człony, które mają kształt nazwy własnej, a niczego nie lokalizują albo nazywają
+ * zdarzenie, nie miejsce: „Bahia, Brazil Incident” dawało miejsce „Brazil Incident”.
+ */
+const NOT_A_PLACE = /^(part\s+[ivxlc]+|report|continued|n\/?a|unknown|various|.+\sincidents?)$/i;
 function isPlaceLike(seg) {
   if (!seg || seg.length > 34 || /\d/.test(seg) || NOT_A_PLACE.test(seg)) return false;
   const words = seg.split(/\s+/);
@@ -438,7 +492,10 @@ for (const r of manifest.records) {
   // rekordy bez identyfikatora (np. teczki FBI) poprawiamy po slugu z tytułu
   const fixedUrl = (fixKey ? SOURCE_FIXES[fixKey] : undefined) ?? SOURCE_FIXES[`${slugify(t.title)}@${rel0}`];
   const shiftedUrl = LINK_SHIFTS[`${slugify(t.title)}@${rel0}`];
-  const s = parseSource(shiftedUrl ?? fixedUrl ?? r.officialSourceUrl ?? null);
+  const listedUrl = fixKey ? LISTING_SOURCES[fixKey] : undefined;
+  const s = parseSource(shiftedUrl ?? fixedUrl ?? listedUrl ?? r.officialSourceUrl ?? null);
+  // strona nagrania na DVIDS nie ma wydania w ścieżce, więc bierzemy je z klucza mapy
+  const release = s.release ?? (listedUrl ? fixKey.split('@')[1] : null);
   // Wydanie 02 podaje w indeksie sam opis, a identyfikator stoi tylko w nazwie
   // pliku u wydawcy. Bierzemy go stamtąd, ale adres strony rekordu budujemy
   // jak dotąd z tytułu, żeby istniejące linki dalej działały.
@@ -462,20 +519,21 @@ for (const r of manifest.records) {
     agencyName: a.name,
     series,
     place: t.place,
-    year: YEAR_FIXES[`${id}@${s.release}`] ?? DOCUMENT_SAYS[`${id}@${s.release}`]?.year ?? t.year,
-    yearEnd: YEAR_FIXES[`${id}@${s.release}`] || DOCUMENT_SAYS[`${id}@${s.release}`]?.year ? null : t.yearEnd,
+    year: YEAR_FIXES[`${id}@${release}`] ?? DOCUMENT_SAYS[`${id}@${release}`]?.year ?? t.year,
+    yearEnd: YEAR_FIXES[`${id}@${release}`] || DOCUMENT_SAYS[`${id}@${release}`]?.year ? null : t.yearEnd,
     kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
         : s.sourceKind === 'file' ? 'document' : 'unknown',
     sourceKind: id && DEAD_SOURCES.has(id) ? 'dead' : s.sourceKind,
-    release: s.release,
+    release,
     publisher: s.publisher,
     source: s.source,
     format: s.format,
-    cases: CASE_LINKS[`${id}@${s.release}`] ?? CASE_LINKS[`${slug}@${s.release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
+    cases: CASE_LINKS[`${id}@${release}`] ?? CASE_LINKS[`${slug}@${release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
     illegible: (id && ILLEGIBLE[id]) ?? null,
-    documentSays: DOCUMENT_SAYS[`${id}@${s.release}`] ?? null,
-    sourceAsIndexed: shiftedUrl || fixedUrl ? r.officialSourceUrl : null,
+    documentSays: DOCUMENT_SAYS[`${id}@${release}`] ?? null,
+    sourceAsIndexed: shiftedUrl || fixedUrl || listedUrl ? r.officialSourceUrl : null,
     linkShift: Boolean(shiftedUrl),
+    fromListing: Boolean(listedUrl),
     related: [],
   });
 }
@@ -540,7 +598,7 @@ const lookup = (key) => {
   return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
 };
 const ambiguous = [], unused = [];
-for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(LINK_SHIFTS), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(LINK_SHIFTS), ...Object.keys(LISTING_SOURCES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
   const hits = lookup(key);
   if (!hits.length) unused.push(key);
   else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
@@ -572,7 +630,7 @@ records.sort((a, b) =>
 
 const out = {
   dataset: 'disclosure.zone / PURSUE document registry',
-  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher\'s own listing gives for the file or the recording\'s page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
   index: manifest.index ?? null,
   harvested: manifest.harvested ?? null,
   generated: new Date().toISOString(),

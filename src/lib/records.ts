@@ -52,6 +52,8 @@ export interface Rec {
   sourceAsIndexed: string | null;
   /** Indeks łączy ten tytuł z innym plikiem z tego samego zestawu; source to plik zgodny z tytułem. */
   linkShift: boolean;
+  /** Indeks daje tylko stronę wydania; source to adres z własnego spisu wydawcy, sprawdzony z paczką. */
+  fromListing: boolean;
 }
 
 export const records: Rec[] = data.records as Rec[];
