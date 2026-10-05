@@ -591,8 +591,10 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
    dwa ekrany, więc wtedy szerokość ustępuje wysokości. */
 .still { position: relative; display: block; border: 0; text-align: center; background: #05090A; }
 .still img { display: block; width: 100%; height: auto; max-height: min(64vh, 560px); object-fit: contain; margin-inline: auto; }
-.still .play { left: 50%; top: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; font-size: 17px; }
-/* Obrazu nie zasłaniamy na środku, bo to on jest treścią. Strzałka idzie w róg. */
+/* Znak idzie w róg, nie na środek: w nagraniach z czujników obiekt siedzi zwykle
+   w środku krzyża celownika, więc przycisk na środku zasłaniał właśnie jego. */
+.still .play { left: .8rem; bottom: .8rem; width: 52px; height: 52px; font-size: 15px; }
+/* Obraz też nie jest zasłaniany na środku. Strzałka idzie w prawy górny róg. */
 .still .play--out { left: auto; right: .7rem; top: .7rem; transform: none; width: 38px; height: 38px; font-size: 13px; }
 .still:hover .play, .still:focus-visible .play { border-color: var(--phos); background: rgba(77,227,160,.22); }
 
