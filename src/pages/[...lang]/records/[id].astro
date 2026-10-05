@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import Support from '../../../components/Support.astro';
 import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, RELEASES } from '../../../lib/records';
+import { getCollection } from 'astro:content';
 import { getCases } from '../../../lib/cases';
 import { mediaFor } from '../../../lib/media';
 import { STILLS, stillTime } from '../../../data/stills';
@@ -22,6 +23,23 @@ const r = recordBySlug.get(id)!;
 
 const all = await getCases(lang);
 const citing = all.filter(c => r.cases.includes(c.id));
+
+// Sprawy, które wymieniają rekord w tekście (np. dla porównania), ale nie mają go
+// wśród swoich dokumentów w CASE_LINKS. Szukamy po identyfikatorze w kanonicznym
+// tekście sprawy, z zerami wiodącymi zdjętymi po obu stronach (D7 i D007 to jedno).
+const normId = (s: string) => s.replace(/^([A-Z]+-UAP-[A-Z]*)0*(\d+)/, '$1$2');
+const mentioning = new Set<string>();
+if (r.id) {
+  const want = normId(r.id);
+  for (const c of await getCollection('cases')) {
+    if (c.data.draft || r.cases.includes(c.id)) continue;
+    const text = `${JSON.stringify(c.data)}\n${c.body ?? ''}`;
+    for (const m of text.match(/\b[A-Z]{2,6}-UAP-[A-Z]{0,3}\d+\b/g) ?? []) {
+      if (normId(m) === want) { mentioning.add(c.id); break; }
+    }
+  }
+}
+const mentions = all.filter(c => mentioning.has(c.id));
 
 const relMeta = r.release ? RELEASES[r.release] : null;
 const relText = r.release
@@ -216,7 +234,19 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
               </li>
             ))}
           </ul>
-        : <p class="dim" style="margin:0">{t('rec.noCases')}</p>}
+        : <p class="dim" style="margin:0">{t(mentions.length ? 'rec.noCasesListed' : 'rec.noCases')}</p>}
+      {mentions.length > 0 && <>
+        <p class="label" style="margin:1.6rem 0 .5rem">{t('rec.mentioned')}</p>
+        <p class="dim" style="margin:0 0 .7rem;font-size:.92rem">{t('rec.mentionedNote')}</p>
+        <ul style="margin:0;padding-left:1.1rem">
+          {mentions.map(c => (
+            <li style="margin-bottom:.4rem">
+              <a href={path(lang, `/cases/${c.id}`)}>{c.data.title}</a>
+              <span class="dim"> · {c.data.dateDisplay}</span>
+            </li>
+          ))}
+        </ul>
+      </>}
     </section>
 
     <section class="wrap wrap--read prose" style="padding-block:2.5rem">
