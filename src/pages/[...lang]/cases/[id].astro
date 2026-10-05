@@ -101,8 +101,8 @@ const stChip = st.cls === 'st-unresolved' ? 'chip--amber'
               <p class="label" style="margin-bottom:.8rem">{t('case.records')}</p>
               {regRecords.map(r => (
                 <a href={path(lang, `/records/${r.slug}`)} style="display:block;border:0;padding:.85rem 0;border-top:1px solid var(--line)">
-                  <span class="mono" style="display:block;font-size:.66rem;letter-spacing:.14em;color:var(--phos-dim);margin-bottom:.35rem">{displayId(r) ?? r.slug}</span>
-                  <span style="display:block;font-size:.92rem;color:var(--fg-dim);line-height:1.5">{r.title}</span>
+                  <span class="mono" style="display:block;font-size:.66rem;letter-spacing:.14em;color:var(--phos-dim);margin-bottom:.35rem;overflow-wrap:anywhere">{displayId(r) ?? r.slug}</span>
+                  <span style="display:block;font-size:.92rem;color:var(--fg-dim);line-height:1.5;overflow-wrap:anywhere">{r.title}</span>
                 </a>
               ))}
             </div>
