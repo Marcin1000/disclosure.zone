@@ -1,18 +1,20 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { archives } from '../../data/archives';
+import { archives, type Archive } from '../../data/archives';
 import { resolveSource } from '../../data/sources';
 import { langParams, useT, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
 const { lang } = Astro.props as { lang: Lang };
 const t = useT(lang);
-const ST: Record<string, { k: string; cls: string }> = {
+const ST: Record<Archive['status'], { k: string; cls: string }> = {
   active: { k: 'arch.active', cls: 'chip--on' },
   closed: { k: 'arch.closed', cls: '' },
   transformed: { k: 'arch.transformed', cls: 'chip--amber' },
+  unknown: { k: 'arch.unknown', cls: '' },
 };
-const open = archives.filter(a => a.publicDb).length;
+// publicDb === null (nie wiadomo) liczy się tak samo jak false: nie wchodzi do programów z dostępem publicznym
+const open = archives.filter(a => a.publicDb === true).length;
 ---
 <Base title={t('arch.title')} description={t('arch.lead')} lang={lang} rest="/archives">
   <section class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">

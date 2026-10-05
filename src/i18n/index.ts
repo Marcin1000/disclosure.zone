@@ -281,10 +281,10 @@ const en: Dict = {
 
   'arch.kicker': '{n} programmes · {o} with public access',
   'arch.title': 'State archives',
-  'arch.lead': 'English-language UAP literature rests almost entirely on Blue Book. Meanwhile France runs a public database, Italy an unbroken register since 1978, Chile publishes resolutions — and the first serious state investigation was Swedish, in 1946.',
+  'arch.lead': 'English-language UAP literature rests almost entirely on Blue Book. Meanwhile France runs a public database, Italy an unbroken register since 1978, and Chile publishes resolutions.',
   'arch.volume': 'Volume',
   'arch.source': 'Source archive ↗',
-  'arch.active': 'Active', 'arch.closed': 'Closed', 'arch.transformed': 'Transformed',
+  'arch.active': 'Active', 'arch.closed': 'Closed', 'arch.transformed': 'Transformed', 'arch.unknown': 'Status not known',
   'arch.publicDb': 'Public database',
 
   'og.tagline': 'DISCLOSURE.ZONE — DOCUMENTS, NOT RUMORS',
@@ -544,10 +544,10 @@ const pl: Dict = {
 
   'arch.kicker': '{n} programów · {o} z dostępem publicznym',
   'arch.title': 'Archiwa państwowe',
-  'arch.lead': 'Anglojęzyczna literatura o UAP opiera się prawie wyłącznie na Blue Book. Tymczasem Francja prowadzi publiczną bazę, Włochy nieprzerwany rejestr od 1978 r. Chile publikuje rozstrzygnięcia, a pierwsze poważne dochodzenie państwowe przeprowadziła Szwecja, w 1946 r.',
+  'arch.lead': 'Anglojęzyczna literatura o UAP opiera się prawie wyłącznie na Blue Book. Tymczasem Francja prowadzi publiczną bazę, Włochy nieprzerwany rejestr od 1978 r., a Chile publikuje rozstrzygnięcia.',
   'arch.volume': 'Wolumen',
   'arch.source': 'Archiwum źródłowe ↗',
-  'arch.active': 'Działa', 'arch.closed': 'Zamknięty', 'arch.transformed': 'Przekształcony',
+  'arch.active': 'Działa', 'arch.closed': 'Zamknięty', 'arch.transformed': 'Przekształcony', 'arch.unknown': 'Status nieznany',
   'arch.publicDb': 'Baza publiczna',
 
   'og.tagline': 'DISCLOSURE.ZONE, DOKUMENTY, NIE PLOTKI',

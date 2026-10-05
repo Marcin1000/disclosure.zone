@@ -91,11 +91,11 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **161 of 268** sources have an address for the material itself — the only ones that
+- **169 of 273** sources have an address for the material itself — the only ones that
   count toward provenance
 - **40** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
-- **67** have neither, so far
+- **64** have neither, so far
 
 Every address in the registry was checked against a live source rather than guessed. The
 provenance counter is visible on each case and on [`/about`](https://disclosure.zone/about).
@@ -124,10 +124,10 @@ The same rule about links applies, and the same refusal to round it up:
   them, are served under a different file name; we point there and keep the address the index
   gave
 - **1** has no link at all
-- **86** are cited by a case so far
+- **88** are cited by a case so far
 
 That last number is the honest one. Reading a document into a case is work a person does,
-and the gap between 450 and 86 is the point rather than an embarrassment: the shortage in
+and the gap between 450 and 88 is the point rather than an embarrassment: the shortage in
 this subject was never sightings.
 
 `node scripts/build-records.mjs` regenerates `src/data/records.json` from a harvest

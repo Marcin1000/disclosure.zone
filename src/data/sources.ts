@@ -164,6 +164,12 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-eop-d001':      'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf',
   'pursue-dos-d001':      'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf',
   'pursue-dos-d002':      'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D002_Diplomatic-Cable_Brazil_November-20-1963.pdf',
+  // Rakiety widma 1946: przegląd wywiadu USA z 9 I 1947 (D099), prośba AMC o plik „Swedish Incidents”
+  // (D100) i raport COMETA z 1999 r. w przekładzie złożonym w wydaniu 01; pobrane 5 X 2026 i porównane
+  // bajt w bajt z paczkami wydań 05 i 01
+  'pursue-d099':          'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf',
+  'pursue-d100':          'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf',
+  'pursue-rg255-cometa':  "https://www.war.gov/medialink/ufo/release_1/255_413270_ufo's_and_defense_what_should_we_prepare_for.pdf",
   'pursue-cia-d020':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-006':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf',

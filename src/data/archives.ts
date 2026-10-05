@@ -6,9 +6,11 @@ export interface Archive {
   countryName: Bi;
   program: string;
   years: string;
-  status: 'active' | 'closed' | 'transformed';
+  /** unknown: żaden dokument nie mówi, czy program działa, zamknięto go, czy przekształcono. */
+  status: 'active' | 'closed' | 'transformed' | 'unknown';
   institution: Bi;
-  publicDb: boolean;
+  /** null: nie wiadomo, czy jest baza publiczna; strona pokazuje to tak samo jak false. */
+  publicDb: boolean | null;
   volume: Bi;
   note: Bi;
   ref?: string;
@@ -157,15 +159,22 @@ export const archives: Archive[] = [
     ref: 'naa-ufo',
   },
   {
+    // Wpis tylko z tego, co dają wydania USA: przegląd wywiadu z 9 I 1947 (DOW-UAP-D099, s. 18–19)
+    // i notatka G-2 z 1950 r. (teczka FBI 62-HQ-83894, Section 5, s. 157). Szwedzkiego dokumentu w nich
+    // nie ma, więc ani stanu programu, ani istnienia bazy publicznej nie da się ustalić; koniec lat to „?”.
     country: 'SE',
     countryName: { en: 'Sweden', pl: 'Szwecja' },
-    program: 'Ghost Rockets investigation and the later FOI holding',
-    years: '1946–present', status: 'closed', publicDb: false,
-    institution: { en: 'Swedish Armed Forces / FOI', pl: 'Szwedzkie siły zbrojne / FOI' },
-    volume: { en: 'Thousands of documents from 1946 onward', pl: 'Wielotysięczny zbiór dokumentów od 1946 r.' },
+    program: 'Ghost Rockets investigation, 1946',
+    years: '1946–?',
+    status: 'unknown', publicDb: null,
+    institution: { en: 'Swedish Defense Staff', pl: 'Szwedzki sztab obrony' },
+    volume: {
+      en: 'Not known. The US releases hold no Swedish document. The US review of 9 January 1947 says the Defense Staff had received almost 1,000 reports by the end of July 1946.',
+      pl: 'Nie wiadomo. W wydaniach USA nie ma żadnego szwedzkiego dokumentu. Przegląd USA z 9 stycznia 1947 r. podaje, że do końca lipca 1946 r. sztab obrony otrzymał prawie 1000 zgłoszeń.',
+    },
     note: {
-      en: 'The first serious state investigation into UAP in history — a year before the Kenneth Arnold sighting. This moves the field’s true starting date from 1947 to 1946.',
-      pl: 'Pierwsze poważne państwowe dochodzenie w sprawie UAP w historii, rok przed obserwacją Kennetha Arnolda. To przesuwa właściwą datę początkową całej dziedziny z 1947 na 1946.',
+      en: 'The US Intelligence Review of 9 January 1947 says of the reports of 1946: “Official investigations of these reports were begun by the Swedish authorities in June.” The Defense Staff carried them out and issued communiqués on 6 August and 10 October. A G-2 paper of 1950 says the Swedish Government issued a report by 1947. All of this is known at second hand: the US releases hold no Swedish document.',
+      pl: 'Przegląd wywiadu USA z 9 stycznia 1947 r. pisze o doniesieniach z 1946 r.: „Official investigations of these reports were begun by the Swedish authorities in June.”, czyli szwedzkie władze rozpoczęły oficjalne dochodzenie w czerwcu. Prowadził je sztab obrony, który wydał komunikaty 6 sierpnia i 10 października. Notatka G-2 z 1950 r. podaje, że do 1947 r. rząd szwedzki wydał raport. Wszystko to znamy z drugiej ręki: w wydaniach USA nie ma żadnego szwedzkiego dokumentu.',
     },
   },
   {

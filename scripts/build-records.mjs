@@ -56,7 +56,12 @@ const CASE_LINKS = {
   'DOW-UAP-D102': ['tremonton-1952'],
   'DOW-UAP-D103': ['tremonton-1952'],
   'DOW-UAP-D104': ['tremonton-1952'],   // Newhouse nakręcił film z Tremonton
+  // rakiety widma 1946: przegląd wywiadu USA z 9 I 1947 (D099, s. 17–20), prośba AMC z 23 I 1948 o plik
+  // „Swedish Incidents” (D100, s. 152) i raport COMETA z 1999 r. (s. 75); wzmianki w studium nr 203 (D094)
+  // i w teczce FBI: notatka Fitcha z 19 VIII 1947 (S2), San Antonio 1949 (S4), notatka G-2 z 1950 (S5), wycinek (S1)
   'DOW-UAP-D099': ['ghost-rockets-1946'],
+  'DOW-UAP-D100': ['ghost-rockets-1946'],
+  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946'],
   // Zdarzenie na zachodzie USA: analiza, mapa, pięć relacji, dziesięć renderingów
   // i dwie rekonstrukcje. Renderingi i rekonstrukcje są ilustracją relacji,
   // nie zapisem zjawiska, i strona sprawy mówi to wprost.
@@ -109,7 +114,7 @@ const CASE_LINKS = {
   // List Markhama z 14 III 1948 (D088 s. 9) zestawia pościg Mantella z historią z Maury Island
   'DOW-UAP-D088': ['chiles-whitted-1948', 'gorman-1948', 'maury-island-1947', 'mantell-1948'],
   // Studium nr 203 z 10 grudnia 1948: Wenus nad Godman i odesłanie do incydentu z 7 stycznia 1948
-  'DOW-UAP-D094': ['mantell-1948'],
+  'DOW-UAP-D094': ['mantell-1948', 'ghost-rockets-1946'],
   // Teczka zarządu wywiadu USAF, s. 37–46: KC-97 i radar naziemny nad Nową Fundlandią, 6 lipca 1955
   'DOW-UAP-D095': ['newfoundland-1955'],
   // Misja 33 SOS z 25 stycznia 2024: raport D25 i nagranie PR28. D27 i PR29 (czerwiec 2024,
@@ -152,20 +157,20 @@ const CASE_LINKS = {
   'DOW-UAP-PR135': ['six-spheres-2025'],
   // teczka FBI 62-HQ-83894: teleks Dallas z 8 VII 1947 o Roswell (s. 70) i dopisek dyrektora (s. 127, 131);
   // Maury Island: teleks z Portland z 5 VIII 1947 (s. 139–143) i z Seattle z 14 VIII (s. 119)
-  '65-hs1-834228961-62-hq-83894-section-1@01': ['roswell-1947', 'maury-island-1947'],
+  '65-hs1-834228961-62-hq-83894-section-1@01': ['roswell-1947', 'maury-island-1947', 'ghost-rockets-1946'],
   // Maury Island 1947: teleksy z Seattle z 6, 7, 12 VIII i depesza dyrektora z 14 VIII (S2); raport A-2,
   // oświadczenie z 7 VIII, zeznanie Smitha, list z Seattle, notatki z Butte i Chicago (S3); list Palmera
   // do Arnolda z 22 VII i przesłuchanie Arnolda (S3) cytuje też arnold-1947; wycinek z 1950 (SUB_A);
   // druga kopia listu Markhama w streszczeniach incydentów RG 38
-  '65-hs1-834228961-62-hq-83894-section-2@01': ['maury-island-1947'],
+  '65-hs1-834228961-62-hq-83894-section-2@01': ['maury-island-1947', 'ghost-rockets-1946'],
   '65-hs1-834228961-62-hq-83894-section-3@01': ['maury-island-1947', 'arnold-1947'],
   '65-hs1-834228961-62-hq-83894-sub-a@01': ['maury-island-1947'],
   '38-143685-box-incident-summaries-101-172@01': ['maury-island-1947'],
   // zielone kule ognia: depesza dowódcy Kirtland z 31 I 1949 (Section 4, s. 106)
-  '65-hs1-834228961-62-hq-83894-section-4@01': ['green-fireballs-1948', 'oak-ridge-1950'],
+  '65-hs1-834228961-62-hq-83894-section-4@01': ['green-fireballs-1948', 'oak-ridge-1950', 'ghost-rockets-1946'],
   // Oak Ridge 1947–1951: zdjęcia Presleya (Section 4, Serial 153), radar Adcocka z marca 1950 (Section 5),
   // radar lotnictwa, „radar jamming” i obserwacja z 18 XII 1950 (Section 6)
-  '65-hs1-834228961-62-hq-83894-section-5@01': ['oak-ridge-1950'],
+  '65-hs1-834228961-62-hq-83894-section-5@01': ['oak-ridge-1950', 'ghost-rockets-1946'],
   '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950'],
   '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
