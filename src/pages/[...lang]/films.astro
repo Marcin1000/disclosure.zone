@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Support from '../../components/Support.astro';
-import { records, yearLabel } from '../../lib/records';
+import { records, yearLabel, displayId } from '../../lib/records';
 import { mediaFor } from '../../lib/media';
 import { STILLS } from '../../data/stills';
 import { langParams, path, plural, useT, type Lang } from '../../i18n';
@@ -43,7 +43,7 @@ const countLabel = (k: number) => t(`films.count.${plural(lang, k)}`, { n: k });
               : <span class="film__none">{t('films.noStill')}</span>}
           </span>
           <span class="film__body">
-            <span class="film__id">{r.id ?? r.slug}</span>
+            <span class="film__id">{displayId(r) ?? r.slug}</span>
             <span class="film__t">{r.title}</span>
             <span class="film__m">
               {[r.place, yearLabel(r), asset && t('films.asset', { n: asset })].filter(Boolean).join(' · ')}

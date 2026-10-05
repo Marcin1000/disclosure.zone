@@ -6,7 +6,7 @@ import Support from '../../../components/Support.astro';
 import { getCases, getCaseBody } from '../../../lib/cases';
 import { STATUS, DOMAIN, EVIDENCE, bi } from '../../../lib/scoring';
 import { claimsById, STATUS_META } from '../../../data/claims';
-import { recordsForCase } from '../../../lib/records';
+import { recordsForCase, displayId } from '../../../lib/records';
 import { LOCALES, DEFAULT_LANG, path, useT, type Lang } from '../../../i18n';
 import { getCollection } from 'astro:content';
 
@@ -101,7 +101,7 @@ const stChip = st.cls === 'st-unresolved' ? 'chip--amber'
               <p class="label" style="margin-bottom:.8rem">{t('case.records')}</p>
               {regRecords.map(r => (
                 <a href={path(lang, `/records/${r.slug}`)} style="display:block;border:0;padding:.85rem 0;border-top:1px solid var(--line)">
-                  <span class="mono" style="display:block;font-size:.66rem;letter-spacing:.14em;color:var(--phos-dim);margin-bottom:.35rem">{r.id ?? r.slug}</span>
+                  <span class="mono" style="display:block;font-size:.66rem;letter-spacing:.14em;color:var(--phos-dim);margin-bottom:.35rem">{displayId(r) ?? r.slug}</span>
                   <span style="display:block;font-size:.92rem;color:var(--fg-dim);line-height:1.5">{r.title}</span>
                 </a>
               ))}

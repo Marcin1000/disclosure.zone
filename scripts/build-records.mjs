@@ -213,15 +213,21 @@ const SOURCE_FIXES = {
 };
 
 /**
- * Indeks wydawcy łączy trzy tytuły z tego zestawu z plikami przesuniętymi o jeden.
- * Tytuł, opis w uap-data.csv i nazwa pliku zgadzają się ze sobą, nie zgadza się
- * tylko link. Oba adresy działają, a pliki są bajt w bajt zgodne z paczką wydania 01.
- * Rekord dostaje plik zgodny z tytułem, a adres z indeksu zostaje w sourceAsIndexed.
+ * Indeks łączy tytuł z plikiem, w którym leży inny dokument z tego samego wydania.
+ * Rekord dostaje plik, którego nazwa i treść zgadzają się z tytułem, a adres z indeksu
+ * zostaje w sourceAsIndexed. Wpisujemy tylko adresy pobrane i porównane bajt w bajt
+ * z paczką wydania.
  */
 const LINK_SHIFTS = {
+  // Trzy FD-302 z września 2023: tytuł, opis w uap-data.csv i nazwa pliku zgadzają się ze sobą,
+  // a link jest przesunięty o jeden. Oba adresy działają i oba pliki są w paczce wydania 01.
   'fbi-september-2023-sighting-serial-3@01': 'https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf',
   'fbi-september-2023-sighting-serial-4@01': 'https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf',
   'fbi-september-2023-sighting-serial-5@01': 'https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf',
+  // Notatka z 28 VII 1952 o tym, co gen. Samford sądzi o „flying saucers”. Indeks daje
+  // …/59_214434_sp_16_7.18.1963.pdf, drugi skan memorandum SP 16 z 18 VII 1963, którego w paczce
+  // wydania 01 nie ma; adres z uap-data.csv daje plik bajt w bajt zgodny z paczką (898 369 B).
+  '59-64634-711-5612-7-2852@01': 'https://www.war.gov/medialink/ufo/release_1/59_64634_711.5612[7-2852.pdf',
 };
 
 /**
@@ -343,8 +349,13 @@ const REPORT_PAIRS = [
  * „z tytułu” też; obok zapisujemy, co mówi sam dokument. placeFrom mówi, skąd
  * miejsce: text to słowa dokumentu, grid to nasze przeliczenie siatki MGRS z dokumentu.
  * Rok, jeśli podany, to data zdarzenia z dokumentu; zastępuje rok z tytułu w filtrach.
+ * Klucz to identyfikator z wydaniem, a przy rekordzie bez identyfikatora slug z wydaniem.
+ * Gdy rok z tytułu przeczy także nazwie pliku u wydawcy, wystarcza YEAR_FIXES.
  */
 const DOCUMENT_SAYS = {
+  // depesza „23 MEXICO 2544”: „Sep 16, 2023 / 160150Z SEP 23”. Indeks i uap-data.csv podają rok 2003,
+  // a nazwa pliku u wydawcy (059uap00013.pdf) roku nie ma, więc rok bierzemy z dokumentu.
+  'state-department-uap-cable-5-mexico-september-16-2003@01': { place: 'Mexico', year: 2023, placeFrom: 'text' },
   'DOW-UAP-D20@01': { place: 'Syria', year: 2023, placeFrom: 'text' },
   'DOW-UAP-D14@01': { place: 'Syrian coast near Hmeimim air base, south-east of Latakia', placeFrom: 'grid' },
   'DOW-UAP-PR21@01': { place: 'Syrian coast near Hmeimim air base, south-east of Latakia', placeFrom: 'grid' },
@@ -414,10 +425,11 @@ function isPlaceLike(seg) {
 /** Tytuł ma zwykle postać „identyfikator, opis, miejsce, data". */
 function parseTitle(raw) {
   const clean = raw.replace(/\s+/g, ' ').trim();
-  // Litera dopisana do numeru (DOW-UAP-PR057a, PR057b) schodzi z tytułu razem z identyfikatorem,
-  // ale do id jej nie bierzemy: id i slug tych rekordów zostają takie jak dotąd, a z nimi adresy.
-  const idm = /^([A-Z]{2,6}-UAP-[A-Z]{0,3}\d+)(?:[a-z](?=[\s,:]|$))?\s*[,:]?\s*/i.exec(clean);
+  // Litera dopisana do numeru (DOW-UAP-PR057a, PR057b) schodzi z tytułu razem z identyfikatorem.
+  // Do id jej nie bierzemy, żeby id i slug zostały takie jak dotąd, a z nimi adresy; trafia do idSuffix.
+  const idm = /^([A-Z]{2,6}-UAP-[A-Z]{0,3}\d+)(?:([a-z])(?=[\s,:]|$))?\s*[,:]?\s*/i.exec(clean);
   const id = idm ? idm[1].toUpperCase() : null;
+  const idSuffix = idm?.[2] ?? null;
   let rest = idm ? clean.slice(idm[0].length) : clean;
   // Cudzysłów zdejmujemy tylko wtedy, gdy obejmuje cały tytuł, albo gdy stoi na brzegu sam,
   // bez pary (DOW-UAP-PR073). Para wewnątrz tytułu zostaje: „"Triangle Orbs," …, 2021”
@@ -443,7 +455,7 @@ function parseTitle(raw) {
     const shaped = i < segs.length - 1 || segs.length === 2;
     if (i > 0 && shaped && isPlaceLike(segs[i]) && !SUBJECT_SERIES.has(segs[0])) place = segs[i];
   }
-  return { id, title: rest || clean, place, year, yearEnd };
+  return { id, idSuffix, title: rest || clean, place, year, yearEnd };
 }
 
 /** Identyfikator PURSUE z początku nazwy pliku, np. CIA-UAP-D001_Intelligence_... */
@@ -516,18 +528,21 @@ for (const r of manifest.records) {
   const seen = (taken.get(base) ?? 0) + 1;
   taken.set(base, seen);
   const slug = seen === 1 ? base : `${base}-${seen}`;
+  // rekord bez identyfikatora (np. depesze Departamentu Stanu) szukamy po slugu
+  const said = DOCUMENT_SAYS[`${id}@${release}`] ?? DOCUMENT_SAYS[`${slug}@${release}`];
 
   records.push({
     slug,
     id,
     idFrom: id ? (t.id ? 'title' : 'file') : null,
+    idSuffix: t.idSuffix,
     title: t.title,
     agency: a.code,
     agencyName: a.name,
     series,
     place: t.place,
-    year: YEAR_FIXES[`${id}@${release}`] ?? DOCUMENT_SAYS[`${id}@${release}`]?.year ?? t.year,
-    yearEnd: YEAR_FIXES[`${id}@${release}`] || DOCUMENT_SAYS[`${id}@${release}`]?.year ? null : t.yearEnd,
+    year: YEAR_FIXES[`${id}@${release}`] ?? said?.year ?? t.year,
+    yearEnd: YEAR_FIXES[`${id}@${release}`] || said?.year ? null : t.yearEnd,
     kind: s.format === 'video' ? 'recording' : (s.format === 'jpg' || s.format === 'png') ? 'image'
         : s.sourceKind === 'file' ? 'document' : 'unknown',
     sourceKind: id && DEAD_SOURCES.has(id) ? 'dead' : s.sourceKind,
@@ -537,7 +552,7 @@ for (const r of manifest.records) {
     format: s.format,
     cases: CASE_LINKS[`${id}@${release}`] ?? CASE_LINKS[`${slug}@${release}`] ?? CASE_LINKS[slug] ?? CASE_LINKS[id] ?? [],
     illegible: (id && ILLEGIBLE[id]) ?? null,
-    documentSays: DOCUMENT_SAYS[`${id}@${release}`] ?? null,
+    documentSays: said ?? null,
     sourceAsIndexed: shiftedUrl || fixedUrl || listedUrl ? r.officialSourceUrl : null,
     linkShift: Boolean(shiftedUrl),
     fromListing: Boolean(listedUrl),
@@ -637,7 +652,7 @@ records.sort((a, b) =>
 
 const out = {
   dataset: 'disclosure.zone / PURSUE document registry',
-  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to another file of the same set, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher\'s own listing gives for the file or the recording\'s page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to a file that holds a different record of the same release, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher\'s own listing gives for the file or the recording\'s page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Where the publisher writes a letter after the number (DOW-UAP-PR057a, PR057b), id keeps the number and idSuffix holds the letter. Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
   index: manifest.index ?? null,
   harvested: manifest.harvested ?? null,
   generated: new Date().toISOString(),

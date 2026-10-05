@@ -28,6 +28,8 @@ export interface Rec {
   id: string | null;
   /** Skąd identyfikator: z tytułu w indeksie albo z nazwy pliku u wydawcy. */
   idFrom: 'title' | 'file' | null;
+  /** Litera, którą wydawca dopisał do numeru (DOW-UAP-PR057a); id trzyma sam numer. */
+  idSuffix: string | null;
   title: string;
   agency: string | null;
   agencyName: string | null;
@@ -61,6 +63,11 @@ export const RECORDS_HARVESTED: string = data.harvested ?? '';
 export const RECORD_INDEX: string | null = data.index ?? null;
 
 export const recordBySlug = new Map(records.map(r => [r.slug, r]));
+
+/** Identyfikator tak, jak go zapisał wydawca, razem z literą po numerze (DOW-UAP-PR057a). */
+export function displayId(r: Pick<Rec, 'id' | 'idSuffix'>): string | null {
+  return r.id ? r.id + (r.idSuffix ?? '') : null;
+}
 
 /** Wydania PURSUE. Daty pięciu pierwszych są ze strony wydawcy. */
 export const RELEASES: Record<string, { date: string; dateKnown: boolean }> = {

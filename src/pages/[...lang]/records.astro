@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { records, provenance, counts, yearLabel, releaseLabel, RELEASES, RECORDS_HARVESTED } from '../../lib/records';
+import { records, provenance, counts, yearLabel, releaseLabel, displayId, RELEASES, RECORDS_HARVESTED } from '../../lib/records';
 import { langParams, path, plural, useT, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
@@ -120,7 +120,7 @@ const harvested = RECORDS_HARVESTED
           {records.map(r => (
             <tr data-row data-release={r.release ?? ''} data-kind={r.kind}
                 data-link={r.sourceKind} data-agency={r.agency ?? ''}>
-              <td class="mono tbl__nw" data-l={t('records.th.id')} style="font-size:.76rem;color:var(--phos-dim)">{r.id ?? '·'}</td>
+              <td class="mono tbl__nw" data-l={t('records.th.id')} style="font-size:.76rem;color:var(--phos-dim)">{displayId(r) ?? '·'}</td>
               <td class="tbl__t" data-l={t('records.th.title')}>
                 <a href={path(lang, `/records/${r.slug}`)}><strong>{r.title}</strong></a>
                 {r.cases.length > 0 && <span class="label" style="color:var(--amber);margin-left:.5rem">◆</span>}

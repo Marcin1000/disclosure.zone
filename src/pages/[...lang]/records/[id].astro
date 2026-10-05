@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Support from '../../../components/Support.astro';
-import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, RELEASES } from '../../../lib/records';
+import { records, recordBySlug, recordsForCase, yearLabel, releaseLabel, displayId, RELEASES } from '../../../lib/records';
 import { getCollection } from 'astro:content';
 import { getCases } from '../../../lib/cases';
 import { mediaFor } from '../../../lib/media';
@@ -51,7 +51,7 @@ const relText = r.release
  * dopiskiem, żeby dało się wrócić po ścieżkę, ale to wydawca jest źródłem.
  */
 const citation = [
-  [r.id, r.title].filter(Boolean).join(', '),
+  [displayId(r), r.title].filter(Boolean).join(', '),
   r.agencyName ?? r.agency,
   r.release ? `PURSUE release ${r.release}` : null,
   r.source,
@@ -88,14 +88,16 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
   : r.sourceKind === 'file' || r.sourceKind === 'dead' ? t('rec.open')
   : r.sourceKind === 'page' ? t('rec.openPage') : t('rec.openRelease');
 ---
-<Base title={!r.id ? r.title : en ? `${r.id} — ${r.title}` : `${r.id}, ${r.title}`}
+<Base title={!r.id ? r.title : en ? `${displayId(r)} — ${r.title}` : `${displayId(r)}, ${r.title}`}
       description={t('rec.assessmentNote')} lang={lang} rest={`/records/${r.slug}`}>
   <article>
     <header class="wrap" style="padding-block:clamp(2.5rem,6vw,4.5rem) 0">
       <div class="dossier corners">
         <div class="dossier__holes"><i></i><i></i><i></i><i></i></div>
         <div style="padding-left:2.2rem">
-          <p class="dossier__id" style="margin:0">{t('rec.file')} / {r.id ?? r.slug}</p>
+          <p class="dossier__id" style="margin:0">{t('rec.file')} / {r.id
+            ? <>{r.id}{r.idSuffix && <span style="text-transform:none">{r.idSuffix}</span>}</>
+            : r.slug}</p>
           <h1 class="rec__title" style="font-size:clamp(1.55rem,3.6vw,2.5rem);margin:1rem 0 .4rem">{r.title}</h1>
           <p class="label" style="margin:0">{t('rec.titleNote')}</p>
           <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.6rem">
@@ -113,7 +115,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
       <div class="meta">
         {r.id && r.idFrom === 'file' && (
           <div class="meta__row"><span class="meta__k">{t('rec.meta.id')}</span>
-            <span class="meta__v"><span class="mono" style="font-size:.9rem">{r.id}</span>
+            <span class="meta__v"><span class="mono" style="font-size:.9rem">{displayId(r)}</span>
               <span class="dim" style="font-size:.85rem"> ({t('rec.meta.idNote')})</span></span></div>
         )}
         {(r.agencyName || r.agency) && (
@@ -213,7 +215,7 @@ const openLabel = r.kind === 'recording' ? t('films.watch')
         <ul style="margin:0;padding-left:1.1rem">
           {related.map(({ rel, rec }) => (
             <li style="margin-bottom:.4rem">
-              {t(`rec.rel.${rel}`)} <a href={path(lang, `/records/${rec.slug}`)}>{rec.id ?? rec.slug}</a>
+              {t(`rec.rel.${rel}`)} <a href={path(lang, `/records/${rec.slug}`)}>{displayId(rec) ?? rec.slug}</a>
               <span class="dim">, {rec.title}{rec.release ? ` · ${t('records.f.release')} ${rec.release}` : ''}</span>
             </li>
           ))}
