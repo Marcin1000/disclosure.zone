@@ -1,88 +1,92 @@
 ---
 title: "The Belgian Wave"
-subtitle: "F-16s with radar recordings against triangles over Belgium — and the correction that changes everything"
+subtitle: "Triangles reported over Belgium and two F-16s scrambled on 30–31 March 1990, known only from two later accounts"
 date: 1990-03-30
-dateDisplay: "November 1989 – April 1990; key night 30/31 March 1990"
+dateDisplay: "30–31 March 1990, after months of sightings"
 country: "BE"
 countryName: "Belgium"
-location: "Wallonia, the Eupen and Wavre areas; airspace over central Belgium"
-lat: 50.63
-lon: 5.57
+location: "Belgium; the radar contact was reported over central Belgium. The pin marks OpenStreetMap’s point for Belgium, not the place of any sighting"
+lat: 50.64
+lon: 4.67
 domain: "military"
-tier: 1
+tier: 3
 status: "unresolved"
-duration: "a five-month wave; the key action about an hour"
-witnesses: "Gendarmerie officers, thousands of civilian witnesses, two F-16 crews"
+witnesses: "None named. The summary says only that objects ‘were reported’; the pilots of the two F-16s ‘reported no sightings’"
 evidence:
-- "radar"
 - "visual"
+- "radar"
 - "intercept"
-- "multi-witness"
 scores:
-  S: 5
-  R: 5
-  O: 2
+  S: 1
+  R: 1
+  O: 0
   P: 0
-  M: 5
-  T: 5
-  X: 3
-  D: 3
-summary: "Over five months thousands of people in Belgium, including gendarmerie officers, reported large, silent triangular objects. On the night of 30/31 March 1990, with correlating ground radar, two F-16s were scrambled and their radars obtained brief contacts."
-official: "The Belgian air force released documentation and participated in the analysis. The case remained unidentified."
-alternatives:
-- "Artefacts of the F-16 radar tracking filter — later analysis indicated that the abrupt “accelerations” in the recordings match Kalman filter behaviour during a track jump rather than target motion."
-- "Helicopters, aircraft in unusual lighting configurations and balloons as the source of some ground sightings."
-- "Classified aircraft (a stealth hypothesis) — never confirmed."
-claims:
-- "belgian-f16-acceleration"
-- "belgian-triangle-photo"
+  M: 1
+  T: 1
+  X: 1
+  D: 0
+summary: "According to a summary by The National Archives (UK), on 30–31 March 1990 ‘large, unknown triangular-shaped objects were reported’ over Belgium after months of sightings; radar ‘reportedly tracked an unknown object over central Belgium’, the Belgian Air Force scrambled two F-16s, and ‘The pilots reported no sightings, and the object was not identified.’ A newspaper article of 2000, filed in the release, says the F-16s were ‘armed with missiles’."
+official: "The only official account found is British. The National Archives: “The pilots reported no sightings, and the object was not identified.” It adds that the UK “was not informed at the time as there was no evidence of any threat” and that “There were no investigations by the Ministry”. No Belgian document is in the releases or on any official page we could find."
 sources:
-- "tier": "T1"
-  label: "Belgian air force documentation, including material from Gen. Wilfried de Brouwer"
-- "tier": "T1"
-  label: "F-16 radar recordings from the night of 30/31 March 1990"
-- "tier": "T4"
-  label: "Later technical analyses of the radar recordings"
-  note: "This is where the key correction about the tracking filter appears."
-- "tier": "T5"
-  label: "The famous Petit-Rechain triangle photograph"
-  note: "The author admitted the hoax. The image has no evidential value."
 - "tier": "T4"
   label: "The National Archives (UK), “UFO reports”: a paragraph on the events in Belgium of 30–31 March 1990"
-  note: "A British archive’s summary, not a Belgian document: “Radar reportedly tracked an unknown object over central Belgium, and the Belgian Air Force scrambled two F-16s. The pilots reported no sightings, and the object was not identified.”"
+  note: "A British archive’s summary, not a Belgian document. It stands beside the Ministry of Defence file DEFE 24/1958/1 (UFO policy, 1985–1995); the file itself was not read for this case."
   ref: "tna-ufo"
+- "tier": "T5"
+  label: "Leslie Kean, “UFO theorists gain support abroad, but repression at home”, The Boston Sunday Globe, 21 May 2000, p. E3, filed in the release with the English translation of the COMETA report (p. 91 of the file)"
+  note: "A newspaper article, not the COMETA report. It gives no source for its sentence on Belgium."
+  ref: "pursue-rg255-cometa"
 ---
 
-## Why this is the best radar lesson in the database
+## What the sources hold
 
-The Belgian wave is remarkably strong as an event and remarkably instructive as an analytical case —
-because it shows how **real data can generate an unreal conclusion.**
+Two later accounts, and neither is Belgian. The National Archives in London summarises the night beside
+a Ministry of Defence file on UFO policy, DEFE 24/1958/1:
 
-The F-16 airborne radar recordings genuinely exist and genuinely show abrupt changes in target
-parameters. For years they were presented as measurements of accelerations impossible for known
-technology.
+> “A major event occurred in 1990 over Belgium. On 30–31 March, large, unknown triangular-shaped objects
+> were reported. This followed months of strange sightings. Radar reportedly tracked an unknown object
+> over central Belgium, and the Belgian Air Force scrambled two F-16s. The pilots reported no sightings,
+> and the object was not identified.”
 
-Later analysis pointed elsewhere. An F-16 radar does not display the target’s raw position. It
-displays **the output of a tracking filter** that smooths and predicts a trajectory. When the filter
-loses one target and acquires another, a jump appears in the record — and that jump looks exactly
-like extreme acceleration, while being an artefact of the algorithm.
+It goes on: “The UK was not informed at the time as there was no evidence of any threat, but the MOD
+received numerous questions on the reported sighting. There were no investigations by the Ministry,
+although enquiries continued, including a Parliamentary Question in September 1996.”
 
-## What this means for the field
+An article in The Boston Sunday Globe of 21 May 2000, filed in the release with the English translation
+of the COMETA report, has one sentence on the night: “Belgium F-16s armed with missiles pursued a UFO in
+1990.” (p. 91 of the file) It names no source.
 
-Not that the Belgian wave is debunked. Thousands of ground sightings, gendarmerie accounts among
-them, remain unresolved, and the wave as a whole has no explanation.
+## What is not in them
 
-It means something more important: **we have to know whether we are looking at a measurement or at a
-software product.** The same caution applies to every modern ATFLIR recording and to every track file
-we have not seen in raw form.
+No Belgian document: not the air force’s account of the night, and not its radar data. Neither account
+says who reported the triangles, how many people did, or where. Neither gives a time, a track or a
+position for the radar contact, and the “reportedly” is the summary’s own word. We searched the text of
+all six US releases for Belgium, allowing for scanning errors; the article above is the only page that
+bears on 1990.
 
-## The Petit-Rechain photograph
+## Why this scores where it does
 
-In 2011 the wave’s most famous image — a triangle with four lights — was admitted by its author, on
-Belgian television, to be a hoax: painted styrofoam with lights at the corners, hung on threads. In
-2022 he was reported as claiming he had been paid to say that.
+**Witnesses: 1.** Objects “were reported”, by people the summary neither names nor counts; the two pilots
+“reported no sightings”.
 
-The retraction has no documentary support, and it does not rescue the photograph either way. **An
-image whose own author has given two contradictory accounts of making it cannot carry evidential
-weight.** We treat it as a T5 source of zero value and record the whole sequence because the image is
-still reproduced as evidence.
+**Radar and optics: 1 and 0.** A radar track that the summary itself calls reported, with no data behind
+it; neither source has a photograph or a film.
+
+**Physical trace: 0.** None is mentioned.
+
+**Multi-channel: 1.** The reports and the radar both reach us through one British summary.
+
+**Documentation: 1.** Two later accounts, an archive’s paragraph and a newspaper’s sentence; no Belgian
+document.
+
+**Anomaly: 1.** The object “was not identified”; nothing about it was measured.
+
+**Data today: 0.** Nothing beyond the two accounts can be read today.
+
+The overall is 0.6: class D, testimony only.
+
+## What would settle it
+
+- The Belgian Air Force’s documentation of the night of 30–31 March 1990.
+- The F-16 radar recordings.
+- A full reading of the Ministry of Defence file DEFE 24/1958/1 at The National Archives.

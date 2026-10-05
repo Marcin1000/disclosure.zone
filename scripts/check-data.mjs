@@ -63,6 +63,14 @@ for (const c of claims) {
   }
 }
 
+// Wycofane (src/data/withdrawn.ts) nie mogą wrócić niezauważone: ich identyfikator
+// nie może znów być sprawą (EN ani PL) ani twierdzeniem
+const { withdrawn } = await loadTs('src/data/withdrawn.ts', 'withdrawn', { bundle: true, external: ['../i18n'] });
+for (const w of withdrawn) {
+  if (canonSet.has(w.id) || pl.includes(w.id)) errors.push(`wycofane (${w.kind}) ${w.id}: znów jest sprawą`);
+  if (claimIds.has(w.id)) errors.push(`wycofane (${w.kind}) ${w.id}: znów jest twierdzeniem`);
+}
+
 const { FINDING_AIDS, SOURCE_URL } = await loadTs('src/data/sources.ts', 'sources');
 
 let linked = 0, aided = 0, total = 0;

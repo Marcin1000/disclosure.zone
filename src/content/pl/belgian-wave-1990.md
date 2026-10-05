@@ -1,58 +1,76 @@
 ---
 title: "Fala belgijska"
-subtitle: "F-16 z zapisem radarowym przeciw trójkątom nad Belgią i poprawka, która wszystko zmienia"
-dateDisplay: "listopad 1989 – kwiecień 1990; kluczowa noc 30/31 marca 1990"
+subtitle: "Trójkąty zgłoszone nad Belgią i dwa F-16 poderwane 30–31 marca 1990 r., znane tylko z dwóch późniejszych relacji"
+dateDisplay: "30–31 marca 1990, po miesiącach obserwacji"
 countryName: "Belgia"
-location: "Wallonia, rejon Eupen, Wavre; przestrzeń nad centralną Belgią"
-duration: "fala pięciomiesięczna; kluczowa akcja ok. 1 godziny"
-witnesses: "Funkcjonariusze żandarmerii, tysiące świadków cywilnych, załogi dwóch F-16"
-summary: "Przez pięć miesięcy tysiące osób w Belgii, w tym funkcjonariusze żandarmerii, zgłaszało duże, ciche obiekty trójkątne. W nocy 30/31 marca 1990 r. przy korelacji z radarami naziemnymi poderwano dwa F-16, których radary uzyskiwały krótkotrwałe kontakty."
-official: "Belgijskie siły powietrzne opublikowały dokumentację i uczestniczyły w analizie. Sprawa pozostała bez identyfikacji."
-alternatives:
-- "Artefakty filtru śledzenia radaru pokładowego F-16, późniejsze analizy wskazały, że nagłe „przyspieszenia” w zapisach odpowiadają zachowaniu filtru Kalmana przy przeskoku śledzenia, a nie ruchowi obiektu."
-- "Helikoptery, samoloty w nietypowych konfiguracjach świetlnych i balony jako źródło części obserwacji naziemnych."
-- "Tajne statki powietrzne (hipoteza stealth), nigdy nie potwierdzona."
+location: "Belgia; kontakt radarowy zgłoszono nad środkową Belgią. Znacznik to punkt OpenStreetMap dla Belgii, nie miejsce żadnej obserwacji"
+witnesses: "Nikt z nazwiska. Streszczenie podaje tylko, że obiekty „were reported” (zgłoszono); piloci dwóch F-16 „reported no sightings”, czyli niczego nie zobaczyli"
+summary: "Według streszczenia The National Archives (Wielka Brytania) 30–31 marca 1990 r. nad Belgią „large, unknown triangular-shaped objects were reported”, czyli zgłoszono duże, nieznane obiekty w kształcie trójkąta, po miesiącach obserwacji; radar „reportedly tracked an unknown object over central Belgium” (podobno śledził nieznany obiekt nad środkową Belgią), belgijskie lotnictwo poderwało dwa F-16, a „The pilots reported no sightings, and the object was not identified”, czyli piloci niczego nie zobaczyli i obiektu nie zidentyfikowano. Artykuł prasowy z 2000 r., złożony w wydaniu, podaje, że F-16 były „armed with missiles” (uzbrojone w pociski)."
+official: "Jedyny urzędowy opis, jaki udało się znaleźć, jest brytyjski. The National Archives: „The pilots reported no sightings, and the object was not identified” (piloci niczego nie zobaczyli, a obiektu nie zidentyfikowano). Dodaje, że Wielka Brytania „was not informed at the time as there was no evidence of any threat” (nie została wtedy poinformowana, bo nic nie wskazywało na zagrożenie) i że „There were no investigations by the Ministry” (ministerstwo nie prowadziło dochodzenia). W wydaniach i na stronach urzędowych, które udało się znaleźć, nie ma żadnego belgijskiego dokumentu."
 sources:
-- "label": "Dokumentacja belgijskich sił powietrznych, w tym materiały gen. Wilfrieda de Brouwera"
-- "label": "Zapisy radarowe F-16 z nocy 30/31 marca 1990"
-- "label": "Późniejsze analizy techniczne zapisów radarowych"
-  note: "To tutaj pojawia się kluczowa poprawka dotycząca filtru śledzenia."
-- "label": "Słynna fotografia trójkąta z Petit-Rechain"
-  note: "Autor przyznał się do mistyfikacji. Zdjęcie nie ma żadnej wartości dowodowej."
 - "label": "The National Archives (Wielka Brytania), strona „UFO reports”: akapit o wydarzeniach w Belgii 30–31 marca 1990"
-  note: "Streszczenie archiwum brytyjskiego, nie dokument belgijski: „Radar reportedly tracked an unknown object over central Belgium, and the Belgian Air Force scrambled two F-16s. The pilots reported no sightings, and the object was not identified.”, czyli radar podobno śledził nieznany obiekt nad środkową Belgią, belgijskie lotnictwo poderwało dwa F-16, piloci niczego nie zobaczyli, a obiektu nie zidentyfikowano."
+  note: "Streszczenie archiwum brytyjskiego, nie dokument belgijski. Stoi obok teczki Ministerstwa Obrony DEFE 24/1958/1 (polityka wobec UFO, 1985–1995); samej teczki do tej sprawy nie czytaliśmy."
+- "label": "Leslie Kean, „UFO theorists gain support abroad, but repression at home”, „The Boston Sunday Globe”, 21 maja 2000, s. E3, złożony w wydaniu razem z angielskim przekładem raportu COMETA (s. 91 pliku)"
+  note: "Artykuł prasowy, nie raport COMETA. Nie podaje źródła swojego zdania o Belgii."
 ---
 
-## Dlaczego to najlepsza lekcja o radarze w całej bazie
+## Co mówią źródła
 
-Fala belgijska jest niezwykle mocna jako zdarzenie i niezwykle pouczająca jako przypadek
-analityczny, bo pokazuje, jak **prawdziwe dane mogą wygenerować nieprawdziwy wniosek**.
+Dwie późniejsze relacje i żadna nie jest belgijska. The National Archives w Londynie streszcza tę noc
+obok teczki Ministerstwa Obrony o polityce wobec UFO, DEFE 24/1958/1:
 
-Zapisy radaru pokładowego F-16 rzeczywiście istnieją i rzeczywiście pokazują gwałtowne zmiany
-parametrów celu. Przez lata przedstawiano je jako pomiar przyspieszeń niemożliwych dla znanej
-technologii.
+> „A major event occurred in 1990 over Belgium. On 30–31 March, large, unknown triangular-shaped objects
+> were reported. This followed months of strange sightings. Radar reportedly tracked an unknown object
+> over central Belgium, and the Belgian Air Force scrambled two F-16s. The pilots reported no sightings,
+> and the object was not identified.”
 
-Późniejsza analiza wskazała inne wyjaśnienie: radar F-16 nie pokazuje surowej pozycji celu.
-Pokazuje **wynik pracy filtru śledzącego**, który wygładza i przewiduje trajektorię. Gdy filtr
-gubi cel i chwyta inny, w zapisie pojawia się skok, który wygląda dokładnie jak ekstremalne
-przyspieszenie, a jest artefaktem algorytmu.
+Czyli: w 1990 r. nad Belgią doszło do poważnego zdarzenia; 30–31 marca zgłoszono duże, nieznane obiekty
+w kształcie trójkąta, po miesiącach dziwnych obserwacji; radar podobno śledził nieznany obiekt nad
+środkową Belgią, a belgijskie lotnictwo poderwało dwa F-16; piloci niczego nie zobaczyli, a obiektu nie
+zidentyfikowano.
 
-## Co to znaczy dla całej dziedziny
+Dalej: „The UK was not informed at the time as there was no evidence of any threat, but the MOD received
+numerous questions on the reported sighting. There were no investigations by the Ministry, although
+enquiries continued, including a Parliamentary Question in September 1996.” Czyli Wielkiej Brytanii
+wtedy nie poinformowano, bo nic nie wskazywało na zagrożenie, ale MOD dostało wiele pytań o tę
+obserwację; ministerstwo nie prowadziło dochodzenia, choć zapytania trwały, w tym interpelacja w
+parlamencie we wrześniu 1996 r.
 
-Nie to, że fala belgijska jest obalona. Tysiące obserwacji naziemnych, w tym relacje żandarmerii,
-pozostają nierozstrzygnięte, a fala jako całość nie ma wyjaśnienia.
+Artykuł w „The Boston Sunday Globe” z 21 maja 2000 r., złożony w wydaniu razem z angielskim przekładem
+raportu COMETA, ma o tej nocy jedno zdanie: „Belgium F-16s armed with missiles pursued a UFO in 1990.”
+(s. 91 pliku), czyli belgijskie F-16 uzbrojone w pociski ścigały w 1990 r. UFO. Nie podaje źródła.
 
-To znaczy coś ważniejszego: **musimy wiedzieć, czy patrzymy na pomiar, czy na produkt
-oprogramowania.** Ta sama ostrożność dotyczy każdego współczesnego zapisu z ATFLIR i każdego
-track file, którego nie widzieliśmy w postaci surowej.
+## Czego w nich nie ma
 
-## Fotografia z Petit-Rechain
+Żadnego dokumentu belgijskiego: ani opisu tej nocy przez lotnictwo, ani jego danych radarowych. Żadna
+z relacji nie mówi, kto zgłaszał trójkąty, ile było osób ani gdzie. Żadna nie podaje czasu, toru ani
+położenia kontaktu radarowego, a „reportedly” (podobno) to słowo samego streszczenia. Przeszukaliśmy
+tekst wszystkich sześciu wydań USA pod kątem Belgii, z poprawką na błędy skanowania; powyższy artykuł to
+jedyna strona, która dotyczy 1990 r.
 
-W 2011 r. najsłynniejsze zdjęcie fali, trójkąt z czterema światłami, zostało przez autora przyznane
-w belgijskiej telewizji jako mistyfikacja: pomalowany styropian ze światłami w rogach, zawieszony na
-żyłkach. W 2022 r. doniesiono, że twierdzi on, iż zapłacono mu za takie oświadczenie.
+## Dlaczego oceny są takie, jakie są
 
-Wycofanie nie ma poparcia dokumentowego i tak czy inaczej nie ratuje zdjęcia. **Fotografia, której
-własny autor przedstawił dwie sprzeczne wersje jej powstania, nie może nieść ciężaru dowodowego.**
-Traktujemy je jako źródło T5 o zerowej wartości i odnotowujemy całą sekwencję, bo zdjęcie wciąż jest
-reprodukowane jako dowód.
+**Świadkowie: 1.** Obiekty „were reported” (zgłoszono), przez osoby, których streszczenie nie wymienia
+ani nie liczy; dwaj piloci „reported no sightings”, czyli niczego nie zobaczyli.
+
+**Radar i optyka: 1 i 0.** Ślad radarowy, który samo streszczenie nazywa zgłoszonym, bez żadnych danych;
+w żadnym źródle nie ma zdjęcia ani filmu.
+
+**Ślad fizyczny: 0.** Żadne źródło o nim nie wspomina.
+
+**Wielokanałowość: 1.** Zgłoszenia i radar docierają do nas przez jedno brytyjskie streszczenie.
+
+**Dokumentacja: 1.** Dwie późniejsze relacje: akapit archiwum i zdanie z gazety; żadnego dokumentu
+belgijskiego.
+
+**Anomalia: 1.** Obiektu „was not identified” (nie zidentyfikowano); nic w nim nie zmierzono.
+
+**Dane dzisiaj: 0.** Poza tymi dwiema relacjami nie da się dziś przeczytać niczego.
+
+Ocena łączna wynosi 0,6: klasa D, głównie relacja.
+
+## Co by to rozstrzygnęło
+
+- Dokumentacja belgijskiego lotnictwa z nocy 30–31 marca 1990 r.
+- Zapisy radarowe F-16.
+- Pełna lektura teczki Ministerstwa Obrony DEFE 24/1958/1 w The National Archives.
