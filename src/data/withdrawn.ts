@@ -42,8 +42,8 @@ export const withdrawn: Withdrawn[] = [
     title: { en: '“F-16 radar recorded accelerations impossible for known technology.”', pl: '„Radar F-16 zarejestrował przyspieszenia niemożliwe dla znanej technologii.”' },
     on: '2026-10-05',
     reason: {
-      en: 'Our verdict described the F-16 radar recordings and how their tracking filter behaved, but no recording, analysis or official account of them is in the US releases or on any official site we could find. The only sources that can be opened are two later summaries, which say only that radar “reportedly” tracked an object. The Belgian case remains, rebuilt on those two summaries.',
-      pl: 'Nasz werdykt opisywał zapisy radarowe F-16 i działanie ich filtru śledzącego, ale żadnego zapisu, analizy ani oficjalnego opisu nie ma w wydaniach USA ani na żadnej stronie urzędowej, którą udało się znaleźć. Jedyne źródła, które da się otworzyć, to dwa późniejsze streszczenia, a one mówią tylko, że radar „reportedly” (podobno) śledził obiekt. Sprawa belgijska zostaje, przebudowana na tych dwóch streszczeniach.',
+      en: 'Our verdict described the F-16 radar recordings and how their tracking filter behaved, but no recording, analysis or official account of them is in the US releases or on any official site we could find. The only sources that can be opened are two later accounts: The National Archives’ summary, which says radar “reportedly” tracked an object, and one sentence in a newspaper article of 2000. The Belgian case remains, rebuilt on those two accounts.',
+      pl: 'Nasz werdykt opisywał zapisy radarowe F-16 i działanie ich filtru śledzącego, ale żadnego zapisu, analizy ani oficjalnego opisu nie ma w wydaniach USA ani na żadnej stronie urzędowej, którą udało się znaleźć. Jedyne źródła, które da się otworzyć, to dwie późniejsze relacje: streszczenie The National Archives, według którego radar „reportedly” (podobno) śledził obiekt, i jedno zdanie z artykułu prasowego z 2000 r. Sprawa belgijska zostaje, przebudowana na tych dwóch relacjach.',
     },
   },
   {
