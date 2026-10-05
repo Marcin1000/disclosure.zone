@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { withdrawn } from '../../data/withdrawn';
+import { langParams, path, type Lang } from '../../i18n';
+
+export function getStaticPaths() { return langParams(); }
+const { lang } = Astro.props as { lang: Lang };
+const en = lang === 'en';
+const fmt = (d: string) => new Date(`${d}T00:00:00Z`).toLocaleDateString(en ? 'en-GB' : 'pl-PL', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const groups = [
+  { kind: 'case' as const, h: en ? 'Cases' : 'Sprawy' },
+  { kind: 'claim' as const, h: en ? 'Claims' : 'Twierdzenia' },
+];
+---
+<Base title={en ? 'Withdrawn' : 'Wycofane'}
+      description={en ? 'Cases and claims removed from the database, with the date and the reason.' : 'Sprawy i twierdzenia usunięte z bazy, z datą i powodem.'}
+      lang={lang} rest="/withdrawn">
+  <section class="wrap wrap--read" style="padding-block:clamp(2.5rem,6vw,4.5rem) 2rem">
+    <p class="label label--amber" style="margin-bottom:.8rem">{en ? 'Corrections' : 'Korekty'}</p>
+    <h1 style="font-size:clamp(2rem,5vw,3.4rem)">{en ? 'Withdrawn' : 'Wycofane'}</h1>
+    <p class="lead dim" style="max-width:62ch">
+      {en
+        ? 'When a case or a claim turns out to rest on nothing that can be opened today, it leaves the database. It does not disappear without trace: this page says what it was, when it went and why.'
+        : 'Gdy okazuje się, że sprawa albo twierdzenie nie opiera się na niczym, co dziś da się otworzyć, wypada z bazy. Nie znika jednak bez śladu: ta strona mówi, czym było, kiedy wypadło i dlaczego.'}
+    </p>
+  </section>
+
+  <section class="wrap wrap--read" style="padding-bottom:5rem">
+    {groups.map(g => {
+      const items = withdrawn.filter(w => w.kind === g.kind);
+      return items.length > 0 && (
+        <div style="margin-bottom:2.5rem">
+          <p class="label" style="margin-bottom:.8rem">{g.h}</p>
+          {items.map(w => (
+            <div id={w.id} style="padding:1.2rem 0;border-top:1px solid var(--line)">
+              <p class="mono" style="margin:0 0 .4rem;font-size:.66rem;letter-spacing:.14em;color:var(--fg-faint)">{w.id} · {fmt(w.on)}</p>
+              <p style="margin:0 0 .6rem;color:var(--fg)">{w.title[lang]}</p>
+              <p class="dim" style="margin:0;font-size:.95rem;max-width:68ch">{w.reason[lang]}</p>
+            </div>
+          ))}
+        </div>
+      );
+    })}
+    <p class="dim" style="font-size:.92rem">
+      {en ? 'How cases are assessed: ' : 'Jak oceniamy sprawy: '}
+      <a href={path(lang, '/methodology')}>{en ? 'methodology' : 'metodologia'}</a>.
+    </p>
+  </section>
+</Base>

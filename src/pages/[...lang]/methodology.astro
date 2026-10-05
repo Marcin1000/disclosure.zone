@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { AXES, TIER_LABEL, TIER_DESC, bi } from '../../lib/scoring';
-import { langParams, useT, type Lang } from '../../i18n';
+import { langParams, path, useT, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
 const { lang } = Astro.props as { lang: Lang };
@@ -47,8 +47,8 @@ const en = lang === 'en';
     <h2>{en ? 'Eight evidence axes' : 'Osiem osi dowodowych'}</h2>
     <p>
       {en
-        ? 'Every case is scored 0–5 on eight independent axes. The axes measure how well documented a case is, not how anomalous it is. A solved case can score highly if it is exemplarily documented — as the Chilean Navy footage of 2014 does.'
-        : 'Każda sprawa dostaje ocenę 0–5 na ośmiu niezależnych osiach. Osie mierzą jakość udokumentowania, a nie stopień niezwykłości. Sprawa wyjaśniona może mieć wysoką ocenę, jeśli jest wzorowo udokumentowana i tak jest z chilijskim nagraniem z 2014 r.'}
+        ? 'Every case is scored 0–5 on eight independent axes. The axes measure how well documented a case is, not how anomalous it is. A solved case can score highly if it is well documented.'
+        : 'Każda sprawa dostaje ocenę 0–5 na ośmiu niezależnych osiach. Osie mierzą jakość udokumentowania, a nie stopień niezwykłości. Sprawa wyjaśniona może mieć wysoką ocenę, jeśli jest dobrze udokumentowana.'}
     </p>
   </section>
 
@@ -140,8 +140,8 @@ const en = lang === 'en';
     </p>
     <p>
       {en
-        ? 'It also does not aggregate social media material. A screenshot from a messaging app destroys the data an analysis needs. Chile’s SEFAA requires original material, and that is the right standard.'
-        : 'Nie agreguje też materiałów z mediów społecznościowych. Zrzut ekranu z komunikatora niszczy dane potrzebne do analizy. Chilijskie SEFAA wymaga materiałów oryginalnych i to jest właściwy standard.'}
+        ? 'It also does not aggregate social media material. A screenshot, or a file passed through a messaging app, alters the data an analysis needs. Chile’s SEFAA asks for files “en su estado original”, in their original state, and that is the standard we apply.'
+        : 'Nie agreguje też materiałów z mediów społecznościowych. Zrzut ekranu albo plik przesłany przez komunikator zmienia dane potrzebne do analizy. Chilijskie SEFAA prosi o pliki „en su estado original”, czyli w stanie oryginalnym, i to jest standard, który stosujemy.'}
     </p>
 
     <h2>{en ? 'Errors' : 'Błędy'}</h2>
@@ -149,6 +149,13 @@ const en = lang === 'en';
       {en
         ? 'This database certainly contains errors. Its complete revision history is public — every score correction, every change of source tier and every factual fix is visible together with its reasoning. Provenance applies to us as well.'
         : 'Ta baza na pewno zawiera błędy. Kompletna historia zmian jest publiczna, każda korekta oceny, każda zmiana klasy źródła i każda poprawka faktograficzna jest widoczna wraz z uzasadnieniem. Proweniencja dotyczy także nas.'}
+    </p>
+    <p>
+      {en
+        ? 'A case or claim that turns out to rest on nothing that can be opened today leaves the database, and the '
+        : 'Sprawa albo twierdzenie, które okazuje się nie opierać na niczym, co dziś da się otworzyć, wypada z bazy, a '}
+      <a href={path(lang, '/withdrawn')}>{en ? 'list of withdrawn entries' : 'lista wycofanych wpisów'}</a>
+      {en ? ' says when and why.' : ' podaje kiedy i dlaczego.'}
     </p>
   </section>
 </Base>
