@@ -177,6 +177,11 @@ const CASE_LINKS = {
   'fbi-september-2023-sighting-serial-5@01': ['test-site-2023'],
   'fbi-september-2023-sighting-composite-sketch@01': ['test-site-2023'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
+  // Conde w Bahii, listopad 1963: zapis FBIS audycji Radia Tupi z dopiskami z 13 XI, telegram ambasady
+  // w Rio z 14 XI i jej airgram A-628 z 20 XI z odpowiedzią konsula w Salwadorze
+  'EOP-UAP-D001': ['conde-1963'],
+  'DOS-UAP-D001': ['conde-1963'],
+  'DOS-UAP-D002': ['conde-1963'],
 };
 
 /**

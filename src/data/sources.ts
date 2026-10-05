@@ -159,6 +159,11 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-fbi-sep2023-serial-5': 'https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf',
   'pursue-fbi-sep2023-sketch':   'https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf',
   'pursue-uap-data-csv':         'https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv',
+  // Wydanie 05, Conde w Bahii, listopad 1963: adresy ze spisu wydawcy (uap-data.csv), pobrane
+  // 5 X 2026 i porównane bajt w bajt z paczką release_05_Aug_07_documents.zip
+  'pursue-eop-d001':      'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf',
+  'pursue-dos-d001':      'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf',
+  'pursue-dos-d002':      'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D002_Diplomatic-Cable_Brazil_November-20-1963.pdf',
   'pursue-cia-d020':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-006':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf',
