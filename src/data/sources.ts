@@ -48,6 +48,16 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-boianai-signatures': 'https://catalog.archives.gov/id/28983630?objectPage=14',
   'nara-bb-boianai-evaluation': 'https://catalog.archives.gov/id/28983630?objectPage=16',
   'apro-1960-03-p2':      'https://catalog.archives.gov/id/28976909?objectPage=26',
+  // Ubatuba 1957: wykaz Blue Book „1 - 17 SEPTEMBER 1957 SIGHTINGS” (NAID 28971479, obraz 20 = plik 1218.jpg),
+  // biuletyny APRO z marca i maja 1960 r. w jednostce NAID 28976909 (obrazy 27, 29, 36 = pliki 0183, 0185,
+  // 0192) oraz list APRO z 20 IV 1960 i notatka ATIC z 4 V 1960 w jednostce NAID 28956049 „Peoria, Illinois,
+  // August 1953” (obrazy 36, 37 = pliki 0739, 0740). Każdy adres otwarty w przeglądarce 15 X 2026
+  'nara-bb-ubatuba-list': 'https://catalog.archives.gov/id/28971479?objectPage=20',
+  'nara-bb-ubatuba-atic-1960': 'https://catalog.archives.gov/id/28956049?objectPage=37',
+  'nara-bb-ubatuba-apro-1960': 'https://catalog.archives.gov/id/28956049?objectPage=36',
+  'nara-bb-ubatuba-apro-letter': 'https://catalog.archives.gov/id/28976909?objectPage=27',
+  'nara-bb-ubatuba-apro-analyses': 'https://catalog.archives.gov/id/28976909?objectPage=29',
+  'nara-bb-ubatuba-apro-atic': 'https://catalog.archives.gov/id/28976909?objectPage=36',
   'nara-washington-1952': 'https://prologue.blogs.archives.gov/2019/12/19/saucers-over-washington-the-history-of-project-blue-book/',
 
   'aaro':                 'https://www.aaro.mil/',
