@@ -3,7 +3,7 @@
  "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the working address serves the same scans as a different PDF from the one in the release bundle, sourceSameScans is true: the two were compared page by page, not byte for byte. Where the index links a title to a file that holds a different record of the same release, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher's own listing gives for the file or the recording's page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Where the publisher writes a letter after the number (DOW-UAP-PR057a, PR057b), id keeps the number and idSuffix holds the letter. Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-10-15T15:59:10.589Z",
+ "generated": "2026-10-15T20:30:36.744Z",
  "count": 450,
  "records": [
   {
@@ -88,7 +88,8 @@
    "source": "https://www.war.gov/medialink/ufo/release_1/255_413270_ufo's_and_defense_what_should_we_prepare_for.pdf",
    "format": "pdf",
    "cases": [
-    "ghost-rockets-1946"
+    "ghost-rockets-1946",
+    "jal1628-1986"
    ],
    "illegible": null,
    "documentSays": null,
