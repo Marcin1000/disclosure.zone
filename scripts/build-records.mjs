@@ -121,7 +121,8 @@ const CASE_LINKS = {
   // Studium nr 203 z 10 grudnia 1948: Wenus nad Godman i odesłanie do incydentu z 7 stycznia 1948
   'DOW-UAP-D094': ['mantell-1948', 'ghost-rockets-1946'],
   // Teczka zarządu wywiadu USAF, s. 37–46: KC-97 i radar naziemny nad Nową Fundlandią, 6 lipca 1955
-  'DOW-UAP-D095': ['newfoundland-1955'],
+  // foo-fighters-1944 cytuje s. 40 tylko dla określenia „GCI radar returns”
+  'DOW-UAP-D095': ['newfoundland-1955', 'foo-fighters-1944'],
   // Misja 33 SOS z 25 stycznia 2024: raport D25 i nagranie PR28. D27 i PR29 (czerwiec 2024,
   // Zatoka Omańska) sprawa cytuje do porównania: ta sama sylwetka, inne zdarzenie.
   'DOW-UAP-D25': ['eastern-mediterranean-2024'],
@@ -176,7 +177,8 @@ const CASE_LINKS = {
   // Oak Ridge 1947–1951: zdjęcia Presleya (Section 4, Serial 153), radar Adcocka z marca 1950 (Section 5),
   // radar lotnictwa, „radar jamming” i obserwacja z 18 XII 1950 (Section 6)
   '65-hs1-834228961-62-hq-83894-section-5@01': ['oak-ridge-1950', 'ghost-rockets-1946'],
-  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950'],
+  // artykuł Menzla z „Look” z 17 VI 1952 (s. 256–261) jedno pytanie o „Foo Fighters” stawia na s. 260
+  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944'],
   '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],

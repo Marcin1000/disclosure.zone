@@ -187,6 +187,12 @@ export const SOURCE_URL: Record<string, string> = {
   // teczki, list, odręczna notatka i wycinki prasowe (z arkuszem NARCAP, depeszą AFP i życiorysem
   // Leslie Kean); s. 91 to artykuł z „The Boston Sunday Globe”. Przed cytowaniem strony zobacz jej obraz
   'pursue-rg255-cometa':  "https://www.war.gov/medialink/ufo/release_1/255_413270_ufo's_and_defense_what_should_we_prepare_for.pdf",
+  // Foo fighters 1944–45: teczka SHAEF 37153 (RG 331) z wydania 01, pod adresem z półpauzą, jak w spisie
+  // wydawcy; to inny PDF tych samych 17 skanów niż w paczce (bez warstwy tekstu), porównany strona po stronie
+  // 15 X 2026. D092: jawna kopia sprawozdania Duranta z 1953 r. w teczce komitetu z lat 1966–67, pobrana
+  // 15 X 2026 i bajt w bajt zgodna z paczką wydania 04
+  'pursue-rg331-37153':   'https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944%E2%80%931945_37153_german_armament_equipment_documents.pdf',
+  'pursue-d092':          'https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D092_DAF-Committee-to-Review-Project-Bluebook_1966-1967.pdf',
   'pursue-cia-d020':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-006':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf',
