@@ -56,4 +56,24 @@ export const withdrawn: Withdrawn[] = [
       pl: 'Nasz werdykt opierał się na przyznaniu się z 2011 r. i doniesieniu z 2022 r., a dla żadnego z nich nie dało się otworzyć źródła. Bez nich wpis byłby twierdzeniem i werdyktem, za którym nic nie stoi.',
     },
   },
+  {
+    kind: 'case',
+    id: 'delphos-1971',
+    title: { en: 'Delphos (2 November 1971)', pl: 'Delphos (2 listopada 1971)' },
+    on: '2026-10-15',
+    reason: {
+      en: 'No source we could open supports any part of the case. The US releases do not mention Delphos, the National Archives catalogue holds no record of the event, and the soil analyses and photographs the case cited have no address. Project Blue Book had been closed in December 1969, two years before the date the case gave. The scores had nothing to stand on.',
+      pl: 'Żadne źródło, które dało się otworzyć, nie popiera żadnej części sprawy. Wydania USA nie wspominają Delphos, katalog National Archives nie ma żadnego zapisu o zdarzeniu, a analizy gleby i zdjęcia, na które sprawa się powoływała, nie mają adresu. Project Blue Book zamknięto w grudniu 1969 r., dwa lata przed datą, którą podawała sprawa. Oceny nie miały na czym stać.',
+    },
+  },
+  {
+    kind: 'claim',
+    id: 'delphos-hydrophobic-soil',
+    title: { en: '“The Delphos ring soil repelled water for years.”', pl: '„Gleba z pierścienia w Delphos przez lata odpychała wodę.”' },
+    on: '2026-10-15',
+    reason: {
+      en: 'Withdrawn with the case it belonged to: no laboratory report on the soil can be opened today.',
+      pl: 'Wycofane razem ze sprawą, do której należało: dziś nie da się otworzyć żadnego raportu laboratoryjnego o glebie.',
+    },
+  },
 ];
