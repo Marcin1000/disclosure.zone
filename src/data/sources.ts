@@ -354,6 +354,10 @@ export const FINDING_AIDS = new Set([
   'aaro-case-reports', 'aaro-imagery', 'aaro-trends', 'geipan-search',
   'condon-contents', 'roswell-af', 'nara-rg615', 'lac-ufos',
   'lac-ufo-search-1967-10-04',
+  // Strony główne. Sprawy podpisywały nimi konkretny materiał (nagranie CBP,
+  // raporty marynarki, dane stacji pomiarowej), którego pod tymi adresami nie ma,
+  // więc do czasu audytu tych spraw liczą się jako wskazanie archiwum.
+  'aaro', 'hessdalen',
 ]);
 
 export function isFindingAid(ref?: string): boolean {
