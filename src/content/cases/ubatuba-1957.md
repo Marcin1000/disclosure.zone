@@ -15,7 +15,6 @@ duration: "Not given; the letter puts the explosion “at noon”"
 witnesses: "The unknown writer of a letter to a newspaper columnist, who says he was fishing “together with some friends”. As APRO reports it, “The signature was not legible.” No document names a witness"
 evidence:
 - "trace"
-- "lab"
 scores:
   S: 0
   R: 0
