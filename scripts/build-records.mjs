@@ -183,6 +183,9 @@ const CASE_LINKS = {
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],
   '65-hs1-834228961-62-hq-83894-section-9@01': ['socorro-1964'],
+  // Kelly–Hopkinsville 1955: wycinek z „S. F. Sunday Examiner & Chronicle” z 16 X 1966 (s. 29) opowiada tę historię
+  // wśród obserwacji z 1966 r.
+  '65-hs1-834228961-62-hq-83894-section-10@01': ['kelly-hopkinsville-1955'],
   // obserwacja z września 2023: trzy FD-302 (pliki według LINK_SHIFTS) i szkic, datowany tylko nazwą pliku
   'fbi-september-2023-sighting-serial-3@01': ['test-site-2023'],
   'fbi-september-2023-sighting-serial-4@01': ['test-site-2023'],

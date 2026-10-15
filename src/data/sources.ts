@@ -16,6 +16,23 @@ export const SOURCE_URL: Record<string, string> = {
   // Rekord RG 615 w katalogu NARA: 9 serii, 717 jednostek z 719 obiektami cyfrowymi (5 X 2026)
   'nara-rg615-catalog':   'https://catalog.archives.gov/id/445887258',
   'nara-catalog':         'https://catalog.archives.gov/',
+  // Kelly–Hopkinsville 1955: papiery leżą na obrazach 42–117 jednostki Blue Book NAID 28963358, którą katalog
+  // tytułuje „OLD GREENWICH, CONNECTICUT, August 1955”. Adres ?objectPage=N otwiera obraz N; każdy otwarty
+  // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona ładuje (obraz N to plik 1350+N.jpg do N=106,
+  // dalej 1457a, 1457b, 1458…, więc 110 to 1459.jpg, 113 to 1461.jpg, 114 to 1462.jpg, 115 to 1463.jpg)
+  'nara-bb-kelly-file':   'https://catalog.archives.gov/id/28963358?objectPage=43',
+  'nara-bb-kelly-campbell': 'https://catalog.archives.gov/id/28963358?objectPage=46',
+  'nara-bb-kelly-albert': 'https://catalog.archives.gov/id/28963358?objectPage=48',
+  'nara-bb-kelly-newera': 'https://catalog.archives.gov/id/28963358?objectPage=52',
+  'nara-bb-kelly-statement': 'https://catalog.archives.gov/id/28963358?objectPage=53',
+  'nara-bb-kelly-atic-1957': 'https://catalog.archives.gov/id/28963358?objectPage=56',
+  'nara-bb-kelly-hynek':  'https://catalog.archives.gov/id/28963358?objectPage=57',
+  'nara-bb-kelly-edwards': 'https://catalog.archives.gov/id/28963358?objectPage=68',
+  'nara-bb-kelly-radio':  'https://catalog.archives.gov/id/28963358?objectPage=79',
+  'nara-bb-kelly-atic-1956': 'https://catalog.archives.gov/id/28963358?objectPage=110',
+  'nara-bb-kelly-csi':    'https://catalog.archives.gov/id/28963358?objectPage=113',
+  'nara-bb-kelly-levity': 'https://catalog.archives.gov/id/28963358?objectPage=114',
+  'nara-bb-kelly-up':     'https://catalog.archives.gov/id/28963358?objectPage=115',
   'nara-washington-1952': 'https://prologue.blogs.archives.gov/2019/12/19/saucers-over-washington-the-history-of-project-blue-book/',
 
   'aaro':                 'https://www.aaro.mil/',
@@ -258,6 +275,9 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-fbi-62-83894-serial-153': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf',
   'pursue-fbi-62-83894-s4': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf',
   'pursue-fbi-62-83894-s9': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf',
+  // Section 10, s. 29: wycinek z 16 X 1966 r., który opowiada Kelly wśród obserwacji z 1966 r.; otwarty na żywo
+  // 15 X 2026 i bajt w bajt zgodny z paczką wydania 01
+  'pursue-fbi-62-83894-s10': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf',
   'pursue-fbi-62-83894-serial-438': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_438.pdf',
   // Maury Island 1947: Section 2 i 3 oraz SUB_A, otwarte na żywo 5 X 2026 i zgodne bajt w bajt z paczką
   'pursue-fbi-62-83894-s2': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf',
