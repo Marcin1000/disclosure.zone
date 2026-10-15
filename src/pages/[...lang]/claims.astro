@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Inline from '../../components/Inline.astro';
 import { claims, STATUS_META, CLAIM_ORDER } from '../../data/claims';
 import { TIER_LABEL, bi } from '../../lib/scoring';
 import { getCases } from '../../lib/cases';
@@ -36,14 +37,14 @@ const count = (s: string) => claims.filter(c => c.status === s).length;
           <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:1rem">
             <span class:list={['chip', STATUS_META[c.status].cls]}>{bi(STATUS_META[c.status].label, lang)}</span>
             <span class:list={['tier', `tier-${c.originTier}`]} title={bi(TIER_LABEL[c.originTier], lang)}>{c.originTier}</span>
-            <span class="label" style="color:var(--fg-faint)">{c.origin[lang]}</span>
+            <span class="label" style="color:var(--fg-faint)"><Inline text={c.origin[lang]} lang={lang} /></span>
           </div>
           <p style="font-family:var(--mono);font-size:clamp(1rem,2vw,1.15rem);color:var(--fg);margin:0 0 1.1rem;line-height:1.5">{c.claim[lang]}</p>
-          <p style="margin:0 0 1.2rem;max-width:84ch;color:var(--fg-dim);font-size:.97rem">{c.verdict[lang]}</p>
+          <p style="margin:0 0 1.2rem;max-width:84ch;color:var(--fg-dim);font-size:.97rem"><Inline text={c.verdict[lang]} lang={lang} /></p>
           <div class="grid grid--2" style="gap:1.4rem;background:none;border:0">
             <div>
               <p class="label label--amber" style="margin-bottom:.4rem">{t('claims.resolver')}</p>
-              <p class="dim" style="margin:0;font-size:.9rem">{c.resolver[lang]}</p>
+              <p class="dim" style="margin:0;font-size:.9rem"><Inline text={c.resolver[lang]} lang={lang} /></p>
             </div>
             {c.cases.length > 0 && (
               <div>

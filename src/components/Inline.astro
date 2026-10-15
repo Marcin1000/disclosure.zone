@@ -1,0 +1,7 @@
+---
+import { pieces } from '../lib/inline';
+import { path, type Lang } from '../i18n';
+interface Props { text: string; lang: Lang }
+const { text, lang } = Astro.props;
+---
+{pieces(text).map(p => typeof p === 'string' ? p : <a href={path(lang, p.href)}>{p.label}</a>)}
