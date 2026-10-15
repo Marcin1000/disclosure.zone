@@ -96,4 +96,14 @@ export const withdrawn: Withdrawn[] = [
       pl: 'Wycofane razem ze sprawą, do której należało: dziś nie da się otworzyć żadnego raportu lotniczego, zeznania ani innego dokumentu o tym wznoszeniu.',
     },
   },
+  {
+    kind: 'case',
+    id: 'cash-landrum-1980',
+    title: { en: 'Cash–Landrum (29 December 1980)', pl: 'Cash–Landrum (29 grudnia 1980)' },
+    on: '2026-10-15',
+    reason: {
+      en: 'No source we could open supports the event as the case described it. The only mention in the US releases is a Defense Intelligence Reference Document of 2010 (DOW-UAP-D128), which discusses the witnesses’ reported injuries on the strength of a MUFON journal article of 1981 and unpublished findings, and gives no date, place, object or helicopters. The National Archives catalogue holds no record of the event, and the court file and medical records the case cited have no address. The scores had nothing to stand on.',
+      pl: 'Żadne źródło, które dało się otworzyć, nie popiera zdarzenia w postaci, w jakiej opisywała je sprawa. Jedyna wzmianka w wydaniach USA to Defense Intelligence Reference Document z 2010 r. (DOW-UAP-D128), który omawia zgłoszone obrażenia świadków na podstawie artykułu z pisma MUFON z 1981 r. i nieopublikowanych ustaleń, a nie podaje daty, miejsca, obiektu ani śmigłowców. Katalog National Archives nie ma żadnego zapisu o zdarzeniu, a akta sądowe i dokumentacja medyczna, na które powoływała się sprawa, nie mają adresu. Oceny nie miały na czym stać.',
+    },
+  },
 ];

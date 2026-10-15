@@ -288,6 +288,10 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-cia-014':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf',
   'pursue-cia-016':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf',
   'pursue-cia-017':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf',
+  // Wydanie 06: DIRD z 11 III 2010 r. o skutkach pól dla tkanek (D128), pochodzenie twierdzenia
+  // cash-landrum-radiation (s. 15, 19, 23, 26, 28). Otwarta na żywo 15 X 2026: 200, 45 830 558 B, warstwa
+  // tekstu zgodna na wszystkich 38 stronach z przeszukiwaną; bajtów nie porównano z paczką wydania 06
+  'pursue-d128':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D128_AAWSAP-DIRD-Anomalous-Acute-and-Subacute-Field-Effects-on-Human-Biological-Tissues-March-11-2010.pdf',
   // Wydanie 01: raporty z misji porównane bajt w bajt z paczką, nagrania na stronach DVIDS
   // otwartych na żywo; tytuł strony zgadza się z nagłówkiem XMP pliku z paczki uapvideos.zip
   'pursue-d25':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf',
