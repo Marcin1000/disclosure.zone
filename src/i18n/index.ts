@@ -207,8 +207,8 @@ const en: Dict = {
   'home.confirmed': 'Established',
   'home.unconfirmed': 'Not established',
   'home.bothTrue': 'Both columns are true at the same time. The entire difficulty of this field sits between them — and most public argument consists of pretending only one of them exists.',
-  'home.coreKicker': 'Evidential core',
-  'home.coreH': 'Cases that survived verification',
+  'home.coreKicker': 'Evidence on record',
+  'home.coreH': 'Cases where the files hold a measurement or a physical trace, and no explanation',
   'home.allCases': 'All {n} cases',
   'home.claimsKicker': 'Claim ledger',
   'home.claimsH': 'Myth versus document',
@@ -228,7 +228,7 @@ const en: Dict = {
   'cases.character': 'Character',
   'cases.country': 'Country',
   'cases.all': 'All',
-  'cases.core': '◆ Evidential core',
+  'cases.core': '◆ Evidence on record',
   'cases.listHeading': 'The list of cases',
   'cases.count.one': '{n} case',
   'cases.count.few': '{n} cases',
@@ -250,7 +250,7 @@ const en: Dict = {
   'case.official': 'Official position',
   'case.alternatives': 'Alternative hypotheses',
   'case.claimsHere': 'Claims from this case',
-  'case.core': 'Evidential core',
+  'case.core': 'Evidence on record',
 
   'score.title': 'Evidence score',
   'score.class': 'Class',
@@ -267,7 +267,7 @@ const en: Dict = {
   'map.lead': '{n} cases from {c} countries. The biggest misconception in this field is that UAP looks like an American phenomenon. It is not — only the US talked about it loudly.',
   'map.pick': 'Select a country',
   'map.world': 'World',
-  'map.core': '◆ = evidential core',
+  'map.core': '◆ = evidence on record',
   'map.proj': 'Equirectangular projection · positions approximate',
   'map.events': '{n} events · {c} countries',
   'map.thDate': 'Date', 'map.thCase': 'Case', 'map.thCountry': 'Country',
@@ -291,7 +291,7 @@ const en: Dict = {
 
   'og.tagline': 'DISCLOSURE.ZONE — DOCUMENTS, NOT RUMORS',
 
-  'scope.alt': 'Radar scope: {n} evidential-core cases, angle by longitude, radius by age',
+  'scope.alt': 'Radar scope: {n} cases with evidence on record, angle by longitude, radius by age',
 };
 
 const pl: Dict = {
@@ -472,8 +472,8 @@ const pl: Dict = {
   'home.confirmed': 'Potwierdzone',
   'home.unconfirmed': 'Niepotwierdzone',
   'home.bothTrue': 'Obie kolumny są jednocześnie prawdziwe. Cała trudność tej dziedziny mieści się między nimi i większość publicznej dyskusji polega na udawaniu, że istnieje tylko jedna z nich.',
-  'home.coreKicker': 'Sprawy kluczowe',
-  'home.coreH': 'Sprawy, które przetrwały weryfikację',
+  'home.coreKicker': 'Dowód w aktach',
+  'home.coreH': 'Sprawy, w których akta zawierają pomiar albo ślad fizyczny, a nie zawierają wyjaśnienia',
   'home.allCases': 'Wszystkie sprawy ({n})',
   'home.claimsKicker': 'Rejestr twierdzeń',
   'home.claimsH': 'Mit kontra dokument',
@@ -493,7 +493,7 @@ const pl: Dict = {
   'cases.character': 'Charakter',
   'cases.country': 'Państwo',
   'cases.all': 'Wszystkie',
-  'cases.core': '◆ Sprawy kluczowe',
+  'cases.core': '◆ Dowód w aktach',
   'cases.listHeading': 'Lista spraw',
   'cases.count.one': '{n} sprawa',
   'cases.count.few': '{n} sprawy',
@@ -515,7 +515,7 @@ const pl: Dict = {
   'case.official': 'Oficjalne stanowisko',
   'case.alternatives': 'Hipotezy alternatywne',
   'case.claimsHere': 'Twierdzenia z tej sprawy',
-  'case.core': 'Sprawa kluczowa',
+  'case.core': 'Dowód w aktach',
 
   'score.title': 'Ocena dowodowa',
   'score.class': 'Klasa',
@@ -532,7 +532,7 @@ const pl: Dict = {
   'map.lead': '{n} spraw z {c} państw. Największe nieporozumienie w tej dziedzinie polega na tym, że UAP wygląda na zjawisko amerykańskie. Nie jest, po prostu tylko USA opowiadały o tym głośno.',
   'map.pick': 'Wybierz państwo',
   'map.world': 'Świat',
-  'map.core': '◆ = sprawy kluczowe',
+  'map.core': '◆ = dowód w aktach',
   'map.proj': 'Rzut walcowy równoodległościowy · pozycje przybliżone',
   'map.events': '{n} zdarzeń · {c} państw',
   'map.thDate': 'Data', 'map.thCase': 'Sprawa', 'map.thCountry': 'Państwo',
@@ -556,7 +556,7 @@ const pl: Dict = {
 
   'og.tagline': 'DISCLOSURE.ZONE, DOKUMENTY, NIE PLOTKI',
 
-  'scope.alt': 'Ekran radaru: {n} spraw kluczowych, kąt to długość geograficzna, promień to wiek',
+  'scope.alt': 'Ekran radaru: {n} spraw z dowodem w aktach, kąt to długość geograficzna, promień to wiek',
 };
 
 const DICT: Record<Lang, Dict> = { en, pl };
