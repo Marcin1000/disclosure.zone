@@ -91,9 +91,9 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **207 of 300** sources have an address for the material itself — the only ones that
+- **217 of 308** sources have an address for the material itself — the only ones that
   count toward provenance
-- **36** point at the archive that holds the document (NARA, TNA Discovery, NAA
+- **34** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
 - **57** have neither, so far
 

@@ -33,6 +33,21 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-kelly-csi':    'https://catalog.archives.gov/id/28963358?objectPage=113',
   'nara-bb-kelly-levity': 'https://catalog.archives.gov/id/28963358?objectPage=114',
   'nara-bb-kelly-up':     'https://catalog.archives.gov/id/28963358?objectPage=115',
+  // Boianai 1959: karta Blue Book i raport attaché lotniczego USA w Australii nr 1,403,022 z 21 I 1960
+  // na obrazach 1–17 jednostki NAID 28983630 „New Guinea, June 1959” (obraz N to plik 0511+N.jpg).
+  // List RAAF bez zaczernień drukuje „The A.P.R.O. Bulletin” z marca 1960, s. 2: obraz 26 jednostki
+  // NAID 28976909 „Albuquerque, N.M., January 1958” (plik 0182.jpg). Każdy adres otwarty w przeglądarce
+  // 15 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-boianai-card': 'https://catalog.archives.gov/id/28983630?objectPage=1',
+  'nara-bb-boianai-report': 'https://catalog.archives.gov/id/28983630?objectPage=2',
+  'nara-bb-boianai-vfsrs': 'https://catalog.archives.gov/id/28983630?objectPage=3',
+  'nara-bb-boianai-method': 'https://catalog.archives.gov/id/28983630?objectPage=6',
+  'nara-bb-boianai-data': 'https://catalog.archives.gov/id/28983630?objectPage=8',
+  'nara-bb-boianai-sketch': 'https://catalog.archives.gov/id/28983630?objectPage=11',
+  'nara-bb-boianai-june27': 'https://catalog.archives.gov/id/28983630?objectPage=12',
+  'nara-bb-boianai-signatures': 'https://catalog.archives.gov/id/28983630?objectPage=14',
+  'nara-bb-boianai-evaluation': 'https://catalog.archives.gov/id/28983630?objectPage=16',
+  'apro-1960-03-p2':      'https://catalog.archives.gov/id/28976909?objectPage=26',
   'nara-washington-1952': 'https://prologue.blogs.archives.gov/2019/12/19/saucers-over-washington-the-history-of-project-blue-book/',
 
   'aaro':                 'https://www.aaro.mil/',
