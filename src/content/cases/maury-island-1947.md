@@ -71,6 +71,10 @@ sources:
   label: "“Flying Saucery”, Sunday Graphic, London, 26 March 1950: clipping in FBI file 62-HQ-83894, SUB_A, pp. 90–91"
   note: "Sent by the Legal Attaché at the American Embassy in London. The label with the paper and the date is on p. 90; the passage on Dahl is on p. 91."
   ref: "pursue-fbi-62-83894-sub-a"
+- "tier": "T1"
+  label: "Aerospace Technical Intelligence Center to SAFOI-3d (Maj. Tacker), “Aerial Phenomena Research Organization”, 4 May 1960, paragraph 4 (Project Blue Book, NAID 28956049, image 37)"
+  note: "A memo about the Ubatuba case of 1957 that mentions Maury Island only as a comparison; filed in the unit titled “Peoria, Illinois, August 1953”. On the scan the words “The Air Force” are faint."
+  ref: "nara-bb-ubatuba-atic-1960"
 ---
 
 ## What the file holds
@@ -278,6 +282,12 @@ the Seattle office wrote only that they "were possibly made by FRED CRISMAN", ad
 developed which would definitely prove that CRISMAN made these calls." The Director's message of the
 same day had pointed elsewhere: "IT WOULD APPEAR EITHER SMITH OR ARNOLD MADE THE ANONYMOUS PHONE CALLS".
 The A-2 officer wrote: "The anonymous mystery caller in Tacoma could possibly be Mr. Crisman."
+
+**What the Air Force wrote in 1960.** The Aerospace Technical Intelligence Center (ATIC) stated a
+conclusion in a memo of 4 May 1960 about another case, the fragments said to come from [Ubatuba Beach in
+Brazil](/cases/ubatuba-1957), which it compared with Maury Island. Its paragraph 4 ends: "The Air Force
+conclusion is that the Maury Island case was probably a hoax." (Project Blue Book, NAID 28956049, image
+37) The memo does not say when or on what grounds that conclusion was reached.
 
 ## How the story grew by 1950
 

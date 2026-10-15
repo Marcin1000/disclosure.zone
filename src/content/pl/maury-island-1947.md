@@ -33,6 +33,8 @@ sources:
   note: "Wpięty przy incydencie 101 w streszczeniach incydentów przesłanych z Wright Field 14 marca 1949 r.; druga kopia w RG 38, streszczenia incydentów 101–172, s. 11. Spekulacja Markhama, nie raport."
 - "label": "„Flying Saucery”, „Sunday Graphic”, Londyn, 26 marca 1950: wycinek w teczce FBI 62-HQ-83894, SUB_A, s. 90–91"
   note: "Przesłany przez attaché prawnego ambasady USA w Londynie. Etykieta z tytułem gazety i datą jest na s. 90, fragment o Dahlu na s. 91."
+- "label": "Aerospace Technical Intelligence Center do SAFOI-3d (mjr Tacker), „Aerial Phenomena Research Organization”, 4 maja 1960, punkt 4 (Project Blue Book, NAID 28956049, obraz 37)"
+  note: "Notatka w sprawie Ubatuby z 1957 r., która przywołuje Maury Island tylko jako porównanie; wpięta do jednostki zatytułowanej „Peoria, Illinois, August 1953”. Na skanie słowa „The Air Force” są blade."
 ---
 
 ## Co zawiera teczka
@@ -309,6 +311,13 @@ samego dnia wskazywała gdzie indziej: „IT WOULD APPEAR EITHER SMITH OR ARNOLD
 CALLS” (wydaje się, że anonimowe telefony wykonał Smith albo Arnold). Oficer A-2 napisał: „The anonymous
 mystery caller in Tacoma could possibly be Mr. Crisman” (tajemniczym anonimowym rozmówcą w Tacomie może
 być pan Crisman).
+
+**Co lotnictwo napisało w 1960 r.** Aerospace Technical Intelligence Center (ATIC) podało wniosek w
+notatce z 4 maja 1960 r., która dotyczy innej sprawy: odłamków rzekomo z [plaży Ubatuba w
+Brazylii](/pl/cases/ubatuba-1957), porównanych w niej z Maury Island. Jej punkt 4 kończy się zdaniem:
+„The Air Force conclusion is that the Maury Island case was probably a hoax.” (lotnictwo uznało, że
+sprawa z Maury Island była prawdopodobnie mistyfikacją; Project Blue Book, NAID 28956049, obraz 37).
+Notatka nie mówi, kiedy ani na jakiej podstawie do tego wniosku doszło.
 
 ## Jak historia urosła do 1950 r.
 
