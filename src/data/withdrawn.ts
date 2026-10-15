@@ -76,4 +76,24 @@ export const withdrawn: Withdrawn[] = [
       pl: 'Wycofane razem ze sprawą, do której należało: dziś nie da się otworzyć żadnego raportu laboratoryjnego o glebie.',
     },
   },
+  {
+    kind: 'case',
+    id: 'coyne-1973',
+    title: { en: 'The Coyne Helicopter Incident (18 October 1973)', pl: 'Incydent śmigłowca Coyne’a (18 października 1973)' },
+    on: '2026-10-15',
+    reason: {
+      en: 'No source we could open supports any part of the case beyond its date and place. The only mention in the US releases is one paragraph of a magazine article reprinted in NASA correspondence of 1998 (USG-UAP-D001), which names the date, Mansfield, Ohio, and Captain Lawrence Coyne’s helicopter crew, and says nothing of what the crew saw or of the altimeter. The National Archives catalogue holds no record of the event, and the flight report and testimony the case cited have no address. The scores had nothing to stand on.',
+      pl: 'Żadne źródło, które dało się otworzyć, nie popiera żadnej części sprawy poza datą i miejscem. Jedyna wzmianka w wydaniach USA to akapit artykułu prasowego przedrukowanego w korespondencji NASA z 1998 r. (USG-UAP-D001), który podaje datę, Mansfield w Ohio i załogę śmigłowca kapitana Lawrence’a Coyne’a, a nic nie mówi o tym, co załoga widziała, ani o wysokościomierzu. Katalog National Archives nie ma żadnego zapisu o zdarzeniu, a raport lotniczy i zeznania, na które powoływała się sprawa, nie mają adresu. Oceny nie miały na czym stać.',
+    },
+  },
+  {
+    kind: 'claim',
+    id: 'coyne-altitude-gain',
+    title: { en: '“The helicopter gained several hundred metres with the collective set to descend.”', pl: '„Śmigłowiec zyskał kilkaset metrów wysokości przy drążku w pozycji zejścia.”' },
+    on: '2026-10-15',
+    reason: {
+      en: 'Withdrawn with the case it belonged to: no flight report, testimony or other document on the climb can be opened today.',
+      pl: 'Wycofane razem ze sprawą, do której należało: dziś nie da się otworzyć żadnego raportu lotniczego, zeznania ani innego dokumentu o tym wznoszeniu.',
+    },
+  },
 ];
