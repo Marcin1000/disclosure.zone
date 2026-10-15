@@ -81,8 +81,29 @@ export const SOURCE_URL: Record<string, string> = {
   // Teczka RCMP HQ-400-Q-5 (MIKAN 134176): raport o Stefanie Michalaku, s. 1 z datą 26 V 1967 i strona „5” z datą 10 VIII 1967.
   'lac-falcon-lake':      'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8332&record_id=37024-8332-6343',
   'lac-falcon-lake-2':    'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8291&record_id=37024-8291-6311',
+  // Falcon Lake 1967: kolejne strony teczki RCMP HQ-400-Q-5 (isn 37024) i teczki NRC (RG 77, Vol. 311, isn 4731).
+  // 119.01 to opis pozycji z odnośnikiem do obrazu, 119.02 sam obraz strony. Każdy adres otwarty 15 X 2026 i
+  // sprawdzony po pliku JPG, który pokazuje strona obrazu. W teczce NRC numer strony bazy rozjeżdża się z numerem
+  // pliku po lukach: strona 3865 to e002749689.jpg (teleks z 22 V 1968), 3873 to e002749698.jpg (Traill, s. 1)
+  'lac-falcon-rcmp-0526-2': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8333&record_id=37024-8333-6344',
+  'lac-falcon-rcmp-0526-4': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8335&record_id=37024-8335-6346',
+  'lac-falcon-interview': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.02-e.php?isn_id_nbr=37024&page_id_nbr=8313&record_id=37024-8314-6326',
+  'lac-falcon-rcmp-0810': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8287&record_id=37024-8287-6307',
+  'lac-falcon-rcmp-0810-3': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8289&record_id=37024-8289-6309',
+  'lac-falcon-rcmp-0810-6': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8292&record_id=37024-8292-18',
+  'lac-falcon-rcmp-0810-8': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8294&record_id=37024-8294-6314',
+  'lac-falcon-hunt':      'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=37024&page_id_nbr=8280&record_id=37024-8280-13029',
+  'lac-falcon-bissky':    'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.02-e.php?isn_id_nbr=4731&page_id_nbr=3791&record_id=4731-3789-9918',
+  'lac-falcon-annex-a':   'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=4731&page_id_nbr=3797&record_id=4731-3797-9924',
+  'lac-falcon-cfhq':      'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.02-e.php?isn_id_nbr=4731&page_id_nbr=3795&record_id=4731-3789-9918',
+  'lac-falcon-oatway':    'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.01-e.php?isn_id_nbr=4731&page_id_nbr=3831&record_id=4731-3831-9942',
+  'lac-falcon-telex-1968': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.02-e.php?isn_id_nbr=4731&page_id_nbr=3865&record_id=4731-3863-13768',
+  'lac-falcon-traill':    'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.02-e.php?isn_id_nbr=4731&page_id_nbr=3873&record_id=4731-3874-13778',
+  'lac-falcon-millman':   'https://www.collectionscanada.gc.ca/databases/ufo/001057-119.02-e.php?isn_id_nbr=4731&page_id_nbr=3876&record_id=4731-3874-13778',
   // Podcast LAC z 15 V 2019, część 1, z zapisem rozmowy: relacja, nie dokument
   'lac-falcon-podcast':   'https://www.canada.ca/en/library-archives/collection/engage-learn/podcasts/discover/episode-053.html',
+  // Część 2 z 29 V 2019: jedyne źródło zdania, że DND wciąż uznaje sprawę za nierozwiązaną (narracja prowadzącej)
+  'lac-falcon-podcast-2': 'https://www.canada.ca/en/library-archives/collection/engage-learn/podcasts/discover/episode-054.html',
   // Wyszukiwanie w bazie po dacie obserwacji 4 X 1967: relacje świadków w aktach NRC i korespondencja w aktach RCMP
   'lac-ufo-search-1967-10-04': 'https://www.collectionscanada.gc.ca/databases/ufo/001057-110.01-e.php?interval=50&q2=10/4/1967',
   // Opis zbioru UFO Library and Archives Canada na canada.ca; adresy bac-lac.gc.ca 5 X 2026 zrywały połączenie
