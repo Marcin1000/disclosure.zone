@@ -52,6 +52,8 @@ export interface Rec {
   documentSays: { place: string; year?: number; placeFrom: 'text' | 'grid' } | null;
   /** Adres z indeksu, gdy wydawca serwuje ten sam plik pod innym; source trzyma wtedy działający. */
   sourceAsIndexed: string | null;
+  /** Działający adres daje inny PDF z tymi samymi skanami co paczka wydania; porównane strona po stronie. */
+  sourceSameScans: boolean;
   /** Indeks łączy ten tytuł z innym plikiem z tego samego zestawu; source to plik zgodny z tytułem. */
   linkShift: boolean;
   /** Indeks daje tylko stronę wydania; source to adres z własnego spisu wydawcy, sprawdzony z paczką. */

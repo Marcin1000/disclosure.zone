@@ -1,9 +1,9 @@
 {
  "dataset": "disclosure.zone / PURSUE document registry",
- "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to a file that holds a different record of the same release, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher's own listing gives for the file or the recording's page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Where the publisher writes a letter after the number (DOW-UAP-PR057a, PR057b), id keeps the number and idSuffix holds the letter. Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
+ "note": "Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the working address serves the same scans as a different PDF from the one in the release bundle, sourceSameScans is true: the two were compared page by page, not byte for byte. Where the index links a title to a file that holds a different record of the same release, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher's own listing gives for the file or the recording's page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Where the publisher writes a letter after the number (DOW-UAP-PR057a, PR057b), id keeps the number and idSuffix holds the letter. Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.",
  "index": "https://disclosurearchive.org/records/",
  "harvested": "2026-09-21T21:11:03.147Z",
- "generated": "2026-10-05T10:19:47.597Z",
+ "generated": "2026-10-15T15:07:56.368Z",
  "count": 450,
  "records": [
   {
@@ -31,6 +31,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -60,6 +61,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -91,6 +93,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -120,6 +123,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -143,12 +147,15 @@
    "sourceKind": "file",
    "release": "01",
    "publisher": "war.gov",
-   "source": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944-1945_37153_german_armament_equipment_documents.pdf",
+   "source": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944%E2%80%931945_37153_german_armament_equipment_documents.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "foo-fighters-1944"
+   ],
    "illegible": null,
    "documentSays": null,
-   "sourceAsIndexed": null,
+   "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944-1945_37153_german_armament_equipment_documents.pdf",
+   "sourceSameScans": true,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -178,6 +185,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -207,6 +215,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -236,6 +245,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -267,6 +277,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -296,6 +307,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -325,6 +337,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -354,6 +367,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -383,6 +397,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/59_214434_sp_16_7.18.1963.pdf",
+   "sourceSameScans": false,
    "linkShift": true,
    "fromListing": false,
    "related": []
@@ -412,6 +427,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -441,6 +457,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -474,6 +491,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -503,6 +521,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -535,6 +554,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -567,6 +587,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -600,6 +621,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -632,6 +654,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -663,6 +686,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -692,6 +716,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -721,6 +746,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -752,6 +778,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -781,6 +808,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -812,6 +840,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/65_hs1-8342289+M5+M11",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -841,6 +870,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -870,6 +900,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -899,6 +930,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -930,6 +962,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -959,6 +992,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -990,6 +1024,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1018,6 +1053,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1049,6 +1085,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1083,6 +1120,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1109,6 +1147,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1140,6 +1179,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1171,6 +1211,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1201,6 +1242,7 @@
     "placeFrom": "text"
    },
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-southern-united-states-2020.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1227,6 +1269,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1262,6 +1305,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1290,6 +1334,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1327,6 +1372,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1358,6 +1404,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1384,6 +1431,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1410,6 +1458,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1449,6 +1498,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1475,6 +1525,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1503,6 +1554,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1536,6 +1588,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1567,6 +1620,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -1601,6 +1655,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1633,6 +1688,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1659,6 +1715,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1685,6 +1742,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1711,6 +1769,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1740,6 +1799,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1766,6 +1826,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1792,6 +1853,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1818,6 +1880,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1844,6 +1907,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1870,6 +1934,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1896,6 +1961,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1922,6 +1988,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1948,6 +2015,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -1977,6 +2045,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2005,6 +2074,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2033,6 +2103,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2061,6 +2132,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2089,6 +2161,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2117,6 +2190,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2145,6 +2219,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2171,6 +2246,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2200,6 +2276,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2226,6 +2303,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2255,6 +2333,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2281,6 +2360,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2312,6 +2392,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2346,6 +2427,7 @@
     "placeFrom": "grid"
    },
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2372,6 +2454,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2403,6 +2486,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2434,6 +2518,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2465,6 +2550,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2498,6 +2584,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2531,6 +2618,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2562,6 +2650,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2593,6 +2682,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2624,6 +2714,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2657,6 +2748,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2690,6 +2782,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2721,6 +2814,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -2752,6 +2846,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2778,6 +2873,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2804,6 +2900,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2830,6 +2927,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2856,6 +2954,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2882,6 +2981,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2908,6 +3008,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2934,6 +3035,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2960,6 +3062,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -2986,6 +3089,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3012,6 +3116,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3038,6 +3143,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3064,6 +3170,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3090,6 +3197,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3116,6 +3224,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3142,6 +3251,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3168,6 +3278,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3194,6 +3305,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3220,6 +3332,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3246,6 +3359,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3272,6 +3386,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3298,6 +3413,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3324,6 +3440,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3350,6 +3467,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3376,6 +3494,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3402,6 +3521,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3428,6 +3548,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3454,6 +3575,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3480,6 +3602,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3506,6 +3629,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3532,6 +3656,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3558,6 +3683,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3584,6 +3710,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3610,6 +3737,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3636,6 +3764,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3662,6 +3791,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3688,6 +3818,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3714,6 +3845,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3740,6 +3872,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3766,6 +3899,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3792,6 +3926,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3818,6 +3953,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3844,6 +3980,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3870,6 +4007,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3896,6 +4034,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3924,6 +4063,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -3952,6 +4092,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial%205%20redacted_redacted.pdf",
+   "sourceSameScans": false,
    "linkShift": true,
    "fromListing": false,
    "related": []
@@ -3980,6 +4121,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
+   "sourceSameScans": false,
    "linkShift": true,
    "fromListing": false,
    "related": []
@@ -4008,6 +4150,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
+   "sourceSameScans": false,
    "linkShift": true,
    "fromListing": false,
    "related": []
@@ -4034,6 +4177,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4060,6 +4204,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4086,6 +4231,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4112,6 +4258,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4138,6 +4285,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4164,6 +4312,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4190,6 +4339,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4216,6 +4366,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4242,6 +4393,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4268,6 +4420,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4294,6 +4447,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4320,6 +4474,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4346,6 +4501,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4372,6 +4528,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4398,6 +4555,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4424,6 +4582,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4450,6 +4609,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4480,6 +4640,7 @@
     "placeFrom": "text"
    },
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4506,6 +4667,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4532,6 +4694,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4558,6 +4721,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -4589,6 +4753,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4615,6 +4780,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4641,6 +4807,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4667,6 +4834,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4693,6 +4861,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4719,6 +4888,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4745,6 +4915,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4771,6 +4942,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4797,6 +4969,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4823,6 +4996,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4849,6 +5023,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4875,6 +5050,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4901,6 +5077,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4927,6 +5104,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4953,6 +5131,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -4979,6 +5158,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5005,6 +5185,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5031,6 +5212,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5057,6 +5239,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5083,6 +5266,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5109,6 +5293,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5135,6 +5320,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5161,6 +5347,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5187,6 +5374,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5213,6 +5401,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5239,6 +5428,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5265,6 +5455,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5291,6 +5482,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5319,6 +5511,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5347,6 +5540,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5373,6 +5567,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5399,6 +5594,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5425,6 +5621,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5451,6 +5648,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5477,6 +5675,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5503,6 +5702,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5529,6 +5729,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5555,6 +5756,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5581,6 +5783,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5609,6 +5812,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5637,6 +5841,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5663,6 +5868,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5689,6 +5895,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5715,6 +5922,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5741,6 +5949,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5767,6 +5976,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5793,6 +6003,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5819,6 +6030,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5845,6 +6057,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5871,6 +6084,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5897,6 +6111,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5923,6 +6138,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5949,6 +6165,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -5975,6 +6192,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6001,6 +6219,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6027,6 +6246,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6053,6 +6273,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6079,6 +6300,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6105,6 +6327,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6131,6 +6354,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6157,6 +6381,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6183,6 +6408,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6211,6 +6437,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6241,6 +6468,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6267,6 +6495,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6293,6 +6522,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6319,6 +6549,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6347,6 +6578,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6373,6 +6605,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6399,6 +6632,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6425,6 +6659,7 @@
    "illegible": "thumbnail",
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6451,6 +6686,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6477,6 +6713,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -6508,6 +6745,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6534,6 +6772,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -6567,6 +6806,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6595,6 +6835,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6623,6 +6864,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6651,6 +6893,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6677,6 +6920,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -6708,6 +6952,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6736,6 +6981,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6764,6 +7010,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6792,6 +7039,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6820,6 +7068,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6848,6 +7097,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6876,6 +7126,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6904,6 +7155,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6930,6 +7182,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6956,6 +7209,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -6982,6 +7236,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7011,6 +7266,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -7047,6 +7303,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -7080,6 +7337,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7108,6 +7366,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7136,6 +7395,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7162,6 +7422,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7188,6 +7449,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7214,6 +7476,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7240,6 +7503,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7266,6 +7530,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7292,6 +7557,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7318,6 +7584,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7344,6 +7611,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7370,6 +7638,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7396,6 +7665,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7424,6 +7694,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7452,6 +7723,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7480,6 +7752,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7508,6 +7781,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7536,6 +7810,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7564,6 +7839,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7592,6 +7868,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7620,6 +7897,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7648,6 +7926,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7676,6 +7955,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7702,6 +7982,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7728,6 +8009,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7754,6 +8036,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7780,6 +8063,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7808,6 +8092,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7836,6 +8121,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7864,6 +8150,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7890,6 +8177,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7916,6 +8204,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7942,6 +8231,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7968,6 +8258,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -7994,6 +8285,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8020,6 +8312,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8046,6 +8339,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8072,6 +8366,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8098,6 +8393,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8124,6 +8420,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8150,6 +8447,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8176,6 +8474,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8204,6 +8503,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8232,6 +8532,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8258,6 +8559,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8284,6 +8586,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8310,6 +8613,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8336,6 +8640,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8362,6 +8667,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8384,10 +8690,13 @@
    "publisher": "war.gov",
    "source": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D092_DAF-Committee-to-Review-Project-Bluebook_1966-1967.pdf",
    "format": "pdf",
-   "cases": [],
+   "cases": [
+    "foo-fighters-1944"
+   ],
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8414,6 +8723,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -8448,6 +8758,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -8481,6 +8792,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8507,6 +8819,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8533,6 +8846,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8559,6 +8873,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8585,6 +8900,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8611,6 +8927,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8637,6 +8954,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8663,6 +8981,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8689,6 +9008,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8715,6 +9035,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8741,6 +9062,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8767,6 +9089,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8793,6 +9116,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8819,6 +9143,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8845,6 +9170,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8871,6 +9197,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8897,6 +9224,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8923,6 +9251,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8949,6 +9278,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -8975,6 +9305,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9001,6 +9332,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9027,6 +9359,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9053,6 +9386,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9079,6 +9413,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9105,6 +9440,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9131,6 +9467,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9157,6 +9494,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9183,6 +9521,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9209,6 +9548,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9235,6 +9575,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -9261,6 +9602,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9287,6 +9629,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9315,6 +9658,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9343,6 +9687,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9369,6 +9714,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9397,6 +9743,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9425,6 +9772,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9451,6 +9799,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9477,6 +9826,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9503,6 +9853,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9529,6 +9880,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9555,6 +9907,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9581,6 +9934,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9607,6 +9961,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9633,6 +9988,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9659,6 +10015,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9685,6 +10042,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9711,6 +10069,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9737,6 +10096,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9763,6 +10123,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9789,6 +10150,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9815,6 +10177,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9841,6 +10204,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9869,6 +10233,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9895,6 +10260,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9921,6 +10287,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9947,6 +10314,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9973,6 +10341,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -9999,6 +10368,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10025,6 +10395,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10051,6 +10422,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10077,6 +10449,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10103,6 +10476,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10129,6 +10503,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10155,6 +10530,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10181,6 +10557,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10207,6 +10584,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10233,6 +10611,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10259,6 +10638,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10285,6 +10665,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10311,6 +10692,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/UFO/release/05/",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": true,
    "related": []
@@ -10339,6 +10721,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10367,6 +10750,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10395,6 +10779,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10421,6 +10806,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10449,6 +10835,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10475,6 +10862,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -10508,6 +10896,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -10541,6 +10930,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -10576,6 +10966,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10602,6 +10993,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10628,6 +11020,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10654,6 +11047,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10680,6 +11074,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10706,6 +11101,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10732,6 +11128,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10758,6 +11155,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10784,6 +11182,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10810,6 +11209,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10836,6 +11236,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10862,6 +11263,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10888,6 +11290,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10914,6 +11317,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10940,6 +11344,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10966,6 +11371,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -10992,6 +11398,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11018,6 +11425,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11044,6 +11452,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11070,6 +11479,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11096,6 +11506,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11122,6 +11533,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11148,6 +11560,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11174,6 +11587,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11200,6 +11614,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D134_%20AAWSAP-DIRD-Maverick-Inventor-Versus-Corporate-Inventor-Where-Will-the-Next-Major-Innovations-Arise-March-30-2010.pdf",
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11226,6 +11641,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11252,6 +11668,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11278,6 +11695,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11304,6 +11722,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11330,6 +11749,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11356,6 +11776,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11382,6 +11803,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11408,6 +11830,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11434,6 +11857,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11460,6 +11884,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11486,6 +11911,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11512,6 +11938,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11538,6 +11965,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11564,6 +11992,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11590,6 +12019,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11616,6 +12046,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11642,6 +12073,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11668,6 +12100,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11694,6 +12127,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11720,6 +12154,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11748,6 +12183,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11776,6 +12212,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11802,6 +12239,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -11835,6 +12273,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -11868,6 +12307,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -11901,6 +12341,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": [
@@ -11932,6 +12373,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11958,6 +12400,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -11984,6 +12427,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12010,6 +12454,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12036,6 +12481,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12062,6 +12508,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12088,6 +12535,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12114,6 +12562,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12140,6 +12589,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12166,6 +12616,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12192,6 +12643,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12218,6 +12670,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []
@@ -12247,6 +12700,7 @@
    "illegible": null,
    "documentSays": null,
    "sourceAsIndexed": null,
+   "sourceSameScans": false,
    "linkShift": false,
    "fromListing": false,
    "related": []

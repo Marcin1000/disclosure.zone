@@ -18,7 +18,7 @@ sources:
 - "label": "Argentyńska prasa codzienna, 1 i 2 sierpnia 1995"
   note: "Podała relacje załogi i wieży w ciągu 48 godzin od zdarzenia, i to właśnie czyni z tego coś więcej niż wspomnienie."
 - "label": "Raport COMETA (Francja, 1999), który przywołuje tę sprawę"
-  note: "Opracowanie byłych francuskich urzędników resortu obrony. Przekazuje sprawę dalej, ale jej nie bada."
+  note: "Raport francuskiego stowarzyszenia, według jego własnej strony tytułowej pierwotnie opublikowany w magazynie „VSD” w lipcu 1999 r.; cytowany tu w angielskim przekładzie złożonym w wydaniu 01 PURSUE. Sprawa to rozdział 2.5 raportu, na s. 21 pliku, z nagłówkiem „Source SEPRA” (źródło: SEPRA). Raport przekazuje sprawę dalej, ale jej nie bada."
 - "label": "Dokumentacja rozdziału energii w Bariloche z nocy 31 lipca 1995"
   note: "Pozwoliłaby ustalić, czy awaria była zbieżna z obserwacją, czy tylko sąsiadowała z nią w czasie. Nie wiadomo, by ktokolwiek ją zbadał."
 ---

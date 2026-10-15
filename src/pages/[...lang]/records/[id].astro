@@ -75,7 +75,8 @@ const indexedReport = !fromListing && r.kind === 'recording' && !!r.sourceAsInde
 const asIndexedKey = fromListing ? 'rec.asIndexedLanding'
   : indexedReport ? 'rec.asIndexedReport' : r.linkShift ? 'rec.asIndexedShift' : 'rec.asIndexed';
 const asIndexedNote = fromListing ? (r.kind === 'recording' ? 'rec.asIndexedLandingVideoNote' : 'rec.asIndexedLandingNote')
-  : indexedReport ? null : r.linkShift ? 'rec.asIndexedShiftNote' : 'rec.asIndexedNote';
+  : indexedReport ? null : r.linkShift ? 'rec.asIndexedShiftNote'
+  : r.sourceSameScans ? 'rec.asIndexedSameScansNote' : 'rec.asIndexedNote';
 
 const media = mediaFor(r);
 const still = r.id && r.kind === 'recording' ? STILLS[r.id] : undefined;

@@ -183,6 +183,9 @@ export const SOURCE_URL: Record<string, string> = {
   // bajt w bajt z paczkami wydań 05 i 01
   'pursue-d099':          'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf',
   'pursue-d100':          'https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf',
+  // Plik RG 255 413270 ma 94 strony PDF, a raport COMETA to tylko s. 5–86. S. 1–4 i 87–94 to okładka
+  // teczki, list, odręczna notatka i wycinki prasowe (z arkuszem NARCAP, depeszą AFP i życiorysem
+  // Leslie Kean); s. 91 to artykuł z „The Boston Sunday Globe”. Przed cytowaniem strony zobacz jej obraz
   'pursue-rg255-cometa':  "https://www.war.gov/medialink/ufo/release_1/255_413270_ufo's_and_defense_what_should_we_prepare_for.pdf",
   'pursue-cia-d020':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',

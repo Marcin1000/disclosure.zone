@@ -98,6 +98,11 @@ const CASE_LINKS = {
   // Tremonton, wymienia raport o zielonych kulach wśród dowodów i omawia „Foo Fighters”.
   // Waszyngton i Lubbock są tam tylko wymienione, więc ich nie podpinamy.
   'CIA-UAP-002': ['tremonton-1952', 'green-fireballs-1948', 'foo-fighters-1944'],
+  // Foo fighters 1944–45: teczka SHAEF 37153 z wyciągami raportów 415th Night Fighter Squadron
+  // i pismami SHAEF i Air Ministry; ten sam akapit Duranta o „Foo Fighters” w jawnej wersji
+  // z 1967 r., z zaczernionym nazwiskiem (D092, s. 56–57)
+  '331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents@01': ['foo-fighters-1944'],
+  'DOW-UAP-D092': ['foo-fighters-1944'],
   // Memorandum do akt z 18 grudnia 1952: kurier z Wielkiej Brytanii wspomniał R. V. Jonesowi
   // o filmie z Tremonton (pkt 5). 015 to kopia Special Report 14 z archiwum CIA, ten sam
   // raport, który sprawa cytuje jako dtic-special-report-14.
@@ -207,8 +212,10 @@ const YEAR_FIXES = { 'FBI-UAP-D022@03': 2023 };
 
 /**
  * Adres z indeksu, którego wydawca nie obsługuje, a ten sam plik leży u niego
- * pod inną nazwą. Wpisujemy tylko adresy pobrane i porównane bajt w bajt
- * z paczką wydania. Strona rekordu pokazuje oba: podany i działający.
+ * pod inną nazwą. Wpisujemy tylko adresy pobrane i porównane z paczką wydania:
+ * bajt w bajt, a gdy pod działającym adresem leży inny plik PDF z tymi samymi
+ * skanami, strona po stronie na obrazach; taki wpis trafia też do SAME_SCANS.
+ * Strona rekordu pokazuje oba adresy: podany i działający.
  */
 const SOURCE_FIXES = {
   // indeks: …southern-united-states-2020.pdf (404); ten sam plik pod nazwą „iraq-2023”
@@ -220,7 +227,22 @@ const SOURCE_FIXES = {
   // odwołań do komórek arkusza; ten sam plik pod pełną nazwą, jak w paczce wydania 01
   // (1 082 077 B, identyczny bajt w bajt)
   '65-hs1-834228961-62-hq-83894-serial-153@01': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_153.pdf',
+  // indeks: …/331_120752_numeric_files_1944-1945_… (404), z łącznikiem; spis wydawcy (uap-data.csv)
+  // i serwer mają półpauzę, 1944–1945. Bajty się różnią: pod tym adresem leży PDF zapisany 7 V 2026,
+  // bez warstwy tekstu (15 892 720 B), a w paczce wydania 01 wersja z 12 V 2026 z warstwą tekstu
+  // dodaną przez Paper Capture (3 232 255 B). Te same 17 skanów w tej samej kolejności, ze stemplami
+  // 2354–2408; na kilku stronach obraz różni się obrotem o 0,4–1°. Porównane strona po stronie 15 X 2026
+  '331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents@01': 'https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944%E2%80%931945_37153_german_armament_equipment_documents.pdf',
 };
+
+/**
+ * Poprawki z SOURCE_FIXES, przy których działający adres daje inny plik PDF niż paczka
+ * wydania, z tymi samymi skanami stron. Porównane strona po stronie, nie bajt w bajt,
+ * i strona rekordu mówi to wprost zamiast zwykłej noty o zgodności bajt w bajt.
+ */
+const SAME_SCANS = new Set([
+  '331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents@01',
+]);
 
 /**
  * Indeks łączy tytuł z plikiem, w którym leży inny dokument z tego samego wydania.
@@ -519,7 +541,8 @@ for (const r of manifest.records) {
   const rel0 = parseSource(r.officialSourceUrl || null).release;
   const fixKey = idPre && `${idPre}@${rel0}`;
   // rekordy bez identyfikatora (np. teczki FBI) poprawiamy po slugu z tytułu
-  const fixedUrl = (fixKey ? SOURCE_FIXES[fixKey] : undefined) ?? SOURCE_FIXES[`${slugify(t.title)}@${rel0}`];
+  const slugKey = `${slugify(t.title)}@${rel0}`;
+  const fixedUrl = (fixKey ? SOURCE_FIXES[fixKey] : undefined) ?? SOURCE_FIXES[slugKey];
   const shiftedUrl = LINK_SHIFTS[`${slugify(t.title)}@${rel0}`];
   const listedUrl = fixKey ? LISTING_SOURCES[fixKey] : undefined;
   const s = parseSource(shiftedUrl ?? fixedUrl ?? listedUrl ?? r.officialSourceUrl ?? null);
@@ -564,6 +587,7 @@ for (const r of manifest.records) {
     illegible: (id && ILLEGIBLE[id]) ?? null,
     documentSays: said ?? null,
     sourceAsIndexed: shiftedUrl || fixedUrl || listedUrl ? r.officialSourceUrl : null,
+    sourceSameScans: Boolean(fixedUrl) && (SAME_SCANS.has(fixKey) || SAME_SCANS.has(slugKey)),
     linkShift: Boolean(shiftedUrl),
     fromListing: Boolean(listedUrl),
     related: [],
@@ -630,7 +654,7 @@ const lookup = (key) => {
   return records.filter(r => (rel ? r.release === rel : true) && (r.id === id || r.slug === id));
 };
 const ambiguous = [], unused = [];
-for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...Object.keys(LINK_SHIFTS), ...Object.keys(LISTING_SOURCES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
+for (const key of [...Object.keys(CASE_LINKS), ...Object.keys(ILLEGIBLE), ...Object.keys(SOURCE_FIXES), ...SAME_SCANS, ...Object.keys(LINK_SHIFTS), ...Object.keys(LISTING_SOURCES), ...Object.keys(DOCUMENT_SAYS), ...Object.keys(RECORDING_PAGES), ...Object.keys(RECORDING_YEARS), ...SAME_DOCUMENT.flatMap(([a, , b]) => [a, b]), ...REPORT_PAIRS.flat()]) {
   const hits = lookup(key);
   if (!hits.length) unused.push(key);
   else if (!key.includes('@') && hits.length > 1) ambiguous.push(`${key} matches ${hits.length} records: ${hits.map(r => r.slug).join(', ')}`);
@@ -640,7 +664,10 @@ if (ambiguous.length) {
   for (const a of ambiguous) console.error(`  ${a}`);
 }
 if (unused.length) console.error(`registry keys that match no record: ${unused.join(', ')}`);
-if (ambiguous.length || unused.length) process.exit(1);
+// SAME_SCANS opisuje poprawkę adresu, więc bez wpisu w SOURCE_FIXES nie ma czego opisywać
+const loose = [...SAME_SCANS].filter(k => !SOURCE_FIXES[k]);
+if (loose.length) console.error(`SAME_SCANS keys without a SOURCE_FIXES entry: ${loose.join(', ')}`);
+if (ambiguous.length || unused.length || loose.length) process.exit(1);
 
 // powiązania zapisujemy po obu stronach, żeby każda strona rekordu je pokazała
 const INVERSE = { same: 'same', part: 'whole', edition: 'edition', next: 'prev', report: 'recording' };
@@ -662,7 +689,7 @@ records.sort((a, b) =>
 
 const out = {
   dataset: 'disclosure.zone / PURSUE document registry',
-  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the index links a title to a file that holds a different record of the same release, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher\'s own listing gives for the file or the recording\'s page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Where the publisher writes a letter after the number (DOW-UAP-PR057a, PR057b), id keeps the number and idSuffix holds the letter. Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
+  note: 'Identifiers, titles and links as published. Nothing here is assessed, summarised or rewritten by us. Where a published title contradicts the document, the title stays and documentSays records what the document gives. Where the index gives an address the publisher does not serve and the same file is served elsewhere, source is the working address and sourceAsIndexed the one given. Where the working address serves the same scans as a different PDF from the one in the release bundle, sourceSameScans is true: the two were compared page by page, not byte for byte. Where the index links a title to a file that holds a different record of the same release, source is the file whose name and content match the title, sourceAsIndexed the one linked, and linkShift is true. Where the index gives only the release page, source is the address the publisher\'s own listing gives for the file or the recording\'s page, sourceAsIndexed the release page, and fromListing is true. Where the index gives no identifier, it is read from the published file name (idFrom). Where the publisher writes a letter after the number (DOW-UAP-PR057a, PR057b), id keeps the number and idSuffix holds the letter. Links between files that hold the same document, and files that cannot be read, are our own observations, checked page by page.',
   index: manifest.index ?? null,
   harvested: manifest.harvested ?? null,
   generated: new Date().toISOString(),
