@@ -91,11 +91,11 @@ complete index, and it does not claim to be.
 
 Links fall into three categories and are **never mixed**:
 
-- **303 of 380** sources have an address for the material itself — the only ones that
+- **307 of 384** sources have an address for the material itself — the only ones that
   count toward provenance
-- **34** point at the archive that holds the document (NARA, TNA Discovery, NAA
+- **35** point at the archive that holds the document (NARA, TNA Discovery, NAA
   RecordSearch, LAC, GEIPAN, Arquivo Nacional) — useful, but an archive is not a document
-- **43** have neither, so far
+- **42** have neither, so far
 
 Every address in the registry was checked against a live source rather than guessed. The
 provenance counter is visible on each case and on [`/about`](https://disclosure.zone/about).

@@ -138,6 +138,8 @@ export const SOURCE_URL: Record<string, string> = {
   // navy-uap-foia to karta informacyjna CHINFO z 24 VII 2020 (odpowiedź A2 o nagraniu z 2004 r.), nie nagranie
   'navy-uap-foia':        'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/PAO%20Briefing%20Card%202020-012022%20and%202022-006563.pdf',
   'navy-flir1-video':     'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/1%20-%20FLIR.mp4',
+  // nagranie GIMBAL (13 517 612 B, 34,5 s); otwarte na żywo 16 X 2026 (200) i bajt w bajt zgodne z kopią z audytu
+  'navy-gimbal-video':    'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/2%20-%20GIMBAL.wmv',
   'navy-tictac-slide':    'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/2004%20TIC%20TAC%20Slide.pdf',
   // briefing UAP Task Force z 31 VIII 2020 z e-mailami do NASA z IX 2020; slajd 4 „Tic Tac” to s. 6 pliku
   'navy-uaptf-nasa-brief': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/NASA%20Brief%20Redacted.pdf',
