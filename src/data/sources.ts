@@ -68,6 +68,21 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-lakenheath-hynek': 'https://catalog.archives.gov/id/28966873?objectPage=27',
   'nara-bb-lakenheath-afoin': 'https://catalog.archives.gov/id/28966873?objectPage=33',
   'nara-bb-lakenheath-message': 'https://catalog.archives.gov/id/28966873?objectPage=38',
+  // Minot AFB 1968: jednostka Blue Book NAID 302580672 „Minot AFB. North Dakota, October 1968” (107 obrazów,
+  // obraz N to plik 0100+N.jp2, katalog bez warstwy tekstu). Karta 1, dopisek o 13 zdjęciach 2, pierwsze zgłoszenie
+  // 3–4, depesza bazy z 29 X 8–15, notatka o rozmowie z płk. Pullenem 18, rozmowa z Werlichem 19–25, notatka
+  // o Goffie 26, taśma RAPCON 30–34, kwestionariusz pilota 86–94, depesza Quintanilli 95, pismo FTD z 13 XI 98–106.
+  // Każdy adres otwarty w przeglądarce 16 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-minot-card':   'https://catalog.archives.gov/id/302580672?objectPage=1',
+  'nara-bb-minot-first-report': 'https://catalog.archives.gov/id/302580672?objectPage=3',
+  'nara-bb-minot-message': 'https://catalog.archives.gov/id/302580672?objectPage=8',
+  'nara-bb-minot-pullen': 'https://catalog.archives.gov/id/302580672?objectPage=18',
+  'nara-bb-minot-werlich': 'https://catalog.archives.gov/id/302580672?objectPage=19',
+  'nara-bb-minot-goff':   'https://catalog.archives.gov/id/302580672?objectPage=26',
+  'nara-bb-minot-transcript': 'https://catalog.archives.gov/id/302580672?objectPage=30',
+  'nara-bb-minot-pilot':  'https://catalog.archives.gov/id/302580672?objectPage=86',
+  'nara-bb-minot-quintanilla': 'https://catalog.archives.gov/id/302580672?objectPage=95',
+  'nara-bb-minot-ftd':    'https://catalog.archives.gov/id/302580672?objectPage=98',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
