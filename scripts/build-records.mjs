@@ -64,8 +64,11 @@ const CASE_LINKS = {
   // JAL: artykuł z 2001 r., s. 90; Teheran: rozdział 2.3, s. 19–20; Trans-en-Provence: rozdział 4.3, s. 25–26,
   // i wykaz not GEPAN, s. 83 (jedyne obok broszury SEPRA powiązanie noty nr 16 z nazwą miejscowości);
   // Bariloche: rozdział 2.5, s. 21; Belgia: artykuł z „The Boston Sunday Globe” z 21 V 2000 w tym samym pliku,
-  // s. 91, nie raport COMETA; foo fighters: aneks 6, s. 75–76
-  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946', 'jal1628-1986', 'tehran-1976', 'trans-en-provence-1981', 'bariloche-1995', 'belgian-wave-1990', 'foo-fighters-1944'],
+  // s. 91, nie raport COMETA; foo fighters: aneks 6, s. 75–76; Lakenheath: rozdział 2.1, s. 16–17
+  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946', 'jal1628-1986', 'tehran-1976', 'trans-en-provence-1981', 'bariloche-1995', 'belgian-wave-1990', 'foo-fighters-1944', 'lakenheath-1956'],
+  // Historia U-2 i OXCART: oddział A w Lakenheath od 4 V do 11 VI 1956 (s. 94–95 druku), przy alternatywie
+  // tajnych lotów rozpoznawczych w sprawie Bentwaters–Lakenheath
+  'CIA-UAP-003': ['lakenheath-1956'],
   // Zdarzenie na zachodzie USA: analiza, mapa, pięć relacji, dziesięć renderingów
   // i dwie rekonstrukcje. Renderingi i rekonstrukcje są ilustracją relacji,
   // nie zapisem zjawiska, i strona sprawy mówi to wprost.

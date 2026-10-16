@@ -58,6 +58,16 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-ubatuba-apro-letter': 'https://catalog.archives.gov/id/28976909?objectPage=27',
   'nara-bb-ubatuba-apro-analyses': 'https://catalog.archives.gov/id/28976909?objectPage=29',
   'nara-bb-ubatuba-apro-atic': 'https://catalog.archives.gov/id/28976909?objectPage=36',
+  // Bentwaters–Lakenheath 1956: jednostka Blue Book NAID 28966873 „Bentwaters-Lakenheath, England, August 1956”
+  // (44 obrazy, obraz N to plik 0013+N.jpg). Karta z uwagami ATIC 1–3, IR-1-56 4–9, list kierownika zmiany 11–14,
+  // notatka Hynka 27, 26, 25, AFOIN-4E1 33, dalekopisy 36–43 (BOI-485 zaczyna się na 41, fragment o Venomie
+  // na 38), szkic 44. Każdy adres otwarty w przeglądarce 16 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-lakenheath-card': 'https://catalog.archives.gov/id/28966873?objectPage=1',
+  'nara-bb-lakenheath-ir': 'https://catalog.archives.gov/id/28966873?objectPage=4',
+  'nara-bb-lakenheath-letter': 'https://catalog.archives.gov/id/28966873?objectPage=11',
+  'nara-bb-lakenheath-hynek': 'https://catalog.archives.gov/id/28966873?objectPage=27',
+  'nara-bb-lakenheath-afoin': 'https://catalog.archives.gov/id/28966873?objectPage=33',
+  'nara-bb-lakenheath-message': 'https://catalog.archives.gov/id/28966873?objectPage=38',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
@@ -310,6 +320,9 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-cia-d021':      'https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf',
   'pursue-cia-006':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-006_Sighting_of_Unconventional_Aircraft.pdf',
   'pursue-cia-002':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf',
+  // Historia programów U-2 i OXCART (History Staff CIA, 1992); s. 94–95 druku to s. PDF 107–108
+  // (oddział A w Lakenheath od 4 V 1956, w Wiesbaden od 11 VI 1956). Pobrana 16 X 2026, zgodna z paczką
+  'pursue-cia-003':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-003-THE_CENTRAL_INTELLIGENCE_AGENCY_AND_OVERHEAD_RECONNAISSANCE-THE_U-2_AND_OXCART_PROGRAMS_1954-1974.pdf',
   'pursue-cia-014':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-014_British_Activity_in_the_Field_of_Unidentified_Flying_Objects.pdf',
   'pursue-cia-016':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf',
   'pursue-cia-017':       'https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf',
@@ -363,6 +376,8 @@ export const SOURCE_URL: Record<string, string> = {
   'condon-case49':        'https://files.ncas.org/condon/text/case49.htm',
   'condon-photo':         'https://files.ncas.org/condon/text/s3chap02.htm',
   'condon-radar':         'https://files.ncas.org/condon/text/s6chap05.htm',
+  // Thayer, „Optical and Radar Analyses of Field Cases” (Section III, rozdz. 5): Lakenheath jako Case 2
+  'condon-optical-radar': 'https://files.ncas.org/condon/text/s3chap05.htm',
   'condon-pre-project':   'https://files.ncas.org/condon/text/s4chap01.htm',
 
   // ——— Roswell: oficjalne raporty USAF i GAO
