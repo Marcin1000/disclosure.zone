@@ -106,8 +106,21 @@ export const SOURCE_URL: Record<string, string> = {
   'oversight-2023-transcript': 'https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf',
   'oversight-2023-govinfo':    'https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm',
 
-  'dia-foia-iran':        'https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FOIA-Reading-Room-Iran/',
+  // Teheran 1976: depesza biura attaché z 23 IX 1976 (IR 6 846 0139 76) w czytelni DIA; te same skany z kartą
+  // obiegową z 8 XII 1978 i oceną DIA w aktach NSA w NARA (RG 615, s. 3–6 pliku); ta sama depesza przekazana
+  // przez JCS; raport attaché z VII 1978 z odpowiedzią na ocenę (plik 237664, s. PDF 25–26); w Roswell Report
+  // Source Files (RG 341) nota „MIJI Quarterly” z X 1978 (obraz 3), artykuł Shieldsa (obrazy 3–5) i wywiady
+  // z Perouzim (obrazy 1, 6). Pliki DIA i PDF z NARA pobrane 16 X 2026 (200), bajt w bajt zgodne z pobranymi
+  // 15 X; strony katalogu NARA otwarte w przeglądarce 16 X 2026 i sprawdzone po pliku, który ładują
+  'dia-iran-ufo-1976':    'https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/238156/',
+  'dia-ufo-reports':      'https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/237664/',
+  'nara-dia-tehran-eval': 'https://catalog.archives.gov/id/596347947',
+  'nara-nsa-tehran-copy': 'https://catalog.archives.gov/id/596347929',
+  'nara-af-miji-1978':    'https://catalog.archives.gov/id/40989205?objectPage=3',
+  'nara-af-cockpit-1976': 'https://catalog.archives.gov/id/40989206?objectPage=3',
+  'nara-af-perouzi':      'https://catalog.archives.gov/id/40989204?objectPage=1',
   'cia-readingroom':      'https://www.cia.gov/readingroom/',
+  // Wycinek „The Washington Post” z 19 I 1979, s. A-1 (kopia ma tylko pierwszą stronę), nie wywiady z uczestnikami
   'cia-mysterious-craft': 'https://www.cia.gov/readingroom/docs/CIA-RDP88-01315R000300070004-1.pdf',
 
   // ——— Wielka Brytania
@@ -376,7 +389,7 @@ export function resolveSource(ref?: string, url?: string): string | undefined {
  */
 export const FINDING_AIDS = new Set([
   'naa-recordsearch', 'tna-discovery', 'nara-catalog',
-  'nara-uap', 'nara-uap-microfilm', 'cia-readingroom', 'dia-foia-iran',
+  'nara-uap', 'nara-uap-microfilm', 'cia-readingroom',
   'geipan', 'br-an-ovni', 'es-ovni', 'aaro-records', 'loc-chronicling',
   'nara-citizen-archivist', 'nara-unwritten-record', 'zb-wickiana',
   'hessdalen-reports', 'faa-uas-sightings',

@@ -61,7 +61,8 @@ const CASE_LINKS = {
   // i w teczce FBI: notatka Fitcha z 19 VIII 1947 (S2), San Antonio 1949 (S4), notatka G-2 z 1950 (S5), wycinek (S1)
   'DOW-UAP-D099': ['ghost-rockets-1946'],
   'DOW-UAP-D100': ['ghost-rockets-1946'],
-  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946', 'jal1628-1986'],   // JAL: artykuł z 2001 r., s. 90
+  // JAL: artykuł z 2001 r., s. 90; Teheran: rozdział 2.3, s. 19–20
+  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946', 'jal1628-1986', 'tehran-1976'],
   // Zdarzenie na zachodzie USA: analiza, mapa, pięć relacji, dziesięć renderingów
   // i dwie rekonstrukcje. Renderingi i rekonstrukcje są ilustracją relacji,
   // nie zapisem zjawiska, i strona sprawy mówi to wprost.
