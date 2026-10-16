@@ -33,6 +33,8 @@ sources:
 - "label": "E-mail Marynarki Wojennej „Queries about UFO Sighting” (zapytania o obserwację UFO), 9 maja 2019 r. (czytelnia FOIA Marynarki Wojennej, plik „UFO_Redacted”, s. 32 pliku PDF)"
 - "label": "E-mail Marynarki Wojennej „AAR on Anomalous Aerial Vehicle Detection Event to Sen Warner (D-VA)” (AAR o wykryciu anomalnego pojazdu powietrznego, dla senatora Warnera), 20 czerwca 2019 r. (plik „From SIPR_REDACTED”, s. 1–2 pliku PDF)"
 - "label": "Oświadczenie Marynarki Wojennej dla Politico w e-mailu „PA END OF DAY 23 APR 2019” (PA, koniec dnia 23 kwietnia 2019) i e-mail Jaya Strattona z 24 kwietnia 2019 r. w sprawie zapytania Washington Post (plik „Unidentified Aircraft_Redacted”, s. 6–7 i 22 pliku PDF)"
+- "label": "NASA, „Unidentified Anomalous Phenomena Independent Study Team Report” (raport niezależnego zespołu do spraw UAP, 2023), s. 28"
+  note: "O nagraniu GOFAST; wymienia lotniskowiec."
 ---
 
 ## Raporty
@@ -174,13 +176,15 @@ ani regionu, ani roku.
 ## Theodore Roosevelt
 
 Do tej wersji sprawa nosiła tytuł „Roosevelt / East Coast”. Spośród dokumentów, które da się otworzyć, lotniskowiec
-wymienia tylko jeden, e-mail Marynarki Wojennej z 9 maja 2019 r.: „A VT-9 instructor pilot has been contacted by NYT
-and A&E about a potential UFO sighting which occurred in the Atlantic in 2015. He was flying with his WSO from THEODORE
-ROOSEVELT when they noticed a flying object that had a heat signature that was unlike any aircraft they had seen.” (z
-pilotem instruktorem z VT-9 skontaktowały się NYT i A&E w sprawie możliwej obserwacji UFO nad Atlantykiem w 2015 r.;
-leciał ze swoim WSO z THEODORE ROOSEVELT, gdy zauważyli latający obiekt o sygnaturze cieplnej niepodobnej do żadnego
-statku powietrznego, jaki widzieli). Raporty zagrożeń z W-72 nie wymieniają
-żadnego lotniskowca. Dwa nagrania Marynarki Wojennej ze stycznia 2015 r. to w tej bazie osobne sprawy,
+wymieniają dwa. E-mail Marynarki Wojennej z 9 maja 2019 r.: „A VT-9 instructor pilot has been contacted by NYT and A&E
+about a potential UFO sighting which occurred in the Atlantic in 2015. He was flying with his WSO from THEODORE ROOSEVELT
+when they noticed a flying object that had a heat signature that was unlike any aircraft they had seen.” (z pilotem
+instruktorem z VT-9 skontaktowały się NYT i A&E w sprawie możliwej obserwacji UFO nad Atlantykiem w 2015 r.; leciał ze
+swoim WSO z THEODORE ROOSEVELT, gdy zauważyli latający obiekt o sygnaturze cieplnej niepodobnej do żadnego statku
+powietrznego, jaki widzieli). I raport niezależnego zespołu NASA do spraw UAP z 2023 r., o nagraniu GOFAST: „A
+well-known UAP event is the ‚GoFast’ video, recorded by navy aviators from the USS Theodore Roosevelt.” (znanym
+zdarzeniem UAP jest nagranie GoFast, zarejestrowane przez lotników marynarki z USS Theodore Roosevelt; s. 28). Raporty
+zagrożeń z W-72 nie wymieniają żadnego lotniskowca. Dwa nagrania Marynarki Wojennej ze stycznia 2015 r. to w tej bazie osobne sprawy,
 [GIMBAL](/pl/cases/gimbal-2015) i [GOFAST](/pl/cases/gofast-2015).
 
 ## Co by to rozstrzygnęło

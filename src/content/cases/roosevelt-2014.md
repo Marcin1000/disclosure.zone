@@ -91,6 +91,10 @@ sources:
 - "tier": "T2"
   label: "Navy statement to Politico in the e-mail “PA END OF DAY 23 APR 2019” and Jay Stratton’s e-mail of 24 April 2019 on a Washington Post query (file “Unidentified Aircraft_Redacted”, PDF pp. 6–7, 22)"
   ref: "navy-emails-unidentified-aircraft"
+- "tier": "T2"
+  label: "NASA, Unidentified Anomalous Phenomena Independent Study Team Report (2023), p. 28"
+  note: "On the GOFAST video; names the carrier."
+  ref: "nasa-uap-report"
 ---
 
 ## The reports
@@ -186,11 +190,12 @@ None of these documents names the W-72 reports or ties the reporting mechanism t
 
 ## Theodore Roosevelt
 
-Until this revision the case was titled “Roosevelt / East Coast”. Of the documents we can open, only one names the
-carrier, a Navy e-mail of 9 May 2019: “A VT-9 instructor pilot has been contacted by NYT and A&E about a potential UFO
-sighting which occurred in the Atlantic in 2015. He was flying with his WSO from THEODORE ROOSEVELT when they noticed a
-flying object that had a heat signature that was unlike any aircraft they had seen.” The W-72 hazard
-reports name no carrier. The two Navy videos of January 2015 are separate cases in this base,
+Until this revision the case was titled “Roosevelt / East Coast”. Of the documents we can open, two name the carrier.
+A Navy e-mail of 9 May 2019: “A VT-9 instructor pilot has been contacted by NYT and A&E about a potential UFO sighting
+which occurred in the Atlantic in 2015. He was flying with his WSO from THEODORE ROOSEVELT when they noticed a flying
+object that had a heat signature that was unlike any aircraft they had seen.” And the report of NASA’s independent study
+team on UAP, of 2023, on the GOFAST video: “A well-known UAP event is the ‘GoFast’ video, recorded by navy aviators from
+the USS Theodore Roosevelt.” (p. 28) The W-72 hazard reports name no carrier. The two Navy videos of January 2015 are separate cases in this base,
 [GIMBAL](/cases/gimbal-2015) and [GOFAST](/cases/gofast-2015).
 
 ## What would settle it

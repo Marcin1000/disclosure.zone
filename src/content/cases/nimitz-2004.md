@@ -16,6 +16,7 @@ witnesses: "Cdr. David Fravor, commanding officer of VFA-41, and the three other
 evidence:
 - "visual"
 - "ir"
+- "film"
 - "multi-witness"
 - "intercept"
 scores:
