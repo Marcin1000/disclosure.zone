@@ -132,7 +132,18 @@ export const SOURCE_URL: Record<string, string> = {
   'aaro-fy24':            'https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF',
 
   'dod-navy-videos-2020': 'https://www.defense.gov/News/Releases/Release/Article/2165713/',
+  // Czytelnia FOIA Marynarki Wojennej (SECNAV), folder „UAP INFO” i podfolder „UAP DOCUMENTS”. Każdy adres
+  // otwarty na żywo 16 X 2026 (200; nagranie 206 na zapytanie o fragment, 5 619 302 B) i bajt w bajt zgodny
+  // z kopią czytaną w audycie nimitz-2004 i roosevelt-2014.
+  // navy-uap-foia to karta informacyjna CHINFO z 24 VII 2020 (odpowiedź A2 o nagraniu z 2004 r.), nie nagranie
   'navy-uap-foia':        'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/PAO%20Briefing%20Card%202020-012022%20and%202022-006563.pdf',
+  'navy-flir1-video':     'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/1%20-%20FLIR.mp4',
+  'navy-tictac-slide':    'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/2004%20TIC%20TAC%20Slide.pdf',
+  // briefing UAP Task Force z 31 VIII 2020 z e-mailami do NASA z IX 2020; slajd 4 „Tic Tac” to s. 6 pliku
+  'navy-uaptf-nasa-brief': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/NASA%20Brief%20Redacted.pdf',
+  // briefing Naval Intelligence Activity z 17 V 2021 (plik „UAPTF HPSCI Brief”); ten sam plik leży też
+  // bezpośrednio w folderze „UAP INFO”
+  'navy-nia-hpsci-brief': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/UAPTF%20HPSCI%20Brief%20Redacted.PDF',
 
   'odni-2021':            'https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf',
   'odni-2022':            'https://www.dni.gov/files/ODNI/documents/assessments/Unclassified-2022-Annual-Report-UAP.pdf',
@@ -144,8 +155,12 @@ export const SOURCE_URL: Record<string, string> = {
   'condon-conclusions':   'https://files.ncas.org/condon/text/sec-i.htm',
 
   'oversight-2023':       'https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/',
+  // Druk przesłuchania z 26 VII 2023 (Serial No. 118-53): numer strony drukowanej = strona PDF − 4.
+  // Pisemne oświadczenie Fravora na stronie komisji. Wszystkie otwarte na żywo 16 X 2026 (200)
+  // i bajt w bajt zgodne z kopiami czytanymi w audycie nimitz-2004 i roosevelt-2014
   'oversight-2023-transcript': 'https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf',
   'oversight-2023-govinfo':    'https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm',
+  'oversight-2023-fravor':     'https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf',
 
   // Teheran 1976: depesza biura attaché z 23 IX 1976 (IR 6 846 0139 76) w czytelni DIA; te same skany z kartą
   // obiegową z 8 XII 1978 i oceną DIA w aktach NSA w NARA (RG 615, s. 3–6 pliku); ta sama depesza przekazana

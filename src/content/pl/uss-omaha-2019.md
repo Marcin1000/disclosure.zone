@@ -12,7 +12,7 @@ alternatives:
 - "Bezzałogowe systemy powietrzne operowane z jednostki nawodnej, hipoteza wskazywana jako najbardziej prawdopodobna, zgodna z liczbą obiektów, czasem trwania i schematem lotu."
 - "Obiekty prozaiczne w warunkach nocnych o niskiej rozdzielczości sensora."
 sources:
-- "label": "Nagrania IR i wyciągi z dzienników okrętowych, ujawnione w trybie FOIA"
+- "label": "Karta informacyjna CHINFO „Unidentified Aerial Phenomena (UAPs)” (niezidentyfikowane zjawiska powietrzne), 24 lipca 2020 r., przygotowana przez biuro prasowe OPNAV N2N6"
 - "label": "Potwierdzenie autentyczności przez Marynarkę Wojenną USA"
 ---
 

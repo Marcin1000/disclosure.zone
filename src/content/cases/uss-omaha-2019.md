@@ -36,8 +36,8 @@ claims:
 - "omaha-transmedium-entry"
 - "omaha-drone-swarm"
 sources:
-- "tier": "T1"
-  label: "IR recordings and ship’s log extracts released under FOIA"
+- "tier": "T2"
+  label: "CHINFO briefing card “Unidentified Aerial Phenomena (UAPs)”, 24 July 2020, prepared by OPNAV N2N6 Public Affairs"
   ref: "navy-uap-foia"
 - "tier": "T2"
   label: "US Navy confirmation of authenticity"

@@ -39,7 +39,7 @@ sources:
   label: "The GIMBAL recording (US Navy material)"
   ref: "dod-navy-videos-2020"
 - "tier": "T2"
-  label: "DoD statement of 27 April 2020 confirming the recording’s authenticity"
+  label: "CHINFO briefing card “Unidentified Aerial Phenomena (UAPs)”, 24 July 2020, prepared by OPNAV N2N6 Public Affairs"
   ref: "navy-uap-foia"
 - "tier": "T4"
   label: "Optical analyses indicating the role of the gimbal mechanism"

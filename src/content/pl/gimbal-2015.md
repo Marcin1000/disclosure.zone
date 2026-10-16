@@ -14,7 +14,7 @@ alternatives:
 - "Rzeczywisty obiekt wykonujący obrót."
 sources:
 - "label": "Nagranie GIMBAL (materiał Marynarki Wojennej USA)"
-- "label": "Oświadczenie DoD z 27 kwietnia 2020 o autentyczności nagrania"
+- "label": "Karta informacyjna CHINFO „Unidentified Aerial Phenomena (UAPs)” (niezidentyfikowane zjawiska powietrzne), 24 lipca 2020 r., przygotowana przez biuro prasowe OPNAV N2N6"
 - "label": "Analizy optyczne wskazujące na rolę mechaniki gimbala"
 ---
 

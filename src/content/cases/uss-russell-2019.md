@@ -32,8 +32,8 @@ alternatives:
 claims:
 - "russell-pyramid-craft"
 sources:
-- "tier": "T1"
-  label: "Night-vision footage from USS Russell"
+- "tier": "T2"
+  label: "CHINFO briefing card “Unidentified Aerial Phenomena (UAPs)”, 24 July 2020, prepared by OPNAV N2N6 Public Affairs"
   ref: "navy-uap-foia"
 - "tier": "T2"
   label: "US Navy confirmation of authenticity"

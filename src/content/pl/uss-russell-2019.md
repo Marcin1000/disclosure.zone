@@ -11,7 +11,7 @@ official: "Marynarka Wojenna potwierdziła autentyczność nagrania. Analiza wsk
 alternatives:
 - "Rozogniskowane punkty świetlne (samoloty, gwiazdy) rejestrowane przez noktowizor z trójkątną przysłoną, bokeh przyjmuje kształt przysłony obiektywu."
 sources:
-- "label": "Nagranie noktowizyjne z USS Russell"
+- "label": "Karta informacyjna CHINFO „Unidentified Aerial Phenomena (UAPs)” (niezidentyfikowane zjawiska powietrzne), 24 lipca 2020 r., przygotowana przez biuro prasowe OPNAV N2N6"
 - "label": "Potwierdzenie autentyczności przez Marynarkę Wojenną"
 - "label": "Analizy optyczne wskazujące na bokeh przysłony"
 ---
