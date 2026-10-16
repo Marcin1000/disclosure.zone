@@ -144,6 +144,24 @@ export const SOURCE_URL: Record<string, string> = {
   // briefing Naval Intelligence Activity z 17 V 2021 (plik „UAPTF HPSCI Brief”); ten sam plik leży też
   // bezpośrednio w folderze „UAP INFO”
   'navy-nia-hpsci-brief': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/UAPTF%20HPSCI%20Brief%20Redacted.PDF',
+  // briefingi ONI „Task Force Overview” z 27 II 2020 (plik „DDNI Brief”) i z 11 III 2020 (plik „HASC Brief”)
+  'navy-oni-brief-2020-02': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/DDNI%20Brief%20Redacted.PDF',
+  'navy-oni-brief-2020-03': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/HASC%20Brief%20Redacted.PDF',
+  // e-maile Marynarki Wojennej: zapytanie o pilota VT-9 z 9 V 2019 (s. 32); sprawozdanie z briefingu dla
+  // sen. Warnera z 20 VI 2019 (s. 1–2); odpowiedź dla Politico z 23 IV 2019 (s. 6–7) i tekst J. Strattona
+  // z 24 IV 2019 (s. 22)
+  'navy-emails-ufo':      'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/UFO_Redacted.pdf',
+  'navy-emails-sipr':     'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/From%20SIPR_REDACTED.pdf',
+  'navy-emails-unidentified-aircraft': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/Unidentified%20Aircraft_Redacted.pdf',
+  // raporty zagrożeń (hazard reports) eskadr F/A-18 z W-72 i VX-23 z W-386, wydruki Naval Safety Center z 29 V 2019
+  'navy-hazard-vfa11-2013-06-27': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20166631_VFA11_27JUN2013(2).PDF',
+  'navy-hazard-vfa143-2013-11-18': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20166602%20aUNO%20unkown_VFA143_18NOV2013(2).PDF',
+  'navy-hazard-vfa143-2013-12-18': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20166608%20ad%20BUNO%20unk_VFA143_18DEC2013(2).PDF',
+  'navy-hazard-vfa106-2014-03-26': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20hazard_BUNO%20168482%20aNO%20unknown_VFA106_26MAR2014(2).PDF',
+  'navy-hazard-vfa11-2014-04-23': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20166623_VFA-11_23Apr14(2).PDF',
+  'navy-hazard-vfa11-2014-04-24': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20166634%20aBUNO%20166624_VFA11_24APR2014(2).PDF',
+  'navy-hazard-vfa11-2014-04-27': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20Unknown%20F18_VFA11_27APR2014(2).PDF',
+  'navy-hazard-vx23-2019-02-13': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20hazard_BUNO%20169125_VX23_13FEB2019(2).PDF',
 
   'odni-2021':            'https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf',
   'odni-2022':            'https://www.dni.gov/files/ODNI/documents/assessments/Unclassified-2022-Annual-Report-UAP.pdf',
@@ -154,13 +172,13 @@ export const SOURCE_URL: Record<string, string> = {
   'condon':               'https://files.ncas.org/condon/',
   'condon-conclusions':   'https://files.ncas.org/condon/text/sec-i.htm',
 
-  'oversight-2023':       'https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/',
   // Druk przesłuchania z 26 VII 2023 (Serial No. 118-53): numer strony drukowanej = strona PDF − 4.
-  // Pisemne oświadczenie Fravora na stronie komisji. Wszystkie otwarte na żywo 16 X 2026 (200)
+  // Pisemne oświadczenia Fravora i Gravesa na stronie komisji. Wszystkie otwarte na żywo 16 X 2026 (200)
   // i bajt w bajt zgodne z kopiami czytanymi w audycie nimitz-2004 i roosevelt-2014
   'oversight-2023-transcript': 'https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf',
   'oversight-2023-govinfo':    'https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm',
   'oversight-2023-fravor':     'https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf',
+  'oversight-2023-graves':     'https://oversight.house.gov/wp-content/uploads/2023/07/Ryan-HOC-Testimony.pdf',
 
   // Teheran 1976: depesza biura attaché z 23 IX 1976 (IR 6 846 0139 76) w czytelni DIA; te same skany z kartą
   // obiegową z 8 XII 1978 i oceną DIA w aktach NSA w NARA (RG 615, s. 3–6 pliku); ta sama depesza przekazana
