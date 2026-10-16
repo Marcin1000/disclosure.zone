@@ -83,6 +83,22 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-minot-pilot':  'https://catalog.archives.gov/id/302580672?objectPage=86',
   'nara-bb-minot-quintanilla': 'https://catalog.archives.gov/id/302580672?objectPage=95',
   'nara-bb-minot-ftd':    'https://catalog.archives.gov/id/302580672?objectPage=98',
+  // RB-47 1957: jednostka Blue Book NAID 28970538, którą katalog tytułuje „Forbes AFB, Kansas, July 1957”
+  // (56 obrazów, obraz N to plik 0355+N.jpg). Karta 1, depesza z Duncanville 2–6 (nie po kolei, pierwsza strona
+  // na 6), AFCIN-4E1 7, list CAA 9, pisma ADC 10–11, odręczne podsumowanie 12–13, McDonald 1971 14–19, Klass 1971
+  // 21–38, list HRD 1972 39, meldunek 55. skrzydła 41–44, arkusz Chase'a 45–56 (strona pierwsza to 46).
+  // Każdy adres otwarty w przeglądarce 16 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-rb47-card':    'https://catalog.archives.gov/id/28970538?objectPage=1',
+  'nara-bb-rb47-duncanville': 'https://catalog.archives.gov/id/28970538?objectPage=6',
+  'nara-bb-rb47-afcin':   'https://catalog.archives.gov/id/28970538?objectPage=7',
+  'nara-bb-rb47-caa':     'https://catalog.archives.gov/id/28970538?objectPage=9',
+  'nara-bb-rb47-adc':     'https://catalog.archives.gov/id/28970538?objectPage=10',
+  'nara-bb-rb47-summary': 'https://catalog.archives.gov/id/28970538?objectPage=12',
+  'nara-bb-rb47-mcdonald': 'https://catalog.archives.gov/id/28970538?objectPage=14',
+  'nara-bb-rb47-klass':   'https://catalog.archives.gov/id/28970538?objectPage=21',
+  'nara-bb-rb47-hrd':     'https://catalog.archives.gov/id/28970538?objectPage=39',
+  'nara-bb-rb47-wing':    'https://catalog.archives.gov/id/28970538?objectPage=41',
+  'nara-bb-rb47-chase':   'https://catalog.archives.gov/id/28970538?objectPage=45',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
@@ -388,12 +404,13 @@ export const SOURCE_URL: Record<string, string> = {
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',
   'condon-case02':        'https://files.ncas.org/condon/text/case02.htm',
+  'condon-case05':        'https://files.ncas.org/condon/text/case05.htm',
   'condon-case49':        'https://files.ncas.org/condon/text/case49.htm',
   'condon-photo':         'https://files.ncas.org/condon/text/s3chap02.htm',
   'condon-radar':         'https://files.ncas.org/condon/text/s6chap05.htm',
-  // Thayer, „Optical and Radar Analyses of Field Cases” (Section III, rozdz. 5): Lakenheath jako Case 2
+  // Thayer, „Optical and Radar Analyses of Field Cases” (Section III, rozdz. 5): Lakenheath jako Case 2,
+  // RB-47 jako Case 5 z datą 19 IX 1957
   'condon-optical-radar': 'https://files.ncas.org/condon/text/s3chap05.htm',
-  'condon-pre-project':   'https://files.ncas.org/condon/text/s4chap01.htm',
 
   // ——— Roswell: oficjalne raporty USAF i GAO
   'roswell-case-closed':  'https://www.govinfo.gov/content/pkg/GOVPUB-D301-PURL-gpo92195/pdf/GOVPUB-D301-PURL-gpo92195.pdf',
