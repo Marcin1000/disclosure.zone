@@ -191,6 +191,10 @@ export const SOURCE_URL: Record<string, string> = {
   'oversight-2023-govinfo':    'https://www.govinfo.gov/content/pkg/CHRG-118hhrg53022/html/CHRG-118hhrg53022.htm',
   'oversight-2023-fravor':     'https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf',
   'oversight-2023-graves':     'https://oversight.house.gov/wp-content/uploads/2023/07/Ryan-HOC-Testimony.pdf',
+  // Otwarte posiedzenie podkomisji wywiadu Izby Reprezentantów, 17 V 2022 (HHRG-117-IG05): Scott Bray, zastępca
+  // dyrektora wywiadu Marynarki Wojennej, bez przysięgi (T2); trójkąty w goglach noktowizyjnych s. 16–17 i 28–29.
+  // Cytowany w twierdzeniu russell-pyramid-craft i w kalkulatorze. Otwarte na żywo 16 X 2026 (200, 288 073 B)
+  'hpsci-2022-transcript':     'https://www.congress.gov/117/meeting/house/114761/documents/HHRG-117-IG05-Transcript-20220517.pdf',
 
   // Teheran 1976: depesza biura attaché z 23 IX 1976 (IR 6 846 0139 76) w czytelni DIA; te same skany z kartą
   // obiegową z 8 XII 1978 i oceną DIA w aktach NSA w NARA (RG 615, s. 3–6 pliku); ta sama depesza przekazana
