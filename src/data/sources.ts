@@ -131,8 +131,14 @@ export const SOURCE_URL: Record<string, string> = {
 
   // ——— Francja
   'geipan':               'https://www.geipan.fr/',
-  'geipan-mission':       'https://www.geipan.fr/en/missions-methodes-et-resultats',
   'geipan-process':       'https://www.geipan.fr/en/node/422',
+  // Trans-en-Provence 1981: nota techniczna GEPAN nr 16 i broszura CNES o SEPRA. Oficjalne adresy
+  // https://www.geipan.fr/sites/default/files/note_tech_16.pdf i …/sepra.pdf odpowiadały 429 na każdą próbę
+  // 15 X 2026 (osiem prób co 3 min) i 16 X 2026 (skrypt co kilka minut i zwykły Edge), więc tymczasowo kopie
+  // Internet Archive dokładnie tych adresów: otwarte na żywo 16 X 2026 (200), pliki bajt w bajt zgodne
+  // z pobranymi 15 X (2 445 614 B i 9 997 769 B). Przy każdej kolejnej rundzie próbować oficjalnych adresów
+  'geipan-nt16':          'https://web.archive.org/web/20240718123710/https://www.geipan.fr/sites/default/files/note_tech_16.pdf',
+  'geipan-sepra':         'https://web.archive.org/web/20240712043433/https://www.geipan.fr/sites/default/files/sepra.pdf',
 
   // ——— Włochy
   'am-ovni':              'https://www.aeronautica.difesa.it/en/ovni/',

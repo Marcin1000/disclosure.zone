@@ -415,7 +415,7 @@ body.is-locked { position: fixed; width: 100%; overflow: hidden; }
 .tier-T5 { color: var(--stamp-2); }
 
 .src { display: flex; gap: .6rem; align-items: flex-start; padding: .7rem 0; border-top: 1px solid var(--line); font-size: .92rem; }
-.src__body { flex: 1; min-width: 0; }
+.src__body { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .src__note { display: block; color: var(--fg-faint); font-size: .82rem; margin-top: .15rem; }
 .src__nolink { font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; color: var(--amber-dim); text-transform: uppercase; }
 
