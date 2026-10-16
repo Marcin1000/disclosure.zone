@@ -62,8 +62,10 @@ const CASE_LINKS = {
   'DOW-UAP-D099': ['ghost-rockets-1946'],
   'DOW-UAP-D100': ['ghost-rockets-1946'],
   // JAL: artykuł z 2001 r., s. 90; Teheran: rozdział 2.3, s. 19–20; Trans-en-Provence: rozdział 4.3, s. 25–26,
-  // i wykaz not GEPAN, s. 83 (jedyne obok broszury SEPRA powiązanie noty nr 16 z nazwą miejscowości)
-  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946', 'jal1628-1986', 'tehran-1976', 'trans-en-provence-1981'],
+  // i wykaz not GEPAN, s. 83 (jedyne obok broszury SEPRA powiązanie noty nr 16 z nazwą miejscowości);
+  // Bariloche: rozdział 2.5, s. 21; Belgia: artykuł z „The Boston Sunday Globe” z 21 V 2000 w tym samym pliku,
+  // s. 91, nie raport COMETA; foo fighters: aneks 6, s. 75–76
+  '255-413270-ufo-s-and-defense-what-should-we-prepare-for@01': ['ghost-rockets-1946', 'jal1628-1986', 'tehran-1976', 'trans-en-provence-1981', 'bariloche-1995', 'belgian-wave-1990', 'foo-fighters-1944'],
   // Zdarzenie na zachodzie USA: analiza, mapa, pięć relacji, dziesięć renderingów
   // i dwie rekonstrukcje. Renderingi i rekonstrukcje są ilustracją relacji,
   // nie zapisem zjawiska, i strona sprawy mówi to wprost.
