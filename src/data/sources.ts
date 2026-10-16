@@ -166,6 +166,14 @@ export const SOURCE_URL: Record<string, string> = {
   'navy-hazard-vfa11-2014-04-24': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20166634%20aBUNO%20166624_VFA11_24APR2014(2).PDF',
   'navy-hazard-vfa11-2014-04-27': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20Hazard_BUNO%20Unknown%20F18_VFA11_27APR2014(2).PDF',
   'navy-hazard-vx23-2019-02-13': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/r_copy%20of%20hazard_BUNO%20169125_VX23_13FEB2019(2).PDF',
+  // San Diego, lipiec 2019: dziennik CIC USS Rafael Peralta 14–16 VII (s. 12 i 14: drony), odprawa USS Paul Hamilton
+  // z 17 VII (s. 2), baza incydentów 2017–2021 (wpis 19-095, s. 38) i dziennik pokładowy USS Russell z lipca 2019
+  // (kopia z adnotacją (b)(3) przy zaczernieniu 15 VII, s. 43). Otwarte na żywo 16 X 2026 (200), bajt w bajt
+  // zgodne z kopiami czytanymi w audycie
+  'navy-rpr-cic-log':     'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/RPR%20CIC%20Log%2014-16JUL19%20PROP%20REDS_Redacted.pdf',
+  'navy-phm-uas-brief':   'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/FLIR%20PHOTO_Brief_Redacted.pdf',
+  'navy-incident-db':     'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/Incident%20databas%202017-2021.pdf',
+  'navy-russell-deck-log': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/2019-07%20RUSSEL_Redacted.pdf',
 
   'odni-2021':            'https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf',
   'odni-2022':            'https://www.dni.gov/files/ODNI/documents/assessments/Unclassified-2022-Annual-Report-UAP.pdf',
@@ -440,6 +448,9 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-pr078':         'https://www.dvidshub.net/video/1007812/dow-uap-pr078-2-november-2020-callsign-callsign-observes-and-tracks-uap-2-2',
   'pursue-pr088':         'https://www.dvidshub.net/video/1007800/dow-uap-pr088-31-aug-callsign-callsign-observes-uap',
   'pursue-pr089':         'https://www.dvidshub.net/video/1007712/dow-uap-pr089-31-aug-callsign-callsign-observes-uap-part2',
+  // wydanie 05: jedno z pięciu nagrań „Unresolved UAP Report, Pacific Ocean, 2019” (PR123–PR127); strona DVIDS
+  // otwarta na żywo 16 X 2026 (200)
+  'pursue-pr124':         'https://www.dvidshub.net/video/1017806/dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019',
 
   // ——— Condon Report: konkretne sprawy, nie tylko tom
   'condon-contents':      'https://files.ncas.org/condon/text/contents.htm',

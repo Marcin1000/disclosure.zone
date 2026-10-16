@@ -106,4 +106,14 @@ export const withdrawn: Withdrawn[] = [
       pl: 'Żadne źródło, które dało się otworzyć, nie popiera zdarzenia w postaci, w jakiej opisywała je sprawa. Jedyna wzmianka w wydaniach USA to Defense Intelligence Reference Document z 2010 r. (DOW-UAP-D128), który omawia zgłoszone obrażenia świadków na podstawie artykułu z pisma MUFON z 1981 r. i nieopublikowanych ustaleń, a nie podaje daty, miejsca, obiektu ani śmigłowców. Katalog National Archives nie ma żadnego zapisu o zdarzeniu, a akta sądowe i dokumentacja medyczna, na które powoływała się sprawa, nie mają adresu. Oceny nie miały na czym stać.',
     },
   },
+  {
+    kind: 'case',
+    id: 'uss-omaha-2019',
+    title: { en: 'USS Omaha (July 2019)', pl: 'USS Omaha (lipiec 2019)' },
+    on: '2026-10-16',
+    reason: {
+      en: 'No document we can open names USS Omaha: not the Navy’s FOIA reading room, which holds the logs of other ships off San Diego in July 2019, not releases 01 to 06 of the Department of War, not RG 615 at the National Archives, and not AARO, the ODNI, NASA or the printed congressional hearings. The video that circulates under the ship’s name is known from a leak, and the confirmation of 2021 that Navy personnel took it only from the press. What the documents do hold, drones around other ships off San Diego in those weeks, is now in [Off San Diego, July 2019](/cases/san-diego-drones-2019). Release 05 has five recordings titled “Unresolved UAP Report, Pacific Ocean, 2019”, among them [DOW-UAP-PR124](/records/dow-uap-pr124); their descriptions name no ship and give no date beyond the year. The scores had nothing to stand on.',
+      pl: 'Żaden dokument, który da się otworzyć, nie wymienia USS Omaha: ani czytelnia FOIA Marynarki Wojennej, która ma dzienniki innych okrętów u wybrzeży San Diego z lipca 2019 r., ani wydania 01–06 Departamentu Wojny, ani zespół RG 615 w Archiwach Narodowych USA, ani AARO, ODNI, NASA czy druki przesłuchań w Kongresie. Nagranie, które krąży pod nazwą okrętu, znamy z przecieku, a potwierdzenie z 2021 r., że nagrał je personel Marynarki Wojennej, tylko z prasy. To, co dokumenty rzeczywiście zawierają, czyli drony wokół innych okrętów u wybrzeży San Diego w tych tygodniach, jest teraz w sprawie [U wybrzeży San Diego, lipiec 2019](/cases/san-diego-drones-2019). Wydanie 05 ma pięć nagrań zatytułowanych „Unresolved UAP Report, Pacific Ocean, 2019” (nierozstrzygnięte zgłoszenie UAP, Ocean Spokojny, 2019), w tym [DOW-UAP-PR124](/records/dow-uap-pr124); ich opisy nie podają okrętu, a z daty tylko rok. Oceny nie miały na czym stać.',
+    },
+  },
 ];
