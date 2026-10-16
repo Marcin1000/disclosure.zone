@@ -202,9 +202,15 @@ export const SOURCE_URL: Record<string, string> = {
   'cl-sefaa':             'https://sefaa.dgac.gob.cl/',
 
   // ——— Norwegia
+  // Strona główna Project Hessdalen: opis projektu przez sam projekt („A non-profit volunteer Citizen Science
+  // organization”, Blue Box od 1998 r., obserwacja z 1 IX 2026). Strona się zmienia, sprawa cytuje stan z 16 X 2026
   'hessdalen':            'https://www.hessdalen.org/',
+  // Raport z kampanii 1984 r. (E. Strand, podpisany 5 I 1985) z aneksami; otwarty na żywo 16 X 2026, tekst zgodny z 15 X
   'hessdalen-1984':       'https://old.hessdalen.org/reports/hpreport84.shtml',
-  'hessdalen-reports':    'https://old.hessdalen.org/reports/',
+  // Vargemezis i in., J. Appl. Geophys. 226 (2024) 105398. DOI otwarty 16 X 2026: prowadzi do strony artykułu
+  // w ScienceDirect (pii S0926985124001149), która automatom pokazuje test „Are you a robot?”; tekst czytany z kopii
+  // opublikowanego PDF na stronie projektu (old.hessdalen.org/reports/Geophysics-2024.pdf, 200, 20 603 496 B)
+  'hessdalen-vlf-2024':   'https://doi.org/10.1016/j.jappgeo.2024.105398',
 
   // ——— Dodane w drugiej rundzie weryfikacji
   'nara-uap-bulk':        'https://www.archives.gov/research/catalog/catalog-bulk-downloads/uap-bulk-download',
@@ -398,14 +404,15 @@ export const FINDING_AIDS = new Set([
   'nara-uap', 'nara-uap-microfilm', 'cia-readingroom',
   'geipan', 'br-an-ovni', 'es-ovni', 'aaro-records', 'loc-chronicling',
   'nara-citizen-archivist', 'nara-unwritten-record', 'zb-wickiana',
-  'hessdalen-reports', 'faa-uas-sightings',
+  'faa-uas-sightings',
   'aaro-case-reports', 'aaro-imagery', 'aaro-trends', 'geipan-search',
   'condon-contents', 'roswell-af', 'nara-rg615', 'lac-ufos',
   'lac-ufo-search-1967-10-04',
-  // Strony główne. Sprawy podpisywały nimi konkretny materiał (nagranie CBP,
-  // raporty marynarki, dane stacji pomiarowej), którego pod tymi adresami nie ma,
-  // więc do czasu audytu tych spraw liczą się jako wskazanie archiwum.
-  'aaro', 'hessdalen',
+  // Strona główna AARO. Sprawy podpisywały nią konkretny materiał (nagranie CBP,
+  // raporty marynarki), którego pod tym adresem nie ma, więc do czasu audytu tych
+  // spraw liczy się jako wskazanie archiwum. Strona główna Project Hessdalen wyszła
+  // z tej listy po audycie hessdalen-1984: sprawa cytuje ją jako opis projektu (T4)
+  'aaro',
 ]);
 
 export function isFindingAid(ref?: string): boolean {
