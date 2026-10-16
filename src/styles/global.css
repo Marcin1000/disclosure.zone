@@ -171,6 +171,8 @@ a:hover { color: var(--phos-2); border-color: var(--phos); }
 .grid { display: grid; gap: 1px; }
 @media (min-width: 720px)  { .grid--2 { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1000px) { .grid--3 { grid-template-columns: repeat(3, 1fr); } }
+.grid__fill { display: none; background: var(--void-2); }
+@media (min-width: 1000px) { .grid--3 > .grid__fill { display: block; } }
 @media (min-width: 1000px) { .grid--4 { grid-template-columns: repeat(4, 1fr); } }
 
 /* Reguła pozioma jak perforacja dokumentu */

@@ -110,11 +110,16 @@ const UNCONFIRMED = {
       <a class="btn btn--ghost" href={path(lang, '/cases')}>{t('home.allCases', { n: all.length })}</a>
     </div>
     <div class="grid grid--3 rise" style="background:var(--line);border:1px solid var(--line)">
-      {core.slice(0, 9).map(c => (
+      {/* Wszystkie sprawy ze znakiem ◆, bez limitu: ucięcie przy remisie wyników
+          chowało sprawę tylko dlatego, że była wcześniejsza. */}
+      {core.map(c => (
         <CaseCard lang={lang} href={path(lang, `/cases/${c.id}`)} title={c.data.title} summary={c.data.summary}
           dateDisplay={c.data.dateDisplay} countryName={c.data.countryName}
           status={c.data.status} tier={c.data.tier} scores={c.data.scores} />
       ))}
+      {/* Przy trzech kolumnach dopełniamy ostatni rząd pustymi polami w kolorze kart,
+          żeby w siatce nie została jaśniejsza dziura. Poniżej 1000 px jest jedna kolumna. */}
+      {Array.from({ length: (3 - core.length % 3) % 3 }, () => <div class="grid__fill" aria-hidden="true"></div>)}
     </div>
   </section>
 
