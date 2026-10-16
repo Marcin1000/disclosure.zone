@@ -38,7 +38,7 @@ const L = en ? {
   assumptionsTitle: 'Assumptions of this model — read them',
   bokehTitle: 'Aperture shape, not object shape',
   bokehAlt: 'Defocused points of light taking the shape of the selected aperture',
-  bokehLead: 'A defocused point of light takes the shape of the lens aperture. A night-vision device with a triangular aperture turns every distant light into a triangle. This is why the USS Russell “pyramids” are pyramids.',
+  bokehLead: 'A defocused point of light takes the shape of the lens aperture, so the shape of a distant light in a recording can be the shape of the optics. In 2022 the US Navy’s deputy director of intelligence told Congress that triangles recorded by Navy personnel were “a result of light passing through the night vision goggles and then being recorded by an SLR camera”. He named no ship.',
   bokehPick: 'Aperture',
   angularTitle: 'Angular size proves nothing about size',
   angularLead: 'The same frame is consistent with a small object nearby and a large object far away. Photometry narrows the interval; it never closes it. Drag the distance.',
@@ -93,7 +93,7 @@ const L = en ? {
   assumptionsTitle: 'Założenia tego modelu, przeczytaj je',
   bokehTitle: 'Kształt przysłony, nie kształt obiektu',
   bokehAlt: 'Rozogniskowane punkty świetlne przyjmujące kształt wybranej przysłony',
-  bokehLead: 'Rozogniskowany punkt świetlny przyjmuje kształt przysłony obiektywu. Noktowizor z trójkątną przysłoną zamienia każde odległe światło w trójkąt. Dlatego „piramidy” z USS Russell są piramidami.',
+  bokehLead: 'Rozogniskowany punkt świetlny przyjmuje kształt przysłony obiektywu, więc kształt odległego światła na nagraniu może być kształtem optyki. W 2022 r. zastępca dyrektora wywiadu marynarki USA powiedział Kongresowi, że trójkąty nagrane przez personel marynarki to „a result of light passing through the night vision goggles and then being recorded by an SLR camera”, czyli efekt światła, które przeszło przez gogle noktowizyjne i zostało nagrane lustrzanką. Nie wymienił okrętu.',
   bokehPick: 'Przysłona',
   angularTitle: 'Rozmiar kątowy nic nie mówi o rozmiarze',
   angularLead: 'Ten sam kadr jest zgodny z małym obiektem blisko i dużym daleko. Fotometria zawęża przedział, nigdy go nie zamyka. Przeciągnij odległość.',
@@ -489,14 +489,14 @@ const ASSUMPTIONS = en ? [
       const kmh = ms * 3.6;
       if (en) {
         if (kmh < 40) return ['at walking-to-cycling pace', 'This is what a drifting balloon does.'];
-        if (kmh < 90) return ['at roughly wind speed', 'This is the published resolution of GOFAST: a slow object carried by the wind.'];
+        if (kmh < 90) return ['at roughly wind speed', 'NASA’s study team put GOFAST at about 40 mph, “a typical wind speed at 13,000 feet”; AARO gives 72 to 161 mph depending on its heading relative to the wind.'];
         if (kmh < 300) return ['at light-aircraft speed', 'Unremarkable for anything with an engine.'];
         if (kmh < 900) return ['at airliner speed', 'Fast, but entirely conventional.'];
         if (kmh < 2000) return ['at fighter-jet speed', 'Achievable by existing military aircraft.'];
         return ['at hypersonic speed', 'This is the figure quoted when the object is assumed to sit at the surface — and that assumption is exactly what the video cannot establish.'];
       }
       if (kmh < 40) return ['w tempie spaceru lub roweru', 'Tak zachowuje się dryfujący balon.'];
-      if (kmh < 90) return ['mniej więcej z prędkością wiatru', 'To jest opublikowane rozwiązanie GOFAST: powolny obiekt niesiony wiatrem.'];
+      if (kmh < 90) return ['mniej więcej z prędkością wiatru', 'Zespół NASA ocenił GOFAST na około 40 mph, „a typical wind speed at 13,000 feet”, czyli typową prędkość wiatru na wysokości 13 000 stóp; AARO podaje od 72 do 161 mph, zależnie od kursu względem wiatru.'];
       if (kmh < 300) return ['z prędkością małego samolotu', 'Nic nadzwyczajnego dla czegokolwiek z silnikiem.'];
       if (kmh < 900) return ['z prędkością samolotu pasażerskiego', 'Szybko, ale całkowicie konwencjonalnie.'];
       if (kmh < 2000) return ['z prędkością myśliwca', 'Osiągalne dla istniejących maszyn wojskowych.'];

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { withdrawn } from '../../data/withdrawn';
+import Inline from '../../components/Inline.astro';
 import { langParams, path, type Lang } from '../../i18n';
 
 export function getStaticPaths() { return langParams(); }
@@ -35,7 +36,7 @@ const groups = [
             <div id={w.id} style="padding:1.2rem 0;border-top:1px solid var(--line)">
               <p class="mono" style="margin:0 0 .4rem;font-size:.66rem;letter-spacing:.14em;color:var(--fg-faint)">{w.id} · {fmt(w.on)}</p>
               <p style="margin:0 0 .6rem;color:var(--fg)">{w.title[lang]}</p>
-              <p class="dim" style="margin:0;font-size:.95rem;max-width:68ch">{w.reason[lang]}</p>
+              <p class="dim" style="margin:0;font-size:.95rem;max-width:68ch"><Inline text={w.reason[lang]} lang={lang} /></p>
             </div>
           ))}
         </div>

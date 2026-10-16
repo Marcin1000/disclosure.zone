@@ -121,8 +121,12 @@ for (const r of reg.records) {
  */
 const PAGES = new Set(['/methodology', '/about', '/archives', '/data', '/films', '/map', '/toolkit', '/records', '/cases', '/claims', '/withdrawn']);
 const withdrawnIds = new Set(withdrawn.map(w => w.id));
-for (const c of claims) for (const k of ['claim', 'origin', 'verdict', 'resolver']) for (const lang of ['en', 'pl']) {
-  for (const m of (c[k]?.[lang] ?? '').matchAll(/\[([^\]]+)\]\((\/[^)\s]*)\)/g)) {
+const linkSources = [
+  ...claims.flatMap(c => ['claim', 'origin', 'verdict', 'resolver'].map(k => ({ who: `twierdzenie ${c.id} (${k}`, field: c[k] }))),
+  ...withdrawn.map(w => ({ who: `wycofane ${w.id} (reason`, field: w.reason })),
+];
+for (const { who, field } of linkSources) for (const lang of ['en', 'pl']) {
+  for (const m of (field?.[lang] ?? '').matchAll(/\[([^\]]+)\]\((\/[^)\s]*)\)/g)) {
     const href = m[2];
     const [p, hash] = href.split('#');
     const ok = /^\/cases\/[^/]+$/.test(p) ? canonSet.has(p.slice(7))
@@ -130,8 +134,8 @@ for (const c of claims) for (const k of ['claim', 'origin', 'verdict', 'resolver
       : p === '/withdrawn' ? !hash || withdrawnIds.has(hash)
       : p === '/claims' ? !hash || claimIds.has(hash)
       : PAGES.has(p) && !hash;
-    if (!ok) errors.push(`twierdzenie ${c.id} (${k}, ${lang}): odnośnik donikąd ${href}`);
-    if (/^\/pl\//.test(href)) errors.push(`twierdzenie ${c.id} (${k}, ${lang}): odnośnik z prefiksem języka ${href}, strona dokłada go sama`);
+    if (!ok) errors.push(`${who}, ${lang}): odnośnik donikąd ${href}`);
+    if (/^\/pl\//.test(href)) errors.push(`${who}, ${lang}): odnośnik z prefiksem języka ${href}, strona dokłada go sama`);
   }
 }
 
