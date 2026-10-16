@@ -140,6 +140,8 @@ export const SOURCE_URL: Record<string, string> = {
   'navy-flir1-video':     'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/1%20-%20FLIR.mp4',
   // nagranie GIMBAL (13 517 612 B, 34,5 s); otwarte na żywo 16 X 2026 (200) i bajt w bajt zgodne z kopią z audytu
   'navy-gimbal-video':    'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/2%20-%20GIMBAL.wmv',
+  // nagranie GOFAST (13 509 612 B, 34,5 s); otwarte na żywo 16 X 2026 (200) i bajt w bajt zgodne z kopią z audytu
+  'navy-gofast-video':    'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/3%20-%20GOFAST.wmv',
   'navy-tictac-slide':    'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/2004%20TIC%20TAC%20Slide.pdf',
   // briefing UAP Task Force z 31 VIII 2020 z e-mailami do NASA z IX 2020; slajd 4 „Tic Tac” to s. 6 pliku
   'navy-uaptf-nasa-brief': 'https://www.secnav.navy.mil/foia/readingroom/CaseFiles/UAP%20INFO/UAP%20DOCUMENTS/NASA%20Brief%20Redacted.pdf',
@@ -321,6 +323,9 @@ export const SOURCE_URL: Record<string, string> = {
   'aaro-case-reports':    'https://www.aaro.mil/UAP-Cases/UAP-Case-Resolution-Reports/',
   'aaro-case-aguadilla':  'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Puerto_Rico_UAP_Case_Resolution.pdf',
   'aaro-case-gofast':     'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_GoFast_Case_Resolution_Card_Methodology_Final.pdf',
+  // slajdy AARO dla senackiej podkomisji, 19 XI 2024 (RG 615, NAID 499915941, plik 09_Open_Hearing_Slides.pdf);
+  // slajd 5 to GO FAST. Rekord sprawdzony przez API katalogu, plik pobrany 16 X 2026 (200, 3 266 777 B)
+  'nara-aaro-sasc-2024-slides': 'https://catalog.archives.gov/id/499915941',
   'aaro-case-taqaddam':   'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/AARO_Al_Taqaddam_Case_Resolution_Final.pdf',
   'aaro-case-wakes':      'https://www.aaro.mil/Portals/136/PDFs/case_resolution_reports/Case_Resolution_of_Atmospheric_Wakes_508-02262024.pdf',
   'aaro-imagery':         'https://www.aaro.mil/UAP-Cases/Official-UAP-Imagery/',
