@@ -17,7 +17,6 @@ evidence:
 - "visual"
 - "trace"
 - "lab"
-- "photo"
 scores:
   S: 2
   R: 0
