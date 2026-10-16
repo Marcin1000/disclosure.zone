@@ -515,6 +515,10 @@ export const FINDING_AIDS = new Set([
   // spraw liczy się jako wskazanie archiwum. Strona główna Project Hessdalen wyszła
   // z tej listy po audycie hessdalen-1984: sprawa cytuje ją jako opis projektu (T4)
   'aaro',
+  // Ogólna strona NARA o Project Blue Book. Sprawy podpisywały nią teczkę konkretnej
+  // sprawy, której pod tym adresem nie ma; teczki leżą w katalogu NARA jako osobne
+  // jednostki (klucze nara-bb-*), więc do czasu audytu liczy się jako wskazanie archiwum
+  'nara-bluebook',
 ]);
 
 export function isFindingAid(ref?: string): boolean {
