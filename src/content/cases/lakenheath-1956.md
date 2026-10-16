@@ -1,6 +1,6 @@
 ---
 title: "Bentwaters–Lakenheath"
-subtitle: "Radar targets and lights over RAF Bentwaters and RAF Lakenheath, and an RAF Venom sent after one of them. Blue Book’s card reads “Anam. Propagation”; the same file calls its information incomplete"
+subtitle: "Radar targets and lights over RAF Bentwaters and RAF Lakenheath, and an RAF Venom sent after one of them. Blue Book’s card reads “Anam. [sic] Propagation”; the same file calls its information incomplete"
 date: 1956-08-13
 dateDisplay: "13/14 August 1956"
 country: "GB"
@@ -27,8 +27,8 @@ scores:
   T: 4
   X: 3
   D: 2
-summary: "On the evening of 13 August 1956 the GCA radar at RAF Bentwaters in England tracked targets that its operators put at up to “more than 4,000 miles per hour”. After midnight the radar centre at RAF Lakenheath tracked targets, ground observers there reported white lights, and an RAF Venom sent after one target reported it on its own radar; Lakenheath’s controllers reported that the target then began “A TAIL CHASE OF THE FRIENDLY FIGHTER”. Project Blue Book’s record card concludes “Anam. Propagation” (NAID 28966873, image 1), “On the basis of the above, and the limited data provided” (image 3). The same file says the radar and visual sightings “cannot be considered as concurrent” (image 1) and that “From the incomplete information submitted, it is impossible to make a definite determination of the sources of these sightings” (image 33)."
-official: "Project Blue Book’s record card enters its conclusion on the “Other” line: “Anam. Propagation” (NAID 28966873, image 1). The comment beneath it reaches it “On the basis of the above, and the limited data provided”: “there is no compelling reason to conclude that the radar UFO sightings were other than the result of anomalous propagation” (image 3). It also says that the radar, ground and air observations “cannot be considered as concurrent” (image 1). An analysis of 31 August 1956 in the same file: “From the incomplete information submitted, it is impossible to make a definite determination of the sources of these sightings”; among the missing data it names “scope photographs, weather information indicating presence or lack of temperature inversion, moisture lapse data” (image 33). On the meteors put forward for the visual sightings, the Air Force’s consultant J. Allen Hynek wrote on 17 October 1956: “It seems highly unlikely, for instance, that the Perseid meteors could have been the cause of the sightings” (image 27)."
+summary: "On the evening of 13 August 1956 the GCA radar at RAF Bentwaters in England tracked targets that its operators put at up to “more than 4,000 miles per hour”. After midnight the radar centre at RAF Lakenheath tracked targets, ground observers there reported white lights, and an RAF Venom sent after one target reported it on its own radar; Lakenheath’s controllers reported that the target then began “A TAIL CHASE OF THE FRIENDLY FIGHTER”. Project Blue Book’s record card concludes “Anam. [sic] Propagation” (NAID 28966873, image 1), “On the basis of the above, and the limited data provided” (image 3). The same file says the radar and visual sightings “cannot be considered as concurrent” (image 1) and that “From the incomplete information submitted, it is impossible to make a definite determination of the sources of these sightings” (image 33)."
+official: "Project Blue Book’s record card enters its conclusion on the “Other” line: “Anam. [sic] Propagation” (NAID 28966873, image 1). The comment beneath it reaches it “On the basis of the above, and the limited data provided”: “there is no compelling reason to conclude that the radar UFO sightings were other than the result of anomalous propagation” (image 3). It also says that the radar, ground and air observations “cannot be considered as concurrent” (image 1). An analysis of 31 August 1956 in the same file: “From the incomplete information submitted, it is impossible to make a definite determination of the sources of these sightings”; among the missing data it names “scope photographs, weather information indicating presence or lack of temperature inversion, moisture lapse data” (image 33). On the meteors put forward for the visual sightings, the Air Force’s consultant J. Allen Hynek wrote on 17 October 1956: “It seems highly unlikely, for instance, that the Perseid meteors could have been the cause of the sightings” (image 27)."
 alternatives:
 - "Anomalous propagation, the card’s label. ATIC’s comment calls the tracks’ behaviour “characteristic of weather returns and changing atmospheric conditions” (image 2); the soundings that could test it are not in the file. In the Condon report Gordon Thayer wrote: “The probability that anomalous propagation of radar signals may have been involved in this case seems to be small.”"
 - "Mars, a bright star and the Perseid meteors for the visual sightings, as ATIC proposed: the amber object seen from the Bentwaters tower “coincided with the general location, elevation and movement of Mars” (image 3). Hynek disagreed about the meteors, “especially in view of the statement of observers that shooting stars were exceptionally numerous that evening, thus implying that they were able to distinguish the two phenomena” (image 27)."
@@ -39,7 +39,7 @@ claims:
 sources:
 - "tier": "T1"
   label: "Project Blue Book, Project 10073 record card “Bentwaters-Lakenheath, England”, with the comments of the Air Technical Intelligence Center (Project Blue Book, NAID 28966873, images 1–3)"
-  note: "The conclusion is typed on the card’s “Other” line as “Anam. Propagation”. The link opens the card in the National Archives catalogue."
+  note: "The conclusion is typed on the card’s “Other” line as “Anam. [sic] Propagation”. The link opens the card in the National Archives catalogue."
   ref: "nara-bb-lakenheath-card"
 - "tier": "T1"
   label: "81st Fighter Bomber Wing, report IR-1-56, “Unidentified Flying Objects Reporting (UFOB)”, 31 August 1956, on Bentwaters from 2120Z to 2220Z on 13 August (Project Blue Book, NAID 28966873, images 4–9)"
@@ -157,7 +157,7 @@ read.
 
 ## What the file says about its label
 
-The record card enters its conclusion on the “Other” line: “Anam. Propagation” (image 1). ATIC’s comment beneath it
+The record card enters its conclusion on the “Other” line: “Anam. [sic] Propagation” (image 1). ATIC’s comment beneath it
 starts from the timing:
 
 > “At first glance, the 2 messages (TT Msgs BOI-485, 16 Aug 56 and IDO-7335, 21 Aug 56) reporting this sighting may
