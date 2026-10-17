@@ -84,6 +84,7 @@ sources:
   ref: "pursue-fbi-62-83894-s9"
 - "tier": "T1"
   label: "J. Edgar Hoover to J. A. Hennessey, London, 26 January 1965, with the Bureau’s note on the case (FBI file 62-HQ-83894, Section 10, pp. 37–38)"
+  note: "The same letter is also in Section 9, pp. 259 and 261, on a copy marked “62-83894-442” and stamped “FEB 9 1965”; the copy in Section 10 is stamped “ENCLOSURE 62-83894-453”."
   ref: "pursue-fbi-62-83894-s10"
 ---
 

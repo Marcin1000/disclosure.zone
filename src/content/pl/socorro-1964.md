@@ -34,6 +34,7 @@ sources:
 - label: "Teleksy FBI z Albuquerque z 25 i 27 kwietnia 1964 r., airtele z 28 kwietnia i memorandum biura w Albuquerque z 8 maja 1964 r. (teczka FBI 62-HQ-83894, Section 9, s. 221–238)"
   note: "Teleks z 27 kwietnia, s. 221–224; teleks z 25 kwietnia, s. 226–228, z kopią na s. 229–231; airtel dyrektora do Albuquerque z 28 kwietnia, s. 232; airtel Albuquerque do dyrektora z 28 kwietnia, s. 233–236; memorandum agenta specjalnego kierującego biurem w Albuquerque z 8 maja, s. 237–238."
 - label: "J. Edgar Hoover do J. A. Hennesseya, Londyn, 26 stycznia 1965, z notatką Biura o sprawie (teczka FBI 62-HQ-83894, Section 10, s. 37–38)"
+  note: "Ten sam list jest też w Section 9, s. 259 i 261, na egzemplarzu z numerem „62-83894-442” i stemplem „FEB 9 1965”; egzemplarz w Section 10 ma stempel „ENCLOSURE 62-83894-453”."
 ---
 
 ## Co zawiera teczka
