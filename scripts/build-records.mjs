@@ -117,10 +117,9 @@ const CASE_LINKS = {
   // (zdjęcia „taken on the 31st of August”, profesorowie, laboratorium, „a blank wall”)
   'DOW-UAP-D154': ['lubbock-lights-1951'],
   // Memorandum do akt z 18 grudnia 1952: kurier z Wielkiej Brytanii wspomniał R. V. Jonesowi
-  // o filmie z Tremonton (pkt 5). 015 to kopia Special Report 14 z archiwum CIA, ten sam
-  // raport, który sprawa cytuje jako dtic-special-report-14.
+  // o filmie z Tremonton (pkt 5). CIA-UAP-015, kopia Special Report 14 z archiwum CIA, nie jest
+  // podpięty: w warstwie tekstu jego 312 stron nie ma Tremonton ani Newhouse’a (17 X 2026)
   'CIA-UAP-014': ['tremonton-1952'],
-  'CIA-UAP-015': ['tremonton-1952'],
   // Raport informacyjny z 1968: siedem obserwacji w Ladakhu, Nepalu, Sikkimie i Bhutanie
   // oraz krater w Baltichaur. Ladakh 2012 nie jest podpięty, bo raport nie daje ku temu powodu.
   'CIA-UAP-016': ['himalaya-1968'],

@@ -401,7 +401,6 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-uap-bulk':        'https://www.archives.gov/research/catalog/catalog-bulk-downloads/uap-bulk-download',
   'nara-citizen-archivist': 'https://www.archives.gov/citizen-archivist/missions',
   'nara-unwritten-record':  'https://unwritten-record.blogs.archives.gov/tag/project-blue-book/',
-  'dtic-special-report-14': 'https://apps.dtic.mil/sti/tr/pdf/AD0069211.pdf',
   'ia-special-report-14':   'https://archive.org/details/ProjectBlueBookSpecialReport14',
 
   // ——— Biblioteka Kongresu: prasa z epoki

@@ -15,7 +15,6 @@ alternatives:
 - "Miraż. Wymieniony jako pierwszy w arkuszu ATIC: brak warstwy inwersyjnej, ale bardzo duży gradient temperatury między 4000 a 10 000 stóp. Analiza Douglas Aircraft z 1956 r. rozważyła go i uznała za trudny do pogodzenia z przejrzystym powietrzem oraz stałymi, niedrgającymi obrazami."
 sources:
 - "label": "Oryginalny film i analiza w aktach Project Blue Book"
-- "label": "Analiza Battelle Memorial Institute (Project Bear)"
 - "label": "Akta Project Blue Book dotyczące filmu z Tremonton, 1952–1956"
   note: "156 zeskanowanych stron z warstwą OCR. List Newhouse'a z 11 sierpnia 1952 (s. 113), przesłuchanie przez 28th Air Division z 12 września 1952 (s. 4–6, 14), arkusz ATIC (s. 57–58), analiza laboratorium Sił Powietrznych (s. 136–142), raporty NPIC Marynarki z 5 grudnia 1952 (s. 129–133) i 4 maja 1953 (s. 71–77), notatka w sprawie publikacji (s. 37–39), telekonferencja z 3 lutego 1953 (s. 78–80), korespondencja z 1954 r. w sprawie oryginału (s. 45–50), analiza Douglas Aircraft z 1956 r. (s. 82–97) oraz memorandum prasowe z 1 czerwca 1956 (s. 126–127). Teczka zawiera też materiał niezwiązany ze sprawą."
 - "label": "Teczka zdjęć Project Blue Book dotycząca filmu z Tremonton, 1952"
