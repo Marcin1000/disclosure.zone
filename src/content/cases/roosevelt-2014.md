@@ -198,6 +198,36 @@ team on UAP, of 2023, on the GOFAST video: “A well-known UAP event is the ‘G
 the USS Theodore Roosevelt.” (p. 28) The W-72 hazard reports name no carrier. The two Navy videos of January 2015 are separate cases in this base,
 [GIMBAL](/cases/gimbal-2015) and [GOFAST](/cases/gofast-2015).
 
+## Why this scores where it does
+
+**Witnesses: 4.** Aircrews of three squadrons in their own hazard reports, two crews together on 24 April 2014, and a
+VFA-11 pilot under oath in 2023 (p. 10). Not 5: no crew member is named.
+
+**Radar: 3.** In five of the seven reports the aircraft’s own radar held a track, at Mach 0.0 to 0.1 and between 11,000
+and 19,000 feet; on 23 April 2014 the crew used “multiple on-board sensors to verify that HUAD1 and HUAD2 were small IR
+significant objects and not false radar track files” (VFA-11). Not higher: no radar data can be opened, and the
+controlling facility’s radar, in the reports that mention it, saw nothing.
+
+**Optics: 0.** The reports describe infrared detections, but no image can be opened.
+
+**Physical trace: 0.** None.
+
+**Multi-channel: 3.** Radar, infrared and sight in the same reports: on 23 April 2014 radar and FLIR on the same
+objects, and on 24 April, in two aircraft, “a stable radar trackfile as well as a steady CATM-9X track”, though neither
+crew could see the object.
+
+**Documentation: 4.** Seven formal hazard reports with their commanders’ comments, and later Navy correspondence. Not 5:
+the reports survive as printed on 29 May 2019, one has no time, position or narrative, and another blanks its position.
+
+**Anomaly: 3.** Radar tracks at “0.0 Mach” at 15,000 and 12,000 feet that the crew checked were not false track files,
+and objects flying through the FLIR’s field of view “at a high speed” (23 April 2014). Against that, the reports give as
+the cause objects operating “without coordination”, and the report of 27 April 2014 describes a near mid-air collision
+with a “balloon like object”.
+
+**Data today: 2.** The reports can be opened; no radar or infrared data from any of the seven events can.
+
+The overall is 2.3: class C, material gaps.
+
 ## What would settle it
 
 The squadrons’ radar and infrared data for the dates of the reports, the FACSFAC radar tapes (on 27 June 2013 the

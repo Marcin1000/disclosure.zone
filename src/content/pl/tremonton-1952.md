@@ -3,7 +3,7 @@ title: "Film z Tremonton"
 subtitle: "Chief Photographer marynarki, oficer w stopniu chorążego, i nagranie, na które Siły Powietrzne odpowiedziały na trzy różne sposoby"
 dateDisplay: "2 lipca 1952"
 countryName: "Stany Zjednoczone"
-location: "W pobliżu Tremonton, Utah"
+location: "Około siedmiu mil na północ od Tremonton w stanie Utah: „About 7 miles north of Tremonton, Utah on U. S. Highway No. 30S.” (około 7 mil na północ od Tremonton w Utah, przy drodze federalnej nr 30S; list Newhouse’a z 11 sierpnia 1952 r., DOW-UAP-D102, s. 113). Znacznik to punkt OpenStreetMap dla Tremonton (relacja 198977), a nie miejsce obserwacji"
 duration: "od około 70 do 90 sekund materiału"
 witnesses: "Delbert C. Newhouse, Chief Photographer marynarki USA (commissioned warrant officer), z żoną, czternastoletnim synem i dwunastoletnią córką"
 summary: "Chorąży marynarki, zawodowy fotograf lotniczy, nakręcił kolorowy film przedstawiający grupę jasnych obiektów w ruchu. Materiał został poddany jednej z najbardziej szczegółowych analiz w historii Blue Book, w tym analizie densytometrycznej."
@@ -247,8 +247,17 @@ to jeden kanał, nie cztery, dlatego wielokanałowość zostaje na **1**.
 Optyka ma **3**. Jest kolorowy film, trzykrotnie analizowany, ale obrazy są za małe, by pokazać
 strukturę, a na niebie nie ma punktu odniesienia.
 
+Radar ma **0**: arkusz ATIC odpowiada „No” (nie) na pytanie „WAS OBJECT OBSERVED BY GROUND RADAR?” (czy
+obiekt obserwowano radarem naziemnym; s. 57). Ślad fizyczny ma **0**: brak.
+
 Dokumentacja ma **5**. Akta zachowują list, przesłuchanie, arkusz, oba laboratoria, spór o publikację
 i linię prasową, łącznie z tym, co sobie przeczy.
+
+Anomalność ma **2**. Laboratorium Sił Powietrznych uznało obrazy za jaśniejsze niż jakikolwiek ptak, a
+obiekty, jeśli odbijają światło, za „decidedly non-spherical” (zdecydowanie niesferyczne; s. 136), ale
+zmierzyło tylko kąty: około 2,1 stopnia na sekundę dla jednego obiektu (s. 137) i grupę szeroką „on the
+order of 6 to 8 degrees of arc” (rzędu 6 do 8 stopni łuku; s. 138). Prędkości Marynarki opierają się na
+odległości, którą jej własny raport nazywa „an arbitrary one” (arbitralną).
 
 Dane dzisiaj spadają z 4 do **3**. Publikacja akt jest już policzona w dokumentacji. Ta oś pyta, czy
 sprawę da się dziś odtworzyć, a rdzeniem sprawy jest film. Jego oryginału nie odnaleziono od 1954

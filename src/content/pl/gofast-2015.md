@@ -77,6 +77,37 @@ braku precyzyjnych danych o położeniu samolotu Marynarki Wojennej; slajd z 202
 już nie istnieją), i nie zdołało uzyskać relacji załogi. Drugie nagranie Marynarki Wojennej ze stycznia 2015 r.,
 [GIMBAL](/pl/cases/gimbal-2015), takiego rozstrzygnięcia nie ma: AARO wymienia je jako nierozwiązane.
 
+## Dlaczego taka ocena
+
+**Świadkowie: 2.** Jedna załoga, bez nazwisk: „AARO sought but was unable to obtain witness accounts from the F/A-18F
+aircrew.” (AARO starało się o relacje załogi F/A-18F, ale ich nie uzyskało).
+
+**Radar: 1.** Nie da się otworzyć żadnego zapisu radaru. Jedyną odległością w sprawie jest „The range (distance) from
+the FLIR sensor to the target.” (odległość od czujnika FLIR do celu) na wyświetlaczu nagrania, z której AARO wyliczyło
+wysokość (rozstrzygnięcie sprawy, dodatek A).
+
+**Optyka: 4.** Nagranie w podczerwieni z liczbami na wyświetlaczu, z których AARO wyliczyło wysokość około 13 000 stóp;
+zespół NASA doszedł do tej samej wysokości. Nie 5: „the original file and its accompanying metadata are no longer
+available” (oryginalny plik i jego metadane już nie istnieją).
+
+**Ślad fizyczny: 0.** Brak.
+
+**Wielokanałowość: 2.** Obraz i liczby na jego wyświetlaczu pochodzą z jednego czujnika; nie da się otworzyć ani
+drugiego czujnika, ani relacji załogi.
+
+**Dokumentacja: 4.** Rozstrzygnięcie AARO z rozpisanym dodatkiem, analiza zespołu NASA (s. 28) i slajd AARO dla
+podkomisji Senatu z 2024 r. Nie 5: nie da się otworzyć żadnego raportu z lotu, a położenie i kurs samolotu są nieznane.
+
+**Anomalność: 1.** AARO oceniło „with high confidence that the object did not move at anomalous speeds” (z dużą
+pewnością, że obiekt nie poruszał się z anomalnymi prędkościami) i przypisuje wrażenie prędkości paralaksie ruchu;
+zostaje tylko to, że „cannot definitively identify the object” (nie potrafi jednoznacznie zidentyfikować obiektu).
+
+**Dane dzisiaj: 4.** Wysokość może z publicznego klipu przeliczyć każdy, jak zrobiły to AARO i zespół NASA; prędkość
+pozostaje przedziałem, bo „The aircraft’s exact location and heading (compass direction) during the recording are
+unknown.” (dokładne położenie i kurs samolotu podczas nagrania nie są znane).
+
+Ocena łączna wynosi 2,2: klasa C, istotne luki.
+
 ## Co by to rozstrzygnęło
 
 Położenie i kurs samolotu podczas nagrania, oryginalny plik z metadanymi i relacje samej załogi. AARO pisze, że pliku i

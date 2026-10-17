@@ -102,6 +102,34 @@ last two films taken by a service member in low light, all five “captured cont
 digitally altered before being reported to AARO”. The descriptions name no ship, no place and no date beyond 2019.
 Nothing ties these recordings to the ships in this case.
 
+## Why this scores where it does
+
+**Witnesses: 4.** Watchstanders of USS Rafael Peralta on the bridge and at the guns, in the ship’s own CIC log, and
+lookouts of USS Paul Hamilton: by the incident database, the drones “were observed visually, with optical sighting
+system, and night vision goggles”. Not 5: no one is named, and the database entry is a summary.
+
+**Radar: 0.** None of the documents in the case records a radar track of the drones.
+
+**Optics: 1.** One small photograph in Paul Hamilton’s brief, captioned “(U) [UAS] by PHM”. Not higher: the
+“Video/Photos capture point(s)” the brief marks cannot be opened, and the Navy’s public-affairs card of July 2020 says
+that such imagery “is considered classified”.
+
+**Physical trace: 0.** None.
+
+**Multi-channel: 2.** The records of two ships on different nights, all of them visual apart from the one photograph.
+
+**Documentation: 3.** A handwritten log with times to the minute, a dated brief and a database entry. Not higher: the
+brief’s timeline is blacked out, and we have not read the handwritten logs of other ships in the Navy’s reading room.
+
+**Anomaly: 1.** The documents themselves call the objects drones, and three of the four around Paul Hamilton were
+“identified visually as quadcopters”; what they leave open is who flew them: “Point of origin of all UASs is unknown.”
+(incident database, PDF p. 38)
+
+**Data today: 2.** The logs, the brief and the database entry are public; the photographs and videos marked on the brief
+are not, nor are the blacked-out entries of USS Russell’s log.
+
+The overall is 1.5: class D, testimony only.
+
 ## What would settle it
 
 The handwritten logs of other ships in the Navy’s reading room, which we have not read, filed as “2019-07 SPRUANCE”,

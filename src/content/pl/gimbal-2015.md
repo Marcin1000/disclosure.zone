@@ -77,6 +77,38 @@ drugiego nagrania ze stycznia 2015 r., [GOFAST](/pl/cases/gofast-2015), to wymie
 Sprawa nie ma znaku ◆: żaden dokument, który da się otworzyć, nie mierzy obiektu na nagraniu, a zapis, który pokazuje
 tylko, że coś tam było, się nie liczy (zob. [metodologię](/pl/methodology)).
 
+## Dlaczego taka ocena
+
+**Świadkowie: 3.** Załoga jednego F/A-18, której głosy słychać na nagraniu, ale której własnych relacji nie da się
+otworzyć, i pilot tej eskadry, który zeznał pod przysięgą o nagraniu i o danych radaru, które widział na odprawie (druk
+przesłuchania, s. 38).
+
+**Radar: 2.** Graves zeznał, że „fleet of objects” (flota obiektów), o której mówią piloci, była czymś, co widział na
+odprawie „as part of the radar data on the situational awareness page” (w danych radaru na ekranie sytuacyjnym; s. 38),
+i prosił o analizę tych danych (s. 24–25). Nie da się ich otworzyć, więc radar znamy tylko z jego zeznania.
+
+**Optyka: 4.** Sam klip w podczerwieni, 34,5 sekundy z dźwiękiem, jedno z trzech nagrań, o których Marynarka
+potwierdziła we wrześniu 2019 r., że „were indeed copies of actual Navy videos” (rzeczywiście są kopiami prawdziwych
+nagrań Marynarki Wojennej; karta CHINFO, 24 lipca 2020); liczby na wyświetlaczu nie są zaczernione (nasze odczytanie
+klipu). Nie 5: pełne nagranie jest według pisemnego oświadczenia Gravesa niejawne, a danych zasobnika czujnika dla
+każdej klatki nie da się otworzyć.
+
+**Ślad fizyczny: 0.** Brak.
+
+**Wielokanałowość: 2.** Nagranie w podczerwieni i dane radaru, o których mówi Graves, to dwa czujniki, ale drugi znamy
+tylko z jego słów.
+
+**Dokumentacja: 2.** Klip, oświadczenie Departamentu Obrony o publikacji, karta Marynarki Wojennej, wiersz w indeksie
+AARO i zeznanie po ośmiu latach; żadnego raportu z lotu, ani dnia, ani miejsca.
+
+**Anomalność: 3.** Obiekt, który na nagraniu „rotates” (obraca się), i inne, widoczne tylko na radarze, według relacji
+Gravesa (s. 38); żaden dokument, który da się otworzyć, nie mierzy obrotu ani ruchu obiektów.
+
+**Dane dzisiaj: 3.** Klip jest publiczny i da się go badać klatka po klatce; pełnego nagrania, danych zasobnika ani
+danych radaru nie da się otworzyć.
+
+Ocena łączna wynosi 2,3: klasa C, istotne luki.
+
 ## Co by to rozstrzygnęło
 
 Pełne nagranie, które według Gravesa jest niejawne, z danymi zasobnika czujnika dla każdej klatki; dane radaru, które

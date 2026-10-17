@@ -129,6 +129,38 @@ szykowała się do startu; wspomnieliśmy mu o tym, a oni polecieli i na szczę�
 filmowe ze sprawą, nie podają, kiedy je nagrano ani na co była skierowana kamera. Żaden dokument, który da się
 otworzyć, nie ustala, że obiekt na FLIR1 to obiekt, który widział Fravor.
 
+## Dlaczego taka ocena
+
+**Świadkowie: 4.** Czterech lotników w dwóch samolotach, którzy widzieli obiekt razem, według zeznania Fravora pod
+przysięgą (s. 13–14), i rozmowy z załogami, które według slajdu UAP Task Force z 2020 r. „validated the event”
+(potwierdziły zdarzenie). Nie 5: da się otworzyć tylko relację Fravora.
+
+**Radar: 2.** „The Princeton tracked it. The Nimitz tracked it. The E2 tracked it.” (Princeton go śledził, Nimitz go
+śledził, E2 go śledził; s. 41), ale nie da się otworzyć żadnego zapisu radaru, a Fravor powiedział, że taśma radarowa
+„was never released” (nigdy nie została udostępniona; s. 14).
+
+**Optyka: 3.** FLIR1, nagranie w podczerwieni, które Marynarka potwierdziła jako jedną z trzech „copies of actual Navy
+videos” (kopii prawdziwych nagrań Marynarki Wojennej; karta CHINFO, 24 lipca 2020). Nie więcej: nagrano je podczas
+późniejszego lotu i żaden dokument, który da się otworzyć, nie ustala, że pokazuje obiekt ze spotkania.
+
+**Ślad fizyczny: 0.** Brak.
+
+**Wielokanałowość: 3.** Kilku lotników patrzących gołym okiem, radary dwóch okrętów i samolotu E-2 znane z zeznania i
+nagranie w podczerwieni z późniejszego lotu: kanały zgodne w relacjach, ale żaden dokument, który da się otworzyć, nie
+łączy ich ze sobą.
+
+**Dokumentacja: 3.** Slajdy UAP Task Force z dwóch briefingów, z 2020 i 2021 r., ogłoszenie Departamentu Obrony, karta
+CHINFO i zeznanie pod przysięgą z 2023 r. Nie więcej: nic napisanego w 2004 r. nie da się otworzyć, a slajd z 2020 r.
+mówi: „Reporting terminated at 3rd Fleet” (raportowanie skończyło się na 3. Flocie).
+
+**Anomalność: 3.** Obiekt, który „rapidly accelerated in front of us and disappeared” (gwałtownie przyspieszył przed
+nami i zniknął; s. 13–14). To, że był potem w punkcie CAP, „roughly 60 miles away in less than a minute” (około 60 mil
+dalej, w niecałą minutę), to umiejscowienie przez kontrolera w relacji Fravora, a nie pomiar, który da się otworzyć.
+
+**Dane dzisiaj: 2.** Taśm radarowych ani zapisu pozycji samolotów nie da się otworzyć; zostały FLIR1, slajdy i zeznanie.
+
+Ocena łączna wynosi 2,4: klasa C, istotne luki.
+
 ## Co by to rozstrzygnęło
 
 Zapisy radarowe USS Princeton i E-2C z 14 listopada 2004 r. i dwóch poprzedzających tygodni, dane radaru i zasobnika

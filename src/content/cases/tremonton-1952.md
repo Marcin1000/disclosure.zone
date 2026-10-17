@@ -5,7 +5,7 @@ date: 1952-07-02
 dateDisplay: "2 July 1952"
 country: "US"
 countryName: "United States"
-location: "Near Tremonton, Utah"
+location: "About seven miles north of Tremonton, Utah: “About 7 miles north of Tremonton, Utah on U. S. Highway No. 30S.” (Newhouse’s letter of 11 August 1952, DOW-UAP-D102, p. 113). The pin is OpenStreetMap’s point for Tremonton (relation 198977), not the place of the sighting"
 lat: 41.71
 lon: -112.17
 domain: "military"
@@ -257,9 +257,17 @@ which is why multi-channel stays at **1**.
 Optics scores **3**. There is colour film, analysed three times, but the images are too small to show
 structure and the sky holds no reference point.
 
+Radar scores **0**: the ATIC worksheet answers “No” to “WAS OBJECT OBSERVED BY GROUND RADAR?” (p. 57).
+Physical trace scores **0**: none.
+
 Documentation scores **5**. The file preserves the letter, the interview, the worksheet, both
 laboratories, the argument about release and the press line, including the parts that contradict
 each other.
+
+Anomaly scores **2**. The Air Force laboratory judged the images brighter than any bird and the objects,
+if they reflect light, “decidedly non-spherical” (p. 136), but it measured only angles: about 2.1
+degrees per second for one object (p. 137) and a group “on the order of 6 to 8 degrees of arc” across
+(p. 138). The Navy's speeds rest on a distance that its own report calls “an arbitrary one”.
 
 Data today drops from 4 to **3**. The publication of the file is already counted under documentation.
 This axis asks whether the case can be reconstructed now, and the core of the case is the film. Its

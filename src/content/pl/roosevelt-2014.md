@@ -187,6 +187,39 @@ zdarzeniem UAP jest nagranie GoFast, zarejestrowane przez lotników marynarki z 
 zagrożeń z W-72 nie wymieniają żadnego lotniskowca. Dwa nagrania Marynarki Wojennej ze stycznia 2015 r. to w tej bazie osobne sprawy,
 [GIMBAL](/pl/cases/gimbal-2015) i [GOFAST](/pl/cases/gofast-2015).
 
+## Dlaczego taka ocena
+
+**Świadkowie: 4.** Załogi trzech eskadr we własnych raportach zagrożenia, dwie załogi razem 24 kwietnia 2014 r. i pilot
+VFA-11 pod przysięgą w 2023 r. (s. 10). Nie 5: nikt z załóg nie jest wymieniony z nazwiska.
+
+**Radar: 3.** W pięciu z siedmiu raportów radar samego samolotu trzymał ślad przy prędkości od 0,0 do 0,1 Macha, na
+wysokości od 11 000 do 19 000 stóp; 23 kwietnia 2014 r. załoga użyła „multiple on-board sensors to verify that HUAD1 and
+HUAD2 were small IR significant objects and not false radar track files” (kilku sensorów pokładowych, by sprawdzić, że
+HUAD1 i HUAD2 to małe obiekty widoczne w podczerwieni, a nie fałszywe ślady radarowe; VFA-11). Nie więcej: nie da się
+otworzyć żadnych danych radaru, a radar ośrodka kontroli, w raportach, które o nim wspominają, niczego nie widział.
+
+**Optyka: 0.** Raporty opisują wykrycia w podczerwieni, ale nie da się otworzyć żadnego obrazu.
+
+**Ślad fizyczny: 0.** Brak.
+
+**Wielokanałowość: 3.** Radar, podczerwień i wzrok w tych samych raportach: 23 kwietnia 2014 r. radar i FLIR na tych
+samych obiektach, a 24 kwietnia w dwóch samolotach „a stable radar trackfile as well as a steady CATM-9X track” (stały
+ślad radarowy i stały namiar CATM-9X), choć żadna z załóg nie zobaczyła obiektu.
+
+**Dokumentacja: 4.** Siedem formalnych raportów zagrożenia z uwagami dowódców i późniejsza korespondencja Marynarki. Nie
+5: raporty zachowały się w wydrukach z 29 maja 2019 r., jeden nie podaje godziny, pozycji ani opisu zdarzenia, a inny
+ukrywa pozycję.
+
+**Anomalność: 3.** Ślady radarowe przy „0.0 Mach” (prędkości 0,0 Macha) na wysokości 15 000 i 12 000 stóp, o których
+załoga sprawdziła, że nie są fałszywe, i obiekty, które przeleciały przez pole widzenia FLIR „at a high speed” (z dużą
+prędkością; 23 kwietnia 2014). Przeciw temu: raporty podają jako przyczynę obiekty operujące „without coordination” (bez
+koordynacji), a raport z 27 kwietnia 2014 r. opisuje niebezpieczne zbliżenie z „balloon like object” (obiektem podobnym
+do balonu).
+
+**Dane dzisiaj: 2.** Raporty da się otworzyć; danych radaru ani podczerwieni z żadnego z siedmiu zdarzeń już nie.
+
+Ocena łączna wynosi 2,3: klasa C, istotne luki.
+
 ## Co by to rozstrzygnęło
 
 Dane radarowe i z podczerwieni eskadr z dni raportów, taśmy radarowe FACSFAC (27 czerwca 2013 r. ośrodek „reviewed

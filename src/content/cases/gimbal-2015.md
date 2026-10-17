@@ -101,6 +101,37 @@ reported sightings/observations.”, and AARO, which has published a resolution 
 The case does not carry the mark ◆: no document we can open measures the object on the recording, and a record that
 shows only that something was there does not count (see [the methodology](/methodology)).
 
+## Why this scores where it does
+
+**Witnesses: 3.** One F/A-18 crew, whose voices are on the recording but whose own accounts cannot be opened, and a
+pilot of the squadron who testified under oath about the recording and about the radar data he saw at the debrief
+(printed hearing, p. 38).
+
+**Radar: 2.** Graves testified that the “fleet of objects” the pilots talk about was something he witnessed at the
+debrief “as part of the radar data on the situational awareness page” (p. 38), and he asked for that data to be analysed
+(pp. 24–25). It cannot be opened, so the radar is known only from his testimony.
+
+**Optics: 4.** The infrared clip itself, 34.5 seconds with sound, one of the three videos that the Navy confirmed in
+September 2019 “were indeed copies of actual Navy videos” (CHINFO card, 24 July 2020); the figures on its display are
+not blacked out (our reading of the clip). Not 5: the full recording is classified, by Graves’s written statement, and
+the sensor pod’s data for each frame cannot be opened.
+
+**Physical trace: 0.** None.
+
+**Multi-channel: 2.** The infrared recording and the radar data Graves describes are two sensors, but the second reaches
+us only through his words.
+
+**Documentation: 2.** A clip, the Department of Defense’s release statement, a public-affairs card, a line in AARO’s
+index and testimony eight years later; no report from the flight, no day and no place.
+
+**Anomaly: 3.** An object that “rotates” on the recording and others seen only on radar, by Graves’s account (p. 38); no
+document we can open measures the rotation or the objects’ movements.
+
+**Data today: 3.** The clip is public and can be examined frame by frame; the full recording, the pod’s data and the
+radar data cannot be opened.
+
+The overall is 2.3: class C, material gaps.
+
 ## What would settle it
 
 The full recording, which Graves says is classified, with the sensor pod’s data for each frame; the radar data he saw

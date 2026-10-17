@@ -150,6 +150,38 @@ went out and luckily got the video that you see, that 90-second video.” (p. 14
 sortie. The Navy slides that set video frames beside the case do not say when the frames were recorded or what the camera
 was pointed at. No document we can open establishes that the object on FLIR1 is the object Fravor saw.
 
+## Why this scores where it does
+
+**Witnesses: 4.** Four aviators in two aircraft who saw the object together, by Fravor’s sworn testimony (pp. 13–14),
+and debriefs that, by the UAP Task Force slide of 2020, “validated the event”. Not 5: only Fravor’s account can be
+opened.
+
+**Radar: 2.** “The Princeton tracked it. The Nimitz tracked it. The E2 tracked it.” (p. 41), but no radar record can be
+opened, and Fravor said that the radar tape “was never released” (p. 14).
+
+**Optics: 3.** FLIR1, an infrared recording that the Navy confirmed as one of three “copies of actual Navy videos”
+(CHINFO card, 24 July 2020). Not higher: it was recorded on a later sortie, and no document we can open establishes that
+it shows the object of the encounter.
+
+**Physical trace: 0.** None.
+
+**Multi-channel: 3.** Several aviators by sight, the radars of two ships and of the E-2 by testimony, and an infrared
+recording from a later sortie: channels that agree in the accounts, but that no document we can open ties to one
+another.
+
+**Documentation: 3.** Slides from two UAP Task Force briefings, of 2020 and 2021, the Department of Defense’s release,
+the CHINFO card and sworn testimony of 2023. Not higher: nothing written in 2004 can be opened, and the slide of 2020
+says “Reporting terminated at 3rd Fleet”.
+
+**Anomaly: 3.** An object that “rapidly accelerated in front of us and disappeared” (pp. 13–14). That it was then at the
+CAP point, “roughly 60 miles away in less than a minute”, is the controller’s placement as Fravor relayed it, not a
+measurement that can be opened.
+
+**Data today: 2.** The radar tapes and any record of the aircraft’s positions cannot be opened; what remains is FLIR1,
+the slides and the testimony.
+
+The overall is 2.4: class C, material gaps.
+
 ## What would settle it
 
 The radar records of USS Princeton and of the E-2C for 14 November 2004 and the two weeks before it, the radar and

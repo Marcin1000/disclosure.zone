@@ -5,7 +5,7 @@ date: 2008-07-02
 dateDisplay: "2 July 2008, afternoon"
 country: "ZW"
 countryName: "Zimbabwe"
-location: "Over Harare International Airport"
+location: "Over Harare International Airport: the cable puts the object “directly over the Harare airport” (CIA-UAP-017). The pin is OpenStreetMap’s point for the airport (relation 5936565), not a measured position of the object"
 lat: -17.93
 lon: 31.09
 domain: "mixed"

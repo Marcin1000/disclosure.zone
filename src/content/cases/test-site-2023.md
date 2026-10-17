@@ -5,7 +5,7 @@ date: 2023-09-15
 dateDisplay: "September 2023"
 country: "XX"
 countryName: "Location withheld"
-location: "Test site in the United States; the documents withhold which"
+location: "A test site in the United States. Every place name in the three interviews is blacked out and no state or region survives, so the case has no pin on the map"
 lat: null
 lon: null
 domain: "mixed"

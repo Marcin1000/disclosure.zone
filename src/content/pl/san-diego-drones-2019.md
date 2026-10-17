@@ -79,6 +79,36 @@ nagrania żołnierza przy słabym świetle; wszystkie pięć „captured contemp
 media was digitally altered before being reported to AARO” (materiał przerobiono cyfrowo przed zgłoszeniem do AARO).
 Opisy nie podają okrętu ani miejsca, a z daty tylko rok 2019. Nic nie łączy tych nagrań z okrętami z tej sprawy.
 
+## Dlaczego taka ocena
+
+**Świadkowie: 4.** Wachtowi USS Rafael Peralta na mostku i przy działach, we własnym dzienniku CIC okrętu, i
+obserwatorzy USS Paul Hamilton: według bazy incydentów drony „were observed visually, with optical sighting system, and
+night vision goggles” (obserwowano wzrokowo, przez optyczny celownik i gogle noktowizyjne). Nie 5: nikt nie jest
+wymieniony z nazwiska, a wpis w bazie jest streszczeniem.
+
+**Radar: 0.** Żaden z dokumentów sprawy nie zapisuje śladu radarowego dronów.
+
+**Optyka: 1.** Jedno małe zdjęcie w odprawie USS Paul Hamilton, podpisane „(U) [UAS] by PHM” (UAS sfotografowany przez
+PHM). Nie więcej: zaznaczonych w odprawie „Video/Photos capture point(s)” (miejsc nagrań i zdjęć) nie da się otworzyć, a
+karta informacyjna biura prasowego Marynarki Wojennej z lipca 2020 r. mówi, że takie obrazy „is considered classified”
+(są niejawne).
+
+**Ślad fizyczny: 0.** Brak.
+
+**Wielokanałowość: 2.** Zapisy dwóch okrętów z różnych nocy, wszystkie wzrokowe poza jednym zdjęciem.
+
+**Dokumentacja: 3.** Odręczny dziennik z godzinami co do minuty, datowana odprawa i wpis w bazie. Nie więcej:
+chronologia w odprawie jest zaczerniona, a odręcznych dzienników innych okrętów z czytelni Marynarki nie przeczytaliśmy.
+
+**Anomalność: 1.** Same dokumenty nazywają obiekty dronami, a trzy z czterech wokół USS Paul Hamilton „identified
+visually as quadcopters” (rozpoznano wzrokowo jako kwadrokoptery); otwarte zostaje, kto nimi latał: „Point of origin of
+all UASs is unknown.” (miejsce startu wszystkich UAS jest nieznane; baza incydentów, s. 38 PDF).
+
+**Dane dzisiaj: 2.** Dzienniki, odprawa i wpis w bazie są publiczne; zdjęcia i nagrania zaznaczone w odprawie już nie,
+tak samo jak zaczernione wpisy dziennika USS Russell.
+
+Ocena łączna wynosi 1,5: klasa D, głównie relacja.
+
 ## Co by to rozstrzygnęło
 
 Odręczne dzienniki innych okrętów w czytelni Marynarki Wojennej, których nie przeczytaliśmy, złożone jako „2019-07

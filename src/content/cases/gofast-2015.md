@@ -94,6 +94,35 @@ the UAP’s exact position was not possible given a lack of precise positional d
 available”, and could not obtain the aircrew’s accounts. The other Navy video of January 2015,
 [GIMBAL](/cases/gimbal-2015), has no such resolution: AARO lists it as unresolved.
 
+## Why this scores where it does
+
+**Witnesses: 2.** One aircrew, not named: “AARO sought but was unable to obtain witness accounts from the F/A-18F
+aircrew.”
+
+**Radar: 1.** No radar record can be opened. The one distance in the case is “The range (distance) from the FLIR sensor
+to the target.” on the recording’s display, which AARO used for the altitude (case resolution, Appendix A).
+
+**Optics: 4.** The infrared recording with the figures on its display, from which AARO worked out an altitude of about
+13,000 feet; NASA’s study team found the same altitude. Not 5: “the original file and its accompanying metadata are no
+longer available”.
+
+**Physical trace: 0.** None.
+
+**Multi-channel: 2.** The image and the figures on its display come from one sensor; no second sensor and no crew
+account can be opened.
+
+**Documentation: 4.** AARO’s case resolution with a worked appendix, the analysis of NASA’s study team (p. 28) and
+AARO’s slide for a Senate subcommittee in 2024. Not 5: no report from the flight can be opened, and the aircraft’s
+position and heading are unknown.
+
+**Anomaly: 1.** AARO assessed “with high confidence that the object did not move at anomalous speeds” and puts the
+impression of speed down to motion parallax; what remains is that it “cannot definitively identify the object”.
+
+**Data today: 4.** Anyone can recompute the altitude from the public clip, as AARO and NASA’s study team did; the speed
+stays a range, because “The aircraft’s exact location and heading (compass direction) during the recording are unknown.”
+
+The overall is 2.2: class C, material gaps.
+
 ## What would settle it
 
 The aircraft’s position and heading during the recording, the original file with its metadata, and the crew’s own
