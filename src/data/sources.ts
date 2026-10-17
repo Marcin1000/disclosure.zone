@@ -248,6 +248,30 @@ export const SOURCE_URL: Record<string, string> = {
   // 17 X 2026: wymienia korespondencję, dzienniki, rękopisy, wycinki, zdjęcia, przezrocza i DVD, a nagrań sesji nie;
   // rekord zbioru w systemie archiwum (archives.unh.edu) zwracał tego dnia 403. Wskazanie archiwum, nie dokument
   'unh-hill-collection':  'https://library.unh.edu/find/archives/collections/using-materials/using-betty-barney-hill-collection',
+  // Arnold 1947: jednostka Blue Book NAID 28929152 „Mt. Rainer, Washington, June 1947” (61 obrazów; obraz N to plik
+  // 0539+N.jpg). Karta 1 (formularz FTD z IX 1963), analiza Hynka 5, 6, 2 i jego notka 10, strona AMC z Project Grudge 4,
+  // indeks ocen Hynka 8 (kopia 7), Grudge: pozostałe niewyjaśnione 12, podsumowanie 13 (drugi przepis 9 i 3), dalekopis AMC
+  // z 10 VII 1947 16, telegram Arnolda z 12 VII 1947 17, formularz incydentu 17 18–19 (kalka w DOW-UAP-D087, s. 45–46),
+  // notatka CIC z 16 VII 1947 31, relacja Arnolda z rysunkiem 35–41 (numeracja ręczna 86–92), szpalty książki 44 i 47–50,
+  // wycinki 53–61 („Dayton Daily News” 57, AP z 27 VI 61). Indeks Blue Book NAID 28921348, obraz 12 (plik 0019.jpg).
+  // Kopia relacji z nazwiskiem: teczka FBI 62-HQ-83894, Section 2, s. 164–167. Każdy adres otwarty w przeglądarce
+  // 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-arnold-card':  'https://catalog.archives.gov/id/28929152?objectPage=1',
+  'nara-bb-arnold-grudge': 'https://catalog.archives.gov/id/28929152?objectPage=4',
+  'nara-bb-arnold-hynek': 'https://catalog.archives.gov/id/28929152?objectPage=5',
+  'nara-bb-grudge-hynek-index': 'https://catalog.archives.gov/id/28929152?objectPage=8',
+  'nara-bb-arnold-hynek-note': 'https://catalog.archives.gov/id/28929152?objectPage=10',
+  'nara-bb-arnold-grudge-list': 'https://catalog.archives.gov/id/28929152?objectPage=12',
+  'nara-bb-arnold-summary': 'https://catalog.archives.gov/id/28929152?objectPage=13',
+  'nara-bb-arnold-amc':   'https://catalog.archives.gov/id/28929152?objectPage=16',
+  'nara-bb-arnold-telegram': 'https://catalog.archives.gov/id/28929152?objectPage=17',
+  'nara-bb-arnold-checklist': 'https://catalog.archives.gov/id/28929152?objectPage=18',
+  'nara-bb-arnold-cic':   'https://catalog.archives.gov/id/28929152?objectPage=31',
+  'nara-bb-arnold-statement': 'https://catalog.archives.gov/id/28929152?objectPage=35',
+  'nara-bb-arnold-galleys': 'https://catalog.archives.gov/id/28929152?objectPage=47',
+  'nara-bb-arnold-dayton': 'https://catalog.archives.gov/id/28929152?objectPage=57',
+  'nara-bb-arnold-ap':    'https://catalog.archives.gov/id/28929152?objectPage=61',
+  'nara-bb-index-1947-06': 'https://catalog.archives.gov/id/28921348?objectPage=12',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).

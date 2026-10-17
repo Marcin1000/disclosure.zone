@@ -180,7 +180,9 @@ const CASE_LINKS = {
   // oświadczenie z 7 VIII, zeznanie Smitha, list z Seattle, notatki z Butte i Chicago (S3); list Palmera
   // do Arnolda z 22 VII i przesłuchanie Arnolda (S3) cytuje też arnold-1947; wycinek z 1950 (SUB_A);
   // druga kopia listu Markhama w streszczeniach incydentów RG 38
-  '65-hs1-834228961-62-hq-83894-section-2@01': ['maury-island-1947', 'ghost-rockets-1946'],
+  // Arnold 1947: raport Fourth Air Force z 18 VII 1947 z notatką CIC z 16 VII i relacją Arnolda z nazwiskiem
+  // („BY KENNETH ARNOLD”), przekazany przez SAC San Francisco 28 VII 1947 (s. 159–167)
+  '65-hs1-834228961-62-hq-83894-section-2@01': ['maury-island-1947', 'ghost-rockets-1946', 'arnold-1947'],
   '65-hs1-834228961-62-hq-83894-section-3@01': ['maury-island-1947', 'arnold-1947'],
   '65-hs1-834228961-62-hq-83894-sub-a@01': ['maury-island-1947'],
   '38-143685-box-incident-summaries-101-172@01': ['maury-island-1947'],
