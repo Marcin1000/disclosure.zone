@@ -195,6 +195,34 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-index-1957-11': 'https://catalog.archives.gov/id/28921348?objectPage=176',
   'nara-bb-kearney-aiss': 'https://catalog.archives.gov/id/28972949?objectPage=11',
   'nara-bb-levelland-lascruces': 'https://catalog.archives.gov/id/28973206?objectPage=2',
+  // Exeter 1965: jednostka Blue Book NAID 302543878 „Exeter, New Hampshire, September 1965” (131 obrazów; obraz N
+  // to plik 1199+N.jp2, katalog nie ma dla niej OCR). Karta 1, pismo do bazy Pease z 19 X 1965 2, pytanie do 8th Air
+  // Force 4, odpowiedź 8th Air Force z 24 XI 1965 6, list Quintanilli bez daty 7, listy policjantów z 2 XII 1965 9 i 8
+  // oraz z 28 XII 1965 11, memo do SAFOICC z 11 I 1966 13 i 12, pismo Office of Information z 9 II 1966 16, pismo do RADC
+  // z 3 III 1966 18 i 17, dalekopis z Pease z 11 II 1966 20, notatka Moody’ego 21, memo z 9 III 1966 24, podsumowanie
+  // 25–26, NICAP 55 (arkusz przewodni 56), wycinek z Manchester Union Leader 80, oświadczenia 97–99, raport z Pease
+  // z 15 IX 1965 103, 102, 101, 100 (strony w odwrotnej kolejności). Indeks Blue Book NAID 28921348, obraz 353 (plik
+  // 0360.jpg). Każdy adres otwarty w przeglądarce 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-exeter-card':  'https://catalog.archives.gov/id/302543878?objectPage=1',
+  'nara-bb-exeter-pease-letter': 'https://catalog.archives.gov/id/302543878?objectPage=2',
+  'nara-bb-exeter-8af':   'https://catalog.archives.gov/id/302543878?objectPage=6',
+  'nara-bb-exeter-quintanilla': 'https://catalog.archives.gov/id/302543878?objectPage=7',
+  'nara-bb-exeter-police-dec2': 'https://catalog.archives.gov/id/302543878?objectPage=9',
+  'nara-bb-exeter-police-dec28': 'https://catalog.archives.gov/id/302543878?objectPage=11',
+  'nara-bb-exeter-safoi-memo': 'https://catalog.archives.gov/id/302543878?objectPage=13',
+  'nara-bb-exeter-safoi-letter': 'https://catalog.archives.gov/id/302543878?objectPage=16',
+  'nara-bb-exeter-radc':  'https://catalog.archives.gov/id/302543878?objectPage=18',
+  'nara-bb-exeter-twx':   'https://catalog.archives.gov/id/302543878?objectPage=20',
+  'nara-bb-exeter-refueling': 'https://catalog.archives.gov/id/302543878?objectPage=21',
+  'nara-bb-exeter-griffin': 'https://catalog.archives.gov/id/302543878?objectPage=24',
+  'nara-bb-exeter-summary': 'https://catalog.archives.gov/id/302543878?objectPage=25',
+  'nara-bb-exeter-nicap': 'https://catalog.archives.gov/id/302543878?objectPage=55',
+  'nara-bb-exeter-union': 'https://catalog.archives.gov/id/302543878?objectPage=80',
+  'nara-bb-exeter-statement': 'https://catalog.archives.gov/id/302543878?objectPage=97',
+  'nara-bb-exeter-hunt':  'https://catalog.archives.gov/id/302543878?objectPage=98',
+  'nara-bb-exeter-bertrand': 'https://catalog.archives.gov/id/302543878?objectPage=99',
+  'nara-bb-exeter-report': 'https://catalog.archives.gov/id/302543878?objectPage=103',
+  'nara-bb-index-1965-09': 'https://catalog.archives.gov/id/28921348?objectPage=353',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
