@@ -7,7 +7,31 @@ interface Props {
 }
 const { href, title, summary, dateDisplay, countryName, status, tier, scores, lang } = Astro.props;
 const st = STATUS[status];
-const short = summary.length > 190 ? summary.slice(0, 188).trimEnd() + '…' : summary;
+/**
+ * Skrót streszczenia na kartę. Tnie na granicy słowa, a jeśli cięcie wypada
+ * w środku cytatu, cofa się przed cudzysłów otwierający; gdy cytat zaczyna się
+ * za wcześnie, by się cofnąć, domyka go po wielokropku. Inaczej karta zostawiałaby
+ * otwarty cudzysłów, a cytat wyglądałby na pełne słowa dokumentu.
+ */
+function clip(s: string, max = 190): string {
+  if (s.length <= max) return s;
+  const tidy = (t: string) => t.replace(/[\s,;:–(]+$/, '');
+  let cut = s.lastIndexOf(' ', max - 2);
+  if (cut < max * 0.6) cut = max - 2;
+  let out = tidy(s.slice(0, cut));
+  let depth = 0, open = -1;
+  for (let i = 0; i < out.length; i++) {
+    const ch = out[i];
+    if (ch === '“' || ch === '„') { if (depth === 0) open = i; depth++; }
+    else if (ch === '”' && depth > 0) depth--;
+  }
+  if (depth > 0) {
+    if (open >= 80) out = tidy(out.slice(0, open));
+    else return out + '…”';
+  }
+  return out + '…';
+}
+const short = clip(summary);
 ---
 <a class:list={['case', st.cls]} href={href}>
   <div class="case__meta">
