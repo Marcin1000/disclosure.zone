@@ -12,7 +12,10 @@ const st = STATUS[status];
  * w środku cytatu, cofa się przed cudzysłów otwierający; gdy cytat zaczyna się
  * za wcześnie, by się cofnąć, domyka go po wielokropku. Inaczej karta zostawiałaby
  * otwarty cudzysłów, a cytat wyglądałby na pełne słowa dokumentu.
+ * Gdy cięcie wypada na końcu zdania, karta kończy się kropką, bez wielokropka;
+ * kropka po skrócie stopnia albo tytułu nie kończy zdania, więc skrót odpada.
  */
+const ABBR = /(?:^|\s)(?:Lt|Capt|Col|Maj|Gen|Sgt|Cpl|Pvt|Cdr|Adm|Dr|Mr|Mrs|Ms|St|No|Nos|pp?|vol|Jr|Sr|kpt|por|ppor|gen|sierż|św|np|tzw|ok|s|ul|im)\.$/i;
 function clip(s: string, max = 190): string {
   if (s.length <= max) return s;
   const tidy = (t: string) => t.replace(/[\s,;:–(]+$/, '');
@@ -29,6 +32,8 @@ function clip(s: string, max = 190): string {
     if (open >= 80) out = tidy(out.slice(0, open));
     else return out + '…”';
   }
+  if (ABBR.test(out)) out = tidy(out.replace(/\S+$/, ''));
+  else if (/[.!?][”’)]*$/.test(out)) return out;
   return out + '…';
 }
 const short = clip(summary);
