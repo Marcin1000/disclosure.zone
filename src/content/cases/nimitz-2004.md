@@ -9,7 +9,7 @@ location: "Pacific Ocean. The UAP Task Force slide on the case puts it “30 Nau
 lat: 32.3
 lon: -117.7
 domain: "military"
-tier: 1
+tier: 2
 status: "unresolved"
 duration: "No document we can open says how long the aviators saw the object. By Fravor’s testimony the ship’s controller said these objects had been observed “for over 2 weeks” and, after the encounter, put the object at the aviators’ CAP point “in less than a minute”. The FLIR1 recording in the Navy’s reading room runs 1 minute 16 seconds (our measurement); Fravor calls it “that 90-second video”"
 witnesses: "Cdr. David Fravor, commanding officer of VFA-41, and the three other aviators of the two F/A-18Fs, by Fravor’s sworn account; the air controller aboard USS Princeton, known only through Fravor; the crew who recorded FLIR1 on a later sortie. Of them only Fravor has testified under oath. The UAP Task Force slide lists the units of the Nimitz strike group: USS Princeton, VAW-117 (E-2C Hawkeye), VMFA-232, VFA-41 and USS Louisville"
@@ -139,6 +139,9 @@ after we landed experienced significant jamming to the APG–73 radar” (p. 21)
 **“The object entered the ocean.”** Asked whether he had witnessed “an additional object under the water”, Fravor
 answered: “I will say we did not see an object. There was something there to cause the whitewater and when we turned
 around it was gone. So, there was something there that obviously moved.” (p. 21)
+
+The case does not carry the mark ◆: the radar tracks are known only from testimony, and FLIR1 comes from another flight,
+with no measurement of the object on it in any document we can open (see [the methodology](/methodology)).
 
 ## FLIR1 and the encounter are two flights
 

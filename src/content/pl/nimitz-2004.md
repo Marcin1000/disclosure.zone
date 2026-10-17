@@ -117,6 +117,9 @@ and when we turned around it was gone. So, there was something there that obviou
 widzieliśmy obiektu; było tam coś, co spieniło wodę, a kiedy zawróciliśmy, zniknęło; było tam więc coś, co najwyraźniej
 się poruszało; s. 21).
 
+Sprawa nie ma znaku ◆: ślady radarowe znamy tylko z zeznań, a FLIR1 pochodzi z innego lotu i żaden dokument, który da się
+otworzyć, nie mierzy na nim obiektu (zob. [metodologię](/pl/methodology)).
+
 ## FLIR1 i spotkanie to dwa różne loty
 
 Po lądowaniu „We were talking to one of my crews, who was getting ready to launch. We mentioned it to him, and they

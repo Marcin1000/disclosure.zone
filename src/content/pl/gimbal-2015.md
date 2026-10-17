@@ -74,6 +74,9 @@ any reported sightings/observations.” (ani Marynarka Wojenna, ani Departament 
 opisów, hipotez ani wniosków o jakichkolwiek zgłoszonych obserwacjach), a AARO, które opublikowało rozstrzygnięcie
 drugiego nagrania ze stycznia 2015 r., [GOFAST](/pl/cases/gofast-2015), to wymienia jako nierozwiązane.
 
+Sprawa nie ma znaku ◆: żaden dokument, który da się otworzyć, nie mierzy obiektu na nagraniu, a zapis, który pokazuje
+tylko, że coś tam było, się nie liczy (zob. [metodologię](/pl/methodology)).
+
 ## Co by to rozstrzygnęło
 
 Pełne nagranie, które według Gravesa jest niejawne, z danymi zasobnika czujnika dla każdej klatki; dane radaru, które

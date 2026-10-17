@@ -9,7 +9,7 @@ location: "In the bush north of the Trans-Canada Highway at Falcon Beach, Manito
 lat: 49.68
 lon: -95.25
 domain: "civil"
-tier: 2
+tier: 1
 status: "unresolved"
 duration: "“approximately one half hour”, in the report Training Command sent to CFHQ; “A good 45 minutes” in his interview of 24 May"
 witnesses: "One: Stefan Michalak, an industrial mechanic from Winnipeg who was prospecting in the area. The files name no other witness of the objects. An RCMP constable, his doctors, RCMP investigators, the RCAF and a radiation officer of the federal Department of Health and Welfare later examined him, his clothing and the site"
@@ -299,8 +299,13 @@ loss of weight”, “a fluctuation in his blood cell count”, “the burns to 
 as well as the circle on the rock where he alleges the UFO landed”; “Our investigation has not been able
 to resolve any of these points mentioned” (10 August, p. 8). Bissky wrote that “the abdominal burns
 sustained by Mr. Michalak remain unexplainable as to the source of the burn” (p. 3). Hunt left the origin
-of the contamination “yet to be determined”. Millman, in 1969, thought it “highly probable” that crushed
-uranium ore produced all of it; no document in the files says where such ore came from.
+of the contamination “yet to be determined”, and of the sighting itself he wrote: “The undersigned does not
+intend to prove one way or the other whether a U.F.O. had been sighted as there are still too many
+unknowns.” (p. 5) Millman, in 1969, thought it “highly probable” that crushed uranium ore produced all of
+it; no document in the files says where such ore came from.
+
+The mark ◆ rests on the burns that doctors examined and on the contamination that Hunt measured at the site
+himself, not on the samples brought back from the site in June or on the pieces of silver.
 
 The site the RCMP was shown on 28 July had “a semi-cirle on the rock face measuring approximately 15 ft.
 in diameter where the moss had been somehow removed”; the officers found “no indication that the moss had

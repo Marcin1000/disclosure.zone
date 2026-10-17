@@ -320,9 +320,15 @@ według niego wylądowało UFO); „Our investigation has not been able to resol
 mentioned” (dochodzenie nie zdołało rozstrzygnąć żadnej z tych kwestii; 10 sierpnia, s. 8). Bissky
 napisał, że „the abdominal burns sustained by Mr. Michalak remain unexplainable as to the source of the
 burn” (źródła oparzeń brzucha Michalaka nie da się wyjaśnić; s. 3). Hunt uznał pochodzenie skażenia za
-„yet to be determined” (jeszcze nieustalone). Millman w 1969 r. uznał za „highly probable” (wysoce
+„yet to be determined” (jeszcze nieustalone), a o samej obserwacji napisał: „The undersigned does not
+intend to prove one way or the other whether a U.F.O. had been sighted as there are still too many
+unknowns.” (niżej podpisany nie zamierza dowodzić ani tego, że UFO widziano, ani tego, że nie, bo
+niewiadomych jest wciąż zbyt wiele; s. 5). Millman w 1969 r. uznał za „highly probable” (wysoce
 prawdopodobne), że całe skażenie dała pokruszona ruda uranu; żaden dokument w aktach nie mówi, skąd
 taka ruda się tam wzięła.
+
+Znak ◆ opiera się na oparzeniach, które zbadali lekarze, i na pomiarze skażenia, który Hunt sam wykonał na
+miejscu, a nie na próbkach przyniesionych z miejsca w czerwcu ani na kawałkach srebra.
 
 Miejsce, które pokazano RCMP 28 lipca, miało „a semi-cirle on the rock face measuring approximately 15
 ft. in diameter where the moss had been somehow removed” (półokrąg na powierzchni skały o średnicy około

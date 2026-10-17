@@ -9,7 +9,7 @@ location: "Not known. No document we can open gives a place. The Navy’s public
 lat: null
 lon: null
 domain: "military"
-tier: 1
+tier: 2
 status: "unresolved"
 duration: "34.5 seconds of footage in the released file (our measurement)"
 witnesses: "The crew of a US Navy F/A-18, by AARO’s description of the recording; their voices are on it. Ryan Graves, a pilot of the squadron that recorded it by his own written statement, who saw the recording and the radar data at the debrief and testified about them under oath in 2023"
@@ -97,6 +97,9 @@ can open measures the rotation or explains it. The Navy’s card of July 2020 sa
 publicly released characterizations or descriptions, nor released any hypothesis or conclusions in reference to any
 reported sightings/observations.”, and AARO, which has published a resolution of the other video of January 2015,
 [GOFAST](/cases/gofast-2015), lists this one as unresolved.
+
+The case does not carry the mark ◆: no document we can open measures the object on the recording, and a record that
+shows only that something was there does not count (see [the methodology](/methodology)).
 
 ## What would settle it
 
