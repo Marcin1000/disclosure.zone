@@ -196,9 +196,11 @@ const CASE_LINKS = {
   // i Keaya do Belmonta (s. 196–199)
   '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944', 'washington-1952', 'lubbock-lights-1951'],
   '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
-  // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
+  // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263);
+  // Levelland 1957: notatka Roacha do Belmonta z 12 XI 1957 (Section 9, s. 6) o silnikach gasnących w stanach
+  // południowo-zachodnich. Nie wymienia żadnej miejscowości; ze sprawą łączą ją temat i data (nasze odczytanie)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],
-  '65-hs1-834228961-62-hq-83894-section-9@01': ['socorro-1964'],
+  '65-hs1-834228961-62-hq-83894-section-9@01': ['socorro-1964', 'levelland-1957'],
   // Kelly–Hopkinsville 1955: wycinek z „S. F. Sunday Examiner & Chronicle” z 16 X 1966 (s. 29) opowiada tę historię
   // wśród obserwacji z 1966 r.; Socorro 1964: list Hoovera do J. A. Hennesseya z 26 I 1965 z notatką Biura (s. 37–38)
   '65-hs1-834228961-62-hq-83894-section-10@01': ['kelly-hopkinsville-1955', 'socorro-1964'],

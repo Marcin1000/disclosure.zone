@@ -165,6 +165,36 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-lubbock-ops':  'https://catalog.archives.gov/id/28939743?objectPage=111',
   'nara-bb-lubbock-negatives': 'https://catalog.archives.gov/id/28939743?objectPage=115',
   'nara-bb-index-1951-08': 'https://catalog.archives.gov/id/28921348?objectPage=42',
+  // Levelland 1957: jednostka Blue Book NAID 28972840 „Vicinity Levelland, Texas, November 1957” (81 obrazów; obraz N
+  // to plik 00960+N.jpg). Karta 1, podsumowanie 2, depesza 686th ACWRON 7–9, oświadczenie szeryfa przez telefon 10–13,
+  // wstępny raport 1006th AISS 14 i 19, depesza w formacie CONAD 15–17, strony 2–3 depeszy 03/2220Z 20–21 (strony 1
+  // w jednostce nie ma), prośba o ocenę Air Science Division (tylko s. 2) i analiza Gregory’ego 22–23, komentarz
+  // z 5 XII 1957 24–25, notatka Bartha 26, wycinki prasowe 27, depesza ATIC z 8 XI 32–34, podsumowanie 35–36, karta
+  // według Keyhoe’a 38, czasopismo 45, depesza ATIC z 10 XI 57 (kopia 58), raport AISS-UFOB-386-57 60–78. Obraz 18 to
+  // s. 2 depeszy 1006th AISS o ciężarówce z Kearney (raport AISS-UFOB-388-57 w NAID 28972949, obraz 11, plik 01078.jpg).
+  // Notatka o „Mass Suggestion” na depeszy z Las Cruces: NAID 28973206 „Texas New Mexico Area, November 1957”, obraz 2
+  // (plik 01292.jpg). Indeks Blue Book NAID 28921348, obraz 176 (plik 0183.jpg).
+  // Każdy adres otwarty w przeglądarce 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-levelland-card': 'https://catalog.archives.gov/id/28972840?objectPage=1',
+  'nara-bb-levelland-summary': 'https://catalog.archives.gov/id/28972840?objectPage=2',
+  'nara-bb-levelland-686': 'https://catalog.archives.gov/id/28972840?objectPage=7',
+  'nara-bb-levelland-sheriff': 'https://catalog.archives.gov/id/28972840?objectPage=10',
+  'nara-bb-levelland-aiss-prelim': 'https://catalog.archives.gov/id/28972840?objectPage=14',
+  'nara-bb-levelland-conad': 'https://catalog.archives.gov/id/28972840?objectPage=15',
+  'nara-bb-levelland-reese': 'https://catalog.archives.gov/id/28972840?objectPage=20',
+  'nara-bb-levelland-gregory': 'https://catalog.archives.gov/id/28972840?objectPage=22',
+  'nara-bb-levelland-asd': 'https://catalog.archives.gov/id/28972840?objectPage=24',
+  'nara-bb-levelland-barth': 'https://catalog.archives.gov/id/28972840?objectPage=26',
+  'nara-bb-levelland-press': 'https://catalog.archives.gov/id/28972840?objectPage=27',
+  'nara-bb-levelland-atic-1108': 'https://catalog.archives.gov/id/28972840?objectPage=32',
+  'nara-bb-levelland-findings': 'https://catalog.archives.gov/id/28972840?objectPage=35',
+  'nara-bb-levelland-keyhoe': 'https://catalog.archives.gov/id/28972840?objectPage=38',
+  'nara-bb-levelland-magazine': 'https://catalog.archives.gov/id/28972840?objectPage=45',
+  'nara-bb-levelland-atic-1110': 'https://catalog.archives.gov/id/28972840?objectPage=57',
+  'nara-bb-levelland-aiss': 'https://catalog.archives.gov/id/28972840?objectPage=60',
+  'nara-bb-index-1957-11': 'https://catalog.archives.gov/id/28921348?objectPage=176',
+  'nara-bb-kearney-aiss': 'https://catalog.archives.gov/id/28972949?objectPage=11',
+  'nara-bb-levelland-lascruces': 'https://catalog.archives.gov/id/28973206?objectPage=2',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
