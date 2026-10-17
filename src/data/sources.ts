@@ -117,6 +117,29 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-socorro-moody': 'https://catalog.archives.gov/id/302532129?objectPage=62',
   'nara-bb-socorro-hynek-1964': 'https://catalog.archives.gov/id/302532129?objectPage=65',
   'nara-bb-socorro-soil': 'https://catalog.archives.gov/id/302532129?objectPage=73',
+  // Waszyngton 1952: Blue Book nie ma jednostki o tej nazwie. Papiery leżą w jednostce NAID 28945857, którą katalog
+  // tytułuje „SAN FRANCISCO CALIF, [ILLEGIBLE] 1952” (rolka 12, 320 obrazów, bez transkrypcji; obraz N to plik
+  // 1074+N.jpg do N=44, dalej 1114+N.jpg, bo klatek 1119–1158 brakuje). Wiadomość HQ USAF 47, wiadomość z Andrews 48,
+  // Libbert 51 i 61–62, ściąga z 1960 r. 63, oświadczenia z Andrews 66–74, odpowiedzi z 1961 r. 77–78 i 87, raport
+  // CAA 83–85, raport 52-1 150 i 152 (151 to kopia raportu z Andrews, 98 inny maszynopis części II), raport z Andrews
+  // z 20 VII 118, podsumowanie FTD 120, raport Fourneta i Holcomba 127–130, raport Tenth Air Force o Piermanie 137–138,
+  // raport z Andrews z 26 VII 198, dziennik ARTC 261–263. Artykuł Barnesa w jednostce NAID 28946178 „[BLANK], [BLANK]”
+  // (obrazy 21–22, plik 0003+N.jpg); indeks Blue Book NAID 28921348 (obrazy 63, 66–67, plik 0007+N.jpg); protokół
+  // konferencji z 29 VII 1952 w aktach administracyjnych, NAID 461459117 „Press Conference - Gen. Sanford 1952”.
+  // Każdy adres otwarty w przeglądarce 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-washington-hq-msg': 'https://catalog.archives.gov/id/28945857?objectPage=47',
+  'nara-bb-washington-libbert': 'https://catalog.archives.gov/id/28945857?objectPage=51',
+  'nara-bb-washington-caa': 'https://catalog.archives.gov/id/28945857?objectPage=83',
+  'nara-bb-washington-andrews-0720': 'https://catalog.archives.gov/id/28945857?objectPage=118',
+  'nara-bb-washington-ftd-summary': 'https://catalog.archives.gov/id/28945857?objectPage=120',
+  'nara-bb-washington-fournet': 'https://catalog.archives.gov/id/28945857?objectPage=127',
+  'nara-bb-washington-pierman': 'https://catalog.archives.gov/id/28945857?objectPage=137',
+  'nara-bb-washington-52-1': 'https://catalog.archives.gov/id/28945857?objectPage=150',
+  'nara-bb-washington-andrews-0726': 'https://catalog.archives.gov/id/28945857?objectPage=198',
+  'nara-bb-washington-artc-log': 'https://catalog.archives.gov/id/28945857?objectPage=261',
+  'nara-bb-washington-barnes': 'https://catalog.archives.gov/id/28946178?objectPage=22',
+  'nara-bb-index-1952-07': 'https://catalog.archives.gov/id/28921348?objectPage=66',
+  'nara-bb-samford-minutes': 'https://catalog.archives.gov/id/461459117?objectPage=2',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
@@ -142,7 +165,6 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-faa-jal-klass-letter': 'https://catalog.archives.gov/id/40586911?objectPage=25',
   'nara-faa-jal-ap-jupiter': 'https://catalog.archives.gov/id/40587582?objectPage=8',
   'nara-faa-jal-upi-caption': 'https://catalog.archives.gov/id/40587537?objectPage=29',
-  'nara-washington-1952': 'https://prologue.blogs.archives.gov/2019/12/19/saucers-over-washington-the-history-of-project-blue-book/',
 
   'aaro':                 'https://www.aaro.mil/',
   'aaro-records':         'https://www.aaro.mil/UAP-Records/',
@@ -480,9 +502,8 @@ export const SOURCE_URL: Record<string, string> = {
   'condon-case05':        'https://files.ncas.org/condon/text/case05.htm',
   'condon-case49':        'https://files.ncas.org/condon/text/case49.htm',
   'condon-photo':         'https://files.ncas.org/condon/text/s3chap02.htm',
-  'condon-radar':         'https://files.ncas.org/condon/text/s6chap05.htm',
   // Thayer, „Optical and Radar Analyses of Field Cases” (Section III, rozdz. 5): Lakenheath jako Case 2,
-  // RB-47 jako Case 5 z datą 19 IX 1957
+  // RB-47 jako Case 5 z datą 19 IX 1957, Waszyngton 19–20 i 26–27 VII 1952 (trzy wnioski); otwarty 17 X 2026
   'condon-optical-radar': 'https://files.ncas.org/condon/text/s3chap05.htm',
 
   // ——— Roswell: oficjalne raporty USAF i GAO
@@ -504,6 +525,11 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-fbi-62-83894-s2': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_2.pdf',
   'pursue-fbi-62-83894-s3': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_3.pdf',
   'pursue-fbi-62-83894-sub-a': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_sub_a.pdf',
+  // Departament Stanu, RG 59, teczka 711.5612/7-2852 (wydanie 01): notatka „Flying Saucers” z 28 VII 1952 r. o tym,
+  // co powiedział gen. Samford, z karteczką do pana Armstronga. Adres z %5B zamiast nawiasu kwadratowego z nazwy
+  // pliku; otwarty na żywo 17 X 2026 (200, 898 369 B) i bajt w bajt zgodny z paczką. Notatka nie wymienia
+  // Waszyngtonu ani dat obserwacji
+  'pursue-dos-711-5612-7-2852': 'https://www.war.gov/medialink/ufo/release_1/59_64634_711.5612%5B7-2852.pdf',
   'roswell-af':           'https://www.af.mil/The-Roswell-Report/',
   'gao-roswell-1995':     'https://www.govinfo.gov/content/pkg/GAOREPORTS-NSIAD-95-187/pdf/GAOREPORTS-NSIAD-95-187.pdf',
   'nara-roswell-vol1':    'https://archive.org/details/gov.archives.341-roswell-1',

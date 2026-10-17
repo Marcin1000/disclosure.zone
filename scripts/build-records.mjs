@@ -104,7 +104,8 @@ const CASE_LINKS = {
   'CIA-UAP-006': ['russell-1955'],
   // Teczka CIA o panelu naukowym (Robertson), styczeń 1953: panel ocenia film z
   // Tremonton, wymienia raport o zielonych kulach wśród dowodów i omawia „Foo Fighters”.
-  // Waszyngton i Lubbock są tam tylko wymienione, więc ich nie podpinamy.
+  // Waszyngton i Lubbock są tam tylko wymienione, więc ich nie podpinamy. washington-1952
+  // cytuje teczkę (s. PDF 5, 10, 17, 19), więc rekord pokazuje ją w „Wspomniany w”
   'CIA-UAP-002': ['tremonton-1952', 'green-fireballs-1948', 'foo-fighters-1944'],
   // Foo fighters 1944–45: teczka SHAEF 37153 z wyciągami raportów 415th Night Fighter Squadron
   // i pismami SHAEF i Air Ministry; ten sam akapit Duranta o „Foo Fighters” w jawnej wersji
@@ -185,8 +186,9 @@ const CASE_LINKS = {
   // Oak Ridge 1947–1951: zdjęcia Presleya (Section 4, Serial 153), radar Adcocka z marca 1950 (Section 5),
   // radar lotnictwa, „radar jamming” i obserwacja z 18 XII 1950 (Section 6)
   '65-hs1-834228961-62-hq-83894-section-5@01': ['oak-ridge-1950', 'ghost-rockets-1946'],
-  // artykuł Menzla z „Look” z 17 VI 1952 (s. 256–261) jedno pytanie o „Foo Fighters” stawia na s. 260
-  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944'],
+  // artykuł Menzla z „Look” z 17 VI 1952 (s. 256–261) jedno pytanie o „Foo Fighters” stawia na s. 260;
+  // Waszyngton 1952: notatki z 29 VII 1952 biura terenowego w Waszyngtonie (s. 190) i Keaya do Belmonta (s. 196–199)
+  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944', 'washington-1952'],
   '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],
@@ -200,6 +202,9 @@ const CASE_LINKS = {
   'fbi-september-2023-sighting-serial-5@01': ['test-site-2023'],
   'fbi-september-2023-sighting-composite-sketch@01': ['test-site-2023'],
   'sandia-base-correspondence-new-mexico-aerial-phenomena-and-green-fireballs-1948': ['green-fireballs-1948'],
+  // Departament Stanu, 711.5612/7-2852: notatka z 28 VII 1952 o tym, co gen. Samford powiedział o latających
+  // spodkach. Nie wymienia Waszyngtonu ani dat obserwacji; z falą nad Waszyngtonem łączy ją tylko jej data
+  '59-64634-711-5612-7-2852@01': ['washington-1952'],
   // Conde w Bahii, listopad 1963: zapis FBIS audycji Radia Tupi z dopiskami z 13 XI, telegram ambasady
   // w Rio z 14 XI i jej airgram A-628 z 20 XI z odpowiedzią konsula w Salwadorze
   'EOP-UAP-D001': ['conde-1963'],
