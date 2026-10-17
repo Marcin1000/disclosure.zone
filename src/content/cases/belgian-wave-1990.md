@@ -14,8 +14,6 @@ status: "unresolved"
 witnesses: "None named. The summary says only that objects ‘were reported’; the pilots of the two F-16s ‘reported no sightings’"
 evidence:
 - "visual"
-- "radar"
-- "intercept"
 scores:
   S: 1
   R: 1

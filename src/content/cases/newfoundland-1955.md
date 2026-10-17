@@ -15,7 +15,6 @@ duration: "not stated"
 witnesses: "The crew of a USAF KC-97 tanker, not named or counted; the evaluation speaks of “aircrew members”"
 evidence:
 - "visual"
-- "radar"
 scores:
   S: 2
   R: 2
