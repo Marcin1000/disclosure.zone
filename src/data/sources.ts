@@ -99,6 +99,24 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-rb47-hrd':     'https://catalog.archives.gov/id/28970538?objectPage=39',
   'nara-bb-rb47-wing':    'https://catalog.archives.gov/id/28970538?objectPage=41',
   'nara-bb-rb47-chase':   'https://catalog.archives.gov/id/28970538?objectPage=45',
+  // Socorro 1964: jednostka Blue Book NAID 302532129 „Socorro, New Mexico, April 1964” (168 obrazów; obrazy 1–3 to
+  // pliki 0414–0416, od obrazu 4 obraz N to plik 0725+N.jp2). Obraz 1 to karta innej obserwacji (światło w nocy
+  // 25 IV 1964, „Other Ground light”); karta tej sprawy to obraz 4. Pismo FTD z 13 V 8–10, pismo FTD z 28 V 13–16,
+  // odpowiedź Cloud Gap 28, Hynek do Menzla i Boyd z 29 IV 1965 33–38, raport Hynka z podróży w III 1965 39–48,
+  // spis zakładek 49, zakładka A (mapki, rysunki Zamory, plany śladów) 50–58, relacja Zamory 59–61, Moody 62–64,
+  // raport Hynka z IV 1964 65–72, analiza gleby ASD 73–75, spis załączników D i E 76.
+  // Każdy adres otwarty w przeglądarce 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-socorro-card': 'https://catalog.archives.gov/id/302532129?objectPage=4',
+  'nara-bb-socorro-ftd-0513': 'https://catalog.archives.gov/id/302532129?objectPage=8',
+  'nara-bb-socorro-ftd-0528': 'https://catalog.archives.gov/id/302532129?objectPage=13',
+  'nara-bb-socorro-cloudgap': 'https://catalog.archives.gov/id/302532129?objectPage=28',
+  'nara-bb-socorro-hynek-menzel': 'https://catalog.archives.gov/id/302532129?objectPage=33',
+  'nara-bb-socorro-hynek-1965': 'https://catalog.archives.gov/id/302532129?objectPage=39',
+  'nara-bb-socorro-holder': 'https://catalog.archives.gov/id/302532129?objectPage=50',
+  'nara-bb-socorro-zamora': 'https://catalog.archives.gov/id/302532129?objectPage=59',
+  'nara-bb-socorro-moody': 'https://catalog.archives.gov/id/302532129?objectPage=62',
+  'nara-bb-socorro-hynek-1964': 'https://catalog.archives.gov/id/302532129?objectPage=65',
+  'nara-bb-socorro-soil': 'https://catalog.archives.gov/id/302532129?objectPage=73',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
@@ -478,7 +496,8 @@ export const SOURCE_URL: Record<string, string> = {
   'pursue-fbi-62-83894-s4': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_4.pdf',
   'pursue-fbi-62-83894-s9': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf',
   // Section 10, s. 29: wycinek z 16 X 1966 r., który opowiada Kelly wśród obserwacji z 1966 r.; otwarty na żywo
-  // 15 X 2026 i bajt w bajt zgodny z paczką wydania 01
+  // 15 X 2026 i bajt w bajt zgodny z paczką wydania 01. S. 37–38: list Hoovera do J. A. Hennesseya z 26 I 1965 r.
+  // z notatką Biura o Socorro (ponownie otwarty na żywo 17 X 2026, zgodny z paczką)
   'pursue-fbi-62-83894-s10': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf',
   'pursue-fbi-62-83894-serial-438': 'https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_438.pdf',
   // Maury Island 1947: Section 2 i 3 oraz SUB_A, otwarte na żywo 5 X 2026 i zgodne bajt w bajt z paczką
