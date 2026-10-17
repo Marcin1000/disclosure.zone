@@ -122,7 +122,7 @@ więcej dwie trzecie. Zaczernione są:
 - około półtora wiersza po „this incident,” i około dziewięciu znaków po „the Zimbabwe”;
 - około dwudziestu wierszy po „on high alert” i około siedmiu na ostatniej stronie.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie dostają **1**: obserwatorzy i meldujący są zaczernieni, a każda relacja dociera do raportu
 z drugiej ręki. Radar dostaje **1**, nie więcej, bo jedyna wzmianka o urządzeniu to „possibly” (być

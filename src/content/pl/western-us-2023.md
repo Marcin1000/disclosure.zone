@@ -140,7 +140,7 @@ pojeździe. Dwie relacje z jednego zespołu to jeden kanał, nie dwa. AARO nie u
 zgodność pozostaje zgodnością, a nie niezależnym potwierdzeniem, i oś wielokanałowości jest oceniona
 zgodnie z tym.
 
-## Dlaczego ocena wypada tak, jak wypada
+## Dlaczego taka ocena
 
 Dokumentacja dostaje **5**. To najlepiej udokumentowana sprawa w tym korpusie: podpisana analiza
 agencji z odsłoniętym rozumowaniem, pięć relacji z pierwszej ręki opublikowanych bez redakcji, w

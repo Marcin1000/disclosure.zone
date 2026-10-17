@@ -182,7 +182,7 @@ na plaży; wykaz Blue Book i ATIC nazywają je „Ubatuba Beach” (plażą Ubat
 OpenStreetMap dla miasta Ubatuba (relacja 298203), zaokrąglony przez nas do 23,43° S, 45,08° W; oznacza
 miasto, a nie plażę.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 0.** Jeden list, którego „signature was not legible” (podpis był nieczytelny; obraz 27).
 Żaden dokument nie wymienia autora ani przyjaciół, z którymi łowił ryby, i nie ma zapisu, by ktokolwiek

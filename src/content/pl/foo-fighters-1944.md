@@ -282,7 +282,7 @@ ma tekstu do przeszukania. Foo fighters pojawiają się tylko w dokumentach przy
 dokument z tamtego czasu nie mówi o niemieckich załogach, które widziałyby takie światła, ani o
 niemieckim dochodzeniu.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 3.** Załogi eskadry nocnych myśliwców, które pisały o tym w swoich raportach z lotów w
 tamtym czasie. Wyciągi pochodzą jednak z jednej eskadry, nie podają nazwisk i nie mówią, ile załóg

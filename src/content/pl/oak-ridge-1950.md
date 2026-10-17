@@ -273,7 +273,7 @@ W wydanych częściach teczki nie znaleźliśmy żadnej z tych rzeczy:
 - zdjęć ekranu radaru z 14 grudnia;
 - listów płk. Gassera do Wright Field o prowadzeniu sprawy w marcu.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie mają **3**: oficerowie i inżynierowie wymienieni z nazwiska w oświadczeniach podpisanych w
 ciągu dziesięciu dni, ale obserwacja trwała sekundy, z jadącego samochodu, i połowa każdej grupy nic nie

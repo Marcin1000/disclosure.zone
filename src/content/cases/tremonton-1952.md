@@ -274,6 +274,8 @@ This axis asks whether the case can be reconstructed now, and the core of the ca
 original has not been located since 1954, and the Navy's measurements were made on a duplicate of a
 copy.
 
+The overall is 2.1: class C, material gaps.
+
 ## What would settle it
 
 **The original film**, or the earliest surviving generation of it. The 1954 correspondence traces it

@@ -179,7 +179,7 @@ Opis podaje długość nagrania jako „one minute and five seconds” (jedna mi
 skąd samolot wystartował. Obserwacja odbyła się nad otwartym morzem około 900 km na południowy wschód
 od Larisy.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie dostają **2**: jedna załoga, szkolona do obserwacji przez swoje czujniki, i nikt poza nią
 („Third-party Observers and/or Reporters: NONE”, czyli brak postronnych obserwatorów i zgłaszających).

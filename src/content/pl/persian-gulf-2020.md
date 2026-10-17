@@ -263,7 +263,7 @@ piszą „BALLOON” (balon, DOW-UAP-D7, DOW-UAP-D19). Każdy raport z misji mó
 DGS1” albo „DGS-1”: obraz trafił do analizy w stacji naziemnej. Co analitycy z niego wyczytali, w
 wydaniu nie ma.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie dostają **2**: wyszkolone załogi w siedmiu misjach, jedna eskadra, nikt spoza niej. Radar
 dostaje **0**: nic nie zmierzyło odległości, a „Radar Equipped: Other” w formularzu nie zapisuje

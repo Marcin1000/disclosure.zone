@@ -167,7 +167,7 @@ incydencie; 38 z tych plików nie ma warstwy tekstowej. Ta sama teczka zawiera t
 1954 i 1955 o projekcie spodka Avro Canada. Dokumenty o KC-97 go nie wymieniają i my też ich z nim
 nie łączymy.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie dostają **2**. Załoga to wojskowi lotnicy, ale bez nazwisk i bez liczby, a w teczce nie ma
 ani jednej ich relacji; przesłuchania odbyły się i komisja je przejrzała, ale ich brak.

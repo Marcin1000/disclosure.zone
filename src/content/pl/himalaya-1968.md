@@ -145,7 +145,7 @@ czytelny rekord: ten raport, z datą 68, klauzulą poufne, adnotacją „AUTHOR 
 tematycznymi „UNIDENTIFIED FLYING OBJECT, AIRCRAFT ADDIDENT” [sic], czyli niezidentyfikowany obiekt
 latający i wypadek lotniczy. Z pozostałych 151 wyników nic w pliku nie da się odczytać.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie dostają **1**. Nikt nie jest wymieniony ani policzony; raport podaje miejsca, a jego
 źródło jest zaczernione. Tam, gdzie mówi, że odgłosy „were heard” (słyszano), zakłada obecność ludzi,

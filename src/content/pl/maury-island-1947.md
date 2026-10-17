@@ -357,7 +357,7 @@ stronie; żwirownia jest w podpisanym oświadczeniu „on Maury Island” (na Ma
 pozycji. Znacznik na mapie to punkt OpenStreetMap dla Maury Island (place=island), zaokrąglony przez nas
 do 47,38° N, 122,43° W. Wskazuje wyspę, nie łódź ani żwirownię.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 1.** Obserwację znamy tylko z cudzych relacji, a jedyny dokument podpisany przez Dahla
 mówi o skale ze żwirowni. Osób wymienionych jako obecne na łodzi, syna, „a Mr. Knight” (niejakiego pana

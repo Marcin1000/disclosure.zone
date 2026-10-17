@@ -148,7 +148,7 @@ zestawiło z obserwacjami akapit o Project „Y”, który „The USAF is suppor
 Powietrzne USA) w Avro Aircraft Ltd. w Kanadzie „for the development of unconventional saucer-like
 aircraft”, czyli w celu opracowania niekonwencjonalnego samolotu w kształcie spodka.
 
-## Dlaczego ocena wypada nisko
+## Dlaczego taka ocena
 
 Świadkowie dostają **3**. Jeden z czterech jest opisany stopniem jako pułkownik. Akta nie podają
 żadnych innych kwalifikacji, a jedyne źródło, które opisują, autor raportu informacyjnego, „has had no

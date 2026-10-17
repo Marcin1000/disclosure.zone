@@ -300,7 +300,7 @@ wschodniej; obraz 16). Znacznik na mapie to ta pozycja, przeliczona przez nas na
 Teczka nie mówi, jak ją ustalono. Arkusz danych wymienia miejsca wokół misji: Dogura i Menapi, wieś
 Wadobuna i Giwa (obrazy 8, 9).
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 3.** Stowarzyszenie opisuje Gilla jako 31-latka: „A qualified teacher, he completed over
 eight years of service as a missionary in New Guinea.” (wykwalifikowany nauczyciel, ponad osiem lat

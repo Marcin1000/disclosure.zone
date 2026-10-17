@@ -273,7 +273,7 @@ około 0:45.
 Celownik opis podaje dla „01:00-02:01”, a utratę namierzenia dla „02:22”. Celownik trzyma punkt od 0:58,6
 do 2:20,87, także w czasie filtra kontrastu, a ramka, która pojawia się w 0:36,2, nie stoi na punkcie.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie mają **2**: jedna załoga, wyszkolona do obserwacji przez czujniki, której raport nie wymienia
 ani nie liczy, i nikt więcej. Radar ma **0**: nic nie badało obiektu. Optyka ma **3**: prawie

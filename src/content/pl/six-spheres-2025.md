@@ -216,7 +216,7 @@ przechodzi przez pole widzenia, wchodząc górą kadru i wychodząc dołem. Wed�
 przechodzą od góry kadru w dół w 0:06,5–0:09,0. Dobrze też łączy nagranie z raportem: sześć punktów,
 podczerwień, raport o sześciu kulach.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie mają **2**: jedna załoga, wyszkolona do obserwacji przez czujniki, z podanym stopniem
 obserwatora; świadkowie postronni, których raport wymienia, są utajnieni, więc nie możemy ich liczyć.

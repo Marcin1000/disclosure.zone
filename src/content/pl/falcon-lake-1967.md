@@ -348,7 +348,7 @@ latitude, 95 degrees 15 minutes West longitude” (49 stopni 41 minut szerokośc
 minut długości zachodniej); znacznik na mapie to ta pozycja, przeliczona przez nas na 49,68° N, 95,25° W.
 Akta nie mówią, jak ją ustalono.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 1.** Jeden obserwator bez przeszkolenia. RCMP zapisała rozbieżności w jego relacji: piwo,
 namiar 255° wobec 020° i dowody zabrane z miejsca.

@@ -265,7 +265,7 @@ site photo” (rzeczywistym zdjęciem miejsca); nie ma ono podpisu.
 Żaden dokument z wydań od 01 do 06 nie łączy tego konwoju z inną sprawą, także ze zdarzeniem na
 zachodzie USA z października 2023 r., które opisuje osobny zestaw dokumentów.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie: **3**. Trzy relacje z pierwszej ręki, każda spisana osobno w ciągu kilku tygodni od
 zdarzenia. Jedna pochodzi od kobiety, która według przesłuchania „had seen most of the aircraft and

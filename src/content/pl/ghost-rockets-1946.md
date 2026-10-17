@@ -309,7 +309,7 @@ sztuczne ognie.
 Znacznik na mapie to punkt OpenStreetMap dla Szwecji (relacja 52822), zaokrąglony przez nas do
 59,67° N, 14,52° E. Wskazuje kraj, a nie miejsce żadnej obserwacji.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 2.** Prawie 1000 zgłoszeń, w „the great majority” (ogromnej większości) od osób bez
 przeszkolenia, nikt z nazwiska. Jedyna relacja od osoby przeszkolonej, pilota szwedzkich sił

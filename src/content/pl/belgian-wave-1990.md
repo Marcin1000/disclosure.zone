@@ -48,7 +48,7 @@ położenia kontaktu radarowego, a „reportedly” (podobno) to słowo samego s
 tekst wszystkich sześciu wydań USA pod kątem Belgii, z poprawką na błędy skanowania; powyższy artykuł to
 jedyna strona, która dotyczy 1990 r.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 1.** Obiekty „were reported” (zgłoszono), przez osoby, których streszczenie nie wymienia
 ani nie liczy; dwaj piloci „reported no sightings”, czyli niczego nie zobaczyli.

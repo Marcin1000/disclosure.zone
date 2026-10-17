@@ -182,7 +182,7 @@ Znacznik na mapie to punkt OpenStreetMap dla miasta Conde (relacja 20674014), za
 Nasze wyszukiwanie na mapie daje też São Francisco do Conde, bliżej Salwadoru; tej nazwy nie ma w
 żadnym dokumencie.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 0.** Żaden z trzech dokumentów nie wymienia świadka z nazwiska. Audycja powołuje się na
 „reports from the municipality of Conde” (doniesienia z gminy Conde), a konsul napisał, że takich

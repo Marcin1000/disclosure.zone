@@ -238,7 +238,7 @@ OSI Sił Powietrznych o innej obserwacji z 1 lipca 1952 r., raport CIRVIS z Los 
 zbudowany wokół telegramu Donalda Keyhoe'a do sekretarza Sił Powietrznych. Teczka zbierała to, co
 napłynęło wokół sprawy, a nie tylko to, co do niej należało, i tak trzeba ją czytać.
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 Świadkowie mają **4**: przeszkolony fotograf lotniczy i trzech członków rodziny, przesłuchanych w
 ciągu dziesięciu tygodni, a jego kwalifikacje potwierdzają teraz jego własne akta służbowe. Rodzina
@@ -262,6 +262,8 @@ odległości, którą jej własny raport nazywa „an arbitrary one” (arbitral
 Dane dzisiaj spadają z 4 do **3**. Publikacja akt jest już policzona w dokumentacji. Ta oś pyta, czy
 sprawę da się dziś odtworzyć, a rdzeniem sprawy jest film. Jego oryginału nie odnaleziono od 1954
 r., a pomiary Marynarki wykonano na duplikacie kopii.
+
+Ocena łączna wynosi 2,1: klasa C, istotne luki.
 
 ## Co by to rozstrzygnęło
 

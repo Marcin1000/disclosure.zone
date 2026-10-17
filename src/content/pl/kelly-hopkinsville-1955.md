@@ -257,7 +257,7 @@ FBI, opowiada ją wśród obserwacji z tamtego roku, słowami bliskimi depeszy U
 tall, with eyes like saucers and hands like claws” (trzy stopy wzrostu, oczy jak spodki i dłonie jak
 szpony; teczka FBI 62-HQ-83894, Section 10, s. 29).
 
-## Dlaczego oceny są takie, jakie są
+## Dlaczego taka ocena
 
 **Świadkowie: 2.** Siedmioro dorosłych w jednym domu, rodzina i dwoje przyjaciół, bez przeszkolenia,
 którzy tej samej nocy opowiedzieli wszystko policji; funkcjonariusze nie potrafili ustalić, ilu z nich

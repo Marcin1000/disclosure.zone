@@ -138,7 +138,7 @@ mówi o tym, kto kogo przesłuchiwał. Akta nie mówią, która możliwość jes
 nie rozstrzyga. Ma to znaczenie: dwóch świadków to dwie relacje z jednej grupy, jeden świadek dwa
 razy to jedna relacja opowiedziana na dwa sposoby.
 
-## Dlaczego ocena wypada tak nisko
+## Dlaczego taka ocena
 
 Świadkowie dostają **3**: pięciu żołnierzy z jednej jednostki, jeden z nich opisany jako były oficer
 wywiadu, wszyscy widzący to samo w tej samej chwili. To więcej niż jeden obserwator i mniej, niż się
