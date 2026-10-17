@@ -126,4 +126,14 @@ export const withdrawn: Withdrawn[] = [
       pl: 'Jedyne wyjaśnienie trójkątów w dokumencie, który da się otworzyć, dał zastępca dyrektora wywiadu Marynarki Wojennej przed podkomisją wywiadu Izby Reprezentantów 17 maja 2022 r. i nie podaje ono ani okrętu, ani daty: „U.S. Navy personnel recorded what appears to be triangles, some flashing, recorded several years ago off the coast of the United States” (personel Marynarki Wojennej USA nagrał coś, co wygląda na trójkąty, niektóre migające, kilka lat temu u wybrzeży Stanów Zjednoczonych; zapis posiedzenia, s. 16). Dziennik pokładowy USS Russell z lipca 2019 r. jest jawny i nic w nim nie mówi o trójkątach; jego wpisy z 15 lipca od 21:15 do 22:00 są zaczernione z adnotacją „(b)(3) 10 U.S.C. § 130”. Potwierdzenie, że zdjęcia i nagrania zrobił personel Marynarki Wojennej, znamy tylko z prasy. Twierdzenie o trójkątach zostaje w [rejestrze twierdzeń](/claims#russell-pyramid-craft), a dziennik jest przywołany w sprawie [U wybrzeży San Diego, lipiec 2019](/cases/san-diego-drones-2019). Oceny nie miały na czym stać.',
     },
   },
+  {
+    kind: 'claim',
+    id: 'abduction-genre-evidence',
+    title: { en: '“The sheer volume of abduction reports is itself evidence.”', pl: '„Sama liczba relacji o uprowadzeniach jest już dowodem.”' },
+    on: '2026-10-17',
+    reason: {
+      en: 'No document that can be opened states or tests the claim: its origin was the abduction literature as a whole, and its verdict rested on general reasoning and on a count of radar cases that no longer held.',
+      pl: 'Żaden dokument, który da się otworzyć, nie stawia ani nie sprawdza tego twierdzenia: jego źródłem była literatura o uprowadzeniach jako całość, a werdykt opierał się na ogólnym rozumowaniu i na nieaktualnej liczbie spraw radarowych.',
+    },
+  },
 ];

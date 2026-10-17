@@ -223,6 +223,31 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-exeter-bertrand': 'https://catalog.archives.gov/id/302543878?objectPage=99',
   'nara-bb-exeter-report': 'https://catalog.archives.gov/id/302543878?objectPage=103',
   'nara-bb-index-1965-09': 'https://catalog.archives.gov/id/28921348?objectPage=353',
+  // Betty i Barney Hill 1961: teczka Blue Book nr 7641, rozdzielona między rolki 43 i 44 (wykaz rolek, NAID 28921348,
+  // obraz 5), więc w katalogu NARA to dwie jednostki. NAID 28994660 „Lincoln, New Hampshire, September 1961” (57 obrazów;
+  // obraz N to plik 1042+N.jpg): karta 1, arkusz analizy 2–3, pismo FTD z 27 IX 1963 4, wykresy aerologiczne z Portland
+  // 5–53, „Look” 54–57. NAID 28994718 „[BLANK], [BLANK]” (44 obrazy; obraz 1 to plik 0001.jpg, dalej obraz N to plik
+  // N+1, pliku 0002 w katalogu nie ma): „Look” 2–27, notka Derryberry’ego 28, uwagi bez podpisu 29, „Boston Traveler”
+  // 30–35, pismo przewodnie 36, wyciąg z dziennika kontrolera 37, wycinek NICAP 38, raport 100-1-61 39–41, streszczenie
+  // 42, Climatic Center 43, biuletyn APRO 44. Indeks Blue Book NAID 28921348, obraz 259 (plik 0266.jpg). Każdy adres
+  // otwarty w przeglądarce 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-hill-card':    'https://catalog.archives.gov/id/28994660?objectPage=1',
+  'nara-bb-hill-analysis': 'https://catalog.archives.gov/id/28994660?objectPage=2',
+  'nara-bb-hill-ftd-1963': 'https://catalog.archives.gov/id/28994660?objectPage=4',
+  'nara-bb-hill-look-2':  'https://catalog.archives.gov/id/28994718?objectPage=9',
+  'nara-bb-hill-look-1':  'https://catalog.archives.gov/id/28994718?objectPage=13',
+  'nara-bb-hill-notes':   'https://catalog.archives.gov/id/28994718?objectPage=29',
+  'nara-bb-hill-traveler': 'https://catalog.archives.gov/id/28994718?objectPage=30',
+  'nara-bb-hill-cover':   'https://catalog.archives.gov/id/28994718?objectPage=36',
+  'nara-bb-hill-par':     'https://catalog.archives.gov/id/28994718?objectPage=37',
+  'nara-bb-hill-nicap':   'https://catalog.archives.gov/id/28994718?objectPage=38',
+  'nara-bb-hill-report':  'https://catalog.archives.gov/id/28994718?objectPage=39',
+  'nara-bb-hill-apro':    'https://catalog.archives.gov/id/28994718?objectPage=44',
+  'nara-bb-index-1961-09': 'https://catalog.archives.gov/id/28921348?objectPage=259',
+  // Strona biblioteki Uniwersytetu New Hampshire o zbiorze Betty and Barney Hill Collection (MC 197), otwarta
+  // 17 X 2026: wymienia korespondencję, dzienniki, rękopisy, wycinki, zdjęcia, przezrocza i DVD, a nagrań sesji nie;
+  // rekord zbioru w systemie archiwum (archives.unh.edu) zwracał tego dnia 403. Wskazanie archiwum, nie dokument
+  'unh-hill-collection':  'https://library.unh.edu/find/archives/collections/using-materials/using-betty-barney-hill-collection',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
@@ -648,6 +673,8 @@ export const FINDING_AIDS = new Set([
   // sprawy, której pod tym adresem nie ma; teczki leżą w katalogu NARA jako osobne
   // jednostki (klucze nara-bb-*), więc do czasu audytu liczy się jako wskazanie archiwum
   'nara-bluebook',
+  // Strona biblioteki o zbiorze Hillów: opisuje, gdzie leżą papiery, a nie jest żadnym z nich
+  'unh-hill-collection',
 ]);
 
 export function isFindingAid(ref?: string): boolean {
