@@ -272,6 +272,35 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-arnold-dayton': 'https://catalog.archives.gov/id/28929152?objectPage=57',
   'nara-bb-arnold-ap':    'https://catalog.archives.gov/id/28929152?objectPage=61',
   'nara-bb-index-1947-06': 'https://catalog.archives.gov/id/28921348?objectPage=12',
+  // Mantell 1948: jednostka Blue Book NAID 28930550 „Godman AFB, Ken., January 1948 - Incident Number: 33” (75 obrazów;
+  // obraz N to plik 0829+N.jpg). Karta 1 (Temporary ATIC Form 329 z I 1952), formularze 33–33g 2–17 (te same strony co
+  // DOW-UAP-D087, s. 81–96; łączność radiowa 4), Wenus: komentarz Equipment Laboratory z 27 X 1948 18, prośba z 20 X 1948
+  // 20, wniosek MCIAT z 10 XI 1948 26–27; teodolit 21–24, prośba o maszynopis rozmowy 25, listy z 1964 28–30 i 41, raport
+  // ośrodka służby lotów 31–33, raport inspektora z adnotacją Hixa 34–35, oświadczenia z 9 I 1948 36–40 i 42–44, adnotacja
+  // z 21 V 1948 o raporcie z wypadku 46 (samego AF Form 14 wśród skanów nie ma), zdjęcia szczątków 50–66. Jednostka NAID
+  // 28930193 „Wilmington, Ohio, January 1948 - Incident Number: 48”: ocena incydentu 32 2, pismo AMC o balonach z 5 I 1949
+  // 5–6 (kopie 7–8 i 26–27). Indeks Blue Book NAID 28921348, obraz 15 (plik 0022.jpg). Każdy adres otwarty w przeglądarce
+  // 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-mantell-card': 'https://catalog.archives.gov/id/28930550?objectPage=1',
+  'nara-bb-mantell-radio': 'https://catalog.archives.gov/id/28930550?objectPage=4',
+  'nara-bb-mantell-venus': 'https://catalog.archives.gov/id/28930550?objectPage=18',
+  'nara-bb-mantell-venus-request': 'https://catalog.archives.gov/id/28930550?objectPage=20',
+  'nara-bb-mantell-theodolite': 'https://catalog.archives.gov/id/28930550?objectPage=22',
+  'nara-bb-mantell-recording': 'https://catalog.archives.gov/id/28930550?objectPage=25',
+  'nara-bb-mantell-unexplained': 'https://catalog.archives.gov/id/28930550?objectPage=26',
+  'nara-bb-mantell-fsc':  'https://catalog.archives.gov/id/28930550?objectPage=31',
+  'nara-bb-mantell-inspector': 'https://catalog.archives.gov/id/28930550?objectPage=34',
+  'nara-bb-mantell-oliver': 'https://catalog.archives.gov/id/28930550?objectPage=36',
+  'nara-bb-mantell-blackwell': 'https://catalog.archives.gov/id/28930550?objectPage=38',
+  'nara-bb-mantell-carter': 'https://catalog.archives.gov/id/28930550?objectPage=39',
+  'nara-bb-mantell-duesler': 'https://catalog.archives.gov/id/28930550?objectPage=40',
+  'nara-bb-mantell-hix':  'https://catalog.archives.gov/id/28930550?objectPage=42',
+  'nara-bb-mantell-orner': 'https://catalog.archives.gov/id/28930550?objectPage=43',
+  'nara-bb-mantell-accident': 'https://catalog.archives.gov/id/28930550?objectPage=46',
+  'nara-bb-mantell-photos': 'https://catalog.archives.gov/id/28930550?objectPage=50',
+  'nara-bb-wilmington-hynek': 'https://catalog.archives.gov/id/28930193?objectPage=2',
+  'nara-bb-wilmington-balloons': 'https://catalog.archives.gov/id/28930193?objectPage=5',
+  'nara-bb-index-1948-01': 'https://catalog.archives.gov/id/28921348?objectPage=15',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).

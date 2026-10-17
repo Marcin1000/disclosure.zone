@@ -53,7 +53,9 @@ const RG_AGENCY = { 18: null, 38: null, 59: 'DOS', 65: 'FBI', 255: 'NASA', 331: 
  * podwiesiłoby pod sprawę cudzy dokument.
  */
 const CASE_LINKS = {
-  'DOW-UAP-D102': ['tremonton-1952'],
+  // Mantell 1948: memorandum z 21 V 1956 o filmie obejrzanym przez „pertinent members of ATIC”, pkt 3c o balonie
+  // „Sky Hook” (s. 64–66, sprawa Mantella s. 65)
+  'DOW-UAP-D102': ['tremonton-1952', 'mantell-1948'],
   'DOW-UAP-D103': ['tremonton-1952'],
   'DOW-UAP-D104': ['tremonton-1952'],   // Newhouse nakręcił film z Tremonton
   // rakiety widma 1946: przegląd wywiadu USA z 9 I 1947 (D099, s. 17–20), prośba AMC z 23 I 1948 o plik
@@ -115,7 +117,9 @@ const CASE_LINKS = {
   'DOW-UAP-D092': ['foo-fighters-1944'],
   // Lubbock 1951: zapis wystąpienia Ruppelta, datowany przez wydawcę na 1952 r.; o Lubbock s. 6–9
   // (zdjęcia „taken on the 31st of August”, profesorowie, laboratorium, „a blank wall”)
-  'DOW-UAP-D154': ['lubbock-lights-1951'],
+  // Mantell 1948: odpowiedź Ruppelta na pytanie o śmierć Mantella, „probably either Venus or one of these great big
+  // Skyhook balloons” (s. 17–18)
+  'DOW-UAP-D154': ['lubbock-lights-1951', 'mantell-1948'],
   // Memorandum do akt z 18 grudnia 1952: kurier z Wielkiej Brytanii wspomniał R. V. Jonesowi
   // o filmie z Tremonton (pkt 5). CIA-UAP-015, kopia Special Report 14 z archiwum CIA, nie jest
   // podpięty: w warstwie tekstu jego 312 stron nie ma Tremonton ani Newhouse’a (17 X 2026)
@@ -194,8 +198,9 @@ const CASE_LINKS = {
   // artykuł Menzla z „Look” z 17 VI 1952 (s. 256–261) jedno pytanie o „Foo Fighters” stawia na s. 260;
   // Lubbock 1951: w tym samym artykule podpis pod zdjęciem z nazwiskiem fotografa (s. 257) i doświadczenie
   // z rzędem otworków (s. 259); Waszyngton 1952: notatki z 29 VII 1952 biura terenowego w Waszyngtonie (s. 190)
-  // i Keaya do Belmonta (s. 196–199)
-  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944', 'washington-1952', 'lubbock-lights-1951'],
+  // i Keaya do Belmonta (s. 196–199); Mantell 1948: artykuł Wilsona z „Look” ze stycznia 1951, wpięty notatką
+  // z 26 II 1951 (s. 111), z wypowiedzią Liddela o balonie typu Skyhook (s. 115)
+  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944', 'washington-1952', 'lubbock-lights-1951', 'mantell-1948'],
   '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263);
   // Levelland 1957: notatka Roacha do Belmonta z 12 XI 1957 (Section 9, s. 6) o silnikach gasnących w stanach
