@@ -105,13 +105,17 @@ const CASE_LINKS = {
   // Teczka CIA o panelu naukowym (Robertson), styczeń 1953: panel ocenia film z
   // Tremonton, wymienia raport o zielonych kulach wśród dowodów i omawia „Foo Fighters”.
   // Waszyngton i Lubbock są tam tylko wymienione, więc ich nie podpinamy. washington-1952
-  // cytuje teczkę (s. PDF 5, 10, 17, 19), więc rekord pokazuje ją w „Wspomniany w”
+  // cytuje teczkę (s. PDF 5, 10, 17, 19), a lubbock-lights-1951 jej jedyne zdanie o Lubbock
+  // (s. PDF 33, to samo co w D092, s. 71), więc rekord pokazuje obie sprawy w „Wspomniany w”
   'CIA-UAP-002': ['tremonton-1952', 'green-fireballs-1948', 'foo-fighters-1944'],
   // Foo fighters 1944–45: teczka SHAEF 37153 z wyciągami raportów 415th Night Fighter Squadron
   // i pismami SHAEF i Air Ministry; ten sam akapit Duranta o „Foo Fighters” w jawnej wersji
   // z 1967 r., z zaczernionym nazwiskiem (D092, s. 56–57)
   '331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents@01': ['foo-fighters-1944'],
   'DOW-UAP-D092': ['foo-fighters-1944'],
+  // Lubbock 1951: zapis wystąpienia Ruppelta, datowany przez wydawcę na 1952 r.; o Lubbock s. 6–9
+  // (zdjęcia „taken on the 31st of August”, profesorowie, laboratorium, „a blank wall”)
+  'DOW-UAP-D154': ['lubbock-lights-1951'],
   // Memorandum do akt z 18 grudnia 1952: kurier z Wielkiej Brytanii wspomniał R. V. Jonesowi
   // o filmie z Tremonton (pkt 5). 015 to kopia Special Report 14 z archiwum CIA, ten sam
   // raport, który sprawa cytuje jako dtic-special-report-14.
@@ -187,8 +191,10 @@ const CASE_LINKS = {
   // radar lotnictwa, „radar jamming” i obserwacja z 18 XII 1950 (Section 6)
   '65-hs1-834228961-62-hq-83894-section-5@01': ['oak-ridge-1950', 'ghost-rockets-1946'],
   // artykuł Menzla z „Look” z 17 VI 1952 (s. 256–261) jedno pytanie o „Foo Fighters” stawia na s. 260;
-  // Waszyngton 1952: notatki z 29 VII 1952 biura terenowego w Waszyngtonie (s. 190) i Keaya do Belmonta (s. 196–199)
-  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944', 'washington-1952'],
+  // Lubbock 1951: w tym samym artykule podpis pod zdjęciem z nazwiskiem fotografa (s. 257) i doświadczenie
+  // z rzędem otworków (s. 259); Waszyngton 1952: notatki z 29 VII 1952 biura terenowego w Waszyngtonie (s. 190)
+  // i Keaya do Belmonta (s. 196–199)
+  '65-hs1-834228961-62-hq-83894-section-6@01': ['oak-ridge-1950', 'foo-fighters-1944', 'washington-1952', 'lubbock-lights-1951'],
   '65-hs1-834228961-62-hq-83894-serial-153@01': ['oak-ridge-1950'],
   // Socorro 1964: raport agenta Byrnesa z relacją Zamory (Serial 438) i teleksy z Albuquerque (Section 9, s. 221–263)
   '65-hs1-834228961-62-hq-83894-serial-438@01': ['socorro-1964'],

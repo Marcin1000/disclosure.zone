@@ -140,6 +140,31 @@ export const SOURCE_URL: Record<string, string> = {
   'nara-bb-washington-barnes': 'https://catalog.archives.gov/id/28946178?objectPage=22',
   'nara-bb-index-1952-07': 'https://catalog.archives.gov/id/28921348?objectPage=66',
   'nara-bb-samford-minutes': 'https://catalog.archives.gov/id/461459117?objectPage=2',
+  // Lubbock 1951: Blue Book nie ma jednostki o tej nazwie. Papiery to obrazy 7–118 jednostki NAID 28939743, którą katalog
+  // tytułuje „Orange, Va, September 1951” (118 obrazów; obraz N to plik 00858+N.jpg do N=40, dalej 00859+N.jpg); obrazy
+  // 1–6 to obserwacja w Orange w Wirginii, karty Project 10073 tej sprawy w jednostce nie ma. Wyciągi z raportów
+  // statusowych nr 1 (8–10) i nr 2 (15–18), niedatowane podsumowanie pisane po 1959 r. 19, podsumowanie sprawy
+  // z komentarzami ATIC 21–26, raport wywiadowczy OSI z 7 IX 1951 118 i 38–39, raport OSI z 8 X 41–49, odbitki zdjęć
+  // 58–61, sprawozdanie Ruppelta z wyjazdu 64–82, raport profesorów 83–85, raport OSI z 5 XII 87–89 (pismo przewodnie
+  // z 4 I 1952 to 86), pismo laboratorium fotograficznego 90, raport z badania negatywów 98–103, memorandum Metschera
+  // 108, podsumowanie działań ATIAA 111, zwrot negatywów 115. Indeks Blue Book NAID 28921348, obraz 42 (plik 0049.jpg).
+  // Każdy adres otwarty w przeglądarce 17 X 2026 i sprawdzony po pliku, który strona ładuje
+  'nara-bb-lubbock-sr1':  'https://catalog.archives.gov/id/28939743?objectPage=8',
+  'nara-bb-lubbock-sr2':  'https://catalog.archives.gov/id/28939743?objectPage=15',
+  'nara-bb-lubbock-summary': 'https://catalog.archives.gov/id/28939743?objectPage=19',
+  'nara-bb-lubbock-atic': 'https://catalog.archives.gov/id/28939743?objectPage=21',
+  'nara-bb-lubbock-osi-spot': 'https://catalog.archives.gov/id/28939743?objectPage=118',
+  'nara-bb-lubbock-osi':  'https://catalog.archives.gov/id/28939743?objectPage=41',
+  'nara-bb-lubbock-photos': 'https://catalog.archives.gov/id/28939743?objectPage=58',
+  'nara-bb-lubbock-trip': 'https://catalog.archives.gov/id/28939743?objectPage=64',
+  'nara-bb-lubbock-professors': 'https://catalog.archives.gov/id/28939743?objectPage=84',
+  'nara-bb-lubbock-osi-dec': 'https://catalog.archives.gov/id/28939743?objectPage=87',
+  'nara-bb-lubbock-photolab': 'https://catalog.archives.gov/id/28939743?objectPage=90',
+  'nara-bb-lubbock-test': 'https://catalog.archives.gov/id/28939743?objectPage=98',
+  'nara-bb-lubbock-metscher': 'https://catalog.archives.gov/id/28939743?objectPage=108',
+  'nara-bb-lubbock-ops':  'https://catalog.archives.gov/id/28939743?objectPage=111',
+  'nara-bb-lubbock-negatives': 'https://catalog.archives.gov/id/28939743?objectPage=115',
+  'nara-bb-index-1951-08': 'https://catalog.archives.gov/id/28921348?objectPage=42',
   // JAL 1628, 17 XI 1986: teczka regionu Alaska FAA w NARA, RG 237, seria NAID 733667 (41 jednostek,
   // 1569 obiektów, w całości w katalogu). Adres ?objectPage=N otwiera obraz N jednostki; każdy otwarty
   // w przeglądarce 15 X 2026 i sprawdzony po pliku, który strona wyświetla (prosi o jego info.json IIIF).
@@ -453,6 +478,9 @@ export const SOURCE_URL: Record<string, string> = {
   // cash-landrum-radiation (s. 15, 19, 23, 26, 28). Otwarta na żywo 15 X 2026: 200, 45 830 558 B, warstwa
   // tekstu zgodna na wszystkich 38 stronach z przeszukiwaną; bajtów nie porównano z paczką wydania 06
   'pursue-d128':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D128_AAWSAP-DIRD-Anomalous-Acute-and-Subacute-Field-Effects-on-Human-Biological-Tissues-March-11-2010.pdf',
+  // Wydanie 06: zapis wystąpienia kpt. Edwarda J. Ruppelta, datowany przez wydawcę na 1952 r. (D154); Lubbock na s. 6–9.
+  // Otwarty na żywo 17 X 2026: 200, application/pdf, 293 205 B, bajt w bajt zgodny z kopią pobraną z wydania 06
+  'pursue-d154':          'https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.pdf',
   // Wydanie 01: raporty z misji porównane bajt w bajt z paczką, nagrania na stronach DVIDS
   // otwartych na żywo; tytuł strony zgadza się z nagłówkiem XMP pliku z paczki uapvideos.zip
   'pursue-d25':           'https://www.war.gov/medialink/ufo/release_1/dow-uap-d25-mission-report-greece-january-2024.pdf',
